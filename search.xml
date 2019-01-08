@@ -12,6 +12,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[CentOS MariaDB配置]]></title>
+    <url>%2F2019%2F01%2F01%2FCentOS%20MariaDB%E9%85%8D%E7%BD%AE%2F</url>
+    <content type="text"><![CDATA[启动Mariadb前提需安装mariadb-server 安装mariadb-server yum install -y mariadb-server 启动服务 systemctl start mariadb.service 添加到开机启动 systemctl enable mariadb.service 安全设置，以及修改数据库管理员密码 mysql_secure_installation 启动MariaDB 正常启动 systemctl start mariadb service mariadb start 设置开机启动 systemctl enable mariadb chkconfig mariadb on 配置MariaDB的字符集 设置客户端： vim /etc/my.cnf.d/mysql-clients.cnf [mysql] default-character-set=utf8 设置服务端： vim /etc/my.cnf.d/server.cnf [mysqld] init_connect=’SET collation_connection = utf8_general_ci’ init_connect=’SET NAMES utf8’ character-set-server=utf8 collation-server=utf8_general_ci skip-character-set-client-handshake [开启慢查询] slow_query_log = ON slow_query_log_file = /usr/local/mysql/data/slow.log long_query_time = 1]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>CentOS</tag>
+        <tag>MariaDB</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CentOS7编译安装Python3.7]]></title>
     <url>%2F2019%2F01%2F01%2FCentos7%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Python3.7%2F</url>
     <content type="text"><![CDATA[安装编译工具 yum -y groupinstall “Development tools” yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel yum -y install libffi-devel 下载安装包解压 cd #用户目录 wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz tar -xvJf Python-3.7.0.tar.xz 编译安装 mkdir /usr/local/python3 #创建编译安装目录 cd Python-3.7.0 ./configure –prefix=/usr/local/python3 make &amp;&amp; make install 创建软链接 ln -s /usr/local/python3/bin/python3 /usr/local/bin/python3 ln -s /usr/local/python3/bin/pip3 /usr/local/bin/pip3 验证是否成功 python3 -V pip3 -V]]></content>
