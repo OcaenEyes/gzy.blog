@@ -47,4 +47,18 @@
         <tag>Python3</tag>
       </tags>
   </entry>
+  <entry>
+    <title><![CDATA[Algorithm入门解读]]></title>
+    <url>%2F2018%2F10%2F01%2FAlgorithm%E5%85%A5%E9%97%A8%E8%A7%A3%E8%AF%BB%2F</url>
+    <content type="text"><![CDATA[决策树 根据一些feature特征进行分类 每个节点，根据问题判断，将数据分为两类 随机森林逻辑回归Support vector machines支持向量机 Navie Bayes朴素贝叶斯 kNN: k-nearest neighbor classificationK近邻算法 K均值算法Adaboost神经网络马尔科夫]]></content>
+      <categories>
+        <category>Artificial Intelligence</category>
+        <category>Machine learning</category>
+        <category>Algorithm</category>
+      </categories>
+      <tags>
+        <tag>Machine learning</tag>
+        <tag>Algorithm</tag>
+      </tags>
+  </entry>
 </search>
