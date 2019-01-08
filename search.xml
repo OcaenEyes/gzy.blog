@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F01%2F07%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[centos学习]]></title>
-    <url>%2F2019%2F01%2F01%2Fcentos-01%2F</url>
-    <content type="text"><![CDATA[Quick Startcentos 安装]]></content>
+    <title><![CDATA[Centos7编译安装Python3.7]]></title>
+    <url>%2F2019%2F01%2F01%2FCentos7%E7%BC%96%E8%AF%91%E5%AE%89%E8%A3%85Python3.7%2F</url>
+    <content type="text"><![CDATA[安装编译工具 yum -y groupinstall “Development tools” yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel yum -y install libffi-devel 下载安装包解压 cd #用户目录 wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tar.xz tar -xvJf Python-3.7.0.tar.xz 编译安装 mkdir /usr/local/python3 #创建编译安装目录 cd Python-3.7.0 ./configure –prefix=/usr/local/python3 make &amp;&amp; make install 编译安装 ln -s /usr/local/python3/bin/python3 /usr/local/bin/python3 ln -s /usr/local/python3/bin/pip3 /usr/local/bin/pip3 验证是否成功 python3 -V pip3 -V]]></content>
       <categories>
         <category>Linux</category>
+        <category>Python3</category>
       </categories>
       <tags>
         <tag>Contos</tag>
+        <tag>Python3</tag>
       </tags>
   </entry>
 </search>
