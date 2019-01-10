@@ -108,7 +108,7 @@
     <content type="text"><![CDATA[决策树 根据一些feature特征进行分类 每个节点，根据问题判断，将数据分为两类 随机森林逻辑回归Support vector machines支持向量机 Navie Bayes朴素贝叶斯 kNN: k-nearest neighbor classificationK近邻算法 K均值算法Adaboost神经网络马尔科夫]]></content>
       <categories>
         <category>Artificial Intelligence</category>
-        <category>Machine learning</category>
+        <category>Machine Learning</category>
         <category>Algorithm</category>
       </categories>
       <tags>
