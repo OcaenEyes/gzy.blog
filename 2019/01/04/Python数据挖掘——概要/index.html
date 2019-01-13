@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="一、数据挖掘过程1.数据选择 分析业务需求后，选择应用于需求业务相关的数据：业务原始数据、公开的数据集、也可通过爬虫采集网站结构化的数据。明确业务需求并选择好针对性的数据是数据挖掘的先决条件。 2.数据预处理 通常选择好的数据会有噪音，不完整等缺陷，需要对数据进行清洗，缺失项处理，集成，转换以及归纳：python字符串处理（相当方便）、正则式匹配、pandas、beautifulsoup处理Htm">
+<meta name="keywords" content="Python3,Data Mining">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python数据挖掘——数据预处理">
+<meta property="og:url" content="http://oceaneyes.top/2019/01/04/Python数据挖掘——概要/index.html">
+<meta property="og:site_name" content="乔克叔叔杂货店">
+<meta property="og:description" content="一、数据挖掘过程1.数据选择 分析业务需求后，选择应用于需求业务相关的数据：业务原始数据、公开的数据集、也可通过爬虫采集网站结构化的数据。明确业务需求并选择好针对性的数据是数据挖掘的先决条件。 2.数据预处理 通常选择好的数据会有噪音，不完整等缺陷，需要对数据进行清洗，缺失项处理，集成，转换以及归纳：python字符串处理（相当方便）、正则式匹配、pandas、beautifulsoup处理Htm">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/6/165acaff8aac01cf?w=605&h=362&f=png&s=12159">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/6/165ad72a029f3d22?w=605&h=362&f=png&s=12159">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/6/165af852e320fea3?w=300&h=30&f=png&s=500">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/6/165af7c0321440e0?w=605&h=356&f=png&s=15230">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/6/165af8375b661141?w=846&h=99&f=png&s=23089">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/6/165af84b783a086b?w=596&h=356&f=png&s=15492">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/6/165af8eebd55abee?w=155&h=57&f=png&s=2367">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/7/165b211e1adf40e8?w=353&h=48&f=png&s=3937">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/7/165b29dfceee4ae8?w=704&h=68&f=png&s=6525">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/7/165b2a5756a5a4a3?w=533&h=189&f=png&s=25601">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/7/165b2bdd4a7cd845?w=128&h=62&f=png&s=1391">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/7/165b2bc6bd1995f7?w=95&h=47&f=png&s=1114">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/13/165d1d0e453e3047?w=173&h=99&f=png&s=5152">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/13/165d19a89ad874e4?w=231&h=75&f=png&s=8321">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/7/165b33cfd31f1d8a?w=648&h=257&f=png&s=58602">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/7/165b4596a0bf0e1f?w=399&h=128&f=png&s=17472">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/7/165b456e6ef82636?w=276&h=74&f=png&s=9386">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/9/165bd05c5b75f331?w=320&h=116&f=png&s=12784">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/10/165c3bc0f875a4f2?w=468&h=193&f=png&s=13889">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/12/165cb97ac388a376?w=308&h=47&f=png&s=2796">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/13/165d1ff2e5208d1e?w=1546&h=38&f=png&s=11379">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/12/165cb8547529dd0e?w=109&h=53&f=png&s=2600">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/12/165cb83cfc13aaf1?w=152&h=60&f=png&s=4167">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/12/165cb98290a241b9?w=308&h=47&f=png&s=2796">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/12/165cba5c9f486819?w=308&h=31&f=png&s=2113">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/12/165cdb16135ada50?w=621&h=73&f=png&s=19581">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/12/165cdba3f27220e1?w=321&h=39&f=png&s=8091">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/12/165cdc1436948f7a?w=364&h=230&f=png&s=48409">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/12/165cdc3fca61705f?w=275&h=154&f=png&s=10722">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/12/165cd7df7fd9b48c?w=1036&h=804&f=png&s=175335">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/20/165f5eafc5c036a9?w=145&h=202&f=png&s=6769">
+<meta property="og:image" content="https://user-gold-cdn.xitu.io/2018/9/20/165f5eb1eb0f4f7e?w=150&h=233&f=png&s=9001">
+<meta property="og:updated_time" content="2019-01-13T15:39:29.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python数据挖掘——数据预处理">
+<meta name="twitter:description" content="一、数据挖掘过程1.数据选择 分析业务需求后，选择应用于需求业务相关的数据：业务原始数据、公开的数据集、也可通过爬虫采集网站结构化的数据。明确业务需求并选择好针对性的数据是数据挖掘的先决条件。 2.数据预处理 通常选择好的数据会有噪音，不完整等缺陷，需要对数据进行清洗，缺失项处理，集成，转换以及归纳：python字符串处理（相当方便）、正则式匹配、pandas、beautifulsoup处理Htm">
+<meta name="twitter:image" content="https://user-gold-cdn.xitu.io/2018/9/6/165acaff8aac01cf?w=605&h=362&f=png&s=12159">
+
+
+
+
+
+
+  <link rel="canonical" href="http://oceaneyes.top/2019/01/04/Python数据挖掘——概要/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Python数据挖掘——数据预处理 | 乔克叔叔杂货店</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  <script type="text/javascript" src="/js/src/clicklove.js"></script>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">乔克叔叔杂货店</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">在未来面前我们都是孩子</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://oceaneyes.top/2019/01/04/Python数据挖掘——概要/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OceanEyes.GZY">
+      <meta itemprop="description" content="This is MyBlog Notes.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="乔克叔叔杂货店">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Python数据挖掘——数据预处理
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-04 23:30:00" itemprop="dateCreated datePublished" datetime="2019-01-04T23:30:00+08:00">2019-01-04</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-13 23:39:29" itemprop="dateModified" datetime="2019-01-13T23:39:29+08:00">2019-01-13</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Artificial-Intelligence/" itemprop="url" rel="index"><span itemprop="name">Artificial Intelligence</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Artificial-Intelligence/Data-Mining/" itemprop="url" rel="index"><span itemprop="name">Data Mining</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="一、数据挖掘过程"><a href="#一、数据挖掘过程" class="headerlink" title="一、数据挖掘过程"></a>一、数据挖掘过程</h2><p>1.数据选择</p>
+<p>分析业务需求后，选择应用于需求业务相关的数据：业务原始数据、公开的数据集、也可通过爬虫采集网站结构化的数据。明确业务需求并选择好针对性的数据是数据挖掘的先决条件。</p>
+<p>2.数据预处理</p>
+<p>通常选择好的数据会有噪音，不完整等缺陷，需要对数据进行清洗，缺失项处理，集成，转换以及归纳：<br>python字符串处理（相当方便）、正则式匹配、pandas、beautifulsoup处理Html标签等等工具。</p>
+<p>3.特征工程/数据转换</p>
+<p>根据选择的算法，对预处理好的数据提取特征，并转换为特定数据挖掘算法的分析模型。</p>
+<p>4.数据挖掘</p>
+<p>使用选择好的数据挖掘算法对数据进行处理后得到信息。</p>
+<p>5.解释与评价</p>
+<p>对数据挖掘后的信息加以分析解释，并应用于实际的工作领域。</p>
+<h2 id="二、数据挖掘常用算法简介"><a href="#二、数据挖掘常用算法简介" class="headerlink" title="二、数据挖掘常用算法简介"></a>二、数据挖掘常用算法简介</h2><h3 id="1-关联分析算法"><a href="#1-关联分析算法" class="headerlink" title="1.关联分析算法"></a>1.关联分析算法</h3><p>关联规则在于找出具有最小支持度阈值和最小置信度阈值的不同域的数据之间的关联。在关联规则的分析算法研究中，算法的效率是核心的问题。<br>经典的算法有：Apriori算法，AprioriTid算法，FP-growth算法；</p>
+<h3 id="2-分类算法"><a href="#2-分类算法" class="headerlink" title="2.分类算法"></a>2.分类算法</h3><p>决策树算法：以树形结构表示分类或者决策集合，产生规则或者发现规律。主要有ID3算法，C4.5算法， SLIQ算法， SPRINT算法， RainForest算法；</p>
+<p>朴素Bayes分类算法：利用Bayes定理概率统计的方法，选择其中概率比较大的类别进行分类；</p>
+<p>CBA(Classification Based on Association)算法：基于关联规则的分类算法；</p>
+<p>MIND(Mining in Database)算法 ：采用数据库中用户定义的函数(user-definedfunction，简称UDF)来实现分类的算法；</p>
+<p>神经网络分类算法：利用训练集对多个神经的网络进行训练，并用训练好的模型对样本进行分类；</p>
+<p>粗集理论：粗集理论的特点是不需要预先给定某些特征或属性的数量描述，而是直接从给定问题出发，通过不可分辨关系和不可分辨类确定问题的近似域,从而找出问题中的内在规律；</p>
+<p>遗传算法：遗传算法是模拟生物进化过程，利用复制(选择)、交叉(重组)和变异(突变)3个基本方法优化求解的技术；</p>
+<h3 id="3-聚类算法"><a href="#3-聚类算法" class="headerlink" title="3.聚类算法"></a>3.聚类算法</h3><p>聚类分析与分类不同，聚类分析处理的数据对象的类是未知的。聚类分析就是将对象集合分组为由类似的对象组成 的多个簇的过程。分为3类方法：</p>
+<p>Ipartitioning method(划分方法) 给定1个N个对象或者元组的数据库，1个划分方法构建数据的K个划分，每1个划分表示1个聚簇，并且K&lt;N。经典算法是K-MEAN(K平均值)；</p>
+<p>hierarchical method(层次方法)<br>对给定数据对象集合进行层次的分解，经典算法是BIRTH算法；</p>
+<p>grid based method(基于网格的方法) 这种方法采用一个多分辨率的网格数据结构。将空间量化为有限数目的单元，这些单元形成了网格结构，所有聚类分析都在网格上进行。常用的算法有STING，SkWAVECLUSTER和 CLIQUE；</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>随着数据量的日益积累以及数据库种类的多样化，各种数据挖掘方法作用范围有限，都有局限性，因此采用单一方法难以得到决策所需的各种知识。但它们的有机组合具有互补性，多方法融合将成为数据挖掘算法的发展趋势。</p>
+<h2 id="三、数据挖掘算法实现"><a href="#三、数据挖掘算法实现" class="headerlink" title="三、数据挖掘算法实现"></a>三、数据挖掘算法实现</h2><h3 id="1、相关知识"><a href="#1、相关知识" class="headerlink" title="1、相关知识"></a>1、相关知识</h3><h4 id="1-距离度量：在数据挖掘中需要明确样本数据相似度，通常可以计算样本间的距离，如下为常用距离度量的介绍。"><a href="#1-距离度量：在数据挖掘中需要明确样本数据相似度，通常可以计算样本间的距离，如下为常用距离度量的介绍。" class="headerlink" title="(1)距离度量：在数据挖掘中需要明确样本数据相似度，通常可以计算样本间的距离，如下为常用距离度量的介绍。"></a>(1)距离度量：在数据挖掘中需要明确样本数据相似度，通常可以计算样本间的距离，如下为常用距离度量的介绍。</h4><p>样本数据以：<br><img src="https://user-gold-cdn.xitu.io/2018/9/6/165acaff8aac01cf?w=605&amp;h=362&amp;f=png&amp;s=12159" alt="样本数据"></p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/6/165ad72a029f3d22?w=605&amp;h=362&amp;f=png&amp;s=12159" alt="坐标"></p>
+<p><strong>曼哈顿距离：</strong> 也称曼哈顿街区距离，就如从街区的一个十字路口点到另一个十字路口点的距离，<br>二维空间（多维空间按同理扩展）用公式表示为<br><img src="https://user-gold-cdn.xitu.io/2018/9/6/165af852e320fea3?w=300&amp;h=30&amp;f=png&amp;s=500" alt="img"></p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/6/165af7c0321440e0?w=605&amp;h=356&amp;f=png&amp;s=15230" alt="img"></p>
+<p><strong>欧氏距离</strong>：表示为点到点的距离。二维空间（多维空间按同理扩展）的公式表示为<br><img src="https://user-gold-cdn.xitu.io/2018/9/6/165af8375b661141?w=846&amp;h=99&amp;f=png&amp;s=23089" alt="img"></p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/6/165af84b783a086b?w=596&amp;h=356&amp;f=png&amp;s=15492" alt="img"></p>
+<p><strong>闵可夫斯基距离</strong>：是一组距离方法的概括，当 p=1 既是曼哈顿距离，当 p=2 既是欧氏距离。当p越大，单一维度的差值对整体的影响就越大。<br><img src="https://user-gold-cdn.xitu.io/2018/9/6/165af8eebd55abee?w=155&amp;h=57&amp;f=png&amp;s=2367" alt="img"></p>
+<p>闵可夫斯基距离（包括欧氏距离，曼哈顿距离）的优缺点：</p>
+<p>优点：应用广泛。</p>
+<p>缺点：无法考虑各分量的单位以及各分量分布（方差，期望）的差异性。（其中个分量的单位差异可以使用数据的标准化来消除，下面会有介绍。）</p>
+<p><strong>余弦相关系数</strong>：样本数据视为向量，通过两向量间的夹角余弦值确认相关性，数值范围[-1，1]。 -1表示负相关，0表示无关，1表示正相关。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/7/165b211e1adf40e8?w=353&amp;h=48&amp;f=png&amp;s=3937" alt="img"><br>余弦相关系数的优缺点：</p>
+<p>优点：余弦相似度与向量的幅值无关，只与向量的方向相关，在文档相似度（TF-IDF）和图片相似性（histogram）计算上都有它的身影；<br>而且在样本数值稀疏的时候仍可以使用。</p>
+<p>缺点：余弦相似度受到向量的平移影响，上式如果将 x 平移到 x+1, 余弦值就会改变。(可以理解为受样本的起始标准的影响，接下来介绍的皮尔逊相关系数可以消除这个影响)</p>
+<p><strong>皮尔逊相关系数</strong>：计算出了样本向量间的相关性，数值范围[-1，1]。<br><img src="https://user-gold-cdn.xitu.io/2018/9/7/165b29dfceee4ae8?w=704&amp;h=68&amp;f=png&amp;s=6525" alt="img"></p>
+<p>考虑计算的遍历的次数，有一个替代公式可以近似计算皮尔逊相关系数：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/7/165b2a5756a5a4a3?w=533&amp;h=189&amp;f=png&amp;s=25601" alt="img"></p>
+<p>皮尔逊相关系数优点：可消除每个分量标准不同（分数膨胀）的影响，具有平移不变性和尺度不变性。</p>
+<h4 id="2-数据标准化：参考文章"><a href="#2-数据标准化：参考文章" class="headerlink" title="(2)数据标准化：参考文章"></a>(2)数据标准化：<a href="https://blog.csdn.net/zenghaitao0128/article/details/78361038" target="_blank" rel="noopener">参考文章</a></h4><p>各分量计算距离而各分量的单位尺度差异很大，可以使用数据标准化消除不同分量间单位尺度的影响，，加速模型收敛的效率，常用的方法有三种：</p>
+<p><strong>min-max 标准化</strong>：将数值范围缩放到（0,1）,但没有改变数据分布。max为样本最大值，min为样本最小值。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/7/165b2bdd4a7cd845?w=128&amp;h=62&amp;f=png&amp;s=1391" alt="img"><br><strong>z-score 标准化</strong>：将数值范围缩放到0附近, 经过处理的数据符合标准正态分布。u是平均值，σ是标准差。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/7/165b2bc6bd1995f7?w=95&amp;h=47&amp;f=png&amp;s=1114" alt="img"><br><strong>修正的标准z-score</strong>：修正后可以减少样本数据异常值的影响。将z-score标准化公式中的均值改为中位数，将标准差改为绝对偏差。<br><img src="https://user-gold-cdn.xitu.io/2018/9/13/165d1d0e453e3047?w=173&amp;h=99&amp;f=png&amp;s=5152" alt="img"><br>其中asd绝对偏差：u为中位数，card(x)为样本个数<br><img src="https://user-gold-cdn.xitu.io/2018/9/13/165d19a89ad874e4?w=231&amp;h=75&amp;f=png&amp;s=8321" alt="img"></p>
+<h4 id="3-算法的效果评估："><a href="#3-算法的效果评估：" class="headerlink" title="(3) 算法的效果评估："></a>(3) 算法的效果评估：</h4><p>十折交叉验证：将数据集随机分割成十个等份，每次用9份数据做训练集，1份数据做测试集，如此迭代10次。十折交叉验证的关键在于较平均地分为10份。</p>
+<p>N折交叉验证又称为留一法：用几乎所有的数据进行训练，然后留一个数据进行测试，并迭代每一数据测试。留一法的优点是：确定性。</p>
+<h3 id="2、协同过滤推荐算法"><a href="#2、协同过滤推荐算法" class="headerlink" title="2、协同过滤推荐算法"></a>2、协同过滤推荐算法</h3><h4 id="代码实现、数据集及参考论文-电影推荐——基于用户、物品的协同过滤算法"><a href="#代码实现、数据集及参考论文-电影推荐——基于用户、物品的协同过滤算法" class="headerlink" title="代码实现、数据集及参考论文 电影推荐——基于用户、物品的协同过滤算法"></a>代码实现、数据集及参考论文 <a href="https://github.com/liaoyongyu/datamining/tree/master/recommendation_algorithms" target="_blank" rel="noopener">电影推荐——基于用户、物品的协同过滤算法</a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">示例：</span><br><span class="line">r = Recommendor()</span><br><span class="line"></span><br><span class="line">print(&quot;items base协同推荐 slope one&quot;)</span><br><span class="line">#items base协同推荐算法 Slope one</span><br><span class="line">r.slope_one_recommendation(&apos;lyy&apos;)</span><br><span class="line"></span><br><span class="line">print(&quot;items base协同推荐 cos&quot;)</span><br><span class="line">#items base协同推荐算法  修正余弦相似度 </span><br><span class="line">r.cos_recommendation(&apos;lyy&apos;)</span><br><span class="line"></span><br><span class="line">print(&quot;users base协同推荐&quot;)</span><br><span class="line">#userbase协同推荐算法 </span><br><span class="line">r.user_base_recommendation(&quot;lyy&quot;)</span><br></pre></td></tr></table></figure>
+<h4 id="1-基于用户的协同推荐算法"><a href="#1-基于用户的协同推荐算法" class="headerlink" title="(1)基于用户的协同推荐算法"></a>(1)基于用户的协同推荐算法</h4><p>这个方法是利用相似用户的喜好来进行推荐：如果要推荐一个乐队给你，会查找一个和你类似的用户，然后将他喜欢的乐队推荐给你。</p>
+<p>算法的关键在于找到相似的用户，迭代计算你与每个用户对相同乐队的评分距离，来确定谁是你最相似的用户，距离计算可以用曼哈顿距离，皮尔斯相关系数等等。<br><img src="https://user-gold-cdn.xitu.io/2018/9/7/165b33cfd31f1d8a?w=648&amp;h=257&amp;f=png&amp;s=58602" alt="img"><br>基于用户的协同推荐算法算法的缺点：</p>
+<p>扩展性：随着用户数量的增加，其计算量也会增加。这种算法在只有几千个用户的情况下能够工作得很好，但达到一百万个用户时就会出现瓶颈。稀疏性：大多数推荐系统中，物品的数量要远大于用户的数量，因此用户仅仅对一小部分物品进行了评价，这就造成了数据的稀疏性。比如亚马逊有上百万本书，但用户只评论了很少一部分，于是就很难找到两个相似的用户了。</p>
+<h4 id="2-基于物品的协同推荐算法"><a href="#2-基于物品的协同推荐算法" class="headerlink" title="(2)基于物品的协同推荐算法"></a>(2)基于物品的协同推荐算法</h4><p>基于用户的协同过滤是通过计算用户之间的距离找出最相似的用户（需要将所有的评价数据在读取在内存中处理进行推荐），并将相似用户评价过的物品推荐给目标用户。而基于物品的协同过滤则是找出最相似的物品（通过构建一个物品的相似度模型来做推荐），再结合用户的评价来给出推荐结果。</p>
+<p>基于物品的协同推荐算法常用有如下两种：</p>
+<h4 id="修正余弦相似度算法："><a href="#修正余弦相似度算法：" class="headerlink" title="修正余弦相似度算法："></a>修正余弦相似度算法：</h4><p>以物品的评分作为物品的属性值，通过对比物品i,j的工有的用户相对评分的计算相关性s(i,j)。与皮尔逊相关系数的原理相同，共有用户对物品的每一评分R(u,j)，R(u,i)需要减去该用户评分的平均值R(`u)而消除分数膨胀。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/7/165b4596a0bf0e1f?w=399&amp;h=128&amp;f=png&amp;s=17472" alt="img"><br>修正余弦相似度的优点：通过构建物品模型的方式，扩展性好，占用内存小；消除分数膨胀的影响；</p>
+<p>修正余弦相似度的缺点：稀疏性，需要基于用户的评分数据；</p>
+<h4 id="Slope-One推荐算法："><a href="#Slope-One推荐算法：" class="headerlink" title="Slope One推荐算法："></a>Slope One推荐算法：</h4><p>第一步，计算平均差值：</p>
+<p>dev(i,j)为遍历所有共有物品i，j的共有用户u的评分平均差异。</p>
+<p>card(Sj,i(X))则表示同时评价过物品j和i的用户数。<br><img src="https://user-gold-cdn.xitu.io/2018/9/7/165b456e6ef82636?w=276&amp;h=74&amp;f=png&amp;s=9386" alt="slopeone"></p>
+<p>第二歩，使用加权的Slope One算法：</p>
+<p>PWS1(u)j表示我们将预测用户u对物品j的评分。</p>
+<p>求合集i属于S(u)-j,用户u所含的所有物品i（除了j以外）。</p>
+<p>dev(i,j)为遍历所有共有物品i，j的共有用户u的评分平均差异。</p>
+<p>C(ji)也就是card(Sj,i(X))表示同时评价过物品j和i的用户数。<br><img src="https://user-gold-cdn.xitu.io/2018/9/9/165bd05c5b75f331?w=320&amp;h=116&amp;f=png&amp;s=12784" alt="img"></p>
+<p>Slope One算法优点：算法简单；扩展性好，只需要更新共有属性的用户评价，而不需要重新载入整个数据集。</p>
+<p>Slope One算法的缺点：稀疏性，需要基于用户的评分数据；</p>
+<h3 id="3、分类算法"><a href="#3、分类算法" class="headerlink" title="3、分类算法"></a>3、分类算法</h3><h4 id="1-基于物品特征值的KNN分类算法"><a href="#1-基于物品特征值的KNN分类算法" class="headerlink" title="(1)基于物品特征值的KNN分类算法"></a>(1)基于物品特征值的KNN分类算法</h4><h4 id="代码实现-鸢尾花KNN分类算法"><a href="#代码实现-鸢尾花KNN分类算法" class="headerlink" title="代码实现 鸢尾花KNN分类算法"></a>代码实现 <a href="https://github.com/liaoyongyu/datamining/tree/master/classify/KNN/" target="_blank" rel="noopener">鸢尾花KNN分类算法</a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"></span><br><span class="line"> # KNN算法</span><br><span class="line">    def knn(self, oj_list):</span><br><span class="line">        weight_dict = &#123;&quot;Iris-setosa&quot;:0.0, &quot;Iris-versicolor&quot;:0.0, &quot;Iris-virginica&quot;:0.0&#125;</span><br><span class="line">        for atuple in oj_list:</span><br><span class="line">            weight_dict[atuple[1]] += (1.0 / atuple[0])</span><br><span class="line">        rel_class = [(key, value) for key, value in weight_dict.items()]</span><br><span class="line">        #print(sorted(rel_class, key=lambda x:x[1], reverse=True))</span><br><span class="line">        rel_class = sorted(rel_class, key=lambda x:x[1], reverse=True)[0][0]</span><br><span class="line">        return rel_class</span><br><span class="line">        </span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>前面我们讨论的协同推荐算法需要在用户产生的各种数据上面进行分析，因此也称为社会化过滤算法，而这种算法通常有数据的稀疏性，算法可扩展性以及依赖于用户的数据的缺点，而基于物品特征值分类算法可以改善这些问题。算法分为两步：</p>
+<p>第一步、选取特征值</p>
+<p>算法的关键在于挑取有代表区分意义的特征及分值。以Iris花的示例，选取花萼长度， 花萼宽度，花瓣长度，花瓣宽度特征值。</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/10/165c3bc0f875a4f2?w=468&amp;h=193&amp;f=png&amp;s=13889" alt="img"></p>
+<p>第二歩、计算距离</p>
+<p>比如计算测试集与训练集特征值之间的曼哈顿距离，得到k个最近邻后并通过加权后的结果预测分类。</p>
+<p>KNN分类算法的缺点：无法对分类结果的置信度进行量化；是被动学习的算法，每次测试需要需要遍历所有的训练集后才能分类。</p>
+<h4 id="2-贝叶斯分类算法"><a href="#2-贝叶斯分类算法" class="headerlink" title="(2)贝叶斯分类算法"></a>(2)贝叶斯分类算法</h4><h4 id="代码实现-区分新闻类别朴素贝叶斯分类算法"><a href="#代码实现-区分新闻类别朴素贝叶斯分类算法" class="headerlink" title="代码实现 区分新闻类别朴素贝叶斯分类算法"></a>代码实现 <a href="https://github.com/liaoyongyu/datamining/blob/master/classify/Bayes/" target="_blank" rel="noopener">区分新闻类别朴素贝叶斯分类算法</a></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">def train_data(self):</span><br><span class="line">        #训练组的条件概率</span><br><span class="line">        for word in self.vocabulary:</span><br><span class="line">            for category,value in self.prob.items():</span><br><span class="line">                if word not in self.prob[category]:</span><br><span class="line">                    count = 0</span><br><span class="line">                else :</span><br><span class="line">                    count = self.prob[category][word]</span><br><span class="line">                #优化条件概率公式</span><br><span class="line">                self.prob[category][word] = (count + 1) / (self.total[category] + len(self.vocabulary)) </span><br><span class="line">                </span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>贝叶斯分类算法是基于概率的分类算法。相比于KNN分类算法，它是主动学习的算法，它会根据训练集建立一个模型，并用这个模型对新样本进行分类，速度也会快很多。<br>贝叶斯分类算法的理论基础是基于条件概率的公式（应用于现实中P(X|Y&amp;Z)不直观得出，而P(Y|X)*P(Z|X)比较直观得出），并假设已存在的子事件(y,z…实际应用中会有多个)间是相互独立的（因此也称为朴素贝叶斯），当y，z事件假设为独立便有：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/12/165cb97ac388a376?w=308&amp;h=47&amp;f=png&amp;s=2796" alt="img"><br>如下举例推测买牛奶和有机食品，再会买绿茶的概率：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/13/165d1ff2e5208d1e?w=1546&amp;h=38&amp;f=png&amp;s=11379" alt="img"></p>
+<p>第一步：计算先验概率及条件概率</p>
+<p>先验概率：为单独事件发生的概率，如P(买绿茶)，P(有机食品)</p>
+<p>条件概率（后验概率）：y事件已经发生，观察y数据集后得出x发生的概率。如P(买有机食品|买绿茶)，通过以下公式计算（nc表示y数据集下x的发生频数，n为y数据集的总数）：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/12/165cb8547529dd0e?w=109&amp;h=53&amp;f=png&amp;s=2600" alt="img"><br>上式存在一个缺陷，当一个条件概率 P(y|x)为0时，整体的预测结果P(x) <em>P(y|x)</em> P(z|x)只能为0，这样便不能更全面地预测。</p>
+<p>修正后的条件概率：（公式摘自Tom Mitchell《机器学习》。m是一个常数，表示等效样本大小。决定常数m的方法有很多，我们这里可以使用预测结果的类别来作为m，比如投票有赞成和否决两种类别，所以m就为2。p则是相应的先验概率，比如说赞成概率是0.5，那p(赞成)就是0.5。）：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/12/165cb83cfc13aaf1?w=152&amp;h=60&amp;f=png&amp;s=4167" alt="img"></p>
+<p>第二歩：根据贝叶斯公式做出预测</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/12/165cb98290a241b9?w=308&amp;h=47&amp;f=png&amp;s=2796" alt="img"></p>
+<p>由公式计算比较y&amp;z事件发生下，不同x事件发生的概率差异，如得出P（x=喜欢），P（x=不喜欢） 的概率大小，预测为概率比较大的事件。<br>因为P(y)*p(z)在上式都一样，因此公式可以简化为计算概率最大项而预测分类：<br><img src="https://user-gold-cdn.xitu.io/2018/9/12/165cba5c9f486819?w=308&amp;h=31&amp;f=png&amp;s=2113" alt="img"></p>
+<p>贝叶斯算法的优点：能够给出分类结果的置信度；它是一种主动学习算法，速度更快。</p>
+<p>贝叶斯算法的缺点：需要特定格式；数值型数据需要转换为类别计算概率或用高斯分布计算概率；</p>
+<h4 id="2-逻辑回归分类算法"><a href="#2-逻辑回归分类算法" class="headerlink" title="(2)逻辑回归分类算法"></a>(2)逻辑回归分类算法</h4><h4 id="代码实现-区分猫的图片"><a href="#代码实现-区分猫的图片" class="headerlink" title="代码实现 区分猫的图片"></a>代码实现 <a href="https://github.com/liaoyongyu/datamining/tree/master/classify/NeutralNetwork" target="_blank" rel="noopener">区分猫的图片</a></h4><p>注：逻辑回归分类算法待后续加入网络层，更新为神经网络分类算法。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line"># cost函数，计算梯度</span><br><span class="line">def propagate(w, b, X, Y):</span><br><span class="line">    m = X.shape[1]      </span><br><span class="line">    A = sigmoid(np.dot(w.T, X) + b)            </span><br><span class="line">    cost = -1 / m * np.sum(Y * np.log(A) + (1 - Y) * np.log(1 - A))        </span><br><span class="line">    dw = 1 / m * np.dot(X, (A - Y).T)  </span><br><span class="line">    db = 1 / m * np.sum(A - Y) </span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>逻辑回归分类算法实现了输入特征向量X，而输出Y（范围0~1）预测X的分类。</p>
+<p>第一步，得到关于X线性回归函数</p>
+<p>可以通过线性回归得到WX + b，其中W是权重，b是偏差值。但不能用本式表述预测的值，因为输出Y的值需要在（0~1）区间；</p>
+<p>第二歩，通过激活函数转换</p>
+<p>激活函数的特点是可以将线性函数转换为非线性函数，并且有输出值有限，可微分，单调性的特点。本例使用sigmoid，使输出为预测值Y=sigmoid（WX+b）；</p>
+<p>第三歩，构建Cost函数</p>
+<p>训练W，b更好的预测真实的类别需要构建Cost代价函数，y^为sigmoid(WX+b)的预测分类值，y为实际分类值（0或者1）：</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/12/165cdb16135ada50?w=621&amp;h=73&amp;f=png&amp;s=19581" alt="img"></p>
+<p>其中L(y^,y)称为损失函数<br><img src="https://user-gold-cdn.xitu.io/2018/9/12/165cdba3f27220e1?w=321&amp;h=39&amp;f=png&amp;s=8091" alt="img"><br>训练的目的就是为了让L(y^,y)足够小，也就是当y实际分类值为1时，y^要尽量偏向1。y实际分类值为0时，y^尽量小接近0。</p>
+<p>第四步，梯度下降得到Cost函数的极小值</p>
+<p><img src="https://user-gold-cdn.xitu.io/2018/9/12/165cdc1436948f7a?w=364&amp;h=230&amp;f=png&amp;s=48409" alt="img"><br>通过对W,b两个参数求偏导，不断迭代往下坡的的位置移动（对w，b值往极小值方向做优化，其中α为学习率控制下降的幅度），全局最优解也就是代价函数（成本函数）J (w,b)这个凸函数的极小值点。<br><img src="https://user-gold-cdn.xitu.io/2018/9/12/165cdc3fca61705f?w=275&amp;h=154&amp;f=png&amp;s=10722" alt="img"><br>第五步、通过训练好的W,b预测分类。<br><img src="https://user-gold-cdn.xitu.io/2018/9/12/165cd7df7fd9b48c?w=1036&amp;h=804&amp;f=png&amp;s=175335" alt="img"></p>
+<h3 id="4、聚类算法"><a href="#4、聚类算法" class="headerlink" title="4、聚类算法"></a>4、聚类算法</h3><h4 id="1-层次聚类"><a href="#1-层次聚类" class="headerlink" title="(1)层次聚类"></a>(1)层次聚类</h4><h4 id="代码实现-狗的种类层次聚类"><a href="#代码实现-狗的种类层次聚类" class="headerlink" title="代码实现 狗的种类层次聚类"></a>代码实现 <a href="https://github.com/liaoyongyu/datamining/tree/master/cluster/hierarchical%20method" target="_blank" rel="noopener">狗的种类层次聚类</a></h4><p>层次聚类将每条数据都当作是一个分类，每次迭代的时候合并距离最近的两个分类，直到剩下一个分类为止。</p>
+<h4 id="2-K-means-聚类"><a href="#2-K-means-聚类" class="headerlink" title="(2)K-means++聚类"></a>(2)K-means++聚类</h4><h4 id="代码实现-Kmean-聚类"><a href="#代码实现-Kmean-聚类" class="headerlink" title="代码实现 Kmean++聚类"></a>代码实现 <a href="https://github.com/liaoyongyu/datamining/blob/master/cluster/Ipartitioning%20method/kmeanpp.py" target="_blank" rel="noopener">Kmean++聚类</a></h4><p>注：Kmean算法与Kmean++区别在于初始的中心点是直接随机选取k各点。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">#kmean初始化随机k个中心点</span><br><span class="line">#random.seed(1)</span><br><span class="line">#center = [[self.data[i][r] for i in range(1, len((self.data)))]  </span><br><span class="line">          #for r in random.sample(range(len(self.data)), k)]</span><br><span class="line">    </span><br><span class="line"># Kmean ++ 初始化基于距离份量随机选k个中心点</span><br><span class="line"># 1.随机选择一个点</span><br><span class="line">center = []</span><br><span class="line">center.append(random.choice(range(len(self.data[0]))))</span><br><span class="line"># 2.根据距离的概率选择其他中心点</span><br><span class="line">for i in range(self.k - 1):</span><br><span class="line">    weights = [self.distance_closest(self.data[0][x], center) </span><br><span class="line">             for x in range(len(self.data[0])) if x not in center]</span><br><span class="line">    dp = [x for x in range(len(self.data[0])) if x not in center]</span><br><span class="line">    total = sum(weights)</span><br><span class="line">    #基于距离设定权重</span><br><span class="line">    weights = [weight/total for weight in weights]</span><br><span class="line">    num = random.random()</span><br><span class="line">    x = -1</span><br><span class="line">    i = 0</span><br><span class="line">    while i &lt; num :</span><br><span class="line">        x += 1</span><br><span class="line">        i += weights[x]</span><br><span class="line">    center.append(dp[x])</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+<p>k-means++算法可概括为：</p>
+<p>（1）基于各点到中心点得距离分量，依次随机选取到k个元素作为中心点：<br>先随机选择一个点。重复以下步骤，直到选完k个点。</p>
+<p>计算每个数据点dp(n)到各个中心点的距离（D），选取最小的值D(dp)；<br><img src="https://user-gold-cdn.xitu.io/2018/9/20/165f5eafc5c036a9?w=145&amp;h=202&amp;f=png&amp;s=6769" alt="img"><br>根据D(dp)距离所占的份量来随机选取下一个点作为中心点。<br><img src="https://user-gold-cdn.xitu.io/2018/9/20/165f5eb1eb0f4f7e?w=150&amp;h=233&amp;f=png&amp;s=9001" alt="img"></p>
+<p>（2）根据各点到中心点的距离分类；</p>
+<p>（3）计算各个分类新的中心点。<br>重复(2、3)，直至满足条件。</p>
+<p>原文转自 <a href="https://segmentfault.com/a/1190000017808525" target="_blank" rel="noopener">https://segmentfault.com/a/1190000017808525</a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="OceanEyes.GZY 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="OceanEyes.GZY 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Python3/" rel="tag"><i class="fa fa-tag"> Python3</i></a>
+          
+            <a href="/tags/Data-Mining/" rel="tag"><i class="fa fa-tag"> Data Mining</i></a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/01/Data Management Platform 数据管理平台/" rel="next" title="Data Management Platform 数据管理平台简介">
+                <i class="fa fa-chevron-left"></i> Data Management Platform 数据管理平台简介
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MjAzMS8xODU3OA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="OceanEyes.GZY">
+            
+              <p class="site-author-name" itemprop="name">OceanEyes.GZY</p>
+              <p class="site-description motion-element" itemprop="description">This is MyBlog Notes.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/OcaenEyes" title="GitHub &rarr; https://github.com/OcaenEyes" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="mailto:oceaneyes_gzy@163.com" title="E-Mail &rarr; mailto:oceaneyes_gzy@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/gzy1450136519" title="Weibo &rarr; https://weibo.com/gzy1450136519" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/Y_Silhouette" title="Twitter &rarr; https://twitter.com/Y_Silhouette" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://stackoverflow.com/users/10850977/ysilhouette" title="StackOverflow &rarr; https://stackoverflow.com/users/10850977/ysilhouette" rel="noopener" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://www.instagram.com/ocean.gzy" title="Instagram &rarr; https://www.instagram.com/ocean.gzy" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、数据挖掘过程"><span class="nav-number">1.</span> <span class="nav-text">一、数据挖掘过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、数据挖掘常用算法简介"><span class="nav-number">2.</span> <span class="nav-text">二、数据挖掘常用算法简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-关联分析算法"><span class="nav-number">2.1.</span> <span class="nav-text">1.关联分析算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-分类算法"><span class="nav-number">2.2.</span> <span class="nav-text">2.分类算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-聚类算法"><span class="nav-number">2.3.</span> <span class="nav-text">3.聚类算法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#小结"><span class="nav-number">2.4.</span> <span class="nav-text">小结</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、数据挖掘算法实现"><span class="nav-number">3.</span> <span class="nav-text">三、数据挖掘算法实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、相关知识"><span class="nav-number">3.1.</span> <span class="nav-text">1、相关知识</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-距离度量：在数据挖掘中需要明确样本数据相似度，通常可以计算样本间的距离，如下为常用距离度量的介绍。"><span class="nav-number">3.1.1.</span> <span class="nav-text">(1)距离度量：在数据挖掘中需要明确样本数据相似度，通常可以计算样本间的距离，如下为常用距离度量的介绍。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-数据标准化：参考文章"><span class="nav-number">3.1.2.</span> <span class="nav-text">(2)数据标准化：参考文章</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-算法的效果评估："><span class="nav-number">3.1.3.</span> <span class="nav-text">(3) 算法的效果评估：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、协同过滤推荐算法"><span class="nav-number">3.2.</span> <span class="nav-text">2、协同过滤推荐算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现、数据集及参考论文-电影推荐——基于用户、物品的协同过滤算法"><span class="nav-number">3.2.1.</span> <span class="nav-text">代码实现、数据集及参考论文 电影推荐——基于用户、物品的协同过滤算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-基于用户的协同推荐算法"><span class="nav-number">3.2.2.</span> <span class="nav-text">(1)基于用户的协同推荐算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-基于物品的协同推荐算法"><span class="nav-number">3.2.3.</span> <span class="nav-text">(2)基于物品的协同推荐算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#修正余弦相似度算法："><span class="nav-number">3.2.4.</span> <span class="nav-text">修正余弦相似度算法：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Slope-One推荐算法："><span class="nav-number">3.2.5.</span> <span class="nav-text">Slope One推荐算法：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、分类算法"><span class="nav-number">3.3.</span> <span class="nav-text">3、分类算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-基于物品特征值的KNN分类算法"><span class="nav-number">3.3.1.</span> <span class="nav-text">(1)基于物品特征值的KNN分类算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现-鸢尾花KNN分类算法"><span class="nav-number">3.3.2.</span> <span class="nav-text">代码实现 鸢尾花KNN分类算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-贝叶斯分类算法"><span class="nav-number">3.3.3.</span> <span class="nav-text">(2)贝叶斯分类算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现-区分新闻类别朴素贝叶斯分类算法"><span class="nav-number">3.3.4.</span> <span class="nav-text">代码实现 区分新闻类别朴素贝叶斯分类算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-逻辑回归分类算法"><span class="nav-number">3.3.5.</span> <span class="nav-text">(2)逻辑回归分类算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现-区分猫的图片"><span class="nav-number">3.3.6.</span> <span class="nav-text">代码实现 区分猫的图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、聚类算法"><span class="nav-number">3.4.</span> <span class="nav-text">4、聚类算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-层次聚类"><span class="nav-number">3.4.1.</span> <span class="nav-text">(1)层次聚类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现-狗的种类层次聚类"><span class="nav-number">3.4.2.</span> <span class="nav-text">代码实现 狗的种类层次聚类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-K-means-聚类"><span class="nav-number">3.4.3.</span> <span class="nav-text">(2)K-means++聚类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现-Kmean-聚类"><span class="nav-number">3.4.4.</span> <span class="nav-text">代码实现 Kmean++聚类</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">OceanEyes.GZY</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.7.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+  
+    <script>
+  window.livereOptions = {
+    refer: '2019/01/04/Python数据挖掘——概要/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+  
+
+
+
+
+
+  
+
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+        // ref: https://github.com/ForbesLindesay/unescape-html
+        var unescapeHtml = function(html) {
+          return String(html)
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, '\'')
+            .replace(/&#x3A;/g, ':')
+            // replace all the other &#x; chars
+            .replace(/&#(\d+);/g, function (m, p) { return String.fromCharCode(p); })
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&amp;/g, '&');
+        };
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                content = unescapeHtml(content);
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+
