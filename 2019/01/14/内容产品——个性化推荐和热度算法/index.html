@@ -106,7 +106,13 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210593928-b2cc24d5-5f9a-4e13-8f27-a1b84de07e10.png">
 <meta property="og:image" content="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210701999-d31971f0-a790-49a2-94ec-8340e6e8b377.png">
-<meta property="og:updated_time" content="2019-01-15T12:12:16.000Z">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210840538-f319a86b-236b-40e6-8625-7cab674fd83a.png">
+<meta property="og:image" content="http://oceaneyes.top/Users/gaozhiyong/Library/Application%20Support/typora-user-images/image-20190117100504112.png">
+<meta property="og:image" content="http://oceaneyes.top/Users/gaozhiyong/Library/Application%20Support/typora-user-images/image-20190117101005933.png">
+<meta property="og:image" content="http://oceaneyes.top/Users/gaozhiyong/Library/Application%20Support/typora-user-images/image-20190117133645188.png">
+<meta property="og:image" content="http://oceaneyes.top/Users/gaozhiyong/Library/Application%20Support/typora-user-images/image-20190117133715263.png">
+<meta property="og:image" content="http://oceaneyes.top/Users/gaozhiyong/Library/Application%20Support/typora-user-images/image-20190117133658566.png">
+<meta property="og:updated_time" content="2019-01-17T05:43:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="内容类产品——个性化推荐和热度算法">
 <meta name="twitter:description" content="1 初期阶段​    个性化推荐不是产品首次发布就能自带的。无论是基于用户行为的个性化，还是基于内容相似度的个性化，都建立在大量的用户数和内容的基础上。 ​    产品发布之初，一般两遍的数据都有残缺，因此个性化推荐并不能完整开展。 ​    故，产品发展初期 推荐内容一般采用更加聚合的“热度算法”，把热点的内容有限推荐给用户；虽无法做到基于兴趣和习惯为每一个用户做到准确化推荐，但能覆盖到大部分用">
@@ -437,7 +443,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-15 20:12:16" itemprop="dateModified" datetime="2019-01-15T20:12:16+08:00">2019-01-15</time>
+                <time title="修改时间：2019-01-17 13:43:50" itemprop="dateModified" datetime="2019-01-17T13:43:50+08:00">2019-01-17</time>
               
             
           </span>
@@ -553,13 +559,96 @@
 <ul>
 <li>分词<ul>
 <li>正常词库：把内容拆解为词语的标准</li>
-<li>停用词库：分词过程中需要首先去掉的内容</li>
 </ul>
 </li>
 </ul>
-<p>​    </p>
-<p>​    </p>
-<p>未完待续。。。。。。。。</p>
+<p>停用词 主要是没有实际含义的，如“the” “that” “are”之类的助词，如”behind” “under” 之类的介词， 以及很多常用的高频但没有偏向性的动词”think” “give”;</p>
+<ul>
+<li>停用词库：分词过程中需要首先去掉的内容</li>
+</ul>
+<p>分词之前剔除停用词，对剩下的标准词库进行拆词，拆词方法包含正向匹配拆分，逆向匹配拆分，最少切分等常用算法</p>
+<p>由于网络热词的频出，标准词库和停用词库也需要随之不断更新维护。</p>
+<h4 id="3-1-2-关键词指标"><a href="#3-1-2-关键词指标" class="headerlink" title="3.1.2 关键词指标"></a>3.1.2 关键词指标</h4><ul>
+<li>关键词重合度</li>
+<li>新闻（内容）内频率，TF（Term Frequency）<ul>
+<li>衡量每个关键词在新闻（内容）里面是否高频</li>
+</ul>
+</li>
+<li>关键词在所有文档内出现的频率相反值，IDF（Inverse Document Frequency）<ul>
+<li>如果一个关键词在某条新闻内出现的频率最大，在所有文档内出现频率小，则该关键词对这条新闻的特征标识作用越大</li>
+</ul>
+</li>
+</ul>
+<p><strong>TF-IDF模型</strong></p>
+<p>每个关键词对新闻的作用衡量：     <strong>TFIDF = TF * IDF</strong></p>
+<h4 id="3-1-3-相关性算法"><a href="#3-1-3-相关性算法" class="headerlink" title="3.1.3 相关性算法"></a>3.1.3 相关性算法</h4><p>每一份新闻（内容）的特征，即可用关键词的集合来标识：</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210840538-f319a86b-236b-40e6-8625-7cab674fd83a.png" alt="img"></p>
+<p>其中word0，1，2……n是新闻的所有关键词，tfidf0，1，2……n则是每个关键词的tfidf值</p>
+<p>相关性计算：</p>
+<p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20190117100504112.png" alt="image-20190117100504112"></p>
+<h4 id="3-1-4-用户特征"><a href="#3-1-4-用户特征" class="headerlink" title="3.1.4 用户特征"></a>3.1.4 用户特征</h4><p>通过用户行为来获得，用户通过阅读、点赞、评论、分享来表达对新闻（内容）的喜爱；</p>
+<p> 对用户的各种行为赋予一定的“喜爱分”，例如阅读1分，点赞2分，评论5分等；</p>
+<p>新闻（内容）特征 与用户行为分结合，即可得到用户的特征分。</p>
+<p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20190117101005933.png" alt="image-20190117101005933"></p>
+<p>随着用户阅读的新闻（内容）越来越多，该用户的标签也越来越多，并且越发精准；</p>
+<p>当我们拿到新闻（内容）的特征后，就能与用户的关键词列表做匹配，得出用户阅读特征的匹配度，做出个性推荐。</p>
+<h4 id="3-1-5-其他运用"><a href="#3-1-5-其他运用" class="headerlink" title="3.1.5 其他运用"></a>3.1.5 其他运用</h4><p>除了个性推荐，基于内容的相关性，可精准的给出一篇相关推荐列表；</p>
+<h4 id="3-1-6-优缺点"><a href="#3-1-6-优缺点" class="headerlink" title="3.1.6 优缺点"></a>3.1.6 优缺点</h4><ul>
+<li><p>优点</p>
+<ul>
+<li><p>对用户数量没有要求，与日活无关，个性化推荐的早期一般可采用此方式；</p>
+</li>
+<li><p>每个用户特征是由自己行为决定的，独立存在，不会相互干扰， 恶意刷阅读内容不会营销到推荐算法；</p>
+</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li>确定性太强，推荐内容均由用户历史访问决定，无法挖掘用户潜在兴趣</li>
+<li>基于内容的推荐一般与其他推荐算法同时存在</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2-基于用户的协同推荐"><a href="#3-2-基于用户的协同推荐" class="headerlink" title="3.2 基于用户的协同推荐"></a>3.2 基于用户的协同推荐</h3><p>当具备内容协同过滤推荐后，推给用户的内容均为基于他们的阅读习惯来推荐，没能给用户“不期而遇”的感觉。</p>
+<p>则，需要开始实现基于用户的协同过滤。</p>
+<ul>
+<li>基于用户协同过滤推荐算法：</li>
+</ul>
+<p>​    依据用户A的阅读喜好，为A找到与他兴趣最接近的群体； 即“人以群分”，把这个群体内其他人喜欢的，但A未阅读的推荐给A</p>
+<h4 id="3-2-1-用户群体划分"><a href="#3-2-1-用户群体划分" class="headerlink" title="3.2.1 用户群体划分"></a>3.2.1 用户群体划分</h4><h5 id="3-2-1-1-外部数据借用"><a href="#3-2-1-1-外部数据借用" class="headerlink" title="3.2.1.1 外部数据借用"></a>3.2.1.1 外部数据借用</h5><p>​    使用第三方账户授权进入的，往往会包括性别、年龄、工作、甚至社交关系等</p>
+<h5 id="3-2-1-2-产品内主动询问"><a href="#3-2-1-2-产品内主动询问" class="headerlink" title="3.2.1.2 产品内主动询问"></a>3.2.1.2 产品内主动询问</h5><p>​    产品首次启动时的弹窗询问，“职业” “性别”  对内容的冷启动提供帮助， 但性价比偏低</p>
+<h5 id="3-2-1-3-对比用户特征"><a href="#3-2-1-3-对比用户特征" class="headerlink" title="3.2.1.3 对比用户特征"></a>3.2.1.3 对比用户特征</h5><p>​    从内容的特征+用户的阅读数据 来得到用户特征，通过用户特征的相似性来划分群体</p>
+<h4 id="3-2-2-内容推荐实施"><a href="#3-2-2-内容推荐实施" class="headerlink" title="3.2.2 内容推荐实施"></a>3.2.2 内容推荐实施</h4><p>A B C D E 5个用户</p>
+<p>​    阅读  1分，</p>
+<p>​    赞   2分，</p>
+<p>​    收藏   3分，</p>
+<p>​    评论   4分，</p>
+<p>​    分享    5分</p>
+<p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20190117133645188.png" alt="image-20190117133645188"></p>
+<p>各个用户的特征向量：</p>
+<p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20190117133715263.png" alt="image-20190117133715263"></p>
+<p>多维向量的距离需要通过欧几里得距离公式来计算，数值越小，向量距离约接近。</p>
+<p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20190117133658566.png" alt="image-20190117133658566"></p>
+<h4 id="3-2-3-内容选取"><a href="#3-2-3-内容选取" class="headerlink" title="3.2.3 内容选取"></a>3.2.3 内容选取</h4><p>假设用户X在系统归属于群体A，这个群体有n个用户，分别为A0，A1，A2……An，这些用户的集合用S(X,n)表示。</p>
+<ol>
+<li>首先，我们需要把集合中所有用户交互过（阅读，评论等）的新闻提取出来；</li>
+<li>需要剔除掉用户X已经看过的新闻，这些就不用再推荐了，剩下的新闻集合有m条，用N(X,m)来表示；</li>
+<li>对余下的新闻进行评分和相似度加权的计算，计算包括两部分，一是用户X与S(X,n) 每一个用户的相似性，二是每个用户对新闻集N(X,m)中每条新闻的喜好，这样就能得到每条新闻相对于用户X的最终得分；</li>
+<li>将N(X,m)中的新闻列表按照得分高低的顺序推荐给用户。</li>
+</ol>
+<h4 id="3-2-4-优缺点"><a href="#3-2-4-优缺点" class="headerlink" title="3.2.4 优缺点"></a>3.2.4 优缺点</h4><ul>
+<li>优点<ul>
+<li>对分词算法的精确度无较强的要求</li>
+<li>基于用户的行为数据去不断学习和完善</li>
+<li>能发现用户潜在阅读兴趣，能“制造惊喜”</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>启动门槛高，用户量不够时几乎无法开展；</li>
+<li>学习量不够时，推荐结果较差</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -627,8 +716,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/14/怎样进行产品提案？/" rel="next" title="怎样进行产品提案？">
-                <i class="fa fa-chevron-left"></i> 怎样进行产品提案？
+              <a href="/2019/01/06/用户体验地图/" rel="next" title="用户体验地图">
+                <i class="fa fa-chevron-left"></i> 用户体验地图
               </a>
             
           </div>
@@ -636,6 +725,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/14/怎样进行产品提案？/" rel="prev" title="怎样进行产品提案？">
+                怎样进行产品提案？ <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -884,7 +977,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-初期阶段"><span class="nav-number">1.</span> <span class="nav-text">1 初期阶段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-热度算法"><span class="nav-number">2.</span> <span class="nav-text">2 热度算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-热度算法基本原理"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 热度算法基本原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-初始热度需要不一致"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 初始热度需要不一致</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-用户行为分规则不是固定不变的"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 用户行为分规则不是固定不变的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-热度随时间的衰减不是线性的"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 热度随时间的衰减不是线性的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-其它影响因素"><span class="nav-number">2.5.</span> <span class="nav-text">2.5 其它影响因素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-个性化推荐"><span class="nav-number">3.</span> <span class="nav-text">3 个性化推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-基于内容的推荐算法"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 基于内容的推荐算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-1-分词"><span class="nav-number">3.1.1.</span> <span class="nav-text">3.1.1 分词</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-初期阶段"><span class="nav-number">1.</span> <span class="nav-text">1 初期阶段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-热度算法"><span class="nav-number">2.</span> <span class="nav-text">2 热度算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-热度算法基本原理"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 热度算法基本原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-初始热度需要不一致"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 初始热度需要不一致</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-用户行为分规则不是固定不变的"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 用户行为分规则不是固定不变的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-热度随时间的衰减不是线性的"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 热度随时间的衰减不是线性的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-其它影响因素"><span class="nav-number">2.5.</span> <span class="nav-text">2.5 其它影响因素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-个性化推荐"><span class="nav-number">3.</span> <span class="nav-text">3 个性化推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-基于内容的推荐算法"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 基于内容的推荐算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-1-分词"><span class="nav-number">3.1.1.</span> <span class="nav-text">3.1.1 分词</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-2-关键词指标"><span class="nav-number">3.1.2.</span> <span class="nav-text">3.1.2 关键词指标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-3-相关性算法"><span class="nav-number">3.1.3.</span> <span class="nav-text">3.1.3 相关性算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-4-用户特征"><span class="nav-number">3.1.4.</span> <span class="nav-text">3.1.4 用户特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-5-其他运用"><span class="nav-number">3.1.5.</span> <span class="nav-text">3.1.5 其他运用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-6-优缺点"><span class="nav-number">3.1.6.</span> <span class="nav-text">3.1.6 优缺点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-基于用户的协同推荐"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 基于用户的协同推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-1-用户群体划分"><span class="nav-number">3.2.1.</span> <span class="nav-text">3.2.1 用户群体划分</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1-1-外部数据借用"><span class="nav-number">3.2.1.1.</span> <span class="nav-text">3.2.1.1 外部数据借用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1-2-产品内主动询问"><span class="nav-number">3.2.1.2.</span> <span class="nav-text">3.2.1.2 产品内主动询问</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1-3-对比用户特征"><span class="nav-number">3.2.1.3.</span> <span class="nav-text">3.2.1.3 对比用户特征</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-2-内容推荐实施"><span class="nav-number">3.2.2.</span> <span class="nav-text">3.2.2 内容推荐实施</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-3-内容选取"><span class="nav-number">3.2.3.</span> <span class="nav-text">3.2.3 内容选取</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-4-优缺点"><span class="nav-number">3.2.4.</span> <span class="nav-text">3.2.4 优缺点</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
