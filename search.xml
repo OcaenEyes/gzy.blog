@@ -6,7 +6,7 @@
     <content type="text"><![CDATA[直播基础知识 直播基础知识 直播为什么火 基础条件成熟 4G+wifi 软硬件水平提升 游戏行业的培养 弹幕文化 实时互动 文字 图片 视频 人性的驱动 窥探欲 炫耀 虚荣 色 直播的特点 点播 视频网站看电视剧 文件存在服务器上 指定节目播放 直播 直播网站看主播 数据实时发送 内容可以更改 直播的流程 推流端 采集 8000*216*0.02 = bit /8 = byte 音频采集 采样率 模拟信号 转化为 数字的过程 越大 音频质量越高 例如 8kHz 位宽 一般8位 例如 16bit 声道数 单/双 例如：双 音频帧 2.5ms-60ms 约为一帧 例如20ms 图像采集 分辨率 长*宽 采样频率 采集格式 传输通道 采集源 摄像头 屏幕录制 文件推流 android采集 setPreviewCallback MediaRecorder 机型适配 ios采集 AVFoundation.framework pc采集 mjpeg-streamer 摄像头 前处理 视频处理 美颜 美白——算法识别皮肤轮廓，调整色值 磨皮——模糊处理 均值模糊、高斯模糊、中值模糊 滤镜 GPUImage 水印 图像与水印图片的合并 音频处理 混音 伴奏 音频信号的叠加，采样值溢出的处理 降噪 20Hz - 2000Hz 傅里叶变换、滤波法 特效 变声 改变音色、色调， SoundTouch 编码 必要性 压缩数据 减少传输时间 编码原理 空间冗余 相邻元素之间的相关性 时间冗余 相邻图像之间的内容相似 编码冗余 像素值出现的概率不同 视觉冗余 视觉对细节的不敏感性 H264 编码 NALU:网络提取层单元 SPS：包括了一个图像序列的所有信息 PPS：包含了一个图像序列所有片的信息 I帧：帧内编码帧 P帧：前向预测编码帧 B帧：双向预测编码帧 AAC 音频 FLV，TS封装格式 推流 推流协议 RTMP 优点 CDN支持良好 协议简单易实现 缺点 基于TCP，传输成本高 不支持浏览器推送 Adobe私有协议 WebRTC W3C标准 基于udp CDN支持较差 UDP自定义协议 定制化空间大 协议私有化 开发成本高 CDN支持不太好 推流优化思路 保证音频的传输 调整码率、FPS、分辨率 减少传输的数据 服务端 转码 适应不同网络带宽 适应不同终端处理 适应不同的用户需求 为直播平台提供增值服务 直播为实时转码，对图像计算要求较高，保证音画同步 录制 截图 制作封面 鉴黄 播放端 拉流 HTTP-FLV 即时性较高，互动性需求 HLS 回放需求，跨平台需求 RTMP 即时性较高，互动性需求 解码 编码的逆过程 从音频数据提取原始数据 硬解码 速度快 不易发热 软解码 渲染 视频画面的显示 声音的播放 音画一致 互动系统 聊天 弹幕 礼物 平台收入来源 增加画面感，提高互动效果 自定义消息 关注 点赞 直播开发的辅助工具 推流端OBS Studio 播放端 CUTV测试工具 流信息展示丰富 可设置缓冲时间 网页版 softe AAC Converter 转化为aac音频 H264BSAnalyzer 分析H264视频格式 FlvParse -分析FLV yuvplayer -播放yuv文件]]></content>
       <categories>
         <category>产品</category>
-        <category>内容</category>
+        <category>内容产品</category>
         <category>直播</category>
       </categories>
       <tags>
@@ -21,6 +21,7 @@
       <categories>
         <category>产品</category>
         <category>内容产品</category>
+        <category>推荐</category>
       </categories>
       <tags>
         <tag>Algorithm</tag>
