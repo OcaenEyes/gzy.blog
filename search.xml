@@ -232,6 +232,20 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[iOS开发基础]]></title>
+    <url>%2F2017%2F11%2F06%2FiOS%E5%BC%80%E5%8F%91%E5%9F%BA%E7%A1%80%2F</url>
+    <content type="text"><![CDATA[iOS开发基础 基础UI组件 UILabel UIButton UIView UIWindow UIViewVontroller 定时器和视图移动 UISwitch UISlider UIProgressView 步进器和分栏控件 UITextField UIScrollView UITouch UIGesture手势 XIB控件 高级UI组件 手动布局子视图 自动布局子视图 事件响应链 导航控制器 基础 切换 导航栏和工具栏 分栏控制器 基础 高级 UIPickerView NSUserDefults 多界面传值 UITableView 基础 dataSource 数据代理对象 delegate 普通代理对象 numberOfSectionsInTableView 获得组数协议 numberOfRowsInSection 获得行数协议 cellForRowAtIndexPath 创建单元格协议 协议 heightFOrRowAtIndexPath : 获取单元格高度协议 heightForHeaderInSection :数据视图头部高度协议 heightForFooterInSection :数据视图尾部高度协议 titleForFooterInSection :获取数据视图尾部标题协议 titleForHeaderInSection:数据视图头部标题协议 高级协议 commitEditingStyle :提交编辑函数 canEditRowAtIndexPath :开启关闭编辑单元格 editingStyleForRowAtIndexPath :编辑单元格风格设定 didSelectRowAtIndexPath :选中单元格响应协议 didDeselectRowAtIndexPath :反选单元格响应协议 单元格 UITableViewCell :数据视图单元格类型 UITableViewCellEditingStyleDelete :删除状态 UITableViewCellEditingStyleInsert :插入状态 UITableViewCellEditingStyleNone: 没有状态 UITableViewCellEditingStyleDelete || UITableViewCellEditingStyleInsert :多选状态 dequeueReusableCellWithIdentifier : 获取可以复用的单元格对象 initWithStyle : 根据风格创建单元格 reuseIdentifier : 设置可以复用单元格的ID 数据存储 iOS json文件处理 json文件格式（javaScript Object Notation）轻量级的数据交换格式 json语法规则 key:value 键值对 花括号保存对象（dict） 方括号保存数组（array） json数据解析 SBJsonPaser : JSON数据解析类 objectWithString:jsonString : 解析字符串数据 NSJSONSerialization : iOS JSON 解析类 JSONObjectWithData : 通过二进制解析数据 iOS XML文件处理 XML文件格式 网络编程 NSURLConnection网络连接 NSURLRequest 创建请求对象 NSURLConnect 网络连接对象 didFailWithError 错误处理协议 didReceiveData 获取数据协议 connectionDidFinishLoading 加载数据完成协议 NSThread多线程 基本概念 实现并发操作 线程池加锁，解锁 initWithTarget : 创建线程 detachNewThreadSelector :类方法创建并启动线程 lock ：线程加锁 unlock :线程解锁 sleepForTimeInterval :线程休眠 NSOperation AFNetmork网络库 多媒体基础 音频播放 视频播放 SDWebImage 动画 UIView动画基础 setAnimationDelegate : 设置动画代理对象 setAnimationDuration :设施动画时间长度 setAnimationDelay :设置动画开始时长 setAnimationWillStartSelector : 设置动画开始处理函数 setAnimationDidStopSelector : 设置动画结束处理函数 导航控制器动画 CATransition :动画对象 duration : 设置动画长度 type : 设置动画类型 timingFunction : 设置动画运动类型 subtype : 设置动画子类型 高级动画 HMGLTransitionManager : 动画管理器对象 DoorsTransition : 动画类型对象 setTransition : 设置动画类型 beginTransition : 设置动画开始运动 commitTransition : 提交启动动画 第三方框架库 cocoapods 项目管理工具]]></content>
+      <categories>
+        <category>移动开发</category>
+        <category>Native</category>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>iOS</tag>
+        <tag>Navtive</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[电商产品网站成交总额]]></title>
     <url>%2F2016%2F07%2F20%2F%E7%94%B5%E5%95%86%E4%BA%A7%E5%93%81%E7%BD%91%E7%AB%99%E6%88%90%E4%BA%A4%E6%80%BB%E9%A2%9D%2F</url>
     <content type="text"><![CDATA[电商产品网站成交总额 用户数 访客数 自然流量 营销流量 转化率 目的一 拉新 品牌认知 转入 购买考虑 实现 转出 目的二 促进复购 购买尝试 复购 沉睡 流失 多次购买 复购 沉睡 流失 忠诚用户 复购 沉睡 流失 目的三 推荐代购 客单价 产品单价 前台价格 智慧定价 优惠价格 促销建议 关联产品数 套装促销 商品关联度 商品热度]]></content>
