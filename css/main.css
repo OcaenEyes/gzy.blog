@@ -2013,7 +2013,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3cbbff;
+  background: #65da99;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3129,10 +3129,4 @@ ul.breadcrumb li+li:last-child {
 }
 body {
   background-image: url("/images/bg.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-}
-#footer a {
-  color: #eee;
 }
