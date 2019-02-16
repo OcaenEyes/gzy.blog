@@ -113,6 +113,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[php学习--变量和数据类型]]></title>
+    <url>%2F2018%2F12%2F20%2Fphp%E5%AD%A6%E4%B9%A0--%E5%8F%98%E9%87%8F%E5%92%8C%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+        <tag>后端服务</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[推荐算法理论与实践（一）]]></title>
     <url>%2F2018%2F12%2F20%2F%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89%2F</url>
     <content type="text"><![CDATA[电影推荐系统原理基于内容的推荐系统]]></content>
@@ -124,6 +136,30 @@
         <tag>Machine Learning</tag>
         <tag>推荐算法</tag>
         <tag>产品</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title></title>
+    <url>%2F2018%2F12%2F20%2Fphp%E5%AD%A6%E4%B9%A0--%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[PHP基础语法PHP 文档结构 文件扩展名.php 文件名不要使用中文，不要包含特殊字符 PHP 标记 标准风格 &lt;?php 代码片段 ?&gt; 注意：文档中如果不只有 php代码的时候， 开始标记&lt;? , 结束标记 ?&gt;，必须成对出现 注意：文档中如果只有 php代码的时候， 结束标记 ?&gt; 需要省略掉 短风格 &lt;? 代码片段 ?&gt; 需要配置PHP配置文件， pho.ini中的 short_open_tag=On,重启Apache服务器 ASP风格 &lt;% 代码片段 %&gt; 需要配置PHP配置文件， pho.ini中的 asp_tag=On,重启Apache服务器 PHP文档的组成 PHP代码 HTML CSS JS/Jquery PHP语法规则 php代码必须以英文分号 : 结尾 PHP注释 注释作用 注释的分类 单行注释 “ //注释内容 ” c++风格 “ #注释内容 ” shell风格 多行注释 “ / 注释内容 / ” PHP常见错误 Parse error（解析错误） syntax error （语法错误），unexpected ‘&lt;’ PHP工作原理 PHP环境搭建LAMP​ Linux + Apache + MySQL + PHP LNMP​ Linux + Nginx+ MySQL + PHP LNMPA​ Linux + Nginx+ MySQL + PHP + Apache WAMP​ Windows + Apache + MySQL + PHP 集成环境 wampserver xampp phpstudy ###]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+        <tag>后端服务</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[php学习--序言]]></title>
+    <url>%2F2018%2F12%2F20%2Fphp%E5%AD%A6%E4%B9%A0--%E5%BA%8F%E8%A8%80%2F</url>
+    <content type="text"><![CDATA[PHP（超文本预处理器） 百度百科定义： ​ PHP（外文名:PHP: Hypertext Preprocessor，中文名：“超文本预处理器”）是一种通用开源脚本语言。语法吸收了C语言、Java和Perl的特点，利于学习，使用广泛，主要适用于Web开发领域。PHP 独特的语法混合了C、Java、Perl以及PHP自创的语法。它可以比CGI或者Perl更快速地执行动态网页。 特性PHP的特性包括： PHP 独特的语法混合了 C、Java、Perl 以及 PHP 自创新的语法。 PHP可以比CGI或者Perl更快速的执行动态网页——动态页面方面，与其他的编程语言相比， PHP是将程序嵌入到HTML文档中去执行，执行效率比完全生成htmL标记的CGI要高许多； PHP具有非常强大的功能，所有的CGI的功能PHP都能实现。 PHP支持几乎所有流行的数据库以及操作系统。 最重要的是PHP可以用C、C++进行程序的扩展！ 优势开放源代码​ 所有的PHP源代码事实上都可以得到。 免费性​ 和其它技术相比，PHP本身免费且是开源代码。 快捷性​ 程序开发快，运行快，技术本身学习快。嵌入于HTML：因为PHP可以被嵌入于HTML语言，它相对于其他语言。编辑简单，实用性强，更适合初学者。 跨平台性强​ 由于PHP是运行在服务器端的脚本，可以运行在UNIX、LINUX、WINDOWS、Mac OS、Android等平台 效率高​ PHP消耗相当少的系统资源。 图像处理​ 用PHP动态创建图像,PHP图像处理默认使用GD2。且也可以配置为使用image magick进行图像处理。 面向对象​ 在php4,php5 中，面向对象方面都有了很大的改进，php完全可以用来开发大型商业程序。 专业专注​ PHP支持脚本语言为主，同为类C语言。 技术应用 伪静态 静态页面生成 数据库缓存 过程缓存 div+cssw3c标准 大负荷 分布式 flex 桌面程序应用（不擅长） 支持MVC模型 Smarty模版引擎]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+        <tag>后端服务</tag>
       </tags>
   </entry>
   <entry>
