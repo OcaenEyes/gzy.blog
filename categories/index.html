@@ -11,6 +11,8 @@
 
 
 
+
+
   
 
 
@@ -96,17 +98,14 @@
 
 
 
-  <meta name="description" content="This is MyBlog Notes.">
-<meta property="og:type" content="website">
+  <meta property="og:type" content="website">
 <meta property="og:title" content="我的分类">
 <meta property="og:url" content="http://oceaneyes.top/categories/index.html">
 <meta property="og:site_name" content="乔克叔叔杂货店">
-<meta property="og:description" content="This is MyBlog Notes.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-01-07T13:47:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的分类">
-<meta name="twitter:description" content="This is MyBlog Notes.">
 
 
 
@@ -166,6 +165,34 @@
 </head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+   
+  import 'APlayer/dist/APlayer.min.css';
+  import APlayer from 'APlayer';
+  const ap = new APlayer({
+    container: document.getElementById('player'),
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    audio: [
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg',
+            lrc: 'lrc1.lrc',
+            theme: '#ebd0c2'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#46718b'
+        }
+    ]
+  });
+
 
   
   

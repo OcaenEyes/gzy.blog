@@ -11,6 +11,8 @@
 
 
 
+
+
   
 
 
@@ -165,6 +167,34 @@
 </head>
 
 <body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+   
+  import 'APlayer/dist/APlayer.min.css';
+  import APlayer from 'APlayer';
+  const ap = new APlayer({
+    container: document.getElementById('player'),
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    audio: [
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg',
+            lrc: 'lrc1.lrc',
+            theme: '#ebd0c2'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#46718b'
+        }
+    ]
+  });
+
 
   
   
@@ -449,9 +479,9 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/2018/11/30/深度学习笔记——线性回归/" itemprop="url">
+          <a class="post-title-link" href="/2018/11/30/深度学习笔记——线形回归的从零实现/" itemprop="url">
             
-              <span itemprop="name">深度学习笔记——线性回归</span>
+              <span itemprop="name">深度学习笔记——线性回归的从零开始实现</span>
             
           </a>
         
@@ -475,9 +505,9 @@
 
       <h2 class="post-title">
         
-          <a class="post-title-link" href="/2018/11/30/深度学习笔记——线形回归的从零实现/" itemprop="url">
+          <a class="post-title-link" href="/2018/11/30/深度学习笔记——线性回归/" itemprop="url">
             
-              <span itemprop="name">深度学习笔记——线性回归的从零开始实现</span>
+              <span itemprop="name">深度学习笔记——线性回归</span>
             
           </a>
         
