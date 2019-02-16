@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="乔克叔叔杂货店">
 <meta property="og:description" content="PHP变量变量​    程序执行期间，可以变化的量即为变量。 声明变量 以美元$ 符号声明 注意：（PHP严格区分大小写） 变量名称以 字母、或下划线开始，后面跟上数字/字母/下划线，不能包含特殊字符 变量名称最好含义明确 变量名最好采用驼峰标记，或下划线法 驼峰 小驼峰 ：firstName 大驼峰：FirstName   下划线 first_name        可变变量 等量代换  使用变">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-16T05:10:15.482Z">
+<meta property="og:updated_time" content="2019-02-16T10:09:20.952Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="php学习--变量和数据类型">
 <meta name="twitter:description" content="PHP变量变量​    程序执行期间，可以变化的量即为变量。 声明变量 以美元$ 符号声明 注意：（PHP严格区分大小写） 变量名称以 字母、或下划线开始，后面跟上数字/字母/下划线，不能包含特殊字符 变量名称最好含义明确 变量名最好采用驼峰标记，或下划线法 驼峰 小驼峰 ：firstName 大驼峰：FirstName   下划线 first_name        可变变量 等量代换  使用变">
@@ -436,7 +436,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-16 13:10:15" itemprop="dateModified" datetime="2019-02-16T13:10:15+08:00">2019-02-16</time>
+                <time title="修改时间：2019-02-16 18:09:20" itemprop="dateModified" datetime="2019-02-16T18:09:20+08:00">2019-02-16</time>
               
             
           </span>
@@ -564,7 +564,7 @@
 <li>false </li>
 </ul>
 </li>
-<li><p>字符串型  string</p>
+<li><p>字符串型  string    只能存储单一数据</p>
 <ul>
 <li><p>定界符</p>
 <ul>
@@ -572,37 +572,127 @@
 </li>
 <li><p>“ “  解析变量</p>
 </li>
-<li>heredoc</li>
-<li>nowdoc</li>
-</ul>
-</li>
-<li><p>转义符</p>
+<li><p>heredoc  “”</p>
 <ul>
-<li>\n    换行</li>
-<li>\r     回车</li>
-<li>\t      水平制表符</li>
-<li>\\     \</li>
-<li>\’      ‘</li>
-<li>\”      “</li>
-<li>\\$      $</li>
-</ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;&lt;&lt;名称 </span><br><span class="line">	代码块</span><br><span class="line">名称；</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 </li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code>    - <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;&lt;&lt;&quot;名称&quot;</span><br><span class="line">	代码块</span><br><span class="line">名称;</span><br></pre></td></tr></table></figure>
+
+  - nowdoc  
+
+- 转义符
+
+  - <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\n    换行</span><br><span class="line">\r     回车</span><br><span class="line">\t      水平制表符</span><br><span class="line">\\     \</span><br><span class="line">\&apos;      &apos;</span><br><span class="line">\&quot;      &quot;</span><br><span class="line">\$      $</span><br></pre></td></tr></table></figure>
+
+    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
+
+- 花括号 {}
+
+  - 可以将PHP中的变量扩成一个整体来解析
+    - {$变量名}
+    - ${变量名}
+  - 可以将字符串中指定字符进行增删改查的操作
+    - 字符串的下标 从0开始
+    - 根据下标找到对应的字符进行操作
+</code></pre><ul>
 <li>复合类型<ul>
-<li>数组</li>
-<li>对象</li>
+<li>数组 array</li>
+<li>对象 object</li>
 </ul>
 </li>
 <li>特殊类型<ul>
-<li>资源</li>
-<li>空</li>
+<li>资源 resource</li>
+<li>空  null | NULL</li>
 </ul>
 </li>
 </ul>
-<h4 id="3种伪类型"><a href="#3种伪类型" class="headerlink" title="3种伪类型"></a>3种伪类型</h4>
+<h4 id="5种伪类型"><a href="#5种伪类型" class="headerlink" title="5种伪类型"></a>5种伪类型</h4><ul>
+<li>number</li>
+<li>mixed</li>
+<li>callback</li>
+<li>void</li>
+<li>…</li>
+</ul>
+<h3 id="PHP数据类型转换"><a href="#PHP数据类型转换" class="headerlink" title="PHP数据类型转换"></a>PHP数据类型转换</h3><h4 id="自动转换（隐式转换）"><a href="#自动转换（隐式转换）" class="headerlink" title="自动转换（隐式转换）"></a>自动转换（隐式转换）</h4><p>​    程序根据上下文自动转换</p>
+<ul>
+<li><p>其他类型转换为数值型</p>
+<ul>
+<li>true -&gt; 1</li>
+<li>false -&gt; 0</li>
+<li>null -&gt; 0</li>
+<li>字符串如果以 非法数值开始，直接转换成0</li>
+<li>如果字符串以合法数值开始，一直取到第一个非法数值结束</li>
+</ul>
+</li>
+<li><p>其他类型转换为字符串类型</p>
+<ul>
+<li>数值型直接转换成数值本身</li>
+<li>true -&gt; 1</li>
+<li>false -&gt; 空字符串</li>
+<li>null -&gt; 空字符串</li>
+<li>数组 -&gt; array</li>
+<li>资源 -&gt; resource</li>
+<li>对象 不能转换为字符串</li>
+</ul>
+</li>
+<li><p>其他类型转换成布尔型</p>
+<ul>
+<li>0 -&gt; false</li>
+<li>0.0 -&gt; false</li>
+<li>空字符串 ‘’ 或者”” , ‘0’或者 “0” ， -&gt; false</li>
+<li>null -&gt; false</li>
+<li><p>空数组 -&gt; false</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if (条件) &#123;</span><br><span class="line">    执行条件为真的代码段;</span><br><span class="line">&#125;else &#123;</span><br><span class="line">    执行条件为假的代码段;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="强制转换（显示转换）"><a href="#强制转换（显示转换）" class="headerlink" title="强制转换（显示转换）"></a>强制转换（显示转换）</h4><ul>
+<li><p>临时转换   (不会改变变量本身的类型)</p>
+<ul>
+<li>(变量类型)$变量名称<ul>
+<li>整型  (int | integer)$变量名称      </li>
+<li>浮点型   (float | double | real)$变量名称      </li>
+<li>字符型   (string)$变量名称      </li>
+<li>布尔型    (bool | bollean)$变量名称      </li>
+<li>空     (unset)$变量名称      </li>
+<li>数组      (array)$变量名称      </li>
+<li>对象     (object)$变量名称</li>
+</ul>
+</li>
+<li>通过系统函数实现      <ul>
+<li>intval</li>
+<li>floatval</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>永久转换</p>
+<ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">settype($var,$type)</span><br></pre></td></tr></table></figure>
+</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gettype($var)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>通过变量函数库检查变量的类型</p>
+<ul>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> </span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
 
@@ -679,8 +769,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/01/怎样进行产品提案？/" rel="prev" title="怎样进行产品提案？">
-                怎样进行产品提案？ <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/20/php学习--常量/" rel="prev" title="php学习--常量">
+                php学习--常量 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -758,7 +848,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-count">30</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -968,7 +1058,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP变量"><span class="nav-number">1.</span> <span class="nav-text">PHP变量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#变量"><span class="nav-number">1.1.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#声明变量"><span class="nav-number">1.2.</span> <span class="nav-text">声明变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可变变量"><span class="nav-number">1.3.</span> <span class="nav-text">可变变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用变量"><span class="nav-number">1.4.</span> <span class="nav-text">使用变量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP数据类型"><span class="nav-number">2.</span> <span class="nav-text">PHP数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#8种主要数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">8种主要数据类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3种伪类型"><span class="nav-number">2.2.</span> <span class="nav-text">3种伪类型</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP变量"><span class="nav-number">1.</span> <span class="nav-text">PHP变量</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#变量"><span class="nav-number">1.1.</span> <span class="nav-text">变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#声明变量"><span class="nav-number">1.2.</span> <span class="nav-text">声明变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#可变变量"><span class="nav-number">1.3.</span> <span class="nav-text">可变变量</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#使用变量"><span class="nav-number">1.4.</span> <span class="nav-text">使用变量</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP数据类型"><span class="nav-number">2.</span> <span class="nav-text">PHP数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#8种主要数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">8种主要数据类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5种伪类型"><span class="nav-number">2.2.</span> <span class="nav-text">5种伪类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP数据类型转换"><span class="nav-number">3.</span> <span class="nav-text">PHP数据类型转换</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#自动转换（隐式转换）"><span class="nav-number">3.1.</span> <span class="nav-text">自动转换（隐式转换）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#强制转换（显示转换）"><span class="nav-number">3.2.</span> <span class="nav-text">强制转换（显示转换）</span></a></li></ol></li></ol></div>
             
 
           </div>
