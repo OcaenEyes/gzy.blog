@@ -98,25 +98,25 @@
 
 
 
-  <meta name="description" content="APP端异常基本情况  Crash   ，app突然发生闪退现象  卡顿   ， 出现画面卡顿  Exception  ， 程序被catch的 exception  ANR  ，  出现提示无响应弹框（android）   数据收集方案 数据内容 Crash ，卡顿 ，exception， ANR 的次数 影响用户数  收集实现 表的设计">
+  <meta name="description" content="PHP文件操作基本操作文件目录函数库 文件相关API  文件信息相关 12345678910111213141516171819202122232425262728293031323334&amp;lt;?php    //识别中文    header(&apos;content-type:text/html;charset=utf-8&apos;)    //文件路径    $filename = &quot;./test1.txt">
 <meta name="keywords" content="php,后端服务">
 <meta property="og:type" content="article">
-<meta property="og:title" content="php开发APP后端---学习异常监控">
-<meta property="og:url" content="http://oceaneyes.top/2019/01/22/php开发APP后端---学习异常监控/index.html">
+<meta property="og:title" content="php常用操作--文件操作">
+<meta property="og:url" content="http://oceaneyes.top/2018/12/22/php常用操作--文件操作/index.html">
 <meta property="og:site_name" content="乔克叔叔杂货店">
-<meta property="og:description" content="APP端异常基本情况  Crash   ，app突然发生闪退现象  卡顿   ， 出现画面卡顿  Exception  ， 程序被catch的 exception  ANR  ，  出现提示无响应弹框（android）   数据收集方案 数据内容 Crash ，卡顿 ，exception， ANR 的次数 影响用户数  收集实现 表的设计">
+<meta property="og:description" content="PHP文件操作基本操作文件目录函数库 文件相关API  文件信息相关 12345678910111213141516171819202122232425262728293031323334&amp;lt;?php    //识别中文    header(&apos;content-type:text/html;charset=utf-8&apos;)    //文件路径    $filename = &quot;./test1.txt">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-02-14T15:05:23.163Z">
+<meta property="og:updated_time" content="2019-02-16T11:27:52.095Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="php开发APP后端---学习异常监控">
-<meta name="twitter:description" content="APP端异常基本情况  Crash   ，app突然发生闪退现象  卡顿   ， 出现画面卡顿  Exception  ， 程序被catch的 exception  ANR  ，  出现提示无响应弹框（android）   数据收集方案 数据内容 Crash ，卡顿 ，exception， ANR 的次数 影响用户数  收集实现 表的设计">
+<meta name="twitter:title" content="php常用操作--文件操作">
+<meta name="twitter:description" content="PHP文件操作基本操作文件目录函数库 文件相关API  文件信息相关 12345678910111213141516171819202122232425262728293031323334&amp;lt;?php    //识别中文    header(&apos;content-type:text/html;charset=utf-8&apos;)    //文件路径    $filename = &quot;./test1.txt">
 
 
 
 
 
 
-  <link rel="canonical" href="http://oceaneyes.top/2019/01/22/php开发APP后端---学习异常监控/">
+  <link rel="canonical" href="http://oceaneyes.top/2018/12/22/php常用操作--文件操作/">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>php开发APP后端---学习异常监控 | 乔克叔叔杂货店</title>
+  <title>php常用操作--文件操作 | 乔克叔叔杂货店</title>
   
 
 
@@ -376,7 +376,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://oceaneyes.top/2019/01/22/php开发APP后端---学习异常监控/">
+    <link itemprop="mainEntityOfPage" href="http://oceaneyes.top/2018/12/22/php常用操作--文件操作/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="OceanEyes.GZY">
@@ -393,7 +393,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">php开发APP后端---学习异常监控
+          <h1 class="post-title" itemprop="name headline">php常用操作--文件操作
 
               
             
@@ -419,7 +419,7 @@
                 
               
 
-              <time title="创建时间：2019-01-22 21:30:00" itemprop="dateCreated datePublished" datetime="2019-01-22T21:30:00+08:00">2019-01-22</time>
+              <time title="创建时间：2018-12-22 22:30:00" itemprop="dateCreated datePublished" datetime="2018-12-22T22:30:00+08:00">2018-12-22</time>
             
 
             
@@ -436,7 +436,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-02-14 23:05:23" itemprop="dateModified" datetime="2019-02-14T23:05:23+08:00">2019-02-14</time>
+                <time title="修改时间：2019-02-16 19:27:52" itemprop="dateModified" datetime="2019-02-16T19:27:52+08:00">2019-02-16</time>
               
             
           </span>
@@ -494,26 +494,22 @@
       
 
       
-        <h3 id="APP端异常基本情况"><a href="#APP端异常基本情况" class="headerlink" title="APP端异常基本情况"></a>APP端异常基本情况</h3><hr>
+        <h3 id="PHP文件操作"><a href="#PHP文件操作" class="headerlink" title="PHP文件操作"></a>PHP文件操作</h3><h4 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h4><h5 id="文件目录函数库"><a href="#文件目录函数库" class="headerlink" title="文件目录函数库"></a>文件目录函数库</h5><ul>
+<li><p>文件相关API</p>
 <ul>
-<li><p>Crash   ，app突然发生闪退现象</p>
+<li><p>文件信息相关</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="comment">//识别中文</span></span><br><span class="line">    header(<span class="string">'content-type:text/html;charset=utf-8'</span>)</span><br><span class="line">    <span class="comment">//文件路径</span></span><br><span class="line">    $filename = <span class="string">"./test1.txt"</span></span><br><span class="line">    <span class="comment">//filetype 文件类型，通常返回file,dir</span></span><br><span class="line">    <span class="keyword">echo</span> <span class="string">'文件类型'</span>,filetype($filename);</span><br><span class="line">	<span class="comment">//filesize 文件大小，返回字节</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'文件大小'</span>,filesize($filename);</span><br><span class="line">	<span class="comment">//filectime 文件创建时间</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'文件创建时间'</span>,filectime($filename);</span><br><span class="line">	<span class="keyword">echo</span> date(<span class="string">'Y年m月d日 H:i:s'</span>,filectime($filename));</span><br><span class="line"></span><br><span class="line">	<span class="comment">//filemtime 文件修改时间</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'文件修改时间'</span>,filemtime($filename);</span><br><span class="line">	<span class="keyword">echo</span> date(<span class="string">'Y年m月d日 H:i:s'</span>,filemtime($filename));</span><br><span class="line"></span><br><span class="line">	<span class="comment">//fileatime 文件最后访问时间</span></span><br><span class="line">	<span class="keyword">echo</span> <span class="string">'文件最后访问时间'</span>,fileatime($filename);</span><br><span class="line">	<span class="keyword">echo</span> date(<span class="string">'Y年m月d日 H:i:s'</span>,fileatime($filename));</span><br><span class="line"></span><br><span class="line">	<span class="comment">//检测文件的权限</span></span><br><span class="line">	<span class="comment">// 可读</span></span><br><span class="line">	var_dump(is_readable($filename));	</span><br><span class="line">	<span class="comment">// 可写</span></span><br><span class="line">	var_dump(is_writeable($filename));	</span><br><span class="line">	<span class="comment">// 可执行</span></span><br><span class="line">	var_dump(is_executable($filename));</span><br><span class="line"></span><br><span class="line">	<span class="comment">//检测是否为文件,并且文件存在</span></span><br><span class="line">	var_dump(is_file($filename));</span><br><span class="line"></span><br><span class="line">	<span class="comment">//file_exists($filename):检测文件是否存在</span></span><br><span class="line">	var_dump(file_exists($filename));</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>卡顿   ， 出现画面卡顿</p>
-</li>
-<li><p>Exception  ， 程序被catch的 exception</p>
-</li>
-<li><p>ANR  ，  出现提示无响应弹框（android）</p>
+<li><p>文件操作相关</p>
+<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">    <span class="comment">//识别中文</span></span><br><span class="line">    header(<span class="string">'content-type:text/html;charset=utf-8'</span>)</span><br><span class="line">    <span class="comment">//文件路径</span></span><br><span class="line">    $filename = <span class="string">"test1.txt"</span></span><br><span class="line">    <span class="comment">//touch($filename):创建文件</span></span><br><span class="line">    touch($filename);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//unlink($filename):删除指定文件</span></span><br><span class="line">	unlink($filename);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//检测文件存在则删除</span></span><br><span class="line">	<span class="keyword">if</span> (file_exists($filename)) &#123;</span><br><span class="line">        <span class="keyword">if</span> (unlink($filename)) &#123;</span><br><span class="line">            <span class="keyword">echo</span> <span class="string">'文件删除成功'</span>;</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            <span class="keyword">echo</span> <span class="string">'文件删除失败'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">echo</span> <span class="string">'要删除的文件不存在'</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">	<span class="comment">//重命名文件</span></span><br><span class="line">	rename($filename,$newname);</span><br><span class="line">	<span class="comment">//复制文件</span></span><br><span class="line">	copy($filename);</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h3 id="数据收集方案"><a href="#数据收集方案" class="headerlink" title="数据收集方案"></a>数据收集方案</h3><hr>
-<h4 id="数据内容"><a href="#数据内容" class="headerlink" title="数据内容"></a>数据内容</h4><ul>
-<li>Crash ，卡顿 ，exception， ANR 的次数</li>
-<li>影响用户数</li>
+</li>
 </ul>
-<h4 id="收集实现"><a href="#收集实现" class="headerlink" title="收集实现"></a>收集实现</h4><ul>
-<li>表的设计</li>
+<ul>
+<li>文件内容相关</li>
 </ul>
-
+<h5 id="文件函数库常用函数"><a href="#文件函数库常用函数" class="headerlink" title="文件函数库常用函数"></a>文件函数库常用函数</h5><h5 id="目录函数库常用函数"><a href="#目录函数库常用函数" class="headerlink" title="目录函数库常用函数"></a>目录函数库常用函数</h5>
       
     </div>
 
@@ -580,8 +576,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/17/直播类产品全接触/" rel="next" title="直播类产品全接触">
-                <i class="fa fa-chevron-left"></i> 直播类产品全接触
+              <a href="/2018/12/21/php常用操作--会话控制/" rel="next" title="php常用操作--会话控制">
+                <i class="fa fa-chevron-left"></i> php常用操作--会话控制
               </a>
             
           </div>
@@ -589,6 +585,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/01/怎样进行产品提案？/" rel="prev" title="怎样进行产品提案？">
+                怎样进行产品提案？ <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -875,7 +875,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#APP端异常基本情况"><span class="nav-number">1.</span> <span class="nav-text">APP端异常基本情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据收集方案"><span class="nav-number">2.</span> <span class="nav-text">数据收集方案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#数据内容"><span class="nav-number">2.1.</span> <span class="nav-text">数据内容</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#收集实现"><span class="nav-number">2.2.</span> <span class="nav-text">收集实现</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP文件操作"><span class="nav-number">1.</span> <span class="nav-text">PHP文件操作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本操作"><span class="nav-number">1.1.</span> <span class="nav-text">基本操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#文件目录函数库"><span class="nav-number">1.1.1.</span> <span class="nav-text">文件目录函数库</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#文件函数库常用函数"><span class="nav-number">1.1.2.</span> <span class="nav-text">文件函数库常用函数</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#目录函数库常用函数"><span class="nav-number">1.1.3.</span> <span class="nav-text">目录函数库常用函数</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -1047,7 +1047,7 @@
   
     <script>
   window.livereOptions = {
-    refer: '2019/01/22/php开发APP后端---学习异常监控/'
+    refer: '2018/12/22/php常用操作--文件操作/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
