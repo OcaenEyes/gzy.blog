@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="1 初期阶段​    个性化推荐不是产品首次发布就能自带的。无论是基于用户行为的个性化，还是基于内容相似度的个性化，都建立在大量的用户数和内容的基础上。 ​    产品发布之初，一般两遍的数据都有残缺，因此个性化推荐并不能完整开展。 ​    故，产品发展初期 推荐内容一般采用更加聚合的“热度算法”，把热点的内容有限推荐给用户；虽无法做到基于兴趣和习惯为每一个用户做到准确化推荐，但能覆盖到大部分用">
+<meta name="keywords" content="Algorithm,内容产品">
+<meta property="og:type" content="article">
+<meta property="og:title" content="内容类产品——个性化推荐和热度算法">
+<meta property="og:url" content="http://oceaneyes.top/2019/01/14/内容产品——个性化推荐和热度算法/index.html">
+<meta property="og:site_name" content="乔克叔叔杂货店">
+<meta property="og:description" content="1 初期阶段​    个性化推荐不是产品首次发布就能自带的。无论是基于用户行为的个性化，还是基于内容相似度的个性化，都建立在大量的用户数和内容的基础上。 ​    产品发布之初，一般两遍的数据都有残缺，因此个性化推荐并不能完整开展。 ​    故，产品发展初期 推荐内容一般采用更加聚合的“热度算法”，把热点的内容有限推荐给用户；虽无法做到基于兴趣和习惯为每一个用户做到准确化推荐，但能覆盖到大部分用">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210593928-b2cc24d5-5f9a-4e13-8f27-a1b84de07e10.png">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210701999-d31971f0-a790-49a2-94ec-8340e6e8b377.png">
+<meta property="og:image" content="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210840538-f319a86b-236b-40e6-8625-7cab674fd83a.png">
+<meta property="og:image" content="http://oceaneyes.top/Users/gaozhiyong/Library/Application%20Support/typora-user-images/image-20190117100504112.png">
+<meta property="og:image" content="http://oceaneyes.top/Users/gaozhiyong/Library/Application%20Support/typora-user-images/image-20190117101005933.png">
+<meta property="og:image" content="http://oceaneyes.top/Users/gaozhiyong/Library/Application%20Support/typora-user-images/image-20190117133645188.png">
+<meta property="og:image" content="http://oceaneyes.top/Users/gaozhiyong/Library/Application%20Support/typora-user-images/image-20190117133715263.png">
+<meta property="og:image" content="http://oceaneyes.top/Users/gaozhiyong/Library/Application%20Support/typora-user-images/image-20190117133658566.png">
+<meta property="og:updated_time" content="2019-01-24T08:58:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="内容类产品——个性化推荐和热度算法">
+<meta name="twitter:description" content="1 初期阶段​    个性化推荐不是产品首次发布就能自带的。无论是基于用户行为的个性化，还是基于内容相似度的个性化，都建立在大量的用户数和内容的基础上。 ​    产品发布之初，一般两遍的数据都有残缺，因此个性化推荐并不能完整开展。 ​    故，产品发展初期 推荐内容一般采用更加聚合的“热度算法”，把热点的内容有限推荐给用户；虽无法做到基于兴趣和习惯为每一个用户做到准确化推荐，但能覆盖到大部分用">
+<meta name="twitter:image" content="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210593928-b2cc24d5-5f9a-4e13-8f27-a1b84de07e10.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://oceaneyes.top/2019/01/14/内容产品——个性化推荐和热度算法/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>内容类产品——个性化推荐和热度算法 | 乔克叔叔杂货店</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+  <script type="text/javascript" src="/js/src/clicklove.js"></script>
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+   
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">乔克叔叔杂货店</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">在未来面前我们都是孩子</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://oceaneyes.top/2019/01/14/内容产品——个性化推荐和热度算法/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="OceanEyes.GZY">
+      <meta itemprop="description" content="This is MyBlog Notes.">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="乔克叔叔杂货店">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">内容类产品——个性化推荐和热度算法
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-14 13:40:00" itemprop="dateCreated datePublished" datetime="2019-01-14T13:40:00+08:00">2019-01-14</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-24 16:58:02" itemprop="dateModified" datetime="2019-01-24T16:58:02+08:00">2019-01-24</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/产品/" itemprop="url" rel="index"><span itemprop="name">产品</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/产品/内容产品/" itemprop="url" rel="index"><span itemprop="name">内容产品</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/产品/内容产品/推荐/" itemprop="url" rel="index"><span itemprop="name">推荐</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="1-初期阶段"><a href="#1-初期阶段" class="headerlink" title="1 初期阶段"></a>1 初期阶段</h2><p>​    个性化推荐不是产品首次发布就能自带的。无论是基于用户行为的个性化，还是基于内容相似度的个性化，都建立在大量的用户数和内容的基础上。</p>
+<p>​    产品发布之初，一般两遍的数据都有残缺，因此个性化推荐并不能完整开展。</p>
+<p>​    故，产品发展初期 推荐内容一般采用更加聚合的“热度算法”，把热点的内容有限推荐给用户；虽无法做到基于兴趣和习惯为每一个用户做到准确化推荐，但能覆盖到大部分用户需求，而且启动成本比个性化推荐算法低很多。</p>
+<h2 id="2-热度算法"><a href="#2-热度算法" class="headerlink" title="2 热度算法"></a>2 热度算法</h2><h3 id="2-1-热度算法基本原理"><a href="#2-1-热度算法基本原理" class="headerlink" title="2.1 热度算法基本原理"></a>2.1 热度算法基本原理</h3><p>新闻热度分 = 初始热度分 + 用户交互产生的热度分 – 随时间衰减的热度分</p>
+<p><strong>Score = S0 + S(Users) – S(Time)</strong></p>
+<p>1、新闻入库后，被系统赋予一个初始热度值，该新闻进入推荐列表进行排序</p>
+<p>2、随着新闻不断被用户点击阅读，收藏，分享…… 用户行为被视作帮助提升新闻热度，系统需要为每种新闻重新赋予热度值</p>
+<p>3、同时，新闻自身具有较强的实效性，随着时间的变化而变的陈旧，进而热度衰减</p>
+<h3 id="2-2-初始热度需要不一致"><a href="#2-2-初始热度需要不一致" class="headerlink" title="2.2 初始热度需要不一致"></a>2.2 初始热度需要不一致</h3><p>由于不同的新闻本身属性所在，受欢迎程度是不一样的。</p>
+<p>如：娱乐类比文化类受欢迎程度高；</p>
+<p>​    某些突发事件的受关注度也会急剧变高；</p>
+<p>​    体育活动期间，体育类的关注度也会继续变高；</p>
+<p>解决方案：把初始热度设置为变量。</p>
+<p>（1）按照新闻类别给予新闻不同的初始热度，让用户关注高的类别获得更高的初始热度分，从而获得更多的曝光</p>
+<p>​    <img src="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210593928-b2cc24d5-5f9a-4e13-8f27-a1b84de07e10.png" alt="img"></p>
+<p>（2）对于重大事件的报道，可通过热词匹配来使其入库即具备更高的热度</p>
+<p>​        对大型新闻站点的头条，Twitter热点，竞品头条监控和爬取，并将关键词维护到热词库并保持更新；</p>
+<p>​        每条新闻入库时，用新闻的关键词去匹配热词库，匹配度越高，则有越高的初始化热度；</p>
+<h3 id="2-3-用户行为分规则不是固定不变的"><a href="#2-3-用户行为分规则不是固定不变的" class="headerlink" title="2.3 用户行为分规则不是固定不变的"></a>2.3 用户行为分规则不是固定不变的</h3><p>​        </p>
+<p>有了初始热度分之后，需要考虑热度分的变化。</p>
+<p>1、先明确用户哪些行为会影响到热度分值，并对这些行为赋予一定的得分规则</p>
+<p>2、例如：点击（click）、收藏（favor）、分享（share）、评论（comment），对行为赋予分数，即可得到实时用户行为分：</p>
+<p>​        <strong>S(Users) = 1***</strong>click + 5<strong>*</strong>favor + 10<strong>*</strong>comment + 20<strong>*</strong>share**</p>
+<p>​    示例分数：但分数值不是一成不变的，做内容运营时需要对行为分不断调整</p>
+<p>​        click ， 1分，</p>
+<p>​        favor，5分，</p>
+<p>​        share，10分，</p>
+<p>​        comment ，20分，</p>
+<p>​    当用户规模小的时候，各项事件量小，需要提高每个事件的行为分来提升用户行为的影响力；</p>
+<p>​    当用户规模变大时，行为分也应该相应的慢慢降低；</p>
+<h3 id="2-4-热度随时间的衰减不是线性的"><a href="#2-4-热度随时间的衰减不是线性的" class="headerlink" title="2.4 热度随时间的衰减不是线性的"></a>2.4 热度随时间的衰减不是线性的</h3><p>1、由于内容的时效性，已发布的新闻热度值必须随时间流逝二衰减，并且衰减趋势越来越快，直至趋于0热度。</p>
+<p>​    如果一条新闻（内容）需要长期处于靠前的位置，随时间推移必须有越来越多的用户来维持。</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210701999-d31971f0-a790-49a2-94ec-8340e6e8b377.png" alt="img"></p>
+<p>2、要求推荐给用户的新闻（内容）必须是24h以内，故 衰减算法必须保证在24h后 内容热度一定会衰减到很低。</p>
+<p>​    线性衰减：当新闻突然有大量用户点击阅读，获得极高热度分，就会持续排名靠前，会使用户感觉内容更新较慢</p>
+<p>​    指数衰减：参考牛顿冷却定律，时间衰减因子应该是一个类似于指数函数：</p>
+<p>​            <strong>T(Time) = e ^ (k*(T1 – T0))</strong></p>
+<p>​            其中T0是新闻发布时间，T1是当前时间</p>
+<p>而热度的发展最终是一个无限趋近于0热度的结果，最终算法调整为：</p>
+<p>​            <strong>Score = ( S0(Type) + S(Users) ) / T(Time)</strong></p>
+<h3 id="2-5-其它影响因素"><a href="#2-5-其它影响因素" class="headerlink" title="2.5 其它影响因素"></a>2.5 其它影响因素</h3><p>“赞” “踩” “不推荐此类”等选项的存在</p>
+<p>建议：把所有的调整指标均做成可配项，如：初始热度分，行为事件分，衰减因子等</p>
+<h2 id="3-个性化推荐"><a href="#3-个性化推荐" class="headerlink" title="3 个性化推荐"></a>3 个性化推荐</h2><p>个性化推荐 一般常用的两种解决方案：一是基于内容的相关推荐，二是基于用户的协同过滤（对用户规模有较高要求）</p>
+<h3 id="3-1-基于内容的推荐算法"><a href="#3-1-基于内容的推荐算法" class="headerlink" title="3.1 基于内容的推荐算法"></a>3.1 基于内容的推荐算法</h3><p>“新闻（内容）特征向量”来标示新闻的属性，以及用来对比内容之间的相似度；</p>
+<p>​    新闻（内容）特征向量是由内容所包含的关键词所决定的；</p>
+<p>​    把新闻（内容）看作所有关键词（标签）的合集；</p>
+<p>​    两个新闻（内容）的关键词越类似，则两个内容是相关的可能性更高；</p>
+<h4 id="3-1-1-分词"><a href="#3-1-1-分词" class="headerlink" title="3.1.1 分词"></a>3.1.1 分词</h4><p>得到新闻（内容）特征向量的第一步， 就是要对新闻（内容）进行关键词级别的拆分。</p>
+<ul>
+<li>分词<ul>
+<li>正常词库：把内容拆解为词语的标准</li>
+</ul>
+</li>
+</ul>
+<p>停用词 主要是没有实际含义的，如“the” “that” “are”之类的助词，如”behind” “under” 之类的介词， 以及很多常用的高频但没有偏向性的动词”think” “give”;</p>
+<ul>
+<li>停用词库：分词过程中需要首先去掉的内容</li>
+</ul>
+<p>分词之前剔除停用词，对剩下的标准词库进行拆词，拆词方法包含正向匹配拆分，逆向匹配拆分，最少切分等常用算法</p>
+<p>由于网络热词的频出，标准词库和停用词库也需要随之不断更新维护。</p>
+<h4 id="3-1-2-关键词指标"><a href="#3-1-2-关键词指标" class="headerlink" title="3.1.2 关键词指标"></a>3.1.2 关键词指标</h4><ul>
+<li>关键词重合度</li>
+<li>新闻（内容）内频率，TF（Term Frequency）<ul>
+<li>衡量每个关键词在新闻（内容）里面是否高频</li>
+</ul>
+</li>
+<li>关键词在所有文档内出现的频率相反值，IDF（Inverse Document Frequency）<ul>
+<li>如果一个关键词在某条新闻内出现的频率最大，在所有文档内出现频率小，则该关键词对这条新闻的特征标识作用越大</li>
+</ul>
+</li>
+</ul>
+<p><strong>TF-IDF模型</strong></p>
+<p>每个关键词对新闻的作用衡量：     <strong>TFIDF = TF * IDF</strong></p>
+<h4 id="3-1-3-相关性算法"><a href="#3-1-3-相关性算法" class="headerlink" title="3.1.3 相关性算法"></a>3.1.3 相关性算法</h4><p>每一份新闻（内容）的特征，即可用关键词的集合来标识：</p>
+<p><img src="https://cdn.nlark.com/yuque/0/2018/png/153571/1542210840538-f319a86b-236b-40e6-8625-7cab674fd83a.png" alt="img"></p>
+<p>其中word0，1，2……n是新闻的所有关键词，tfidf0，1，2……n则是每个关键词的tfidf值</p>
+<p>相关性计算：</p>
+<p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20190117100504112.png" alt="image-20190117100504112"></p>
+<h4 id="3-1-4-用户特征"><a href="#3-1-4-用户特征" class="headerlink" title="3.1.4 用户特征"></a>3.1.4 用户特征</h4><p>通过用户行为来获得，用户通过阅读、点赞、评论、分享来表达对新闻（内容）的喜爱；</p>
+<p> 对用户的各种行为赋予一定的“喜爱分”，例如阅读1分，点赞2分，评论5分等；</p>
+<p>新闻（内容）特征 与用户行为分结合，即可得到用户的特征分。</p>
+<p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20190117101005933.png" alt="image-20190117101005933"></p>
+<p>随着用户阅读的新闻（内容）越来越多，该用户的标签也越来越多，并且越发精准；</p>
+<p>当我们拿到新闻（内容）的特征后，就能与用户的关键词列表做匹配，得出用户阅读特征的匹配度，做出个性推荐。</p>
+<h4 id="3-1-5-其他运用"><a href="#3-1-5-其他运用" class="headerlink" title="3.1.5 其他运用"></a>3.1.5 其他运用</h4><p>除了个性推荐，基于内容的相关性，可精准的给出一篇相关推荐列表；</p>
+<h4 id="3-1-6-优缺点"><a href="#3-1-6-优缺点" class="headerlink" title="3.1.6 优缺点"></a>3.1.6 优缺点</h4><ul>
+<li><p>优点</p>
+<ul>
+<li><p>对用户数量没有要求，与日活无关，个性化推荐的早期一般可采用此方式；</p>
+</li>
+<li><p>每个用户特征是由自己行为决定的，独立存在，不会相互干扰， 恶意刷阅读内容不会营销到推荐算法；</p>
+</li>
+</ul>
+</li>
+<li><p>缺点</p>
+<ul>
+<li>确定性太强，推荐内容均由用户历史访问决定，无法挖掘用户潜在兴趣</li>
+<li>基于内容的推荐一般与其他推荐算法同时存在</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2-基于用户的协同推荐"><a href="#3-2-基于用户的协同推荐" class="headerlink" title="3.2 基于用户的协同推荐"></a>3.2 基于用户的协同推荐</h3><p>当具备内容协同过滤推荐后，推给用户的内容均为基于他们的阅读习惯来推荐，没能给用户“不期而遇”的感觉。</p>
+<p>则，需要开始实现基于用户的协同过滤。</p>
+<ul>
+<li>基于用户协同过滤推荐算法：</li>
+</ul>
+<p>​    依据用户A的阅读喜好，为A找到与他兴趣最接近的群体； 即“人以群分”，把这个群体内其他人喜欢的，但A未阅读的推荐给A</p>
+<h4 id="3-2-1-用户群体划分"><a href="#3-2-1-用户群体划分" class="headerlink" title="3.2.1 用户群体划分"></a>3.2.1 用户群体划分</h4><h5 id="3-2-1-1-外部数据借用"><a href="#3-2-1-1-外部数据借用" class="headerlink" title="3.2.1.1 外部数据借用"></a>3.2.1.1 外部数据借用</h5><p>​    使用第三方账户授权进入的，往往会包括性别、年龄、工作、甚至社交关系等</p>
+<h5 id="3-2-1-2-产品内主动询问"><a href="#3-2-1-2-产品内主动询问" class="headerlink" title="3.2.1.2 产品内主动询问"></a>3.2.1.2 产品内主动询问</h5><p>​    产品首次启动时的弹窗询问，“职业” “性别”  对内容的冷启动提供帮助， 但性价比偏低</p>
+<h5 id="3-2-1-3-对比用户特征"><a href="#3-2-1-3-对比用户特征" class="headerlink" title="3.2.1.3 对比用户特征"></a>3.2.1.3 对比用户特征</h5><p>​    从内容的特征+用户的阅读数据 来得到用户特征，通过用户特征的相似性来划分群体</p>
+<h4 id="3-2-2-内容推荐实施"><a href="#3-2-2-内容推荐实施" class="headerlink" title="3.2.2 内容推荐实施"></a>3.2.2 内容推荐实施</h4><p>A B C D E 5个用户</p>
+<p>​    阅读  1分，</p>
+<p>​    赞   2分，</p>
+<p>​    收藏   3分，</p>
+<p>​    评论   4分，</p>
+<p>​    分享    5分</p>
+<p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20190117133645188.png" alt="image-20190117133645188"></p>
+<p>各个用户的特征向量：</p>
+<p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20190117133715263.png" alt="image-20190117133715263"></p>
+<p>多维向量的距离需要通过欧几里得距离公式来计算，数值越小，向量距离约接近。</p>
+<p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20190117133658566.png" alt="image-20190117133658566"></p>
+<h4 id="3-2-3-内容选取"><a href="#3-2-3-内容选取" class="headerlink" title="3.2.3 内容选取"></a>3.2.3 内容选取</h4><p>假设用户X在系统归属于群体A，这个群体有n个用户，分别为A0，A1，A2……An，这些用户的集合用S(X,n)表示。</p>
+<ol>
+<li>首先，我们需要把集合中所有用户交互过（阅读，评论等）的新闻提取出来；</li>
+<li>需要剔除掉用户X已经看过的新闻，这些就不用再推荐了，剩下的新闻集合有m条，用N(X,m)来表示；</li>
+<li>对余下的新闻进行评分和相似度加权的计算，计算包括两部分，一是用户X与S(X,n) 每一个用户的相似性，二是每个用户对新闻集N(X,m)中每条新闻的喜好，这样就能得到每条新闻相对于用户X的最终得分；</li>
+<li>将N(X,m)中的新闻列表按照得分高低的顺序推荐给用户。</li>
+</ol>
+<h4 id="3-2-4-优缺点"><a href="#3-2-4-优缺点" class="headerlink" title="3.2.4 优缺点"></a>3.2.4 优缺点</h4><ul>
+<li>优点<ul>
+<li>对分词算法的精确度无较强的要求</li>
+<li>基于用户的行为数据去不断学习和完善</li>
+<li>能发现用户潜在阅读兴趣，能“制造惊喜”</li>
+</ul>
+</li>
+<li>缺点<ul>
+<li>启动门槛高，用户量不够时几乎无法开展；</li>
+<li>学习量不够时，推荐结果较差</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate comment here</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="OceanEyes.GZY 微信支付">
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="OceanEyes.GZY 支付宝">
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Algorithm/" rel="tag"><i class="fa fa-tag"> Algorithm</i></a>
+          
+            <a href="/tags/内容产品/" rel="tag"><i class="fa fa-tag"> 内容产品</i></a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/06/用户体验地图/" rel="next" title="用户体验地图">
+                <i class="fa fa-chevron-left"></i> 用户体验地图
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/17/直播类产品全接触/" rel="prev" title="直播类产品全接触">
+                直播类产品全接触 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MjAzMS8xODU3OA=="></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="OceanEyes.GZY">
+            
+              <p class="site-author-name" itemprop="name">OceanEyes.GZY</p>
+              <p class="site-description motion-element" itemprop="description">This is MyBlog Notes.</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">28</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">22</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/OcaenEyes" title="GitHub &rarr; https://github.com/OcaenEyes" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="mailto:oceaneyes_gzy@163.com" title="E-Mail &rarr; mailto:oceaneyes_gzy@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/gzy1450136519" title="Weibo &rarr; https://weibo.com/gzy1450136519" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/Y_Silhouette" title="Twitter &rarr; https://twitter.com/Y_Silhouette" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://stackoverflow.com/users/10850977/ysilhouette" title="StackOverflow &rarr; https://stackoverflow.com/users/10850977/ysilhouette" rel="noopener" target="_blank"><i class="fa fa-fw fa-stack-overflow"></i></a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                  
+                    
+                  
+                  <a href="https://www.instagram.com/ocean.gzy" title="Instagram &rarr; https://www.instagram.com/ocean.gzy" rel="noopener" target="_blank"><i class="fa fa-fw fa-instagram"></i></a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-初期阶段"><span class="nav-number">1.</span> <span class="nav-text">1 初期阶段</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-热度算法"><span class="nav-number">2.</span> <span class="nav-text">2 热度算法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-热度算法基本原理"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 热度算法基本原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-初始热度需要不一致"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 初始热度需要不一致</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-用户行为分规则不是固定不变的"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 用户行为分规则不是固定不变的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-热度随时间的衰减不是线性的"><span class="nav-number">2.4.</span> <span class="nav-text">2.4 热度随时间的衰减不是线性的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-5-其它影响因素"><span class="nav-number">2.5.</span> <span class="nav-text">2.5 其它影响因素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-个性化推荐"><span class="nav-number">3.</span> <span class="nav-text">3 个性化推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-基于内容的推荐算法"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 基于内容的推荐算法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-1-分词"><span class="nav-number">3.1.1.</span> <span class="nav-text">3.1.1 分词</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-2-关键词指标"><span class="nav-number">3.1.2.</span> <span class="nav-text">3.1.2 关键词指标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-3-相关性算法"><span class="nav-number">3.1.3.</span> <span class="nav-text">3.1.3 相关性算法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-4-用户特征"><span class="nav-number">3.1.4.</span> <span class="nav-text">3.1.4 用户特征</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-5-其他运用"><span class="nav-number">3.1.5.</span> <span class="nav-text">3.1.5 其他运用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-1-6-优缺点"><span class="nav-number">3.1.6.</span> <span class="nav-text">3.1.6 优缺点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-基于用户的协同推荐"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 基于用户的协同推荐</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-1-用户群体划分"><span class="nav-number">3.2.1.</span> <span class="nav-text">3.2.1 用户群体划分</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1-1-外部数据借用"><span class="nav-number">3.2.1.1.</span> <span class="nav-text">3.2.1.1 外部数据借用</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1-2-产品内主动询问"><span class="nav-number">3.2.1.2.</span> <span class="nav-text">3.2.1.2 产品内主动询问</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#3-2-1-3-对比用户特征"><span class="nav-number">3.2.1.3.</span> <span class="nav-text">3.2.1.3 对比用户特征</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-2-内容推荐实施"><span class="nav-number">3.2.2.</span> <span class="nav-text">3.2.2 内容推荐实施</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-3-内容选取"><span class="nav-number">3.2.3.</span> <span class="nav-text">3.2.3 内容选取</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-2-4-优缺点"><span class="nav-number">3.2.4.</span> <span class="nav-text">3.2.4 优缺点</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">OceanEyes.GZY</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="总访客量">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="总访问量">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.7.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+  
+    <script>
+  window.livereOptions = {
+    refer: '2019/01/14/内容产品——个性化推荐和热度算法/'
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+</script>
+
+  
+
+
+
+
+
+  
+
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+        // ref: https://github.com/ForbesLindesay/unescape-html
+        var unescapeHtml = function(html) {
+          return String(html)
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, '\'')
+            .replace(/&#x3A;/g, ':')
+            // replace all the other &#x; chars
+            .replace(/&#(\d+);/g, function (m, p) { return String.fromCharCode(p); })
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&amp;/g, '&');
+        };
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                content = unescapeHtml(content);
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+
