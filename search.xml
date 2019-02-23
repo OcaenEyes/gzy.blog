@@ -221,9 +221,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
-    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
+    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -235,9 +235,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[深度学习笔记——线性回归]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
+    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -468,9 +468,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[MySQL深入浅出--MySQL相关操作]]></title>
-    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[MySQL 操作配置文件​ my.cnf 是 MySQL 的配置文件 登录/退出MySQL注意： ​ 1、命令行结束符号使用英文分号; 或者 \g ​ 2、通过help 或者\h 或者?加上相关关键字 来查看手册 ​ 3、\c可以取消当前命令的执行 登录 mysql -uroot -p mysql -uroot -proot mysql -hlocalhost -uroot -p -P3306 登录同时修改命令提示符 mysql -uroot -p –prompt=命令提示符 获取版本号 mysql -V mysql –version 登录同时打开指定数据库 mysql -uroot -p -D db_name 退出 exit quit \q ctrl + c SQL语句语法规范 常用MySQL的关键字需要大写 库名、表名、字段名称等使用小写 SQL语句支持折行操作，拆分的时候不能把完整单词拆开 数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来 常用SQL语句 SELECT USER() 得到登录的用户 SELECT VERSION() 得到MySQL的版本信息 SELECT NOW() 得到当前的日期时间 SELECT DATABASE() 得到当前打开的数据库]]></content>
+    <title><![CDATA[MySQL深入浅出--数据库相关操作]]></title>
+    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[数据库相关操作 创建数据库 1CREATE &#123;DATABASE|SCHEMA&#125; db_name; 检测数据库名称是否存在，不存在则创建 1CREATE DATABASE [IF NOT EXISTS] db_name; 创建数据库同时指定编码方式 1CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset; 查看当前服务器下全部数据库 1SHOW DATABASES|SCHEMAS; 查看指定数据库详细信息 1SHOW CREATE DATABASE db_name; 修改指定数据库的编码方式 1ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset; 打开指定数据库 1USE db_name; 得到当前打开的数据库 1SELECT DATABASE()|SCHEMA(); 删除指定的数据库 1DROP DATABASE db_name; 如果数据库存在则删除 1DROP DATABASE [IF EXISTS] db_name;]]></content>
       <categories>
         <category>Linux</category>
         <category>MySQL</category>
@@ -480,9 +480,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[MySQL深入浅出--数据库相关操作]]></title>
-    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[数据库相关操作 创建数据库 1CREATE &#123;DATABASE|SCHEMA&#125; db_name; 检测数据库名称是否存在，不存在则创建 1CREATE DATABASE [IF NOT EXISTS] db_name; 创建数据库同时指定编码方式 1CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset; 查看当前服务器下全部数据库 1SHOW DATABASES|SCHEMAS; 查看指定数据库详细信息 1SHOW CREATE DATABASE db_name; 修改指定数据库的编码方式 1ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset; 打开指定数据库 1USE db_name; 得到当前打开的数据库 1SELECT DATABASE()|SCHEMA(); 删除指定的数据库 1DROP DATABASE db_name; 如果数据库存在则删除 1DROP DATABASE [IF EXISTS] db_name;]]></content>
+    <title><![CDATA[MySQL深入浅出--MySQL相关操作]]></title>
+    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[MySQL 操作配置文件​ my.cnf 是 MySQL 的配置文件 登录/退出MySQL注意： ​ 1、命令行结束符号使用英文分号; 或者 \g ​ 2、通过help 或者\h 或者?加上相关关键字 来查看手册 ​ 3、\c可以取消当前命令的执行 登录 mysql -uroot -p mysql -uroot -proot mysql -hlocalhost -uroot -p -P3306 登录同时修改命令提示符 mysql -uroot -p –prompt=命令提示符 获取版本号 mysql -V mysql –version 登录同时打开指定数据库 mysql -uroot -p -D db_name 退出 exit quit \q ctrl + c SQL语句语法规范 常用MySQL的关键字需要大写 库名、表名、字段名称等使用小写 SQL语句支持折行操作，拆分的时候不能把完整单词拆开 数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来 常用SQL语句 SELECT USER() 得到登录的用户 SELECT VERSION() 得到MySQL的版本信息 SELECT NOW() 得到当前的日期时间 SELECT DATABASE() 得到当前打开的数据库]]></content>
       <categories>
         <category>Linux</category>
         <category>MySQL</category>
@@ -504,9 +504,21 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[MySQL学习-约束及修改数据表]]></title>
+    <url>%2F2017%2F09%2F22%2FMySQL%E5%AD%A6%E4%B9%A0-%E7%BA%A6%E6%9D%9F%E5%8F%8A%E4%BF%AE%E6%94%B9%E6%95%B0%E6%8D%AE%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MySQL学习-数据类型与操作数据表]]></title>
     <url>%2F2017%2F09%2F21%2FMySQL%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E8%A1%A8%2F</url>
-    <content type="text"><![CDATA[MySQL数据类型 整型 1234567891011121314151617TINYINT 1字节 有符号值 -128到127 （- 2^7 到 2^7-1） 无符号值 0 到 255 （0 到 2^8-1）SMALLINT 2字节 有符号值 -3278 到 32767 （- 2^15 到 2^15-1） 无符号值 0 到 65535 （0 到 2^16-1）MEDIUMINT 3字节 有符号值 -8388608 到 8388607 （- 2^23 到 2^23-1） 无符号值 0 到 16777215 （0 到 2^24-1） INT 4字节 有符号值 （- 2^31 到 2^31-1） 无符号值 （0 到 2^32-1）BIGINT 8字节 有符号值 （- 2^63 到 2^63-1） 无符号值 （0 到 2^64-1） 1个字节 = 8 bit ,（8位） 浮点类型 1234567FLOAT[(M,D)] M,是数字总位数， D，是小数点后面的位数， 如果M,D被省略，根据硬件允许的限制来保存值， 单精度浮点数精确到大约7位小数位，DOUBLE[(M,D)] 日期时间型 123456类型 存储需求YEAR 1TIME 3DATE 3DATETIME 8TIMESTAMP 4 字符型 123456789列类型 存储需求 CHAR(M) 定长类型 M个字节，0&lt;= M &lt;=255 VARCHAR(M) 变长类型 L+1个字节，L&lt;=M且0&lt;= M &lt;=65535TINYTEXT L+1个字节， L&lt; 2^8TEXT L+1个字节， L&lt; 2^16MEDIUMTEXT L+1个字节， L&lt; 2^24LONGTEXT L+1个字节， L&lt; 2^32ENUM(&apos;VALUE1&apos;,&apos;VALUE2&apos;,...) 1或2个字节，取决于枚举值的个数，最多65535个值SET(&apos;VALUE1&apos;,&apos;VALUE2&apos;...) 1、2、3、4或者8个字节，取决于set集合成员的排列组合 MySQL数据表 创建数据表 123456789101112- 打开数据库mysql -u root -p;- USE 数据库名称; USE test01; - 创建数据表CREATE TABLE [IF NOT EXISTS] table_name ( column_name1 data_type, column_name2 data_type, ...); 查看数据表 1234567891011- 查看数据表列表SHOW TABLES [FROM db_name] [LIKE &apos;pattern&apos; | WHERE expr];- 查看数据表结构SHOW COLUMNS FROM tbl_name;- 插入记录INSERT [INTO] tbl_name [(col_name,...)] VALUES (val,...);- 记录查找SELECT expr,... FROM tbl_name; 空值与非空 12- NULL ,字段值可以为空- NOT NULL ,字段值禁止为空 约束的使用 12345678910111213141516171819AUTO_INCREMENT- 自动编号 - 且必须与主键组合使用- 默认情况下，起始值为1，每次增量为1 PRIMARY KEY- 主键- 每张数据表只能存在一个主键- 主键保证记录的唯一性- 主键自动为 NOT NULLUNIQUE KEY- 唯一约束- 唯一约束可以保证记录的唯一性- 唯一约束的字段端可以为空值（NULL）- 每张数据表可以存在多个唯一约束DEFAULT- 设置默认值]]></content>
+    <content type="text"><![CDATA[MySQL数据类型 整型 1234567891011121314151617TINYINT 1字节 有符号值 -128到127 （- 2^7 到 2^7-1） 无符号值 0 到 255 （0 到 2^8-1）SMALLINT 2字节 有符号值 -3278 到 32767 （- 2^15 到 2^15-1） 无符号值 0 到 65535 （0 到 2^16-1）MEDIUMINT 3字节 有符号值 -8388608 到 8388607 （- 2^23 到 2^23-1） 无符号值 0 到 16777215 （0 到 2^24-1） INT 4字节 有符号值 （- 2^31 到 2^31-1） 无符号值 （0 到 2^32-1）BIGINT 8字节 有符号值 （- 2^63 到 2^63-1） 无符号值 （0 到 2^64-1） 1个字节 = 8 bit ,（8位） 浮点类型 1234567FLOAT[(M,D)] M,是数字总位数， D，是小数点后面的位数， 如果M,D被省略，根据硬件允许的限制来保存值， 单精度浮点数精确到大约7位小数位，DOUBLE[(M,D)] 日期时间型 123456类型 存储需求YEAR 1TIME 3DATE 3DATETIME 8TIMESTAMP 4 字符型 123456789列类型 存储需求 CHAR(M) 定长类型 M个字节，0&lt;= M &lt;=255 VARCHAR(M) 变长类型 L+1个字节，L&lt;=M且0&lt;= M &lt;=65535TINYTEXT L+1个字节， L&lt; 2^8TEXT L+1个字节， L&lt; 2^16MEDIUMTEXT L+1个字节， L&lt; 2^24LONGTEXT L+1个字节， L&lt; 2^32ENUM(&apos;VALUE1&apos;,&apos;VALUE2&apos;,...) 1或2个字节，取决于枚举值的个数，最多65535个值SET(&apos;VALUE1&apos;,&apos;VALUE2&apos;...) 1、2、3、4或者8个字节，取决于set集合成员的排列组合 MySQL数据表 创建数据表 123456789101112- 打开数据库mysql -u root -p;- USE 数据库名称; USE test01; - 创建数据表CREATE TABLE [IF NOT EXISTS] table_name ( column_name1 data_type, column_name2 data_type, ...); 查看数据表 1234567891011- 查看数据表列表SHOW TABLES [FROM db_name] [LIKE &apos;pattern&apos; | WHERE expr];- 查看数据表结构SHOW COLUMNS FROM tbl_name;- 插入记录INSERT [INTO] tbl_name [(col_name,...)] VALUES (val,...);- 记录查找SELECT expr,... FROM tbl_name; 空值与非空 12- NULL ,字段值可以为空- NOT NULL ,字段值禁止为空 约束的使用 12345678910111213141516171819202122NOT NULL- 非空约束AUTO_INCREMENT- 自动编号 - 且必须与主键组合使用- 默认情况下，起始值为1，每次增量为1 PRIMARY KEY- 主键 约束- 每张数据表只能存在一个主键- 主键保证记录的唯一性- 主键自动为 NOT NULLUNIQUE KEY- 唯一约束- 唯一约束可以保证记录的唯一性- 唯一约束的字段端可以为空值（NULL）- 每张数据表可以存在多个唯一约束DEFAULT- 默认约束]]></content>
       <categories>
         <category>Linux</category>
         <category>MySQL</category>
