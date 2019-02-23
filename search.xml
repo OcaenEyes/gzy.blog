@@ -276,9 +276,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Python数据挖掘——基础知识]]></title>
-    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%2F</url>
-    <content type="text"><![CDATA[Python数据挖掘——基础知识 数据挖掘又称从数据中 挖掘知识、知识提取、数据／模式分析 即为：从数据中发现知识的过程 1、数据清理 （消除噪声，删除不一致数据） 2、数据集成 （多种数据源 组合在一起） 3、数据选择 （从数据库中提取和分析任务相关的数据） 4、数据变换 （通过汇总或聚焦操作，把数据变换和统一成适合挖掘的形式） 5、数据挖掘 （基本步骤，使用智能化方法提取数据） 6、模式评估 （根据某种兴趣度量，识别代表知识的真正的有趣模式） 7、知识表示 （使用可视化和知识表示技术，向用户提供数据挖掘的知识） 广义：从大量的数据中挖掘有趣模式和知识的过程 数据挖掘的模式： 描述性：描述性挖掘任务刻画目标数据中数据的一般性质 预测性：预测性挖掘任务在当前数据上进行归纳，以便作出预测 数据挖掘功能 离群点分析 特征化与区分 数据特征化 是目标类数据的一般性／特性的汇总 数据区分是将目标数据对象的一般性 与一个／多个对比类对象的一般性进行比较 频繁模式、关联和相关性 频繁模式包括频繁项集、序列模式和频繁子结构 频繁项集挖掘是频繁模式的基础 聚类分析 最大化类内相似性 最小化类间相似性 分类与回归 数据挖掘使用的技术 统计学 数据库系统 数据仓库 信息检索 机器学习 模式识别 可视化 算法 高性能计算 应用 数据挖掘的主要问题 挖掘方法 用户交互 有效性与伸缩性 数据类型的多样性 数据挖掘与社会]]></content>
+    <title><![CDATA[Python数据挖掘——数据预处理]]></title>
+    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%2F</url>
+    <content type="text"><![CDATA[Python数据挖掘——数据预处理 数据预处理 数据质量 准确性、完整性、一致性、时效性、可信性、可解释性 数据预处理的主要任务 数据清理 数据集成 数据归约 维归约 数值归约 数据变换 规范化 数据离散化 概念分层产生 数据清理（试图填充缺失的值，光滑噪声并识别离群点，纠正数据的不一致） 缺失值 忽略元组 人工填写缺失值 使用一个全局常量填充缺失值 使用属性的中心度量（均值／中位数）填充缺失值 使用与给定元组属于同一类的所有样本的均值／中位数 使用最可能的值 填充缺失值 注：某些情况，缺失值并不代表错误 噪声数据（噪声是被测量的变量的随机误差或方差） 分箱（通过考察数据的近邻，来光滑有序数据值） 用箱均值 用箱中位数 用箱边界 回归 离群点分析（通过聚类来检测离群点） 数据清理化为一个过程 首先进行偏差检测，还要防止字段过载 唯一性规则 连续性规则 空值规则 偏差检测商业工具 数据清洗工具 数据审计工具 数据迁移工具 EIL工具 数据集成 实体识别问题 冗余和相关分析 元组重复 数据值冲突的检测与处理 数据归约 数据变换与数据离散化]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Data Mining</category>
@@ -289,9 +289,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Python数据挖掘——数据预处理]]></title>
-    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%2F</url>
-    <content type="text"><![CDATA[Python数据挖掘——数据预处理 数据预处理 数据质量 准确性、完整性、一致性、时效性、可信性、可解释性 数据预处理的主要任务 数据清理 数据集成 数据归约 维归约 数值归约 数据变换 规范化 数据离散化 概念分层产生 数据清理（试图填充缺失的值，光滑噪声并识别离群点，纠正数据的不一致） 缺失值 忽略元组 人工填写缺失值 使用一个全局常量填充缺失值 使用属性的中心度量（均值／中位数）填充缺失值 使用与给定元组属于同一类的所有样本的均值／中位数 使用最可能的值 填充缺失值 注：某些情况，缺失值并不代表错误 噪声数据（噪声是被测量的变量的随机误差或方差） 分箱（通过考察数据的近邻，来光滑有序数据值） 用箱均值 用箱中位数 用箱边界 回归 离群点分析（通过聚类来检测离群点） 数据清理化为一个过程 首先进行偏差检测，还要防止字段过载 唯一性规则 连续性规则 空值规则 偏差检测商业工具 数据清洗工具 数据审计工具 数据迁移工具 EIL工具 数据集成 实体识别问题 冗余和相关分析 元组重复 数据值冲突的检测与处理 数据归约 数据变换与数据离散化]]></content>
+    <title><![CDATA[Python数据挖掘——基础知识]]></title>
+    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%2F</url>
+    <content type="text"><![CDATA[Python数据挖掘——基础知识 数据挖掘又称从数据中 挖掘知识、知识提取、数据／模式分析 即为：从数据中发现知识的过程 1、数据清理 （消除噪声，删除不一致数据） 2、数据集成 （多种数据源 组合在一起） 3、数据选择 （从数据库中提取和分析任务相关的数据） 4、数据变换 （通过汇总或聚焦操作，把数据变换和统一成适合挖掘的形式） 5、数据挖掘 （基本步骤，使用智能化方法提取数据） 6、模式评估 （根据某种兴趣度量，识别代表知识的真正的有趣模式） 7、知识表示 （使用可视化和知识表示技术，向用户提供数据挖掘的知识） 广义：从大量的数据中挖掘有趣模式和知识的过程 数据挖掘的模式： 描述性：描述性挖掘任务刻画目标数据中数据的一般性质 预测性：预测性挖掘任务在当前数据上进行归纳，以便作出预测 数据挖掘功能 离群点分析 特征化与区分 数据特征化 是目标类数据的一般性／特性的汇总 数据区分是将目标数据对象的一般性 与一个／多个对比类对象的一般性进行比较 频繁模式、关联和相关性 频繁模式包括频繁项集、序列模式和频繁子结构 频繁项集挖掘是频繁模式的基础 聚类分析 最大化类内相似性 最小化类间相似性 分类与回归 数据挖掘使用的技术 统计学 数据库系统 数据仓库 信息检索 机器学习 模式识别 可视化 算法 高性能计算 应用 数据挖掘的主要问题 挖掘方法 用户交互 有效性与伸缩性 数据类型的多样性 数据挖掘与社会]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Data Mining</category>
@@ -468,18 +468,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[MySQL深入浅出--数据库相关操作]]></title>
-    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[数据库相关操作 创建数据库 1CREATE &#123;DATABASE|SCHEMA&#125; db_name; 检测数据库名称是否存在，不存在则创建 1CREATE DATABASE [IF NOT EXISTS] db_name; 创建数据库同时指定编码方式 1CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset; 查看当前服务器下全部数据库 1SHOW DATABASES|SCHEMAS; 查看指定数据库详细信息 1SHOW CREATE DATABASE db_name; 修改指定数据库的编码方式 1ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset; 打开指定数据库 1USE db_name; 得到当前打开的数据库 1SELECT DATABASE()|SCHEMA(); 删除指定的数据库 1DROP DATABASE db_name; 如果数据库存在则删除 1DROP DATABASE [IF EXISTS] db_name;]]></content>
-      <categories>
-        <category>Linux</category>
-        <category>MySQL</category>
-      </categories>
-      <tags>
-        <tag>MySQL</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[MySQL深入浅出--MySQL相关操作]]></title>
     <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[MySQL 操作配置文件​ my.cnf 是 MySQL 的配置文件 登录/退出MySQL注意： ​ 1、命令行结束符号使用英文分号; 或者 \g ​ 2、通过help 或者\h 或者?加上相关关键字 来查看手册 ​ 3、\c可以取消当前命令的执行 登录 mysql -uroot -p mysql -uroot -proot mysql -hlocalhost -uroot -p -P3306 登录同时修改命令提示符 mysql -uroot -p –prompt=命令提示符 获取版本号 mysql -V mysql –version 登录同时打开指定数据库 mysql -uroot -p -D db_name 退出 exit quit \q ctrl + c SQL语句语法规范 常用MySQL的关键字需要大写 库名、表名、字段名称等使用小写 SQL语句支持折行操作，拆分的时候不能把完整单词拆开 数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来 常用SQL语句 SELECT USER() 得到登录的用户 SELECT VERSION() 得到MySQL的版本信息 SELECT NOW() 得到当前的日期时间 SELECT DATABASE() 得到当前打开的数据库]]></content>
@@ -492,9 +480,33 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[MySQL深入浅出--数据库相关操作]]></title>
+    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[数据库相关操作 创建数据库 1CREATE &#123;DATABASE|SCHEMA&#125; db_name; 检测数据库名称是否存在，不存在则创建 1CREATE DATABASE [IF NOT EXISTS] db_name; 创建数据库同时指定编码方式 1CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset; 查看当前服务器下全部数据库 1SHOW DATABASES|SCHEMAS; 查看指定数据库详细信息 1SHOW CREATE DATABASE db_name; 修改指定数据库的编码方式 1ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset; 打开指定数据库 1USE db_name; 得到当前打开的数据库 1SELECT DATABASE()|SCHEMA(); 删除指定的数据库 1DROP DATABASE db_name; 如果数据库存在则删除 1DROP DATABASE [IF EXISTS] db_name;]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MySQL深入浅出--什么是数据库]]></title>
     <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E4%BB%80%E4%B9%88%E6%98%AF%E6%95%B0%E6%8D%AE%E5%BA%93%2F</url>
     <content type="text"><![CDATA[什么是数据库​ 数据库（Database）是按照数据结构来组织、储存和管理数据的仓库 常见数据库 Oracle DB2 SQL Server Postgre SQL MySQL 相关术语数据库系统（Database System） DBS 数据库 (Database) 数据库管理系统 (Database Management System) : DBMS 应用开发工具 管理员及用户 SQL语言 （Structured Query Language）:结构化查询语言 DDL (数据定义语言) DML (数据操作语言) DQL (数据查询语言) DCL (数据控制语言)]]></content>
+      <categories>
+        <category>Linux</category>
+        <category>MySQL</category>
+      </categories>
+      <tags>
+        <tag>MySQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[MySQL学习-数据类型与操作数据表]]></title>
+    <url>%2F2017%2F09%2F21%2FMySQL%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%B8%8E%E6%93%8D%E4%BD%9C%E6%95%B0%E6%8D%AE%E8%A1%A8%2F</url>
+    <content type="text"><![CDATA[MySQL数据类型 整型 1234567891011121314151617TINYINT 1字节 有符号值 -128到127 （- 2^7 到 2^7-1） 无符号值 0 到 255 （0 到 2^8-1）SMALLINT 2字节 有符号值 -3278 到 32767 （- 2^15 到 2^15-1） 无符号值 0 到 65535 （0 到 2^16-1）MEDIUMINT 3字节 有符号值 -8388608 到 8388607 （- 2^23 到 2^23-1） 无符号值 0 到 16777215 （0 到 2^24-1） INT 4字节 有符号值 （- 2^31 到 2^31-1） 无符号值 （0 到 2^32-1）BIGINT 8字节 有符号值 （- 2^63 到 2^63-1） 无符号值 （0 到 2^64-1） 1个字节 = 8 bit ,（8位） 浮点类型 1234567FLOAT[(M,D)] M,是数字总位数， D，是小数点后面的位数， 如果M,D被省略，根据硬件允许的限制来保存值， 单精度浮点数精确到大约7位小数位，DOUBLE[(M,D)] 日期时间型 123456类型 存储需求YEAR 1TIME 3DATE 3DATETIME 8TIMESTAMP 4 字符型 123456789列类型 存储需求 CHAR(M) 定长类型 M个字节，0&lt;= M &lt;=255 VARCHAR(M) 变长类型 L+1个字节，L&lt;=M且0&lt;= M &lt;=65535TINYTEXT L+1个字节， L&lt; 2^8TEXT L+1个字节， L&lt; 2^16MEDIUMTEXT L+1个字节， L&lt; 2^24LONGTEXT L+1个字节， L&lt; 2^32ENUM(&apos;VALUE1&apos;,&apos;VALUE2&apos;,...) 1或2个字节，取决于枚举值的个数，最多65535个值SET(&apos;VALUE1&apos;,&apos;VALUE2&apos;...) 1、2、3、4或者8个字节，取决于set集合成员的排列组合 MySQL数据表 创建数据表 123456789101112- 打开数据库mysql -u root -p;- USE 数据库名称; USE test01; - 创建数据表CREATE TABLE [IF NOT EXISTS] table_name ( column_name1 data_type, column_name2 data_type, ...); 查看数据表 1234567891011- 查看数据表列表SHOW TABLES [FROM db_name] [LIKE &apos;pattern&apos; | WHERE expr];- 查看数据表结构SHOW COLUMNS FROM tbl_name;- 插入记录INSERT [INTO] tbl_name [(col_name,...)] VALUES (val,...);- 记录查找SELECT expr,... FROM tbl_name; 空值与非空 12- NULL ,字段值可以为空- NOT NULL ,字段值禁止为空 约束的使用 12345678910111213141516171819AUTO_INCREMENT- 自动编号 - 且必须与主键组合使用- 默认情况下，起始值为1，每次增量为1 PRIMARY KEY- 主键- 每张数据表只能存在一个主键- 主键保证记录的唯一性- 主键自动为 NOT NULLUNIQUE KEY- 唯一约束- 唯一约束可以保证记录的唯一性- 唯一约束的字段端可以为空值（NULL）- 每张数据表可以存在多个唯一约束DEFAULT- 设置默认值]]></content>
       <categories>
         <category>Linux</category>
         <category>MySQL</category>
