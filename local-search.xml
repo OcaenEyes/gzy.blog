@@ -222,11 +222,11 @@
   
   
   <entry>
-    <title>php即时通讯-socket</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
+    <title>php即时通讯-多进程</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h3><ul><li>系统进程</li><li>用户进程</li><li>并发执行</li><li>性能更高</li></ul>]]></content>
     
     
     <categories>
@@ -247,11 +247,11 @@
   
   
   <entry>
-    <title>php即时通讯-多进程</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/</url>
+    <title>php即时通讯-socket</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h3><ul><li>系统进程</li><li>用户进程</li><li>并发执行</li><li>性能更高</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
     
     
     <categories>
@@ -847,11 +847,11 @@
   
   
   <entry>
-    <title>深度学习笔记——线性回归</title>
-    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
-    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</url>
+    <title>深度学习笔记——线性回归的从零开始实现</title>
+    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em>深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式</em></p><p><strong>单层神经网络：线性回归、Softmax回归</strong></p><p>线性回归输出是一个连续值，适用于回归问题。</p><p>​    如：预测房屋价格、气温、销售额等连续值问题</p><p>Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。</p><p>​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值</p><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><h3 id="线性回归基本要素"><a href="#线性回归基本要素" class="headerlink" title="线性回归基本要素"></a>线性回归基本要素</h3><p>以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）</p><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><p>设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）</p><p>线性回归假设输出与各个输入之间的线性关系：</p><p>y‘ = x1w1 + x2w2 + b;</p><p>其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 </p><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><p>模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。</p><h5 id="训练数据"><a href="#训练数据" class="headerlink" title="训练数据"></a>训练数据</h5><ul><li><p>训练数据集（training data set ）/ 训练集（training set）</p><p>多栋房屋数据，真实出售价格 、面积、房龄</p></li><li><p>样本（sample）</p><p>一栋房屋</p></li><li><p>标签（label）</p><p>真实出售价格</p></li><li><p>特征（feature）</p><p>预测标签的两个因素叫做特征；（面积、房龄）</p><p>特征用来表征样本的特点</p></li></ul><h5 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h5><ul><li>衡量价格测量值与真实值之间的误差</li><li>通常选取一个非负数作为误差，且数值越小表示误差越小</li></ul><h5 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h5><ul><li>解析解（analytical solution）<ul><li>当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来</li></ul></li><li>数值解（numerical solution）<ul><li>大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值</li><li>常用：小批量随机梯度下降（ mini-batch stochastic gradient descent）<ul><li>选取一组模型参数的初始值</li><li>对参数进行多次迭代，使得每次迭代都可能降低损失函数的值</li><li>每次迭代流程<ul><li>先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B</li><li>求小批量中数据样本的平均损失有关模型参数的导数（梯度）</li><li>用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量</li></ul></li></ul></li></ul></li></ul><h4 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h4><p><em>模型预测、模型推断或模型测试</em></p><p> 模型训练完成后，将模型参数w1;w2; b  在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。</p><p>然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。</p><h3 id="线性回归的表示方法"><a href="#线性回归的表示方法" class="headerlink" title="线性回归的表示方法"></a>线性回归的表示方法</h3><p>线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。</p><h4 id="神经网络图"><a href="#神经网络图" class="headerlink" title="神经网络图"></a>神经网络图</h4><h4 id="矢量计算表达式"><a href="#矢量计算表达式" class="headerlink" title="矢量计算表达式"></a>矢量计算表达式</h4>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
     
     
     <categories>
@@ -878,11 +878,11 @@
   
   
   <entry>
-    <title>深度学习笔记——线性回归的从零开始实现</title>
-    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/"/>
-    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/</url>
+    <title>深度学习笔记——线性回归</title>
+    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
+    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em>深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式</em></p><p><strong>单层神经网络：线性回归、Softmax回归</strong></p><p>线性回归输出是一个连续值，适用于回归问题。</p><p>​    如：预测房屋价格、气温、销售额等连续值问题</p><p>Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。</p><p>​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值</p><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><h3 id="线性回归基本要素"><a href="#线性回归基本要素" class="headerlink" title="线性回归基本要素"></a>线性回归基本要素</h3><p>以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）</p><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><p>设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）</p><p>线性回归假设输出与各个输入之间的线性关系：</p><p>y‘ = x1w1 + x2w2 + b;</p><p>其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 </p><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><p>模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。</p><h5 id="训练数据"><a href="#训练数据" class="headerlink" title="训练数据"></a>训练数据</h5><ul><li><p>训练数据集（training data set ）/ 训练集（training set）</p><p>多栋房屋数据，真实出售价格 、面积、房龄</p></li><li><p>样本（sample）</p><p>一栋房屋</p></li><li><p>标签（label）</p><p>真实出售价格</p></li><li><p>特征（feature）</p><p>预测标签的两个因素叫做特征；（面积、房龄）</p><p>特征用来表征样本的特点</p></li></ul><h5 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h5><ul><li>衡量价格测量值与真实值之间的误差</li><li>通常选取一个非负数作为误差，且数值越小表示误差越小</li></ul><h5 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h5><ul><li>解析解（analytical solution）<ul><li>当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来</li></ul></li><li>数值解（numerical solution）<ul><li>大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值</li><li>常用：小批量随机梯度下降（ mini-batch stochastic gradient descent）<ul><li>选取一组模型参数的初始值</li><li>对参数进行多次迭代，使得每次迭代都可能降低损失函数的值</li><li>每次迭代流程<ul><li>先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B</li><li>求小批量中数据样本的平均损失有关模型参数的导数（梯度）</li><li>用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量</li></ul></li></ul></li></ul></li></ul><h4 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h4><p><em>模型预测、模型推断或模型测试</em></p><p> 模型训练完成后，将模型参数w1;w2; b  在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。</p><p>然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。</p><h3 id="线性回归的表示方法"><a href="#线性回归的表示方法" class="headerlink" title="线性回归的表示方法"></a>线性回归的表示方法</h3><p>线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。</p><h4 id="神经网络图"><a href="#神经网络图" class="headerlink" title="神经网络图"></a>神经网络图</h4><h4 id="矢量计算表达式"><a href="#矢量计算表达式" class="headerlink" title="矢量计算表达式"></a>矢量计算表达式</h4>]]></content>
     
     
     <categories>
@@ -1535,11 +1535,11 @@
   
   
   <entry>
-    <title>MySQL深入浅出--MySQL相关操作</title>
-    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
-    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
+    <title>MySQL深入浅出--数据库相关操作</title>
+    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
+    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="MySQL-操作"><a href="#MySQL-操作" class="headerlink" title="MySQL 操作"></a>MySQL 操作</h3><h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>​    my.cnf  是 MySQL 的配置文件</p><h4 id="登录-退出MySQL"><a href="#登录-退出MySQL" class="headerlink" title="登录/退出MySQL"></a>登录/退出MySQL</h4><p>注意：</p><p>​    1、命令行结束符号使用英文分号;   或者 \g</p><p>​    2、通过help 或者\h 或者?加上相关关键字 来查看手册</p><p>​    3、\c可以取消当前命令的执行</p><h5 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h5><ul><li>mysql -uroot -p</li><li>mysql -uroot -proot</li><li>mysql -hlocalhost -uroot -p -P3306</li><li>登录同时修改命令提示符<ul><li>mysql -uroot -p –prompt=命令提示符</li></ul></li><li>获取版本号<ul><li>mysql -V</li><li>mysql –version</li></ul></li><li>登录同时打开指定数据库<ul><li>mysql -uroot -p -D db_name</li></ul></li></ul><h5 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h5><ul><li>exit</li><li>quit</li><li>\q</li><li>ctrl + c</li></ul><h4 id="SQL语句语法规范"><a href="#SQL语句语法规范" class="headerlink" title="SQL语句语法规范"></a>SQL语句语法规范</h4><ul><li>常用MySQL的关键字需要大写</li><li>库名、表名、字段名称等使用小写</li><li>SQL语句支持折行操作，拆分的时候不能把完整单词拆开</li><li>数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号<code></code>将其括起来</li></ul><h4 id="常用SQL语句"><a href="#常用SQL语句" class="headerlink" title="常用SQL语句"></a>常用SQL语句</h4><ul><li>SELECT USER()     得到登录的用户</li><li>SELECT VERSION()     得到MySQL的版本信息</li><li>SELECT NOW()         得到当前的日期时间</li><li>SELECT DATABASE()     得到当前打开的数据库</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="数据库相关操作"><a href="#数据库相关操作" class="headerlink" title="数据库相关操作"></a>数据库相关操作</h3><ul><li><p>创建数据库   </p><pre><code class="mysql">CREATE {DATABASE|SCHEMA} db_name;</code></pre><ul><li><p>检测数据库名称是否存在，不存在则创建</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name;</code></pre></li><li><p>创建数据库同时指定编码方式</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li></ul></li><li><p>查看当前服务器下全部数据库</p><pre><code class="mysql">SHOW DATABASES|SCHEMAS;</code></pre></li><li><p>查看指定数据库详细信息</p><pre><code class="mysql">SHOW CREATE DATABASE db_name;</code></pre></li><li><p>修改指定数据库的编码方式</p><pre><code class="mysql">ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li><li><p>打开指定数据库</p><pre><code class="mysql">USE db_name;</code></pre></li><li><p>得到当前打开的数据库</p><pre><code class="mysql">SELECT DATABASE()|SCHEMA();</code></pre></li><li><p>删除指定的数据库</p><pre><code class="mysql">DROP DATABASE db_name;</code></pre><ul><li><p>如果数据库存在则删除</p><pre><code class="mysql">DROP DATABASE [IF EXISTS] db_name;</code></pre></li></ul></li></ul>]]></content>
     
     
     <categories>
@@ -1562,11 +1562,11 @@
   
   
   <entry>
-    <title>MySQL深入浅出--数据库相关操作</title>
-    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
-    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
+    <title>MySQL深入浅出--MySQL相关操作</title>
+    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
+    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="数据库相关操作"><a href="#数据库相关操作" class="headerlink" title="数据库相关操作"></a>数据库相关操作</h3><ul><li><p>创建数据库   </p><pre><code class="mysql">CREATE {DATABASE|SCHEMA} db_name;</code></pre><ul><li><p>检测数据库名称是否存在，不存在则创建</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name;</code></pre></li><li><p>创建数据库同时指定编码方式</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li></ul></li><li><p>查看当前服务器下全部数据库</p><pre><code class="mysql">SHOW DATABASES|SCHEMAS;</code></pre></li><li><p>查看指定数据库详细信息</p><pre><code class="mysql">SHOW CREATE DATABASE db_name;</code></pre></li><li><p>修改指定数据库的编码方式</p><pre><code class="mysql">ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li><li><p>打开指定数据库</p><pre><code class="mysql">USE db_name;</code></pre></li><li><p>得到当前打开的数据库</p><pre><code class="mysql">SELECT DATABASE()|SCHEMA();</code></pre></li><li><p>删除指定的数据库</p><pre><code class="mysql">DROP DATABASE db_name;</code></pre><ul><li><p>如果数据库存在则删除</p><pre><code class="mysql">DROP DATABASE [IF EXISTS] db_name;</code></pre></li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="MySQL-操作"><a href="#MySQL-操作" class="headerlink" title="MySQL 操作"></a>MySQL 操作</h3><h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>​    my.cnf  是 MySQL 的配置文件</p><h4 id="登录-退出MySQL"><a href="#登录-退出MySQL" class="headerlink" title="登录/退出MySQL"></a>登录/退出MySQL</h4><p>注意：</p><p>​    1、命令行结束符号使用英文分号;   或者 \g</p><p>​    2、通过help 或者\h 或者?加上相关关键字 来查看手册</p><p>​    3、\c可以取消当前命令的执行</p><h5 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h5><ul><li>mysql -uroot -p</li><li>mysql -uroot -proot</li><li>mysql -hlocalhost -uroot -p -P3306</li><li>登录同时修改命令提示符<ul><li>mysql -uroot -p –prompt=命令提示符</li></ul></li><li>获取版本号<ul><li>mysql -V</li><li>mysql –version</li></ul></li><li>登录同时打开指定数据库<ul><li>mysql -uroot -p -D db_name</li></ul></li></ul><h5 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h5><ul><li>exit</li><li>quit</li><li>\q</li><li>ctrl + c</li></ul><h4 id="SQL语句语法规范"><a href="#SQL语句语法规范" class="headerlink" title="SQL语句语法规范"></a>SQL语句语法规范</h4><ul><li>常用MySQL的关键字需要大写</li><li>库名、表名、字段名称等使用小写</li><li>SQL语句支持折行操作，拆分的时候不能把完整单词拆开</li><li>数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号<code></code>将其括起来</li></ul><h4 id="常用SQL语句"><a href="#常用SQL语句" class="headerlink" title="常用SQL语句"></a>常用SQL语句</h4><ul><li>SELECT USER()     得到登录的用户</li><li>SELECT VERSION()     得到MySQL的版本信息</li><li>SELECT NOW()         得到当前的日期时间</li><li>SELECT DATABASE()     得到当前打开的数据库</li></ul>]]></content>
     
     
     <categories>
