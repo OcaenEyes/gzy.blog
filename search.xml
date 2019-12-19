@@ -76,17 +76,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-http]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
-    <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
-      <categories>
-        <category>php</category>
-      </categories>
-      <tags>
-        <tag>php</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[php即时通讯-WebSocket]]></title>
     <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket%2F</url>
     <content type="text"><![CDATA[WebSocket 一个应用层协议 长链接 主流即时通讯协议]]></content>
@@ -98,9 +87,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-多进程]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[多进程 系统进程 用户进程 并发执行 性能更高]]></content>
+    <title><![CDATA[php即时通讯-http]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
+    <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
       <categories>
         <category>php</category>
       </categories>
@@ -112,6 +101,17 @@
     <title><![CDATA[php即时通讯-socket]]></title>
     <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket%2F</url>
     <content type="text"><![CDATA[Socket 一个工具，一个接口 封装了TCP/IP 协议 建立长链接的基础]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[php即时通讯-多进程]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[多进程 系统进程 用户进程 并发执行 性能更高]]></content>
       <categories>
         <category>php</category>
       </categories>
