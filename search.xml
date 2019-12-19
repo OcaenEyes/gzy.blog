@@ -87,9 +87,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-http]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
-    <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
+    <title><![CDATA[php即时通讯-socket]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket%2F</url>
+    <content type="text"><![CDATA[Socket 一个工具，一个接口 封装了TCP/IP 协议 建立长链接的基础]]></content>
       <categories>
         <category>php</category>
       </categories>
@@ -109,9 +109,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-socket]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket%2F</url>
-    <content type="text"><![CDATA[Socket 一个工具，一个接口 封装了TCP/IP 协议 建立长链接的基础]]></content>
+    <title><![CDATA[php即时通讯-http]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
+    <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
       <categories>
         <category>php</category>
       </categories>
@@ -684,9 +684,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[MySQL深入浅出--数据库相关操作]]></title>
-    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[数据库相关操作 创建数据库 CREATE {DATABASE|SCHEMA} db_name; 检测数据库名称是否存在，不存在则创建 CREATE DATABASE [IF NOT EXISTS] db_name; 创建数据库同时指定编码方式 CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset; 查看当前服务器下全部数据库 SHOW DATABASES|SCHEMAS; 查看指定数据库详细信息 SHOW CREATE DATABASE db_name; 修改指定数据库的编码方式 ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset; 打开指定数据库 USE db_name; 得到当前打开的数据库 SELECT DATABASE()|SCHEMA(); 删除指定的数据库 DROP DATABASE db_name; 如果数据库存在则删除 DROP DATABASE [IF EXISTS] db_name;]]></content>
+    <title><![CDATA[MySQL深入浅出--MySQL相关操作]]></title>
+    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[MySQL 操作配置文件​ my.cnf 是 MySQL 的配置文件 登录/退出MySQL注意： ​ 1、命令行结束符号使用英文分号; 或者 \g ​ 2、通过help 或者\h 或者?加上相关关键字 来查看手册 ​ 3、\c可以取消当前命令的执行 登录 mysql -uroot -p mysql -uroot -proot mysql -hlocalhost -uroot -p -P3306 登录同时修改命令提示符 mysql -uroot -p –prompt=命令提示符 获取版本号 mysql -V mysql –version 登录同时打开指定数据库 mysql -uroot -p -D db_name 退出 exit quit \q ctrl + c SQL语句语法规范 常用MySQL的关键字需要大写 库名、表名、字段名称等使用小写 SQL语句支持折行操作，拆分的时候不能把完整单词拆开 数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来 常用SQL语句 SELECT USER() 得到登录的用户 SELECT VERSION() 得到MySQL的版本信息 SELECT NOW() 得到当前的日期时间 SELECT DATABASE() 得到当前打开的数据库]]></content>
       <categories>
         <category>Linux</category>
         <category>MySQL</category>
@@ -696,9 +696,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[MySQL深入浅出--MySQL相关操作]]></title>
-    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[MySQL 操作配置文件​ my.cnf 是 MySQL 的配置文件 登录/退出MySQL注意： ​ 1、命令行结束符号使用英文分号; 或者 \g ​ 2、通过help 或者\h 或者?加上相关关键字 来查看手册 ​ 3、\c可以取消当前命令的执行 登录 mysql -uroot -p mysql -uroot -proot mysql -hlocalhost -uroot -p -P3306 登录同时修改命令提示符 mysql -uroot -p –prompt=命令提示符 获取版本号 mysql -V mysql –version 登录同时打开指定数据库 mysql -uroot -p -D db_name 退出 exit quit \q ctrl + c SQL语句语法规范 常用MySQL的关键字需要大写 库名、表名、字段名称等使用小写 SQL语句支持折行操作，拆分的时候不能把完整单词拆开 数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来 常用SQL语句 SELECT USER() 得到登录的用户 SELECT VERSION() 得到MySQL的版本信息 SELECT NOW() 得到当前的日期时间 SELECT DATABASE() 得到当前打开的数据库]]></content>
+    <title><![CDATA[MySQL深入浅出--数据库相关操作]]></title>
+    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[数据库相关操作 创建数据库 CREATE {DATABASE|SCHEMA} db_name; 检测数据库名称是否存在，不存在则创建 CREATE DATABASE [IF NOT EXISTS] db_name; 创建数据库同时指定编码方式 CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset; 查看当前服务器下全部数据库 SHOW DATABASES|SCHEMAS; 查看指定数据库详细信息 SHOW CREATE DATABASE db_name; 修改指定数据库的编码方式 ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset; 打开指定数据库 USE db_name; 得到当前打开的数据库 SELECT DATABASE()|SCHEMA(); 删除指定的数据库 DROP DATABASE db_name; 如果数据库存在则删除 DROP DATABASE [IF EXISTS] db_name;]]></content>
       <categories>
         <category>Linux</category>
         <category>MySQL</category>
