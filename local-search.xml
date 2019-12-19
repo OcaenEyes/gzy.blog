@@ -172,6 +172,31 @@
   
   
   <entry>
+    <title>php即时通讯-WebSocket</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul><li>一个应用层协议</li><li>长链接</li><li>主流即时通讯协议</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>php</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>php即时通讯-http</title>
     <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/"/>
     <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/</url>
@@ -247,31 +272,6 @@
   
   
   <entry>
-    <title>php即时通讯-WebSocket</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul><li>一个应用层协议</li><li>长链接</li><li>主流即时通讯协议</li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>php</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>php</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>php开发APP后端---学习异常监控</title>
     <link href="/2019/01/22/php%E5%BC%80%E5%8F%91APP%E5%90%8E%E7%AB%AF---%E5%AD%A6%E4%B9%A0%E5%BC%82%E5%B8%B8%E7%9B%91%E6%8E%A7/"/>
     <url>/2019/01/22/php%E5%BC%80%E5%8F%91APP%E5%90%8E%E7%AB%AF---%E5%AD%A6%E4%B9%A0%E5%BC%82%E5%B8%B8%E7%9B%91%E6%8E%A7/</url>
@@ -299,11 +299,11 @@
   
   
   <entry>
-    <title>redis学习---安装入门</title>
-    <link href="/2019/01/22/redis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8/"/>
-    <url>/2019/01/22/redis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8/</url>
+    <title>redis学习---数据类型</title>
+    <link href="/2019/01/22/redis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <url>/2019/01/22/redis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="CentOS下安装启动"><a href="#CentOS下安装启动" class="headerlink" title="CentOS下安装启动"></a>CentOS下安装启动</h3><pre><code># 下载安装fedora的仓库yum install epel-release</code></pre><pre><code># 安装redisyum install redis</code></pre><pre><code># 开启redis服务service redis start</code></pre><pre><code># 可选项，修改可访问的域名IP，修改保护模式为novi /etc/redis.conf    注释掉 bind 127.0.0.1    改 protected  为 no </code></pre><pre><code># 重启redis服务service redis restart</code></pre><pre><code># 根据需要可，修改防火墙，增加6379端口firewall-cmd --zone=public --add-port=6379/tcp -permanent   (-permanent,长期生效)# 查询端口firewall-cmd --zone-public --query-port=6379/tcp</code></pre><pre><code># 连接redisredis-cli -h host -p port -a password</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="redis数据类型"><a href="#redis数据类型" class="headerlink" title="redis数据类型"></a>redis数据类型</h3><h4 id="string字符串"><a href="#string字符串" class="headerlink" title="string字符串"></a>string字符串</h4>]]></content>
     
     
     <categories>
@@ -326,11 +326,11 @@
   
   
   <entry>
-    <title>redis学习---数据类型</title>
-    <link href="/2019/01/22/redis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    <url>/2019/01/22/redis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
+    <title>redis学习---安装入门</title>
+    <link href="/2019/01/22/redis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8/"/>
+    <url>/2019/01/22/redis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="redis数据类型"><a href="#redis数据类型" class="headerlink" title="redis数据类型"></a>redis数据类型</h3><h4 id="string字符串"><a href="#string字符串" class="headerlink" title="string字符串"></a>string字符串</h4>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="CentOS下安装启动"><a href="#CentOS下安装启动" class="headerlink" title="CentOS下安装启动"></a>CentOS下安装启动</h3><pre><code># 下载安装fedora的仓库yum install epel-release</code></pre><pre><code># 安装redisyum install redis</code></pre><pre><code># 开启redis服务service redis start</code></pre><pre><code># 可选项，修改可访问的域名IP，修改保护模式为novi /etc/redis.conf    注释掉 bind 127.0.0.1    改 protected  为 no </code></pre><pre><code># 重启redis服务service redis restart</code></pre><pre><code># 根据需要可，修改防火墙，增加6379端口firewall-cmd --zone=public --add-port=6379/tcp -permanent   (-permanent,长期生效)# 查询端口firewall-cmd --zone-public --query-port=6379/tcp</code></pre><pre><code># 连接redisredis-cli -h host -p port -a password</code></pre>]]></content>
     
     
     <categories>

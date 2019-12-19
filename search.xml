@@ -76,6 +76,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[php即时通讯-WebSocket]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket%2F</url>
+    <content type="text"><![CDATA[WebSocket 一个应用层协议 长链接 主流即时通讯协议]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[php即时通讯-http]]></title>
     <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
     <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
@@ -109,17 +120,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-WebSocket]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket%2F</url>
-    <content type="text"><![CDATA[WebSocket 一个应用层协议 长链接 主流即时通讯协议]]></content>
-      <categories>
-        <category>php</category>
-      </categories>
-      <tags>
-        <tag>php</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[php开发APP后端---学习异常监控]]></title>
     <url>%2F2019%2F01%2F22%2Fphp%E5%BC%80%E5%8F%91APP%E5%90%8E%E7%AB%AF---%E5%AD%A6%E4%B9%A0%E5%BC%82%E5%B8%B8%E7%9B%91%E6%8E%A7%2F</url>
     <content type="text"><![CDATA[APP端异常基本情况 Crash ，app突然发生闪退现象 卡顿 ， 出现画面卡顿 Exception ， 程序被catch的 exception ANR ， 出现提示无响应弹框（android） 数据收集方案 数据内容 Crash ，卡顿 ，exception， ANR 的次数 影响用户数 收集实现 表的设计]]></content>
@@ -132,9 +132,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---安装入门]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
-    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
+    <title><![CDATA[redis学习---数据类型]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -144,9 +144,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---数据类型]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
+    <title><![CDATA[redis学习---安装入门]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
