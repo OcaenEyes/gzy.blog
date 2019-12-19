@@ -172,11 +172,11 @@
   
   
   <entry>
-    <title>php即时通讯-WebSocket</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
+    <title>php即时通讯-http</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul><li>一个应用层协议</li><li>长链接</li><li>主流即时通讯协议</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><ul><li>一个应用层协议</li><li>Header + Body组成</li><li>比TCP更高级</li><li>短链接</li></ul>]]></content>
     
     
     <categories>
@@ -197,11 +197,11 @@
   
   
   <entry>
-    <title>php即时通讯-http</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/</url>
+    <title>php即时通讯-socket</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><ul><li>一个应用层协议</li><li>Header + Body组成</li><li>比TCP更高级</li><li>短链接</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
     
     
     <categories>
@@ -247,11 +247,11 @@
   
   
   <entry>
-    <title>php即时通讯-socket</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
+    <title>php即时通讯-WebSocket</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul><li>一个应用层协议</li><li>长链接</li><li>主流即时通讯协议</li></ul>]]></content>
     
     
     <categories>
