@@ -15,7 +15,7 @@
   <meta name="description" content="This is MyBlog Notes.">
   <meta name="author" content="OceanEyes.GZY">
   <meta name="keywords" content="">
-  <title>标签 - Python ~ 乔克叔叔杂货店</title>
+  <title>用户行为类指标详解 ~ 乔克叔叔杂货店</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">&nbsp;<strong>乔克叔叔杂货店</strong>&nbsp;</a>
@@ -106,6 +106,41 @@
             </span>
 
             
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期日, 五月 19日 2019, 10:55 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    643 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      2 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
           </div>
 
           
@@ -116,78 +151,100 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-<!--  <p class="h4">共计 8 篇文章</p>-->
-  <hr>
-  
-    
       
-      <p class="h5">2018</p>
-    
-    <a href="/2018/03/02/06-matplotlib饼状图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析06：matplotlib饼状图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/05-matplotlib直方图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析05：matplotlib直方图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/07-matplotlib箱线图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析07：matplotlib箱线图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/08-matplotlib颜色与样式/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析08：matplotlib颜色与样式</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/04-matploylib柱形图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析04：matplotlib柱形图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/01-numpy基础/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析01：numpy基础</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/02-matplotlib散点图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析02：matplotlib散点图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/03-matplotlib折线图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析03：matplotlib折线图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <p><strong>1) 使用时长</strong><br><strong>定义</strong>：用户在应用程序上所停留的时间。主要分为平均使用时长和单次使用时长，平均使用时长是某一段时间内所有用户的全部访问时间的平均值。<br><strong>涵义</strong>：通过考量用户在应用上的停留时间，我们可以看出应用内容是否吸引用户，应用质量是否合格；还可以看出某个推广渠道到来的用户是否是深度使用用户，以此评判渠道质量。<br><strong>2) 使用频率</strong><br><strong>定义</strong>：在一定时期内，同一个用户启动应用的次数。如在一天之内，同一个用户一共进行有效启动5次，那么该用户的日使用频率就是5次。<br><strong>涵义</strong>：使用频率和日启动次数类似，只是从另外一个角度衡量用户粘性，一个应用通常情况下用户粘性越高，那么用户的平均使用频率也就越高。<br><strong>3) 使用间隔</strong><br><strong>定义</strong>：使用间隔是指同一用户相邻两次启动应用的时间间隔，例如某一用户第一次启动应用到第二次启动应用之间相隔2天，那么该用户的使用间隔即为2天。<br><strong>涵义</strong>：使用间隔也从侧面反映了应用的用户粘性，通常情况下使用间隔越短说明用户越依赖应用，也就是说应用的用户粘性越高。也可以据此来决定推送消息的时机和发版频率。<br><strong>4) 访问深度</strong><br><strong>定义</strong>：我们将用户在一次启动应用过程中所到达的页面累计数量视为用户的访问深度， 例如某用户从启动APP到退出应用过程中，一共访问了12个页面，那么称该用户的访问深度为12。<br><strong>涵义</strong>：理论上来讲，访问深度越高，应用质量越好，用户对应用的依赖就越强<br><strong>5)页面跳出率</strong><br><strong>定义</strong>：用户从当前页面离开应用程序的比例，离开指“退出或后台超过30秒”<br><strong>涵义</strong>：在“访问页面”报表中的参数，这里的离开指结束一次启动，比如某用户在当前页面接到电话，此时应用程序隐藏到后台运行，10秒钟后挂电话又回到了应用程序，这样的过程不算作是用户“离开”。如果超过30秒，才算作一次离开。</p>
 
-
-              </div>
-            </div>
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E4%BA%A7%E5%93%81">产品</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/%E6%95%B0%E6%8D%AE%E4%BA%A7%E5%93%81">数据产品</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87">数据指标</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E4%BA%A7%E5%93%81">产品</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87">数据指标</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+   <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MjAzMS8xODU3OA==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+  
+  
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -260,6 +317,11 @@
 
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js"></script>
+  
+  <script src="/js/post.js"></script>
+
 
 
   <script src="/lib/smooth-scroll/smooth-scroll.min.js"></script>
@@ -300,7 +362,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "标签 - Python&nbsp;",
+        "用户行为类指标详解&nbsp;",
       ],
       cursorChar: "~",
       typeSpeed: 70,

@@ -133,6 +133,363 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/01-numpy基础/">
+        <p class="h4 index-header">数据分析01：numpy基础</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+
+# ndarray
+
+&#39;&#39;&#39;
+    # 三种创建方式
+    1、从python的基础数据对象转化
+    2、通过numpy内置的函数生成
+    3、从硬盘（文件）读取数据
+&#39;&#39;&#39;
+# 创建方法一
+a= [1,2,3,4]
+x1 = np.array(a)
+print(x1,&quot;\n&quot;,type(x1))
+
+# 创建方法二
+x = np.arange(5)
+print(x,&quot;\n&quot;,type(x))
+
+# # 创建方法三
+# date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True)
+# print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low)
+
+
+# 常用函数
+&#39;&#39;&#39;
+    min     最小值
+    max     最大值
+ </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Numpy">Numpy</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Numpy">Numpy</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/03-matplotlib折线图/">
+        <p class="h4 index-header">数据分析03：matplotlib折线图</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
+
+
+&#39;&#39;&#39;
+    折线图，用直线段将各数据连接起来组成的图形
+    常用来观察数据随时间变化的趋势
+    例如：股票价格，温度变化
+&#39;&#39;&#39;
+
+date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True)
+
+plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;)
+plt.plot_date(date,open,linestyle=&#39;-&#39;,c</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/02-matplotlib散点图/">
+        <p class="h4 index-header">数据分析02：matplotlib散点图</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
+
+&#39;&#39;&#39;
+    散点图显示两组数据的值，每个点的坐标位置的值决定
+    用户观察两种变量的相关性：
+        正相关
+        负相关
+        不相关
+
+&#39;&#39;&#39;
+
+# 正相关
+height = [161,170,174,165,182,175]
+weight = [50,65,70,62,81,75]
+plt.scatter(height,weight)
+plt.show()
+
+
+# 不相关
+N = 1000
+x = np.random.randn(N)
+y = np.random.randn(N)
+plt.scatter(x,y)
+plt.show()
+
+
+# 散点图的外观
+&#39;&#39;&#39;
+    c    颜色
+    s    点（面积）大小
+    alpha       透明度
+        值的范围[0,1]
+        通过调节透明度，来观察点的集中性
+    marker   </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/01/08/CentOS7防火墙控制与端口控制/">
+        <p class="h4 index-header">CentOS7 防火墙控制与端口控制</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">firewalld
+启动： systemctl start firewalld
+关闭： systemctl stop firewalld
+查看状态： systemctl status firewalld 
+开机禁用  ： systemctl disable firewalld
+开机启用  ： systemctl enable firewalld
+
+systemctlsystemctl是CentOS7的服务管理工具中主要的工具，它融合之前service和chkconfig的功能于一体。
+
+启动一个服务：systemctl start firewalld.service
+关闭一个服务：systemctl stop firewalld.service
+重启一个服务：systemctl restart firewalld.service
+显示一个服务的状态：systemctl status firewalld.service
+在开机时启用一个服务：systemctl enable firewalld.service
+在开机时禁用一个服务：systemctl disable firewalld.</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-01-08&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/CentOS">CentOS</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/01/04/剪辑师-Premiere快捷键/">
+        <p class="h4 index-header">剪辑师-Premiere快捷键</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">各种快捷键基本快捷键操作技巧Ctrl+Alt+N   新建项目Ctrl+O 打开项目Ctrl+shift+w  关闭项目Ctrl + W  关闭Ctrl + S 保存Ctrl + shift+ S  另存为Ctrl + I   导入Ctrl + N  新建序列Ctrl + Z  还原Ctrl + X    剪切Ctrl + C  复制Ctrl + V    粘贴Ctrl + A    全选Ctrl + Shift + A  取消全选Ctrl + F  查找Ctrl + K  剪切Ctrl + Shift + K  所有轨道剪切标记I 标记入点O   标记出点X 标记素材入出点Shift + /  标记素材Shift +   在项目窗口查看形式Shift + *  返回媒体浏览/  标记选择Shift + I  跳转入点Shift + O  跳转出点Ctrl + Shift + I 清除入点Ctrl + Shift + Q 清除出点Ctrl + Shift + X  清除入出点M  添加标记Shift + M  转到下一个标记Ctrl + Shift + M 转到上一个标记Ctrl + </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-01-04&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E5%BD%B1%E8%A7%86%E5%90%8E%E6%9C%9F">影视后期</a>&nbsp;
+          
+            <a href="/categories/Premiere">Premiere</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E5%89%AA%E8%BE%91%E5%B8%88">剪辑师</a>&nbsp;
+          
+            <a href="/tags/Premiere">Premiere</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/01/01/CentOS MariaDB配置/">
+        <p class="h4 index-header">CentOS MariaDB配置</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">启动Mariadb前提需安装mariadb-server
+
+安装mariadb-server  yum install -y mariadb-server
+启动服务  systemctl start mariadb.service
+添加到开机启动  systemctl enable mariadb.service
+安全设置，以及修改数据库管理员密码  mysql_secure_installation
+
+启动MariaDB
+
+正常启动
+systemctl start mariadb
+service mariadb start
+
+
+设置开机启动
+systemctl enable mariadb
+chkconfig mariadb on
+
+
+
+
+
+配置MariaDB的字符集
+设置客户端：  vim /etc/my.cnf.d/mysql-clients.cnf
+  [mysql]  default-character-set=utf8
+
+设置服务端：  vim /etc/my.cnf.d/server.cnf
+  [mysqld]  init_connect=’SET collation_</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-01-01&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/CentOS">CentOS</a>&nbsp;
+          
+            <a href="/tags/MariaDB">MariaDB</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/01/01/Centos7编译安装Python3.7/">
         <p class="h4 index-header">CentOS7编译安装Python3.7</p>
         
@@ -176,9 +533,9 @@ ln -s /usr/local/python3/bin/py</div>
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/CentOS">CentOS</a>&nbsp;
-          
             <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/CentOS">CentOS</a>&nbsp;
           
         
       </div>
@@ -390,408 +747,6 @@ heightFOrRowAtIndexPath         : 获取单元格高</div>
             <a href="/tags/iOS">iOS</a>&nbsp;
           
             <a href="/tags/Navtive">Navtive</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--MySQL中数据类型/">
-        <p class="h4 index-header">MySQL深入浅出--MySQL中数据类型</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">MySQL数据类型数值型整数型
-INT
-TINYINT
-BIGINT
-BOOL,BOOLEAN
-SMALLINT
-MEDIUMINT
-
-浮点型
-FLOAT
-DOUBLE
-DECIMAL
-
-字符串类型说明：
-1、CHAR效率高于VARCHAR,CHAR相当于拿空间换时间，VARCHAR拿时间换空间
-2、CHAR默认存储数据的时候，后面会用空格填充到指定长度；而在检索的时候会去掉后面空格；VARCHAR在保存的时候不进行填充，尾部的空格会留下
-3、TEXT列不能有默认值,检索的时候不存在大小写转换
-
-CHAR
-VARCHAR
-TINYTEXT
-TEXT
-MEDIUMTEXT
-LONGTEXT
-EMUM(‘value1’,’value2’,…)
-SET(‘value1’,’value2’,…)
-
-日期时间类型二进制类型</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--数据表相关操作/">
-        <p class="h4 index-header">MySQL深入浅出--数据表相关操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">数据表相关操作数据表
-描述
- 1、是数据库最重要的组成部分之一，数据是保存在数据表中
- 2、数据表由 行row 和 列column组成
- 3、表名要求唯一，不要包含特殊字符，最好语义明确
- 4、每个数据表至少有一列，行可有0 行，1行 或多行
-
-
-创建表
-CREATE TABLE [IF NOT EXISTS] tbl_name(
-    字段名称 字段类型 [完整性约束条件],
-    字段名称 字段类型 [完整性约束条件],
-    ...
-)ENGINE=存储引擎 CHARSET=编码方式;
-
-
-UNSIGNED        
-无符号，没有负数，从0开始
-
-ZEROFILL
-零填充，当数据的显示长度不够的时候可以使用前补0的效果填充至指定长度,字段会自动添加UNSIGNED
-
-NOT NULL
-非空约束，也就是插入值的时候这个字段必须要给值,值不能为空
-
-DEFAULT
-默认值，如果插入记录的时候没有给字段赋值，则使用默认值
-
-PRIMARY KEY
-主键，标识记录的唯一性，值不能重复，一个表只能有一个主键，自动禁止为空
-
-AUTO_INCREMENT
-自动增长，只能用于数值列</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
-        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
-登录/退出MySQL注意：
-​    1、命令行结束符号使用英文分号;   或者 \g
-​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
-​    3、\c可以取消当前命令的执行
-登录
-mysql -uroot -p
-mysql -uroot -proot
-mysql -hlocalhost -uroot -p -P3306
-登录同时修改命令提示符
-mysql -uroot -p –prompt=命令提示符
-
-
-获取版本号
-mysql -V
-mysql –version
-
-
-登录同时打开指定数据库
-mysql -uroot -p -D db_name
-
-
-
-退出
-exit
-quit
-\q
-ctrl + c
-
-SQL语句语法规范
-常用MySQL的关键字需要大写
-库名、表名、字段名称等使用小写
-SQL语句支持折行操作，拆分的时候不能把完整单词拆开
-数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
-
-常用SQL语句
-SELECT USER()   </div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--数据库相关操作/">
-        <p class="h4 index-header">MySQL深入浅出--数据库相关操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">数据库相关操作
-创建数据库   
-CREATE {DATABASE|SCHEMA} db_name;
-
-
-检测数据库名称是否存在，不存在则创建
-CREATE DATABASE [IF NOT EXISTS] db_name;
-
-
-创建数据库同时指定编码方式
-CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset;
-
-
-
-
-查看当前服务器下全部数据库
-SHOW DATABASES|SCHEMAS;
-
-
-查看指定数据库详细信息
-SHOW CREATE DATABASE db_name;
-
-
-修改指定数据库的编码方式
-ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset;
-
-
-打开指定数据库
-USE db_name;
-
-
-得到当前打开的数据库
-SELECT DATABASE()|SCHEMA();
-
-
-删除指定的数据库
-DROP DATABASE db_name;
-
-
-如果数据库存在则删除
-DROP DATABASE [IF EXIS</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--什么是数据库/">
-        <p class="h4 index-header">MySQL深入浅出--什么是数据库</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">什么是数据库​    数据库（Database）是按照数据结构来组织、储存和管理数据的仓库
-常见数据库
-Oracle
-DB2
-SQL Server
-Postgre SQL
-MySQL
-
-相关术语数据库系统（Database System） DBS
-数据库 (Database)
-数据库管理系统 (Database Management System) : DBMS
-应用开发工具
-管理员及用户
-
-SQL语言 （Structured Query Language）:结构化查询语言
-DDL (数据定义语言)
-DML (数据操作语言)
-DQL (数据查询语言)
-DCL (数据控制语言)
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/09/22/MySQL学习-约束及修改数据表/">
-        <p class="h4 index-header">MySQL学习-约束及修改数据表</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">约束
-约束保证数据 完整性和一致性
-
-约束分为表级约束和列级约束
-
-约束类型包括：
-
-
-​    NOT NULL        非空约束
-​    PRIMARY KEY    主键约束
-​    UNIQUE KEY        唯一约束
-​    DEFAULT        默认约束
-​    FOREIGN KEY    外键约束
-外键约束
-父表和子表必须使用相同的存储引擎，而且禁止使用临时表；
-数据表的存储引擎只能为InnoDB；
-外键列和参照列 必须具有相似的数据类型，其中数字的长度/是否有符号位 必须相同；而字符长度则可以不同；
-外键列和参照列 必须创建索引，如果外键列不存在索引的话，MySQL将自动创建索引
-
-- 编辑数据表的默认存储引擎
-- MySQL配置文件
-default-storage-engine = INNODB
-
-- 
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-09-22&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
           
         
       </div>
