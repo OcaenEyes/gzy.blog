@@ -133,6 +133,408 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--MySQL中数据类型/">
+        <p class="h4 index-header">MySQL深入浅出--MySQL中数据类型</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">MySQL数据类型数值型整数型
+INT
+TINYINT
+BIGINT
+BOOL,BOOLEAN
+SMALLINT
+MEDIUMINT
+
+浮点型
+FLOAT
+DOUBLE
+DECIMAL
+
+字符串类型说明：
+1、CHAR效率高于VARCHAR,CHAR相当于拿空间换时间，VARCHAR拿时间换空间
+2、CHAR默认存储数据的时候，后面会用空格填充到指定长度；而在检索的时候会去掉后面空格；VARCHAR在保存的时候不进行填充，尾部的空格会留下
+3、TEXT列不能有默认值,检索的时候不存在大小写转换
+
+CHAR
+VARCHAR
+TINYTEXT
+TEXT
+MEDIUMTEXT
+LONGTEXT
+EMUM(‘value1’,’value2’,…)
+SET(‘value1’,’value2’,…)
+
+日期时间类型二进制类型</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--数据表相关操作/">
+        <p class="h4 index-header">MySQL深入浅出--数据表相关操作</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">数据表相关操作数据表
+描述
+ 1、是数据库最重要的组成部分之一，数据是保存在数据表中
+ 2、数据表由 行row 和 列column组成
+ 3、表名要求唯一，不要包含特殊字符，最好语义明确
+ 4、每个数据表至少有一列，行可有0 行，1行 或多行
+
+
+创建表
+CREATE TABLE [IF NOT EXISTS] tbl_name(
+    字段名称 字段类型 [完整性约束条件],
+    字段名称 字段类型 [完整性约束条件],
+    ...
+)ENGINE=存储引擎 CHARSET=编码方式;
+
+
+UNSIGNED        
+无符号，没有负数，从0开始
+
+ZEROFILL
+零填充，当数据的显示长度不够的时候可以使用前补0的效果填充至指定长度,字段会自动添加UNSIGNED
+
+NOT NULL
+非空约束，也就是插入值的时候这个字段必须要给值,值不能为空
+
+DEFAULT
+默认值，如果插入记录的时候没有给字段赋值，则使用默认值
+
+PRIMARY KEY
+主键，标识记录的唯一性，值不能重复，一个表只能有一个主键，自动禁止为空
+
+AUTO_INCREMENT
+自动增长，只能用于数值列</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
+        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
+登录/退出MySQL注意：
+​    1、命令行结束符号使用英文分号;   或者 \g
+​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
+​    3、\c可以取消当前命令的执行
+登录
+mysql -uroot -p
+mysql -uroot -proot
+mysql -hlocalhost -uroot -p -P3306
+登录同时修改命令提示符
+mysql -uroot -p –prompt=命令提示符
+
+
+获取版本号
+mysql -V
+mysql –version
+
+
+登录同时打开指定数据库
+mysql -uroot -p -D db_name
+
+
+
+退出
+exit
+quit
+\q
+ctrl + c
+
+SQL语句语法规范
+常用MySQL的关键字需要大写
+库名、表名、字段名称等使用小写
+SQL语句支持折行操作，拆分的时候不能把完整单词拆开
+数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
+
+常用SQL语句
+SELECT USER()   </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--数据库相关操作/">
+        <p class="h4 index-header">MySQL深入浅出--数据库相关操作</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">数据库相关操作
+创建数据库   
+CREATE {DATABASE|SCHEMA} db_name;
+
+
+检测数据库名称是否存在，不存在则创建
+CREATE DATABASE [IF NOT EXISTS] db_name;
+
+
+创建数据库同时指定编码方式
+CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset;
+
+
+
+
+查看当前服务器下全部数据库
+SHOW DATABASES|SCHEMAS;
+
+
+查看指定数据库详细信息
+SHOW CREATE DATABASE db_name;
+
+
+修改指定数据库的编码方式
+ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset;
+
+
+打开指定数据库
+USE db_name;
+
+
+得到当前打开的数据库
+SELECT DATABASE()|SCHEMA();
+
+
+删除指定的数据库
+DROP DATABASE db_name;
+
+
+如果数据库存在则删除
+DROP DATABASE [IF EXIS</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--什么是数据库/">
+        <p class="h4 index-header">MySQL深入浅出--什么是数据库</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">什么是数据库​    数据库（Database）是按照数据结构来组织、储存和管理数据的仓库
+常见数据库
+Oracle
+DB2
+SQL Server
+Postgre SQL
+MySQL
+
+相关术语数据库系统（Database System） DBS
+数据库 (Database)
+数据库管理系统 (Database Management System) : DBMS
+应用开发工具
+管理员及用户
+
+SQL语言 （Structured Query Language）:结构化查询语言
+DDL (数据定义语言)
+DML (数据操作语言)
+DQL (数据查询语言)
+DCL (数据控制语言)
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/09/22/MySQL学习-约束及修改数据表/">
+        <p class="h4 index-header">MySQL学习-约束及修改数据表</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">约束
+约束保证数据 完整性和一致性
+
+约束分为表级约束和列级约束
+
+约束类型包括：
+
+
+​    NOT NULL        非空约束
+​    PRIMARY KEY    主键约束
+​    UNIQUE KEY        唯一约束
+​    DEFAULT        默认约束
+​    FOREIGN KEY    外键约束
+外键约束
+父表和子表必须使用相同的存储引擎，而且禁止使用临时表；
+数据表的存储引擎只能为InnoDB；
+外键列和参照列 必须具有相似的数据类型，其中数字的长度/是否有符号位 必须相同；而字符长度则可以不同；
+外键列和参照列 必须创建索引，如果外键列不存在索引的话，MySQL将自动创建索引
+
+- 编辑数据表的默认存储引擎
+- MySQL配置文件
+default-storage-engine = INNODB
+
+- 
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-09-22&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2017/09/21/MySQL学习-数据类型与操作数据表/">
         <p class="h4 index-header">MySQL学习-数据类型与操作数据表</p>
         

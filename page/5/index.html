@@ -133,6 +133,120 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/11/25/几种机器学习算法原理/">
+        <p class="h4 index-header">几种机器学习原理</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">几种机器学习算法原理机器学习过程什么问题适合用机器学习解决几种常见的模型和算法</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-11-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">人工智能</a>&nbsp;
+          
+            <a href="/tags/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/11/25/学习如何为产品选择合适的推荐算法/">
+        <p class="h4 index-header">学习如何为产品选择合适的推荐算法</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">常见推荐机制/算法基础推荐机制
+
+
+机制
+应用场景
+原理概述
+
+
+
+
+内容推荐
+适用于冷启动
+
+
+
+基于内容的协同过滤
+数据量较大
+判断内容相似度，相似度高的内容；播放内容A的用户，也会对内容B感兴趣
+
+
+基于用户的协同过滤
+数据量较大，但数据量越大可信度越低
+把数据代入专门计算相似度的公式，获得不同用户（二者）口味的相似度；推测相似度高的用户，喜好的内容也类似，进而可以相互推荐
+
+
+基于标签的推荐
+适用于冷启动
+
+
+
+
+协同过滤的风险协同过滤技术在个性化推荐初期具有较好的效果，但随着产品结构、内容复杂度和用户人数的不断增加，协同过滤技术的缺点也一点一点的暴露出来了。
+
+稀疏性（sparity）大多数推荐系统中，每个用户涉及的信息量较为有限；用户数据最多不过评估到了百分分之一，造成评估矩阵数据相当稀疏，增加寻找相似用户集的难度，导致推荐效果大大降低
+扩展性（scalability）“最近邻居”算法的计算量虽则用户和项的增加而大大增加，对于百万之巨的数目，通常的算法将遭遇严重的扩展性问题
+精确性（accuracy）寻找相近用户来产生推荐集，在数据量较大的情况下，推荐的可信度也会降低
+
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-11-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+          
+            <a href="/categories/%E6%8E%A8%E8%8D%90">推荐</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+          
+            <a href="/tags/%E6%8E%A8%E8%8D%90">推荐</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/11/20/Python数据挖掘——基础知识/">
         <p class="h4 index-header">Python数据挖掘——基础知识</p>
         
@@ -617,148 +731,65 @@ K均值算法Adaboost神经网络马尔科夫</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/01/08/CentOS7防火墙控制与端口控制/">
-        <p class="h4 index-header">CentOS7 防火墙控制与端口控制</p>
+      <a href="/2018/03/02/04-matploylib柱形图/">
+        <p class="h4 index-header">数据分析02：matplotlib柱形图</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">firewalld
-启动： systemctl start firewalld
-关闭： systemctl stop firewalld
-查看状态： systemctl status firewalld 
-开机禁用  ： systemctl disable firewalld
-开机启用  ： systemctl enable firewalld
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
 
-systemctlsystemctl是CentOS7的服务管理工具中主要的工具，它融合之前service和chkconfig的功能于一体。
+# 柱形图
+# 例一
+N =5
+y =  [15,28,10,30,25]
+index = np.arange(N)
+p = plt.bar(index,height=y)
+plt.show()
 
-启动一个服务：systemctl start firewalld.service
-关闭一个服务：systemctl stop firewalld.service
-重启一个服务：systemctl restart firewalld.service
-显示一个服务的状态：systemctl status firewalld.service
-在开机时启用一个服务：systemctl enable firewalld.service
-在开机时禁用一个服务：systemctl disable firewalld.</div>
+# 例2
+p1 = plt.bar(0,bottom=index,width=y,height=0.5,align=&#39;edge&#39;,color=&#39;red&#39;,orientation=&#39;horizontal&#39;)
+plt.show()
+
+p2 = plt.barh(index,width= y , align=&#39;edge&#39;,color =&#39;green&#39;,height=0.5)
+plt.show()
+
+# 例3
+sales_BJ = [52,55,63,53]
+sales_SH = [44,66,55,41]
+
+index = np.arange(4)
+bar_width = 0.3
+
+# 竖着显示
+plt.bar(in</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-01-08&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
         
         
           <i class="iconfont icon-inbox"></i>
           
-            <a href="/categories/Linux">Linux</a>&nbsp;
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python">Python</a>&nbsp;
+          
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
           &nbsp;
         
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/CentOS">CentOS</a>&nbsp;
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
           
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/01/04/剪辑师-Premiere快捷键/">
-        <p class="h4 index-header">剪辑师-Premiere快捷键</p>
-        
-        
+            <a href="/tags/Python">Python</a>&nbsp;
           
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">各种快捷键基本快捷键操作技巧Ctrl+Alt+N   新建项目Ctrl+O 打开项目Ctrl+shift+w  关闭项目Ctrl + W  关闭Ctrl + S 保存Ctrl + shift+ S  另存为Ctrl + I   导入Ctrl + N  新建序列Ctrl + Z  还原Ctrl + X    剪切Ctrl + C  复制Ctrl + V    粘贴Ctrl + A    全选Ctrl + Shift + A  取消全选Ctrl + F  查找Ctrl + K  剪切Ctrl + Shift + K  所有轨道剪切标记I 标记入点O   标记出点X 标记素材入出点Shift + /  标记素材Shift +   在项目窗口查看形式Shift + *  返回媒体浏览/  标记选择Shift + I  跳转入点Shift + O  跳转出点Ctrl + Shift + I 清除入点Ctrl + Shift + Q 清除出点Ctrl + Shift + X  清除入出点M  添加标记Shift + M  转到下一个标记Ctrl + Shift + M 转到上一个标记Ctrl + </div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-01-04&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E5%BD%B1%E8%A7%86%E5%90%8E%E6%9C%9F">影视后期</a>&nbsp;
-          
-            <a href="/categories/Premiere">Premiere</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E5%89%AA%E8%BE%91%E5%B8%88">剪辑师</a>&nbsp;
-          
-            <a href="/tags/Premiere">Premiere</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/01/01/CentOS MariaDB配置/">
-        <p class="h4 index-header">CentOS MariaDB配置</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">启动Mariadb前提需安装mariadb-server
-
-安装mariadb-server  yum install -y mariadb-server
-启动服务  systemctl start mariadb.service
-添加到开机启动  systemctl enable mariadb.service
-安全设置，以及修改数据库管理员密码  mysql_secure_installation
-
-启动MariaDB
-
-正常启动
-systemctl start mariadb
-service mariadb start
-
-
-设置开机启动
-systemctl enable mariadb
-chkconfig mariadb on
-
-
-
-
-
-配置MariaDB的字符集
-设置客户端：  vim /etc/my.cnf.d/mysql-clients.cnf
-  [mysql]  default-character-set=utf8
-
-设置服务端：  vim /etc/my.cnf.d/server.cnf
-  [mysqld]  init_connect=’SET collation_</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-01-01&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/CentOS">CentOS</a>&nbsp;
-          
-            <a href="/tags/MariaDB">MariaDB</a>&nbsp;
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
           
         
       </div>

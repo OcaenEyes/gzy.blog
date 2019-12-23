@@ -133,6 +133,155 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/12/20/php学习--变量和数据类型/">
+        <p class="h4 index-header">php学习--变量和数据类型</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">PHP变量变量​    程序执行期间，可以变化的量即为变量。
+声明变量
+以美元$ 符号声明
+注意：（PHP严格区分大小写）
+变量名称以 字母、或下划线开始，后面跟上数字/字母/下划线，不能包含特殊字符
+变量名称最好含义明确
+变量名最好采用驼峰标记，或下划线法
+驼峰
+小驼峰 ：firstName
+大驼峰：FirstName
+
+
+下划线
+first_name
+
+
+
+
+
+
+
+可变变量
+等量代换
+
+使用变量
+直接书写变量的名称
+$变量名称
+
+
+
+
+PHP数据类型8种主要数据类型
+标量类型 （特点：只能存储单一数据）
+
+整型  int | integer
+
+整数
+分类
+十进制
+八进制
+十六进制
+
+
+存储范围
+带符号 （-21亿   到 21亿）
+不带符号 （0  到42亿）
+超过整型存储范围，会出现溢出现象
+
+
+
+
+
+
+浮点型  float | double  | real
+
+带小数点
+科学计数法 ，e或者 E
+注意：
+浮点数是有误差的，不要比较两个浮点数的大小
+
+
+
+
+布尔型  bool  |  boolean
+
+true 
+false 
+
+
+字符串型  string    只能存储单一数据
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-12-20&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/php">php</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/php">php</a>&nbsp;
+          
+            <a href="/tags/%E5%90%8E%E7%AB%AF%E6%9C%8D%E5%8A%A1">后端服务</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/12/20/推荐算法理论与实践（一）/">
+        <p class="h4 index-header">推荐算法理论与实践（一）</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">电影推荐系统原理基于内容的推荐系统
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-12-20&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95">推荐算法</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+          
+            <a href="/tags/%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95">推荐算法</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/12/20/php学习--基础语法/">
         <p class="h4 index-header">php学习--基础语法</p>
         
@@ -277,14 +426,27 @@ PHP支持几乎所有流行的数据库以及操作系统。
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/11/30/深度学习笔记——线形回归的从零实现/">
-        <p class="h4 index-header">深度学习笔记——线性回归的从零开始实现</p>
+      <a href="/2018/11/30/深度学习笔记——线性回归/">
+        <p class="h4 index-header">深度学习笔记——线性回归</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1"></div>
+          <div class="index-text mb-1">深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式
+单层神经网络：线性回归、Softmax回归
+线性回归输出是一个连续值，适用于回归问题。
+​    如：预测房屋价格、气温、销售额等连续值问题
+Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。
+​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值
+线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）
+模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）
+线性回归假设输出与各个输入之间的线性关系：
+y‘ = x1w1 + x2w2 + b;
+其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 
+模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。
+训练数据
+训练数据集（training data set ）/ 训练集（</div>
         </div>
       </a>
 
@@ -318,27 +480,14 @@ PHP支持几乎所有流行的数据库以及操作系统。
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/11/30/深度学习笔记——线性回归/">
-        <p class="h4 index-header">深度学习笔记——线性回归</p>
+      <a href="/2018/11/30/深度学习笔记——线形回归的从零实现/">
+        <p class="h4 index-header">深度学习笔记——线性回归的从零开始实现</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式
-单层神经网络：线性回归、Softmax回归
-线性回归输出是一个连续值，适用于回归问题。
-​    如：预测房屋价格、气温、销售额等连续值问题
-Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。
-​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值
-线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）
-模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）
-线性回归假设输出与各个输入之间的线性关系：
-y‘ = x1w1 + x2w2 + b;
-其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 
-模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。
-训练数据
-训练数据集（training data set ）/ 训练集（</div>
+          <div class="index-text mb-1"></div>
         </div>
       </a>
 
@@ -599,120 +748,6 @@ CNN为Convo</div>
             <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">人工智能</a>&nbsp;
           
             <a href="/tags/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/11/25/几种机器学习算法原理/">
-        <p class="h4 index-header">几种机器学习原理</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">几种机器学习算法原理机器学习过程什么问题适合用机器学习解决几种常见的模型和算法</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-11-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">人工智能</a>&nbsp;
-          
-            <a href="/tags/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/11/25/学习如何为产品选择合适的推荐算法/">
-        <p class="h4 index-header">学习如何为产品选择合适的推荐算法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">常见推荐机制/算法基础推荐机制
-
-
-机制
-应用场景
-原理概述
-
-
-
-
-内容推荐
-适用于冷启动
-
-
-
-基于内容的协同过滤
-数据量较大
-判断内容相似度，相似度高的内容；播放内容A的用户，也会对内容B感兴趣
-
-
-基于用户的协同过滤
-数据量较大，但数据量越大可信度越低
-把数据代入专门计算相似度的公式，获得不同用户（二者）口味的相似度；推测相似度高的用户，喜好的内容也类似，进而可以相互推荐
-
-
-基于标签的推荐
-适用于冷启动
-
-
-
-
-协同过滤的风险协同过滤技术在个性化推荐初期具有较好的效果，但随着产品结构、内容复杂度和用户人数的不断增加，协同过滤技术的缺点也一点一点的暴露出来了。
-
-稀疏性（sparity）大多数推荐系统中，每个用户涉及的信息量较为有限；用户数据最多不过评估到了百分分之一，造成评估矩阵数据相当稀疏，增加寻找相似用户集的难度，导致推荐效果大大降低
-扩展性（scalability）“最近邻居”算法的计算量虽则用户和项的增加而大大增加，对于百万之巨的数目，通常的算法将遭遇严重的扩展性问题
-精确性（accuracy）寻找相近用户来产生推荐集，在数据量较大的情况下，推荐的可信度也会降低
-
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-11-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/categories/%E6%8E%A8%E8%8D%90">推荐</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/tags/%E6%8E%A8%E8%8D%90">推荐</a>&nbsp;
           
         
       </div>
