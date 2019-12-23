@@ -731,8 +731,8 @@ K均值算法Adaboost神经网络马尔科夫</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/04-matploylib柱形图/">
-        <p class="h4 index-header">数据分析02：matplotlib柱形图</p>
+      <a href="/2018/03/02/06-matplotlib饼状图/">
+        <p class="h4 index-header">数据分析06：matplotlib饼状图</p>
         
         
           
@@ -741,30 +741,26 @@ K均值算法Adaboost神经网络马尔科夫</div>
           <div class="index-text mb-1">import numpy as np
 import matplotlib.pyplot as plt
 
-# 柱形图
-# 例一
-N =5
-y =  [15,28,10,30,25]
-index = np.arange(N)
-p = plt.bar(index,height=y)
+&#39;&#39;&#39;
+    饼状图显示一个数据系列中各项总和的比例；
+    饼状图中的数据点显示为整个饼状图的百分比；
+    如：前十大品牌占市场份额图
+
+&#39;&#39;&#39;
+# 例
+labels = &#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;
+fracs = [15.0,30.0,45.0,10.0]
+
+explode = [0,0.05,0,0.08]
+plt.axes(aspect=1)
+plt.pie(x=fracs,labels=labels,autopct=&quot;%.0f%%&quot;,explode=explode,shadow=True)
 plt.show()
 
-# 例2
-p1 = plt.bar(0,bottom=index,width=y,height=0.5,align=&#39;edge&#39;,color=&#39;red&#39;,orientation=&#39;horizontal&#39;)
-plt.show()
-
-p2 = plt.barh(index,width= y , align=&#39;edge&#39;,color =&#39;green&#39;,height=0.5)
-plt.show()
-
-# 例3
-sales_BJ = [52,55,63,53]
-sales_SH = [44,66,55,41]
-
-index = np.arange(4)
-bar_width = 0.3
-
-# 竖着显示
-plt.bar(in</div>
+# 练习
+labels = &#39;SH&#39;,&#39;BJ&#39;,&#39;SZ&#39;,&#39;GZ&#39;
+fracs = [20,30,25,15]
+explode = [0,0,0.08,0]
+</div>
         </div>
       </a>
 
@@ -779,7 +775,7 @@ plt.bar(in</div>
           
             <a href="/categories/Python">Python</a>&nbsp;
           
-            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+            <a href="/categories/Numpy">Numpy</a>&nbsp;
           &nbsp;
         
         
@@ -789,7 +785,7 @@ plt.bar(in</div>
           
             <a href="/tags/Python">Python</a>&nbsp;
           
-            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
+            <a href="/tags/Numpy">Numpy</a>&nbsp;
           
         
       </div>
@@ -800,7 +796,7 @@ plt.bar(in</div>
 
   <nav aria-label="index posts navigation">
     <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/4/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/6/"><i class="fas fa-angle-double-right"></i></a>
+      <a class="extend prev" rel="prev" href="/page/4/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/6/"><i class="fas fa-angle-double-right"></i></a>
     </span>
   </nav>
   

@@ -415,9 +415,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
-    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
+    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -429,9 +429,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[深度学习笔记——线性回归]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
+    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -612,7 +612,67 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析02：matplotlib柱形图]]></title>
+    <title><![CDATA[数据分析06：matplotlib饼状图]]></title>
+    <url>%2F2018%2F03%2F02%2F06-matplotlib%E9%A5%BC%E7%8A%B6%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 饼状图显示一个数据系列中各项总和的比例； 饼状图中的数据点显示为整个饼状图的百分比； 如：前十大品牌占市场份额图 &#39;&#39;&#39; # 例 labels = &#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39; fracs = [15.0,30.0,45.0,10.0] explode = [0,0.05,0,0.08] plt.axes(aspect=1) plt.pie(x=fracs,labels=labels,autopct=&quot;%.0f%%&quot;,explode=explode,shadow=True) plt.show() # 练习 labels = &#39;SH&#39;,&#39;BJ&#39;,&#39;SZ&#39;,&#39;GZ&#39; fracs = [20,30,25,15] explode = [0,0,0.08,0] plt.pie(x= fracs,labels=labels,autopct=&#39;%.00f%%&#39;,explode=explode,shadow=True) plt.show()]]></content>
+      <categories>
+        <category>数据分析</category>
+        <category>Python</category>
+        <category>Numpy</category>
+      </categories>
+      <tags>
+        <tag>数据分析</tag>
+        <tag>Python</tag>
+        <tag>Numpy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据分析05：matplotlib直方图]]></title>
+    <url>%2F2018%2F03%2F02%2F05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 由于一系列不等的纵形图组成，表示数据分布的情况 例如：某年级同学的身高分布 需要注意与 柱形图的区别 &#39;&#39;&#39; # # 例 # mu = 100 #均值 # sigma = 20 # 标准差 # # x = mu + sigma * np.random.random(1000) # plt.hist(x,bins=20,density=True) # plt.show() # # # # 双变量图 频率越低越暗 # # x的中心为2 # x = np.random.randn(1000) +2 # # y的中心为3 # y = np.random.randn(1000)+3 # # plt.hist2d(x,y,bins=40) # plt.show() # 练习 &#39;&#39;&#39; 随机生成2000个数据，均值为10， 方差3； 绘制两个直方图， bins =10 和50 ，normed ／density 分别为True,False; 随机生成x,y 各2000个， x均值1 ，y 均值5; 绘制2-D直方图， bins = 40; &#39;&#39;&#39; # 均值 ava = 10 # 方差 variance = 3 sigma = np.sqrt(variance) x = ava + sigma * np.random.random(2000) plt.hist(x,bins=10,density=True) plt.show() plt.hist(x,bins=50,density=False) plt.show() x = np.random.randn(2000) +1 y = np.random.randn(2000) + 5 plt.hist2d(x,y,bins=40) plt.show()]]></content>
+      <categories>
+        <category>数据分析</category>
+        <category>Python</category>
+        <category>Matplotlib</category>
+      </categories>
+      <tags>
+        <tag>数据分析</tag>
+        <tag>Python</tag>
+        <tag>Matplotlib</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据分析07：matplotlib箱线图]]></title>
+    <url>%2F2018%2F03%2F02%2F07-matplotlib%E7%AE%B1%E7%BA%BF%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 箱形图（Box-plot）又称为盒须图，盒式图，或 箱线图； 是一种用在显示一组数据分散情况的资料统计图； 上边缘，上四分位数，中位数，下四分位数，下边缘，异常值； &#39;&#39;&#39; np.random.seed(100) data = np.random.normal(size=1000,loc=0,scale=1) # sym 指定异常值的点；whis虚线的长度， 通过调整whis的大小来决定收入异常值的多少 plt.boxplot(data,sym =&#39;o&#39;,whis=1.5) plt.show() # 同一张图中显示多个箱线图 # 4组 1000的数据 data = np.random.normal(size=(1000,4),loc = 0,scale=1) # 每组的标签为ABCD labels = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;] plt.boxplot(data,labels=labels) plt.show() # 练习 &#39;&#39;&#39; 随机生成 100 *5 的数组； 绘制箱线图，使用sym ,whis参数 &#39;&#39;&#39; data = np.random.normal(size=(100,5),loc = 0,scale=1) plt.boxplot(data,sym=&#39;o&#39;,whis=0.5) plt.show()]]></content>
+      <categories>
+        <category>数据分析</category>
+        <category>Python</category>
+        <category>Matplotlib</category>
+      </categories>
+      <tags>
+        <tag>数据分析</tag>
+        <tag>Python</tag>
+        <tag>Matplotlib</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据分析08：matplotlib颜色与样式]]></title>
+    <url>%2F2018%2F03%2F02%2F08-matplotlib%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%A0%B7%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 颜色： - 八种内置默认颜色， 缩写 b :blue g :green r :red c :cyan m :magenta y :yellow k :black w :white - 其它颜色的表示方法 灰色阴影 html 十六进制 RGB 元组 &#39;&#39;&#39; y = np.arange(1,5) # 内置颜色表示 plt.plot(y,color =&#39;g&#39;) # 灰度表示方法 plt.plot(y+1,color = &#39;0.5&#39;) # html 十六进制 plt.plot(y+2,color = &#39;#ff00ff&#39;) # RGB 元组 plt.plot(y+3,color=(0.1,0.2,0.3)) plt.show() &#39;&#39;&#39; 线 linestyle =&#39;&#39; -- 虚线 -. 点化线 ： 点线 - 实线 样式字符串 可将 颜色，点型，线性 ，依次排列成一个字符串如： cx-- mo: kp- plt.plot(y,&#39;cx--&#39;) &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用样式字符串绘制两条线； 1、红色，实线，圆点 2、黄色，虚线，X点 3、绿色，点线，三角形点 &#39;&#39;&#39; y = np.arange(0,4) plt.plot(y,&#39;ro-&#39;,y+1,&#39;yx--&#39;,y+2,&#39;g&gt;:&#39;) plt.show()]]></content>
+      <categories>
+        <category>数据分析</category>
+        <category>Python</category>
+        <category>Matplotlib</category>
+      </categories>
+      <tags>
+        <tag>数据分析</tag>
+        <tag>Python</tag>
+        <tag>Matplotlib</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据分析04：matplotlib柱形图]]></title>
     <url>%2F2018%2F03%2F02%2F04-matploylib%E6%9F%B1%E5%BD%A2%E5%9B%BE%2F</url>
     <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt # 柱形图 # 例一 N =5 y = [15,28,10,30,25] index = np.arange(N) p = plt.bar(index,height=y) plt.show() # 例2 p1 = plt.bar(0,bottom=index,width=y,height=0.5,align=&#39;edge&#39;,color=&#39;red&#39;,orientation=&#39;horizontal&#39;) plt.show() p2 = plt.barh(index,width= y , align=&#39;edge&#39;,color =&#39;green&#39;,height=0.5) plt.show() # 例3 sales_BJ = [52,55,63,53] sales_SH = [44,66,55,41] index = np.arange(4) bar_width = 0.3 # 竖着显示 plt.bar(index,sales_BJ,bar_width) plt.bar(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;) plt.show() # 横着显示 plt.barh(index,sales_BJ,bar_width) plt.barh(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;) plt.show() # 层叠图 plt.bar(index,sales_BJ,bar_width) plt.bar(index,sales_SH,bar_width,color=&#39;r&#39;,bottom=sales_BJ) plt.show() # 练习 &#39;&#39;&#39; 生成两组大小为5的数据； 画出两组数据 水平的条形图； 采用并列，层叠两种方式； &#39;&#39;&#39; N =5 n1 = np.random.randint(1,100,N) n2 = np.random.randint(1,100,N) index = np.arange(N) bar_width = 0.3 # 并列显示 plt.bar(index,n1,bar_width) plt.bar(index+bar_width,n2,bar_width,color=&#39;r&#39;) plt.show() # 层叠显示 plt.bar(index,n1,bar_width) plt.bar(index,n2,bar_width,color=&#39;r&#39;,bottom=n1) plt.show()]]></content>
       <categories>
@@ -642,9 +702,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析02：matplotlib折线图]]></title>
-    <url>%2F2018%2F03%2F02%2F03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt import matplotlib.dates as mdates &#39;&#39;&#39; 折线图，用直线段将各数据连接起来组成的图形 常用来观察数据随时间变化的趋势 例如：股票价格，温度变化 &#39;&#39;&#39; date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True) plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;) plt.plot_date(date,open,linestyle=&#39;-&#39;,color=&quot;red&quot;,marker =&#39;o&#39;) plt.show() # 练习 &#39;&#39;&#39; 画出x值为[0,10]的正弦函数图像 &#39;&#39;&#39; x = np.linspace(0,10,100) y = np.sin(x) plt.plot(x,y) plt.show()]]></content>
+    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
+    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python</category>
@@ -657,9 +717,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
-    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
+    <title><![CDATA[数据分析03：matplotlib折线图]]></title>
+    <url>%2F2018%2F03%2F02%2F03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt import matplotlib.dates as mdates &#39;&#39;&#39; 折线图，用直线段将各数据连接起来组成的图形 常用来观察数据随时间变化的趋势 例如：股票价格，温度变化 &#39;&#39;&#39; date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True) plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;) plt.plot_date(date,open,linestyle=&#39;-&#39;,color=&quot;red&quot;,marker =&#39;o&#39;) plt.show() # 练习 &#39;&#39;&#39; 画出x值为[0,10]的正弦函数图像 &#39;&#39;&#39; x = np.linspace(0,10,100) y = np.sin(x) plt.plot(x,y) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python</category>

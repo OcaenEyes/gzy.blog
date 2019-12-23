@@ -15,7 +15,7 @@
   <meta name="description" content="This is MyBlog Notes.">
   <meta name="author" content="OceanEyes.GZY">
   <meta name="keywords" content="">
-  <title>分类 - Matplotlib ~ 乔克叔叔杂货店</title>
+  <title>数据分析08：matplotlib颜色与样式 ~ 乔克叔叔杂货店</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">&nbsp;<strong>乔克叔叔杂货店</strong>&nbsp;</a>
@@ -106,6 +106,41 @@
             </span>
 
             
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期五, 三月 2日 2018, 10:50 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    245 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      1 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
           </div>
 
           
@@ -116,66 +151,165 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-<!--  <p class="h4">共计 6 篇文章</p>-->
-  <hr>
-  
-    
       
-      <p class="h5">2018</p>
-    
-    <a href="/2018/03/02/05-matplotlib直方图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析05：matplotlib直方图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/07-matplotlib箱线图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析07：matplotlib箱线图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/08-matplotlib颜色与样式/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析08：matplotlib颜色与样式</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/04-matploylib柱形图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析04：matplotlib柱形图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/02-matplotlib散点图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析02：matplotlib散点图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/03-matplotlib折线图/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">数据分析03：matplotlib折线图</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-</div>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <pre><code>import numpy as np
+import matplotlib.pyplot as plt
+
+&#39;&#39;&#39;
+    颜色：
+    - 八种内置默认颜色， 缩写
+        b   :blue
+        g   :green
+        r   :red
+        c   :cyan
+        m   :magenta
+        y   :yellow
+        k   :black
+        w   :white
+    - 其它颜色的表示方法
+        灰色阴影
+        html   十六进制
+        RGB    元组
+
+&#39;&#39;&#39;
+
+y = np.arange(1,5)
+# 内置颜色表示
+plt.plot(y,color =&#39;g&#39;)
+# 灰度表示方法
+plt.plot(y+1,color = &#39;0.5&#39;)
+# html 十六进制
+plt.plot(y+2,color = &#39;#ff00ff&#39;)
+# RGB 元组
+plt.plot(y+3,color=(0.1,0.2,0.3))
+
+plt.show()
 
 
+&#39;&#39;&#39;
+    线
+        linestyle =&#39;&#39;
+        --      虚线
+        -.      点化线
+        ：      点线
+        -       实线
 
-              </div>
-            </div>
+    样式字符串
+        可将 颜色，点型，线性 ，依次排列成一个字符串如：
+            cx--
+            mo:
+            kp-
+
+            plt.plot(y,&#39;cx--&#39;)
+&#39;&#39;&#39;
+
+# 练习
+&#39;&#39;&#39;
+    使用样式字符串绘制两条线；
+        1、红色，实线，圆点
+        2、黄色，虚线，X点
+        3、绿色，点线，三角形点
+&#39;&#39;&#39;
+
+y = np.arange(0,4)
+plt.plot(y,&#39;ro-&#39;,y+1,&#39;yx--&#39;,y+2,&#39;g&gt;:&#39;)
+
+plt.show()
+
+</code></pre>
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/Python">Python</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/Matplotlib">Matplotlib</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>
+                
+                  <a class="hover-with-bg" href="/tags/Python">Python</a>
+                
+                  <a class="hover-with-bg" href="/tags/Matplotlib">Matplotlib</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+   <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MjAzMS8xODU3OA==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+  
+  
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -248,6 +382,11 @@
 
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js"></script>
+  
+  <script src="/js/post.js"></script>
+
 
 
   <script src="/lib/smooth-scroll/smooth-scroll.min.js"></script>
@@ -288,7 +427,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "分类 - Matplotlib&nbsp;",
+        "数据分析08：matplotlib颜色与样式&nbsp;",
       ],
       cursorChar: "~",
       typeSpeed: 70,
