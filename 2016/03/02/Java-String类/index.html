@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="This is MyBlog Notes.">
+  <meta name="author" content="OceanEyes.GZY">
+  <meta name="keywords" content="">
+  <title>Java-String类 ~ 乔克叔叔杂货店</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css">
+
+
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">&nbsp;<strong>乔克叔叔杂货店</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/background.jpg')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期三, 三月 2日 2016, 11:20 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    1.3k 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      5 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1 id="Java-String类"><a href="#Java-String类" class="headerlink" title="Java-String类"></a>Java-String类</h1><pre><code>public class StringDemo {
+    //String 方法
+    /*
+        SN(序号)    方法描述
+1    char charAt(int index)
+返回指定索引处的 char 值。
+2    int compareTo(Object o)
+把这个字符串和另一个对象比较。
+3    int compareTo(String anotherString)
+按字典顺序比较两个字符串。
+4    int compareToIgnoreCase(String str)
+按字典顺序比较两个字符串，不考虑大小写。
+5    String concat(String str)
+将指定字符串连接到此字符串的结尾。
+6    boolean contentEquals(StringBuffer sb)
+当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。
+7    static String copyValueOf(char[] data)
+返回指定数组中表示该字符序列的 String。
+8    static String copyValueOf(char[] data, int offset, int count)
+返回指定数组中表示该字符序列的 String。
+9    boolean endsWith(String suffix)
+测试此字符串是否以指定的后缀结束。
+10    boolean equals(Object anObject)
+将此字符串与指定的对象比较。
+11    boolean equalsIgnoreCase(String anotherString)
+将此 String 与另一个 String 比较，不考虑大小写。
+12    byte[] getBytes()
+ 使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。
+13    byte[] getBytes(String charsetName)
+使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。
+14    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)
+将字符从此字符串复制到目标字符数组。
+15    int hashCode()
+返回此字符串的哈希码。
+16    int indexOf(int ch)
+返回指定字符在此字符串中第一次出现处的索引。
+17    int indexOf(int ch, int fromIndex)
+返回在此字符串中第一次出现指定字符处的索引，从指定的索引开始搜索。
+18    int indexOf(String str)
+ 返回指定子字符串在此字符串中第一次出现处的索引。
+19    int indexOf(String str, int fromIndex)
+返回指定子字符串在此字符串中第一次出现处的索引，从指定的索引开始。
+20    String intern()
+ 返回字符串对象的规范化表示形式。
+21    int lastIndexOf(int ch)
+ 返回指定字符在此字符串中最后一次出现处的索引。
+22    int lastIndexOf(int ch, int fromIndex)
+返回指定字符在此字符串中最后一次出现处的索引，从指定的索引处开始进行反向搜索。
+23    int lastIndexOf(String str)
+返回指定子字符串在此字符串中最右边出现处的索引。
+24    int lastIndexOf(String str, int fromIndex)
+ 返回指定子字符串在此字符串中最后一次出现处的索引，从指定的索引开始反向搜索。
+25    int length()
+返回此字符串的长度。
+26    boolean matches(String regex)
+告知此字符串是否匹配给定的正则表达式。
+27    boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)
+测试两个字符串区域是否相等。
+28    boolean regionMatches(int toffset, String other, int ooffset, int len)
+测试两个字符串区域是否相等。
+29    String replace(char oldChar, char newChar)
+返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。
+30    String replaceAll(String regex, String replacement)
+使用给定的 replacement 替换此字符串所有匹配给定的正则表达式的子字符串。
+31    String replaceFirst(String regex, String replacement)
+ 使用给定的 replacement 替换此字符串匹配给定的正则表达式的第一个子字符串。
+32    String[] split(String regex)
+根据给定正则表达式的匹配拆分此字符串。
+33    String[] split(String regex, int limit)
+根据匹配给定的正则表达式来拆分此字符串。
+34    boolean startsWith(String prefix)
+测试此字符串是否以指定的前缀开始。
+35    boolean startsWith(String prefix, int toffset)
+测试此字符串从指定索引开始的子字符串是否以指定前缀开始。
+36    CharSequence subSequence(int beginIndex, int endIndex)
+ 返回一个新的字符序列，它是此序列的一个子序列。
+37    String substring(int beginIndex)
+返回一个新的字符串，它是此字符串的一个子字符串。
+38    String substring(int beginIndex, int endIndex)
+返回一个新字符串，它是此字符串的一个子字符串。
+39    char[] toCharArray()
+将此字符串转换为一个新的字符数组。
+40    String toLowerCase()
+使用默认语言环境的规则将此 String 中的所有字符都转换为小写。
+41    String toLowerCase(Locale locale)
+ 使用给定 Locale 的规则将此 String 中的所有字符都转换为小写。
+42    String toString()
+ 返回此对象本身（它已经是一个字符串！）。
+43    String toUpperCase()
+使用默认语言环境的规则将此 String 中的所有字符都转换为大写。
+44    String toUpperCase(Locale locale)
+使用给定 Locale 的规则将此 String 中的所有字符都转换为大写。
+45    String trim()
+返回字符串的副本，忽略前导空白和尾部空白。
+46    static String valueOf(primitive data type x)
+返回给定data type类型x参数的字符串表示形式。
+
+     */
+    public static void main(String[] args) {
+        char[] hello = {&#39;g&#39;, &#39;z&#39;, &#39;y&#39;};
+        String helloString = new String(hello);
+        System.out.println(helloString);
+        System.out.println(helloString.length());
+    }
+}
+
+</code></pre>
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/Java">Java</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/Java">Java</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+   <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MjAzMS8xODU3OA==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+  
+  
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="http://blog.oceaneyes.cn" target="_blank" rel="nofollow noopener"><b>WebSite</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/OcaenEyes" target="_blank" rel="nofollow noopener"> <b>GaoZhiYong</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/popper/popper.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="/js/lazyload.js"></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js"></script>
+  
+  <script src="/js/post.js"></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js"></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js"></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "Java-String类&nbsp;",
+      ],
+      cursorChar: "~",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js"></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js"></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js"></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+  
+  
+    <script>
+      !function (e, t, a) {
+        function r() {
+          for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+          requestAnimationFrame(r)
+        }
+
+        function n() {
+          var t = "function" == typeof e.onclick && e.onclick;
+          e.onclick = function (e) {
+            t && t(), o(e)
+          }
+        }
+
+        function o(e) {
+          var a = t.createElement("div");
+          a.className = "heart", s.push({
+            el: a,
+            x: e.clientX - 5,
+            y: e.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: c()
+          }), t.body.appendChild(a)
+        }
+
+        function i(e) {
+          var a = t.createElement("style");
+          a.type = "text/css";
+          try {
+            a.appendChild(t.createTextNode(e))
+          } catch (t) {
+            a.styleSheet.cssText = e
+          }
+          t.getElementsByTagName("head")[0].appendChild(a)
+        }
+
+        function c() {
+          return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+        }
+
+        var s = [];
+        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+          setTimeout(e, 1e3 / 60)
+        }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()
+      }(window, document);
+    </script>
+  
+
+
+
+
+
+
+
+</body>
+</html>
