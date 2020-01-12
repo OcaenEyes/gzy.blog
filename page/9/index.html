@@ -421,30 +421,24 @@ prompt 提示符;
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-FileStreamIO/">
-        <p class="h4 index-header">Java-FileStreamIO</p>
+      <a href="/2016/03/02/Java-NumberMath类/">
+        <p class="h4 index-header">Java-NumberMath类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
+          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
+    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
+    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
 
-public class StreamFileIODemo {
-    public void printChar() throws IOException {
-        //使用BufferedReader从控制台读取输入
-        char c;
-        //使用System.in 创建BufferedReader
-        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println(&quot;输入字符，按Q键退出&quot;);
-        do {
-            //read() 读取字符
-            c = (char) br1.read();
-            System.out.println(c);
-        } while (c != &#39;Q&#39;);
+    private static void test(double num) {
+        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
+        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
+        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
     }
 
-    pu</div>
+    public st</div>
         </div>
       </a>
 
@@ -472,24 +466,30 @@ public class StreamFileIODemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-NumberMath类/">
-        <p class="h4 index-header">Java-NumberMath类</p>
+      <a href="/2016/03/02/Java-FileStreamIO/">
+        <p class="h4 index-header">Java-FileStreamIO</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
-    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
-    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
+          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
 
-    private static void test(double num) {
-        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
-        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
-        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
+public class StreamFileIODemo {
+    public void printChar() throws IOException {
+        //使用BufferedReader从控制台读取输入
+        char c;
+        //使用System.in 创建BufferedReader
+        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println(&quot;输入字符，按Q键退出&quot;);
+        do {
+            //read() 读取字符
+            c = (char) br1.read();
+            System.out.println(c);
+        } while (c != &#39;Q&#39;);
     }
 
-    public st</div>
+    pu</div>
         </div>
       </a>
 
@@ -566,6 +566,61 @@ public class ScannerDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java-StringBuffer/">
+        <p class="h4 index-header">Java-StringBuffer</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
+    //StringBuffer  线程安全
+    //StringBuilder 速度快
+
+    /*
+        序号    方法描述
+1    public StringBuffer append(String s)
+将指定的字符串追加到此字符序列。
+2    public StringBuffer reverse()
+ 将此字符序列用其反转形式取代。
+3    public delete(int start, int end)
+移除此序列的子字符串中的字符。
+4    public insert(int offset, int i)
+将 int 参数的字符串表示形式插入此序列中。
+5    replace(int start, int end, String str)
+使用给定 String 中的字符替换此序列的子字符串中的字符。
+     */
+
+    /*
+        序号    方法描述
+1    int capacity()</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java-Character类/">
         <p class="h4 index-header">Java-Character类</p>
         
@@ -600,61 +655,6 @@ public class ScannerDemo {
         4    isUpperCase()
 是否是大写字母
         5    isLo</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-StringBuffer/">
-        <p class="h4 index-header">Java-StringBuffer</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
-    //StringBuffer  线程安全
-    //StringBuilder 速度快
-
-    /*
-        序号    方法描述
-1    public StringBuffer append(String s)
-将指定的字符串追加到此字符序列。
-2    public StringBuffer reverse()
- 将此字符序列用其反转形式取代。
-3    public delete(int start, int end)
-移除此序列的子字符串中的字符。
-4    public insert(int offset, int i)
-将 int 参数的字符串表示形式插入此序列中。
-5    replace(int start, int end, String str)
-使用给定 String 中的字符替换此序列的子字符串中的字符。
-     */
-
-    /*
-        序号    方法描述
-1    int capacity()</div>
         </div>
       </a>
 
