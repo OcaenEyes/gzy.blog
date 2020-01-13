@@ -215,17 +215,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-http]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
-    <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
-      <categories>
-        <category>php</category>
-      </categories>
-      <tags>
-        <tag>php</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[php即时通讯-socket]]></title>
     <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket%2F</url>
     <content type="text"><![CDATA[Socket 一个工具，一个接口 封装了TCP/IP 协议 建立长链接的基础]]></content>
@@ -240,6 +229,17 @@
     <title><![CDATA[php即时通讯-多进程]]></title>
     <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[多进程 系统进程 用户进程 并发执行 性能更高]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[php即时通讯-http]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
+    <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
       <categories>
         <category>php</category>
       </categories>
@@ -406,6 +406,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[计算广告-在线广告综述]]></title>
+    <url>%2F2019%2F01%2F01%2F%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A-%E5%9C%A8%E7%BA%BF%E5%B9%BF%E5%91%8A%E7%BB%BC%E8%BF%B0%2F</url>
+    <content type="text"><![CDATA[计算广告-在线广告综述 广告不同于搜索或推荐，首先是一项商业活动，其次才是一项在互联网环境下需要技术优化的商业活动 在这一商业活动中，广告主、用户、媒体的利益都需要被考虑和满足，才能达到整个市场的平衡和不断发展。 1、广告的定义与目的广告定义 ​ 广告由确定出资人，通过各种媒介进行的有关产品。 ​ 有偿的、有组织的、综合的、劝服性的非人员的信息传播活动。 需求方（Demand）—广告主—出资人 供给方（Supply）—媒体 受众（Audience） 广告分类 品牌广告（Brand Awareness） 借助媒体力量快速接触大量用户，以达到宣传品牌形象，提升中长期购买率与利润空间。 效果广告（Direct Response） 利用广告手段马上获取到大量的购买行为。 广告目的 ​ 广告主通过媒体达到低成本的用户接触。 ​ 需要ROI（Return over Investment）投入产出比作为评价指标 2、在线广告类型条幅广告（Banner Ad） ​ banner广告 文字链广告（Textual Ad） ​ 搜索广告中的主流形式 富媒体广告（Rich Media Ad） ​ 向用户侵入式的投送广告素材，有弹窗、对联、全屏，对用户体验影响页也较大 视频广告（Video Ad） ​ 视频广告效果和创意类似线下的电视广告；除计算点击率，还采用观看时长来评估用户印象 ​ 根据插入位置分为 前插片- 短视频形式，冲击力和表现力远强于普通广告 后插片 暂停 社交广告（Social Ad） ​ 社交广告， 并非“社交网络中的广告”；旨在通过用户的扩散式传播获得更大的影响力，以及更可信的口碑。 ​ 在信息流的交互中挖掘价值。 移动设备广告（Mobile Ad） 邮件营销广告（EDM，Email Direct Marketing） ​ 通过邮件方式向目标用户传递价值信息。 ##3、广告有效性原理 曝光（Exposure） &gt;&gt;&gt; 关注（Attention） &gt;&gt; &gt;&gt;&gt;&gt; &gt; 理解（Comprehension） &gt;&gt;&gt; &gt;&gt;&gt;&gt; &gt; &gt; &gt; 接收（Acceptance） &gt;&gt;&gt;&gt; &gt;&gt;&gt;&gt; &gt;&gt; &gt; &gt; &gt; 保持（Retention） &gt;&gt;&gt;&gt; &gt; &gt;&gt;&gt;&gt; &gt;&gt;&gt; &gt; &gt; &gt; &gt; 决策（Decision） 曝光阶段 ​ 往往与广告位的物理属性有关，不同广告位效果区别较为明显。 ​ ==需考虑如何从算法上消除由于此带来的点击率预估偏差。== 关注阶段 ​ 受众从物理上接触到广告—&gt;&gt; 到意识到广告的过程 ​ 需着重考虑提高关注效率。 ​ 操作原则： - 尽量不打断用户的任务 - 明确传达向用户推送此广告的原因 - 内容符合用户的兴趣或需求（受众定向的原理基础） 理解阶段 ​ 受众意识到广告—&gt;&gt; 到理解广告传达的信息的过程 ​ 操作原则： - 广告内容要在用户理解的具体兴趣范围内 - 注意设定与关注程度相匹配的理解门槛（比如电视广告讲个前奏故事；互联网广告强调主要诉求） 接收阶段 ​ 受众理解广告—&gt;&gt; 到接受广告的过程 ​ 广告的上下文环境对于广告的接受程度也有较大的影响；如何让合适的广告出现在合适的媒体上，（广告安全 Ad Safety） 保持阶段 决策阶段 ​ 带来转化行为 越靠前的阶段，效果的改善对点击率贡献越大；越靠后的阶段，效果的改善对转化率贡献越大；但是各阶段并非孤立绝对的，某项的调整也往往会影响其他几个阶段的效果。]]></content>
+      <categories>
+        <category>广告产品</category>
+        <category>计算广告</category>
+      </categories>
+      <tags>
+        <tag>广告产品</tag>
+        <tag>计算广告</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[php常用操作--文件操作]]></title>
     <url>%2F2018%2F12%2F22%2Fphp%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C--%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C%2F</url>
     <content type="text"><![CDATA[PHP文件操作基本操作文件目录函数库 文件相关API 文件信息相关 &lt;?php //识别中文 header(&#39;content-type:text/html;charset=utf-8&#39;) //文件路径 $filename = &quot;./test1.txt&quot; //filetype 文件类型，通常返回file,dir echo &#39;文件类型&#39;,filetype($filename); //filesize 文件大小，返回字节 echo &#39;文件大小&#39;,filesize($filename); //filectime 文件创建时间 echo &#39;文件创建时间&#39;,filectime($filename); echo date(&#39;Y年m月d日 H:i:s&#39;,filectime($filename)); //filemtime 文件修改时间 echo &#39;文件修改时间&#39;,filemtime($filename); echo date(&#39;Y年m月d日 H:i:s&#39;,filemtime($filename)); //fileatime 文件最后访问时间 echo &#39;文件最后访问时间&#39;,fileatime($filename); echo date(&#39;Y年m月d日 H:i:s&#39;,fileatime($filename)); //检测文件的权限 // 可读 var_dump(is_readable($filename)); // 可写 var_dump(is_writeable($filename)); // 可执行 var_dump(is_executable($filename)); //检测是否为文件,并且文件存在 var_dump(is_file($filename)); //file_exists($filename):检测文件是否存在 var_dump(file_exists($filename)); 文件操作相关 &lt;?php //识别中文 header(&#39;content-type:text/html;charset=utf-8&#39;) //文件路径 $filename = &quot;test1.txt&quot; //touch($filename):创建文件 touch($filename); //unlink($filename):删除指定文件 unlink($filename); //检测文件存在则删除 if (file_exists($filename)) { if (unlink($filename)) { echo &#39;文件删除成功&#39;; }else{ echo &#39;文件删除失败&#39;; } }else { echo &#39;要删除的文件不存在&#39;; } //重命名文件 rename($filename,$newname); //复制文件 copy($filename); 文件内容相关 文件函数库常用函数目录函数库常用函数]]></content>
@@ -504,9 +517,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
-    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
+    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -518,9 +531,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[深度学习笔记——线性回归]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
+    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -716,9 +729,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析08：matplotlib颜色与样式]]></title>
-    <url>%2F2018%2F03%2F02%2F08-matplotlib%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%A0%B7%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 颜色： - 八种内置默认颜色， 缩写 b :blue g :green r :red c :cyan m :magenta y :yellow k :black w :white - 其它颜色的表示方法 灰色阴影 html 十六进制 RGB 元组 &#39;&#39;&#39; y = np.arange(1,5) # 内置颜色表示 plt.plot(y,color =&#39;g&#39;) # 灰度表示方法 plt.plot(y+1,color = &#39;0.5&#39;) # html 十六进制 plt.plot(y+2,color = &#39;#ff00ff&#39;) # RGB 元组 plt.plot(y+3,color=(0.1,0.2,0.3)) plt.show() &#39;&#39;&#39; 线 linestyle =&#39;&#39; -- 虚线 -. 点化线 ： 点线 - 实线 样式字符串 可将 颜色，点型，线性 ，依次排列成一个字符串如： cx-- mo: kp- plt.plot(y,&#39;cx--&#39;) &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用样式字符串绘制两条线； 1、红色，实线，圆点 2、黄色，虚线，X点 3、绿色，点线，三角形点 &#39;&#39;&#39; y = np.arange(0,4) plt.plot(y,&#39;ro-&#39;,y+1,&#39;yx--&#39;,y+2,&#39;g&gt;:&#39;) plt.show()]]></content>
+    <title><![CDATA[数据分析05：matplotlib直方图]]></title>
+    <url>%2F2018%2F03%2F02%2F05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 由于一系列不等的纵形图组成，表示数据分布的情况 例如：某年级同学的身高分布 需要注意与 柱形图的区别 &#39;&#39;&#39; # # 例 # mu = 100 #均值 # sigma = 20 # 标准差 # # x = mu + sigma * np.random.random(1000) # plt.hist(x,bins=20,density=True) # plt.show() # # # # 双变量图 频率越低越暗 # # x的中心为2 # x = np.random.randn(1000) +2 # # y的中心为3 # y = np.random.randn(1000)+3 # # plt.hist2d(x,y,bins=40) # plt.show() # 练习 &#39;&#39;&#39; 随机生成2000个数据，均值为10， 方差3； 绘制两个直方图， bins =10 和50 ，normed ／density 分别为True,False; 随机生成x,y 各2000个， x均值1 ，y 均值5; 绘制2-D直方图， bins = 40; &#39;&#39;&#39; # 均值 ava = 10 # 方差 variance = 3 sigma = np.sqrt(variance) x = ava + sigma * np.random.random(2000) plt.hist(x,bins=10,density=True) plt.show() plt.hist(x,bins=50,density=False) plt.show() x = np.random.randn(2000) +1 y = np.random.randn(2000) + 5 plt.hist2d(x,y,bins=40) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python3</category>
@@ -746,9 +759,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析05：matplotlib直方图]]></title>
-    <url>%2F2018%2F03%2F02%2F05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 由于一系列不等的纵形图组成，表示数据分布的情况 例如：某年级同学的身高分布 需要注意与 柱形图的区别 &#39;&#39;&#39; # # 例 # mu = 100 #均值 # sigma = 20 # 标准差 # # x = mu + sigma * np.random.random(1000) # plt.hist(x,bins=20,density=True) # plt.show() # # # # 双变量图 频率越低越暗 # # x的中心为2 # x = np.random.randn(1000) +2 # # y的中心为3 # y = np.random.randn(1000)+3 # # plt.hist2d(x,y,bins=40) # plt.show() # 练习 &#39;&#39;&#39; 随机生成2000个数据，均值为10， 方差3； 绘制两个直方图， bins =10 和50 ，normed ／density 分别为True,False; 随机生成x,y 各2000个， x均值1 ，y 均值5; 绘制2-D直方图， bins = 40; &#39;&#39;&#39; # 均值 ava = 10 # 方差 variance = 3 sigma = np.sqrt(variance) x = ava + sigma * np.random.random(2000) plt.hist(x,bins=10,density=True) plt.show() plt.hist(x,bins=50,density=False) plt.show() x = np.random.randn(2000) +1 y = np.random.randn(2000) + 5 plt.hist2d(x,y,bins=40) plt.show()]]></content>
+    <title><![CDATA[数据分析08：matplotlib颜色与样式]]></title>
+    <url>%2F2018%2F03%2F02%2F08-matplotlib%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%A0%B7%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 颜色： - 八种内置默认颜色， 缩写 b :blue g :green r :red c :cyan m :magenta y :yellow k :black w :white - 其它颜色的表示方法 灰色阴影 html 十六进制 RGB 元组 &#39;&#39;&#39; y = np.arange(1,5) # 内置颜色表示 plt.plot(y,color =&#39;g&#39;) # 灰度表示方法 plt.plot(y+1,color = &#39;0.5&#39;) # html 十六进制 plt.plot(y+2,color = &#39;#ff00ff&#39;) # RGB 元组 plt.plot(y+3,color=(0.1,0.2,0.3)) plt.show() &#39;&#39;&#39; 线 linestyle =&#39;&#39; -- 虚线 -. 点化线 ： 点线 - 实线 样式字符串 可将 颜色，点型，线性 ，依次排列成一个字符串如： cx-- mo: kp- plt.plot(y,&#39;cx--&#39;) &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用样式字符串绘制两条线； 1、红色，实线，圆点 2、黄色，虚线，X点 3、绿色，点线，三角形点 &#39;&#39;&#39; y = np.arange(0,4) plt.plot(y,&#39;ro-&#39;,y+1,&#39;yx--&#39;,y+2,&#39;g&gt;:&#39;) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python3</category>
@@ -1073,6 +1086,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Java-Character类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-Character%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-Character类public class CharacterDemo { // 对单个字符进行操作 /* 转义序列 描述 \t 在文中该处插入一个tab键 \b 在文中该处插入一个后退键 \n 在文中该处换行 \r 在文中该处插入回车 \f 在文中该处插入换页符 \&#39; 在文中该处插入单引号 \&quot; 在文中该处插入双引号 \\ 在文中该处插入反斜杠 */ //字符方法 /* 序号 方法与描述 1 isLetter() 是否是一个字母 2 isDigit() 是否是一个数字字符 3 isWhitespace() 是否是一个空白字符 4 isUpperCase() 是否是大写字母 5 isLowerCase() 是否是小写字母 6 toUpperCase() 指定字母的大写形式 7 toLowerCase() 指定字母的小写形式 8 toString() 返回字符的字符串形式，字符串的长度仅为1 */ public static void main(String[] args) { System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java-NumberMath类]]></title>
     <url>%2F2016%2F03%2F02%2FJava-NumberMath%E7%B1%BB%2F</url>
     <content type="text"><![CDATA[Java-NumberMath类public class NumberAndMath { //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类 // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数 private static void test(double num) { System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num)); System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num)); System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num)); } public static void main(String[] args) { System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2)); System.out.println(&quot;0度的余弦值&quot; + Math.cos(0)); System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3)); System.out.println(&quot;1的反正切值&quot; + Math.atan(1)); System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2)); double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6}; for (double num : nums) { test(num); } /* 序号 方法与描述 1 xxxValue() 将 Number 对象转换为xxx数据类型的值并返回。 2 compareTo() 将number对象与参数比较。 3 equals() 判断number对象是否与参数相等。 4 valueOf() 返回一个 Number 对象指定的内置数据类型 5 toString() 以字符串形式返回值。 6 parseInt() 将字符串解析为int类型。 7 abs() 返回参数的绝对值。 8 ceil() 返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。 9 floor() 返回小于等于（&lt;=）给定参数的最大整数 。 10 rint() 返回与参数最接近的整数。返回类型为double。 11 round() 它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。 12 min() 返回两个参数中的最小值。 13 max() 返回两个参数中的最大值。 14 exp() 返回自然数底数e的参数次方。 15 log() 返回参数的自然数底数的对数值。 16 pow() 返回第一个参数的第二个参数次方。 17 sqrt() 求参数的算术平方根。 18 sin() 求指定double类型参数的正弦值。 19 cos() 求指定double类型参数的余弦值。 20 tan() 求指定double类型参数的正切值。 21 asin() 求指定double类型参数的反正弦值。 22 acos() 求指定double类型参数的反余弦值。 23 atan() 求指定double类型参数的反正切值。 24 atan2() 将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。 25 toDegrees() 将参数转化为角度。 26 toRadians() 将角度转换为弧度。 27 random() 返回一个随机数。 */ } }]]></content>
@@ -1117,9 +1141,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-Character类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-Character%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-Character类public class CharacterDemo { // 对单个字符进行操作 /* 转义序列 描述 \t 在文中该处插入一个tab键 \b 在文中该处插入一个后退键 \n 在文中该处换行 \r 在文中该处插入回车 \f 在文中该处插入换页符 \&#39; 在文中该处插入单引号 \&quot; 在文中该处插入双引号 \\ 在文中该处插入反斜杠 */ //字符方法 /* 序号 方法与描述 1 isLetter() 是否是一个字母 2 isDigit() 是否是一个数字字符 3 isWhitespace() 是否是一个空白字符 4 isUpperCase() 是否是大写字母 5 isLowerCase() 是否是小写字母 6 toUpperCase() 指定字母的大写形式 7 toLowerCase() 指定字母的小写形式 8 toString() 返回字符的字符串形式，字符串的长度仅为1 */ public static void main(String[] args) { System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;); } }]]></content>
+    <title><![CDATA[Java-SwitchCase语句]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-SwitchCase%2F</url>
+    <content type="text"><![CDATA[Java-SwitchCase语句public class SwitchCase { //switch case语句 判断一个变量与一系列值中某个值是否相等，每个值称为一个分支 // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。 /* switch(expression){ case value : //语句 break; //可选 case value : //语句 break; //可选 //你可以有任意数量的case语句 default : //可选 //语句 不需要break } */ public static void main(String[]args){ char grade =&#39;C&#39;; switch (grade) { case &#39;A&#39;: System.out.println(&quot;优秀&quot;); break; case &#39;B&#39;: case &#39;C&#39;: System.out.println(&quot;良好&quot;); break; case &#39;D&#39;: System.out.println(&quot;及格&quot;); break; case &#39;F&#39;: System.out.println(&quot;你还需要继续努力&quot;); break; default: System.out.println(&quot;未知等级&quot;); } System.out.println(&quot;你的等级是&quot; + grade); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1139,9 +1163,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-SwitchCase语句]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-SwitchCase%2F</url>
-    <content type="text"><![CDATA[Java-SwitchCase语句public class SwitchCase { //switch case语句 判断一个变量与一系列值中某个值是否相等，每个值称为一个分支 // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。 /* switch(expression){ case value : //语句 break; //可选 case value : //语句 break; //可选 //你可以有任意数量的case语句 default : //可选 //语句 不需要break } */ public static void main(String[]args){ char grade =&#39;C&#39;; switch (grade) { case &#39;A&#39;: System.out.println(&quot;优秀&quot;); break; case &#39;B&#39;: case &#39;C&#39;: System.out.println(&quot;良好&quot;); break; case &#39;D&#39;: System.out.println(&quot;及格&quot;); break; case &#39;F&#39;: System.out.println(&quot;你还需要继续努力&quot;); break; default: System.out.println(&quot;未知等级&quot;); } System.out.println(&quot;你的等级是&quot; + grade); } }]]></content>
+    <title><![CDATA[Java循环结构]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
+    <content type="text"><![CDATA[Java循环结构public class LoopStructure { /* while 循环 do…while 循环 for 循环 */ public static void main(String[] args) { //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环 System.out.println(&quot;while 循环&quot;); int x = 10; while (x &lt; 20) { System.out.println(x); x++; } // do…while 循环，至少执行一次 /* do { //代码语句 }while(布尔表达式); */ System.out.println(&quot;do…while循环&quot;); int y = 10; do { System.out.println(y); y++; } while (y &lt; 10); // for 循环，执行前就确定执行次数 /* for(初始化; 布尔表达式; 更新) { //代码语句 } */ System.out.println(&quot;for 循环&quot;); for (int z = 0; z &lt; 20; z = z + 1) { System.out.println(z); } //增强for循环 /* for(声明语句 : 表达式) { //代码句子 } */ System.out.println(&quot;增强for 循环&quot;); int[] numbers = {10, 20, 30, 40, 50}; for (int number : numbers) { System.out.println(number); } String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;}; for (String name : names) { System.out.println(name); } //break关键字 /* break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。 break 跳出最里层的循环，并且继续执行该循环下面的语句。 */ System.out.println(&quot;break关键字&quot;); int[] numbers1 = {10, 20, 30, 40, 50}; for (int number : numbers1) { if (number == 30) { break; } System.out.println(number); } //continue关键字 /* continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。 在 for 循环中，continue 语句使程序立即跳转到更新语句。 在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。 */ System.out.println(&quot;continue关键字&quot;); int[] numbers2 = {10, 20, 30, 40, 50}; for (int number : numbers2) { if (number == 30) { continue; } System.out.println(number); } } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1164,17 +1188,6 @@
     <title><![CDATA[Java数组]]></title>
     <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
     <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java循环结构]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
-    <content type="text"><![CDATA[Java循环结构public class LoopStructure { /* while 循环 do…while 循环 for 循环 */ public static void main(String[] args) { //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环 System.out.println(&quot;while 循环&quot;); int x = 10; while (x &lt; 20) { System.out.println(x); x++; } // do…while 循环，至少执行一次 /* do { //代码语句 }while(布尔表达式); */ System.out.println(&quot;do…while循环&quot;); int y = 10; do { System.out.println(y); y++; } while (y &lt; 10); // for 循环，执行前就确定执行次数 /* for(初始化; 布尔表达式; 更新) { //代码语句 } */ System.out.println(&quot;for 循环&quot;); for (int z = 0; z &lt; 20; z = z + 1) { System.out.println(z); } //增强for循环 /* for(声明语句 : 表达式) { //代码句子 } */ System.out.println(&quot;增强for 循环&quot;); int[] numbers = {10, 20, 30, 40, 50}; for (int number : numbers) { System.out.println(number); } String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;}; for (String name : names) { System.out.println(name); } //break关键字 /* break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。 break 跳出最里层的循环，并且继续执行该循环下面的语句。 */ System.out.println(&quot;break关键字&quot;); int[] numbers1 = {10, 20, 30, 40, 50}; for (int number : numbers1) { if (number == 30) { break; } System.out.println(number); } //continue关键字 /* continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。 在 for 循环中，continue 语句使程序立即跳转到更新语句。 在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。 */ System.out.println(&quot;continue关键字&quot;); int[] numbers2 = {10, 20, 30, 40, 50}; for (int number : numbers2) { if (number == 30) { continue; } System.out.println(number); } } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
