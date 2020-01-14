@@ -15,7 +15,7 @@
   <meta name="description" content="This is MyBlog Notes.">
   <meta name="author" content="OceanEyes.GZY">
   <meta name="keywords" content="">
-  <title>分类 - SpringBoot ~ 乔克叔叔杂货店</title>
+  <title>计算广告基础 ~ 乔克叔叔杂货店</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">&nbsp;<strong>乔克叔叔杂货店</strong>&nbsp;</a>
@@ -106,6 +106,41 @@
             </span>
 
             
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期三, 一月 2日 2019, 12:00 凌晨
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    963 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      3 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
           </div>
 
           
@@ -116,54 +151,167 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-<!--  <p class="h4">共计 4 篇文章</p>-->
-  <hr>
-  
-    
       
-      <p class="h5">2018</p>
-    
-    <a href="/2018/03/02/Centos-Maven配置/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">CentOS-Maven配置</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/SpringBoot启动自定义方法/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SpringBoot启动自定义方法</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/SpringBoot-WebSocket 聊天室/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SpringBoot-WebSocket聊天室</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-    
-    <a href="/2018/03/02/SpringBoot数据访问-整合JPA/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">SpringBoot数据访问JPA</span>
-      <span style="float: right;">03-02</span>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h1 id="计算广告-基础"><a href="#计算广告-基础" class="headerlink" title="计算广告-基础"></a>计算广告-基础</h1><h2 id="1、在线广告技术特点"><a href="#1、在线广告技术特点" class="headerlink" title="1、在线广告技术特点"></a>1、在线广告技术特点</h2><p><strong>技术和计算导向</strong></p>
+<p>​    数字媒体的特点使在线广告可以精细的用户定向</p>
+<p>​    技术又使广告决策和交易朝着计算驱动的方向发展</p>
+<p><strong>效果的可衡量性</strong></p>
+<p>​    在同一个时期，点击率的绝对值并没有那么重要；而在一个特定时期不同广告和算法表现出来的差异，才更有    意义</p>
+<p><strong>创意和投放方式的标准化</strong></p>
+<p>​    标准化的驱动力来自受众定向与程序购买</p>
+<p>​    需求方更关心的是受众人群，创意尺寸的统一化与数据接口的标准化就变得更加重要</p>
+<p><strong>媒体概念的多样化</strong></p>
+<p><strong>数据驱动的投放决策</strong></p>
+<p>​    互联网化的根本驱动力是数据的深入加工和利用</p>
+<h2 id="2、计算广告的核心问题"><a href="#2、计算广告的核心问题" class="headerlink" title="2、计算广告的核心问题"></a>2、计算广告的核心问题</h2><blockquote>
+<p>计算广告的核心问题，是为一系列用户与环境的组合，找到最合适的广告投放策略以优化整体的投入产出比（ROI）</p>
+</blockquote>
+<h3 id="2-1、在线广告计费模式"><a href="#2-1、在线广告计费模式" class="headerlink" title="2.1、在线广告计费模式"></a>2.1、在线广告计费模式</h3><p><strong>CPM（Cost per Mile）</strong></p>
+<p>​    按照千次展示计费</p>
+<p><strong>CPC（Cost per Click）</strong></p>
+<p>​    按照点击计费</p>
+<p><strong>CPS（Cost per Sale）/ CPA（Cost per Action）/ROI</strong></p>
+<p>​    按照销售订单数、转化行为数或投入产出比来计费</p>
+<p>​    情况一：需求方只按照最后的转化效益来结算  </p>
+<p>​    存在问题：</p>
+<p>​            转化行为并非供给方能控制</p>
+<p>​            存在广告主故意降低转化率，以低成本赚取大量曝光的可能</p>
+<p>​    此方式只适合一些垂直广告网络（Vertical Network）</p>
+<p><strong>CPT（Cost per Time）</strong></p>
+<p>​    针对大品牌广告主特定的活动，将广告位以独占的方式交与某广告主，并按照独占的时间段进行收费</p>
+<h2 id="3、计算广告系统架构"><a href="#3、计算广告系统架构" class="headerlink" title="3、计算广告系统架构"></a>3、计算广告系统架构</h2><p>通常有三个主体部分组成</p>
+<ul>
+<li>在线的高并发投放引擎</li>
+<li>离线的分布式数据处理平台</li>
+<li>在线实时反馈的流式处理平台</li>
+</ul>
+<p>按照功能划分模块</p>
+<p><strong>广告投放机</strong></p>
+<p>​    Ad Server，与其他模块交互，并将其串联，完成在线广告的投放。</p>
+<p><strong>广告检索</strong></p>
+<p>​    Ad Index 、Ad retrieval</p>
+<p>​    接收广告投放信息，建立倒排索引，以及在线时根据用户与上下文标签从索引中查找广告候选。</p>
+<p>​    检索技术也是大规模计算广告系统的基础。</p>
+<p><strong>广告排序</strong></p>
+<p>​    Ad ranking 、Click modeling</p>
+<p>​    广告效果优化的关键。</p>
+<p>​    关键技术，==在于离线分布式计算平台上的海量数据支持 点击率预测模型的训练。==</p>
+<p><strong>数据高速公路</strong></p>
+<p>​    Data highway</p>
+<p>​    将在线投放的数据准实时传输到离线分布式计算平台 与 流式计算平台，供后续处理和建模使用。</p>
+<p><strong>用户日志生成</strong></p>
+<p>​    Session log generation</p>
+<p>​    从个渠道收集日志</p>
+<p><strong>商业智能</strong></p>
+<p>​    Business Intelligence</p>
+<p>​    包含ETL、dashboard 、cube</p>
+<p>​    最终的数据处理和分析流程的总括。</p>
+<p><strong>行为定向</strong></p>
+<p>​    包含结构化标签库（Structural-label base）、Audience targeting 、以及User attributes的cache</p>
+<p>​    挖掘用户日志，根据日志中的行为给用户打上结构化的标签</p>
+<p><strong>上下文定向</strong></p>
+<p>​    包括半在线页面抓去（Near-line page fetcher） 和 Page attributes的cache</p>
+<p>​    与行为定向互相配合，负责为上下文打标签</p>
+<p><strong>定制化用户划分</strong></p>
+<p>​    Customized audience segmentation</p>
+<p>​    根据广告主的需求逻辑划分用户群</p>
+<p><strong>在线行为反馈</strong></p>
+<p>​    一些需准实时完成的一些任务</p>
+<p>​    短时用户行为标签、短时用户点击反馈</p>
+<p>​    反作弊（Anti-spam） 与 计价（Billing）</p>
+<p><strong>广告管理系统</strong></p>
+<p>​    面向用户的产品，由广告的操作者进行配置</p>
+<p><strong>实时竞价接口</strong></p>
+<p>​    广告交易市场实时向DSP发起广告询价请求</p>
 
-
-              </div>
-            </div>
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E5%B9%BF%E5%91%8A%E4%BA%A7%E5%93%81">广告产品</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A">计算广告</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E5%B9%BF%E5%91%8A%E4%BA%A7%E5%93%81">广告产品</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A">计算广告</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+   <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MjAzMS8xODU3OA==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+  
+  
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -236,6 +384,11 @@
 
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js"></script>
+  
+  <script src="/js/post.js"></script>
+
 
 
   <script src="/lib/smooth-scroll/smooth-scroll.min.js"></script>
@@ -276,7 +429,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "分类 - SpringBoot&nbsp;",
+        "计算广告基础&nbsp;",
       ],
       cursorChar: "~",
       typeSpeed: 70,

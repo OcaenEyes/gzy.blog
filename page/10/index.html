@@ -133,31 +133,34 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-SwitchCase/">
-        <p class="h4 index-header">Java-SwitchCase语句</p>
+      <a href="/2016/03/02/Java-StringBuffer/">
+        <p class="h4 index-header">Java-StringBuffer</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-SwitchCase语句public class SwitchCase {
-    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支
-    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。
+          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
+    //StringBuffer  线程安全
+    //StringBuilder 速度快
+
     /*
-        switch(expression){
-            case value :
-                //语句
-                break; //可选
-            case value :
-                //语句
-                break; //可选
-            //你可以有任意数量的case语句
-            default : //可选
-                //语句   不需要break
-        }
+        序号    方法描述
+1    public StringBuffer append(String s)
+将指定的字符串追加到此字符序列。
+2    public StringBuffer reverse()
+ 将此字符序列用其反转形式取代。
+3    public delete(int start, int end)
+移除此序列的子字符串中的字符。
+4    public insert(int offset, int i)
+将 int 参数的字符串表示形式插入此序列中。
+5    replace(int start, int end, String str)
+使用给定 String 中的字符替换此序列的子字符串中的字符。
      */
 
-    public static void main(String[]</div>
+    /*
+        序号    方法描述
+1    int capacity()</div>
         </div>
       </a>
 
@@ -211,6 +214,107 @@
 7    static String copyValueOf(char[] data)
 返回指定数组中表示该字符序列的 String。
 8    stati</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java-SwitchCase/">
+        <p class="h4 index-header">Java-SwitchCase语句</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java-SwitchCase语句public class SwitchCase {
+    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支
+    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。
+    /*
+        switch(expression){
+            case value :
+                //语句
+                break; //可选
+            case value :
+                //语句
+                break; //可选
+            //你可以有任意数量的case语句
+            default : //可选
+                //语句   不需要break
+        }
+     */
+
+    public static void main(String[]</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java异常处理/">
+        <p class="h4 index-header">Java异常处理</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
+
+public class ExceptionDemo {
+    /*
+        三类异常
+        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
+        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
+        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
+     */
+
+    /*
+       内置异常类
+          非检查性异常
+            异常                                描述
+            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
         </div>
       </a>
 
@@ -295,55 +399,6 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java异常处理/">
-        <p class="h4 index-header">Java异常处理</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
-
-public class ExceptionDemo {
-    /*
-        三类异常
-        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
-        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
-        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
-     */
-
-    /*
-       内置异常类
-          非检查性异常
-            异常                                描述
-            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java数组/">
         <p class="h4 index-header">Java数组</p>
         
@@ -371,6 +426,57 @@ public class ExceptionDemo {
 
         double total =0;
         for (int i=0; i&</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java正则表达式/">
+        <p class="h4 index-header">Java正则表达式</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java正则表达式import java.util.regex.*;
+public class RegularExpressionDemo {
+    /*
+        Pattern 类：
+        pattern 对象是一个正则表达式的编译表示。
+        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。
+        该方法接受一个正则表达式作为它的第一个参数。
+
+        Matcher 类：
+        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。
+        与Pattern 类一样，Matcher 也没有公共构造方法。
+        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
+
+        PatternSyntaxException：
+        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
+     */
+    /*</div>
         </div>
       </a>
 
@@ -512,57 +618,6 @@ H    一天中的小</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java正则表达式/">
-        <p class="h4 index-header">Java正则表达式</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java正则表达式import java.util.regex.*;
-public class RegularExpressionDemo {
-    /*
-        Pattern 类：
-        pattern 对象是一个正则表达式的编译表示。
-        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。
-        该方法接受一个正则表达式作为它的第一个参数。
-
-        Matcher 类：
-        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。
-        与Pattern 类一样，Matcher 也没有公共构造方法。
-        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
-
-        PatternSyntaxException：
-        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
-     */
-    /*</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java基本数据类型/">
         <p class="h4 index-header">Java基本数据类型</p>
         
@@ -585,70 +640,6 @@ public class RegularExpressionDemo {
 
         // short
         System.out.println</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java对象和类/">
-        <p class="h4 index-header">Java对象和类</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java对象和类public class ObjectAndClass {
-    /*
-    - 多态
-    - 继承
-    - 封装
-    - 抽象
-    - 类 ： 是一个模板，用来描述
-    - 对象 ： 是类class的一个实例，具有状态和行为
-    - 实例
-    - 方法
-    - 重载
-     */
-
-    //定义一个Dog类
-    public static class Dog {
-        //成员变量
-        StringDemo color;
-        int age;
-        StringDemo name;
-
-        //类方法
-        void barking(){
-            System.out.println(&quot;汪！汪！汪！&quot;);
-        }
-
-        void hungry(){
-            System.out.println(&quot;好饿哦！&quot;);
-        }
-
-        void sle</div>
         </div>
       </a>
 

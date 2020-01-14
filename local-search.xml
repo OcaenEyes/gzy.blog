@@ -483,11 +483,11 @@
   
   
   <entry>
-    <title>php即时通讯-socket</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
+    <title>php即时通讯-http</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><ul><li>一个应用层协议</li><li>Header + Body组成</li><li>比TCP更高级</li><li>短链接</li></ul>]]></content>
     
     
     <categories>
@@ -533,11 +533,11 @@
   
   
   <entry>
-    <title>php即时通讯-http</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/</url>
+    <title>php即时通讯-socket</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><ul><li>一个应用层协议</li><li>Header + Body组成</li><li>比TCP更高级</li><li>短链接</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
     
     
     <categories>
@@ -828,6 +828,35 @@
       <tag>php</tag>
       
       <tag>后端服务</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>计算广告基础</title>
+    <link href="/2019/01/02/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A-%E5%9F%BA%E7%A1%80/"/>
+    <url>/2019/01/02/%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A-%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="计算广告-基础"><a href="#计算广告-基础" class="headerlink" title="计算广告-基础"></a>计算广告-基础</h1><h2 id="1、在线广告技术特点"><a href="#1、在线广告技术特点" class="headerlink" title="1、在线广告技术特点"></a>1、在线广告技术特点</h2><p><strong>技术和计算导向</strong></p><p>​    数字媒体的特点使在线广告可以精细的用户定向</p><p>​    技术又使广告决策和交易朝着计算驱动的方向发展</p><p><strong>效果的可衡量性</strong></p><p>​    在同一个时期，点击率的绝对值并没有那么重要；而在一个特定时期不同广告和算法表现出来的差异，才更有    意义</p><p><strong>创意和投放方式的标准化</strong></p><p>​    标准化的驱动力来自受众定向与程序购买</p><p>​    需求方更关心的是受众人群，创意尺寸的统一化与数据接口的标准化就变得更加重要</p><p><strong>媒体概念的多样化</strong></p><p><strong>数据驱动的投放决策</strong></p><p>​    互联网化的根本驱动力是数据的深入加工和利用</p><h2 id="2、计算广告的核心问题"><a href="#2、计算广告的核心问题" class="headerlink" title="2、计算广告的核心问题"></a>2、计算广告的核心问题</h2><blockquote><p>计算广告的核心问题，是为一系列用户与环境的组合，找到最合适的广告投放策略以优化整体的投入产出比（ROI）</p></blockquote><h3 id="2-1、在线广告计费模式"><a href="#2-1、在线广告计费模式" class="headerlink" title="2.1、在线广告计费模式"></a>2.1、在线广告计费模式</h3><p><strong>CPM（Cost per Mile）</strong></p><p>​    按照千次展示计费</p><p><strong>CPC（Cost per Click）</strong></p><p>​    按照点击计费</p><p><strong>CPS（Cost per Sale）/ CPA（Cost per Action）/ROI</strong></p><p>​    按照销售订单数、转化行为数或投入产出比来计费</p><p>​    情况一：需求方只按照最后的转化效益来结算  </p><p>​    存在问题：</p><p>​            转化行为并非供给方能控制</p><p>​            存在广告主故意降低转化率，以低成本赚取大量曝光的可能</p><p>​    此方式只适合一些垂直广告网络（Vertical Network）</p><p><strong>CPT（Cost per Time）</strong></p><p>​    针对大品牌广告主特定的活动，将广告位以独占的方式交与某广告主，并按照独占的时间段进行收费</p><h2 id="3、计算广告系统架构"><a href="#3、计算广告系统架构" class="headerlink" title="3、计算广告系统架构"></a>3、计算广告系统架构</h2><p>通常有三个主体部分组成</p><ul><li>在线的高并发投放引擎</li><li>离线的分布式数据处理平台</li><li>在线实时反馈的流式处理平台</li></ul><p>按照功能划分模块</p><p><strong>广告投放机</strong></p><p>​    Ad Server，与其他模块交互，并将其串联，完成在线广告的投放。</p><p><strong>广告检索</strong></p><p>​    Ad Index 、Ad retrieval</p><p>​    接收广告投放信息，建立倒排索引，以及在线时根据用户与上下文标签从索引中查找广告候选。</p><p>​    检索技术也是大规模计算广告系统的基础。</p><p><strong>广告排序</strong></p><p>​    Ad ranking 、Click modeling</p><p>​    广告效果优化的关键。</p><p>​    关键技术，==在于离线分布式计算平台上的海量数据支持 点击率预测模型的训练。==</p><p><strong>数据高速公路</strong></p><p>​    Data highway</p><p>​    将在线投放的数据准实时传输到离线分布式计算平台 与 流式计算平台，供后续处理和建模使用。</p><p><strong>用户日志生成</strong></p><p>​    Session log generation</p><p>​    从个渠道收集日志</p><p><strong>商业智能</strong></p><p>​    Business Intelligence</p><p>​    包含ETL、dashboard 、cube</p><p>​    最终的数据处理和分析流程的总括。</p><p><strong>行为定向</strong></p><p>​    包含结构化标签库（Structural-label base）、Audience targeting 、以及User attributes的cache</p><p>​    挖掘用户日志，根据日志中的行为给用户打上结构化的标签</p><p><strong>上下文定向</strong></p><p>​    包括半在线页面抓去（Near-line page fetcher） 和 Page attributes的cache</p><p>​    与行为定向互相配合，负责为上下文打标签</p><p><strong>定制化用户划分</strong></p><p>​    Customized audience segmentation</p><p>​    根据广告主的需求逻辑划分用户群</p><p><strong>在线行为反馈</strong></p><p>​    一些需准实时完成的一些任务</p><p>​    短时用户行为标签、短时用户点击反馈</p><p>​    反作弊（Anti-spam） 与 计价（Billing）</p><p><strong>广告管理系统</strong></p><p>​    面向用户的产品，由广告的操作者进行配置</p><p><strong>实时竞价接口</strong></p><p>​    广告交易市场实时向DSP发起广告询价请求</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>广告产品</category>
+      
+      <category>计算广告</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>广告产品</tag>
+      
+      <tag>计算广告</tag>
       
     </tags>
     
@@ -1896,6 +1925,37 @@
   
   
   <entry>
+    <title>SpringBoot启动自定义方法</title>
+    <link href="/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/"/>
+    <url>/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot启动自定义方法"><a href="#SpringBoot启动自定义方法" class="headerlink" title="SpringBoot启动自定义方法"></a>SpringBoot启动自定义方法</h1><h2 id="一、实现CommandLineRunner接口，重写run方法"><a href="#一、实现CommandLineRunner接口，重写run方法" class="headerlink" title="一、实现CommandLineRunner接口，重写run方法"></a>一、实现CommandLineRunner接口，重写run方法</h2><pre><code class="java">import org.springframework.boot.CommandLineRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart1 implements CommandLineRunner{    @Override    public void run(String... args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="二、实现ApplicationRunner接口，重写un方法"><a href="#二、实现ApplicationRunner接口，重写un方法" class="headerlink" title="二、实现ApplicationRunner接口，重写un方法"></a>二、实现ApplicationRunner接口，重写un方法</h2><pre><code class="java">import org.springframework.boot.ApplicationArguments;import org.springframework.boot.ApplicationRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart2 implements ApplicationRunner {    @Override    public void run(ApplicationArguments args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="三、初始化方法加上-PostConstruct注解"><a href="#三、初始化方法加上-PostConstruct注解" class="headerlink" title="三、初始化方法加上@PostConstruct注解"></a>三、初始化方法加上@PostConstruct注解</h2><pre><code class="java">import javax.annotation.PostConstruct;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart3{    @PostConstruct    public void test() throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h4 id="四、其他实现思路"><a href="#四、其他实现思路" class="headerlink" title="四、其他实现思路"></a>四、其他实现思路</h4><pre><code class="java">import org.springframework.context.annotation.Bean;import org.springframework.context.annotation.Configuration;import com.gzy.demo.NettyClient;@Configurationpublic class MyStart4 {    @Bean    public String startNetty() {        try {            NettyClient.connect(10007, &quot;127.0.0.1&quot;);        } catch (Exception e) {            e.printStackTrace();        }        return &quot;startNetty&quot;;    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+      <category>SpringBoot</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>服务端</tag>
+      
+      <tag>Java</tag>
+      
+      <tag>SpringBoot</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>SpringBoot-WebSocket聊天室</title>
     <link href="/2018/03/02/SpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4/"/>
     <url>/2018/03/02/SpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4/</url>
@@ -1921,37 +1981,6 @@
       <tag>SpringBoot</tag>
       
       <tag>WebSocket</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>SpringBoot启动自定义方法</title>
-    <link href="/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/"/>
-    <url>/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot启动自定义方法"><a href="#SpringBoot启动自定义方法" class="headerlink" title="SpringBoot启动自定义方法"></a>SpringBoot启动自定义方法</h1><h2 id="一、实现CommandLineRunner接口，重写run方法"><a href="#一、实现CommandLineRunner接口，重写run方法" class="headerlink" title="一、实现CommandLineRunner接口，重写run方法"></a>一、实现CommandLineRunner接口，重写run方法</h2><pre><code class="java">import org.springframework.boot.CommandLineRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart1 implements CommandLineRunner{    @Override    public void run(String... args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="二、实现ApplicationRunner接口，重写un方法"><a href="#二、实现ApplicationRunner接口，重写un方法" class="headerlink" title="二、实现ApplicationRunner接口，重写un方法"></a>二、实现ApplicationRunner接口，重写un方法</h2><pre><code class="java">import org.springframework.boot.ApplicationArguments;import org.springframework.boot.ApplicationRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart2 implements ApplicationRunner {    @Override    public void run(ApplicationArguments args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="三、初始化方法加上-PostConstruct注解"><a href="#三、初始化方法加上-PostConstruct注解" class="headerlink" title="三、初始化方法加上@PostConstruct注解"></a>三、初始化方法加上@PostConstruct注解</h2><pre><code class="java">import javax.annotation.PostConstruct;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart3{    @PostConstruct    public void test() throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h4 id="四、其他实现思路"><a href="#四、其他实现思路" class="headerlink" title="四、其他实现思路"></a>四、其他实现思路</h4><pre><code class="java">import org.springframework.context.annotation.Bean;import org.springframework.context.annotation.Configuration;import com.gzy.demo.NettyClient;@Configurationpublic class MyStart4 {    @Bean    public String startNetty() {        try {            NettyClient.connect(10007, &quot;127.0.0.1&quot;);        } catch (Exception e) {            e.printStackTrace();        }        return &quot;startNetty&quot;;    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-      <category>SpringBoot</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>服务端</tag>
-      
-      <tag>Java</tag>
-      
-      <tag>SpringBoot</tag>
       
     </tags>
     
@@ -2454,11 +2483,11 @@
   
   
   <entry>
-    <title>Java-NumberMath类</title>
-    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
+    <title>Java-FileStreamIO</title>
+    <link href="/2016/03/02/Java-FileStreamIO/"/>
+    <url>/2016/03/02/Java-FileStreamIO/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-FileStreamIO"><a href="#Java-FileStreamIO" class="headerlink" title="Java-FileStreamIO"></a>Java-FileStreamIO</h1><pre><code>import java.io.*;public class StreamFileIODemo {    public void printChar() throws IOException {        //使用BufferedReader从控制台读取输入        char c;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符，按Q键退出&quot;);        do {            //read() 读取字符            c = (char) br1.read();            System.out.println(c);        } while (c != &#39;Q&#39;);    }    public void printStr() throws IOException{        String str1;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;);        do {            //readLine() 读取字符串            str1 = br1.readLine();            System.out.println(str1);        } while (!str1.equals(&quot;end&quot;));    }    public void ReadFileDemo() throws IOException{        //FileInputStream 从文件读取数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  InputStream out = new FileInputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public int read(int r)throws IOException{}                这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。            4    public int read(byte[] r) throws IOException{}                这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。            5    public int available() throws IOException{}                返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。         */        System.out.println(&quot;打印输出读取文件demo&quot;);        InputStream is1 = new FileInputStream(&quot;test.txt&quot;);        int size = is1.available();        for (int i=0;i&lt;size;i++) {            System.out.println((char) is1.read());        }    }    public void WriteFileDemo() throws IOException {        //FileOutputStream 创建一个文件向文件中写数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  OutputStream f = new FileOutputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public void write(int w)throws IOException{}                这个方法把指定的字节写到输出流中。            4    public void write(byte[] w)                把指定数组中w.length长度的字节写到OutputStream中。         */        System.out.println(&quot;打印输出写入文件demo&quot;);        byte bWrite[] = {11,21,3,38,5};        OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;);        for (int i=0;i&lt;bWrite.length;i++){            os1.write(bWrite[i]);        }        os1.close();    }    public void CreateDirs(){        //文件和I/O ，目录        /*            File类            - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。            - mkdirs()方法创建一个文件夹和它的所有父文件夹。        */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;;        File dir1 = new File(dirname);        //   创建目录        dir1.mkdirs();    }    public void ReadDirs(){        /*            一个目录其实就是一个 File 对象，它包含其他文件和文件夹。            如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。            可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;;        File dir2 = new File(dirname);        if (dir2.isDirectory()){            System.out.println(&quot;目录&quot;+ dirname);            String[] s1 = dir2.list();            for (int i=0;i&lt;s1.length;i++){                File f = new File(dirname + &#39;/&#39; + s1[i]);                if (f.isDirectory()){                    System.out.println(s1[i] + &quot;是一个目录&quot;);                }else {                    System.out.println(s1[i] + &quot;是一个文件&quot;);                }            }        }else {            System.out.println(dirname +&quot;不是一个目录&quot;);        }    }    public void DeleteDirs(){        //删除文件/目录        /*            删除文件可以使用 java.io.File.delete() 方法            当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;;        File dir3 = new File(dirname);        File[] files = dir3.listFiles();        if (files != null){            for (File f: files){                if (!f.isDirectory()){                    f.delete();                }            }        }        dir3.delete();        System.out.println(&quot;删除成功&quot;);    }    public static void main(String[] args) throws IOException {        StreamFileIODemo s = new StreamFileIODemo();//        s.printChar();//        s.printStr();//        s.WriteFileDemo();//        s.CreateDirs();//        s.ReadDirs();        s.DeleteDirs();    }}</code></pre>]]></content>
     
     
     <categories>
@@ -2479,11 +2508,11 @@
   
   
   <entry>
-    <title>Java-FileStreamIO</title>
-    <link href="/2016/03/02/Java-FileStreamIO/"/>
-    <url>/2016/03/02/Java-FileStreamIO/</url>
+    <title>Java-NumberMath类</title>
+    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-FileStreamIO"><a href="#Java-FileStreamIO" class="headerlink" title="Java-FileStreamIO"></a>Java-FileStreamIO</h1><pre><code>import java.io.*;public class StreamFileIODemo {    public void printChar() throws IOException {        //使用BufferedReader从控制台读取输入        char c;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符，按Q键退出&quot;);        do {            //read() 读取字符            c = (char) br1.read();            System.out.println(c);        } while (c != &#39;Q&#39;);    }    public void printStr() throws IOException{        String str1;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;);        do {            //readLine() 读取字符串            str1 = br1.readLine();            System.out.println(str1);        } while (!str1.equals(&quot;end&quot;));    }    public void ReadFileDemo() throws IOException{        //FileInputStream 从文件读取数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  InputStream out = new FileInputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public int read(int r)throws IOException{}                这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。            4    public int read(byte[] r) throws IOException{}                这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。            5    public int available() throws IOException{}                返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。         */        System.out.println(&quot;打印输出读取文件demo&quot;);        InputStream is1 = new FileInputStream(&quot;test.txt&quot;);        int size = is1.available();        for (int i=0;i&lt;size;i++) {            System.out.println((char) is1.read());        }    }    public void WriteFileDemo() throws IOException {        //FileOutputStream 创建一个文件向文件中写数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  OutputStream f = new FileOutputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public void write(int w)throws IOException{}                这个方法把指定的字节写到输出流中。            4    public void write(byte[] w)                把指定数组中w.length长度的字节写到OutputStream中。         */        System.out.println(&quot;打印输出写入文件demo&quot;);        byte bWrite[] = {11,21,3,38,5};        OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;);        for (int i=0;i&lt;bWrite.length;i++){            os1.write(bWrite[i]);        }        os1.close();    }    public void CreateDirs(){        //文件和I/O ，目录        /*            File类            - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。            - mkdirs()方法创建一个文件夹和它的所有父文件夹。        */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;;        File dir1 = new File(dirname);        //   创建目录        dir1.mkdirs();    }    public void ReadDirs(){        /*            一个目录其实就是一个 File 对象，它包含其他文件和文件夹。            如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。            可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;;        File dir2 = new File(dirname);        if (dir2.isDirectory()){            System.out.println(&quot;目录&quot;+ dirname);            String[] s1 = dir2.list();            for (int i=0;i&lt;s1.length;i++){                File f = new File(dirname + &#39;/&#39; + s1[i]);                if (f.isDirectory()){                    System.out.println(s1[i] + &quot;是一个目录&quot;);                }else {                    System.out.println(s1[i] + &quot;是一个文件&quot;);                }            }        }else {            System.out.println(dirname +&quot;不是一个目录&quot;);        }    }    public void DeleteDirs(){        //删除文件/目录        /*            删除文件可以使用 java.io.File.delete() 方法            当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;;        File dir3 = new File(dirname);        File[] files = dir3.listFiles();        if (files != null){            for (File f: files){                if (!f.isDirectory()){                    f.delete();                }            }        }        dir3.delete();        System.out.println(&quot;删除成功&quot;);    }    public static void main(String[] args) throws IOException {        StreamFileIODemo s = new StreamFileIODemo();//        s.printChar();//        s.printStr();//        s.WriteFileDemo();//        s.CreateDirs();//        s.ReadDirs();        s.DeleteDirs();    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
     
     
     <categories>
@@ -2554,31 +2583,6 @@
   
   
   <entry>
-    <title>Java-SwitchCase语句</title>
-    <link href="/2016/03/02/Java-SwitchCase/"/>
-    <url>/2016/03/02/Java-SwitchCase/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-SwitchCase语句"><a href="#Java-SwitchCase语句" class="headerlink" title="Java-SwitchCase语句"></a>Java-SwitchCase语句</h1><pre><code>public class SwitchCase {    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。    /*        switch(expression){            case value :                //语句                break; //可选            case value :                //语句                break; //可选            //你可以有任意数量的case语句            default : //可选                //语句   不需要break        }     */    public static void main(String[]args){        char grade =&#39;C&#39;;        switch (grade)        {            case &#39;A&#39;:                System.out.println(&quot;优秀&quot;);                break;            case &#39;B&#39;:            case &#39;C&#39;:                System.out.println(&quot;良好&quot;);                break;            case &#39;D&#39;:                System.out.println(&quot;及格&quot;);                break;            case &#39;F&#39;:                System.out.println(&quot;你还需要继续努力&quot;);                break;            default:                System.out.println(&quot;未知等级&quot;);        }        System.out.println(&quot;你的等级是&quot; + grade);    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Java-String类</title>
     <link href="/2016/03/02/Java-String%E7%B1%BB/"/>
     <url>/2016/03/02/Java-String%E7%B1%BB/</url>
@@ -2604,11 +2608,11 @@
   
   
   <entry>
-    <title>Java循环结构</title>
-    <link href="/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    <url>/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</url>
+    <title>Java-SwitchCase语句</title>
+    <link href="/2016/03/02/Java-SwitchCase/"/>
+    <url>/2016/03/02/Java-SwitchCase/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java循环结构"><a href="#Java循环结构" class="headerlink" title="Java循环结构"></a>Java循环结构</h1><pre><code>public class LoopStructure {    /*        while 循环        do…while 循环        for 循环     */    public static void main(String[] args) {        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环        System.out.println(&quot;while 循环&quot;);        int x = 10;        while (x &lt; 20) {            System.out.println(x);            x++;        }        // do…while 循环，至少执行一次        /*            do {                //代码语句            }while(布尔表达式);         */        System.out.println(&quot;do…while循环&quot;);        int y = 10;        do {            System.out.println(y);            y++;        } while (y &lt; 10);        // for 循环，执行前就确定执行次数        /*            for(初始化; 布尔表达式; 更新) {                //代码语句            }         */        System.out.println(&quot;for 循环&quot;);        for (int z = 0; z &lt; 20; z = z + 1) {            System.out.println(z);        }        //增强for循环        /*            for(声明语句 : 表达式)            {                //代码句子            }         */        System.out.println(&quot;增强for 循环&quot;);        int[] numbers = {10, 20, 30, 40, 50};        for (int number : numbers) {            System.out.println(number);        }        String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;};        for (String name : names) {            System.out.println(name);        }        //break关键字        /*            break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。            break 跳出最里层的循环，并且继续执行该循环下面的语句。         */        System.out.println(&quot;break关键字&quot;);        int[] numbers1 = {10, 20, 30, 40, 50};        for (int number : numbers1) {            if (number == 30) {                break;            }            System.out.println(number);        }        //continue关键字        /*            continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。            在 for 循环中，continue 语句使程序立即跳转到更新语句。            在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。         */        System.out.println(&quot;continue关键字&quot;);        int[] numbers2 = {10, 20, 30, 40, 50};        for (int number : numbers2) {            if (number == 30) {                continue;            }            System.out.println(number);        }    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-SwitchCase语句"><a href="#Java-SwitchCase语句" class="headerlink" title="Java-SwitchCase语句"></a>Java-SwitchCase语句</h1><pre><code>public class SwitchCase {    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。    /*        switch(expression){            case value :                //语句                break; //可选            case value :                //语句                break; //可选            //你可以有任意数量的case语句            default : //可选                //语句   不需要break        }     */    public static void main(String[]args){        char grade =&#39;C&#39;;        switch (grade)        {            case &#39;A&#39;:                System.out.println(&quot;优秀&quot;);                break;            case &#39;B&#39;:            case &#39;C&#39;:                System.out.println(&quot;良好&quot;);                break;            case &#39;D&#39;:                System.out.println(&quot;及格&quot;);                break;            case &#39;F&#39;:                System.out.println(&quot;你还需要继续努力&quot;);                break;            default:                System.out.println(&quot;未知等级&quot;);        }        System.out.println(&quot;你的等级是&quot; + grade);    }}</code></pre>]]></content>
     
     
     <categories>
@@ -2654,11 +2658,61 @@
   
   
   <entry>
+    <title>Java循环结构</title>
+    <link href="/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    <url>/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java循环结构"><a href="#Java循环结构" class="headerlink" title="Java循环结构"></a>Java循环结构</h1><pre><code>public class LoopStructure {    /*        while 循环        do…while 循环        for 循环     */    public static void main(String[] args) {        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环        System.out.println(&quot;while 循环&quot;);        int x = 10;        while (x &lt; 20) {            System.out.println(x);            x++;        }        // do…while 循环，至少执行一次        /*            do {                //代码语句            }while(布尔表达式);         */        System.out.println(&quot;do…while循环&quot;);        int y = 10;        do {            System.out.println(y);            y++;        } while (y &lt; 10);        // for 循环，执行前就确定执行次数        /*            for(初始化; 布尔表达式; 更新) {                //代码语句            }         */        System.out.println(&quot;for 循环&quot;);        for (int z = 0; z &lt; 20; z = z + 1) {            System.out.println(z);        }        //增强for循环        /*            for(声明语句 : 表达式)            {                //代码句子            }         */        System.out.println(&quot;增强for 循环&quot;);        int[] numbers = {10, 20, 30, 40, 50};        for (int number : numbers) {            System.out.println(number);        }        String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;};        for (String name : names) {            System.out.println(name);        }        //break关键字        /*            break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。            break 跳出最里层的循环，并且继续执行该循环下面的语句。         */        System.out.println(&quot;break关键字&quot;);        int[] numbers1 = {10, 20, 30, 40, 50};        for (int number : numbers1) {            if (number == 30) {                break;            }            System.out.println(number);        }        //continue关键字        /*            continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。            在 for 循环中，continue 语句使程序立即跳转到更新语句。            在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。         */        System.out.println(&quot;continue关键字&quot;);        int[] numbers2 = {10, 20, 30, 40, 50};        for (int number : numbers2) {            if (number == 30) {                continue;            }            System.out.println(number);        }    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Java数组</title>
     <link href="/2016/03/02/Java%E6%95%B0%E7%BB%84/"/>
     <url>/2016/03/02/Java%E6%95%B0%E7%BB%84/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java数组"><a href="#Java数组" class="headerlink" title="Java数组"></a>Java数组</h1><pre><code>public class ArrayDemo {    //声明数组    // 数据类型[] 数组名称;  dataType[] arrayName;    //创建数组    // 数据名称 = new dataType[arraySize];    //dataType[] arrayName = {value0,value1,value2,...,valuek};    public static void main(String[] args){        //数组大小        int size =4;        //定义数组        double[] TestList = new double[size];        TestList[0] = 3.2;        TestList[1] = 2.6;        TestList[2] = 4.7;        TestList[3] = 5.6;        double total =0;        for (int i=0; i&lt;size; i++){            total = total + TestList[i];        }        System.out.println(total);        double[] list1 = {1.4,2.8,3.6,4.9};        //打印所有数组元素        for (int i=0;i&lt;list1.length;i++){            System.out.println(list1[i]);        }        //计算所有元素的和        double sum = 0;        for (int i =0;i&lt;list1.length;i++){            sum = sum + list1[i];        }        System.out.println(sum);        //查找最大元素        double max = list1[0];        for (int i=0; i&lt;list1.length;i++){            if (list1[i] &gt; max){                max = list1[i];            }        }        System.out.println(max);    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java正则表达式</title>
+    <link href="/2016/03/02/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <url>/2016/03/02/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java正则表达式"><a href="#Java正则表达式" class="headerlink" title="Java正则表达式"></a>Java正则表达式</h1><pre><code>import java.util.regex.*;public class RegularExpressionDemo {    /*        Pattern 类：        pattern 对象是一个正则表达式的编译表示。        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。        该方法接受一个正则表达式作为它的第一个参数。        Matcher 类：        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。        与Pattern 类一样，Matcher 也没有公共构造方法。        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。        PatternSyntaxException：        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。     */    /*        正则表达式语法        字符          说明        \             将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如，&quot;n&quot;匹配字符&quot;n&quot;。&quot;\n&quot;匹配换行符。序列&quot;\\\\&quot;匹配&quot;\\&quot;，&quot;\\(&quot;匹配&quot;(&quot;。        ^             匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与&quot;\n&quot;或&quot;\r&quot;之后的位置匹配。        $             匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与&quot;\n&quot;或&quot;\r&quot;之前的位置匹配。        *             零次或多次匹配前面的字符或子表达式。例如，zo* 匹配&quot;z&quot;和&quot;zoo&quot;。* 等效于 {0,}。        +             一次或多次匹配前面的字符或子表达式。例如，&quot;zo+&quot;与&quot;zo&quot;和&quot;zoo&quot;匹配，但与&quot;z&quot;不匹配。+ 等效于 {1,}。        ?             零次或一次匹配前面的字符或子表达式。例如，&quot;do(es)?&quot;匹配&quot;do&quot;或&quot;does&quot;中的&quot;do&quot;。? 等效于 {0,1}。        {n}           n 是非负整数。正好匹配 n 次。例如，&quot;o{2}&quot;与&quot;Bob&quot;中的&quot;o&quot;不匹配，但与&quot;food&quot;中的两个&quot;o&quot;匹配。        {n,}          n 是非负整数。至少匹配 n 次。例如，&quot;o{2,}&quot;不匹配&quot;Bob&quot;中的&quot;o&quot;，而匹配&quot;foooood&quot;中的所有 o。&quot;o{1,}&quot;等效于&quot;o+&quot;。&quot;o{0,}&quot;等效于&quot;o*&quot;。        {n,m}         m 和 n 是非负整数，其中 n &lt;= m。匹配至少 n 次，至多 m 次。例如，&quot;o{1,3}&quot;匹配&quot;fooooood&quot;中的头三个 o。&#39;o{0,1}&#39; 等效于 &#39;o?&#39;。注意：您不能将空格插入逗号和数字之间。        ?            当此字符紧随任何其他限定符（*、+、?、{n}、{n,}、{n,m}）之后时，匹配模式是&quot;非贪心的&quot;。&quot;非贪心的&quot;模式匹配搜索到的、尽可能短的字符串，而默认的&quot;贪心的&quot;模式匹配搜索到的、尽可能长的字符串。例如，在字符串&quot;oooo&quot;中，&quot;o+?&quot;只匹配单个&quot;o&quot;，而&quot;o+&quot;匹配所有&quot;o&quot;。        .            匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。        (pattern)     匹配 pattern 并捕获该匹配的子表达式。可以使用 $0…$9 属性从结果&quot;匹配&quot;集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用&quot;\(&quot;或者&quot;\)&quot;。        (?:pattern)   匹配 pattern 但不捕获该匹配的子表达式，即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用&quot;or&quot;字符 (|) 组合模式部件的情况很有用。例如，&#39;industr(?:y|ies) 是比 &#39;industry|industries&#39; 更经济的表达式。        (?=pattern)   执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 pattern 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?=95|98|NT|2000)&#39; 匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;，但不匹配&quot;Windows 3.1&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。        (?!pattern)   执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 pattern 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?!95|98|NT|2000)&#39; 匹配&quot;Windows 3.1&quot;中的 &quot;Windows&quot;，但不匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。        x|y           匹配 x 或 y。例如，&#39;z|food&#39; 匹配&quot;z&quot;或&quot;food&quot;。&#39;(z|f)ood&#39; 匹配&quot;zood&quot;或&quot;food&quot;。       [xyz]         字符集。匹配包含的任一字符。例如，&quot;[abc]&quot;匹配&quot;plain&quot;中的&quot;a&quot;。       [^xyz]        反向字符集。匹配未包含的任何字符。例如，&quot;[^abc]&quot;匹配&quot;plain&quot;中&quot;p&quot;，&quot;l&quot;，&quot;i&quot;，&quot;n&quot;。       [a-z]         字符范围。匹配指定范围内的任何字符。例如，&quot;[a-z]&quot;匹配&quot;a&quot;到&quot;z&quot;范围内的任何小写字母。       [^a-z]       反向范围字符。匹配不在指定的范围内的任何字符。例如，&quot;[^a-z]&quot;匹配任何不在&quot;a&quot;到&quot;z&quot;范围内的任何字符。        \b          匹配一个字边界，即字与空格间的位置。例如，&quot;er\b&quot;匹配&quot;never&quot;中的&quot;er&quot;，但不匹配&quot;verb&quot;中的&quot;er&quot;。        \B          非字边界匹配。&quot;er\B&quot;匹配&quot;verb&quot;中的&quot;er&quot;，但不匹配&quot;never&quot;中的&quot;er&quot;。        \cx         匹配 x 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。x 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是&quot;c&quot;字符本身。        \d          数字字符匹配。等效于 [0-9]。        \D          非数字字符匹配。等效于 [^0-9]。        \f          换页符匹配。等效于 \x0c 和 \cL。        \n          换行符匹配。等效于 \x0a 和 \cJ。        \r          匹配一个回车符。等效于 \x0d 和 \cM。        \s          匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。        \S          匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。        \t          制表符匹配。与 \x09 和 \cI 等效。        \v          垂直制表符匹配。与 \x0b 和 \cK 等效。        \w          匹配任何字类字符，包括下划线。与&quot;[A-Za-z0-9_]&quot;等效。        \W          与任何非单词字符匹配。与&quot;[^A-Za-z0-9_]&quot;等效。        \xn         匹配 n，此处的 n 是一个十六进制转义码。十六进制转义码必须正好是两位数长。例如，&quot;\x41&quot;匹配&quot;A&quot;。&quot;\x041&quot;与&quot;\x04&quot;&amp;&quot;1&quot;等效。允许在正则表达式中使用 ASCII 代码。        \num        匹配 num，此处的 num 是一个正整数。到捕获匹配的反向引用。例如，&quot;(.)\1&quot;匹配两个连续的相同字符。        \n          标识一个八进制转义码或反向引用。如果 \n 前面至少有 n 个捕获子表达式，那么 n 是反向引用。否则，如果 n 是八进制数 (0-7)，那么 n 是八进制转义码。        \nm         标识一个八进制转义码或反向引用。如果 \nm 前面至少有 nm 个捕获子表达式，那么 nm 是反向引用。如果 \nm 前面至少有 n 个捕获，则 n 是反向引用，后面跟有字符 m。如果两种前面的情况都不存在，则 \nm 匹配八进制值 nm，其中 n 和 m 是八进制数字 (0-7)。        \nml        当 n 是八进制数 (0-3)，m 和 l 是八进制数 (0-7) 时，匹配八进制转义码 nml。     */}</code></pre>]]></content>
     
     
     <categories>
@@ -2709,31 +2763,6 @@
     <url>/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java条件语句"><a href="#Java条件语句" class="headerlink" title="Java条件语句"></a>Java条件语句</h1><pre><code>public class IfElse {    /*        条件语句 - if...else     */    public static void main(String[] args) {        int x = 10;        /*            if(布尔表达式){                //如果布尔表达式的值为true            }else{                //如果布尔表达式的值为false            }         */        if (x &lt; 20) {            System.out.println(&quot;这是一个if判断语句&quot;);        } else {            System.out.println(&quot;这是一个else判断语句&quot;);        }        /*            if(布尔表达式 1){                //如果布尔表达式 1的值为true执行代码            }else if(布尔表达式 2){                //如果布尔表达式 2的值为true执行代码            }else if(布尔表达式 3){                //如果布尔表达式 3的值为true执行代码            }else if(布尔表达式 4){                //如果布尔表达式 4的值为true执行代码            }else if(布尔表达式 5){                //如果布尔表达式 5的值为true执行代码            }            else {                //如果以上布尔表达式都不为true执行代码            }         */        //嵌套的if...else语句        /*            if(布尔表达式 1){                ////如果布尔表达式 1的值为true执行代码                if(布尔表达式 2){                    ////如果布尔表达式 2的值为true执行代码                }            }         */    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java正则表达式</title>
-    <link href="/2016/03/02/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    <url>/2016/03/02/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java正则表达式"><a href="#Java正则表达式" class="headerlink" title="Java正则表达式"></a>Java正则表达式</h1><pre><code>import java.util.regex.*;public class RegularExpressionDemo {    /*        Pattern 类：        pattern 对象是一个正则表达式的编译表示。        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。        该方法接受一个正则表达式作为它的第一个参数。        Matcher 类：        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。        与Pattern 类一样，Matcher 也没有公共构造方法。        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。        PatternSyntaxException：        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。     */    /*        正则表达式语法        字符          说明        \             将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如，&quot;n&quot;匹配字符&quot;n&quot;。&quot;\n&quot;匹配换行符。序列&quot;\\\\&quot;匹配&quot;\\&quot;，&quot;\\(&quot;匹配&quot;(&quot;。        ^             匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与&quot;\n&quot;或&quot;\r&quot;之后的位置匹配。        $             匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与&quot;\n&quot;或&quot;\r&quot;之前的位置匹配。        *             零次或多次匹配前面的字符或子表达式。例如，zo* 匹配&quot;z&quot;和&quot;zoo&quot;。* 等效于 {0,}。        +             一次或多次匹配前面的字符或子表达式。例如，&quot;zo+&quot;与&quot;zo&quot;和&quot;zoo&quot;匹配，但与&quot;z&quot;不匹配。+ 等效于 {1,}。        ?             零次或一次匹配前面的字符或子表达式。例如，&quot;do(es)?&quot;匹配&quot;do&quot;或&quot;does&quot;中的&quot;do&quot;。? 等效于 {0,1}。        {n}           n 是非负整数。正好匹配 n 次。例如，&quot;o{2}&quot;与&quot;Bob&quot;中的&quot;o&quot;不匹配，但与&quot;food&quot;中的两个&quot;o&quot;匹配。        {n,}          n 是非负整数。至少匹配 n 次。例如，&quot;o{2,}&quot;不匹配&quot;Bob&quot;中的&quot;o&quot;，而匹配&quot;foooood&quot;中的所有 o。&quot;o{1,}&quot;等效于&quot;o+&quot;。&quot;o{0,}&quot;等效于&quot;o*&quot;。        {n,m}         m 和 n 是非负整数，其中 n &lt;= m。匹配至少 n 次，至多 m 次。例如，&quot;o{1,3}&quot;匹配&quot;fooooood&quot;中的头三个 o。&#39;o{0,1}&#39; 等效于 &#39;o?&#39;。注意：您不能将空格插入逗号和数字之间。        ?            当此字符紧随任何其他限定符（*、+、?、{n}、{n,}、{n,m}）之后时，匹配模式是&quot;非贪心的&quot;。&quot;非贪心的&quot;模式匹配搜索到的、尽可能短的字符串，而默认的&quot;贪心的&quot;模式匹配搜索到的、尽可能长的字符串。例如，在字符串&quot;oooo&quot;中，&quot;o+?&quot;只匹配单个&quot;o&quot;，而&quot;o+&quot;匹配所有&quot;o&quot;。        .            匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。        (pattern)     匹配 pattern 并捕获该匹配的子表达式。可以使用 $0…$9 属性从结果&quot;匹配&quot;集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用&quot;\(&quot;或者&quot;\)&quot;。        (?:pattern)   匹配 pattern 但不捕获该匹配的子表达式，即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用&quot;or&quot;字符 (|) 组合模式部件的情况很有用。例如，&#39;industr(?:y|ies) 是比 &#39;industry|industries&#39; 更经济的表达式。        (?=pattern)   执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 pattern 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?=95|98|NT|2000)&#39; 匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;，但不匹配&quot;Windows 3.1&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。        (?!pattern)   执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 pattern 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?!95|98|NT|2000)&#39; 匹配&quot;Windows 3.1&quot;中的 &quot;Windows&quot;，但不匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。        x|y           匹配 x 或 y。例如，&#39;z|food&#39; 匹配&quot;z&quot;或&quot;food&quot;。&#39;(z|f)ood&#39; 匹配&quot;zood&quot;或&quot;food&quot;。       [xyz]         字符集。匹配包含的任一字符。例如，&quot;[abc]&quot;匹配&quot;plain&quot;中的&quot;a&quot;。       [^xyz]        反向字符集。匹配未包含的任何字符。例如，&quot;[^abc]&quot;匹配&quot;plain&quot;中&quot;p&quot;，&quot;l&quot;，&quot;i&quot;，&quot;n&quot;。       [a-z]         字符范围。匹配指定范围内的任何字符。例如，&quot;[a-z]&quot;匹配&quot;a&quot;到&quot;z&quot;范围内的任何小写字母。       [^a-z]       反向范围字符。匹配不在指定的范围内的任何字符。例如，&quot;[^a-z]&quot;匹配任何不在&quot;a&quot;到&quot;z&quot;范围内的任何字符。        \b          匹配一个字边界，即字与空格间的位置。例如，&quot;er\b&quot;匹配&quot;never&quot;中的&quot;er&quot;，但不匹配&quot;verb&quot;中的&quot;er&quot;。        \B          非字边界匹配。&quot;er\B&quot;匹配&quot;verb&quot;中的&quot;er&quot;，但不匹配&quot;never&quot;中的&quot;er&quot;。        \cx         匹配 x 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。x 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是&quot;c&quot;字符本身。        \d          数字字符匹配。等效于 [0-9]。        \D          非数字字符匹配。等效于 [^0-9]。        \f          换页符匹配。等效于 \x0c 和 \cL。        \n          换行符匹配。等效于 \x0a 和 \cJ。        \r          匹配一个回车符。等效于 \x0d 和 \cM。        \s          匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。        \S          匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。        \t          制表符匹配。与 \x09 和 \cI 等效。        \v          垂直制表符匹配。与 \x0b 和 \cK 等效。        \w          匹配任何字类字符，包括下划线。与&quot;[A-Za-z0-9_]&quot;等效。        \W          与任何非单词字符匹配。与&quot;[^A-Za-z0-9_]&quot;等效。        \xn         匹配 n，此处的 n 是一个十六进制转义码。十六进制转义码必须正好是两位数长。例如，&quot;\x41&quot;匹配&quot;A&quot;。&quot;\x041&quot;与&quot;\x04&quot;&amp;&quot;1&quot;等效。允许在正则表达式中使用 ASCII 代码。        \num        匹配 num，此处的 num 是一个正整数。到捕获匹配的反向引用。例如，&quot;(.)\1&quot;匹配两个连续的相同字符。        \n          标识一个八进制转义码或反向引用。如果 \n 前面至少有 n 个捕获子表达式，那么 n 是反向引用。否则，如果 n 是八进制数 (0-7)，那么 n 是八进制转义码。        \nm         标识一个八进制转义码或反向引用。如果 \nm 前面至少有 nm 个捕获子表达式，那么 nm 是反向引用。如果 \nm 前面至少有 n 个捕获，则 n 是反向引用，后面跟有字符 m。如果两种前面的情况都不存在，则 \nm 匹配八进制值 nm，其中 n 和 m 是八进制数字 (0-7)。        \nml        当 n 是八进制数 (0-3)，m 和 l 是八进制数 (0-7) 时，匹配八进制转义码 nml。     */}</code></pre>]]></content>
     
     
     <categories>
