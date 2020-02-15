@@ -266,6 +266,79 @@ AUTO_INCREMENT
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
+        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
+登录/退出MySQL注意：
+​    1、命令行结束符号使用英文分号;   或者 \g
+​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
+​    3、\c可以取消当前命令的执行
+登录
+mysql -uroot -p
+mysql -uroot -proot
+mysql -hlocalhost -uroot -p -P3306
+登录同时修改命令提示符
+mysql -uroot -p –prompt=命令提示符
+
+
+获取版本号
+mysql -V
+mysql –version
+
+
+登录同时打开指定数据库
+mysql -uroot -p -D db_name
+
+
+
+退出
+exit
+quit
+\q
+ctrl + c
+
+SQL语句语法规范
+常用MySQL的关键字需要大写
+库名、表名、字段名称等使用小写
+SQL语句支持折行操作，拆分的时候不能把完整单词拆开
+数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
+
+常用SQL语句
+SELECT USER()   </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2017/10/25/MySQL深入浅出--数据库相关操作/">
         <p class="h4 index-header">MySQL深入浅出--数据库相关操作</p>
         
@@ -314,79 +387,6 @@ DROP DATABASE db_name;
 
 如果数据库存在则删除
 DROP DATABASE [IF EXIS</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
-        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
-登录/退出MySQL注意：
-​    1、命令行结束符号使用英文分号;   或者 \g
-​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
-​    3、\c可以取消当前命令的执行
-登录
-mysql -uroot -p
-mysql -uroot -proot
-mysql -hlocalhost -uroot -p -P3306
-登录同时修改命令提示符
-mysql -uroot -p –prompt=命令提示符
-
-
-获取版本号
-mysql -V
-mysql –version
-
-
-登录同时打开指定数据库
-mysql -uroot -p -D db_name
-
-
-
-退出
-exit
-quit
-\q
-ctrl + c
-
-SQL语句语法规范
-常用MySQL的关键字需要大写
-库名、表名、字段名称等使用小写
-SQL语句支持折行操作，拆分的时候不能把完整单词拆开
-数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
-
-常用SQL语句
-SELECT USER()   </div>
         </div>
       </a>
 
@@ -761,24 +761,40 @@ prompt 提示符;
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-NumberMath类/">
-        <p class="h4 index-header">Java-NumberMath类</p>
+      <a href="/2016/03/02/Java-Character类/">
+        <p class="h4 index-header">Java-Character类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
-    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
-    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
+          <div class="index-text mb-1">Java-Character类public class CharacterDemo {
+    // 对单个字符进行操作
 
-    private static void test(double num) {
-        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
-        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
-        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
-    }
+    /*
+        转义序列    描述
+        \t    在文中该处插入一个tab键
+        \b    在文中该处插入一个后退键
+        \n    在文中该处换行
+        \r    在文中该处插入回车
+        \f    在文中该处插入换页符
+        \&#39;    在文中该处插入单引号
+        \&quot;    在文中该处插入双引号
+        \\    在文中该处插入反斜杠
+     */
 
-    public st</div>
+    //字符方法
+    /*
+        序号    方法与描述
+        1    isLetter()
+是否是一个字母
+        2    isDigit()
+是否是一个数字字符
+        3    isWhitespace()
+是否是一个空白字符
+        4    isUpperCase()
+是否是大写字母
+        5    isLo</div>
         </div>
       </a>
 

@@ -133,18 +133,17 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/02/22/php即时通讯-多进程/">
-        <p class="h4 index-header">php即时通讯-多进程</p>
+      <a href="/2019/02/22/php即时通讯-socket/">
+        <p class="h4 index-header">php即时通讯-socket</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">多进程
-系统进程
-用户进程
-并发执行
-性能更高
+          <div class="index-text mb-1">Socket
+一个工具，一个接口
+封装了TCP/IP 协议
+建立长链接的基础
 
 </div>
         </div>
@@ -174,17 +173,18 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/02/22/php即时通讯-WebSocket/">
-        <p class="h4 index-header">php即时通讯-WebSocket</p>
+      <a href="/2019/02/22/php即时通讯-多进程/">
+        <p class="h4 index-header">php即时通讯-多进程</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">WebSocket
-一个应用层协议
-长链接
-主流即时通讯协议
+          <div class="index-text mb-1">多进程
+系统进程
+用户进程
+并发执行
+性能更高
 
 </div>
         </div>
@@ -270,14 +270,32 @@ Crash ，卡顿 ，exception， ANR 的次数
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/22/redis学习-数据类型/">
-        <p class="h4 index-header">redis学习---数据类型</p>
+      <a href="/2019/01/22/redis学习--安装入门/">
+        <p class="h4 index-header">redis学习---安装入门</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">redis数据类型string字符串</div>
+          <div class="index-text mb-1">CentOS下安装启动# 下载安装fedora的仓库
+yum install epel-release
+# 安装redis
+yum install redis
+# 开启redis服务
+service redis start
+# 可选项，修改可访问的域名IP，修改保护模式为no
+vi /etc/redis.conf
+    注释掉 bind 127.0.0.1
+    改 protected  为 no 
+# 重启redis服务
+service redis restart
+# 根据需要可，修改防火墙，增加6379端口
+firewall-cmd --zone=public --add-port=6379/tcp -permanent   (-permanent,长期生效)
+# 查询端口
+firewall-cmd --zone-public --query-port=6379/tcp
+# 连接redis
+redis-cli -h host -p port -a password
+</div>
         </div>
       </a>
 
@@ -307,32 +325,14 @@ Crash ，卡顿 ，exception， ANR 的次数
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/22/redis学习--安装入门/">
-        <p class="h4 index-header">redis学习---安装入门</p>
+      <a href="/2019/01/22/redis学习-数据类型/">
+        <p class="h4 index-header">redis学习---数据类型</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">CentOS下安装启动# 下载安装fedora的仓库
-yum install epel-release
-# 安装redis
-yum install redis
-# 开启redis服务
-service redis start
-# 可选项，修改可访问的域名IP，修改保护模式为no
-vi /etc/redis.conf
-    注释掉 bind 127.0.0.1
-    改 protected  为 no 
-# 重启redis服务
-service redis restart
-# 根据需要可，修改防火墙，增加6379端口
-firewall-cmd --zone=public --add-port=6379/tcp -permanent   (-permanent,长期生效)
-# 查询端口
-firewall-cmd --zone-public --query-port=6379/tcp
-# 连接redis
-redis-cli -h host -p port -a password
-</div>
+          <div class="index-text mb-1">redis数据类型string字符串</div>
         </div>
       </a>
 
