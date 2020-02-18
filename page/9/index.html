@@ -133,52 +133,6 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/11/25/MySQL高级语法/">
-        <p class="h4 index-header">MySQL高级语法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">MySQL高级语法SQL TOP子句TOP 子句用于规定要返回的记录的数目。
-
-SELECT TOP number | percent column_name(s) FROM table_name;
-SELECT column_name(s) FROM table_name LIMIT number;
-
-SQL LIKE 操作符LIKE 操作符用于在 WHERE 子句中搜索列中的指定模式。
-
-SELECT column_name(s) FROM table_name WHERE column_name LIKE pattern;
-
-SQL 通配符SQL 通配符必须与 LIKE 运算符一起使用| 通配符                     | 描述                       || ————————– | ————————– || %                          | 替代一个或多个字符         || _                          | 仅替代一个字符             || [charlist]        </div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-11-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2017/11/23/MySQL基础语法/">
         <p class="h4 index-header">MySQL基础语法</p>
         
@@ -777,6 +731,72 @@ BIGINT        8字节
       <div>
         
           <i class="iconfont icon-riqi2"></i>&nbsp;2017-09-21&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/09/20/MySQL学习--初涉MySQL/">
+        <p class="h4 index-header">MySQL学习-初涉MySQL</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">MySQL登录/退出
+登录
+
+mysql -u root -p -P3306 -h127.0.0.1
+
+-D 数据库名称             打开指定数据库
+--delimiter = name       指定分割符
+-h 服务器名               服务器名称        
+-p 密码                  密码
+-P 端口号                 端口号
+-u 用户名                 用户名
+--prompt = name         设置提示符
+-V 输出版本信息并退出
+
+
+退出
+
+exit;
+quit;
+\q;
+
+修改MySQL提示符- 连接客户端时候通过prompt命令参数指定
+ mysql -u root -p root --prompt 提示符 
+示例： mysql -u root -p root --prompt \h
+
+- 连接客户端后，通过prompt命令修改
+prompt 提示符;
+示例： prompt mysql&gt;;
+执行结果 PROMPT set to &#39;mysql&gt;&#39;
+示</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-09-20&nbsp;&nbsp;
         
         
           <i class="iconfont icon-inbox"></i>
