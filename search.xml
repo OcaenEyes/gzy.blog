@@ -2,8 +2,44 @@
 <search>
   <entry>
     <title></title>
+    <url>%2F2020%2F02%2F16%2F%E5%8D%95%E7%82%B9%E7%A0%B4%E5%B1%80%E5%8D%81%E5%80%8D%E5%BF%AB%E9%80%9F%E5%A2%9E%E9%95%BF%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title></title>
     <url>%2F2020%2F02%2F15%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
     <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[社区产品生命力顽强的原因究竟何在？]]></title>
+    <url>%2F2020%2F02%2F04%2F%E7%A4%BE%E5%8C%BA%E5%9E%8B%E4%BA%A7%E5%93%81%E7%94%9F%E5%91%BD%E5%8A%9B%E9%A1%BD%E5%BC%BA%E7%9A%84%E5%8E%9F%E5%9B%A0%E7%A9%B6%E7%AB%9F%E4%BD%95%E5%9C%A8%EF%BC%9F%2F</url>
+    <content type="text"><![CDATA[社区产品生命力顽强的原因究竟何在？一、导读​ 在中国互联网流量争夺异常激烈的今天，为什么社区这种古典互联网的典型产品，会有如此顽强的生命力？ ​ 社区有内容，有内容就意味着可以吸引更多的用户注意力，你能占据用户更多的访问时长，就更有可能实现基于内容的业务营销转化，取得更大的商业效益。 二、社区本质核心定义：以用户创造内容为核心的网络交流平台。 悉数当前的各大独树一帜的产品 三、社区运营四、社区产品]]></content>
+      <categories>
+        <category>产品</category>
+        <category>内容产品</category>
+        <category>内容社区</category>
+      </categories>
+      <tags>
+        <tag>产品</tag>
+        <tag>内容</tag>
+        <tag>社区</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[内容社区的产品选型与运营]]></title>
+    <url>%2F2020%2F02%2F03%2F%E5%86%85%E5%AE%B9%E7%A4%BE%E5%8C%BA%E7%9A%84%E4%BA%A7%E5%93%81%E9%80%89%E5%9E%8B%E4%B8%8E%E8%BF%90%E8%90%A5%2F</url>
+    <content type="text"><![CDATA[内容社区的产品选型与运营社区分类社交网络 facebook、微信朋友圈、QQ空间 社交媒体 微博、抖音、快手、微信公众号 垂直社区 懂球帝、小红书、汽车之家、豆瓣、知乎、美柚…… 社区定义以用户生产内容为核心的网络交流平台 社区的生命力互联网流量红利消失，流量进入存量的争夺。 抢夺用户注意力和停留时长。 互联网流量的再分配 一个群体外部压力越大，内聚性就越强，就越容易形成社区。]]></content>
+      <categories>
+        <category>产品</category>
+        <category>内容产品</category>
+        <category>内容社区</category>
+      </categories>
+      <tags>
+        <tag>产品</tag>
+        <tag>内容产品</tag>
+        <tag>运营</tag>
+        <tag>内容社区</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[网易云音乐突破红海的思考]]></title>
@@ -849,9 +885,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
-    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
+    <title><![CDATA[数据分析03：matplotlib折线图]]></title>
+    <url>%2F2018%2F03%2F02%2F03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt import matplotlib.dates as mdates &#39;&#39;&#39; 折线图，用直线段将各数据连接起来组成的图形 常用来观察数据随时间变化的趋势 例如：股票价格，温度变化 &#39;&#39;&#39; date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True) plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;) plt.plot_date(date,open,linestyle=&#39;-&#39;,color=&quot;red&quot;,marker =&#39;o&#39;) plt.show() # 练习 &#39;&#39;&#39; 画出x值为[0,10]的正弦函数图像 &#39;&#39;&#39; x = np.linspace(0,10,100) y = np.sin(x) plt.plot(x,y) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python3</category>
@@ -864,9 +900,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析03：matplotlib折线图]]></title>
-    <url>%2F2018%2F03%2F02%2F03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt import matplotlib.dates as mdates &#39;&#39;&#39; 折线图，用直线段将各数据连接起来组成的图形 常用来观察数据随时间变化的趋势 例如：股票价格，温度变化 &#39;&#39;&#39; date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True) plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;) plt.plot_date(date,open,linestyle=&#39;-&#39;,color=&quot;red&quot;,marker =&#39;o&#39;) plt.show() # 练习 &#39;&#39;&#39; 画出x值为[0,10]的正弦函数图像 &#39;&#39;&#39; x = np.linspace(0,10,100) y = np.sin(x) plt.plot(x,y) plt.show()]]></content>
+    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
+    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python3</category>
@@ -1153,6 +1189,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Java-Scanner类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java-NumberMath类]]></title>
     <url>%2F2016%2F03%2F02%2FJava-NumberMath%E7%B1%BB%2F</url>
     <content type="text"><![CDATA[Java-NumberMath类public class NumberAndMath { //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类 // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数 private static void test(double num) { System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num)); System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num)); System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num)); } public static void main(String[] args) { System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2)); System.out.println(&quot;0度的余弦值&quot; + Math.cos(0)); System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3)); System.out.println(&quot;1的反正切值&quot; + Math.atan(1)); System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2)); double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6}; for (double num : nums) { test(num); } /* 序号 方法与描述 1 xxxValue() 将 Number 对象转换为xxx数据类型的值并返回。 2 compareTo() 将number对象与参数比较。 3 equals() 判断number对象是否与参数相等。 4 valueOf() 返回一个 Number 对象指定的内置数据类型 5 toString() 以字符串形式返回值。 6 parseInt() 将字符串解析为int类型。 7 abs() 返回参数的绝对值。 8 ceil() 返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。 9 floor() 返回小于等于（&lt;=）给定参数的最大整数 。 10 rint() 返回与参数最接近的整数。返回类型为double。 11 round() 它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。 12 min() 返回两个参数中的最小值。 13 max() 返回两个参数中的最大值。 14 exp() 返回自然数底数e的参数次方。 15 log() 返回参数的自然数底数的对数值。 16 pow() 返回第一个参数的第二个参数次方。 17 sqrt() 求参数的算术平方根。 18 sin() 求指定double类型参数的正弦值。 19 cos() 求指定double类型参数的余弦值。 20 tan() 求指定double类型参数的正切值。 21 asin() 求指定double类型参数的反正弦值。 22 acos() 求指定double类型参数的反余弦值。 23 atan() 求指定double类型参数的反正切值。 24 atan2() 将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。 25 toDegrees() 将参数转化为角度。 26 toRadians() 将角度转换为弧度。 27 random() 返回一个随机数。 */ } }]]></content>
@@ -1175,9 +1222,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-Scanner类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
+    <title><![CDATA[Java-String类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-String%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-String类public class StringDemo { //String 方法 /* SN(序号) 方法描述 1 char charAt(int index) 返回指定索引处的 char 值。 2 int compareTo(Object o) 把这个字符串和另一个对象比较。 3 int compareTo(String anotherString) 按字典顺序比较两个字符串。 4 int compareToIgnoreCase(String str) 按字典顺序比较两个字符串，不考虑大小写。 5 String concat(String str) 将指定字符串连接到此字符串的结尾。 6 boolean contentEquals(StringBuffer sb) 当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。 7 static String copyValueOf(char[] data) 返回指定数组中表示该字符序列的 String。 8 static String copyValueOf(char[] data, int offset, int count) 返回指定数组中表示该字符序列的 String。 9 boolean endsWith(String suffix) 测试此字符串是否以指定的后缀结束。 10 boolean equals(Object anObject) 将此字符串与指定的对象比较。 11 boolean equalsIgnoreCase(String anotherString) 将此 String 与另一个 String 比较，不考虑大小写。 12 byte[] getBytes() 使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。 13 byte[] getBytes(String charsetName) 使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。 14 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此字符串复制到目标字符数组。 15 int hashCode() 返回此字符串的哈希码。 16 int indexOf(int ch) 返回指定字符在此字符串中第一次出现处的索引。 17 int indexOf(int ch, int fromIndex) 返回在此字符串中第一次出现指定字符处的索引，从指定的索引开始搜索。 18 int indexOf(String str) 返回指定子字符串在此字符串中第一次出现处的索引。 19 int indexOf(String str, int fromIndex) 返回指定子字符串在此字符串中第一次出现处的索引，从指定的索引开始。 20 String intern() 返回字符串对象的规范化表示形式。 21 int lastIndexOf(int ch) 返回指定字符在此字符串中最后一次出现处的索引。 22 int lastIndexOf(int ch, int fromIndex) 返回指定字符在此字符串中最后一次出现处的索引，从指定的索引处开始进行反向搜索。 23 int lastIndexOf(String str) 返回指定子字符串在此字符串中最右边出现处的索引。 24 int lastIndexOf(String str, int fromIndex) 返回指定子字符串在此字符串中最后一次出现处的索引，从指定的索引开始反向搜索。 25 int length() 返回此字符串的长度。 26 boolean matches(String regex) 告知此字符串是否匹配给定的正则表达式。 27 boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len) 测试两个字符串区域是否相等。 28 boolean regionMatches(int toffset, String other, int ooffset, int len) 测试两个字符串区域是否相等。 29 String replace(char oldChar, char newChar) 返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。 30 String replaceAll(String regex, String replacement) 使用给定的 replacement 替换此字符串所有匹配给定的正则表达式的子字符串。 31 String replaceFirst(String regex, String replacement) 使用给定的 replacement 替换此字符串匹配给定的正则表达式的第一个子字符串。 32 String[] split(String regex) 根据给定正则表达式的匹配拆分此字符串。 33 String[] split(String regex, int limit) 根据匹配给定的正则表达式来拆分此字符串。 34 boolean startsWith(String prefix) 测试此字符串是否以指定的前缀开始。 35 boolean startsWith(String prefix, int toffset) 测试此字符串从指定索引开始的子字符串是否以指定前缀开始。 36 CharSequence subSequence(int beginIndex, int endIndex) 返回一个新的字符序列，它是此序列的一个子序列。 37 String substring(int beginIndex) 返回一个新的字符串，它是此字符串的一个子字符串。 38 String substring(int beginIndex, int endIndex) 返回一个新字符串，它是此字符串的一个子字符串。 39 char[] toCharArray() 将此字符串转换为一个新的字符数组。 40 String toLowerCase() 使用默认语言环境的规则将此 String 中的所有字符都转换为小写。 41 String toLowerCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为小写。 42 String toString() 返回此对象本身（它已经是一个字符串！）。 43 String toUpperCase() 使用默认语言环境的规则将此 String 中的所有字符都转换为大写。 44 String toUpperCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为大写。 45 String trim() 返回字符串的副本，忽略前导空白和尾部空白。 46 static String valueOf(primitive data type x) 返回给定data type类型x参数的字符串表示形式。 */ public static void main(String[] args) { char[] hello = {&#39;g&#39;, &#39;z&#39;, &#39;y&#39;}; String helloString = new String(hello); System.out.println(helloString); System.out.println(helloString.length()); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1197,9 +1244,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-String类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-String%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-String类public class StringDemo { //String 方法 /* SN(序号) 方法描述 1 char charAt(int index) 返回指定索引处的 char 值。 2 int compareTo(Object o) 把这个字符串和另一个对象比较。 3 int compareTo(String anotherString) 按字典顺序比较两个字符串。 4 int compareToIgnoreCase(String str) 按字典顺序比较两个字符串，不考虑大小写。 5 String concat(String str) 将指定字符串连接到此字符串的结尾。 6 boolean contentEquals(StringBuffer sb) 当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。 7 static String copyValueOf(char[] data) 返回指定数组中表示该字符序列的 String。 8 static String copyValueOf(char[] data, int offset, int count) 返回指定数组中表示该字符序列的 String。 9 boolean endsWith(String suffix) 测试此字符串是否以指定的后缀结束。 10 boolean equals(Object anObject) 将此字符串与指定的对象比较。 11 boolean equalsIgnoreCase(String anotherString) 将此 String 与另一个 String 比较，不考虑大小写。 12 byte[] getBytes() 使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。 13 byte[] getBytes(String charsetName) 使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。 14 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此字符串复制到目标字符数组。 15 int hashCode() 返回此字符串的哈希码。 16 int indexOf(int ch) 返回指定字符在此字符串中第一次出现处的索引。 17 int indexOf(int ch, int fromIndex) 返回在此字符串中第一次出现指定字符处的索引，从指定的索引开始搜索。 18 int indexOf(String str) 返回指定子字符串在此字符串中第一次出现处的索引。 19 int indexOf(String str, int fromIndex) 返回指定子字符串在此字符串中第一次出现处的索引，从指定的索引开始。 20 String intern() 返回字符串对象的规范化表示形式。 21 int lastIndexOf(int ch) 返回指定字符在此字符串中最后一次出现处的索引。 22 int lastIndexOf(int ch, int fromIndex) 返回指定字符在此字符串中最后一次出现处的索引，从指定的索引处开始进行反向搜索。 23 int lastIndexOf(String str) 返回指定子字符串在此字符串中最右边出现处的索引。 24 int lastIndexOf(String str, int fromIndex) 返回指定子字符串在此字符串中最后一次出现处的索引，从指定的索引开始反向搜索。 25 int length() 返回此字符串的长度。 26 boolean matches(String regex) 告知此字符串是否匹配给定的正则表达式。 27 boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len) 测试两个字符串区域是否相等。 28 boolean regionMatches(int toffset, String other, int ooffset, int len) 测试两个字符串区域是否相等。 29 String replace(char oldChar, char newChar) 返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。 30 String replaceAll(String regex, String replacement) 使用给定的 replacement 替换此字符串所有匹配给定的正则表达式的子字符串。 31 String replaceFirst(String regex, String replacement) 使用给定的 replacement 替换此字符串匹配给定的正则表达式的第一个子字符串。 32 String[] split(String regex) 根据给定正则表达式的匹配拆分此字符串。 33 String[] split(String regex, int limit) 根据匹配给定的正则表达式来拆分此字符串。 34 boolean startsWith(String prefix) 测试此字符串是否以指定的前缀开始。 35 boolean startsWith(String prefix, int toffset) 测试此字符串从指定索引开始的子字符串是否以指定前缀开始。 36 CharSequence subSequence(int beginIndex, int endIndex) 返回一个新的字符序列，它是此序列的一个子序列。 37 String substring(int beginIndex) 返回一个新的字符串，它是此字符串的一个子字符串。 38 String substring(int beginIndex, int endIndex) 返回一个新字符串，它是此字符串的一个子字符串。 39 char[] toCharArray() 将此字符串转换为一个新的字符数组。 40 String toLowerCase() 使用默认语言环境的规则将此 String 中的所有字符都转换为小写。 41 String toLowerCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为小写。 42 String toString() 返回此对象本身（它已经是一个字符串！）。 43 String toUpperCase() 使用默认语言环境的规则将此 String 中的所有字符都转换为大写。 44 String toUpperCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为大写。 45 String trim() 返回字符串的副本，忽略前导空白和尾部空白。 46 static String valueOf(primitive data type x) 返回给定data type类型x参数的字符串表示形式。 */ public static void main(String[] args) { char[] hello = {&#39;g&#39;, &#39;z&#39;, &#39;y&#39;}; String helloString = new String(hello); System.out.println(helloString); System.out.println(helloString.length()); } }]]></content>
+    <title><![CDATA[Java异常处理]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%2F</url>
+    <content type="text"><![CDATA[Java异常处理import java.lang.Exception; public class ExceptionDemo { /* 三类异常 - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。 - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。 - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。 */ /* 内置异常类 非检查性异常 异常 描述 ArithmeticException 当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。 ArrayIndexOutOfBoundsException 用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。 ArrayStoreException 试图将错误类型的对象存储到一个对象数组时抛出的异常。 ClassCastException 当试图将对象强制转换为不是实例的子类时，抛出该异常。 IllegalArgumentException 抛出的异常表明向方法传递了一个不合法或不正确的参数。 IllegalMonitorStateException 抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。 IllegalStateException 在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。 IllegalThreadStateException 线程没有处于请求操作所要求的适当状态时抛出的异常。 IndexOutOfBoundsException 指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。 NegativeArraySizeException 如果应用程序试图创建大小为负的数组，则抛出该异常。 NullPointerException 当应用程序试图在需要对象的地方使用 null 时，抛出该异常 NumberFormatException 当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。 SecurityException 由安全管理器抛出的异常，指示存在安全侵犯。 StringIndexOutOfBoundsException 此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。 UnsupportedOperationException 当不支持请求的操作时，抛出该异常。 检查性异常类 异常 描述 ClassNotFoundException 应用程序试图加载类时，找不到相应的类，抛出该异常。 CloneNotSupportedException 当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。 IllegalAccessException 拒绝访问一个类的时候，抛出该异常。 InstantiationException 当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。 InterruptedException 一个线程被另一个线程中断，抛出该异常。 NoSuchFieldException 请求的变量不存在 NoSuchMethodException 请求的方法不存在 */ /* throws/throw 关键字 finally 关键字 finally 关键字用来创建在 try 代码块后面执行的代码块。 无论是否发生异常，finally 代码块中的代码总会被执行。 在 finally 代码块中，可以运行清理类型等收尾善后性质的语句 try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }finally{ // 程序代码 } */ public void getExceptiondemo(){ //捕获异常 /* try { // 程序代码 }catch(ExceptionName e1) { //Catch 块 } */ // 多重捕获异常 /* try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 } */ try { int[] a = new int[2]; System.out.println(a[3]); }catch (ArrayIndexOutOfBoundsException e){ System.out.println(&quot;Exception thrown&quot; +e); } System.out.println(&quot;out of the block&quot;); } public static void main(String[] args){ ExceptionDemo exp = new ExceptionDemo(); exp.getExceptiondemo(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1211,17 +1258,6 @@
     <title><![CDATA[Java数组]]></title>
     <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
     <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java异常处理]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%2F</url>
-    <content type="text"><![CDATA[Java异常处理import java.lang.Exception; public class ExceptionDemo { /* 三类异常 - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。 - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。 - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。 */ /* 内置异常类 非检查性异常 异常 描述 ArithmeticException 当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。 ArrayIndexOutOfBoundsException 用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。 ArrayStoreException 试图将错误类型的对象存储到一个对象数组时抛出的异常。 ClassCastException 当试图将对象强制转换为不是实例的子类时，抛出该异常。 IllegalArgumentException 抛出的异常表明向方法传递了一个不合法或不正确的参数。 IllegalMonitorStateException 抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。 IllegalStateException 在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。 IllegalThreadStateException 线程没有处于请求操作所要求的适当状态时抛出的异常。 IndexOutOfBoundsException 指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。 NegativeArraySizeException 如果应用程序试图创建大小为负的数组，则抛出该异常。 NullPointerException 当应用程序试图在需要对象的地方使用 null 时，抛出该异常 NumberFormatException 当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。 SecurityException 由安全管理器抛出的异常，指示存在安全侵犯。 StringIndexOutOfBoundsException 此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。 UnsupportedOperationException 当不支持请求的操作时，抛出该异常。 检查性异常类 异常 描述 ClassNotFoundException 应用程序试图加载类时，找不到相应的类，抛出该异常。 CloneNotSupportedException 当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。 IllegalAccessException 拒绝访问一个类的时候，抛出该异常。 InstantiationException 当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。 InterruptedException 一个线程被另一个线程中断，抛出该异常。 NoSuchFieldException 请求的变量不存在 NoSuchMethodException 请求的方法不存在 */ /* throws/throw 关键字 finally 关键字 finally 关键字用来创建在 try 代码块后面执行的代码块。 无论是否发生异常，finally 代码块中的代码总会被执行。 在 finally 代码块中，可以运行清理类型等收尾善后性质的语句 try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }finally{ // 程序代码 } */ public void getExceptiondemo(){ //捕获异常 /* try { // 程序代码 }catch(ExceptionName e1) { //Catch 块 } */ // 多重捕获异常 /* try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 } */ try { int[] a = new int[2]; System.out.println(a[3]); }catch (ArrayIndexOutOfBoundsException e){ System.out.println(&quot;Exception thrown&quot; +e); } System.out.println(&quot;out of the block&quot;); } public static void main(String[] args){ ExceptionDemo exp = new ExceptionDemo(); exp.getExceptiondemo(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
