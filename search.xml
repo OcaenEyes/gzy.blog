@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>%2F2020%2F02%2F15%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[ToB产品的一些人知]]></title>
+    <url>%2F2020%2F02%2F25%2FToB%E4%BA%A7%E5%93%81%2F</url>
+    <content type="text"><![CDATA[ToB产品ToB产品方法论PMF(Product-Market Fit)市场构成的四要素 客户群体 互联网客户 —&gt;&gt;&gt;互联网+（传统客户） 需求痛点 客户需求到底是什么 从单品极致—&gt;&gt;&gt;产品矩阵 商业模式 从license—&gt;&gt;&gt; 订阅制；倒逼产品优化 竞争态势 市场环境变化 投资/并购/政策影响 打造ToB产品的四大原则 把事情做到极致 坚持产品化：能用产品解决，就不要用服务去解决； 由于越靠后 越依赖于人，依赖于高阶的人 不卖期货，只卖已有产品功能，和三个月内即将上线的产品功能 面向价值交付的产品迭代 ToB产品发布即交付的开始 需要重点考虑价值交付流程 ToC产品发布即交付 ToB产品营销方法论市场-获取线索 全栈式营销团队 潜客管理 全生命周期培育 市场营销的关键：让客户更主动 销售-转化线索 顾问式销售 效率提升工具 ToB营销全漏斗 Hunter 客户服务 Farmer 续约与复购 交叉销售 口碑营销 ToB产品客户服务方法论 强化服务体系，就是强化销售 ToB核心“产品”+“人”]]></content>
+      <categories>
+        <category>产品</category>
+        <category>ToB产品</category>
+      </categories>
+      <tags>
+        <tag>产品</tag>
+        <tag>ToB产品</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[一个策略产品的自我修养]]></title>
+    <url>%2F2020%2F02%2F05%2F%E4%B8%80%E4%B8%AA%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB%2F</url>
+    <content type="text"><![CDATA[策略产品 新闻推荐策略 增长策略 反欺诈策略 价格策略 后台策略 搜索策略 渲染策略 …… 不是一个明确的行业 不是一种具体的产品形态 是一种解决问题的手段 是一种实现目标的手段 策略四要素 待解决问题 输入—影响解决方案的因素 计算逻辑—将输入转换成为输出的规则 输出—具体的解决方案 策略产品与功能产品的区别发现问题阶段功能产品对用户人群诉求，抽象成为一套相对聚焦的需求 策略产品宏观想象各类用户的诉求，一群人更多样和更有统计意义的需求，需评估实现到什么程度 撰写需求、发起项目功能产品收敛的解决方案 通过流程和原型表达产品实现效果 策略产品发散的解决方案 通过逻辑描述和效果示例表达产品实现效果 跟进开发评估功能产品面对开发结果是验收的性质 更关注呈现效果、而非实现过程 策略产品更多参与过程 通过多轮评估深入参与开发过程 与策略RD一起发现各要素中的问题 产品上线后的回归&amp;新的产品循环功能产品更快达到理想态 面对明确单一的问题，通常可以更快达到较好效果 close该feature产品循环 策略产品可能是永无止境的产品循环 复杂且受很多因素影响的问题，需要多个产品循环才能达到理想效果 策略产品的工作流程 发现问题 上帝视角 面对的是一群人的问题 需求撰写 跟进评估 较强数据敏感度 从数据中发现问题，引导下一个产品循环 上线&amp;效果回归 拥抱不确定性 持续迭代在黑暗中寻找道路 策略产品发现问题的方法用户反馈处理用户反馈的基本流程 收集用户问题 自有渠道收集 外部渠道收集 用户反馈分析 数据处理：清洗、标注 问题管理：分析、汇总 整理撰写需求 落实产品改进 系统监控定义待监控指标告诉机器观察哪些指标 白盒部分–效果监控 用户操作行为 监控用户的体验，即产品的核心指标 该指标异常变化时需要重点即刻关注 黑盒部分–策略监控 策略产品—策略监控 监控某个策略的运转情况，对象为各类指标，监测大于监控 功能产品—技术监控 定义报警规则告诉机器什么通知&amp;以什么方式通知 触发报警条件 历史的波动数据 数据敏感度：波动是否超越历史波动范围 三西格玛理论：波动范围在+/- 三西格玛之内 指标重要程度 四象限方式 报警方式 监控指标的重要程度和波动幅度 监控的适用范围效果监控 产品满足效果 产品覆盖情况 策略监控 需求识别策略监控—需求识别 检索策略监控—检索 展现策略监控—结果展示 监控的局限性 考虑到准确率，监控覆盖的精度有限（策略意义上召回率） 监控可以发现异常，但通常不能直接定位问题，最终依然需要配合人工手段进行问题解决修复 ==人工排查繁琐且不经济，线上监控作为一种自动、实时、针对效果的问题发现方法，就显得愈发的重要。== 效果回归==效果回归是策略产品非常重要的一部分工作== 产品循环 判断产品循环是否中止 确定产品接下来的计划 自我成长 验证解决方案可行性 修正和巩固方法论 定义理想态拆解未达理想态的情况提出解决方案验证是否解决==通用手段== 定义理想态：并以数字化的指标或其他明确标砖来衡量 抽样分析：将所有不达理想态的case抽样分析，并做统计分类，明确不好的原因 优先级判断：汇总所有问题，综合影响面、问题严重程度和解决成本确定优先级，作为接下来的项目计划 阶段性调研==阶段性调用针对产品现状进行系统性分析== ==此时产出的分析结论最能代表产品问题全貌，可有效指导阶段的产品计划== 阶段性调研的时间节点接触新产品接受某个产品方向的时候 周期性回顾每个月/季度/半年等固定周期的回顾 不定期回顾其他需要临时回顾整个产品现状时]]></content>
+      <categories>
+        <category>产品</category>
+        <category>策略产品</category>
+      </categories>
+      <tags>
+        <tag>产品</tag>
+        <tag>策略产品</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[社区产品生命力顽强的原因究竟何在？]]></title>
@@ -249,6 +270,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[AI时代决策效率革命]]></title>
+    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Artificial Intelligence</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+        <tag>Artificial Intelligence</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[AI时代如何提升个人认知]]></title>
     <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5%2F</url>
     <content type="text"><![CDATA[AI时间如何提升个人认知 思考比学习知识更重要。 外部原因​ 当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。 比如： 互联网 共享经济 大数据 内部原因 《论思考》 、《论书籍和写作》——叔本华 读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。]]></content>
@@ -317,9 +350,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---安装入门]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
-    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
+    <title><![CDATA[redis学习---数据类型]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -329,9 +362,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---数据类型]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
+    <title><![CDATA[redis学习---安装入门]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -872,21 +905,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
-    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
-      <categories>
-        <category>数据分析</category>
-        <category>Python3</category>
-        <category>Matplotlib</category>
-      </categories>
-      <tags>
-        <tag>数据分析</tag>
-        <tag>Python3</tag>
-        <tag>Matplotlib</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[数据分析01：numpy基础]]></title>
     <url>%2F2018%2F03%2F02%2F01-numpy%E5%9F%BA%E7%A1%80%2F</url>
     <content type="text"><![CDATA[import numpy as np # ndarray &#39;&#39;&#39; # 三种创建方式 1、从python的基础数据对象转化 2、通过numpy内置的函数生成 3、从硬盘（文件）读取数据 &#39;&#39;&#39; # 创建方法一 a= [1,2,3,4] x1 = np.array(a) print(x1,&quot;\n&quot;,type(x1)) # 创建方法二 x = np.arange(5) print(x,&quot;\n&quot;,type(x)) # # 创建方法三 # date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True) # print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low) # 常用函数 &#39;&#39;&#39; min 最小值 max 最大值 median 中值 mean 均值 variance 方差 sort &#39;&#39;&#39; c = np.random.randint(1,100,10) print(np.sort(c)) print(np.mean(c)) # 练习 &#39;&#39;&#39; 使用numpy生成100以内的随机数组 将数组存储到文件，再从文件中读取数组 对数据进行sort ,max ,min ,mean ,variance &#39;&#39;&#39; N1 = np.random.randint(0,100,10) # 将N1 存储到文件中 np.savetxt(&quot;0002.cvs&quot;,N1,fmt = &quot;%d&quot;,delimiter=&quot;,&quot;,header=&quot;number&quot;) # 从文件中读取数组 N2 = np.loadtxt(&quot;0002.cvs&quot;,delimiter=&quot;,&quot;,skiprows=1) print(np.sort(N2)) print(np.max(N2))]]></content>
@@ -899,6 +917,21 @@
         <tag>数据分析</tag>
         <tag>Python3</tag>
         <tag>Numpy</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
+    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
+      <categories>
+        <category>数据分析</category>
+        <category>Python3</category>
+        <category>Matplotlib</category>
+      </categories>
+      <tags>
+        <tag>数据分析</tag>
+        <tag>Python3</tag>
+        <tag>Matplotlib</tag>
       </tags>
   </entry>
   <entry>
@@ -931,6 +964,20 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[SpringBoot启动自定义方法]]></title>
+    <url>%2F2018%2F03%2F02%2FSpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart1 implements CommandLineRunner{ @Override public void run(String... args) throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments; import org.springframework.boot.ApplicationRunner; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart2 implements ApplicationRunner { @Override public void run(ApplicationArguments args) throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 三、初始化方法加上@PostConstruct注解import javax.annotation.PostConstruct; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart3{ @PostConstruct public void test() throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 四、其他实现思路import org.springframework.context.annotation.Bean; import org.springframework.context.annotation.Configuration; import com.gzy.demo.NettyClient; @Configuration public class MyStart4 { @Bean public String startNetty() { try { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } catch (Exception e) { e.printStackTrace(); } return &quot;startNetty&quot;; } }]]></content>
+      <categories>
+        <category>Java</category>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>服务端</tag>
+        <tag>Java</tag>
+        <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[SpringBoot-WebSocket聊天室]]></title>
     <url>%2F2018%2F03%2F02%2FSpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4%2F</url>
     <content type="text"><![CDATA[SpringBoot-WebSocket 聊天室配置类Config// websocket配置 @Bean public ServerEndpointExporter serverEndpointExporter() { return new ServerEndpointExporter(); } 业务类Controllerimport org.springframework.stereotype.Component; import javax.websocket.*; import javax.websocket.server.PathParam; import javax.websocket.server.ServerEndpoint; import java.util.HashMap; import java.util.Map; import java.util.concurrent.CopyOnWriteArraySet; /** * * @Description: websocket的具体实现类 * * 使用springboot的唯一区别是要@Component声明下，而使用独立容器是由容器自己管理websocket的， * * 但在springboot中连容器都是spring管理的。 * 虽然@Component默认是单例模式的，但springboot还是会为每个websocket连接初始化一个bean， * 所以可以用一个静态set保存起来。 */ @ServerEndpoint(value = &quot;/websocket/{nickName}&quot;) @Component public class MyWebSocket { //用来存放每个客户端对应的MyWebSocket对象。 private static CopyOnWriteArraySet&lt;MyWebSocket&gt; webSocketSet = new CopyOnWriteArraySet&lt;MyWebSocket&gt;(); private static Map&lt;Session, UserInfo&gt; connectmap = new HashMap&lt;&gt;();//用session作为key，保存用户信息 //与某个客户端的连接会话，需要通过它来给客户端发送数据 private Session session; /** * 连接建立成功调用的方法 */ @OnOpen public void onOpen(Session session, @PathParam(&quot;nickName&quot;) String nickName) { this.session = session; UserInfo userInfo = new UserInfo(session.getId(),nickName); connectmap.put(session,userInfo); webSocketSet.add(this); //加入set中 System.out.println(nickName+&quot; 上线了！当前在线人数为&quot; + webSocketSet.size()); //群发消息，告诉每一位 broadcast(nickName+&quot; 上线了！--&gt;当前在线人数为：&quot;+webSocketSet.size()); } /** * 连接关闭调用的方法 */ @OnClose public void onClose() { String nickName=connectmap.get(session).getNickName(); connectmap.remove(session); webSocketSet.remove(this); //从set中删除 System.out.println(nickName+&quot; 下线了！当前在线人数为&quot; + webSocketSet.size()); //群发消息，告诉每一位 broadcast(nickName+&quot; 下线，当前在线人数为：&quot;+webSocketSet.size()); } /** * 收到客户端消息后调用的方法 * * @param message 客户端发送过来的消息 * */ @OnMessage public void onMessage(String message, Session session) { System.out.println(&quot;来自客户端的消息:&quot; + message); //群发消息 String nickName=connectmap.get(session).getNickName(); broadcast(nickName+&quot; 说：&quot;+message); } /** * 发生错误时调用 * */ @OnError public void onError(Session session, Throwable error) { System.out.println(&quot;发生错误&quot;); error.printStackTrace(); } /** * 群发自定义消息 * */ public void broadcast(String message){ for (MyWebSocket item : webSocketSet) { //同步异步说明参考：http://blog.csdn.net/who_is_xiaoming/article/details/53287691 //this.session.getBasicRemote().sendText(message); item.session.getAsyncRemote().sendText(message);//异步发送消息. } } } 实体类Entitypublic class UserInfo { private String id; private String nickName; private String password; public UserInfo() { } public UserInfo(String id, String nickName) { this.id = id; this.nickName = nickName; } public String getId() { return id; } public void setId(String id) { this.id = id; } public String getNickName() { return nickName; } public void setNickName(String nickName) { this.nickName = nickName; } public String getPassword() { return password; } public void setPassword(String password) { this.password = password; } }]]></content>
@@ -943,20 +990,6 @@
         <tag>Java</tag>
         <tag>SpringBoot</tag>
         <tag>WebSocket</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[SpringBoot启动自定义方法]]></title>
-    <url>%2F2018%2F03%2F02%2FSpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart1 implements CommandLineRunner{ @Override public void run(String... args) throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments; import org.springframework.boot.ApplicationRunner; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart2 implements ApplicationRunner { @Override public void run(ApplicationArguments args) throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 三、初始化方法加上@PostConstruct注解import javax.annotation.PostConstruct; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart3{ @PostConstruct public void test() throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 四、其他实现思路import org.springframework.context.annotation.Bean; import org.springframework.context.annotation.Configuration; import com.gzy.demo.NettyClient; @Configuration public class MyStart4 { @Bean public String startNetty() { try { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } catch (Exception e) { e.printStackTrace(); } return &quot;startNetty&quot;; } }]]></content>
-      <categories>
-        <category>Java</category>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>服务端</tag>
-        <tag>Java</tag>
-        <tag>SpringBoot</tag>
       </tags>
   </entry>
   <entry>
@@ -1157,6 +1190,19 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[数据思维打磨产品]]></title>
+    <url>%2F2017%2F02%2F25%2F%E6%95%B0%E6%8D%AE%E6%80%9D%E7%BB%B4%E6%89%93%E7%A3%A8%E4%BA%A7%E5%93%81%2F</url>
+    <content type="text"><![CDATA[什么是数据思维？ 收集数据 做出决策 高效执行]]></content>
+      <categories>
+        <category>产品</category>
+        <category>数据思维</category>
+      </categories>
+      <tags>
+        <tag>产品</tag>
+        <tag>数据思维</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[电商产品网站成交总额]]></title>
     <url>%2F2016%2F07%2F20%2F%E7%94%B5%E5%95%86%E4%BA%A7%E5%93%81%E7%BD%91%E7%AB%99%E6%88%90%E4%BA%A4%E6%80%BB%E9%A2%9D%2F</url>
     <content type="text"><![CDATA[电商产品网站成交总额 用户数 访客数 自然流量 营销流量 转化率 目的一 拉新 品牌认知 转入 购买考虑 实现 转出 目的二 促进复购 购买尝试 复购 沉睡 流失 多次购买 复购 沉睡 流失 忠诚用户 复购 沉睡 流失 目的三 推荐代购 客单价 产品单价 前台价格 智慧定价 优惠价格 促销建议 关联产品数 套装促销 商品关联度 商品热度]]></content>
@@ -1180,20 +1226,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-StringBuffer]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
-    <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java-Scanner类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
+    <title><![CDATA[Java-FileStreamIO]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-FileStreamIO%2F</url>
+    <content type="text"><![CDATA[Java-FileStreamIOimport java.io.*; public class StreamFileIODemo { public void printChar() throws IOException { //使用BufferedReader从控制台读取输入 char c; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符，按Q键退出&quot;); do { //read() 读取字符 c = (char) br1.read(); System.out.println(c); } while (c != &#39;Q&#39;); } public void printStr() throws IOException{ String str1; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;); do { //readLine() 读取字符串 str1 = br1.readLine(); System.out.println(str1); } while (!str1.equals(&quot;end&quot;)); } public void ReadFileDemo() throws IOException{ //FileInputStream 从文件读取数据 // File f = new File(&quot;C:/java/hello&quot;); // InputStream out = new FileInputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public int read(int r)throws IOException{} 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 4 public int read(byte[] r) throws IOException{} 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 5 public int available() throws IOException{} 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 */ System.out.println(&quot;打印输出读取文件demo&quot;); InputStream is1 = new FileInputStream(&quot;test.txt&quot;); int size = is1.available(); for (int i=0;i&lt;size;i++) { System.out.println((char) is1.read()); } } public void WriteFileDemo() throws IOException { //FileOutputStream 创建一个文件向文件中写数据 // File f = new File(&quot;C:/java/hello&quot;); // OutputStream f = new FileOutputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public void write(int w)throws IOException{} 这个方法把指定的字节写到输出流中。 4 public void write(byte[] w) 把指定数组中w.length长度的字节写到OutputStream中。 */ System.out.println(&quot;打印输出写入文件demo&quot;); byte bWrite[] = {11,21,3,38,5}; OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;); for (int i=0;i&lt;bWrite.length;i++){ os1.write(bWrite[i]); } os1.close(); } public void CreateDirs(){ //文件和I/O ，目录 /* File类 - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。 - mkdirs()方法创建一个文件夹和它的所有父文件夹。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;; File dir1 = new File(dirname); // 创建目录 dir1.mkdirs(); } public void ReadDirs(){ /* 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。 如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。 可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;; File dir2 = new File(dirname); if (dir2.isDirectory()){ System.out.println(&quot;目录&quot;+ dirname); String[] s1 = dir2.list(); for (int i=0;i&lt;s1.length;i++){ File f = new File(dirname + &#39;/&#39; + s1[i]); if (f.isDirectory()){ System.out.println(s1[i] + &quot;是一个目录&quot;); }else { System.out.println(s1[i] + &quot;是一个文件&quot;); } } }else { System.out.println(dirname +&quot;不是一个目录&quot;); } } public void DeleteDirs(){ //删除文件/目录 /* 删除文件可以使用 java.io.File.delete() 方法 当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;; File dir3 = new File(dirname); File[] files = dir3.listFiles(); if (files != null){ for (File f: files){ if (!f.isDirectory()){ f.delete(); } } } dir3.delete(); System.out.println(&quot;删除成功&quot;); } public static void main(String[] args) throws IOException { StreamFileIODemo s = new StreamFileIODemo(); // s.printChar(); // s.printStr(); // s.WriteFileDemo(); // s.CreateDirs(); // s.ReadDirs(); s.DeleteDirs(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1213,9 +1248,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-String类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-String%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-String类public class StringDemo { //String 方法 /* SN(序号) 方法描述 1 char charAt(int index) 返回指定索引处的 char 值。 2 int compareTo(Object o) 把这个字符串和另一个对象比较。 3 int compareTo(String anotherString) 按字典顺序比较两个字符串。 4 int compareToIgnoreCase(String str) 按字典顺序比较两个字符串，不考虑大小写。 5 String concat(String str) 将指定字符串连接到此字符串的结尾。 6 boolean contentEquals(StringBuffer sb) 当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。 7 static String copyValueOf(char[] data) 返回指定数组中表示该字符序列的 String。 8 static String copyValueOf(char[] data, int offset, int count) 返回指定数组中表示该字符序列的 String。 9 boolean endsWith(String suffix) 测试此字符串是否以指定的后缀结束。 10 boolean equals(Object anObject) 将此字符串与指定的对象比较。 11 boolean equalsIgnoreCase(String anotherString) 将此 String 与另一个 String 比较，不考虑大小写。 12 byte[] getBytes() 使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。 13 byte[] getBytes(String charsetName) 使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。 14 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此字符串复制到目标字符数组。 15 int hashCode() 返回此字符串的哈希码。 16 int indexOf(int ch) 返回指定字符在此字符串中第一次出现处的索引。 17 int indexOf(int ch, int fromIndex) 返回在此字符串中第一次出现指定字符处的索引，从指定的索引开始搜索。 18 int indexOf(String str) 返回指定子字符串在此字符串中第一次出现处的索引。 19 int indexOf(String str, int fromIndex) 返回指定子字符串在此字符串中第一次出现处的索引，从指定的索引开始。 20 String intern() 返回字符串对象的规范化表示形式。 21 int lastIndexOf(int ch) 返回指定字符在此字符串中最后一次出现处的索引。 22 int lastIndexOf(int ch, int fromIndex) 返回指定字符在此字符串中最后一次出现处的索引，从指定的索引处开始进行反向搜索。 23 int lastIndexOf(String str) 返回指定子字符串在此字符串中最右边出现处的索引。 24 int lastIndexOf(String str, int fromIndex) 返回指定子字符串在此字符串中最后一次出现处的索引，从指定的索引开始反向搜索。 25 int length() 返回此字符串的长度。 26 boolean matches(String regex) 告知此字符串是否匹配给定的正则表达式。 27 boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len) 测试两个字符串区域是否相等。 28 boolean regionMatches(int toffset, String other, int ooffset, int len) 测试两个字符串区域是否相等。 29 String replace(char oldChar, char newChar) 返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。 30 String replaceAll(String regex, String replacement) 使用给定的 replacement 替换此字符串所有匹配给定的正则表达式的子字符串。 31 String replaceFirst(String regex, String replacement) 使用给定的 replacement 替换此字符串匹配给定的正则表达式的第一个子字符串。 32 String[] split(String regex) 根据给定正则表达式的匹配拆分此字符串。 33 String[] split(String regex, int limit) 根据匹配给定的正则表达式来拆分此字符串。 34 boolean startsWith(String prefix) 测试此字符串是否以指定的前缀开始。 35 boolean startsWith(String prefix, int toffset) 测试此字符串从指定索引开始的子字符串是否以指定前缀开始。 36 CharSequence subSequence(int beginIndex, int endIndex) 返回一个新的字符序列，它是此序列的一个子序列。 37 String substring(int beginIndex) 返回一个新的字符串，它是此字符串的一个子字符串。 38 String substring(int beginIndex, int endIndex) 返回一个新字符串，它是此字符串的一个子字符串。 39 char[] toCharArray() 将此字符串转换为一个新的字符数组。 40 String toLowerCase() 使用默认语言环境的规则将此 String 中的所有字符都转换为小写。 41 String toLowerCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为小写。 42 String toString() 返回此对象本身（它已经是一个字符串！）。 43 String toUpperCase() 使用默认语言环境的规则将此 String 中的所有字符都转换为大写。 44 String toUpperCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为大写。 45 String trim() 返回字符串的副本，忽略前导空白和尾部空白。 46 static String valueOf(primitive data type x) 返回给定data type类型x参数的字符串表示形式。 */ public static void main(String[] args) { char[] hello = {&#39;g&#39;, &#39;z&#39;, &#39;y&#39;}; String helloString = new String(hello); System.out.println(helloString); System.out.println(helloString.length()); } }]]></content>
+    <title><![CDATA[Java-Scanner类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1224,9 +1259,20 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-FileStreamIO]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-FileStreamIO%2F</url>
-    <content type="text"><![CDATA[Java-FileStreamIOimport java.io.*; public class StreamFileIODemo { public void printChar() throws IOException { //使用BufferedReader从控制台读取输入 char c; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符，按Q键退出&quot;); do { //read() 读取字符 c = (char) br1.read(); System.out.println(c); } while (c != &#39;Q&#39;); } public void printStr() throws IOException{ String str1; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;); do { //readLine() 读取字符串 str1 = br1.readLine(); System.out.println(str1); } while (!str1.equals(&quot;end&quot;)); } public void ReadFileDemo() throws IOException{ //FileInputStream 从文件读取数据 // File f = new File(&quot;C:/java/hello&quot;); // InputStream out = new FileInputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public int read(int r)throws IOException{} 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 4 public int read(byte[] r) throws IOException{} 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 5 public int available() throws IOException{} 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 */ System.out.println(&quot;打印输出读取文件demo&quot;); InputStream is1 = new FileInputStream(&quot;test.txt&quot;); int size = is1.available(); for (int i=0;i&lt;size;i++) { System.out.println((char) is1.read()); } } public void WriteFileDemo() throws IOException { //FileOutputStream 创建一个文件向文件中写数据 // File f = new File(&quot;C:/java/hello&quot;); // OutputStream f = new FileOutputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public void write(int w)throws IOException{} 这个方法把指定的字节写到输出流中。 4 public void write(byte[] w) 把指定数组中w.length长度的字节写到OutputStream中。 */ System.out.println(&quot;打印输出写入文件demo&quot;); byte bWrite[] = {11,21,3,38,5}; OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;); for (int i=0;i&lt;bWrite.length;i++){ os1.write(bWrite[i]); } os1.close(); } public void CreateDirs(){ //文件和I/O ，目录 /* File类 - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。 - mkdirs()方法创建一个文件夹和它的所有父文件夹。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;; File dir1 = new File(dirname); // 创建目录 dir1.mkdirs(); } public void ReadDirs(){ /* 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。 如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。 可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;; File dir2 = new File(dirname); if (dir2.isDirectory()){ System.out.println(&quot;目录&quot;+ dirname); String[] s1 = dir2.list(); for (int i=0;i&lt;s1.length;i++){ File f = new File(dirname + &#39;/&#39; + s1[i]); if (f.isDirectory()){ System.out.println(s1[i] + &quot;是一个目录&quot;); }else { System.out.println(s1[i] + &quot;是一个文件&quot;); } } }else { System.out.println(dirname +&quot;不是一个目录&quot;); } } public void DeleteDirs(){ //删除文件/目录 /* 删除文件可以使用 java.io.File.delete() 方法 当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;; File dir3 = new File(dirname); File[] files = dir3.listFiles(); if (files != null){ for (File f: files){ if (!f.isDirectory()){ f.delete(); } } } dir3.delete(); System.out.println(&quot;删除成功&quot;); } public static void main(String[] args) throws IOException { StreamFileIODemo s = new StreamFileIODemo(); // s.printChar(); // s.printStr(); // s.WriteFileDemo(); // s.CreateDirs(); // s.ReadDirs(); s.DeleteDirs(); } }]]></content>
+    <title><![CDATA[Java-StringBuffer]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
+    <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java-String类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-String%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-String类public class StringDemo { //String 方法 /* SN(序号) 方法描述 1 char charAt(int index) 返回指定索引处的 char 值。 2 int compareTo(Object o) 把这个字符串和另一个对象比较。 3 int compareTo(String anotherString) 按字典顺序比较两个字符串。 4 int compareToIgnoreCase(String str) 按字典顺序比较两个字符串，不考虑大小写。 5 String concat(String str) 将指定字符串连接到此字符串的结尾。 6 boolean contentEquals(StringBuffer sb) 当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。 7 static String copyValueOf(char[] data) 返回指定数组中表示该字符序列的 String。 8 static String copyValueOf(char[] data, int offset, int count) 返回指定数组中表示该字符序列的 String。 9 boolean endsWith(String suffix) 测试此字符串是否以指定的后缀结束。 10 boolean equals(Object anObject) 将此字符串与指定的对象比较。 11 boolean equalsIgnoreCase(String anotherString) 将此 String 与另一个 String 比较，不考虑大小写。 12 byte[] getBytes() 使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。 13 byte[] getBytes(String charsetName) 使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。 14 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此字符串复制到目标字符数组。 15 int hashCode() 返回此字符串的哈希码。 16 int indexOf(int ch) 返回指定字符在此字符串中第一次出现处的索引。 17 int indexOf(int ch, int fromIndex) 返回在此字符串中第一次出现指定字符处的索引，从指定的索引开始搜索。 18 int indexOf(String str) 返回指定子字符串在此字符串中第一次出现处的索引。 19 int indexOf(String str, int fromIndex) 返回指定子字符串在此字符串中第一次出现处的索引，从指定的索引开始。 20 String intern() 返回字符串对象的规范化表示形式。 21 int lastIndexOf(int ch) 返回指定字符在此字符串中最后一次出现处的索引。 22 int lastIndexOf(int ch, int fromIndex) 返回指定字符在此字符串中最后一次出现处的索引，从指定的索引处开始进行反向搜索。 23 int lastIndexOf(String str) 返回指定子字符串在此字符串中最右边出现处的索引。 24 int lastIndexOf(String str, int fromIndex) 返回指定子字符串在此字符串中最后一次出现处的索引，从指定的索引开始反向搜索。 25 int length() 返回此字符串的长度。 26 boolean matches(String regex) 告知此字符串是否匹配给定的正则表达式。 27 boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len) 测试两个字符串区域是否相等。 28 boolean regionMatches(int toffset, String other, int ooffset, int len) 测试两个字符串区域是否相等。 29 String replace(char oldChar, char newChar) 返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。 30 String replaceAll(String regex, String replacement) 使用给定的 replacement 替换此字符串所有匹配给定的正则表达式的子字符串。 31 String replaceFirst(String regex, String replacement) 使用给定的 replacement 替换此字符串匹配给定的正则表达式的第一个子字符串。 32 String[] split(String regex) 根据给定正则表达式的匹配拆分此字符串。 33 String[] split(String regex, int limit) 根据匹配给定的正则表达式来拆分此字符串。 34 boolean startsWith(String prefix) 测试此字符串是否以指定的前缀开始。 35 boolean startsWith(String prefix, int toffset) 测试此字符串从指定索引开始的子字符串是否以指定前缀开始。 36 CharSequence subSequence(int beginIndex, int endIndex) 返回一个新的字符序列，它是此序列的一个子序列。 37 String substring(int beginIndex) 返回一个新的字符串，它是此字符串的一个子字符串。 38 String substring(int beginIndex, int endIndex) 返回一个新字符串，它是此字符串的一个子字符串。 39 char[] toCharArray() 将此字符串转换为一个新的字符数组。 40 String toLowerCase() 使用默认语言环境的规则将此 String 中的所有字符都转换为小写。 41 String toLowerCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为小写。 42 String toString() 返回此对象本身（它已经是一个字符串！）。 43 String toUpperCase() 使用默认语言环境的规则将此 String 中的所有字符都转换为大写。 44 String toUpperCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为大写。 45 String trim() 返回字符串的副本，忽略前导空白和尾部空白。 46 static String valueOf(primitive data type x) 返回给定data type类型x参数的字符串表示形式。 */ public static void main(String[] args) { char[] hello = {&#39;g&#39;, &#39;z&#39;, &#39;y&#39;}; String helloString = new String(hello); System.out.println(helloString); System.out.println(helloString.length()); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1268,9 +1314,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java条件语句]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%2F</url>
-    <content type="text"><![CDATA[Java条件语句public class IfElse { /* 条件语句 - if...else */ public static void main(String[] args) { int x = 10; /* if(布尔表达式){ //如果布尔表达式的值为true }else{ //如果布尔表达式的值为false } */ if (x &lt; 20) { System.out.println(&quot;这是一个if判断语句&quot;); } else { System.out.println(&quot;这是一个else判断语句&quot;); } /* if(布尔表达式 1){ //如果布尔表达式 1的值为true执行代码 }else if(布尔表达式 2){ //如果布尔表达式 2的值为true执行代码 }else if(布尔表达式 3){ //如果布尔表达式 3的值为true执行代码 }else if(布尔表达式 4){ //如果布尔表达式 4的值为true执行代码 }else if(布尔表达式 5){ //如果布尔表达式 5的值为true执行代码 } else { //如果以上布尔表达式都不为true执行代码 } */ //嵌套的if...else语句 /* if(布尔表达式 1){ ////如果布尔表达式 1的值为true执行代码 if(布尔表达式 2){ ////如果布尔表达式 2的值为true执行代码 } } */ } }]]></content>
+    <title><![CDATA[Java数组]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1290,9 +1336,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java数组]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
-    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
+    <title><![CDATA[Java条件语句]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%2F</url>
+    <content type="text"><![CDATA[Java条件语句public class IfElse { /* 条件语句 - if...else */ public static void main(String[] args) { int x = 10; /* if(布尔表达式){ //如果布尔表达式的值为true }else{ //如果布尔表达式的值为false } */ if (x &lt; 20) { System.out.println(&quot;这是一个if判断语句&quot;); } else { System.out.println(&quot;这是一个else判断语句&quot;); } /* if(布尔表达式 1){ //如果布尔表达式 1的值为true执行代码 }else if(布尔表达式 2){ //如果布尔表达式 2的值为true执行代码 }else if(布尔表达式 3){ //如果布尔表达式 3的值为true执行代码 }else if(布尔表达式 4){ //如果布尔表达式 4的值为true执行代码 }else if(布尔表达式 5){ //如果布尔表达式 5的值为true执行代码 } else { //如果以上布尔表达式都不为true执行代码 } */ //嵌套的if...else语句 /* if(布尔表达式 1){ ////如果布尔表达式 1的值为true执行代码 if(布尔表达式 2){ ////如果布尔表达式 2的值为true执行代码 } } */ } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
