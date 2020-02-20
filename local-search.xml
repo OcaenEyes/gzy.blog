@@ -772,11 +772,11 @@
   
   
   <entry>
-    <title>php即时通讯-多进程</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/</url>
+    <title>php即时通讯-socket</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h3><ul><li>系统进程</li><li>用户进程</li><li>并发执行</li><li>性能更高</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
     
     
     <categories>
@@ -797,11 +797,11 @@
   
   
   <entry>
-    <title>php即时通讯-socket</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
+    <title>php即时通讯-多进程</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h3><ul><li>系统进程</li><li>用户进程</li><li>并发执行</li><li>性能更高</li></ul>]]></content>
     
     
     <categories>
@@ -1484,11 +1484,11 @@
   
   
   <entry>
-    <title>深度学习笔记——线性回归</title>
-    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
-    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</url>
+    <title>深度学习笔记——线性回归的从零开始实现</title>
+    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em>深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式</em></p><p><strong>单层神经网络：线性回归、Softmax回归</strong></p><p>线性回归输出是一个连续值，适用于回归问题。</p><p>​    如：预测房屋价格、气温、销售额等连续值问题</p><p>Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。</p><p>​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值</p><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><h3 id="线性回归基本要素"><a href="#线性回归基本要素" class="headerlink" title="线性回归基本要素"></a>线性回归基本要素</h3><p>以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）</p><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><p>设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）</p><p>线性回归假设输出与各个输入之间的线性关系：</p><p>y‘ = x1w1 + x2w2 + b;</p><p>其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 </p><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><p>模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。</p><h5 id="训练数据"><a href="#训练数据" class="headerlink" title="训练数据"></a>训练数据</h5><ul><li><p>训练数据集（training data set ）/ 训练集（training set）</p><p>多栋房屋数据，真实出售价格 、面积、房龄</p></li><li><p>样本（sample）</p><p>一栋房屋</p></li><li><p>标签（label）</p><p>真实出售价格</p></li><li><p>特征（feature）</p><p>预测标签的两个因素叫做特征；（面积、房龄）</p><p>特征用来表征样本的特点</p></li></ul><h5 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h5><ul><li>衡量价格测量值与真实值之间的误差</li><li>通常选取一个非负数作为误差，且数值越小表示误差越小</li></ul><h5 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h5><ul><li>解析解（analytical solution）<ul><li>当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来</li></ul></li><li>数值解（numerical solution）<ul><li>大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值</li><li>常用：小批量随机梯度下降（ mini-batch stochastic gradient descent）<ul><li>选取一组模型参数的初始值</li><li>对参数进行多次迭代，使得每次迭代都可能降低损失函数的值</li><li>每次迭代流程<ul><li>先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B</li><li>求小批量中数据样本的平均损失有关模型参数的导数（梯度）</li><li>用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量</li></ul></li></ul></li></ul></li></ul><h4 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h4><p><em>模型预测、模型推断或模型测试</em></p><p> 模型训练完成后，将模型参数w1;w2; b  在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。</p><p>然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。</p><h3 id="线性回归的表示方法"><a href="#线性回归的表示方法" class="headerlink" title="线性回归的表示方法"></a>线性回归的表示方法</h3><p>线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。</p><h4 id="神经网络图"><a href="#神经网络图" class="headerlink" title="神经网络图"></a>神经网络图</h4><h4 id="矢量计算表达式"><a href="#矢量计算表达式" class="headerlink" title="矢量计算表达式"></a>矢量计算表达式</h4>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
     
     
     <categories>
@@ -1515,11 +1515,11 @@
   
   
   <entry>
-    <title>深度学习笔记——线性回归的从零开始实现</title>
-    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/"/>
-    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/</url>
+    <title>深度学习笔记——线性回归</title>
+    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
+    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em>深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式</em></p><p><strong>单层神经网络：线性回归、Softmax回归</strong></p><p>线性回归输出是一个连续值，适用于回归问题。</p><p>​    如：预测房屋价格、气温、销售额等连续值问题</p><p>Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。</p><p>​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值</p><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><h3 id="线性回归基本要素"><a href="#线性回归基本要素" class="headerlink" title="线性回归基本要素"></a>线性回归基本要素</h3><p>以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）</p><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><p>设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）</p><p>线性回归假设输出与各个输入之间的线性关系：</p><p>y‘ = x1w1 + x2w2 + b;</p><p>其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 </p><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><p>模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。</p><h5 id="训练数据"><a href="#训练数据" class="headerlink" title="训练数据"></a>训练数据</h5><ul><li><p>训练数据集（training data set ）/ 训练集（training set）</p><p>多栋房屋数据，真实出售价格 、面积、房龄</p></li><li><p>样本（sample）</p><p>一栋房屋</p></li><li><p>标签（label）</p><p>真实出售价格</p></li><li><p>特征（feature）</p><p>预测标签的两个因素叫做特征；（面积、房龄）</p><p>特征用来表征样本的特点</p></li></ul><h5 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h5><ul><li>衡量价格测量值与真实值之间的误差</li><li>通常选取一个非负数作为误差，且数值越小表示误差越小</li></ul><h5 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h5><ul><li>解析解（analytical solution）<ul><li>当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来</li></ul></li><li>数值解（numerical solution）<ul><li>大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值</li><li>常用：小批量随机梯度下降（ mini-batch stochastic gradient descent）<ul><li>选取一组模型参数的初始值</li><li>对参数进行多次迭代，使得每次迭代都可能降低损失函数的值</li><li>每次迭代流程<ul><li>先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B</li><li>求小批量中数据样本的平均损失有关模型参数的导数（梯度）</li><li>用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量</li></ul></li></ul></li></ul></li></ul><h4 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h4><p><em>模型预测、模型推断或模型测试</em></p><p> 模型训练完成后，将模型参数w1;w2; b  在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。</p><p>然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。</p><h3 id="线性回归的表示方法"><a href="#线性回归的表示方法" class="headerlink" title="线性回归的表示方法"></a>线性回归的表示方法</h3><p>线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。</p><h4 id="神经网络图"><a href="#神经网络图" class="headerlink" title="神经网络图"></a>神经网络图</h4><h4 id="矢量计算表达式"><a href="#矢量计算表达式" class="headerlink" title="矢量计算表达式"></a>矢量计算表达式</h4>]]></content>
     
     
     <categories>
@@ -2855,6 +2855,31 @@
   
   
   <entry>
+    <title>Java-StringBuffer</title>
+    <link href="/2016/03/02/Java-StringBuffer/"/>
+    <url>/2016/03/02/Java-StringBuffer/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-StringBuffer"><a href="#Java-StringBuffer" class="headerlink" title="Java-StringBuffer"></a>Java-StringBuffer</h1><pre><code>public class StringBufferAndStringBuilderDemo {    //StringBuffer  线程安全    //StringBuilder 速度快    /*        序号    方法描述1    public StringBuffer append(String s)将指定的字符串追加到此字符序列。2    public StringBuffer reverse() 将此字符序列用其反转形式取代。3    public delete(int start, int end)移除此序列的子字符串中的字符。4    public insert(int offset, int i)将 int 参数的字符串表示形式插入此序列中。5    replace(int start, int end, String str)使用给定 String 中的字符替换此序列的子字符串中的字符。     */    /*        序号    方法描述1    int capacity()返回当前容量。2    char charAt(int index)返回此序列中指定索引处的 char 值。3    void ensureCapacity(int minimumCapacity)确保容量至少等于指定的最小值。4    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此序列复制到目标字符数组 dst。5    int indexOf(String str)返回第一次出现的指定子字符串在该字符串中的索引。6    int indexOf(String str, int fromIndex)从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。7    int lastIndexOf(String str)返回最右边出现的指定子字符串在此字符串中的索引。8    int lastIndexOf(String str, int fromIndex)返回 String 对象中子字符串最后出现的位置。9    int length() 返回长度（字符数）。10    void setCharAt(int index, char ch)将给定索引处的字符设置为 ch。11    void setLength(int newLength)设置字符序列的长度。12    CharSequence subSequence(int start, int end)返回一个新的字符序列，该字符序列是此序列的子序列。13    String substring(int start)返回一个新的 String，它包含此字符序列当前所包含的字符子序列。14    String substring(int start, int end)返回一个新的 String，它包含此序列当前所包含的字符子序列。15    String toString()返回此序列中数据的字符串表示形式。     */    public static void main(String[] args){        StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;);        sBuffer.append(&quot;站点&quot;);        System.out.println(sBuffer);    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Java-Scanner类</title>
     <link href="/2016/03/02/Java-Scanner%E7%B1%BB/"/>
     <url>/2016/03/02/Java-Scanner%E7%B1%BB/</url>
@@ -2930,61 +2955,11 @@
   
   
   <entry>
-    <title>Java-StringBuffer</title>
-    <link href="/2016/03/02/Java-StringBuffer/"/>
-    <url>/2016/03/02/Java-StringBuffer/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-StringBuffer"><a href="#Java-StringBuffer" class="headerlink" title="Java-StringBuffer"></a>Java-StringBuffer</h1><pre><code>public class StringBufferAndStringBuilderDemo {    //StringBuffer  线程安全    //StringBuilder 速度快    /*        序号    方法描述1    public StringBuffer append(String s)将指定的字符串追加到此字符序列。2    public StringBuffer reverse() 将此字符序列用其反转形式取代。3    public delete(int start, int end)移除此序列的子字符串中的字符。4    public insert(int offset, int i)将 int 参数的字符串表示形式插入此序列中。5    replace(int start, int end, String str)使用给定 String 中的字符替换此序列的子字符串中的字符。     */    /*        序号    方法描述1    int capacity()返回当前容量。2    char charAt(int index)返回此序列中指定索引处的 char 值。3    void ensureCapacity(int minimumCapacity)确保容量至少等于指定的最小值。4    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此序列复制到目标字符数组 dst。5    int indexOf(String str)返回第一次出现的指定子字符串在该字符串中的索引。6    int indexOf(String str, int fromIndex)从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。7    int lastIndexOf(String str)返回最右边出现的指定子字符串在此字符串中的索引。8    int lastIndexOf(String str, int fromIndex)返回 String 对象中子字符串最后出现的位置。9    int length() 返回长度（字符数）。10    void setCharAt(int index, char ch)将给定索引处的字符设置为 ch。11    void setLength(int newLength)设置字符序列的长度。12    CharSequence subSequence(int start, int end)返回一个新的字符序列，该字符序列是此序列的子序列。13    String substring(int start)返回一个新的 String，它包含此字符序列当前所包含的字符子序列。14    String substring(int start, int end)返回一个新的 String，它包含此序列当前所包含的字符子序列。15    String toString()返回此序列中数据的字符串表示形式。     */    public static void main(String[] args){        StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;);        sBuffer.append(&quot;站点&quot;);        System.out.println(sBuffer);    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Java异常处理</title>
     <link href="/2016/03/02/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
     <url>/2016/03/02/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java异常处理"><a href="#Java异常处理" class="headerlink" title="Java异常处理"></a>Java异常处理</h1><pre><code>import java.lang.Exception;public class ExceptionDemo {    /*        三类异常        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。     */    /*       内置异常类          非检查性异常            异常                                描述            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。            ArrayIndexOutOfBoundsException    用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。            ArrayStoreException                试图将错误类型的对象存储到一个对象数组时抛出的异常。            ClassCastException                当试图将对象强制转换为不是实例的子类时，抛出该异常。            IllegalArgumentException        抛出的异常表明向方法传递了一个不合法或不正确的参数。            IllegalMonitorStateException    抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。            IllegalStateException            在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。            IllegalThreadStateException        线程没有处于请求操作所要求的适当状态时抛出的异常。            IndexOutOfBoundsException        指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。            NegativeArraySizeException        如果应用程序试图创建大小为负的数组，则抛出该异常。            NullPointerException            当应用程序试图在需要对象的地方使用 null 时，抛出该异常            NumberFormatException            当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。            SecurityException                由安全管理器抛出的异常，指示存在安全侵犯。            StringIndexOutOfBoundsException    此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。            UnsupportedOperationException    当不支持请求的操作时，抛出该异常。         检查性异常类            异常                                描述            ClassNotFoundException            应用程序试图加载类时，找不到相应的类，抛出该异常。            CloneNotSupportedException        当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。            IllegalAccessException            拒绝访问一个类的时候，抛出该异常。            InstantiationException            当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。            InterruptedException            一个线程被另一个线程中断，抛出该异常。            NoSuchFieldException            请求的变量不存在            NoSuchMethodException            请求的方法不存在     */    /*        throws/throw 关键字        finally 关键字          finally 关键字用来创建在 try 代码块后面执行的代码块。          无论是否发生异常，finally 代码块中的代码总会被执行。          在 finally 代码块中，可以运行清理类型等收尾善后性质的语句            try{                // 程序代码            }catch(异常类型1 异常的变量名1){                // 程序代码            }catch(异常类型2 异常的变量名2){                // 程序代码            }finally{                // 程序代码            }     */    public void getExceptiondemo(){        //捕获异常        /*                try                {                    // 程序代码                }catch(ExceptionName e1)                {                    //Catch 块                }         */        // 多重捕获异常        /*                try{                    // 程序代码                }catch(异常类型1 异常的变量名1){                    // 程序代码                }catch(异常类型2 异常的变量名2){                    // 程序代码                }catch(异常类型2 异常的变量名2){                    // 程序代码                }         */        try {            int[] a = new int[2];            System.out.println(a[3]);        }catch (ArrayIndexOutOfBoundsException e){            System.out.println(&quot;Exception thrown&quot; +e);        }        System.out.println(&quot;out of the block&quot;);    }    public static void main(String[] args){        ExceptionDemo exp = new ExceptionDemo();        exp.getExceptiondemo();    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java数组</title>
-    <link href="/2016/03/02/Java%E6%95%B0%E7%BB%84/"/>
-    <url>/2016/03/02/Java%E6%95%B0%E7%BB%84/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java数组"><a href="#Java数组" class="headerlink" title="Java数组"></a>Java数组</h1><pre><code>public class ArrayDemo {    //声明数组    // 数据类型[] 数组名称;  dataType[] arrayName;    //创建数组    // 数据名称 = new dataType[arraySize];    //dataType[] arrayName = {value0,value1,value2,...,valuek};    public static void main(String[] args){        //数组大小        int size =4;        //定义数组        double[] TestList = new double[size];        TestList[0] = 3.2;        TestList[1] = 2.6;        TestList[2] = 4.7;        TestList[3] = 5.6;        double total =0;        for (int i=0; i&lt;size; i++){            total = total + TestList[i];        }        System.out.println(total);        double[] list1 = {1.4,2.8,3.6,4.9};        //打印所有数组元素        for (int i=0;i&lt;list1.length;i++){            System.out.println(list1[i]);        }        //计算所有元素的和        double sum = 0;        for (int i =0;i&lt;list1.length;i++){            sum = sum + list1[i];        }        System.out.println(sum);        //查找最大元素        double max = list1[0];        for (int i=0; i&lt;list1.length;i++){            if (list1[i] &gt; max){                max = list1[i];            }        }        System.out.println(max);    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3030,11 +3005,11 @@
   
   
   <entry>
-    <title>Java条件语句</title>
-    <link href="/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/"/>
-    <url>/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/</url>
+    <title>Java数组</title>
+    <link href="/2016/03/02/Java%E6%95%B0%E7%BB%84/"/>
+    <url>/2016/03/02/Java%E6%95%B0%E7%BB%84/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java条件语句"><a href="#Java条件语句" class="headerlink" title="Java条件语句"></a>Java条件语句</h1><pre><code>public class IfElse {    /*        条件语句 - if...else     */    public static void main(String[] args) {        int x = 10;        /*            if(布尔表达式){                //如果布尔表达式的值为true            }else{                //如果布尔表达式的值为false            }         */        if (x &lt; 20) {            System.out.println(&quot;这是一个if判断语句&quot;);        } else {            System.out.println(&quot;这是一个else判断语句&quot;);        }        /*            if(布尔表达式 1){                //如果布尔表达式 1的值为true执行代码            }else if(布尔表达式 2){                //如果布尔表达式 2的值为true执行代码            }else if(布尔表达式 3){                //如果布尔表达式 3的值为true执行代码            }else if(布尔表达式 4){                //如果布尔表达式 4的值为true执行代码            }else if(布尔表达式 5){                //如果布尔表达式 5的值为true执行代码            }            else {                //如果以上布尔表达式都不为true执行代码            }         */        //嵌套的if...else语句        /*            if(布尔表达式 1){                ////如果布尔表达式 1的值为true执行代码                if(布尔表达式 2){                    ////如果布尔表达式 2的值为true执行代码                }            }         */    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java数组"><a href="#Java数组" class="headerlink" title="Java数组"></a>Java数组</h1><pre><code>public class ArrayDemo {    //声明数组    // 数据类型[] 数组名称;  dataType[] arrayName;    //创建数组    // 数据名称 = new dataType[arraySize];    //dataType[] arrayName = {value0,value1,value2,...,valuek};    public static void main(String[] args){        //数组大小        int size =4;        //定义数组        double[] TestList = new double[size];        TestList[0] = 3.2;        TestList[1] = 2.6;        TestList[2] = 4.7;        TestList[3] = 5.6;        double total =0;        for (int i=0; i&lt;size; i++){            total = total + TestList[i];        }        System.out.println(total);        double[] list1 = {1.4,2.8,3.6,4.9};        //打印所有数组元素        for (int i=0;i&lt;list1.length;i++){            System.out.println(list1[i]);        }        //计算所有元素的和        double sum = 0;        for (int i =0;i&lt;list1.length;i++){            sum = sum + list1[i];        }        System.out.println(sum);        //查找最大元素        double max = list1[0];        for (int i=0; i&lt;list1.length;i++){            if (list1[i] &gt; max){                max = list1[i];            }        }        System.out.println(max);    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3060,6 +3035,31 @@
     <url>/2016/03/02/Java%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java日期和时间"><a href="#Java日期和时间" class="headerlink" title="Java日期和时间"></a>Java日期和时间</h1><pre><code>import java.text.SimpleDateFormat;import java.util.Date;import java.util.*;public class DateTimeDemo {    //日期时间    public static void main(String[] args){        //获取当前时间        Date date = new Date();        System.out.println(date.toString());        //格式化日期        /*            日期和时间的格式化编码时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下：字母    描述    示例G    纪元标记    ADy    四位年份    2001M    月份    July or 07d    一个月的日期    10h     A.M./P.M. (1~12)格式小时    12H    一天中的小时 (0~23)    22m    分钟数    30s    秒数    55S    毫秒数    234E    星期几    TuesdayD    一年中的日子    360F    一个月中第几周的周几    2 (second Wed. in July)w    一年中第几周    40W    一个月中第几周    1a    A.M./P.M. 标记    PMk    一天中的小时(1~24)    24K     A.M./P.M. (0~11)格式小时    10z    时区    Eastern Standard Time&#39;    文字定界符    Delimiter&quot;    单引号    `         */        SimpleDateFormat ft = new SimpleDateFormat(&quot;yyyy-MM-dd hh:mm:ss&quot;);        System.out.println(&quot;SimpleDateFormat时间格式转换&quot;);        System.out.println(ft.format(date));        //printf格式化时间  以%t 开头        /*            转  换  符             说    明              示    例                c           包括全部日期和时间信息         星期六 十月 27 14:21:20 CST 2007                F           &quot;年-月-日&quot;格式               2007-10-27                D           &quot;月/日/年&quot;格式               10/27/07                r           &quot;HH:MM:SS PM&quot;格式（12时制）   02:25:51 下午                T           &quot;HH:MM:SS&quot;格式（24时制）   14:28:16                R           &quot;HH:MM&quot;格式（24时制）         14:28         */        System.out.println(&quot;printf时间格式转换&quot;);        System.out.printf(&quot;全部日期和时间信息：%tc%n&quot;,date);        System.out.printf(&quot;年-月-日格式：%tF%n&quot;,date);        System.out.printf(&quot;月/日/年格式：%tD%n&quot;,date);        System.out.printf(&quot;HH:MM:SS PM(12小时)：%tr%n&quot;,date);        System.out.printf(&quot;HH:MM:SS (24小时)：%tT%n&quot;,date);        System.out.printf(&quot;HH:MM (24小时)：%tR%n&quot;,date);        //定义日期转换字符，抽取转换为新字符串        System.out.println(&quot;使日期转换生成新字符串&quot;);        //b的使用，月份简称        String str=String.format(Locale.US,&quot;英文月份简称：%tb&quot;,date);        System.out.println(str);        System.out.printf(&quot;本地月份简称：%tb%n&quot;,date);        //B的使用，月份全称        str=String.format(Locale.US,&quot;英文月份全称：%tB&quot;,date);        System.out.println(str);        System.out.printf(&quot;本地月份全称：%tB%n&quot;,date);        //a的使用，星期简称        str=String.format(Locale.US,&quot;英文星期的简称：%ta&quot;,date);        System.out.println(str);        //A的使用，星期全称        System.out.printf(&quot;本地星期的简称：%tA%n&quot;,date);        //C的使用，年前两位        System.out.printf(&quot;年的前两位数字（不足两位前面补0）：%tC%n&quot;,date);        //y的使用，年后两位        System.out.printf(&quot;年的后两位数字（不足两位前面补0）：%ty%n&quot;,date);        //j的使用，一年的天数        System.out.printf(&quot;一年中的天数（即年的第几天）：%tj%n&quot;,date);        //m的使用，月份        System.out.printf(&quot;两位数字的月份（不足两位前面补0）：%tm%n&quot;,date);        //d的使用，日（二位，不够补零）        System.out.printf(&quot;两位数字的日（不足两位前面补0）：%td%n&quot;,date);        //e的使用，日（一位不补零）        System.out.printf(&quot;月份的日（前面不补0）：%te&quot;,date);        //Calendar 对象        /*            常量                        描述            Calendar.YEAR            年份            Calendar.MONTH            月份            Calendar.DATE            日期            Calendar.DAY_OF_MONTH    日期，和上面的字段意义完全相同            Calendar.HOUR            12小时制的小时            Calendar.HOUR_OF_DAY    24小时制的小时            Calendar.MINUTE            分钟            Calendar.SECOND            秒            Calendar.DAY_OF_WEEK    星期几         */        //GregorianCalendar类        /*            序号    构造函数和说明1    GregorianCalendar()在具有默认语言环境的默认时区内使用当前时间构造一个默认的 GregorianCalendar。2    GregorianCalendar(int year, int month, int date)在具有默认语言环境的默认时区内构造一个带有给定日期设置的 GregorianCalendar3    GregorianCalendar(int year, int month, int date, int hour, int minute)为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。4    GregorianCalendar(int year, int month, int date, int hour, int minute, int second)  为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。5    GregorianCalendar(Locale aLocale)在具有给定语言环境的默认时区内构造一个基于当前时间的 GregorianCalendar。6    GregorianCalendar(TimeZone zone)在具有默认语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。7    GregorianCalendar(TimeZone zone, Locale aLocale) 在具有给定语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。这里是GregorianCalendar 类提供的一些有用的方法列表：序号    方法和说明1    void add(int field, int amount)根据日历规则，将指定的（有符号的）时间量添加到给定的日历字段中。2    protected void computeFields()转换UTC毫秒值为时间域值3    protected void computeTime()覆盖Calendar ，转换时间域值为UTC毫秒值4    boolean equals(Object obj)比较此 GregorianCalendar 与指定的 Object。5    int get(int field)获取指定字段的时间值6    int getActualMaximum(int field)返回当前日期，给定字段的最大值7    int getActualMinimum(int field)返回当前日期，给定字段的最小值8    int getGreatestMinimum(int field) 返回此 GregorianCalendar 实例给定日历字段的最高的最小值。9    Date getGregorianChange()获得格里高利历的更改日期。10    int getLeastMaximum(int field)返回此 GregorianCalendar 实例给定日历字段的最低的最大值11    int getMaximum(int field)返回此 GregorianCalendar 实例的给定日历字段的最大值。12    Date getTime()获取日历当前时间。13    long getTimeInMillis()获取用长整型表示的日历的当前时间14    TimeZone getTimeZone()获取时区。15    int getMinimum(int field)返回给定字段的最小值。16    int hashCode()重写hashCode.17    boolean isLeapYear(int year)确定给定的年份是否为闰年。18    void roll(int field, boolean up)在给定的时间字段上添加或减去（上/下）单个时间单元，不更改更大的字段。19    void set(int field, int value)用给定的值设置时间字段。20    void set(int year, int month, int date)设置年、月、日的值。21    void set(int year, int month, int date, int hour, int minute)设置年、月、日、小时、分钟的值。22    void set(int year, int month, int date, int hour, int minute, int second)设置年、月、日、小时、分钟、秒的值。23    void setGregorianChange(Date date)设置 GregorianCalendar 的更改日期。24    void setTime(Date date)用给定的日期设置Calendar的当前时间。25    void setTimeInMillis(long millis)用给定的long型毫秒数设置Calendar的当前时间。26    void setTimeZone(TimeZone value)用给定时区值设置当前时区。27    String toString()返回代表日历的字符串。         */        String months[] = {                &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;,                &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;,                &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;};        int year;        // 初始化 Gregorian 日历        // 使用当前时间和日期        // 默认为本地时间和时区        GregorianCalendar gcalendar = new GregorianCalendar();        // 显示当前时间和日期的信息        System.out.print(&quot;Date: &quot;);        System.out.print(months[gcalendar.get(Calendar.MONTH)]);        System.out.print(&quot; &quot; + gcalendar.get(Calendar.DATE) + &quot; &quot;);        System.out.println(year = gcalendar.get(Calendar.YEAR));        System.out.print(&quot;Time: &quot;);        System.out.print(gcalendar.get(Calendar.HOUR) + &quot;:&quot;);        System.out.print(gcalendar.get(Calendar.MINUTE) + &quot;:&quot;);        System.out.println(gcalendar.get(Calendar.SECOND));        // 测试当前年份是否为闰年        if(gcalendar.isLeapYear(year)) {            System.out.println(&quot;当前年份是闰年&quot;);        }        else {            System.out.println(&quot;当前年份不是闰年&quot;);        }    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java条件语句</title>
+    <link href="/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/"/>
+    <url>/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java条件语句"><a href="#Java条件语句" class="headerlink" title="Java条件语句"></a>Java条件语句</h1><pre><code>public class IfElse {    /*        条件语句 - if...else     */    public static void main(String[] args) {        int x = 10;        /*            if(布尔表达式){                //如果布尔表达式的值为true            }else{                //如果布尔表达式的值为false            }         */        if (x &lt; 20) {            System.out.println(&quot;这是一个if判断语句&quot;);        } else {            System.out.println(&quot;这是一个else判断语句&quot;);        }        /*            if(布尔表达式 1){                //如果布尔表达式 1的值为true执行代码            }else if(布尔表达式 2){                //如果布尔表达式 2的值为true执行代码            }else if(布尔表达式 3){                //如果布尔表达式 3的值为true执行代码            }else if(布尔表达式 4){                //如果布尔表达式 4的值为true执行代码            }else if(布尔表达式 5){                //如果布尔表达式 5的值为true执行代码            }            else {                //如果以上布尔表达式都不为true执行代码            }         */        //嵌套的if...else语句        /*            if(布尔表达式 1){                ////如果布尔表达式 1的值为true执行代码                if(布尔表达式 2){                    ////如果布尔表达式 2的值为true执行代码                }            }         */    }}</code></pre>]]></content>
     
     
     <categories>

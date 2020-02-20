@@ -133,6 +133,55 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java-Scanner类/">
+        <p class="h4 index-header">Java-Scanner类</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java-Scanner类import java.util.Scanner;
+
+public class ScannerDemo {
+    //Scanner类 获取用户的输入
+    /*
+        next() 与 nextLine() 区别
+        next():
+            1、一定要读取到有效字符后才可以结束输入。
+            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
+            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
+        next() 不能得到带有空格的字符串。
+        nextLine()：
+            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
+            2、可以获得空白。
+        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java-String类/">
         <p class="h4 index-header">Java-String类</p>
         
@@ -238,61 +287,6 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-StringBuffer/">
-        <p class="h4 index-header">Java-StringBuffer</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
-    //StringBuffer  线程安全
-    //StringBuilder 速度快
-
-    /*
-        序号    方法描述
-1    public StringBuffer append(String s)
-将指定的字符串追加到此字符序列。
-2    public StringBuffer reverse()
- 将此字符序列用其反转形式取代。
-3    public delete(int start, int end)
-移除此序列的子字符串中的字符。
-4    public insert(int offset, int i)
-将 int 参数的字符串表示形式插入此序列中。
-5    replace(int start, int end, String str)
-使用给定 String 中的字符替换此序列的子字符串中的字符。
-     */
-
-    /*
-        序号    方法描述
-1    int capacity()</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java异常处理/">
         <p class="h4 index-header">Java异常处理</p>
         
@@ -315,60 +309,6 @@ public class ExceptionDemo {
           非检查性异常
             异常                                描述
             ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java数组/">
-        <p class="h4 index-header">Java数组</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java数组public class ArrayDemo {
-    //声明数组
-    // 数据类型[] 数组名称;  dataType[] arrayName;
-
-    //创建数组
-    // 数据名称 = new dataType[arraySize];
-
-    //dataType[] arrayName = {value0,value1,value2,...,valuek};
-    public static void main(String[] args){
-        //数组大小
-        int size =4;
-        //定义数组
-        double[] TestList = new double[size];
-        TestList[0] = 3.2;
-        TestList[1] = 2.6;
-        TestList[2] = 4.7;
-        TestList[3] = 5.6;
-
-        double total =0;
-        for (int i=0; i&</div>
         </div>
       </a>
 
@@ -453,35 +393,33 @@ public class ExceptionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java条件语句/">
-        <p class="h4 index-header">Java条件语句</p>
+      <a href="/2016/03/02/Java数组/">
+        <p class="h4 index-header">Java数组</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java条件语句public class IfElse {
-    /*
-        条件语句 - if...else
-     */
-    public static void main(String[] args) {
-        int x = 10;
-        /*
-            if(布尔表达式){
-                //如果布尔表达式的值为true
-            }else{
-                //如果布尔表达式的值为false
-            }
-         */
-        if (x &lt; 20) {
-            System.out.println(&quot;这是一个if判断语句&quot;);
-        } else {
-            System.out.println(&quot;这是一个else判断语句&quot;);
-        }
+          <div class="index-text mb-1">Java数组public class ArrayDemo {
+    //声明数组
+    // 数据类型[] 数组名称;  dataType[] arrayName;
 
-        /*
-            if(布尔表达式 1){
-                </div>
+    //创建数组
+    // 数据名称 = new dataType[arraySize];
+
+    //dataType[] arrayName = {value0,value1,value2,...,valuek};
+    public static void main(String[] args){
+        //数组大小
+        int size =4;
+        //定义数组
+        double[] TestList = new double[size];
+        TestList[0] = 3.2;
+        TestList[1] = 2.6;
+        TestList[2] = 4.7;
+        TestList[3] = 5.6;
+
+        double total =0;
+        for (int i=0; i&</div>
         </div>
       </a>
 
@@ -540,6 +478,62 @@ M    月份    July or 07
 d    一个月的日期    10
 h     A.M./P.M. (1~12)格式小时    12
 H    一天中的小</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java条件语句/">
+        <p class="h4 index-header">Java条件语句</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java条件语句public class IfElse {
+    /*
+        条件语句 - if...else
+     */
+    public static void main(String[] args) {
+        int x = 10;
+        /*
+            if(布尔表达式){
+                //如果布尔表达式的值为true
+            }else{
+                //如果布尔表达式的值为false
+            }
+         */
+        if (x &lt; 20) {
+            System.out.println(&quot;这是一个if判断语句&quot;);
+        } else {
+            System.out.println(&quot;这是一个else判断语句&quot;);
+        }
+
+        /*
+            if(布尔表达式 1){
+                </div>
         </div>
       </a>
 
