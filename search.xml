@@ -300,18 +300,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[AI时代如何提升个人认知]]></title>
-    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5%2F</url>
-    <content type="text"><![CDATA[AI时间如何提升个人认知 思考比学习知识更重要。 外部原因​ 当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。 比如： 互联网 共享经济 大数据 内部原因 《论思考》 、《论书籍和写作》——叔本华 读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。]]></content>
-      <categories>
-        <category>Artificial Intelligence</category>
-      </categories>
-      <tags>
-        <tag>人工智能</tag>
-        <tag>Artificial Intelligence</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[AI时代决策效率革命]]></title>
     <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
     <content type="text"><![CDATA[]]></content>
@@ -324,14 +312,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-http]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
-    <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
+    <title><![CDATA[AI时代如何提升个人认知]]></title>
+    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5%2F</url>
+    <content type="text"><![CDATA[AI时间如何提升个人认知 思考比学习知识更重要。 外部原因​ 当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。 比如： 互联网 共享经济 大数据 内部原因 《论思考》 、《论书籍和写作》——叔本华 读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。]]></content>
       <categories>
-        <category>php</category>
+        <category>Artificial Intelligence</category>
       </categories>
       <tags>
-        <tag>php</tag>
+        <tag>人工智能</tag>
+        <tag>Artificial Intelligence</tag>
       </tags>
   </entry>
   <entry>
@@ -346,9 +335,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-socket]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket%2F</url>
-    <content type="text"><![CDATA[Socket 一个工具，一个接口 封装了TCP/IP 协议 建立长链接的基础]]></content>
+    <title><![CDATA[php即时通讯-http]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
+    <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
       <categories>
         <category>php</category>
       </categories>
@@ -360,6 +349,17 @@
     <title><![CDATA[php即时通讯-多进程]]></title>
     <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[多进程 系统进程 用户进程 并发执行 性能更高]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[php即时通讯-socket]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket%2F</url>
+    <content type="text"><![CDATA[Socket 一个工具，一个接口 封装了TCP/IP 协议 建立长链接的基础]]></content>
       <categories>
         <category>php</category>
       </categories>
@@ -380,9 +380,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---数据类型]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
+    <title><![CDATA[redis学习---安装入门]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -392,9 +392,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---安装入门]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
-    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
+    <title><![CDATA[redis学习---数据类型]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -1300,9 +1300,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-StringBuffer]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
-    <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
+    <title><![CDATA[Java-SwitchCase语句]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-SwitchCase%2F</url>
+    <content type="text"><![CDATA[Java-SwitchCase语句public class SwitchCase { //switch case语句 判断一个变量与一系列值中某个值是否相等，每个值称为一个分支 // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。 /* switch(expression){ case value : //语句 break; //可选 case value : //语句 break; //可选 //你可以有任意数量的case语句 default : //可选 //语句 不需要break } */ public static void main(String[]args){ char grade =&#39;C&#39;; switch (grade) { case &#39;A&#39;: System.out.println(&quot;优秀&quot;); break; case &#39;B&#39;: case &#39;C&#39;: System.out.println(&quot;良好&quot;); break; case &#39;D&#39;: System.out.println(&quot;及格&quot;); break; case &#39;F&#39;: System.out.println(&quot;你还需要继续努力&quot;); break; default: System.out.println(&quot;未知等级&quot;); } System.out.println(&quot;你的等级是&quot; + grade); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1311,9 +1311,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-SwitchCase语句]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-SwitchCase%2F</url>
-    <content type="text"><![CDATA[Java-SwitchCase语句public class SwitchCase { //switch case语句 判断一个变量与一系列值中某个值是否相等，每个值称为一个分支 // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。 /* switch(expression){ case value : //语句 break; //可选 case value : //语句 break; //可选 //你可以有任意数量的case语句 default : //可选 //语句 不需要break } */ public static void main(String[]args){ char grade =&#39;C&#39;; switch (grade) { case &#39;A&#39;: System.out.println(&quot;优秀&quot;); break; case &#39;B&#39;: case &#39;C&#39;: System.out.println(&quot;良好&quot;); break; case &#39;D&#39;: System.out.println(&quot;及格&quot;); break; case &#39;F&#39;: System.out.println(&quot;你还需要继续努力&quot;); break; default: System.out.println(&quot;未知等级&quot;); } System.out.println(&quot;你的等级是&quot; + grade); } }]]></content>
+    <title><![CDATA[Java-StringBuffer]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
+    <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1333,9 +1333,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java循环结构]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
-    <content type="text"><![CDATA[Java循环结构public class LoopStructure { /* while 循环 do…while 循环 for 循环 */ public static void main(String[] args) { //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环 System.out.println(&quot;while 循环&quot;); int x = 10; while (x &lt; 20) { System.out.println(x); x++; } // do…while 循环，至少执行一次 /* do { //代码语句 }while(布尔表达式); */ System.out.println(&quot;do…while循环&quot;); int y = 10; do { System.out.println(y); y++; } while (y &lt; 10); // for 循环，执行前就确定执行次数 /* for(初始化; 布尔表达式; 更新) { //代码语句 } */ System.out.println(&quot;for 循环&quot;); for (int z = 0; z &lt; 20; z = z + 1) { System.out.println(z); } //增强for循环 /* for(声明语句 : 表达式) { //代码句子 } */ System.out.println(&quot;增强for 循环&quot;); int[] numbers = {10, 20, 30, 40, 50}; for (int number : numbers) { System.out.println(number); } String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;}; for (String name : names) { System.out.println(name); } //break关键字 /* break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。 break 跳出最里层的循环，并且继续执行该循环下面的语句。 */ System.out.println(&quot;break关键字&quot;); int[] numbers1 = {10, 20, 30, 40, 50}; for (int number : numbers1) { if (number == 30) { break; } System.out.println(number); } //continue关键字 /* continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。 在 for 循环中，continue 语句使程序立即跳转到更新语句。 在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。 */ System.out.println(&quot;continue关键字&quot;); int[] numbers2 = {10, 20, 30, 40, 50}; for (int number : numbers2) { if (number == 30) { continue; } System.out.println(number); } } }]]></content>
+    <title><![CDATA[Java数组]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1344,9 +1344,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java数组]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
-    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
+    <title><![CDATA[Java循环结构]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
+    <content type="text"><![CDATA[Java循环结构public class LoopStructure { /* while 循环 do…while 循环 for 循环 */ public static void main(String[] args) { //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环 System.out.println(&quot;while 循环&quot;); int x = 10; while (x &lt; 20) { System.out.println(x); x++; } // do…while 循环，至少执行一次 /* do { //代码语句 }while(布尔表达式); */ System.out.println(&quot;do…while循环&quot;); int y = 10; do { System.out.println(y); y++; } while (y &lt; 10); // for 循环，执行前就确定执行次数 /* for(初始化; 布尔表达式; 更新) { //代码语句 } */ System.out.println(&quot;for 循环&quot;); for (int z = 0; z &lt; 20; z = z + 1) { System.out.println(z); } //增强for循环 /* for(声明语句 : 表达式) { //代码句子 } */ System.out.println(&quot;增强for 循环&quot;); int[] numbers = {10, 20, 30, 40, 50}; for (int number : numbers) { System.out.println(number); } String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;}; for (String name : names) { System.out.println(name); } //break关键字 /* break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。 break 跳出最里层的循环，并且继续执行该循环下面的语句。 */ System.out.println(&quot;break关键字&quot;); int[] numbers1 = {10, 20, 30, 40, 50}; for (int number : numbers1) { if (number == 30) { break; } System.out.println(number); } //continue关键字 /* continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。 在 for 循环中，continue 语句使程序立即跳转到更新语句。 在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。 */ System.out.println(&quot;continue关键字&quot;); int[] numbers2 = {10, 20, 30, 40, 50}; for (int number : numbers2) { if (number == 30) { continue; } System.out.println(number); } } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
