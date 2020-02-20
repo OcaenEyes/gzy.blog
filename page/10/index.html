@@ -133,6 +133,125 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--什么是数据库/">
+        <p class="h4 index-header">MySQL深入浅出--什么是数据库</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">什么是数据库​    数据库（Database）是按照数据结构来组织、储存和管理数据的仓库
+常见数据库
+Oracle
+DB2
+SQL Server
+Postgre SQL
+MySQL
+
+相关术语数据库系统（Database System） DBS
+数据库 (Database)
+数据库管理系统 (Database Management System) : DBMS
+应用开发工具
+管理员及用户
+
+SQL语言 （Structured Query Language）:结构化查询语言
+DDL (数据定义语言)
+DML (数据操作语言)
+DQL (数据查询语言)
+DCL (数据控制语言)
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/09/22/MySQL学习-约束及修改数据表/">
+        <p class="h4 index-header">MySQL学习-约束及修改数据表</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">约束
+约束保证数据 完整性和一致性
+
+约束分为表级约束和列级约束
+
+约束类型包括：
+
+
+​    NOT NULL        非空约束
+​    PRIMARY KEY    主键约束
+​    UNIQUE KEY        唯一约束
+​    DEFAULT        默认约束
+​    FOREIGN KEY    外键约束
+外键约束
+父表和子表必须使用相同的存储引擎，而且禁止使用临时表；
+数据表的存储引擎只能为InnoDB；
+外键列和参照列 必须具有相似的数据类型，其中数字的长度/是否有符号位 必须相同；而字符长度则可以不同；
+外键列和参照列 必须创建索引，如果外键列不存在索引的话，MySQL将自动创建索引
+
+- 编辑数据表的默认存储引擎
+- MySQL配置文件
+default-storage-engine = INNODB
+
+- 
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-09-22&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2017/09/21/MySQL学习-数据类型与操作数据表/">
         <p class="h4 index-header">MySQL学习-数据类型与操作数据表</p>
         
@@ -581,114 +700,6 @@ public class ScannerDemo {
             1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
             2、可以获得空白。
         如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-StringBuffer/">
-        <p class="h4 index-header">Java-StringBuffer</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
-    //StringBuffer  线程安全
-    //StringBuilder 速度快
-
-    /*
-        序号    方法描述
-1    public StringBuffer append(String s)
-将指定的字符串追加到此字符序列。
-2    public StringBuffer reverse()
- 将此字符序列用其反转形式取代。
-3    public delete(int start, int end)
-移除此序列的子字符串中的字符。
-4    public insert(int offset, int i)
-将 int 参数的字符串表示形式插入此序列中。
-5    replace(int start, int end, String str)
-使用给定 String 中的字符替换此序列的子字符串中的字符。
-     */
-
-    /*
-        序号    方法描述
-1    int capacity()</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-String类/">
-        <p class="h4 index-header">Java-String类</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-String类public class StringDemo {
-    //String 方法
-    /*
-        SN(序号)    方法描述
-1    char charAt(int index)
-返回指定索引处的 char 值。
-2    int compareTo(Object o)
-把这个字符串和另一个对象比较。
-3    int compareTo(String anotherString)
-按字典顺序比较两个字符串。
-4    int compareToIgnoreCase(String str)
-按字典顺序比较两个字符串，不考虑大小写。
-5    String concat(String str)
-将指定字符串连接到此字符串的结尾。
-6    boolean contentEquals(StringBuffer sb)
-当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。
-7    static String copyValueOf(char[] data)
-返回指定数组中表示该字符序列的 String。
-8    stati</div>
         </div>
       </a>
 

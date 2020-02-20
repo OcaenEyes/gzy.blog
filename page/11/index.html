@@ -133,6 +133,114 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java-StringBuffer/">
+        <p class="h4 index-header">Java-StringBuffer</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
+    //StringBuffer  线程安全
+    //StringBuilder 速度快
+
+    /*
+        序号    方法描述
+1    public StringBuffer append(String s)
+将指定的字符串追加到此字符序列。
+2    public StringBuffer reverse()
+ 将此字符序列用其反转形式取代。
+3    public delete(int start, int end)
+移除此序列的子字符串中的字符。
+4    public insert(int offset, int i)
+将 int 参数的字符串表示形式插入此序列中。
+5    replace(int start, int end, String str)
+使用给定 String 中的字符替换此序列的子字符串中的字符。
+     */
+
+    /*
+        序号    方法描述
+1    int capacity()</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java-String类/">
+        <p class="h4 index-header">Java-String类</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java-String类public class StringDemo {
+    //String 方法
+    /*
+        SN(序号)    方法描述
+1    char charAt(int index)
+返回指定索引处的 char 值。
+2    int compareTo(Object o)
+把这个字符串和另一个对象比较。
+3    int compareTo(String anotherString)
+按字典顺序比较两个字符串。
+4    int compareToIgnoreCase(String str)
+按字典顺序比较两个字符串，不考虑大小写。
+5    String concat(String str)
+将指定字符串连接到此字符串的结尾。
+6    boolean contentEquals(StringBuffer sb)
+当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。
+7    static String copyValueOf(char[] data)
+返回指定数组中表示该字符序列的 String。
+8    stati</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java-SwitchCase/">
         <p class="h4 index-header">Java-SwitchCase语句</p>
         
@@ -185,28 +293,36 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java异常处理/">
-        <p class="h4 index-header">Java异常处理</p>
+      <a href="/2016/03/02/Java循环结构/">
+        <p class="h4 index-header">Java循环结构</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
-
-public class ExceptionDemo {
+          <div class="index-text mb-1">Java循环结构public class LoopStructure {
     /*
-        三类异常
-        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
-        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
-        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
+        while 循环
+        do…while 循环
+        for 循环
      */
 
-    /*
-       内置异常类
-          非检查性异常
-            异常                                描述
-            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
+    public static void main(String[] args) {
+        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
+        System.out.println(&quot;while 循环&quot;);
+        int x = 10;
+        while (x &lt; 20) {
+            System.out.println(x);
+            x++;
+        }
+
+        // do…while 循环，至少执行一次
+        /*
+            do {
+                //代码语句
+            }while(布尔表达式);
+         */
+        System.o</div>
         </div>
       </a>
 
@@ -346,57 +462,6 @@ H    一天中的小</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java正则表达式/">
-        <p class="h4 index-header">Java正则表达式</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java正则表达式import java.util.regex.*;
-public class RegularExpressionDemo {
-    /*
-        Pattern 类：
-        pattern 对象是一个正则表达式的编译表示。
-        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。
-        该方法接受一个正则表达式作为它的第一个参数。
-
-        Matcher 类：
-        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。
-        与Pattern 类一样，Matcher 也没有公共构造方法。
-        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
-
-        PatternSyntaxException：
-        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
-     */
-    /*</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java条件语句/">
         <p class="h4 index-header">Java条件语句</p>
         
@@ -453,36 +518,79 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java循环结构/">
-        <p class="h4 index-header">Java循环结构</p>
+      <a href="/2016/03/02/Java正则表达式/">
+        <p class="h4 index-header">Java正则表达式</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java循环结构public class LoopStructure {
+          <div class="index-text mb-1">Java正则表达式import java.util.regex.*;
+public class RegularExpressionDemo {
     /*
-        while 循环
-        do…while 循环
-        for 循环
+        Pattern 类：
+        pattern 对象是一个正则表达式的编译表示。
+        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。
+        该方法接受一个正则表达式作为它的第一个参数。
+
+        Matcher 类：
+        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。
+        与Pattern 类一样，Matcher 也没有公共构造方法。
+        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
+
+        PatternSyntaxException：
+        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
+     */
+    /*</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java异常处理/">
+        <p class="h4 index-header">Java异常处理</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
+
+public class ExceptionDemo {
+    /*
+        三类异常
+        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
+        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
+        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
      */
 
-    public static void main(String[] args) {
-        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
-        System.out.println(&quot;while 循环&quot;);
-        int x = 10;
-        while (x &lt; 20) {
-            System.out.println(x);
-            x++;
-        }
-
-        // do…while 循环，至少执行一次
-        /*
-            do {
-                //代码语句
-            }while(布尔表达式);
-         */
-        System.o</div>
+    /*
+       内置异常类
+          非检查性异常
+            异常                                描述
+            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
         </div>
       </a>
 
@@ -532,125 +640,6 @@ public class RegularExpressionDemo {
 
         // short
         System.out.println</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java对象和类/">
-        <p class="h4 index-header">Java对象和类</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java对象和类public class ObjectAndClass {
-    /*
-    - 多态
-    - 继承
-    - 封装
-    - 抽象
-    - 类 ： 是一个模板，用来描述
-    - 对象 ： 是类class的一个实例，具有状态和行为
-    - 实例
-    - 方法
-    - 重载
-     */
-
-    //定义一个Dog类
-    public static class Dog {
-        //成员变量
-        StringDemo color;
-        int age;
-        StringDemo name;
-
-        //类方法
-        void barking(){
-            System.out.println(&quot;汪！汪！汪！&quot;);
-        }
-
-        void hungry(){
-            System.out.println(&quot;好饿哦！&quot;);
-        }
-
-        void sle</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java运算符/">
-        <p class="h4 index-header">Java运算符</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java运算符public class Operator {
-    /*
-        运算符
-        - 算术运算符
-        - 关系运算符
-        - 位运算符
-        - 逻辑运算符
-        - 赋值运算符
-        - 其他运算符
-     */
-    public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
-        int c = 25;
-        int d = 25;
-
-        //算数运算符
-        //前缀自增自减法(++a,--a): 先进行自增或者自减运算，再进行表达式运算。
-        //后缀自增自减法(a++,a--): 先进行表达式运算，再进行自增或者自减运算
-        System.out.println(&quot;a + b = &quot; + (a + b));
-        System.out.println(&quot;a - b = &quot</div>
         </div>
       </a>
 
