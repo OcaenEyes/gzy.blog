@@ -133,36 +133,80 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java循环结构/">
-        <p class="h4 index-header">Java循环结构</p>
+      <a href="/2016/03/02/Java-SwitchCase/">
+        <p class="h4 index-header">Java-SwitchCase语句</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java循环结构public class LoopStructure {
+          <div class="index-text mb-1">Java-SwitchCase语句public class SwitchCase {
+    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支
+    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。
     /*
-        while 循环
-        do…while 循环
-        for 循环
+        switch(expression){
+            case value :
+                //语句
+                break; //可选
+            case value :
+                //语句
+                break; //可选
+            //你可以有任意数量的case语句
+            default : //可选
+                //语句   不需要break
+        }
      */
 
-    public static void main(String[] args) {
-        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
-        System.out.println(&quot;while 循环&quot;);
-        int x = 10;
-        while (x &lt; 20) {
-            System.out.println(x);
-            x++;
-        }
+    public static void main(String[]</div>
+        </div>
+      </a>
 
-        // do…while 循环，至少执行一次
-        /*
-            do {
-                //代码语句
-            }while(布尔表达式);
-         */
-        System.o</div>
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java异常处理/">
+        <p class="h4 index-header">Java异常处理</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
+
+public class ExceptionDemo {
+    /*
+        三类异常
+        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
+        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
+        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
+     */
+
+    /*
+       内置异常类
+          非检查性异常
+            异常                                描述
+            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
         </div>
       </a>
 
@@ -353,51 +397,6 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-NumberMath类/">
-        <p class="h4 index-header">Java-NumberMath类</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
-    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
-    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
-
-    private static void test(double num) {
-        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
-        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
-        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
-    }
-
-    public st</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java条件语句/">
         <p class="h4 index-header">Java条件语句</p>
         
@@ -454,28 +453,36 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-Scanner类/">
-        <p class="h4 index-header">Java-Scanner类</p>
+      <a href="/2016/03/02/Java循环结构/">
+        <p class="h4 index-header">Java循环结构</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-Scanner类import java.util.Scanner;
-
-public class ScannerDemo {
-    //Scanner类 获取用户的输入
+          <div class="index-text mb-1">Java循环结构public class LoopStructure {
     /*
-        next() 与 nextLine() 区别
-        next():
-            1、一定要读取到有效字符后才可以结束输入。
-            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
-            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
-        next() 不能得到带有空格的字符串。
-        nextLine()：
-            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
-            2、可以获得空白。
-        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：</div>
+        while 循环
+        do…while 循环
+        for 循环
+     */
+
+    public static void main(String[] args) {
+        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
+        System.out.println(&quot;while 循环&quot;);
+        int x = 10;
+        while (x &lt; 20) {
+            System.out.println(x);
+            x++;
+        }
+
+        // do…while 循环，至少执行一次
+        /*
+            do {
+                //代码语句
+            }while(布尔表达式);
+         */
+        System.o</div>
         </div>
       </a>
 
