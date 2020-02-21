@@ -521,6 +521,51 @@ prompt 提示符;
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java-NumberMath类/">
+        <p class="h4 index-header">Java-NumberMath类</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
+    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
+    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
+
+    private static void test(double num) {
+        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
+        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
+        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
+    }
+
+    public st</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java-Character类/">
         <p class="h4 index-header">Java-Character类</p>
         
@@ -633,79 +678,28 @@ public class StreamFileIODemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-NumberMath类/">
-        <p class="h4 index-header">Java-NumberMath类</p>
+      <a href="/2016/03/02/Java-Scanner类/">
+        <p class="h4 index-header">Java-Scanner类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
-    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
-    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
+          <div class="index-text mb-1">Java-Scanner类import java.util.Scanner;
 
-    private static void test(double num) {
-        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
-        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
-        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
-    }
-
-    public st</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-StringBuffer/">
-        <p class="h4 index-header">Java-StringBuffer</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
-    //StringBuffer  线程安全
-    //StringBuilder 速度快
-
+public class ScannerDemo {
+    //Scanner类 获取用户的输入
     /*
-        序号    方法描述
-1    public StringBuffer append(String s)
-将指定的字符串追加到此字符序列。
-2    public StringBuffer reverse()
- 将此字符序列用其反转形式取代。
-3    public delete(int start, int end)
-移除此序列的子字符串中的字符。
-4    public insert(int offset, int i)
-将 int 参数的字符串表示形式插入此序列中。
-5    replace(int start, int end, String str)
-使用给定 String 中的字符替换此序列的子字符串中的字符。
-     */
-
-    /*
-        序号    方法描述
-1    int capacity()</div>
+        next() 与 nextLine() 区别
+        next():
+            1、一定要读取到有效字符后才可以结束输入。
+            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
+            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
+        next() 不能得到带有空格的字符串。
+        nextLine()：
+            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
+            2、可以获得空白。
+        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：</div>
         </div>
       </a>
 

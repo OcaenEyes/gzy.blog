@@ -133,14 +133,32 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/22/redis学习-数据类型/">
-        <p class="h4 index-header">redis学习---数据类型</p>
+      <a href="/2019/01/22/redis学习--安装入门/">
+        <p class="h4 index-header">redis学习---安装入门</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">redis数据类型string字符串</div>
+          <div class="index-text mb-1">CentOS下安装启动# 下载安装fedora的仓库
+yum install epel-release
+# 安装redis
+yum install redis
+# 开启redis服务
+service redis start
+# 可选项，修改可访问的域名IP，修改保护模式为no
+vi /etc/redis.conf
+    注释掉 bind 127.0.0.1
+    改 protected  为 no 
+# 重启redis服务
+service redis restart
+# 根据需要可，修改防火墙，增加6379端口
+firewall-cmd --zone=public --add-port=6379/tcp -permanent   (-permanent,长期生效)
+# 查询端口
+firewall-cmd --zone-public --query-port=6379/tcp
+# 连接redis
+redis-cli -h host -p port -a password
+</div>
         </div>
       </a>
 
@@ -647,34 +665,23 @@ APP端异常分析定位
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/02/计算广告-基础/">
-        <p class="h4 index-header">计算广告-基础</p>
+      <a href="/2019/01/02/计算广告-知识储备/">
+        <p class="h4 index-header">计算广告-知识储备</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">计算广告-基础1、在线广告技术特点技术和计算导向
-​    数字媒体的特点使在线广告可以精细的用户定向
-​    技术又使广告决策和交易朝着计算驱动的方向发展
-效果的可衡量性
-​    在同一个时期，点击率的绝对值并没有那么重要；而在一个特定时期不同广告和算法表现出来的差异，才更有    意义
-创意和投放方式的标准化
-​    标准化的驱动力来自受众定向与程序购买
-​    需求方更关心的是受众人群，创意尺寸的统一化与数据接口的标准化就变得更加重要
-媒体概念的多样化
-数据驱动的投放决策
-​    互联网化的根本驱动力是数据的深入加工和利用
-2、计算广告的核心问题
-计算广告的核心问题，是为一系列用户与环境的组合，找到最合适的广告投放策略以优化整体的投入产出比（ROI）
-
-2.1、在线广告计费模式CPM（Cost per Mile）
-​    按照千次展示计费
-CPC（Cost per Click）
-​    按照点击计费
-CPS（Cost per Sale）/ CPA（Cost per Action）/ROI
-​    按照销售订单数、转化行为数或投入产出比来计费
-​    情况一：需求</div>
+          <div class="index-text mb-1">计算广告-知识储备1、信息检索1.1、倒排索引​    核心目的，将从大量文档中查找包含某些词的文档集合，用O(1)的时间复杂度完成。
+​    基本操作：
+​            1、向索引中加入一个新文档
+​            2、给定一个有多个关键词组成的查询时，返回对应的文档集合
+1.2、向量空间模型​    向量空间模型（Vector Space Model ，VSM），信息检索中最基础且最重要的文档相似度度量方法之一。
+​    核心：
+​    1、文档的表示方法
+​    用各个关键词（term）在文档中强度组成的矢量来表示该文档$$D=(X_1,X_2,…X_m)^T$$
+​    2、相似度计算方法
+2、最优化方法2.1、下降单纯型法2.2、梯度方法2.3、拟牛顿方法2.4、Trust-Region方法2.5、带约束 优化和拉格朗日法3、统计机器学习3.1、最大熵原理3.2、指数族分布3.3、混合模型和EM算法3.4、贝叶斯学习3.5、共轭先验3.6、经验贝叶斯3.7、变分法</div>
         </div>
       </a>
 
@@ -706,23 +713,34 @@ CPS（Cost per Sale）/ CPA（Cost per Action）/ROI
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/02/计算广告-知识储备/">
-        <p class="h4 index-header">计算广告-知识储备</p>
+      <a href="/2019/01/02/计算广告-基础/">
+        <p class="h4 index-header">计算广告-基础</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">计算广告-知识储备1、信息检索1.1、倒排索引​    核心目的，将从大量文档中查找包含某些词的文档集合，用O(1)的时间复杂度完成。
-​    基本操作：
-​            1、向索引中加入一个新文档
-​            2、给定一个有多个关键词组成的查询时，返回对应的文档集合
-1.2、向量空间模型​    向量空间模型（Vector Space Model ，VSM），信息检索中最基础且最重要的文档相似度度量方法之一。
-​    核心：
-​    1、文档的表示方法
-​    用各个关键词（term）在文档中强度组成的矢量来表示该文档$$D=(X_1,X_2,…X_m)^T$$
-​    2、相似度计算方法
-2、最优化方法2.1、下降单纯型法2.2、梯度方法2.3、拟牛顿方法2.4、Trust-Region方法2.5、带约束 优化和拉格朗日法3、统计机器学习3.1、最大熵原理3.2、指数族分布3.3、混合模型和EM算法3.4、贝叶斯学习3.5、共轭先验3.6、经验贝叶斯3.7、变分法</div>
+          <div class="index-text mb-1">计算广告-基础1、在线广告技术特点技术和计算导向
+​    数字媒体的特点使在线广告可以精细的用户定向
+​    技术又使广告决策和交易朝着计算驱动的方向发展
+效果的可衡量性
+​    在同一个时期，点击率的绝对值并没有那么重要；而在一个特定时期不同广告和算法表现出来的差异，才更有    意义
+创意和投放方式的标准化
+​    标准化的驱动力来自受众定向与程序购买
+​    需求方更关心的是受众人群，创意尺寸的统一化与数据接口的标准化就变得更加重要
+媒体概念的多样化
+数据驱动的投放决策
+​    互联网化的根本驱动力是数据的深入加工和利用
+2、计算广告的核心问题
+计算广告的核心问题，是为一系列用户与环境的组合，找到最合适的广告投放策略以优化整体的投入产出比（ROI）
+
+2.1、在线广告计费模式CPM（Cost per Mile）
+​    按照千次展示计费
+CPC（Cost per Click）
+​    按照点击计费
+CPS（Cost per Sale）/ CPA（Cost per Action）/ROI
+​    按照销售订单数、转化行为数或投入产出比来计费
+​    情况一：需求</div>
         </div>
       </a>
 

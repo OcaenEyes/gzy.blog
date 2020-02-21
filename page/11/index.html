@@ -133,28 +133,34 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-Scanner类/">
-        <p class="h4 index-header">Java-Scanner类</p>
+      <a href="/2016/03/02/Java-StringBuffer/">
+        <p class="h4 index-header">Java-StringBuffer</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-Scanner类import java.util.Scanner;
+          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
+    //StringBuffer  线程安全
+    //StringBuilder 速度快
 
-public class ScannerDemo {
-    //Scanner类 获取用户的输入
     /*
-        next() 与 nextLine() 区别
-        next():
-            1、一定要读取到有效字符后才可以结束输入。
-            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
-            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
-        next() 不能得到带有空格的字符串。
-        nextLine()：
-            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
-            2、可以获得空白。
-        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：</div>
+        序号    方法描述
+1    public StringBuffer append(String s)
+将指定的字符串追加到此字符序列。
+2    public StringBuffer reverse()
+ 将此字符序列用其反转形式取代。
+3    public delete(int start, int end)
+移除此序列的子字符串中的字符。
+4    public insert(int offset, int i)
+将 int 参数的字符串表示形式插入此序列中。
+5    replace(int start, int end, String str)
+使用给定 String 中的字符替换此序列的子字符串中的字符。
+     */
+
+    /*
+        序号    方法描述
+1    int capacity()</div>
         </div>
       </a>
 
@@ -287,28 +293,33 @@ public class ScannerDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java异常处理/">
-        <p class="h4 index-header">Java异常处理</p>
+      <a href="/2016/03/02/Java数组/">
+        <p class="h4 index-header">Java数组</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
+          <div class="index-text mb-1">Java数组public class ArrayDemo {
+    //声明数组
+    // 数据类型[] 数组名称;  dataType[] arrayName;
 
-public class ExceptionDemo {
-    /*
-        三类异常
-        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
-        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
-        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
-     */
+    //创建数组
+    // 数据名称 = new dataType[arraySize];
 
-    /*
-       内置异常类
-          非检查性异常
-            异常                                描述
-            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
+    //dataType[] arrayName = {value0,value1,value2,...,valuek};
+    public static void main(String[] args){
+        //数组大小
+        int size =4;
+        //定义数组
+        double[] TestList = new double[size];
+        TestList[0] = 3.2;
+        TestList[1] = 2.6;
+        TestList[2] = 4.7;
+        TestList[3] = 5.6;
+
+        double total =0;
+        for (int i=0; i&</div>
         </div>
       </a>
 
@@ -366,60 +377,6 @@ public class ExceptionDemo {
             }while(布尔表达式);
          */
         System.o</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java数组/">
-        <p class="h4 index-header">Java数组</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java数组public class ArrayDemo {
-    //声明数组
-    // 数据类型[] 数组名称;  dataType[] arrayName;
-
-    //创建数组
-    // 数据名称 = new dataType[arraySize];
-
-    //dataType[] arrayName = {value0,value1,value2,...,valuek};
-    public static void main(String[] args){
-        //数组大小
-        int size =4;
-        //定义数组
-        double[] TestList = new double[size];
-        TestList[0] = 3.2;
-        TestList[1] = 2.6;
-        TestList[2] = 4.7;
-        TestList[3] = 5.6;
-
-        double total =0;
-        for (int i=0; i&</div>
         </div>
       </a>
 
@@ -561,6 +518,55 @@ H    一天中的小</div>
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java异常处理/">
+        <p class="h4 index-header">Java异常处理</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
+
+public class ExceptionDemo {
+    /*
+        三类异常
+        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
+        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
+        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
+     */
+
+    /*
+       内置异常类
+          非检查性异常
+            异常                                描述
+            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java正则表达式/">
         <p class="h4 index-header">Java正则表达式</p>
         
@@ -612,28 +618,43 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java基本数据类型/">
-        <p class="h4 index-header">Java基本数据类型</p>
+      <a href="/2016/03/02/Java对象和类/">
+        <p class="h4 index-header">Java对象和类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java基本数据类型public class DataType {
+          <div class="index-text mb-1">Java对象和类public class ObjectAndClass {
     /*
-        内置数据类型
-        引用数据类型
+    - 多态
+    - 继承
+    - 封装
+    - 抽象
+    - 类 ： 是一个模板，用来描述
+    - 对象 ： 是类class的一个实例，具有状态和行为
+    - 实例
+    - 方法
+    - 重载
      */
-    public static void main(String[] args) {
-        // byte
-        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);
-        System.out.println(&quot;包装类：java.lang.Byte&quot;);
-        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);
-        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);
-        System.out.println();
 
-        // short
-        System.out.println</div>
+    //定义一个Dog类
+    public static class Dog {
+        //成员变量
+        StringDemo color;
+        int age;
+        StringDemo name;
+
+        //类方法
+        void barking(){
+            System.out.println(&quot;汪！汪！汪！&quot;);
+        }
+
+        void hungry(){
+            System.out.println(&quot;好饿哦！&quot;);
+        }
+
+        void sle</div>
         </div>
       </a>
 

@@ -133,43 +133,28 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java对象和类/">
-        <p class="h4 index-header">Java对象和类</p>
+      <a href="/2016/03/02/Java基本数据类型/">
+        <p class="h4 index-header">Java基本数据类型</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java对象和类public class ObjectAndClass {
+          <div class="index-text mb-1">Java基本数据类型public class DataType {
     /*
-    - 多态
-    - 继承
-    - 封装
-    - 抽象
-    - 类 ： 是一个模板，用来描述
-    - 对象 ： 是类class的一个实例，具有状态和行为
-    - 实例
-    - 方法
-    - 重载
+        内置数据类型
+        引用数据类型
      */
+    public static void main(String[] args) {
+        // byte
+        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);
+        System.out.println(&quot;包装类：java.lang.Byte&quot;);
+        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);
+        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);
+        System.out.println();
 
-    //定义一个Dog类
-    public static class Dog {
-        //成员变量
-        StringDemo color;
-        int age;
-        StringDemo name;
-
-        //类方法
-        void barking(){
-            System.out.println(&quot;汪！汪！汪！&quot;);
-        }
-
-        void hungry(){
-            System.out.println(&quot;好饿哦！&quot;);
-        }
-
-        void sle</div>
+        // short
+        System.out.println</div>
         </div>
       </a>
 
@@ -252,6 +237,111 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/01/2016-03-01-产品思维/">
+        <p class="h4 index-header">产品思维</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">产品思维设计一个产品使用结构化思维，并优先考虑用户需求
+1、适当提问来理解需求点比如“设计一支笔”，“实现一个游戏类的促活活动”
+需要先咨询到这支笔面向的用户群体是什么，用户的使用场景是什么，要解决用户什么样的诉求，尺寸、颜色等各类个性化的诉求，更多的咨询能更全面的捕捉用户需求，捕捉到用户的痛点需求后，可以考虑怎么来设计产品，产品的迭代计划
+2、明确目标用户和消费者，为用户考虑有些情况，目标用户和消费者并不是同一群人，需要了解产品的目标用户 和消费者是什么样的人。
+消费者是愿为产品付费的人，用户是使用产品的人。
+更多时候用户并不是单一人群，很大可能是是不同的用户群。
+3、有哪些使用场景，用户为什么要使用这个产品
+列出案例清单
+列出用户使用产品所有可能的使用目的和使用场景
+
+
+评估案例优先级-是否解决核心痛点
+升华考虑，用户使用这个产品的潜在动机是什么，产品可以通过激发用户的潜在动机，来满足他们的使用目的和使用场景
+
+4、现有产品能否良好满足这些需求？这些产品是否存在明显的缺陷？例如音乐软件，一直都是一个音乐播放器，国人需要好的音乐，好的音乐没有被发现，发现的效率极低。
+5、什么功能/修</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-01&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+          
+            <a href="/categories/%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4">产品思维</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4">产品思维</a>&nbsp;
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/01/01/Markdown数学公式语法/">
+        <p class="h4 index-header">Markdown数学公式语法</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Markdown数学公式语法行内与独行
+行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$
+独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$
+
+上标、下标与组合
+上标符号，符号：^，如：$x^4$
+下标符号，符号：_，如：$x_1$
+组合符号，符号：{}，如：${16}{8}O{2+}{2}$
+
+汉字、字体与格式
+汉字形式，符号：\mbox{}，如：$V_{\mbox{初始}}$
+字体控制，符号：\displaystyle，如：$\displaystyle \frac{x+y}{y+z}$
+下划线符号，符号：\underline，如：$\underline{x+y}$
+标签，符号\tag{数字}，如：$\tag{11}$
+上大括号，符号：\overbrace{算式}，如：$\overbrace{a+b+c+d}^{2.0}$
+下大括号，符号：\underbrace{算式}，如：$a+\underbrace{b+c}_{1.0}+d$
+上位符号，符号：\stacrel{上位符号}{基位符号}，如：$\vec{x}\stackrel{\m</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-01-01&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Markdownd">Markdownd</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Markdown">Markdown</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/01/01/Markdown基本语法/">
         <p class="h4 index-header">Markdown基本语法</p>
         
@@ -300,57 +390,6 @@
 &gt;这是引用的内容
 &gt;&gt;这是引用的内容
 &g</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-01-01&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Markdownd">Markdownd</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Markdown">Markdown</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/01/01/Markdown数学公式语法/">
-        <p class="h4 index-header">Markdown数学公式语法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Markdown数学公式语法行内与独行
-行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$
-独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$
-
-上标、下标与组合
-上标符号，符号：^，如：$x^4$
-下标符号，符号：_，如：$x_1$
-组合符号，符号：{}，如：${16}{8}O{2+}{2}$
-
-汉字、字体与格式
-汉字形式，符号：\mbox{}，如：$V_{\mbox{初始}}$
-字体控制，符号：\displaystyle，如：$\displaystyle \frac{x+y}{y+z}$
-下划线符号，符号：\underline，如：$\underline{x+y}$
-标签，符号\tag{数字}，如：$\tag{11}$
-上大括号，符号：\overbrace{算式}，如：$\overbrace{a+b+c+d}^{2.0}$
-下大括号，符号：\underbrace{算式}，如：$a+\underbrace{b+c}_{1.0}+d$
-上位符号，符号：\stacrel{上位符号}{基位符号}，如：$\vec{x}\stackrel{\m</div>
         </div>
       </a>
 
