@@ -16,6 +16,16 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[保障交易/营销安全的措施]]></title>
+    <url>%2F2020%2F02%2F06%2F%E5%85%B3%E4%BA%8E%E4%B8%80%E4%BA%9B%E5%AE%89%E5%85%A8%E4%BA%A7%E5%93%81%E7%9A%84%E8%AE%A4%E7%9F%A5%2F</url>
+    <content type="text"><![CDATA[保障交易/营销安全的措施黄牛风险防控服务评估账号的限购评估，比如六个唯一，身份证号、账号、银行卡号、绑定手机号、设备号、户头号，怎样判别并鉴定是否为黄牛 黄牛防控策略1、创建黄牛防控策略 2、添加需要监控的商品信息/券信息 3、设置不同的监控级别 ​ 日常类、非秒杀类的商品/券，配置初级防控； ​ 秒杀类的商品/券，配置高级防控； 4、不同的防控级别设定，对账户设置不同的领取/购买量 5、设置策略生效时间 6、页面增加规则描述，黄牛拒发等通告 7、上线策略，指定生效时间段 8、策略列表，包含草稿、生效中、待生效、已失效 黄牛防控效果黄牛风险总览 提交订单买家量 黄牛买家拦截量 黄牛买家占比 黄牛订单拦截量 订单创建成功量 防控商品/券风险详情 商品/券关键词检索 时间段检索 防控商品/券的黄牛拦截趋势会员分析 黄牛订单用户中的新会员、老会员分布 成功订单用户中新会员、老会员分布 手动反馈录入漏防交易恶意订单风险防控服务退货类：买家频繁通过滥用退款售后权益 敲诈类：不以真实消费为目的，利用平台规则牟取利益的非正常消费者行为 攻击类 异常评价防控服务]]></content>
+      <tags>
+        <tag>产品</tag>
+        <tag>安全</tag>
+        <tag>运营</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[一个策略产品的自我修养]]></title>
     <url>%2F2020%2F02%2F05%2F%E4%B8%80%E4%B8%AA%E7%AD%96%E7%95%A5%E4%BA%A7%E5%93%81%E7%9A%84%E8%87%AA%E6%88%91%E4%BF%AE%E5%85%BB%2F</url>
     <content type="text"><![CDATA[策略产品 新闻推荐策略 增长策略 反欺诈策略 价格策略 后台策略 搜索策略 渲染策略 …… 不是一个明确的行业 不是一种具体的产品形态 是一种解决问题的手段 是一种实现目标的手段 策略四要素 待解决问题 输入—影响解决方案的因素 计算逻辑—将输入转换成为输出的规则 输出—具体的解决方案 策略产品与功能产品的区别发现问题阶段功能产品对用户人群诉求，抽象成为一套相对聚焦的需求 策略产品宏观想象各类用户的诉求，一群人更多样和更有统计意义的需求，需评估实现到什么程度 撰写需求、发起项目功能产品收敛的解决方案 通过流程和原型表达产品实现效果 策略产品发散的解决方案 通过逻辑描述和效果示例表达产品实现效果 跟进开发评估功能产品面对开发结果是验收的性质 更关注呈现效果、而非实现过程 策略产品更多参与过程 通过多轮评估深入参与开发过程 与策略RD一起发现各要素中的问题 产品上线后的回归&amp;新的产品循环功能产品更快达到理想态 面对明确单一的问题，通常可以更快达到较好效果 close该feature产品循环 策略产品可能是永无止境的产品循环 复杂且受很多因素影响的问题，需要多个产品循环才能达到理想效果 策略产品的工作流程 发现问题 上帝视角 面对的是一群人的问题 需求撰写 跟进评估 较强数据敏感度 从数据中发现问题，引导下一个产品循环 上线&amp;效果回归 拥抱不确定性 持续迭代在黑暗中寻找道路 策略产品发现问题的方法用户反馈处理用户反馈的基本流程 收集用户问题 自有渠道收集 外部渠道收集 用户反馈分析 数据处理：清洗、标注 问题管理：分析、汇总 整理撰写需求 落实产品改进 系统监控定义待监控指标告诉机器观察哪些指标 白盒部分–效果监控 用户操作行为 监控用户的体验，即产品的核心指标 该指标异常变化时需要重点即刻关注 黑盒部分–策略监控 策略产品—策略监控 监控某个策略的运转情况，对象为各类指标，监测大于监控 功能产品—技术监控 定义报警规则告诉机器什么通知&amp;以什么方式通知 触发报警条件 历史的波动数据 数据敏感度：波动是否超越历史波动范围 三西格玛理论：波动范围在+/- 三西格玛之内 指标重要程度 四象限方式 报警方式 监控指标的重要程度和波动幅度 监控的适用范围效果监控 产品满足效果 产品覆盖情况 策略监控 需求识别策略监控—需求识别 检索策略监控—检索 展现策略监控—结果展示 监控的局限性 考虑到准确率，监控覆盖的精度有限（策略意义上召回率） 监控可以发现异常，但通常不能直接定位问题，最终依然需要配合人工手段进行问题解决修复 ==人工排查繁琐且不经济，线上监控作为一种自动、实时、针对效果的问题发现方法，就显得愈发的重要。== 效果回归==效果回归是策略产品非常重要的一部分工作== 产品循环 判断产品循环是否中止 确定产品接下来的计划 自我成长 验证解决方案可行性 修正和巩固方法论 定义理想态任何一个产品都是用来解决用户的问题。 产品的理想态即给出的方案解决了用户的问题 ==所有的理想态都是为阶段性的产品目标服务，随着产品的进化，理想态的定义也在随着进化== 简单情况 对于大多数刚需和工具型产品，通常可以以【帮助用户解决了问题】作为理想态，并找到单一的数据指标来衡量 示例：滴滴 订单成交率 随着平台对服务的掌控能力增加，理想态在进化 应答率—成交率—到达目的地时间 示例：墨迹天气 天气准确率 复杂情况 示例：百度 搜索产品，通常以平台当前能够给出的最佳产品方案作为理想态。 示例：头条 推荐产品，通常以平台当前能够给出的最佳产品方案作为理想态 评估策略推荐出的结果在 候选集内是否最佳，用户行为指标作为发现问题的辅助手段 拆解未达理想态的情况提出解决方案验证是否解决==通用手段== 定义理想态：并以数字化的指标或其他明确标砖来衡量 抽样分析：将所有不达理想态的case抽样分析，并做统计分类，明确不好的原因 优先级判断：汇总所有问题，综合影响面、问题严重程度和解决成本确定优先级，作为接下来的项目计划 阶段性调研==阶段性调用针对产品现状进行系统性分析== ==此时产出的分析结论最能代表产品问题全貌，可有效指导阶段的产品计划== 阶段性调研的时间节点接触新产品接受某个产品方向的时候 周期性回顾每个月/季度/半年等固定周期的回顾 不定期回顾其他需要临时回顾整个产品现状时]]></content>
@@ -69,8 +79,8 @@
       </categories>
       <tags>
         <tag>产品</tag>
-        <tag>内容产品</tag>
         <tag>运营</tag>
+        <tag>内容产品</tag>
         <tag>内容社区</tag>
       </tags>
   </entry>
@@ -335,17 +345,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-多进程]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B%2F</url>
-    <content type="text"><![CDATA[多进程 系统进程 用户进程 并发执行 性能更高]]></content>
-      <categories>
-        <category>php</category>
-      </categories>
-      <tags>
-        <tag>php</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[php即时通讯-http]]></title>
     <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
     <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
@@ -368,6 +367,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[php即时通讯-多进程]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B%2F</url>
+    <content type="text"><![CDATA[多进程 系统进程 用户进程 并发执行 性能更高]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[php开发APP后端---学习异常监控]]></title>
     <url>%2F2019%2F01%2F22%2Fphp%E5%BC%80%E5%8F%91APP%E5%90%8E%E7%AB%AF---%E5%AD%A6%E4%B9%A0%E5%BC%82%E5%B8%B8%E7%9B%91%E6%8E%A7%2F</url>
     <content type="text"><![CDATA[APP端异常基本情况 Crash ，app突然发生闪退现象 卡顿 ， 出现画面卡顿 Exception ， 程序被catch的 exception ANR ， 出现提示无响应弹框（android） 数据收集方案 数据内容 Crash ，卡顿 ，exception， ANR 的次数 影响用户数 收集实现 表的设计]]></content>
@@ -380,9 +390,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---数据类型]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
+    <title><![CDATA[redis学习---安装入门]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -392,9 +402,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---安装入门]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
-    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
+    <title><![CDATA[redis学习---数据类型]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -663,9 +673,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[深度学习笔记——线性回归]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
+    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -677,9 +687,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
-    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
+    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -875,9 +885,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析08：matplotlib颜色与样式]]></title>
-    <url>%2F2018%2F03%2F02%2F08-matplotlib%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%A0%B7%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 颜色： - 八种内置默认颜色， 缩写 b :blue g :green r :red c :cyan m :magenta y :yellow k :black w :white - 其它颜色的表示方法 灰色阴影 html 十六进制 RGB 元组 &#39;&#39;&#39; y = np.arange(1,5) # 内置颜色表示 plt.plot(y,color =&#39;g&#39;) # 灰度表示方法 plt.plot(y+1,color = &#39;0.5&#39;) # html 十六进制 plt.plot(y+2,color = &#39;#ff00ff&#39;) # RGB 元组 plt.plot(y+3,color=(0.1,0.2,0.3)) plt.show() &#39;&#39;&#39; 线 linestyle =&#39;&#39; -- 虚线 -. 点化线 ： 点线 - 实线 样式字符串 可将 颜色，点型，线性 ，依次排列成一个字符串如： cx-- mo: kp- plt.plot(y,&#39;cx--&#39;) &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用样式字符串绘制两条线； 1、红色，实线，圆点 2、黄色，虚线，X点 3、绿色，点线，三角形点 &#39;&#39;&#39; y = np.arange(0,4) plt.plot(y,&#39;ro-&#39;,y+1,&#39;yx--&#39;,y+2,&#39;g&gt;:&#39;) plt.show()]]></content>
+    <title><![CDATA[数据分析07：matplotlib箱线图]]></title>
+    <url>%2F2018%2F03%2F02%2F07-matplotlib%E7%AE%B1%E7%BA%BF%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 箱形图（Box-plot）又称为盒须图，盒式图，或 箱线图； 是一种用在显示一组数据分散情况的资料统计图； 上边缘，上四分位数，中位数，下四分位数，下边缘，异常值； &#39;&#39;&#39; np.random.seed(100) data = np.random.normal(size=1000,loc=0,scale=1) # sym 指定异常值的点；whis虚线的长度， 通过调整whis的大小来决定收入异常值的多少 plt.boxplot(data,sym =&#39;o&#39;,whis=1.5) plt.show() # 同一张图中显示多个箱线图 # 4组 1000的数据 data = np.random.normal(size=(1000,4),loc = 0,scale=1) # 每组的标签为ABCD labels = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;] plt.boxplot(data,labels=labels) plt.show() # 练习 &#39;&#39;&#39; 随机生成 100 *5 的数组； 绘制箱线图，使用sym ,whis参数 &#39;&#39;&#39; data = np.random.normal(size=(100,5),loc = 0,scale=1) plt.boxplot(data,sym=&#39;o&#39;,whis=0.5) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python3</category>
@@ -890,9 +900,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析07：matplotlib箱线图]]></title>
-    <url>%2F2018%2F03%2F02%2F07-matplotlib%E7%AE%B1%E7%BA%BF%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 箱形图（Box-plot）又称为盒须图，盒式图，或 箱线图； 是一种用在显示一组数据分散情况的资料统计图； 上边缘，上四分位数，中位数，下四分位数，下边缘，异常值； &#39;&#39;&#39; np.random.seed(100) data = np.random.normal(size=1000,loc=0,scale=1) # sym 指定异常值的点；whis虚线的长度， 通过调整whis的大小来决定收入异常值的多少 plt.boxplot(data,sym =&#39;o&#39;,whis=1.5) plt.show() # 同一张图中显示多个箱线图 # 4组 1000的数据 data = np.random.normal(size=(1000,4),loc = 0,scale=1) # 每组的标签为ABCD labels = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;] plt.boxplot(data,labels=labels) plt.show() # 练习 &#39;&#39;&#39; 随机生成 100 *5 的数组； 绘制箱线图，使用sym ,whis参数 &#39;&#39;&#39; data = np.random.normal(size=(100,5),loc = 0,scale=1) plt.boxplot(data,sym=&#39;o&#39;,whis=0.5) plt.show()]]></content>
+    <title><![CDATA[数据分析08：matplotlib颜色与样式]]></title>
+    <url>%2F2018%2F03%2F02%2F08-matplotlib%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%A0%B7%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 颜色： - 八种内置默认颜色， 缩写 b :blue g :green r :red c :cyan m :magenta y :yellow k :black w :white - 其它颜色的表示方法 灰色阴影 html 十六进制 RGB 元组 &#39;&#39;&#39; y = np.arange(1,5) # 内置颜色表示 plt.plot(y,color =&#39;g&#39;) # 灰度表示方法 plt.plot(y+1,color = &#39;0.5&#39;) # html 十六进制 plt.plot(y+2,color = &#39;#ff00ff&#39;) # RGB 元组 plt.plot(y+3,color=(0.1,0.2,0.3)) plt.show() &#39;&#39;&#39; 线 linestyle =&#39;&#39; -- 虚线 -. 点化线 ： 点线 - 实线 样式字符串 可将 颜色，点型，线性 ，依次排列成一个字符串如： cx-- mo: kp- plt.plot(y,&#39;cx--&#39;) &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用样式字符串绘制两条线； 1、红色，实线，圆点 2、黄色，虚线，X点 3、绿色，点线，三角形点 &#39;&#39;&#39; y = np.arange(0,4) plt.plot(y,&#39;ro-&#39;,y+1,&#39;yx--&#39;,y+2,&#39;g&gt;:&#39;) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python3</category>
@@ -950,21 +960,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析03：matplotlib折线图]]></title>
-    <url>%2F2018%2F03%2F02%2F03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt import matplotlib.dates as mdates &#39;&#39;&#39; 折线图，用直线段将各数据连接起来组成的图形 常用来观察数据随时间变化的趋势 例如：股票价格，温度变化 &#39;&#39;&#39; date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True) plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;) plt.plot_date(date,open,linestyle=&#39;-&#39;,color=&quot;red&quot;,marker =&#39;o&#39;) plt.show() # 练习 &#39;&#39;&#39; 画出x值为[0,10]的正弦函数图像 &#39;&#39;&#39; x = np.linspace(0,10,100) y = np.sin(x) plt.plot(x,y) plt.show()]]></content>
-      <categories>
-        <category>数据分析</category>
-        <category>Python3</category>
-        <category>Matplotlib</category>
-      </categories>
-      <tags>
-        <tag>数据分析</tag>
-        <tag>Python3</tag>
-        <tag>Matplotlib</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[数据分析01：numpy基础]]></title>
     <url>%2F2018%2F03%2F02%2F01-numpy%E5%9F%BA%E7%A1%80%2F</url>
     <content type="text"><![CDATA[import numpy as np # ndarray &#39;&#39;&#39; # 三种创建方式 1、从python的基础数据对象转化 2、通过numpy内置的函数生成 3、从硬盘（文件）读取数据 &#39;&#39;&#39; # 创建方法一 a= [1,2,3,4] x1 = np.array(a) print(x1,&quot;\n&quot;,type(x1)) # 创建方法二 x = np.arange(5) print(x,&quot;\n&quot;,type(x)) # # 创建方法三 # date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True) # print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low) # 常用函数 &#39;&#39;&#39; min 最小值 max 最大值 median 中值 mean 均值 variance 方差 sort &#39;&#39;&#39; c = np.random.randint(1,100,10) print(np.sort(c)) print(np.mean(c)) # 练习 &#39;&#39;&#39; 使用numpy生成100以内的随机数组 将数组存储到文件，再从文件中读取数组 对数据进行sort ,max ,min ,mean ,variance &#39;&#39;&#39; N1 = np.random.randint(0,100,10) # 将N1 存储到文件中 np.savetxt(&quot;0002.cvs&quot;,N1,fmt = &quot;%d&quot;,delimiter=&quot;,&quot;,header=&quot;number&quot;) # 从文件中读取数组 N2 = np.loadtxt(&quot;0002.cvs&quot;,delimiter=&quot;,&quot;,skiprows=1) print(np.sort(N2)) print(np.max(N2))]]></content>
@@ -980,6 +975,21 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[数据分析03：matplotlib折线图]]></title>
+    <url>%2F2018%2F03%2F02%2F03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt import matplotlib.dates as mdates &#39;&#39;&#39; 折线图，用直线段将各数据连接起来组成的图形 常用来观察数据随时间变化的趋势 例如：股票价格，温度变化 &#39;&#39;&#39; date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True) plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;) plt.plot_date(date,open,linestyle=&#39;-&#39;,color=&quot;red&quot;,marker =&#39;o&#39;) plt.show() # 练习 &#39;&#39;&#39; 画出x值为[0,10]的正弦函数图像 &#39;&#39;&#39; x = np.linspace(0,10,100) y = np.sin(x) plt.plot(x,y) plt.show()]]></content>
+      <categories>
+        <category>数据分析</category>
+        <category>Python3</category>
+        <category>Matplotlib</category>
+      </categories>
+      <tags>
+        <tag>数据分析</tag>
+        <tag>Python3</tag>
+        <tag>Matplotlib</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[CentOS-Maven配置]]></title>
     <url>%2F2018%2F03%2F02%2FCentos-Maven%E9%85%8D%E7%BD%AE%2F</url>
     <content type="text"><![CDATA[Centos-Maven配置 配置maven镜像 &lt;mirror&gt; &lt;id&gt;alimaven&lt;/id&gt; &lt;name&gt;aliyun maven&lt;/name&gt; &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt; &lt;mirrorOf&gt;central&lt;/mirrorOf&gt; &lt;/mirror&gt; maven配置路径 export M2_HOME=/usr/local/maven3/apache-maven-3.6.3 export PATH=$PATH$:M2_HOME/bin source /etc/profile]]></content>
@@ -988,36 +998,8 @@
         <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>服务端</tag>
-        <tag>SpringBoot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[SpringBoot数据访问JPA]]></title>
-    <url>%2F2018%2F03%2F02%2FSpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA%2F</url>
-    <content type="text"><![CDATA[SpringBoot数据访问-整合JPA Entity –定义实体类，与数据表映射 Repository —定义操作，操作实体类中的数据表]]></content>
-      <categories>
-        <category>Java</category>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
         <tag>Java</tag>
-        <tag>服务端</tag>
-        <tag>SpringBoot</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[SpringBoot启动自定义方法]]></title>
-    <url>%2F2018%2F03%2F02%2FSpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart1 implements CommandLineRunner{ @Override public void run(String... args) throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments; import org.springframework.boot.ApplicationRunner; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart2 implements ApplicationRunner { @Override public void run(ApplicationArguments args) throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 三、初始化方法加上@PostConstruct注解import javax.annotation.PostConstruct; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart3{ @PostConstruct public void test() throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 四、其他实现思路import org.springframework.context.annotation.Bean; import org.springframework.context.annotation.Configuration; import com.gzy.demo.NettyClient; @Configuration public class MyStart4 { @Bean public String startNetty() { try { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } catch (Exception e) { e.printStackTrace(); } return &quot;startNetty&quot;; } }]]></content>
-      <categories>
-        <category>Java</category>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-        <tag>服务端</tag>
         <tag>SpringBoot</tag>
       </tags>
   </entry>
@@ -1030,10 +1012,38 @@
         <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>Java</tag>
         <tag>服务端</tag>
+        <tag>Java</tag>
         <tag>SpringBoot</tag>
         <tag>WebSocket</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SpringBoot启动自定义方法]]></title>
+    <url>%2F2018%2F03%2F02%2FSpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart1 implements CommandLineRunner{ @Override public void run(String... args) throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments; import org.springframework.boot.ApplicationRunner; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart2 implements ApplicationRunner { @Override public void run(ApplicationArguments args) throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 三、初始化方法加上@PostConstruct注解import javax.annotation.PostConstruct; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart3{ @PostConstruct public void test() throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 四、其他实现思路import org.springframework.context.annotation.Bean; import org.springframework.context.annotation.Configuration; import com.gzy.demo.NettyClient; @Configuration public class MyStart4 { @Bean public String startNetty() { try { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } catch (Exception e) { e.printStackTrace(); } return &quot;startNetty&quot;; } }]]></content>
+      <categories>
+        <category>Java</category>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>服务端</tag>
+        <tag>Java</tag>
+        <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SpringBoot数据访问JPA]]></title>
+    <url>%2F2018%2F03%2F02%2FSpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA%2F</url>
+    <content type="text"><![CDATA[SpringBoot数据访问-整合JPA Entity –定义实体类，与数据表映射 Repository —定义操作，操作实体类中的数据表]]></content>
+      <categories>
+        <category>Java</category>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>服务端</tag>
+        <tag>Java</tag>
+        <tag>SpringBoot</tag>
       </tags>
   </entry>
   <entry>
@@ -1148,9 +1158,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[MySQL深入浅出--MySQL相关操作]]></title>
-    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[MySQL 操作配置文件​ my.cnf 是 MySQL 的配置文件 登录/退出MySQL注意： ​ 1、命令行结束符号使用英文分号; 或者 \g ​ 2、通过help 或者\h 或者?加上相关关键字 来查看手册 ​ 3、\c可以取消当前命令的执行 登录 mysql -uroot -p mysql -uroot -proot mysql -hlocalhost -uroot -p -P3306 登录同时修改命令提示符 mysql -uroot -p –prompt=命令提示符 获取版本号 mysql -V mysql –version 登录同时打开指定数据库 mysql -uroot -p -D db_name 退出 exit quit \q ctrl + c SQL语句语法规范 常用MySQL的关键字需要大写 库名、表名、字段名称等使用小写 SQL语句支持折行操作，拆分的时候不能把完整单词拆开 数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来 常用SQL语句 SELECT USER() 得到登录的用户 SELECT VERSION() 得到MySQL的版本信息 SELECT NOW() 得到当前的日期时间 SELECT DATABASE() 得到当前打开的数据库]]></content>
+    <title><![CDATA[MySQL深入浅出--数据库相关操作]]></title>
+    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[数据库相关操作 创建数据库 CREATE {DATABASE|SCHEMA} db_name; 检测数据库名称是否存在，不存在则创建 CREATE DATABASE [IF NOT EXISTS] db_name; 创建数据库同时指定编码方式 CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset; 查看当前服务器下全部数据库 SHOW DATABASES|SCHEMAS; 查看指定数据库详细信息 SHOW CREATE DATABASE db_name; 修改指定数据库的编码方式 ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset; 打开指定数据库 USE db_name; 得到当前打开的数据库 SELECT DATABASE()|SCHEMA(); 删除指定的数据库 DROP DATABASE db_name; 如果数据库存在则删除 DROP DATABASE [IF EXISTS] db_name;]]></content>
       <categories>
         <category>Linux</category>
         <category>MySQL</category>
@@ -1160,9 +1170,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[MySQL深入浅出--数据库相关操作]]></title>
-    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
-    <content type="text"><![CDATA[数据库相关操作 创建数据库 CREATE {DATABASE|SCHEMA} db_name; 检测数据库名称是否存在，不存在则创建 CREATE DATABASE [IF NOT EXISTS] db_name; 创建数据库同时指定编码方式 CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset; 查看当前服务器下全部数据库 SHOW DATABASES|SCHEMAS; 查看指定数据库详细信息 SHOW CREATE DATABASE db_name; 修改指定数据库的编码方式 ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset; 打开指定数据库 USE db_name; 得到当前打开的数据库 SELECT DATABASE()|SCHEMA(); 删除指定的数据库 DROP DATABASE db_name; 如果数据库存在则删除 DROP DATABASE [IF EXISTS] db_name;]]></content>
+    <title><![CDATA[MySQL深入浅出--MySQL相关操作]]></title>
+    <url>%2F2017%2F10%2F25%2FMySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C%2F</url>
+    <content type="text"><![CDATA[MySQL 操作配置文件​ my.cnf 是 MySQL 的配置文件 登录/退出MySQL注意： ​ 1、命令行结束符号使用英文分号; 或者 \g ​ 2、通过help 或者\h 或者?加上相关关键字 来查看手册 ​ 3、\c可以取消当前命令的执行 登录 mysql -uroot -p mysql -uroot -proot mysql -hlocalhost -uroot -p -P3306 登录同时修改命令提示符 mysql -uroot -p –prompt=命令提示符 获取版本号 mysql -V mysql –version 登录同时打开指定数据库 mysql -uroot -p -D db_name 退出 exit quit \q ctrl + c SQL语句语法规范 常用MySQL的关键字需要大写 库名、表名、字段名称等使用小写 SQL语句支持折行操作，拆分的时候不能把完整单词拆开 数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来 常用SQL语句 SELECT USER() 得到登录的用户 SELECT VERSION() 得到MySQL的版本信息 SELECT NOW() 得到当前的日期时间 SELECT DATABASE() 得到当前打开的数据库]]></content>
       <categories>
         <category>Linux</category>
         <category>MySQL</category>
@@ -1245,31 +1255,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-NumberMath类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-NumberMath%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-NumberMath类public class NumberAndMath { //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类 // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数 private static void test(double num) { System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num)); System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num)); System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num)); } public static void main(String[] args) { System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2)); System.out.println(&quot;0度的余弦值&quot; + Math.cos(0)); System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3)); System.out.println(&quot;1的反正切值&quot; + Math.atan(1)); System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2)); double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6}; for (double num : nums) { test(num); } /* 序号 方法与描述 1 xxxValue() 将 Number 对象转换为xxx数据类型的值并返回。 2 compareTo() 将number对象与参数比较。 3 equals() 判断number对象是否与参数相等。 4 valueOf() 返回一个 Number 对象指定的内置数据类型 5 toString() 以字符串形式返回值。 6 parseInt() 将字符串解析为int类型。 7 abs() 返回参数的绝对值。 8 ceil() 返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。 9 floor() 返回小于等于（&lt;=）给定参数的最大整数 。 10 rint() 返回与参数最接近的整数。返回类型为double。 11 round() 它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。 12 min() 返回两个参数中的最小值。 13 max() 返回两个参数中的最大值。 14 exp() 返回自然数底数e的参数次方。 15 log() 返回参数的自然数底数的对数值。 16 pow() 返回第一个参数的第二个参数次方。 17 sqrt() 求参数的算术平方根。 18 sin() 求指定double类型参数的正弦值。 19 cos() 求指定double类型参数的余弦值。 20 tan() 求指定double类型参数的正切值。 21 asin() 求指定double类型参数的反正弦值。 22 acos() 求指定double类型参数的反余弦值。 23 atan() 求指定double类型参数的反正切值。 24 atan2() 将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。 25 toDegrees() 将参数转化为角度。 26 toRadians() 将角度转换为弧度。 27 random() 返回一个随机数。 */ } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java-Character类]]></title>
     <url>%2F2016%2F03%2F02%2FJava-Character%E7%B1%BB%2F</url>
     <content type="text"><![CDATA[Java-Character类public class CharacterDemo { // 对单个字符进行操作 /* 转义序列 描述 \t 在文中该处插入一个tab键 \b 在文中该处插入一个后退键 \n 在文中该处换行 \r 在文中该处插入回车 \f 在文中该处插入换页符 \&#39; 在文中该处插入单引号 \&quot; 在文中该处插入双引号 \\ 在文中该处插入反斜杠 */ //字符方法 /* 序号 方法与描述 1 isLetter() 是否是一个字母 2 isDigit() 是否是一个数字字符 3 isWhitespace() 是否是一个空白字符 4 isUpperCase() 是否是大写字母 5 isLowerCase() 是否是小写字母 6 toUpperCase() 指定字母的大写形式 7 toLowerCase() 指定字母的小写形式 8 toString() 返回字符的字符串形式，字符串的长度仅为1 */ public static void main(String[] args) { System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;); } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java-FileStreamIO]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-FileStreamIO%2F</url>
-    <content type="text"><![CDATA[Java-FileStreamIOimport java.io.*; public class StreamFileIODemo { public void printChar() throws IOException { //使用BufferedReader从控制台读取输入 char c; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符，按Q键退出&quot;); do { //read() 读取字符 c = (char) br1.read(); System.out.println(c); } while (c != &#39;Q&#39;); } public void printStr() throws IOException{ String str1; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;); do { //readLine() 读取字符串 str1 = br1.readLine(); System.out.println(str1); } while (!str1.equals(&quot;end&quot;)); } public void ReadFileDemo() throws IOException{ //FileInputStream 从文件读取数据 // File f = new File(&quot;C:/java/hello&quot;); // InputStream out = new FileInputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public int read(int r)throws IOException{} 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 4 public int read(byte[] r) throws IOException{} 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 5 public int available() throws IOException{} 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 */ System.out.println(&quot;打印输出读取文件demo&quot;); InputStream is1 = new FileInputStream(&quot;test.txt&quot;); int size = is1.available(); for (int i=0;i&lt;size;i++) { System.out.println((char) is1.read()); } } public void WriteFileDemo() throws IOException { //FileOutputStream 创建一个文件向文件中写数据 // File f = new File(&quot;C:/java/hello&quot;); // OutputStream f = new FileOutputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public void write(int w)throws IOException{} 这个方法把指定的字节写到输出流中。 4 public void write(byte[] w) 把指定数组中w.length长度的字节写到OutputStream中。 */ System.out.println(&quot;打印输出写入文件demo&quot;); byte bWrite[] = {11,21,3,38,5}; OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;); for (int i=0;i&lt;bWrite.length;i++){ os1.write(bWrite[i]); } os1.close(); } public void CreateDirs(){ //文件和I/O ，目录 /* File类 - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。 - mkdirs()方法创建一个文件夹和它的所有父文件夹。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;; File dir1 = new File(dirname); // 创建目录 dir1.mkdirs(); } public void ReadDirs(){ /* 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。 如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。 可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;; File dir2 = new File(dirname); if (dir2.isDirectory()){ System.out.println(&quot;目录&quot;+ dirname); String[] s1 = dir2.list(); for (int i=0;i&lt;s1.length;i++){ File f = new File(dirname + &#39;/&#39; + s1[i]); if (f.isDirectory()){ System.out.println(s1[i] + &quot;是一个目录&quot;); }else { System.out.println(s1[i] + &quot;是一个文件&quot;); } } }else { System.out.println(dirname +&quot;不是一个目录&quot;); } } public void DeleteDirs(){ //删除文件/目录 /* 删除文件可以使用 java.io.File.delete() 方法 当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;; File dir3 = new File(dirname); File[] files = dir3.listFiles(); if (files != null){ for (File f: files){ if (!f.isDirectory()){ f.delete(); } } } dir3.delete(); System.out.println(&quot;删除成功&quot;); } public static void main(String[] args) throws IOException { StreamFileIODemo s = new StreamFileIODemo(); // s.printChar(); // s.printStr(); // s.WriteFileDemo(); // s.CreateDirs(); // s.ReadDirs(); s.DeleteDirs(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1289,9 +1277,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-StringBuffer]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
-    <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
+    <title><![CDATA[Java-NumberMath类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-NumberMath%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-NumberMath类public class NumberAndMath { //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类 // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数 private static void test(double num) { System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num)); System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num)); System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num)); } public static void main(String[] args) { System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2)); System.out.println(&quot;0度的余弦值&quot; + Math.cos(0)); System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3)); System.out.println(&quot;1的反正切值&quot; + Math.atan(1)); System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2)); double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6}; for (double num : nums) { test(num); } /* 序号 方法与描述 1 xxxValue() 将 Number 对象转换为xxx数据类型的值并返回。 2 compareTo() 将number对象与参数比较。 3 equals() 判断number对象是否与参数相等。 4 valueOf() 返回一个 Number 对象指定的内置数据类型 5 toString() 以字符串形式返回值。 6 parseInt() 将字符串解析为int类型。 7 abs() 返回参数的绝对值。 8 ceil() 返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。 9 floor() 返回小于等于（&lt;=）给定参数的最大整数 。 10 rint() 返回与参数最接近的整数。返回类型为double。 11 round() 它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。 12 min() 返回两个参数中的最小值。 13 max() 返回两个参数中的最大值。 14 exp() 返回自然数底数e的参数次方。 15 log() 返回参数的自然数底数的对数值。 16 pow() 返回第一个参数的第二个参数次方。 17 sqrt() 求参数的算术平方根。 18 sin() 求指定double类型参数的正弦值。 19 cos() 求指定double类型参数的余弦值。 20 tan() 求指定double类型参数的正切值。 21 asin() 求指定double类型参数的反正弦值。 22 acos() 求指定double类型参数的反余弦值。 23 atan() 求指定double类型参数的反正切值。 24 atan2() 将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。 25 toDegrees() 将参数转化为角度。 26 toRadians() 将角度转换为弧度。 27 random() 返回一个随机数。 */ } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1311,9 +1299,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-SwitchCase语句]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-SwitchCase%2F</url>
-    <content type="text"><![CDATA[Java-SwitchCase语句public class SwitchCase { //switch case语句 判断一个变量与一系列值中某个值是否相等，每个值称为一个分支 // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。 /* switch(expression){ case value : //语句 break; //可选 case value : //语句 break; //可选 //你可以有任意数量的case语句 default : //可选 //语句 不需要break } */ public static void main(String[]args){ char grade =&#39;C&#39;; switch (grade) { case &#39;A&#39;: System.out.println(&quot;优秀&quot;); break; case &#39;B&#39;: case &#39;C&#39;: System.out.println(&quot;良好&quot;); break; case &#39;D&#39;: System.out.println(&quot;及格&quot;); break; case &#39;F&#39;: System.out.println(&quot;你还需要继续努力&quot;); break; default: System.out.println(&quot;未知等级&quot;); } System.out.println(&quot;你的等级是&quot; + grade); } }]]></content>
+    <title><![CDATA[Java-StringBuffer]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
+    <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1322,9 +1310,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java数组]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
-    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
+    <title><![CDATA[Java-FileStreamIO]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-FileStreamIO%2F</url>
+    <content type="text"><![CDATA[Java-FileStreamIOimport java.io.*; public class StreamFileIODemo { public void printChar() throws IOException { //使用BufferedReader从控制台读取输入 char c; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符，按Q键退出&quot;); do { //read() 读取字符 c = (char) br1.read(); System.out.println(c); } while (c != &#39;Q&#39;); } public void printStr() throws IOException{ String str1; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;); do { //readLine() 读取字符串 str1 = br1.readLine(); System.out.println(str1); } while (!str1.equals(&quot;end&quot;)); } public void ReadFileDemo() throws IOException{ //FileInputStream 从文件读取数据 // File f = new File(&quot;C:/java/hello&quot;); // InputStream out = new FileInputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public int read(int r)throws IOException{} 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 4 public int read(byte[] r) throws IOException{} 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 5 public int available() throws IOException{} 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 */ System.out.println(&quot;打印输出读取文件demo&quot;); InputStream is1 = new FileInputStream(&quot;test.txt&quot;); int size = is1.available(); for (int i=0;i&lt;size;i++) { System.out.println((char) is1.read()); } } public void WriteFileDemo() throws IOException { //FileOutputStream 创建一个文件向文件中写数据 // File f = new File(&quot;C:/java/hello&quot;); // OutputStream f = new FileOutputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public void write(int w)throws IOException{} 这个方法把指定的字节写到输出流中。 4 public void write(byte[] w) 把指定数组中w.length长度的字节写到OutputStream中。 */ System.out.println(&quot;打印输出写入文件demo&quot;); byte bWrite[] = {11,21,3,38,5}; OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;); for (int i=0;i&lt;bWrite.length;i++){ os1.write(bWrite[i]); } os1.close(); } public void CreateDirs(){ //文件和I/O ，目录 /* File类 - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。 - mkdirs()方法创建一个文件夹和它的所有父文件夹。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;; File dir1 = new File(dirname); // 创建目录 dir1.mkdirs(); } public void ReadDirs(){ /* 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。 如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。 可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;; File dir2 = new File(dirname); if (dir2.isDirectory()){ System.out.println(&quot;目录&quot;+ dirname); String[] s1 = dir2.list(); for (int i=0;i&lt;s1.length;i++){ File f = new File(dirname + &#39;/&#39; + s1[i]); if (f.isDirectory()){ System.out.println(s1[i] + &quot;是一个目录&quot;); }else { System.out.println(s1[i] + &quot;是一个文件&quot;); } } }else { System.out.println(dirname +&quot;不是一个目录&quot;); } } public void DeleteDirs(){ //删除文件/目录 /* 删除文件可以使用 java.io.File.delete() 方法 当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;; File dir3 = new File(dirname); File[] files = dir3.listFiles(); if (files != null){ for (File f: files){ if (!f.isDirectory()){ f.delete(); } } } dir3.delete(); System.out.println(&quot;删除成功&quot;); } public static void main(String[] args) throws IOException { StreamFileIODemo s = new StreamFileIODemo(); // s.printChar(); // s.printStr(); // s.WriteFileDemo(); // s.CreateDirs(); // s.ReadDirs(); s.DeleteDirs(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1344,9 +1332,31 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Java异常处理]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%2F</url>
+    <content type="text"><![CDATA[Java异常处理import java.lang.Exception; public class ExceptionDemo { /* 三类异常 - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。 - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。 - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。 */ /* 内置异常类 非检查性异常 异常 描述 ArithmeticException 当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。 ArrayIndexOutOfBoundsException 用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。 ArrayStoreException 试图将错误类型的对象存储到一个对象数组时抛出的异常。 ClassCastException 当试图将对象强制转换为不是实例的子类时，抛出该异常。 IllegalArgumentException 抛出的异常表明向方法传递了一个不合法或不正确的参数。 IllegalMonitorStateException 抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。 IllegalStateException 在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。 IllegalThreadStateException 线程没有处于请求操作所要求的适当状态时抛出的异常。 IndexOutOfBoundsException 指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。 NegativeArraySizeException 如果应用程序试图创建大小为负的数组，则抛出该异常。 NullPointerException 当应用程序试图在需要对象的地方使用 null 时，抛出该异常 NumberFormatException 当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。 SecurityException 由安全管理器抛出的异常，指示存在安全侵犯。 StringIndexOutOfBoundsException 此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。 UnsupportedOperationException 当不支持请求的操作时，抛出该异常。 检查性异常类 异常 描述 ClassNotFoundException 应用程序试图加载类时，找不到相应的类，抛出该异常。 CloneNotSupportedException 当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。 IllegalAccessException 拒绝访问一个类的时候，抛出该异常。 InstantiationException 当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。 InterruptedException 一个线程被另一个线程中断，抛出该异常。 NoSuchFieldException 请求的变量不存在 NoSuchMethodException 请求的方法不存在 */ /* throws/throw 关键字 finally 关键字 finally 关键字用来创建在 try 代码块后面执行的代码块。 无论是否发生异常，finally 代码块中的代码总会被执行。 在 finally 代码块中，可以运行清理类型等收尾善后性质的语句 try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }finally{ // 程序代码 } */ public void getExceptiondemo(){ //捕获异常 /* try { // 程序代码 }catch(ExceptionName e1) { //Catch 块 } */ // 多重捕获异常 /* try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 } */ try { int[] a = new int[2]; System.out.println(a[3]); }catch (ArrayIndexOutOfBoundsException e){ System.out.println(&quot;Exception thrown&quot; +e); } System.out.println(&quot;out of the block&quot;); } public static void main(String[] args){ ExceptionDemo exp = new ExceptionDemo(); exp.getExceptiondemo(); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java日期和时间]]></title>
     <url>%2F2016%2F03%2F02%2FJava%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%2F</url>
     <content type="text"><![CDATA[Java日期和时间import java.text.SimpleDateFormat; import java.util.Date; import java.util.*; public class DateTimeDemo { //日期时间 public static void main(String[] args){ //获取当前时间 Date date = new Date(); System.out.println(date.toString()); //格式化日期 /* 日期和时间的格式化编码 时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下： 字母 描述 示例 G 纪元标记 AD y 四位年份 2001 M 月份 July or 07 d 一个月的日期 10 h A.M./P.M. (1~12)格式小时 12 H 一天中的小时 (0~23) 22 m 分钟数 30 s 秒数 55 S 毫秒数 234 E 星期几 Tuesday D 一年中的日子 360 F 一个月中第几周的周几 2 (second Wed. in July) w 一年中第几周 40 W 一个月中第几周 1 a A.M./P.M. 标记 PM k 一天中的小时(1~24) 24 K A.M./P.M. (0~11)格式小时 10 z 时区 Eastern Standard Time &#39; 文字定界符 Delimiter &quot; 单引号 ` */ SimpleDateFormat ft = new SimpleDateFormat(&quot;yyyy-MM-dd hh:mm:ss&quot;); System.out.println(&quot;SimpleDateFormat时间格式转换&quot;); System.out.println(ft.format(date)); //printf格式化时间 以%t 开头 /* 转 换 符 说 明 示 例 c 包括全部日期和时间信息 星期六 十月 27 14:21:20 CST 2007 F &quot;年-月-日&quot;格式 2007-10-27 D &quot;月/日/年&quot;格式 10/27/07 r &quot;HH:MM:SS PM&quot;格式（12时制） 02:25:51 下午 T &quot;HH:MM:SS&quot;格式（24时制） 14:28:16 R &quot;HH:MM&quot;格式（24时制） 14:28 */ System.out.println(&quot;printf时间格式转换&quot;); System.out.printf(&quot;全部日期和时间信息：%tc%n&quot;,date); System.out.printf(&quot;年-月-日格式：%tF%n&quot;,date); System.out.printf(&quot;月/日/年格式：%tD%n&quot;,date); System.out.printf(&quot;HH:MM:SS PM(12小时)：%tr%n&quot;,date); System.out.printf(&quot;HH:MM:SS (24小时)：%tT%n&quot;,date); System.out.printf(&quot;HH:MM (24小时)：%tR%n&quot;,date); //定义日期转换字符，抽取转换为新字符串 System.out.println(&quot;使日期转换生成新字符串&quot;); //b的使用，月份简称 String str=String.format(Locale.US,&quot;英文月份简称：%tb&quot;,date); System.out.println(str); System.out.printf(&quot;本地月份简称：%tb%n&quot;,date); //B的使用，月份全称 str=String.format(Locale.US,&quot;英文月份全称：%tB&quot;,date); System.out.println(str); System.out.printf(&quot;本地月份全称：%tB%n&quot;,date); //a的使用，星期简称 str=String.format(Locale.US,&quot;英文星期的简称：%ta&quot;,date); System.out.println(str); //A的使用，星期全称 System.out.printf(&quot;本地星期的简称：%tA%n&quot;,date); //C的使用，年前两位 System.out.printf(&quot;年的前两位数字（不足两位前面补0）：%tC%n&quot;,date); //y的使用，年后两位 System.out.printf(&quot;年的后两位数字（不足两位前面补0）：%ty%n&quot;,date); //j的使用，一年的天数 System.out.printf(&quot;一年中的天数（即年的第几天）：%tj%n&quot;,date); //m的使用，月份 System.out.printf(&quot;两位数字的月份（不足两位前面补0）：%tm%n&quot;,date); //d的使用，日（二位，不够补零） System.out.printf(&quot;两位数字的日（不足两位前面补0）：%td%n&quot;,date); //e的使用，日（一位不补零） System.out.printf(&quot;月份的日（前面不补0）：%te&quot;,date); //Calendar 对象 /* 常量 描述 Calendar.YEAR 年份 Calendar.MONTH 月份 Calendar.DATE 日期 Calendar.DAY_OF_MONTH 日期，和上面的字段意义完全相同 Calendar.HOUR 12小时制的小时 Calendar.HOUR_OF_DAY 24小时制的小时 Calendar.MINUTE 分钟 Calendar.SECOND 秒 Calendar.DAY_OF_WEEK 星期几 */ //GregorianCalendar类 /* 序号 构造函数和说明 1 GregorianCalendar() 在具有默认语言环境的默认时区内使用当前时间构造一个默认的 GregorianCalendar。 2 GregorianCalendar(int year, int month, int date) 在具有默认语言环境的默认时区内构造一个带有给定日期设置的 GregorianCalendar 3 GregorianCalendar(int year, int month, int date, int hour, int minute) 为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。 4 GregorianCalendar(int year, int month, int date, int hour, int minute, int second) 为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。 5 GregorianCalendar(Locale aLocale) 在具有给定语言环境的默认时区内构造一个基于当前时间的 GregorianCalendar。 6 GregorianCalendar(TimeZone zone) 在具有默认语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。 7 GregorianCalendar(TimeZone zone, Locale aLocale) 在具有给定语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。 这里是GregorianCalendar 类提供的一些有用的方法列表： 序号 方法和说明 1 void add(int field, int amount) 根据日历规则，将指定的（有符号的）时间量添加到给定的日历字段中。 2 protected void computeFields() 转换UTC毫秒值为时间域值 3 protected void computeTime() 覆盖Calendar ，转换时间域值为UTC毫秒值 4 boolean equals(Object obj) 比较此 GregorianCalendar 与指定的 Object。 5 int get(int field) 获取指定字段的时间值 6 int getActualMaximum(int field) 返回当前日期，给定字段的最大值 7 int getActualMinimum(int field) 返回当前日期，给定字段的最小值 8 int getGreatestMinimum(int field) 返回此 GregorianCalendar 实例给定日历字段的最高的最小值。 9 Date getGregorianChange() 获得格里高利历的更改日期。 10 int getLeastMaximum(int field) 返回此 GregorianCalendar 实例给定日历字段的最低的最大值 11 int getMaximum(int field) 返回此 GregorianCalendar 实例的给定日历字段的最大值。 12 Date getTime() 获取日历当前时间。 13 long getTimeInMillis() 获取用长整型表示的日历的当前时间 14 TimeZone getTimeZone() 获取时区。 15 int getMinimum(int field) 返回给定字段的最小值。 16 int hashCode() 重写hashCode. 17 boolean isLeapYear(int year) 确定给定的年份是否为闰年。 18 void roll(int field, boolean up) 在给定的时间字段上添加或减去（上/下）单个时间单元，不更改更大的字段。 19 void set(int field, int value) 用给定的值设置时间字段。 20 void set(int year, int month, int date) 设置年、月、日的值。 21 void set(int year, int month, int date, int hour, int minute) 设置年、月、日、小时、分钟的值。 22 void set(int year, int month, int date, int hour, int minute, int second) 设置年、月、日、小时、分钟、秒的值。 23 void setGregorianChange(Date date) 设置 GregorianCalendar 的更改日期。 24 void setTime(Date date) 用给定的日期设置Calendar的当前时间。 25 void setTimeInMillis(long millis) 用给定的long型毫秒数设置Calendar的当前时间。 26 void setTimeZone(TimeZone value) 用给定时区值设置当前时区。 27 String toString() 返回代表日历的字符串。 */ String months[] = { &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;}; int year; // 初始化 Gregorian 日历 // 使用当前时间和日期 // 默认为本地时间和时区 GregorianCalendar gcalendar = new GregorianCalendar(); // 显示当前时间和日期的信息 System.out.print(&quot;Date: &quot;); System.out.print(months[gcalendar.get(Calendar.MONTH)]); System.out.print(&quot; &quot; + gcalendar.get(Calendar.DATE) + &quot; &quot;); System.out.println(year = gcalendar.get(Calendar.YEAR)); System.out.print(&quot;Time: &quot;); System.out.print(gcalendar.get(Calendar.HOUR) + &quot;:&quot;); System.out.print(gcalendar.get(Calendar.MINUTE) + &quot;:&quot;); System.out.println(gcalendar.get(Calendar.SECOND)); // 测试当前年份是否为闰年 if(gcalendar.isLeapYear(year)) { System.out.println(&quot;当前年份是闰年&quot;); } else { System.out.println(&quot;当前年份不是闰年&quot;); } } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java数组]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1366,17 +1376,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java异常处理]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%2F</url>
-    <content type="text"><![CDATA[Java异常处理import java.lang.Exception; public class ExceptionDemo { /* 三类异常 - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。 - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。 - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。 */ /* 内置异常类 非检查性异常 异常 描述 ArithmeticException 当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。 ArrayIndexOutOfBoundsException 用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。 ArrayStoreException 试图将错误类型的对象存储到一个对象数组时抛出的异常。 ClassCastException 当试图将对象强制转换为不是实例的子类时，抛出该异常。 IllegalArgumentException 抛出的异常表明向方法传递了一个不合法或不正确的参数。 IllegalMonitorStateException 抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。 IllegalStateException 在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。 IllegalThreadStateException 线程没有处于请求操作所要求的适当状态时抛出的异常。 IndexOutOfBoundsException 指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。 NegativeArraySizeException 如果应用程序试图创建大小为负的数组，则抛出该异常。 NullPointerException 当应用程序试图在需要对象的地方使用 null 时，抛出该异常 NumberFormatException 当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。 SecurityException 由安全管理器抛出的异常，指示存在安全侵犯。 StringIndexOutOfBoundsException 此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。 UnsupportedOperationException 当不支持请求的操作时，抛出该异常。 检查性异常类 异常 描述 ClassNotFoundException 应用程序试图加载类时，找不到相应的类，抛出该异常。 CloneNotSupportedException 当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。 IllegalAccessException 拒绝访问一个类的时候，抛出该异常。 InstantiationException 当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。 InterruptedException 一个线程被另一个线程中断，抛出该异常。 NoSuchFieldException 请求的变量不存在 NoSuchMethodException 请求的方法不存在 */ /* throws/throw 关键字 finally 关键字 finally 关键字用来创建在 try 代码块后面执行的代码块。 无论是否发生异常，finally 代码块中的代码总会被执行。 在 finally 代码块中，可以运行清理类型等收尾善后性质的语句 try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }finally{ // 程序代码 } */ public void getExceptiondemo(){ //捕获异常 /* try { // 程序代码 }catch(ExceptionName e1) { //Catch 块 } */ // 多重捕获异常 /* try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 } */ try { int[] a = new int[2]; System.out.println(a[3]); }catch (ArrayIndexOutOfBoundsException e){ System.out.println(&quot;Exception thrown&quot; +e); } System.out.println(&quot;out of the block&quot;); } public static void main(String[] args){ ExceptionDemo exp = new ExceptionDemo(); exp.getExceptiondemo(); } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java正则表达式]]></title>
     <url>%2F2016%2F03%2F02%2FJava%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[Java正则表达式import java.util.regex.*; public class RegularExpressionDemo { /* Pattern 类： pattern 对象是一个正则表达式的编译表示。 Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。 该方法接受一个正则表达式作为它的第一个参数。 Matcher 类： Matcher 对象是对输入字符串进行解释和匹配操作的引擎。 与Pattern 类一样，Matcher 也没有公共构造方法。 需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。 PatternSyntaxException： PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。 */ /* 正则表达式语法 字符 说明 \ 将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如，&quot;n&quot;匹配字符&quot;n&quot;。&quot;\n&quot;匹配换行符。序列&quot;\\\\&quot;匹配&quot;\\&quot;，&quot;\\(&quot;匹配&quot;(&quot;。 ^ 匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与&quot;\n&quot;或&quot;\r&quot;之后的位置匹配。 $ 匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与&quot;\n&quot;或&quot;\r&quot;之前的位置匹配。 * 零次或多次匹配前面的字符或子表达式。例如，zo* 匹配&quot;z&quot;和&quot;zoo&quot;。* 等效于 {0,}。 + 一次或多次匹配前面的字符或子表达式。例如，&quot;zo+&quot;与&quot;zo&quot;和&quot;zoo&quot;匹配，但与&quot;z&quot;不匹配。+ 等效于 {1,}。 ? 零次或一次匹配前面的字符或子表达式。例如，&quot;do(es)?&quot;匹配&quot;do&quot;或&quot;does&quot;中的&quot;do&quot;。? 等效于 {0,1}。 {n} n 是非负整数。正好匹配 n 次。例如，&quot;o{2}&quot;与&quot;Bob&quot;中的&quot;o&quot;不匹配，但与&quot;food&quot;中的两个&quot;o&quot;匹配。 {n,} n 是非负整数。至少匹配 n 次。例如，&quot;o{2,}&quot;不匹配&quot;Bob&quot;中的&quot;o&quot;，而匹配&quot;foooood&quot;中的所有 o。&quot;o{1,}&quot;等效于&quot;o+&quot;。&quot;o{0,}&quot;等效于&quot;o*&quot;。 {n,m} m 和 n 是非负整数，其中 n &lt;= m。匹配至少 n 次，至多 m 次。例如，&quot;o{1,3}&quot;匹配&quot;fooooood&quot;中的头三个 o。&#39;o{0,1}&#39; 等效于 &#39;o?&#39;。注意：您不能将空格插入逗号和数字之间。 ? 当此字符紧随任何其他限定符（*、+、?、{n}、{n,}、{n,m}）之后时，匹配模式是&quot;非贪心的&quot;。&quot;非贪心的&quot;模式匹配搜索到的、尽可能短的字符串，而默认的&quot;贪心的&quot;模式匹配搜索到的、尽可能长的字符串。例如，在字符串&quot;oooo&quot;中，&quot;o+?&quot;只匹配单个&quot;o&quot;，而&quot;o+&quot;匹配所有&quot;o&quot;。 . 匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。 (pattern) 匹配 pattern 并捕获该匹配的子表达式。可以使用 $0…$9 属性从结果&quot;匹配&quot;集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用&quot;\(&quot;或者&quot;\)&quot;。 (?:pattern) 匹配 pattern 但不捕获该匹配的子表达式，即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用&quot;or&quot;字符 (|) 组合模式部件的情况很有用。例如，&#39;industr(?:y|ies) 是比 &#39;industry|industries&#39; 更经济的表达式。 (?=pattern) 执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 pattern 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?=95|98|NT|2000)&#39; 匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;，但不匹配&quot;Windows 3.1&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。 (?!pattern) 执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 pattern 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?!95|98|NT|2000)&#39; 匹配&quot;Windows 3.1&quot;中的 &quot;Windows&quot;，但不匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。 x|y 匹配 x 或 y。例如，&#39;z|food&#39; 匹配&quot;z&quot;或&quot;food&quot;。&#39;(z|f)ood&#39; 匹配&quot;zood&quot;或&quot;food&quot;。 [xyz] 字符集。匹配包含的任一字符。例如，&quot;[abc]&quot;匹配&quot;plain&quot;中的&quot;a&quot;。 [^xyz] 反向字符集。匹配未包含的任何字符。例如，&quot;[^abc]&quot;匹配&quot;plain&quot;中&quot;p&quot;，&quot;l&quot;，&quot;i&quot;，&quot;n&quot;。 [a-z] 字符范围。匹配指定范围内的任何字符。例如，&quot;[a-z]&quot;匹配&quot;a&quot;到&quot;z&quot;范围内的任何小写字母。 [^a-z] 反向范围字符。匹配不在指定的范围内的任何字符。例如，&quot;[^a-z]&quot;匹配任何不在&quot;a&quot;到&quot;z&quot;范围内的任何字符。 \b 匹配一个字边界，即字与空格间的位置。例如，&quot;er\b&quot;匹配&quot;never&quot;中的&quot;er&quot;，但不匹配&quot;verb&quot;中的&quot;er&quot;。 \B 非字边界匹配。&quot;er\B&quot;匹配&quot;verb&quot;中的&quot;er&quot;，但不匹配&quot;never&quot;中的&quot;er&quot;。 \cx 匹配 x 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。x 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是&quot;c&quot;字符本身。 \d 数字字符匹配。等效于 [0-9]。 \D 非数字字符匹配。等效于 [^0-9]。 \f 换页符匹配。等效于 \x0c 和 \cL。 \n 换行符匹配。等效于 \x0a 和 \cJ。 \r 匹配一个回车符。等效于 \x0d 和 \cM。 \s 匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。 \S 匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。 \t 制表符匹配。与 \x09 和 \cI 等效。 \v 垂直制表符匹配。与 \x0b 和 \cK 等效。 \w 匹配任何字类字符，包括下划线。与&quot;[A-Za-z0-9_]&quot;等效。 \W 与任何非单词字符匹配。与&quot;[^A-Za-z0-9_]&quot;等效。 \xn 匹配 n，此处的 n 是一个十六进制转义码。十六进制转义码必须正好是两位数长。例如，&quot;\x41&quot;匹配&quot;A&quot;。&quot;\x041&quot;与&quot;\x04&quot;&amp;&quot;1&quot;等效。允许在正则表达式中使用 ASCII 代码。 \num 匹配 num，此处的 num 是一个正整数。到捕获匹配的反向引用。例如，&quot;(.)\1&quot;匹配两个连续的相同字符。 \n 标识一个八进制转义码或反向引用。如果 \n 前面至少有 n 个捕获子表达式，那么 n 是反向引用。否则，如果 n 是八进制数 (0-7)，那么 n 是八进制转义码。 \nm 标识一个八进制转义码或反向引用。如果 \nm 前面至少有 nm 个捕获子表达式，那么 nm 是反向引用。如果 \nm 前面至少有 n 个捕获，则 n 是反向引用，后面跟有字符 m。如果两种前面的情况都不存在，则 \nm 匹配八进制值 nm，其中 n 和 m 是八进制数字 (0-7)。 \nml 当 n 是八进制数 (0-3)，m 和 l 是八进制数 (0-7) 时，匹配八进制转义码 nml。 */ }]]></content>
@@ -1388,9 +1387,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java对象和类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java对象和类public class ObjectAndClass { /* - 多态 - 继承 - 封装 - 抽象 - 类 ： 是一个模板，用来描述 - 对象 ： 是类class的一个实例，具有状态和行为 - 实例 - 方法 - 重载 */ //定义一个Dog类 public static class Dog { //成员变量 StringDemo color; int age; StringDemo name; //类方法 void barking(){ System.out.println(&quot;汪！汪！汪！&quot;); } void hungry(){ System.out.println(&quot;好饿哦！&quot;); } void sleeping(){ System.out.println(&quot;好困哦！&quot;); } void setAge(int age){ this.age = age; } } public static void main(String[]args) { /* 创建对象 声明： 声明一个对象， 对象类型 和对象名称 实例化： new创建 初始化： 创建时调用构造方法生成 */ Dog dog = new Dog(); dog.hungry(); dog.barking(); dog.sleeping(); System.out.println(dog.age); dog.setAge(24); System.out.println(dog.age); } }]]></content>
+    <title><![CDATA[Java-SwitchCase语句]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-SwitchCase%2F</url>
+    <content type="text"><![CDATA[Java-SwitchCase语句public class SwitchCase { //switch case语句 判断一个变量与一系列值中某个值是否相等，每个值称为一个分支 // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。 /* switch(expression){ case value : //语句 break; //可选 case value : //语句 break; //可选 //你可以有任意数量的case语句 default : //可选 //语句 不需要break } */ public static void main(String[]args){ char grade =&#39;C&#39;; switch (grade) { case &#39;A&#39;: System.out.println(&quot;优秀&quot;); break; case &#39;B&#39;: case &#39;C&#39;: System.out.println(&quot;良好&quot;); break; case &#39;D&#39;: System.out.println(&quot;及格&quot;); break; case &#39;F&#39;: System.out.println(&quot;你还需要继续努力&quot;); break; default: System.out.println(&quot;未知等级&quot;); } System.out.println(&quot;你的等级是&quot; + grade); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1402,6 +1401,17 @@
     <title><![CDATA[Java基本数据类型]]></title>
     <url>%2F2016%2F03%2F02%2FJava%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
     <content type="text"><![CDATA[Java基本数据类型public class DataType { /* 内置数据类型 引用数据类型 */ public static void main(String[] args) { // byte System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE); System.out.println(&quot;包装类：java.lang.Byte&quot;); System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE); System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE); System.out.println(); // short System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE); System.out.println(&quot;包装类：java.lang.Short&quot;); System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE); System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE); System.out.println(); // int System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE); System.out.println(&quot;包装类：java.lang.Integer&quot;); System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE); System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE); System.out.println(); // long System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE); System.out.println(&quot;包装类：java.lang.Long&quot;); System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE); System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE); System.out.println(); // float System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE); System.out.println(&quot;包装类：java.lang.Float&quot;); System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE); System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE); System.out.println(); // double System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE); System.out.println(&quot;包装类：java.lang.Double&quot;); System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE); System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE); System.out.println(); // char System.out.println(&quot;基本类型：char 二进制位数：&quot; + Character.SIZE); System.out.println(&quot;包装类：java.lang.Character&quot;); // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台 System.out.println(&quot;最小值：Character.MIN_VALUE=&quot; + (int) Character.MIN_VALUE); // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台 System.out.println(&quot;最大值：Character.MAX_VALUE=&quot; + (int) Character.MAX_VALUE); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java对象和类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java对象和类public class ObjectAndClass { /* - 多态 - 继承 - 封装 - 抽象 - 类 ： 是一个模板，用来描述 - 对象 ： 是类class的一个实例，具有状态和行为 - 实例 - 方法 - 重载 */ //定义一个Dog类 public static class Dog { //成员变量 StringDemo color; int age; StringDemo name; //类方法 void barking(){ System.out.println(&quot;汪！汪！汪！&quot;); } void hungry(){ System.out.println(&quot;好饿哦！&quot;); } void sleeping(){ System.out.println(&quot;好困哦！&quot;); } void setAge(int age){ this.age = age; } } public static void main(String[]args) { /* 创建对象 声明： 声明一个对象， 对象类型 和对象名称 实例化： new创建 初始化： 创建时调用构造方法生成 */ Dog dog = new Dog(); dog.hungry(); dog.barking(); dog.sleeping(); System.out.println(dog.age); dog.setAge(24); System.out.println(dog.age); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1434,9 +1444,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Markdown数学公式语法]]></title>
-    <url>%2F2016%2F01%2F01%2FMarkdown%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[Markdown数学公式语法行内与独行 行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$ 独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$ 上标、下标与组合 上标符号，符号：^，如：$x^4$ 下标符号，符号：_，如：$x_1$ 组合符号，符号：{}，如：${16}{8}O{2+}{2}$ 汉字、字体与格式 汉字形式，符号：\mbox{}，如：$V_{\mbox{初始}}$ 字体控制，符号：\displaystyle，如：$\displaystyle \frac{x+y}{y+z}$ 下划线符号，符号：\underline，如：$\underline{x+y}$ 标签，符号\tag{数字}，如：$\tag{11}$ 上大括号，符号：\overbrace{算式}，如：$\overbrace{a+b+c+d}^{2.0}$ 下大括号，符号：\underbrace{算式}，如：$a+\underbrace{b+c}_{1.0}+d$ 上位符号，符号：\stacrel{上位符号}{基位符号}，如：$\vec{x}\stackrel{\mathrm{def}}{=}{x_1,\dots,x_n}$ 占位符 两个quad空格，符号：\qquad，如：$x \qquad y$ quad空格，符号：\quad，如：$x \quad y$ 大空格，符号\，如：$x \ y$ 中空格，符号\:，如：$x : y$ 小空格，符号\,，如：$x , y$ 没有空格，符号，如：$xy$ 紧贴，符号\!，如：$x ! y$ 定界符与组合 括号，符号：（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)，如：$（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)$ 中括号，符号：[]，如：$[x+y]$ 大括号，符号：\{ \}，如：${x+y}$ 自适应括号，符号：\left \right，如：$\left(x\right)$，$\left(x{yz}\right)$ 组合公式，符号：{上位公式 \choose 下位公式}，如：${n+1 \choose k}={n \choose k}+{n \choose k-1}$ 组合公式，符号：{上位公式 \atop 下位公式}，如：$\sum_{k_0,k_1,\ldots&gt;0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$ 四则运算 加法运算，符号：+，如：$x+y=z$ 减法运算，符号：-，如：$x-y=z$ 加减运算，符号：\pm，如：$x \pm y=z$ 减甲运算，符号：\mp，如：$x \mp y=z$ 乘法运算，符号：\times，如：$x \times y=z$ 点乘运算，符号：\cdot，如：$x \cdot y=z$ 星乘运算，符号：\ast，如：$x \ast y=z$ 除法运算，符号：\div，如：$x \div y=z$ 斜法运算，符号：/，如：$x/y=z$ 分式表示，符号：\frac{分子}{分母}，如：$\frac{x+y}{y+z}$ 分式表示，符号：{分子} \voer {分母}，如：${x+y} \over {y+z}$ 绝对值表示，符号：||，如：$|x+y|$ 高级运算 平均数运算，符号：\overline{算式}，如：$\overline{xyz}$ 开二次方运算，符号：\sqrt，如：$\sqrt x$ 开方运算，符号：\sqrt[开方数]{被开方数}，如：$\sqrt[3]{x+y}$ 对数运算，符号：\log，如：$\log(x)$ 极限运算，符号：\lim，如：$\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$ 极限运算，符号：\displaystyle \lim，如：$\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$ 求和运算，符号：\sum，如：$\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$ 求和运算，符号：\displaystyle \sum，如：$\displaystyle \sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$ 积分运算，符号：\int，如：$\int^{\infty}_{0}{xdx}$ 积分运算，符号：\displaystyle \int，如：$\displaystyle \int^{\infty}_{0}{xdx}$ 微分运算，符号：\partial，如：$\frac{\partial x}{\partial y}$ 矩阵表示，符号：\begin{matrix} \end{matrix}，如：$\left[ \begin{matrix} 1 &amp;2 &amp;\cdots &amp;4\5 &amp;6 &amp;\cdots &amp;8\vdots &amp;\vdots &amp;\ddots &amp;\vdots\13 &amp;14 &amp;\cdots &amp;16\end{matrix} \right]$ 逻辑运算 等于运算，符号：=，如：$x+y=z$ 大于运算，符号：&gt;，如：$x+y&gt;z$ 小于运算，符号：&lt;，如：$x+y&lt;z$ 大于等于运算，符号：\geq，如：$x+y \geq z$ 小于等于运算，符号：\leq，如：$x+y \leq z$ 不等于运算，符号：\neq，如：$x+y \neq z$ 不大于等于运算，符号：\ngeq，如：$x+y \ngeq z$ 不大于等于运算，符号：\not\geq，如：$x+y \not\geq z$ 不小于等于运算，符号：\nleq，如：$x+y \nleq z$ 不小于等于运算，符号：\not\leq，如：$x+y \not\leq z$ 约等于运算，符号：\approx，如：$x+y \approx z$ 恒定等于运算，符号：\equiv，如：$x+y \equiv z$ 集合运算 属于运算，符号：\in，如：$x \in y$ 不属于运算，符号：\notin，如：$x \notin y$ 不属于运算，符号：\not\in，如：$x \not\in y$ 子集运算，符号：\subset，如：$x \subset y$ 子集运算，符号：\supset，如：$x \supset y$ 真子集运算，符号：\subseteq，如：$x \subseteq y$ 非真子集运算，符号：\subsetneq，如：$x \subsetneq y$ 真子集运算，符号：\supseteq，如：$x \supseteq y$ 非真子集运算，符号：\supsetneq，如：$x \supsetneq y$ 非子集运算，符号：\not\subset，如：$x \not\subset y$ 非子集运算，符号：\not\supset，如：$x \not\supset y$ 并集运算，符号：\cup，如：$x \cup y$ 交集运算，符号：\cap，如：$x \cap y$ 差集运算，符号：\setminus，如：$x \setminus y$ 同或运算，符号：\bigodot，如：$x \bigodot y$ 同与运算，符号：\bigotimes，如：$x \bigotimes y$ 实数集合，符号：\mathbb{R}，如：\mathbb{R} 自然数集合，符号：\mathbb{Z}，如：\mathbb{Z} 空集，符号：\emptyset，如：$\emptyset$ 数学符号 无穷，符号：\infty，如：$\infty$ 虚数，符号：\imath，如：$\imath$ 虚数，符号：\jmath，如：$\jmath$ 数学符号，符号\hat{a}，如：$\hat{a}$ 数学符号，符号\check{a}，如：$\check{a}$ 数学符号，符号\breve{a}，如：$\breve{a}$ 数学符号，符号\tilde{a}，如：$\tilde{a}$ 数学符号，符号\bar{a}，如：$\bar{a}$ 矢量符号，符号\vec{a}，如：$\vec{a}$ 数学符号，符号\acute{a}，如：$\acute{a}$ 数学符号，符号\grave{a}，如：$\grave{a}$ 数学符号，符号\mathring{a}，如：$\mathring{a}$ 一阶导数符号，符号\dot{a}，如：$\dot{a}$ 二阶导数符号，符号\ddot{a}，如：$\ddot{a}$ 上箭头，符号：\uparrow，如：$\uparrow$ 上箭头，符号：\Uparrow，如：$\Uparrow$ 下箭头，符号：\downarrow，如：$\downarrow$ 下箭头，符号：\Downarrow，如：$\Downarrow$ 左箭头，符号：\leftarrow，如：$\leftarrow$ 左箭头，符号：\Leftarrow，如：$\Leftarrow$ 右箭头，符号：\rightarrow，如：$\rightarrow$ 右箭头，符号：\Rightarrow，如：$\Rightarrow$ 底端对齐的省略号，符号：\ldots，如：$1,2,\ldots,n$ 中线对齐的省略号，符号：\cdots，如：$x_1^2 + x_2^2 + \cdots + x_n^2$ 竖直对齐的省略号，符号：\vdots，如：$\vdots$ 斜对齐的省略号，符号：\ddots，如：$\ddots$ 希腊字母 字母 实现 字母 实现 A A α \alhpa B B β \beta Γ \Gamma γ \gamma Δ \Delta δ \delta E E ϵ \epsilon Z Z ζ \zeta H H η \eta Θ \Theta θ \theta I I ι \iota K K κ \kappa Λ \Lambda λ \lambda M M μ \mu N N ν \nu Ξ \Xi ξ \xi O O ο \omicron Π \Pi π \pi P P ρ \rho Σ \Sigma σ \sigma T T τ \tau Υ \Upsilon υ \upsilon Φ \Phi ϕ \phi X X χ \chi Ψ \Psi ψ \psi Ω \v ω \omega]]></content>
+    <title><![CDATA[Markdown基本语法]]></title>
+    <url>%2F2016%2F01%2F01%2FMarkdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[Markdown基本语法一、标题一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。 注：标准语法一般在#后跟个空格再写文字 # 这是一级标题 ## 这是二级标题 ### 这是三级标题 #### 这是四级标题 ##### 这是五级标题 ###### 这是六级标题 效果如下： 这是一级标题这是二级标题这是三级标题这是四级标题这是五级标题这是六级标题 二、字体 加粗 要加粗的文字左右分别用两个*号包起来 斜体 要倾斜的文字左右分别用一个*号包起来 斜体加粗 要倾斜和加粗的文字左右分别用三个*号包起来 删除线 要加删除线的文字左右分别用两个~~号包起来 示例： **这是加粗的文字** *这是倾斜的文字*` ***这是斜体加粗的文字*** ~~这是加删除线的文字~~ 效果如下： 这是加粗的文字 这是倾斜的文字 这是斜体加粗的文字\ 这是加删除线的文字 三、引用在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt; n个… 貌似可以一直加下去，但没神马卵用 示例： &gt;这是引用的内容 &gt;&gt;这是引用的内容 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容 效果如下： 这是引用的内容 这是引用的内容 这是引用的内容 四、分割线三个或者三个以上的 - 或者 * 都可以。 示例： --- ---- *** ***** 效果如下： 可以看到，显示效果是一样的。 五、图片语法： ![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;) 图片alt就是显示在图片下面的文字，相当于对图片内容的解释。 图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加 示例： 上传本地图片直接点击导航栏的图片标志，选择图片即可 六、超链接语法： [超链接名](超链接地址 &quot;超链接title&quot;) title可加可不加 示例： [简书](http://jianshu.com) [百度](http://baidu.com) 效果如下： 简书 百度 注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。 示例： &lt;a href=&quot;超链接地址&quot; target=&quot;_blank&quot;&gt;超链接名&lt;/a&gt; 简书 七、列表 无序列表 语法： 无序列表用 - + * 任何一种都可以 - 列表内容 + 列表内容 * 列表内容 注意：- + * 跟内容之间都要有一个空格 效果如下： 列表内容 列表内容 列表内容 有序列表 语法： 数字加点 1. 列表内容 2. 列表内容 3. 列表内容 注意：序号跟内容之间要有空格 效果如下： 列表内容 列表内容 列表内容 列表嵌套 上一级和下一级之间敲三个空格即可 一级无序列表内容 二级无序列表内容 二级无序列表内容 二级无序列表内容 一级无序列表内容 二级有序列表内容 二级有序列表内容 二级有序列表内容 一级有序列表内容 二级无序列表内容 二级无序列表内容 二级无序列表内容 一级有序列表内容 二级有序列表内容 二级有序列表内容 二级有序列表内容 八、表格语法： 表头|表头|表头 ---|:--:|---: 内容|内容|内容 内容|内容|内容 第二行分割表头和内容。 - 有一个就行，为了对齐，多加了几个 文字默认居左 -两边加：表示文字居中 -右边加：表示文字居右 注：原生的语法两边都要用 | 包起来。此处省略 示例： 姓名|技能|排行 --|:--:|--: 刘备|哭|大哥 关羽|打|二哥 张飞|骂|三弟 效果如下： 姓名 技能 排行 刘备 哭 大哥 关羽 打 二哥 张飞 骂 三弟 九、代码语法： 单行代码：代码之间分别用一个反引号包起来 `代码内容` 代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行 (```) 代码... 代码... 代码... (```) 注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。 示例： 单行代码 `create database hero;` 代码块 (```) function fun(){ echo &quot;这是一句非常牛逼的代码&quot;; } fun(); (```) 效果如下： 单行代码 create database hero; 代码块 function fun(){ echo &quot;这是一句非常牛逼的代码&quot;; } fun(); 十、流程图```flow st=&gt;start: 开始 op=&gt;operation: My Operation cond=&gt;condition: Yes or No? e=&gt;end st-&gt;op-&gt;cond cond(yes)-&gt;e cond(no)-&gt;op &amp;``` st=&gt;start: 开始 op=&gt;operation: My Operation cond=&gt;condition: Yes or No? e=&gt;end st-&gt;op-&gt;cond cond(yes)-&gt;e cond(no)-&gt;op &amp; `]]></content>
       <categories>
         <category>Markdownd</category>
       </categories>
@@ -1445,9 +1455,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Markdown基本语法]]></title>
-    <url>%2F2016%2F01%2F01%2FMarkdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[Markdown基本语法一、标题一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。 注：标准语法一般在#后跟个空格再写文字 # 这是一级标题 ## 这是二级标题 ### 这是三级标题 #### 这是四级标题 ##### 这是五级标题 ###### 这是六级标题 效果如下： 这是一级标题这是二级标题这是三级标题这是四级标题这是五级标题这是六级标题 二、字体 加粗 要加粗的文字左右分别用两个*号包起来 斜体 要倾斜的文字左右分别用一个*号包起来 斜体加粗 要倾斜和加粗的文字左右分别用三个*号包起来 删除线 要加删除线的文字左右分别用两个~~号包起来 示例： **这是加粗的文字** *这是倾斜的文字*` ***这是斜体加粗的文字*** ~~这是加删除线的文字~~ 效果如下： 这是加粗的文字 这是倾斜的文字 这是斜体加粗的文字\ 这是加删除线的文字 三、引用在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt; n个… 貌似可以一直加下去，但没神马卵用 示例： &gt;这是引用的内容 &gt;&gt;这是引用的内容 &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容 效果如下： 这是引用的内容 这是引用的内容 这是引用的内容 四、分割线三个或者三个以上的 - 或者 * 都可以。 示例： --- ---- *** ***** 效果如下： 可以看到，显示效果是一样的。 五、图片语法： ![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;) 图片alt就是显示在图片下面的文字，相当于对图片内容的解释。 图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加 示例： 上传本地图片直接点击导航栏的图片标志，选择图片即可 六、超链接语法： [超链接名](超链接地址 &quot;超链接title&quot;) title可加可不加 示例： [简书](http://jianshu.com) [百度](http://baidu.com) 效果如下： 简书 百度 注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。 示例： &lt;a href=&quot;超链接地址&quot; target=&quot;_blank&quot;&gt;超链接名&lt;/a&gt; 简书 七、列表 无序列表 语法： 无序列表用 - + * 任何一种都可以 - 列表内容 + 列表内容 * 列表内容 注意：- + * 跟内容之间都要有一个空格 效果如下： 列表内容 列表内容 列表内容 有序列表 语法： 数字加点 1. 列表内容 2. 列表内容 3. 列表内容 注意：序号跟内容之间要有空格 效果如下： 列表内容 列表内容 列表内容 列表嵌套 上一级和下一级之间敲三个空格即可 一级无序列表内容 二级无序列表内容 二级无序列表内容 二级无序列表内容 一级无序列表内容 二级有序列表内容 二级有序列表内容 二级有序列表内容 一级有序列表内容 二级无序列表内容 二级无序列表内容 二级无序列表内容 一级有序列表内容 二级有序列表内容 二级有序列表内容 二级有序列表内容 八、表格语法： 表头|表头|表头 ---|:--:|---: 内容|内容|内容 内容|内容|内容 第二行分割表头和内容。 - 有一个就行，为了对齐，多加了几个 文字默认居左 -两边加：表示文字居中 -右边加：表示文字居右 注：原生的语法两边都要用 | 包起来。此处省略 示例： 姓名|技能|排行 --|:--:|--: 刘备|哭|大哥 关羽|打|二哥 张飞|骂|三弟 效果如下： 姓名 技能 排行 刘备 哭 大哥 关羽 打 二哥 张飞 骂 三弟 九、代码语法： 单行代码：代码之间分别用一个反引号包起来 `代码内容` 代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行 (```) 代码... 代码... 代码... (```) 注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。 示例： 单行代码 `create database hero;` 代码块 (```) function fun(){ echo &quot;这是一句非常牛逼的代码&quot;; } fun(); (```) 效果如下： 单行代码 create database hero; 代码块 function fun(){ echo &quot;这是一句非常牛逼的代码&quot;; } fun(); 十、流程图```flow st=&gt;start: 开始 op=&gt;operation: My Operation cond=&gt;condition: Yes or No? e=&gt;end st-&gt;op-&gt;cond cond(yes)-&gt;e cond(no)-&gt;op &amp;``` st=&gt;start: 开始 op=&gt;operation: My Operation cond=&gt;condition: Yes or No? e=&gt;end st-&gt;op-&gt;cond cond(yes)-&gt;e cond(no)-&gt;op &amp; `]]></content>
+    <title><![CDATA[Markdown数学公式语法]]></title>
+    <url>%2F2016%2F01%2F01%2FMarkdown%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[Markdown数学公式语法行内与独行 行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$ 独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$ 上标、下标与组合 上标符号，符号：^，如：$x^4$ 下标符号，符号：_，如：$x_1$ 组合符号，符号：{}，如：${16}{8}O{2+}{2}$ 汉字、字体与格式 汉字形式，符号：\mbox{}，如：$V_{\mbox{初始}}$ 字体控制，符号：\displaystyle，如：$\displaystyle \frac{x+y}{y+z}$ 下划线符号，符号：\underline，如：$\underline{x+y}$ 标签，符号\tag{数字}，如：$\tag{11}$ 上大括号，符号：\overbrace{算式}，如：$\overbrace{a+b+c+d}^{2.0}$ 下大括号，符号：\underbrace{算式}，如：$a+\underbrace{b+c}_{1.0}+d$ 上位符号，符号：\stacrel{上位符号}{基位符号}，如：$\vec{x}\stackrel{\mathrm{def}}{=}{x_1,\dots,x_n}$ 占位符 两个quad空格，符号：\qquad，如：$x \qquad y$ quad空格，符号：\quad，如：$x \quad y$ 大空格，符号\，如：$x \ y$ 中空格，符号\:，如：$x : y$ 小空格，符号\,，如：$x , y$ 没有空格，符号，如：$xy$ 紧贴，符号\!，如：$x ! y$ 定界符与组合 括号，符号：（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)，如：$（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)$ 中括号，符号：[]，如：$[x+y]$ 大括号，符号：\{ \}，如：${x+y}$ 自适应括号，符号：\left \right，如：$\left(x\right)$，$\left(x{yz}\right)$ 组合公式，符号：{上位公式 \choose 下位公式}，如：${n+1 \choose k}={n \choose k}+{n \choose k-1}$ 组合公式，符号：{上位公式 \atop 下位公式}，如：$\sum_{k_0,k_1,\ldots&gt;0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$ 四则运算 加法运算，符号：+，如：$x+y=z$ 减法运算，符号：-，如：$x-y=z$ 加减运算，符号：\pm，如：$x \pm y=z$ 减甲运算，符号：\mp，如：$x \mp y=z$ 乘法运算，符号：\times，如：$x \times y=z$ 点乘运算，符号：\cdot，如：$x \cdot y=z$ 星乘运算，符号：\ast，如：$x \ast y=z$ 除法运算，符号：\div，如：$x \div y=z$ 斜法运算，符号：/，如：$x/y=z$ 分式表示，符号：\frac{分子}{分母}，如：$\frac{x+y}{y+z}$ 分式表示，符号：{分子} \voer {分母}，如：${x+y} \over {y+z}$ 绝对值表示，符号：||，如：$|x+y|$ 高级运算 平均数运算，符号：\overline{算式}，如：$\overline{xyz}$ 开二次方运算，符号：\sqrt，如：$\sqrt x$ 开方运算，符号：\sqrt[开方数]{被开方数}，如：$\sqrt[3]{x+y}$ 对数运算，符号：\log，如：$\log(x)$ 极限运算，符号：\lim，如：$\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$ 极限运算，符号：\displaystyle \lim，如：$\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$ 求和运算，符号：\sum，如：$\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$ 求和运算，符号：\displaystyle \sum，如：$\displaystyle \sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$ 积分运算，符号：\int，如：$\int^{\infty}_{0}{xdx}$ 积分运算，符号：\displaystyle \int，如：$\displaystyle \int^{\infty}_{0}{xdx}$ 微分运算，符号：\partial，如：$\frac{\partial x}{\partial y}$ 矩阵表示，符号：\begin{matrix} \end{matrix}，如：$\left[ \begin{matrix} 1 &amp;2 &amp;\cdots &amp;4\5 &amp;6 &amp;\cdots &amp;8\vdots &amp;\vdots &amp;\ddots &amp;\vdots\13 &amp;14 &amp;\cdots &amp;16\end{matrix} \right]$ 逻辑运算 等于运算，符号：=，如：$x+y=z$ 大于运算，符号：&gt;，如：$x+y&gt;z$ 小于运算，符号：&lt;，如：$x+y&lt;z$ 大于等于运算，符号：\geq，如：$x+y \geq z$ 小于等于运算，符号：\leq，如：$x+y \leq z$ 不等于运算，符号：\neq，如：$x+y \neq z$ 不大于等于运算，符号：\ngeq，如：$x+y \ngeq z$ 不大于等于运算，符号：\not\geq，如：$x+y \not\geq z$ 不小于等于运算，符号：\nleq，如：$x+y \nleq z$ 不小于等于运算，符号：\not\leq，如：$x+y \not\leq z$ 约等于运算，符号：\approx，如：$x+y \approx z$ 恒定等于运算，符号：\equiv，如：$x+y \equiv z$ 集合运算 属于运算，符号：\in，如：$x \in y$ 不属于运算，符号：\notin，如：$x \notin y$ 不属于运算，符号：\not\in，如：$x \not\in y$ 子集运算，符号：\subset，如：$x \subset y$ 子集运算，符号：\supset，如：$x \supset y$ 真子集运算，符号：\subseteq，如：$x \subseteq y$ 非真子集运算，符号：\subsetneq，如：$x \subsetneq y$ 真子集运算，符号：\supseteq，如：$x \supseteq y$ 非真子集运算，符号：\supsetneq，如：$x \supsetneq y$ 非子集运算，符号：\not\subset，如：$x \not\subset y$ 非子集运算，符号：\not\supset，如：$x \not\supset y$ 并集运算，符号：\cup，如：$x \cup y$ 交集运算，符号：\cap，如：$x \cap y$ 差集运算，符号：\setminus，如：$x \setminus y$ 同或运算，符号：\bigodot，如：$x \bigodot y$ 同与运算，符号：\bigotimes，如：$x \bigotimes y$ 实数集合，符号：\mathbb{R}，如：\mathbb{R} 自然数集合，符号：\mathbb{Z}，如：\mathbb{Z} 空集，符号：\emptyset，如：$\emptyset$ 数学符号 无穷，符号：\infty，如：$\infty$ 虚数，符号：\imath，如：$\imath$ 虚数，符号：\jmath，如：$\jmath$ 数学符号，符号\hat{a}，如：$\hat{a}$ 数学符号，符号\check{a}，如：$\check{a}$ 数学符号，符号\breve{a}，如：$\breve{a}$ 数学符号，符号\tilde{a}，如：$\tilde{a}$ 数学符号，符号\bar{a}，如：$\bar{a}$ 矢量符号，符号\vec{a}，如：$\vec{a}$ 数学符号，符号\acute{a}，如：$\acute{a}$ 数学符号，符号\grave{a}，如：$\grave{a}$ 数学符号，符号\mathring{a}，如：$\mathring{a}$ 一阶导数符号，符号\dot{a}，如：$\dot{a}$ 二阶导数符号，符号\ddot{a}，如：$\ddot{a}$ 上箭头，符号：\uparrow，如：$\uparrow$ 上箭头，符号：\Uparrow，如：$\Uparrow$ 下箭头，符号：\downarrow，如：$\downarrow$ 下箭头，符号：\Downarrow，如：$\Downarrow$ 左箭头，符号：\leftarrow，如：$\leftarrow$ 左箭头，符号：\Leftarrow，如：$\Leftarrow$ 右箭头，符号：\rightarrow，如：$\rightarrow$ 右箭头，符号：\Rightarrow，如：$\Rightarrow$ 底端对齐的省略号，符号：\ldots，如：$1,2,\ldots,n$ 中线对齐的省略号，符号：\cdots，如：$x_1^2 + x_2^2 + \cdots + x_n^2$ 竖直对齐的省略号，符号：\vdots，如：$\vdots$ 斜对齐的省略号，符号：\ddots，如：$\ddots$ 希腊字母 字母 实现 字母 实现 A A α \alhpa B B β \beta Γ \Gamma γ \gamma Δ \Delta δ \delta E E ϵ \epsilon Z Z ζ \zeta H H η \eta Θ \Theta θ \theta I I ι \iota K K κ \kappa Λ \Lambda λ \lambda M M μ \mu N N ν \nu Ξ \Xi ξ \xi O O ο \omicron Π \Pi π \pi P P ρ \rho Σ \Sigma σ \sigma T T τ \tau Υ \Upsilon υ \upsilon Φ \Phi ϕ \phi X X χ \chi Ψ \Psi ψ \psi Ω \v ω \omega]]></content>
       <categories>
         <category>Markdownd</category>
       </categories>

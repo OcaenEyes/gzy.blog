@@ -133,6 +133,59 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java-String类/">
+        <p class="h4 index-header">Java-String类</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java-String类public class StringDemo {
+    //String 方法
+    /*
+        SN(序号)    方法描述
+1    char charAt(int index)
+返回指定索引处的 char 值。
+2    int compareTo(Object o)
+把这个字符串和另一个对象比较。
+3    int compareTo(String anotherString)
+按字典顺序比较两个字符串。
+4    int compareToIgnoreCase(String str)
+按字典顺序比较两个字符串，不考虑大小写。
+5    String concat(String str)
+将指定字符串连接到此字符串的结尾。
+6    boolean contentEquals(StringBuffer sb)
+当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。
+7    static String copyValueOf(char[] data)
+返回指定数组中表示该字符序列的 String。
+8    stati</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java-StringBuffer/">
         <p class="h4 index-header">Java-StringBuffer</p>
         
@@ -188,138 +241,30 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-String类/">
-        <p class="h4 index-header">Java-String类</p>
+      <a href="/2016/03/02/Java-FileStreamIO/">
+        <p class="h4 index-header">Java-FileStreamIO</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-String类public class StringDemo {
-    //String 方法
-    /*
-        SN(序号)    方法描述
-1    char charAt(int index)
-返回指定索引处的 char 值。
-2    int compareTo(Object o)
-把这个字符串和另一个对象比较。
-3    int compareTo(String anotherString)
-按字典顺序比较两个字符串。
-4    int compareToIgnoreCase(String str)
-按字典顺序比较两个字符串，不考虑大小写。
-5    String concat(String str)
-将指定字符串连接到此字符串的结尾。
-6    boolean contentEquals(StringBuffer sb)
-当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。
-7    static String copyValueOf(char[] data)
-返回指定数组中表示该字符序列的 String。
-8    stati</div>
-        </div>
-      </a>
+          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
 
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
+public class StreamFileIODemo {
+    public void printChar() throws IOException {
+        //使用BufferedReader从控制台读取输入
+        char c;
+        //使用System.in 创建BufferedReader
+        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println(&quot;输入字符，按Q键退出&quot;);
+        do {
+            //read() 读取字符
+            c = (char) br1.read();
+            System.out.println(c);
+        } while (c != &#39;Q&#39;);
+    }
 
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-SwitchCase/">
-        <p class="h4 index-header">Java-SwitchCase语句</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-SwitchCase语句public class SwitchCase {
-    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支
-    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。
-    /*
-        switch(expression){
-            case value :
-                //语句
-                break; //可选
-            case value :
-                //语句
-                break; //可选
-            //你可以有任意数量的case语句
-            default : //可选
-                //语句   不需要break
-        }
-     */
-
-    public static void main(String[]</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java数组/">
-        <p class="h4 index-header">Java数组</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java数组public class ArrayDemo {
-    //声明数组
-    // 数据类型[] 数组名称;  dataType[] arrayName;
-
-    //创建数组
-    // 数据名称 = new dataType[arraySize];
-
-    //dataType[] arrayName = {value0,value1,value2,...,valuek};
-    public static void main(String[] args){
-        //数组大小
-        int size =4;
-        //定义数组
-        double[] TestList = new double[size];
-        TestList[0] = 3.2;
-        TestList[1] = 2.6;
-        TestList[2] = 4.7;
-        TestList[3] = 5.6;
-
-        double total =0;
-        for (int i=0; i&</div>
+    pu</div>
         </div>
       </a>
 
@@ -377,6 +322,55 @@
             }while(布尔表达式);
          */
         System.o</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java异常处理/">
+        <p class="h4 index-header">Java异常处理</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
+
+public class ExceptionDemo {
+    /*
+        三类异常
+        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
+        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
+        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
+     */
+
+    /*
+       内置异常类
+          非检查性异常
+            异常                                描述
+            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
         </div>
       </a>
 
@@ -462,6 +456,60 @@ H    一天中的小</div>
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java数组/">
+        <p class="h4 index-header">Java数组</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java数组public class ArrayDemo {
+    //声明数组
+    // 数据类型[] 数组名称;  dataType[] arrayName;
+
+    //创建数组
+    // 数据名称 = new dataType[arraySize];
+
+    //dataType[] arrayName = {value0,value1,value2,...,valuek};
+    public static void main(String[] args){
+        //数组大小
+        int size =4;
+        //定义数组
+        double[] TestList = new double[size];
+        TestList[0] = 3.2;
+        TestList[1] = 2.6;
+        TestList[2] = 4.7;
+        TestList[3] = 5.6;
+
+        double total =0;
+        for (int i=0; i&</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java条件语句/">
         <p class="h4 index-header">Java条件语句</p>
         
@@ -491,55 +539,6 @@ H    一天中的小</div>
         /*
             if(布尔表达式 1){
                 </div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java异常处理/">
-        <p class="h4 index-header">Java异常处理</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
-
-public class ExceptionDemo {
-    /*
-        三类异常
-        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
-        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
-        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
-     */
-
-    /*
-       内置异常类
-          非检查性异常
-            异常                                描述
-            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
         </div>
       </a>
 
@@ -618,43 +617,31 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java对象和类/">
-        <p class="h4 index-header">Java对象和类</p>
+      <a href="/2016/03/02/Java-SwitchCase/">
+        <p class="h4 index-header">Java-SwitchCase语句</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java对象和类public class ObjectAndClass {
+          <div class="index-text mb-1">Java-SwitchCase语句public class SwitchCase {
+    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支
+    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。
     /*
-    - 多态
-    - 继承
-    - 封装
-    - 抽象
-    - 类 ： 是一个模板，用来描述
-    - 对象 ： 是类class的一个实例，具有状态和行为
-    - 实例
-    - 方法
-    - 重载
+        switch(expression){
+            case value :
+                //语句
+                break; //可选
+            case value :
+                //语句
+                break; //可选
+            //你可以有任意数量的case语句
+            default : //可选
+                //语句   不需要break
+        }
      */
 
-    //定义一个Dog类
-    public static class Dog {
-        //成员变量
-        StringDemo color;
-        int age;
-        StringDemo name;
-
-        //类方法
-        void barking(){
-            System.out.println(&quot;汪！汪！汪！&quot;);
-        }
-
-        void hungry(){
-            System.out.println(&quot;好饿哦！&quot;);
-        }
-
-        void sle</div>
+    public static void main(String[]</div>
         </div>
       </a>
 

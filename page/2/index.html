@@ -133,6 +133,47 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/05/19/渠道类指标详解/">
+        <p class="h4 index-header">渠道类指标详解</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">1)本渠道全新用户解释：首次在该渠道下载APP并激活的新用户数，并且以前从未在其他渠道下载过此APP（与全部用户进行去重）实例：若用户第一次下载安装应用是通过A渠道，启动后弹出提示升级到新版本，于是用户选择升级新版本，但是升级包属于B渠道下载的，升级完成后再启动一次。那么，该用户在A渠道算作是该渠道的全新用户，但在B渠道就不算是全新用户了。启动数据会分别在A渠道和B渠道各增加一次。2）激活解释：用户下载安装APP之后，第一次启动应用算作激活实例：若用户只是下载并安装了APP而没有点击APP启动，不算作是激活3）升级用户解释：该版本累计新用户中，从历史版本中升级到所选版本的用户个数实例：若1个用户从3.0版本升级到3.1版本，1个用户从2.0版本升级到3.1版本，那么对于3.1版本中的升级用户数为2。原理是通过设备识别号来定位用户，比对用户当前版本号和历史版本号之间的差异。4）某版本全新用户解释：累计新用户数 – 升级用户数实例：某版本的累计新用户数若为100，该版本的升级用户数为30，那么该版本的全新用户数就为100-30=70人。5）初始渠道URL解释：渠道商提供给开发者的应用程序下</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-05-19&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E4%BA%A7%E5%93%81">数据产品</a>&nbsp;
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87">数据指标</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E6%8C%87%E6%A0%87">数据指标</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2019/05/19/用户行为类指标详解/">
         <p class="h4 index-header">用户行为类指标详解</p>
         
@@ -615,106 +656,6 @@ Anaconda3
 
 
 </div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-03-01&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-            <a href="/categories/Natural%20Language%20Processing">Natural Language Processing</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-            <a href="/tags/Natural%20Language%20Processing">Natural Language Processing</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/03/01/案例-NLP实现预测天气冷暖感知度/">
-        <p class="h4 index-header">案例-NLP实现预测天气冷暖感知度</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">案例：NLP预测天气冷暖感知度1、案例需求
-根据吃冰淇淋和喝水的数量，判断成都天气冷热程度。
-成都春熙路街头采访记录一些游客吃了多少冰淇淋，又喝了几瓶水，他觉得成都天气怎么样（这里只考虑二分类问题，假设只有‘非常热’和‘一般热’）
-其中特征向量包括两个分别是冰激凌数t1和喝水数t2，户外活动时长t3:
-对应的标签类别分别是非常热A和一般热B。
-
-2、实验数据准备
-构造模拟数据
-
-
-
-
-人员
-冰淇淋
-喝水
-户外活动时长
-冷热程度
-判断描述
-
-
-
-
-小王
-8
-4
-2
-A
-小王吃了8个冰淇淋，喝了4瓶水，户外2小时，该地区天气非常热
-
-
-小张
-7
-1
-1
-A
-小张吃了7个冰淇淋，喝了1瓶水，户外1小时，该地区天气非常热
-
-
-小李
-1
-4
-4
-B
-小李吃了1个冰淇淋，喝了4瓶水，户外4小时，该地区天气一般热
-
-
-小赵
-3
-0
-5
-B
-小赵吃了3个冰淇淋，喝了0瓶水，户外5小时，该地区天气一般热
-
-
-
-
-代码构造数据集
-#!/usr/bin/python
-# -*- coding:utf-8 -*-
-&#39;&#39;&#39;
-    author:gzy
-    date:20190301</div>
         </div>
       </a>
 

@@ -133,6 +133,79 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
+        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
+登录/退出MySQL注意：
+​    1、命令行结束符号使用英文分号;   或者 \g
+​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
+​    3、\c可以取消当前命令的执行
+登录
+mysql -uroot -p
+mysql -uroot -proot
+mysql -hlocalhost -uroot -p -P3306
+登录同时修改命令提示符
+mysql -uroot -p –prompt=命令提示符
+
+
+获取版本号
+mysql -V
+mysql –version
+
+
+登录同时打开指定数据库
+mysql -uroot -p -D db_name
+
+
+
+退出
+exit
+quit
+\q
+ctrl + c
+
+SQL语句语法规范
+常用MySQL的关键字需要大写
+库名、表名、字段名称等使用小写
+SQL语句支持折行操作，拆分的时候不能把完整单词拆开
+数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
+
+常用SQL语句
+SELECT USER()   </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2017/10/25/MySQL深入浅出--什么是数据库/">
         <p class="h4 index-header">MySQL深入浅出--什么是数据库</p>
         
@@ -521,51 +594,6 @@ prompt 提示符;
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-NumberMath类/">
-        <p class="h4 index-header">Java-NumberMath类</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
-    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
-    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
-
-    private static void test(double num) {
-        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
-        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
-        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
-    }
-
-    public st</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java-Character类/">
         <p class="h4 index-header">Java-Character类</p>
         
@@ -627,30 +655,28 @@ prompt 提示符;
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-FileStreamIO/">
-        <p class="h4 index-header">Java-FileStreamIO</p>
+      <a href="/2016/03/02/Java-Scanner类/">
+        <p class="h4 index-header">Java-Scanner类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
+          <div class="index-text mb-1">Java-Scanner类import java.util.Scanner;
 
-public class StreamFileIODemo {
-    public void printChar() throws IOException {
-        //使用BufferedReader从控制台读取输入
-        char c;
-        //使用System.in 创建BufferedReader
-        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println(&quot;输入字符，按Q键退出&quot;);
-        do {
-            //read() 读取字符
-            c = (char) br1.read();
-            System.out.println(c);
-        } while (c != &#39;Q&#39;);
-    }
-
-    pu</div>
+public class ScannerDemo {
+    //Scanner类 获取用户的输入
+    /*
+        next() 与 nextLine() 区别
+        next():
+            1、一定要读取到有效字符后才可以结束输入。
+            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
+            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
+        next() 不能得到带有空格的字符串。
+        nextLine()：
+            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
+            2、可以获得空白。
+        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：</div>
         </div>
       </a>
 
@@ -678,28 +704,24 @@ public class StreamFileIODemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-Scanner类/">
-        <p class="h4 index-header">Java-Scanner类</p>
+      <a href="/2016/03/02/Java-NumberMath类/">
+        <p class="h4 index-header">Java-NumberMath类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-Scanner类import java.util.Scanner;
+          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
+    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
+    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
 
-public class ScannerDemo {
-    //Scanner类 获取用户的输入
-    /*
-        next() 与 nextLine() 区别
-        next():
-            1、一定要读取到有效字符后才可以结束输入。
-            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
-            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
-        next() 不能得到带有空格的字符串。
-        nextLine()：
-            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
-            2、可以获得空白。
-        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：</div>
+    private static void test(double num) {
+        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
+        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
+        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
+    }
+
+    public st</div>
         </div>
       </a>
 
