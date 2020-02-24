@@ -243,9 +243,9 @@
       
       <tag>产品</tag>
       
-      <tag>内容产品</tag>
-      
       <tag>运营</tag>
+      
+      <tag>内容产品</tag>
       
       <tag>内容社区</tag>
       
@@ -2894,31 +2894,6 @@
   
   
   <entry>
-    <title>Java-NumberMath类</title>
-    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Java-FileStreamIO</title>
     <link href="/2016/03/02/Java-FileStreamIO/"/>
     <url>/2016/03/02/Java-FileStreamIO/</url>
@@ -2944,11 +2919,11 @@
   
   
   <entry>
-    <title>Java-StringBuffer</title>
-    <link href="/2016/03/02/Java-StringBuffer/"/>
-    <url>/2016/03/02/Java-StringBuffer/</url>
+    <title>Java-NumberMath类</title>
+    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-StringBuffer"><a href="#Java-StringBuffer" class="headerlink" title="Java-StringBuffer"></a>Java-StringBuffer</h1><pre><code>public class StringBufferAndStringBuilderDemo {    //StringBuffer  线程安全    //StringBuilder 速度快    /*        序号    方法描述1    public StringBuffer append(String s)将指定的字符串追加到此字符序列。2    public StringBuffer reverse() 将此字符序列用其反转形式取代。3    public delete(int start, int end)移除此序列的子字符串中的字符。4    public insert(int offset, int i)将 int 参数的字符串表示形式插入此序列中。5    replace(int start, int end, String str)使用给定 String 中的字符替换此序列的子字符串中的字符。     */    /*        序号    方法描述1    int capacity()返回当前容量。2    char charAt(int index)返回此序列中指定索引处的 char 值。3    void ensureCapacity(int minimumCapacity)确保容量至少等于指定的最小值。4    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此序列复制到目标字符数组 dst。5    int indexOf(String str)返回第一次出现的指定子字符串在该字符串中的索引。6    int indexOf(String str, int fromIndex)从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。7    int lastIndexOf(String str)返回最右边出现的指定子字符串在此字符串中的索引。8    int lastIndexOf(String str, int fromIndex)返回 String 对象中子字符串最后出现的位置。9    int length() 返回长度（字符数）。10    void setCharAt(int index, char ch)将给定索引处的字符设置为 ch。11    void setLength(int newLength)设置字符序列的长度。12    CharSequence subSequence(int start, int end)返回一个新的字符序列，该字符序列是此序列的子序列。13    String substring(int start)返回一个新的 String，它包含此字符序列当前所包含的字符子序列。14    String substring(int start, int end)返回一个新的 String，它包含此序列当前所包含的字符子序列。15    String toString()返回此序列中数据的字符串表示形式。     */    public static void main(String[] args){        StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;);        sBuffer.append(&quot;站点&quot;);        System.out.println(sBuffer);    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
     
     
     <categories>
@@ -2974,6 +2949,31 @@
     <url>/2016/03/02/Java-Scanner%E7%B1%BB/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-Scanner类"><a href="#Java-Scanner类" class="headerlink" title="Java-Scanner类"></a>Java-Scanner类</h1><pre><code>import java.util.Scanner;public class ScannerDemo {    //Scanner类 获取用户的输入    /*        next() 与 nextLine() 区别        next():            1、一定要读取到有效字符后才可以结束输入。            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。        next() 不能得到带有空格的字符串。        nextLine()：            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。            2、可以获得空白。        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：     */    public void NextDemo() {        //从键盘接收数据        Scanner scan1 = new Scanner(System.in);        //next方式接收字符串        System.out.println(&quot;next方式接收：&quot;);        //判断是否还有输入        if (scan1.hasNext()) {            String str1 = scan1.next();            System.out.println(&quot;输入的数据为：&quot; + str1);        }        scan1.close();    }    public void NextLineDemo() {        //从键盘接收数据        Scanner scan2 = new Scanner(System.in);        //nextLine方式接收字符串        System.out.println(&quot;nextLine方式接收：&quot;);        //判断是否还有输入        if (scan2.hasNext()) {            String str2 = scan2.nextLine();            System.out.println(&quot;输入的数据为：&quot; + str2);        }        scan2.close();    }    public static void main(String[] args) {        ScannerDemo s = new ScannerDemo();//        s.NextDemo();        s.NextLineDemo();    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java-StringBuffer</title>
+    <link href="/2016/03/02/Java-StringBuffer/"/>
+    <url>/2016/03/02/Java-StringBuffer/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-StringBuffer"><a href="#Java-StringBuffer" class="headerlink" title="Java-StringBuffer"></a>Java-StringBuffer</h1><pre><code>public class StringBufferAndStringBuilderDemo {    //StringBuffer  线程安全    //StringBuilder 速度快    /*        序号    方法描述1    public StringBuffer append(String s)将指定的字符串追加到此字符序列。2    public StringBuffer reverse() 将此字符序列用其反转形式取代。3    public delete(int start, int end)移除此序列的子字符串中的字符。4    public insert(int offset, int i)将 int 参数的字符串表示形式插入此序列中。5    replace(int start, int end, String str)使用给定 String 中的字符替换此序列的子字符串中的字符。     */    /*        序号    方法描述1    int capacity()返回当前容量。2    char charAt(int index)返回此序列中指定索引处的 char 值。3    void ensureCapacity(int minimumCapacity)确保容量至少等于指定的最小值。4    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此序列复制到目标字符数组 dst。5    int indexOf(String str)返回第一次出现的指定子字符串在该字符串中的索引。6    int indexOf(String str, int fromIndex)从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。7    int lastIndexOf(String str)返回最右边出现的指定子字符串在此字符串中的索引。8    int lastIndexOf(String str, int fromIndex)返回 String 对象中子字符串最后出现的位置。9    int length() 返回长度（字符数）。10    void setCharAt(int index, char ch)将给定索引处的字符设置为 ch。11    void setLength(int newLength)设置字符序列的长度。12    CharSequence subSequence(int start, int end)返回一个新的字符序列，该字符序列是此序列的子序列。13    String substring(int start)返回一个新的 String，它包含此字符序列当前所包含的字符子序列。14    String substring(int start, int end)返回一个新的 String，它包含此序列当前所包含的字符子序列。15    String toString()返回此序列中数据的字符串表示形式。     */    public static void main(String[] args){        StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;);        sBuffer.append(&quot;站点&quot;);        System.out.println(sBuffer);    }}</code></pre>]]></content>
     
     
     <categories>
