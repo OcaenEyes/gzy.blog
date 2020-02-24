@@ -133,8 +133,8 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/08-matplotlib颜色与样式/">
-        <p class="h4 index-header">数据分析08：matplotlib颜色与样式</p>
+      <a href="/2018/03/02/06-matplotlib饼状图/">
+        <p class="h4 index-header">数据分析06：matplotlib饼状图</p>
         
         
           
@@ -144,32 +144,25 @@
 import matplotlib.pyplot as plt
 
 &#39;&#39;&#39;
-    颜色：
-    - 八种内置默认颜色， 缩写
-        b   :blue
-        g   :green
-        r   :red
-        c   :cyan
-        m   :magenta
-        y   :yellow
-        k   :black
-        w   :white
-    - 其它颜色的表示方法
-        灰色阴影
-        html   十六进制
-        RGB    元组
+    饼状图显示一个数据系列中各项总和的比例；
+    饼状图中的数据点显示为整个饼状图的百分比；
+    如：前十大品牌占市场份额图
 
 &#39;&#39;&#39;
+# 例
+labels = &#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;
+fracs = [15.0,30.0,45.0,10.0]
 
-y = np.arange(1,5)
-# 内置颜色表示
-plt.plot(y,color =&#39;g&#39;)
-# 灰度表示方法
-plt.plot(y+1,color = &#39;0.5&#39;)
-# html 十六进制
-plt.plot(y+2,color = &#39;#ff00ff&#39;)
-# RGB 元组
-plt.</div>
+explode = [0,0.05,0,0.08]
+plt.axes(aspect=1)
+plt.pie(x=fracs,labels=labels,autopct=&quot;%.0f%%&quot;,explode=explode,shadow=True)
+plt.show()
+
+# 练习
+labels = &#39;SH&#39;,&#39;BJ&#39;,&#39;SZ&#39;,&#39;GZ&#39;
+fracs = [20,30,25,15]
+explode = [0,0,0.08,0]
+</div>
         </div>
       </a>
 
@@ -184,7 +177,7 @@ plt.</div>
           
             <a href="/categories/Python3">Python3</a>&nbsp;
           
-            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+            <a href="/categories/Numpy">Numpy</a>&nbsp;
           &nbsp;
         
         
@@ -194,7 +187,7 @@ plt.</div>
           
             <a href="/tags/Python3">Python3</a>&nbsp;
           
-            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
+            <a href="/tags/Numpy">Numpy</a>&nbsp;
           
         
       </div>
@@ -279,8 +272,8 @@ import matplotlib.pyplot as plt
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/04-matploylib柱形图/">
-        <p class="h4 index-header">数据分析04：matplotlib柱形图</p>
+      <a href="/2018/03/02/07-matplotlib箱线图/">
+        <p class="h4 index-header">数据分析07：matplotlib箱线图</p>
         
         
           
@@ -289,30 +282,24 @@ import matplotlib.pyplot as plt
           <div class="index-text mb-1">import numpy as np
 import matplotlib.pyplot as plt
 
-# 柱形图
-# 例一
-N =5
-y =  [15,28,10,30,25]
-index = np.arange(N)
-p = plt.bar(index,height=y)
+&#39;&#39;&#39;
+    箱形图（Box-plot）又称为盒须图，盒式图，或 箱线图；
+    是一种用在显示一组数据分散情况的资料统计图；
+    上边缘，上四分位数，中位数，下四分位数，下边缘，异常值；
+&#39;&#39;&#39;
+
+np.random.seed(100)
+data = np.random.normal(size=1000,loc=0,scale=1)
+# sym 指定异常值的点；whis虚线的长度， 通过调整whis的大小来决定收入异常值的多少
+plt.boxplot(data,sym =&#39;o&#39;,whis=1.5)
 plt.show()
 
-# 例2
-p1 = plt.bar(0,bottom=index,width=y,height=0.5,align=&#39;edge&#39;,color=&#39;red&#39;,orientation=&#39;horizontal&#39;)
-plt.show()
+# 同一张图中显示多个箱线图
 
-p2 = plt.barh(index,width= y , align=&#39;edge&#39;,color =&#39;green&#39;,height=0.5)
-plt.show()
-
-# 例3
-sales_BJ = [52,55,63,53]
-sales_SH = [44,66,55,41]
-
-index = np.arange(4)
-bar_width = 0.3
-
-# 竖着显示
-plt.bar(in</div>
+# 4组 1000的数据
+data = np.random.normal(size=(1000,4),loc = 0,scale=1)
+# 每组的标签为ABCD
+labels = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39</div>
         </div>
       </a>
 
@@ -348,8 +335,8 @@ plt.bar(in</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/02-matplotlib散点图/">
-        <p class="h4 index-header">数据分析02：matplotlib散点图</p>
+      <a href="/2018/03/02/08-matplotlib颜色与样式/">
+        <p class="h4 index-header">数据分析08：matplotlib颜色与样式</p>
         
         
           
@@ -359,37 +346,101 @@ plt.bar(in</div>
 import matplotlib.pyplot as plt
 
 &#39;&#39;&#39;
-    散点图显示两组数据的值，每个点的坐标位置的值决定
-    用户观察两种变量的相关性：
-        正相关
-        负相关
-        不相关
+    颜色：
+    - 八种内置默认颜色， 缩写
+        b   :blue
+        g   :green
+        r   :red
+        c   :cyan
+        m   :magenta
+        y   :yellow
+        k   :black
+        w   :white
+    - 其它颜色的表示方法
+        灰色阴影
+        html   十六进制
+        RGB    元组
 
 &#39;&#39;&#39;
 
-# 正相关
-height = [161,170,174,165,182,175]
-weight = [50,65,70,62,81,75]
-plt.scatter(height,weight)
+y = np.arange(1,5)
+# 内置颜色表示
+plt.plot(y,color =&#39;g&#39;)
+# 灰度表示方法
+plt.plot(y+1,color = &#39;0.5&#39;)
+# html 十六进制
+plt.plot(y+2,color = &#39;#ff00ff&#39;)
+# RGB 元组
+plt.</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/04-matploylib柱形图/">
+        <p class="h4 index-header">数据分析04：matplotlib柱形图</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
+
+# 柱形图
+# 例一
+N =5
+y =  [15,28,10,30,25]
+index = np.arange(N)
+p = plt.bar(index,height=y)
 plt.show()
 
-
-# 不相关
-N = 1000
-x = np.random.randn(N)
-y = np.random.randn(N)
-plt.scatter(x,y)
+# 例2
+p1 = plt.bar(0,bottom=index,width=y,height=0.5,align=&#39;edge&#39;,color=&#39;red&#39;,orientation=&#39;horizontal&#39;)
 plt.show()
 
+p2 = plt.barh(index,width= y , align=&#39;edge&#39;,color =&#39;green&#39;,height=0.5)
+plt.show()
 
-# 散点图的外观
-&#39;&#39;&#39;
-    c    颜色
-    s    点（面积）大小
-    alpha       透明度
-        值的范围[0,1]
-        通过调节透明度，来观察点的集中性
-    marker   </div>
+# 例3
+sales_BJ = [52,55,63,53]
+sales_SH = [44,66,55,41]
+
+index = np.arange(4)
+bar_width = 0.3
+
+# 竖着显示
+plt.bar(in</div>
         </div>
       </a>
 
@@ -496,6 +547,83 @@ print(x,&quot;\n&quot;,type(x))
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/02-matplotlib散点图/">
+        <p class="h4 index-header">数据分析02：matplotlib散点图</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
+
+&#39;&#39;&#39;
+    散点图显示两组数据的值，每个点的坐标位置的值决定
+    用户观察两种变量的相关性：
+        正相关
+        负相关
+        不相关
+
+&#39;&#39;&#39;
+
+# 正相关
+height = [161,170,174,165,182,175]
+weight = [50,65,70,62,81,75]
+plt.scatter(height,weight)
+plt.show()
+
+
+# 不相关
+N = 1000
+x = np.random.randn(N)
+y = np.random.randn(N)
+plt.scatter(x,y)
+plt.show()
+
+
+# 散点图的外观
+&#39;&#39;&#39;
+    c    颜色
+    s    点（面积）大小
+    alpha       透明度
+        值的范围[0,1]
+        通过调节透明度，来观察点的集中性
+    marker   </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/03-matplotlib折线图/">
         <p class="h4 index-header">数据分析03：matplotlib折线图</p>
         
@@ -553,61 +681,6 @@ plt.plot_date(date,open,linestyle=&#39;-&#39;,c</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/Centos-Maven配置/">
-        <p class="h4 index-header">CentOS-Maven配置</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Centos-Maven配置 配置maven镜像
-&lt;mirror&gt;
-    &lt;id&gt;alimaven&lt;/id&gt;
-    &lt;name&gt;aliyun maven&lt;/name&gt;
-  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
-  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
-&lt;/mirror&gt;
-
-maven配置路径 
-export M2_HOME=/usr/local/maven3/apache-maven-3.6.3
-export PATH=$PATH$:M2_HOME/bin
-
-source /etc/profile
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          
-            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/SpringBoot-WebSocket 聊天室/">
         <p class="h4 index-header">SpringBoot-WebSocket聊天室</p>
         
@@ -652,70 +725,13 @@ import java.util.concurrent.CopyOnWriteArraySet;
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
             <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
           
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
             <a href="/tags/WebSocket">WebSocket</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/SpringBoot启动自定义方法/">
-        <p class="h4 index-header">SpringBoot启动自定义方法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
-
-import com.gzy.demo.NettyClient;
-
-@Component
-public class MyStart1 implements CommandLineRunner{
-
-    @Override
-    public void run(String... args) throws Exception {
-        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
-    }
-}
-
-
-二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
-import org.springframework.boot</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          
-            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
         
       </div>
@@ -756,9 +772,9 @@ Repository —定义操作，操作实体类中的数据表
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
             <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
           
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           

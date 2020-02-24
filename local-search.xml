@@ -37,9 +37,42 @@
   
   
   <entry>
+    <title>态势感知与安全运营平台</title>
+    <link href="/2020/02/07/%E6%80%81%E5%8A%BF%E6%84%9F%E7%9F%A5%E4%B8%8E%E5%AE%89%E5%85%A8%E8%BF%90%E8%90%A5%E5%B9%B3%E5%8F%B0/"/>
+    <url>/2020/02/07/%E6%80%81%E5%8A%BF%E6%84%9F%E7%9F%A5%E4%B8%8E%E5%AE%89%E5%85%A8%E8%BF%90%E8%90%A5%E5%B9%B3%E5%8F%B0/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="态势感知与安全运营平台"><a href="#态势感知与安全运营平台" class="headerlink" title="态势感知与安全运营平台"></a>态势感知与安全运营平台</h1><h2 id="产品概述"><a href="#产品概述" class="headerlink" title="产品概述"></a>产品概述</h2><p>针对各种网络安全数据进行分析处理，提供资产、危险、脆弱性的相关管理，并提供对危险的事前预警、事中发现、事后回溯功能，贯穿威胁的整个生命周期管理。</p><h2 id="平台简介"><a href="#平台简介" class="headerlink" title="平台简介"></a>平台简介</h2><h3 id="产品组成"><a href="#产品组成" class="headerlink" title="产品组成"></a>产品组成</h3><ul><li>流量传感器<ul><li>采集网络中的流量数据，将原始的网络流量转化为安session方式记录的格式化流量日志，全流量日志会加密传输至分析平台存储用于后期分析</li><li>内置流量检测引擎<ul><li>web漏洞检测引擎</li><li>webshell 活动检测引擎</li><li>网络入侵检测引擎</li></ul></li><li>常部署于需监听流量的网络节点旁，接受镜像流量</li></ul></li><li>日志采集探针<ul><li>对网络内各业务应用系统、设备、服务器、终端等设备通过主动采集或被动接受等方式对日志进行采集和归一化处理，方便数据流后面的关联规则和数据分析快速使用</li><li>兼具负责对内网资产进行扫描识别，收集资产数据</li></ul></li><li>关联规则引擎<ul><li>负责对来自日志采集探针的大量日志信息进行实时流解析，并匹配关联规则，对异常行为产生关联告警</li></ul></li><li>分析平台<ul><li>存储流量传感器和日志采集探针提交的流量日志、设备日志、系统日志</li><li>分析平台底层对数据进行处理</li></ul></li><li>文件威胁鉴定器</li><li>终端安全管理系统</li></ul><h3 id="产品架构"><a href="#产品架构" class="headerlink" title="产品架构"></a>产品架构</h3><h3 id="产品功能"><a href="#产品功能" class="headerlink" title="产品功能"></a>产品功能</h3><h4 id="威胁管理"><a href="#威胁管理" class="headerlink" title="威胁管理"></a>威胁管理</h4><h4 id="资产管理"><a href="#资产管理" class="headerlink" title="资产管理"></a>资产管理</h4><h4 id="拓扑管理"><a href="#拓扑管理" class="headerlink" title="拓扑管理"></a>拓扑管理</h4><h4 id="漏洞管理"><a href="#漏洞管理" class="headerlink" title="漏洞管理"></a>漏洞管理</h4><h4 id="日志搜索"><a href="#日志搜索" class="headerlink" title="日志搜索"></a>日志搜索</h4><h4 id="场景化分析"><a href="#场景化分析" class="headerlink" title="场景化分析"></a>场景化分析</h4><h4 id="工单"><a href="#工单" class="headerlink" title="工单"></a>工单</h4><h4 id="调查分析"><a href="#调查分析" class="headerlink" title="调查分析"></a>调查分析</h4><h4 id="知识库"><a href="#知识库" class="headerlink" title="知识库"></a>知识库</h4><h4 id="报表管理"><a href="#报表管理" class="headerlink" title="报表管理"></a>报表管理</h4><h4 id="仪表展示"><a href="#仪表展示" class="headerlink" title="仪表展示"></a>仪表展示</h4><h4 id="态势感知"><a href="#态势感知" class="headerlink" title="态势感知"></a>态势感知</h4><h4 id="级联管理"><a href="#级联管理" class="headerlink" title="级联管理"></a>级联管理</h4>]]></content>
+    
+    
+    <categories>
+      
+      <category>产品</category>
+      
+      <category>安全产品</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>产品</tag>
+      
+      <tag>安全产品</tag>
+      
+      <tag>运营平台</tag>
+      
+      <tag>平台产品</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>保障交易/营销安全的措施</title>
-    <link href="/2020/02/06/%E5%85%B3%E4%BA%8E%E4%B8%80%E4%BA%9B%E5%AE%89%E5%85%A8%E4%BA%A7%E5%93%81%E7%9A%84%E8%AE%A4%E7%9F%A5/"/>
-    <url>/2020/02/06/%E5%85%B3%E4%BA%8E%E4%B8%80%E4%BA%9B%E5%AE%89%E5%85%A8%E4%BA%A7%E5%93%81%E7%9A%84%E8%AE%A4%E7%9F%A5/</url>
+    <link href="/2020/02/06/%E4%BF%9D%E9%9A%9C%E4%BA%A4%E6%98%93%E8%90%A5%E9%94%80%E5%AE%89%E5%85%A8%E7%9A%84%E6%8E%AA%E6%96%BD/"/>
+    <url>/2020/02/06/%E4%BF%9D%E9%9A%9C%E4%BA%A4%E6%98%93%E8%90%A5%E9%94%80%E5%AE%89%E5%85%A8%E7%9A%84%E6%8E%AA%E6%96%BD/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="保障交易-营销安全的措施"><a href="#保障交易-营销安全的措施" class="headerlink" title="保障交易/营销安全的措施"></a>保障交易/营销安全的措施</h1><h3 id="黄牛风险防控服务"><a href="#黄牛风险防控服务" class="headerlink" title="黄牛风险防控服务"></a>黄牛风险防控服务</h3><p>评估账号的限购评估，比如六个唯一，身份证号、账号、银行卡号、绑定手机号、设备号、户头号，怎样判别并鉴定是否为黄牛</p><h4 id="黄牛防控策略"><a href="#黄牛防控策略" class="headerlink" title="黄牛防控策略"></a>黄牛防控策略</h4><p>1、创建黄牛防控策略</p><p>2、添加需要监控的商品信息/券信息</p><p>3、设置不同的监控级别</p><p>​     日常类、非秒杀类的商品/券，配置初级防控；</p><p>​      秒杀类的商品/券，配置高级防控；</p><p>4、不同的防控级别设定，对账户设置不同的领取/购买量</p><p>5、设置策略生效时间</p><p>6、页面增加规则描述，黄牛拒发等通告</p><p>7、上线策略，指定生效时间段</p><p>8、策略列表，包含草稿、生效中、待生效、已失效</p><h4 id="黄牛防控效果"><a href="#黄牛防控效果" class="headerlink" title="黄牛防控效果"></a>黄牛防控效果</h4><h5 id="黄牛风险总览"><a href="#黄牛风险总览" class="headerlink" title="黄牛风险总览"></a>黄牛风险总览</h5><ul><li>提交订单买家量</li><li>黄牛买家拦截量</li><li>黄牛买家占比</li><li>黄牛订单拦截量</li><li>订单创建成功量</li></ul><h5 id="防控商品-券风险详情"><a href="#防控商品-券风险详情" class="headerlink" title="防控商品/券风险详情"></a>防控商品/券风险详情</h5><ul><li>商品/券关键词检索</li><li>时间段检索</li></ul><h5 id="防控商品-券的黄牛拦截趋势"><a href="#防控商品-券的黄牛拦截趋势" class="headerlink" title="防控商品/券的黄牛拦截趋势"></a>防控商品/券的黄牛拦截趋势</h5><h5 id="会员分析"><a href="#会员分析" class="headerlink" title="会员分析"></a>会员分析</h5><ul><li>黄牛订单用户中的新会员、老会员分布</li><li>成功订单用户中新会员、老会员分布</li></ul><h4 id="手动反馈录入漏防交易"><a href="#手动反馈录入漏防交易" class="headerlink" title="手动反馈录入漏防交易"></a>手动反馈录入漏防交易</h4><h3 id="恶意订单风险防控服务"><a href="#恶意订单风险防控服务" class="headerlink" title="恶意订单风险防控服务"></a>恶意订单风险防控服务</h3><p>退货类：买家频繁通过滥用退款售后权益</p><p>敲诈类：不以真实消费为目的，利用平台规则牟取利益的非正常消费者行为</p><p>攻击类</p><h3 id="异常评价防控服务"><a href="#异常评价防控服务" class="headerlink" title="异常评价防控服务"></a>异常评价防控服务</h3>]]></content>
     
@@ -52,6 +85,39 @@
       <tag>安全</tag>
       
       <tag>运营</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>上瘾,一步步让你PICK ME</title>
+    <link href="/2020/02/06/%E4%B8%8A%E7%98%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    <url>/2020/02/06/%E4%B8%8A%E7%98%BE%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="上瘾-一步步让你PICK-ME"><a href="#上瘾-一步步让你PICK-ME" class="headerlink" title="上瘾,一步步让你PICK ME"></a>上瘾,一步步让你PICK ME</h1><h5 id="让用户习惯你的产品"><a href="#让用户习惯你的产品" class="headerlink" title="让用户习惯你的产品*=="></a><strong>让用户习惯你的产品*==</strong></h5><p>习惯：下意识做出的举动。</p><p>简单的习惯是在很少或完全没有意识思考的情况下完成的行为，指导了每个人日常近一半的行为。</p><p>习惯是人们能够通过在 ==基底神经节中存储自动反应，来将注意力集中在其他事物==</p><p>当大脑才去捷径并停止积极思考下一步该怎么做的时候， 就会形成习惯；大脑很快便学会编纂行为，为其遇到的任何情况提供解决方案。</p><p>深谙此道的企业，一直将培养用户习惯作为产品开发的一个基本原则。</p><h5 id="习惯养成类产品能够改变用户的行为，使用户无须外部诱因就会开始从事某种活动："><a href="#习惯养成类产品能够改变用户的行为，使用户无须外部诱因就会开始从事某种活动：" class="headerlink" title="习惯养成类产品能够改变用户的行为，使用户无须外部诱因就会开始从事某种活动："></a>习惯养成类产品能够改变用户的行为，使用户无须外部诱因就会开始从事某种活动：</h5><ul><li>使用一而再，再而三的接触和亲近产品</li><li>不需要广告和促销的外显的行动召唤</li><li>一旦形成对产品的依赖性，用户便会在一些习惯事物中使用这个产品打发时间，比如排队的时候看头条，路上刷淘宝、路上听网易云发现音乐……</li></ul><h5 id="用户对产品产生习惯依赖的好处："><a href="#用户对产品产生习惯依赖的好处：" class="headerlink" title="用户对产品产生习惯依赖的好处："></a>用户对产品产生习惯依赖的好处：</h5><ul><li>提高用户终身价值</li><li>提供定价灵活性</li><li>加快增长速度</li><li>提高竞争优势</li></ul><h5 id="打造习惯类产品，需要认真考虑的因素"><a href="#打造习惯类产品，需要认真考虑的因素" class="headerlink" title="打造习惯类产品，需要认真考虑的因素"></a>打造习惯类产品，需要认真考虑的因素</h5><ul><li>频率：某种行为多久发生一次</li><li>可感知用途：在用户心中，该产品与其他相比多出了哪些用途和好处</li></ul><p>具有足够频率和感知效用的行为进入“习惯区域”，有助于使其成为默认行为。</p><p><strong>所有成功创新的共同点=解决明显问题</strong></p><p>一个习惯就是在不采取行动时会引起一些痛苦</p><p><img src="/.top//gaozhiyong/Documents/GitHub/blogs/Hexo/source/_posts/上瘾读书笔记/上瘾基础模型.jpg" srcset="/img/loading.gif" alt=""></p><h2 id="触发"><a href="#触发" class="headerlink" title="触发"></a>触发</h2><p>新的习惯需要建立基础，而触发则为持续的行为改变提供了基础条件。触发即为行为的执行器。</p><p>==<strong>分为：外部触发、内部触发。</strong>==</p><h3 id="外部触发"><a href="#外部触发" class="headerlink" title="外部触发"></a>外部触发</h3><p>习惯形成首先要通过号召，用户提示，暗示用户来开始改变行为。</p><p>外部触发时嵌入了信息，告诉用户下一步应该做什么，传达给用户具体应该怎么操作。比如：常见的“登录”、“注册”、“付费”等操作</p><h4 id="付费型触发"><a href="#付费型触发" class="headerlink" title="付费型触发"></a>付费型触发</h4><p>多为保持用户回访的有效而昂贵的方法；比如广告投放、搜索引擎营销、其他付费频道</p><p>对于大多数商业模式而言，付费是不可持续的，公司通常使用付费触发来获取新用户，然后利用其他各类触发将用户流量转入。习惯形成后公司通常不会长时间以来付费触发。</p><h4 id="回馈型触发"><a href="#回馈型触发" class="headerlink" title="回馈型触发"></a>回馈型触发</h4><p>多为需要以公共和媒体关系所花费的时间进行投资。比如有利的媒体提及，病毒视频、有利的特色应用展示位</p><p>回馈型触发引发的用户往往容易昙花一现，如果需要充分利用回馈型触发维护用户，就需要本身长期处于“明星”状态，这一项却是异常艰巨的，很难长时间保持一个超高的关注名气。</p><h4 id="人际关系型触发"><a href="#人际关系型触发" class="headerlink" title="人际关系型触发"></a>人际关系型触发</h4><p>多为口口相传形式，一个人告诉别人有关产品或服务的信息</p><p>正常使用关系触发器需要建立一个积极的用户群，热衷分享产品、获得收益；类似小红书、直播带货、拼多多、拼购类</p><p>以拼多多举例解析：</p><p>拼多多选中“占便宜”用户群体进行资源投入，凭借价格优势和福利优势，捕捉到一大批的“自带营销光环的初期用户”，补贴并奖励这些用户，由这些用户来推广宣传，扩大用户规模。</p><p><img src="/.top//gaozhiyong/Documents/GitHub/blogs/Hexo/source/_posts/上瘾读书笔记/拼多多的推广理念.jpeg" srcset="/img/loading.gif" alt=""></p><p>之前的时候拼多多更多的把进入的用户流量在做业务转化的同时，也在将这部分流量变为了推广者流量。</p><p><img src="/.top//gaozhiyong/Documents/GitHub/blogs/Hexo/source/_posts/上瘾读书笔记/拼多多的增长模式.jpeg" srcset="/img/loading.gif" alt=""></p><h4 id="自主型触发"><a href="#自主型触发" class="headerlink" title="自主型触发"></a>自主型触发</h4><p>始终出现在日常生活中，最终由用户选择允许这些触发出现。比如app通知、电子邮件订阅</p><p>只要用户同意接收触发，那么被设置允许触发的公司就拥有了用户注意力的份额</p><h3 id="内部触发"><a href="#内部触发" class="headerlink" title="内部触发"></a>内部触发</h3><p>当产品应用与使用者的思想、情感或预先存在的活动紧密结合时，就是内部触发在起作用。</p><h4 id="情绪调动"><a href="#情绪调动" class="headerlink" title="情绪调动"></a>情绪调动</h4><p>情绪，特别是消极情绪是极为强大的内部触发因素，并且在极大程度上影响我们的日常生活。</p><p><strong>消极情绪</strong></p><p>厌倦、孤独、沮丧、困惑、犹豫不决等感觉经常会隐私轻微的痛苦或刺激，并会促使瞬间的，通常无意识的行动来平息消极感觉。</p><p>比如：刷抖音快手某种程度上是消除孤独寂寞；打开网易云音乐听歌看评论是寄托平息感情</p><p><strong>积极情绪</strong></p><p>解决并满足困扰我们的事物来内部触发人们。</p><p>比如：分享好消息的需要，被认为是寻找和维持社交关系的尝试</p><p>发现减轻疼痛产品的用户，将随着时间的推移与产品形成强烈的积极关联。</p><p>在继续使用之后，产品和需要它的用户之间形成债券。逐渐的，当用户在遇到某种内部触发因素时，便会选择产品，会变成一种习惯。</p><p>==一旦用户被产品迷住，使用产品时并不总是需要明确号召性用语==。更多的时候，依靠对感情的自动反应来促成期望的行为。</p><p>==一旦用户被产品勾住，那么用户就不一定只在清洗明确的行动召唤下才想到产品。==更多的时候，情绪引发的自动反应会引导人们做出特定的举动。比如：感到无聊的时候会刷新闻，逛淘宝，刷微博；压力大的时候会听网易云、刷抖音视频……</p><p>内部触发和产品之间的关联不是一夜之间形成。</p><p>内部触发器很多时候需要数周或数月的频繁使用才能形成。</p><h3 id="如何触发"><a href="#如何触发" class="headerlink" title="如何触发"></a>如何触发</h3><p>如何更快的更好的为产品注入内部触发的源动力，要做到产品对用户的特定情绪起到安抚作用，产品设计的时候必须了解用户的内部触发因素—他们寻求解决痛苦点。</p><p><strong>习惯形成产品的最终目标是通过获取用户的关注、消除用户的烦恼、解决用户的痛苦、创造好的情感/情绪感受，以便用户将公司的产品/服务默认为精神抚慰的来源。</strong></p><p>公司的必须首先在情感方面确定用户特定的挫折或痛点，在产品设计和打造上注入解决该痛点的基因。</p><p>比如成功的习惯养成类的产品背后的驱动因素：</p><ul><li>用户希望借助产品实现什么样的目的？</li><li>用户会在何时何地使用这个产品？</li><li>什么样的情绪会促使他们使用产品、触发行动？</li><li>产品能否对用户的这个情绪解决，需求满足提供支撑？</li></ul><h2 id="行动"><a href="#行动" class="headerlink" title="行动"></a>行动</h2><p>外部触发和内部触发可以指引提示用户下一步的行动方向，但，如果用户没有付诸行动，触发就未能生效。</p><p>斯坦福的福格行为模型，要使人们行动起来，有三个必备因素：</p><ul><li>充分的动机</li><li>完成这一行为的能力</li><li>促使人们付诸行动的触发</li></ul><p><strong>B= MAT</strong></p><ul><li>B，行为</li><li>M，动机</li><li>A，能力</li><li>T，触发</li></ul><p>如果该环节内容任何组件部位却是，用户将不会越过“行动线”，并且不回实施某些行为。</p><p>示例：有一个手机电话没有应答。</p><p>原因：</p><p>1、手机被放在一起不能拿到的位置==能力不够</p><p>2、发现电话是推销电话，一个不想接的电话 ====缺乏接听动力，动机不够</p><p>3、没有电话铃声，也没有震动，导致没有发现手机来电 ==== 没有触发因素</p><h3 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h3><p>触发提醒用户才去行动，而动机则决定用户是否愿意采取行动。</p><p>能驱使人们采取行动的核心动机不外乎三种：</p><ul><li>寻求快乐，避免痛苦</li><li>寻求希望，避免恐惧</li><li>寻求社会认可并避免拒绝</li></ul><h3 id="能力"><a href="#能力" class="headerlink" title="能力"></a>能力</h3><p>产品创新基本分为三个步骤：</p><ul><li>了解人们使用某个产品/服务的原因</li><li>列举用户使用该产品的必经环节</li><li>在明确所有环节以后开始做减法，直至做到极致</li></ul><p>凡是能够让用户以最简便的方式享用到的产品/服务，一定是用户使用率最高的。</p><p>任务的难易程度会直接影响人们完成这一任务的可能性。</p><p>福格，影响任务难度的6个因素：</p><ul><li>时间：完成一项行动需要多长时间</li><li>金钱：采取行动的资金成本</li><li>体力劳动：采取行动所涉及消耗的劳动量</li><li>脑力：采取行动所需的精神努力和注意力水平</li><li>社会偏差：他人如何接受这种行为</li><li>非常规：动作与现有例程匹配度 或中断的程度</li></ul><p>在能力和动机两个选项面前，如何选择该优先解决哪一个？</p><p><strong>增加用户动机是昂贵且耗时的，而先解决能力问题更加容易。</strong>优质高效的产品应用，提供便捷高效的痛点需求解决体验，以及产品的惊喜度，来反向影响和提升用户动机。</p><h4 id="稀缺效应"><a href="#稀缺效应" class="headerlink" title="稀缺效应"></a>稀缺效应</h4><h4 id="环境效应"><a href="#环境效应" class="headerlink" title="环境效应"></a>环境效应</h4><p>产品所处环境</p><h4 id="锚定效应"><a href="#锚定效应" class="headerlink" title="锚定效应"></a>锚定效应</h4><p>人们在做决定时经常会锚定一条信息</p><h4 id="赠券效应"><a href="#赠券效应" class="headerlink" title="赠券效应"></a>赠券效应</h4><p>增加动力的现象</p><h2 id="多变的酬赏"><a href="#多变的酬赏" class="headerlink" title="多变的酬赏"></a>多变的酬赏</h2><p>很多时候驱使人们行动的，并不是酬赏本身，而是人们渴望酬赏时产生的那种迫切需要。</p><p>大脑因为渴望而形成的紧张感会促使人们重复某个动作。</p><p>主要分为三种形式：</p><ul><li>社交酬赏</li><li>猎物酬赏</li><li>自我酬赏</li></ul><h3 id="社交酬赏–人际奖励"><a href="#社交酬赏–人际奖励" class="headerlink" title="社交酬赏–人际奖励"></a>社交酬赏–人际奖励</h3><p>人类时社会化的物种，彼此依存。社交酬赏，抑或说部落酬赏，院子和他人之间的互动关系。</p><p>为了让自己觉得被接纳、被认同、受重视、受喜爱，大脑会自动调试已获得酬赏。</p><h3 id="猎物酬赏–具体的资源或信息"><a href="#猎物酬赏–具体的资源或信息" class="headerlink" title="猎物酬赏–具体的资源或信息"></a>猎物酬赏–具体的资源或信息</h3><p>在追捕的过程中，猎手是为了追逐而追逐。在某种意义上，这个解释了现代人需索无度的状态。</p><p>猎手在追捕猎物时，内心的执念催促它不断向前；</p><h3 id="自我酬赏–体验到的操纵感、成就感、终结感"><a href="#自我酬赏–体验到的操纵感、成就感、终结感" class="headerlink" title="自我酬赏–体验到的操纵感、成就感、终结感"></a>自我酬赏–体验到的操纵感、成就感、终结感</h3><p>人们对于个体愉悦感的渴望。在目标驱动下，人们会去克服障碍，即便仅仅是因为这个过程能带来满足感。</p><p>很多时候，完成任务的强烈渴望会成为促使人们继续某种行为的主要因素。</p><p><strong>上瘾模型驱动场景化设计</strong></p><p><img src="/.top//gaozhiyong/Documents/GitHub/blogs/Hexo/source/_posts/上瘾读书笔记/上瘾模型驱动场景化设计.jpeg" srcset="/img/loading.gif" alt=""></p><p><strong>需要注意的是：</strong></p><ul><li>多变的酬赏不是免费的</li><li>保护用户的自主权：用户有权接受，也有权拒绝</li><li>有限的多边性</li></ul><p>示例：电子邮件业务</p><p>原因：</p><p>1、社交酬赏：不确定哪些人会发送邮件过来，同时我们渴望与他人进行良性互动，会进行回信</p><p>2、猎物酬赏：邮件的内容多种多样，有商品营销，有与职业发展相关等等，查邮件有助于把握机会或规避风险</p><p>3、自我酬赏：筛选分类邮件，标记，删除，过滤，分组等一系列的操作会使用户感知到 邮箱在自己的操控之中</p><h2 id="投入"><a href="#投入" class="headerlink" title="投入"></a>投入</h2><p>用户在某件产品或某服务商投入的时间或精力越多，对该产品/服务就越重视。</p><p><img src="/.top//gaozhiyong/Documents/GitHub/blogs/Hexo/source/_posts/上瘾读书笔记/用户转化至上瘾的流程链路.jpg" srcset="/img/loading.gif" alt=""></p><p>最后形成良性的pick模型。</p><p><img src="/.top//gaozhiyong/Documents/GitHub/blogs/Hexo/source/_posts/上瘾读书笔记/pick模型.jpeg" srcset="/img/loading.gif" alt=""></p><p>最后，感谢各位的阅读～</p><p><img src="/.top//gaozhiyong/Documents/GitHub/blogs/Hexo/source/_posts/上瘾读书笔记/微信公众号二维码.png" srcset="/img/loading.gif" alt="微信公众号" style="zoom:50%;"></p><p><img src="/.top//gaozhiyong/Documents/GitHub/blogs/Hexo/source/_posts/上瘾读书笔记/网站二维码.png" srcset="/img/loading.gif" style="zoom:50%;" alt="个人网站"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>产品</category>
+      
+      <category>营销</category>
+      
+      <category>心理学</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>产品</tag>
+      
+      <tag>心理学</tag>
+      
+      <tag>营销</tag>
       
     </tags>
     
@@ -277,37 +343,6 @@
   
   
   <entry>
-    <title>crash分析类指标详解</title>
-    <link href="/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
-    <url>/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1) 错误次数</strong><br><strong>定义</strong>：在规定的时间段内，应用出现异常退出现象的次数总和。<br><strong>涵义</strong>：通常情况下，应用错误集中于两种：死机或强退，这样的现象都会严重影响用户体验，所以错误次数发生的越高，用户体验越差。降低错误次数是开发者应该时刻关注的重要指标。<br><strong>2) 错误率</strong><br><strong>定义</strong>：在规定时间段内，一个应用发生错误的比率（错误次数/启动次数）。<br><strong>涵义</strong>：产品质量是一个应用发展壮大的基石，与网站不同，移动应用一旦被分发之后就无法再收回，应用错误率高会降低用户对产品的信任和口碑。通过对应用的质量监控，找到错误代码并及时发布修复版本，可以有效弥补这一问题。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>产品</category>
-      
-      <category>数据产品</category>
-      
-      <category>数据指标</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>产品</tag>
-      
-      <tag>数据指标</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>渠道类指标详解</title>
     <link href="/2019/05/19/%E6%B8%A0%E9%81%93%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
     <url>/2019/05/19/%E6%B8%A0%E9%81%93%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
@@ -344,6 +379,37 @@
     <url>/2019/05/19/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1) 使用时长</strong><br><strong>定义</strong>：用户在应用程序上所停留的时间。主要分为平均使用时长和单次使用时长，平均使用时长是某一段时间内所有用户的全部访问时间的平均值。<br><strong>涵义</strong>：通过考量用户在应用上的停留时间，我们可以看出应用内容是否吸引用户，应用质量是否合格；还可以看出某个推广渠道到来的用户是否是深度使用用户，以此评判渠道质量。<br><strong>2) 使用频率</strong><br><strong>定义</strong>：在一定时期内，同一个用户启动应用的次数。如在一天之内，同一个用户一共进行有效启动5次，那么该用户的日使用频率就是5次。<br><strong>涵义</strong>：使用频率和日启动次数类似，只是从另外一个角度衡量用户粘性，一个应用通常情况下用户粘性越高，那么用户的平均使用频率也就越高。<br><strong>3) 使用间隔</strong><br><strong>定义</strong>：使用间隔是指同一用户相邻两次启动应用的时间间隔，例如某一用户第一次启动应用到第二次启动应用之间相隔2天，那么该用户的使用间隔即为2天。<br><strong>涵义</strong>：使用间隔也从侧面反映了应用的用户粘性，通常情况下使用间隔越短说明用户越依赖应用，也就是说应用的用户粘性越高。也可以据此来决定推送消息的时机和发版频率。<br><strong>4) 访问深度</strong><br><strong>定义</strong>：我们将用户在一次启动应用过程中所到达的页面累计数量视为用户的访问深度， 例如某用户从启动APP到退出应用过程中，一共访问了12个页面，那么称该用户的访问深度为12。<br><strong>涵义</strong>：理论上来讲，访问深度越高，应用质量越好，用户对应用的依赖就越强<br><strong>5)页面跳出率</strong><br><strong>定义</strong>：用户从当前页面离开应用程序的比例，离开指“退出或后台超过30秒”<br><strong>涵义</strong>：在“访问页面”报表中的参数，这里的离开指结束一次启动，比如某用户在当前页面接到电话，此时应用程序隐藏到后台运行，10秒钟后挂电话又回到了应用程序，这样的过程不算作是用户“离开”。如果超过30秒，才算作一次离开。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>产品</category>
+      
+      <category>数据产品</category>
+      
+      <category>数据指标</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>产品</tag>
+      
+      <tag>数据指标</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>crash分析类指标详解</title>
+    <link href="/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
+    <url>/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1) 错误次数</strong><br><strong>定义</strong>：在规定的时间段内，应用出现异常退出现象的次数总和。<br><strong>涵义</strong>：通常情况下，应用错误集中于两种：死机或强退，这样的现象都会严重影响用户体验，所以错误次数发生的越高，用户体验越差。降低错误次数是开发者应该时刻关注的重要指标。<br><strong>2) 错误率</strong><br><strong>定义</strong>：在规定时间段内，一个应用发生错误的比率（错误次数/启动次数）。<br><strong>涵义</strong>：产品质量是一个应用发展壮大的基石，与网站不同，移动应用一旦被分发之后就无法再收回，应用错误率高会降低用户对产品的信任和口碑。通过对应用的质量监控，找到错误代码并及时发布修复版本，可以有效弥补这一问题。</p>]]></content>
     
     
     <categories>
@@ -537,9 +603,9 @@
     
     <tags>
       
-      <tag>内容</tag>
-      
       <tag>营销</tag>
+      
+      <tag>内容</tag>
       
       <tag>商业</tag>
       
@@ -668,34 +734,7 @@
     <link href="/2019/02/27/AI%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E6%98%AF%E4%BB%80%E4%B9%88/"/>
     <url>/2019/02/27/AI%E6%95%B0%E6%8D%AE%E6%A0%87%E6%B3%A8%E6%98%AF%E4%BB%80%E4%B9%88/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="AI数据标注是什么"><a href="#AI数据标注是什么" class="headerlink" title="AI数据标注是什么"></a>AI数据标注是什么</h3><p>​    只要跟“监督学习”沾边的产品／技术，比如图像识别、人脸识别、自然语言处理等，都又一个必不可少的流程：</p><p><img src="/Users/gaozhiyong/Desktop/image-20190225160952429.png" srcset="/img/loading.gif" alt="image-20190225160952429"></p><p>不断的使用标注后的数据去训练模型，不断调整模型参数，得到指标熟知更高的模型。</p><h4 id="数据处理流程拆解"><a href="#数据处理流程拆解" class="headerlink" title="数据处理流程拆解"></a>数据处理流程拆解</h4><h4 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h4><p><em>数据质量直接影响模型质量</em></p><ul><li><p>数据标注人员角色</p><ul><li><strong>标注员</strong>：标注员负责标记数据</li><li><strong>审核员</strong>：审核员负责审核被标记数据的质量</li><li><strong>管理员</strong>：管理人员、发放任务、统计工资</li></ul><p>只有数据被审核员审核通过后，这批数据才能被算法同事使用</p></li><li><p>数据标记流程</p><ul><li><p>任务分配</p></li><li><p>标记程序设计</p></li></ul></li><li><p>进度跟踪</p></li><li>质量跟踪</li></ul><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><ul><li>示例：为提高识别精确度，可以采用的方式如：<ul><li>补充数据<ul><li>提供正例数据</li><li>提供负例数据</li><li>进而及提高差异度的识别</li></ul></li><li>优化数据<ul><li>修改以往的错误标注</li></ul></li></ul></li></ul><h4 id="模型测试"><a href="#模型测试" class="headerlink" title="模型测试"></a>模型测试</h4><p><em>如无后台设计，则测试只能由人工抽样计算，繁琐且效率低下；故可以考虑后台计算</em></p><ul><li><p>模型测试需关注的指标</p><ul><li><p>精确率；又叫准确率</p><p>​    <em>识别为正确的样本数 ／ 识别出来的样本数</em></p></li><li><p>召回率；又叫查全率（Recall Rate）</p><p>​    <em>识别为正确的样本数 ／ 所有样本中的正确的数</em></p></li><li><p>精准率；又叫查准率</p></li><li><p>真正例率（同召回率／查全率）</p></li><li><p>假正例率</p></li><li><blockquote><p>示例：举个栗子：全班一共30名男生、20名女生。需要机器识别出男生的数量。本次机器一共识别出20名目标对象，其中18名为男性，2名为女性。则</p><ul><li>精确率=18/（18+2）=0.9</li><li>召回率=18/30=0.6</li></ul></blockquote></li></ul></li></ul><h4 id="产品评估"><a href="#产品评估" class="headerlink" title="产品评估"></a>产品评估</h4><p>在模型上线之前，产品需反复验证模型效果。为了用数据对比本模型和上一个模型的优劣，需要每次都记录好指标数据。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Artificial Intelligence</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>人工智能</tag>
-      
-      <tag>Artificial Intelligence</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>AI时代如何提升个人认知</title>
-    <link href="/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5/"/>
-    <url>/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="AI时间如何提升个人认知"><a href="#AI时间如何提升个人认知" class="headerlink" title="AI时间如何提升个人认知"></a>AI时间如何提升个人认知</h3><blockquote><p>思考比学习知识更重要。</p></blockquote><h4 id="外部原因"><a href="#外部原因" class="headerlink" title="外部原因"></a>外部原因</h4><p>​    当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。</p><p>比如：</p><ul><li><p>互联网</p></li><li><p>共享经济</p></li><li><p>大数据</p></li></ul><h4 id="内部原因"><a href="#内部原因" class="headerlink" title="内部原因"></a>内部原因</h4><blockquote><p>《论思考》 、《论书籍和写作》——叔本华</p></blockquote><blockquote><p>读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="AI数据标注是什么"><a href="#AI数据标注是什么" class="headerlink" title="AI数据标注是什么"></a>AI数据标注是什么</h3><p>​    只要跟“监督学习”沾边的产品／技术，比如图像识别、人脸识别、自然语言处理等，都又一个必不可少的流程：</p><p><img src="/.top//gaozhiyong/Desktop/image-20190225160952429.png" srcset="/img/loading.gif" alt="image-20190225160952429"></p><p>不断的使用标注后的数据去训练模型，不断调整模型参数，得到指标熟知更高的模型。</p><h4 id="数据处理流程拆解"><a href="#数据处理流程拆解" class="headerlink" title="数据处理流程拆解"></a>数据处理流程拆解</h4><h4 id="数据标注"><a href="#数据标注" class="headerlink" title="数据标注"></a>数据标注</h4><p><em>数据质量直接影响模型质量</em></p><ul><li><p>数据标注人员角色</p><ul><li><strong>标注员</strong>：标注员负责标记数据</li><li><strong>审核员</strong>：审核员负责审核被标记数据的质量</li><li><strong>管理员</strong>：管理人员、发放任务、统计工资</li></ul><p>只有数据被审核员审核通过后，这批数据才能被算法同事使用</p></li><li><p>数据标记流程</p><ul><li><p>任务分配</p></li><li><p>标记程序设计</p></li></ul></li><li><p>进度跟踪</p></li><li>质量跟踪</li></ul><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><ul><li>示例：为提高识别精确度，可以采用的方式如：<ul><li>补充数据<ul><li>提供正例数据</li><li>提供负例数据</li><li>进而及提高差异度的识别</li></ul></li><li>优化数据<ul><li>修改以往的错误标注</li></ul></li></ul></li></ul><h4 id="模型测试"><a href="#模型测试" class="headerlink" title="模型测试"></a>模型测试</h4><p><em>如无后台设计，则测试只能由人工抽样计算，繁琐且效率低下；故可以考虑后台计算</em></p><ul><li><p>模型测试需关注的指标</p><ul><li><p>精确率；又叫准确率</p><p>​    <em>识别为正确的样本数 ／ 识别出来的样本数</em></p></li><li><p>召回率；又叫查全率（Recall Rate）</p><p>​    <em>识别为正确的样本数 ／ 所有样本中的正确的数</em></p></li><li><p>精准率；又叫查准率</p></li><li><p>真正例率（同召回率／查全率）</p></li><li><p>假正例率</p></li><li><blockquote><p>示例：举个栗子：全班一共30名男生、20名女生。需要机器识别出男生的数量。本次机器一共识别出20名目标对象，其中18名为男性，2名为女性。则</p><ul><li>精确率=18/（18+2）=0.9</li><li>召回率=18/30=0.6</li></ul></blockquote></li></ul></li></ul><h4 id="产品评估"><a href="#产品评估" class="headerlink" title="产品评估"></a>产品评估</h4><p>在模型上线之前，产品需反复验证模型效果。为了用数据对比本模型和上一个模型的优劣，需要每次都记录好指标数据。</p>]]></content>
     
     
     <categories>
@@ -745,23 +784,25 @@
   
   
   <entry>
-    <title>php即时通讯-WebSocket</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
+    <title>AI时代如何提升个人认知</title>
+    <link href="/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5/"/>
+    <url>/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul><li>一个应用层协议</li><li>长链接</li><li>主流即时通讯协议</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="AI时间如何提升个人认知"><a href="#AI时间如何提升个人认知" class="headerlink" title="AI时间如何提升个人认知"></a>AI时间如何提升个人认知</h3><blockquote><p>思考比学习知识更重要。</p></blockquote><h4 id="外部原因"><a href="#外部原因" class="headerlink" title="外部原因"></a>外部原因</h4><p>​    当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。</p><p>比如：</p><ul><li><p>互联网</p></li><li><p>共享经济</p></li><li><p>大数据</p></li></ul><h4 id="内部原因"><a href="#内部原因" class="headerlink" title="内部原因"></a>内部原因</h4><blockquote><p>《论思考》 、《论书籍和写作》——叔本华</p></blockquote><blockquote><p>读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。</p></blockquote>]]></content>
     
     
     <categories>
       
-      <category>php</category>
+      <category>Artificial Intelligence</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>php</tag>
+      <tag>人工智能</tag>
+      
+      <tag>Artificial Intelligence</tag>
       
     </tags>
     
@@ -825,6 +866,31 @@
     <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h3><ul><li>系统进程</li><li>用户进程</li><li>并发执行</li><li>性能更高</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>php</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>php即时通讯-WebSocket</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul><li>一个应用层协议</li><li>长链接</li><li>主流即时通讯协议</li></ul>]]></content>
     
     
     <categories>
@@ -1100,7 +1166,7 @@
     <link href="/2019/01/02/php%E5%BC%80%E5%8F%91APP%E5%90%8E%E7%AB%AF--%E5%AD%A6%E4%B9%A0%E5%BA%8F%E8%A8%80/"/>
     <url>/2019/01/02/php%E5%BC%80%E5%8F%91APP%E5%90%8E%E7%AB%AF--%E5%AD%A6%E4%B9%A0%E5%BA%8F%E8%A8%80/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h3><hr><p>梳理学习计划</p><h5 id="1、后台登录功能详解"><a href="#1、后台登录功能详解" class="headerlink" title="1、后台登录功能详解"></a>1、后台登录功能详解</h5><h5 id="2、娱乐新闻内容管理"><a href="#2、娱乐新闻内容管理" class="headerlink" title="2、娱乐新闻内容管理"></a>2、娱乐新闻内容管理</h5><h5 id="3、restful-api"><a href="#3、restful-api" class="headerlink" title="3、restful api"></a>3、restful api</h5><h5 id="4、api数据安全解决方案"><a href="#4、api数据安全解决方案" class="headerlink" title="4、api数据安全解决方案"></a>4、api数据安全解决方案</h5><h5 id="5、app-api-基础信息接口开发以及接口文档详解"><a href="#5、app-api-基础信息接口开发以及接口文档详解" class="headerlink" title="5、app-api 基础信息接口开发以及接口文档详解"></a>5、app-api 基础信息接口开发以及接口文档详解</h5><h5 id="6、app版本升级业务开发"><a href="#6、app版本升级业务开发" class="headerlink" title="6、app版本升级业务开发"></a>6、app版本升级业务开发</h5><h5 id="7、登录、个人中心、点赞以及评论功能开发"><a href="#7、登录、个人中心、点赞以及评论功能开发" class="headerlink" title="7、登录、个人中心、点赞以及评论功能开发"></a>7、登录、个人中心、点赞以及评论功能开发</h5><h5 id="8、app端异常、性能监控以及定位分析"><a href="#8、app端异常、性能监控以及定位分析" class="headerlink" title="8、app端异常、性能监控以及定位分析"></a>8、app端异常、性能监控以及定位分析</h5><h5 id="9、打造app消息推送服务"><a href="#9、打造app消息推送服务" class="headerlink" title="9、打造app消息推送服务"></a><strong>9、打造app消息推送服务</strong></h5><hr><h3 id="功能分析"><a href="#功能分析" class="headerlink" title="功能分析"></a>功能分析</h3><h4 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h4><ul><li>后台登录</li><li>退出登录</li><li>娱乐新闻管理<ul><li>添加功能</li><li>列表</li><li>修改状态、删除文章</li><li>编辑功能</li></ul></li><li>管理员管理<ul><li>增删改查</li><li>权限控制</li></ul></li></ul><hr><h4 id="app"><a href="#app" class="headerlink" title="app"></a>app</h4><ul><li>版本升级</li><li>首页接口API</li><li>栏目接口</li><li>栏目列表页数据接口</li><li>详情页接口</li><li>相关推荐</li><li>内容搜索</li><li>评论、点赞</li><li>登录功能<ul><li>手机号+验证码</li><li>手机号+密码</li></ul></li><li>个人中心</li><li>消息推送服务</li><li>APP端异常分析定位 </li></ul><hr><h3 id="数据表ER关系总图"><a href="#数据表ER关系总图" class="headerlink" title="数据表ER关系总图"></a>数据表ER关系总图</h3><p><img src="C:\Users\YSILHO~1\AppData\Local\Temp\1550155519929.png" srcset="/img/loading.gif" alt="1550155519929"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h3><hr><p>梳理学习计划</p><h5 id="1、后台登录功能详解"><a href="#1、后台登录功能详解" class="headerlink" title="1、后台登录功能详解"></a>1、后台登录功能详解</h5><h5 id="2、娱乐新闻内容管理"><a href="#2、娱乐新闻内容管理" class="headerlink" title="2、娱乐新闻内容管理"></a>2、娱乐新闻内容管理</h5><h5 id="3、restful-api"><a href="#3、restful-api" class="headerlink" title="3、restful api"></a>3、restful api</h5><h5 id="4、api数据安全解决方案"><a href="#4、api数据安全解决方案" class="headerlink" title="4、api数据安全解决方案"></a>4、api数据安全解决方案</h5><h5 id="5、app-api-基础信息接口开发以及接口文档详解"><a href="#5、app-api-基础信息接口开发以及接口文档详解" class="headerlink" title="5、app-api 基础信息接口开发以及接口文档详解"></a>5、app-api 基础信息接口开发以及接口文档详解</h5><h5 id="6、app版本升级业务开发"><a href="#6、app版本升级业务开发" class="headerlink" title="6、app版本升级业务开发"></a>6、app版本升级业务开发</h5><h5 id="7、登录、个人中心、点赞以及评论功能开发"><a href="#7、登录、个人中心、点赞以及评论功能开发" class="headerlink" title="7、登录、个人中心、点赞以及评论功能开发"></a>7、登录、个人中心、点赞以及评论功能开发</h5><h5 id="8、app端异常、性能监控以及定位分析"><a href="#8、app端异常、性能监控以及定位分析" class="headerlink" title="8、app端异常、性能监控以及定位分析"></a>8、app端异常、性能监控以及定位分析</h5><h5 id="9、打造app消息推送服务"><a href="#9、打造app消息推送服务" class="headerlink" title="9、打造app消息推送服务"></a><strong>9、打造app消息推送服务</strong></h5><hr><h3 id="功能分析"><a href="#功能分析" class="headerlink" title="功能分析"></a>功能分析</h3><h4 id="后台"><a href="#后台" class="headerlink" title="后台"></a>后台</h4><ul><li>后台登录</li><li>退出登录</li><li>娱乐新闻管理<ul><li>添加功能</li><li>列表</li><li>修改状态、删除文章</li><li>编辑功能</li></ul></li><li>管理员管理<ul><li>增删改查</li><li>权限控制</li></ul></li></ul><hr><h4 id="app"><a href="#app" class="headerlink" title="app"></a>app</h4><ul><li>版本升级</li><li>首页接口API</li><li>栏目接口</li><li>栏目列表页数据接口</li><li>详情页接口</li><li>相关推荐</li><li>内容搜索</li><li>评论、点赞</li><li>登录功能<ul><li>手机号+验证码</li><li>手机号+密码</li></ul></li><li>个人中心</li><li>消息推送服务</li><li>APP端异常分析定位 </li></ul><hr><h3 id="数据表ER关系总图"><a href="#数据表ER关系总图" class="headerlink" title="数据表ER关系总图"></a>数据表ER关系总图</h3><p><img src="/.top//Users\YSILHO~1\AppData\Local\Temp\1550155519929.png" srcset="/img/loading.gif" alt="1550155519929"></p>]]></content>
     
     
     <categories>
@@ -1318,7 +1384,7 @@
     <link href="/2018/12/21/php%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C--%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6/"/>
     <url>/2018/12/21/php%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C--%E4%BC%9A%E8%AF%9D%E6%8E%A7%E5%88%B6/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PHP会话控制"><a href="#PHP会话控制" class="headerlink" title="PHP会话控制"></a>PHP会话控制</h3><h4 id="session"><a href="#session" class="headerlink" title="session"></a>session</h4><ul><li><p><strong>session作用</strong></p><p>1、SESSION允许通过将数据存储在HTTP服务器中，以在整个用户会话过程中保持该数据；所以，SESSION不仅是一个时间概念，还包括了特定的用户和服务器；</p><p>2、SESSION提供在PHP脚本中定义全局变量的方法，使得这个全局变量在同一个SESSION中对于所有的PHP脚本文件内都有效。所以，SESSION是基于HTTP服务器的用于保持状态的方法；</p></li><li><p><strong>session工作原理</strong></p><p><img src="C:\Users\YSILHO~1\AppData\Local\Temp\1550312056583.png" srcset="/img/loading.gif" alt="1550312056583"></p></li><li><p><strong>不同浏览器的cookie位置</strong></p><p>1、在Windows系统上（Win7为例）浏览器的Cookie数据存在%APPDATA%\Microsoft\Windows\Cookies\目录中的xxx.txt文件</p><p>2、Firefox的Cookie数据存储在：%APPDATA%\Mozilla\Firefox\Profiles\目录中的xxx.default目录，名为cookies.sqlite的文件；</p><p>3、Chrome的Cookie数据存储在：%LOCALAPPDATA%\Google\Chrome\UserData\Default目录中，名为Cookies的文件；</p></li><li><p><strong>session相关的函数</strong></p><ul><li><p><strong>session_start</strong></p><pre><code>bool session_start([array $options = []])描述：启动新会话，或者重用现有会话说明：1、$options参数是一个关联数组，如果提供的话，则会用其中的项目覆盖“会话配置”中的配置选项；2、如果通过GET或者POST方式，或者使用cookie提交了会话ID，则会重用现有会话； </code></pre></li><li><p><strong>session_id</strong></p><pre><code>string session_id([string $id])描述：获取、设置当前会话ID说明：1、如果指定$id参数的值，则使用指定值作为会话ID；2、必须在调用session_start()函数之前调用session_id()函数；</code></pre></li><li><p><strong>session_name</strong></p><pre><code>string session_name([string$name])描述：读取/设置会话名称语法说明：1、如果指定$name参数，session_name()函数会更新会话名称，并返回原来的会话名称；2、必须在调用session_start()函数之前调用session_name()函数；与SESSION相关的函数；</code></pre></li><li><p><strong>session_destroy</strong></p><pre><code>string session_destroy(void)描述：销毁一个会话中的全部数据</code></pre><h4 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h4></li></ul></li><li><p><strong>cookie 相关函数</strong></p><ul><li><p>setcookie</p><pre><code>boolsetcookie(string$name[,string$value=&quot;&quot;[,int$expire=0[,string$path=&quot;&quot;[,string$domain=&quot;&quot;]]]])描述：设置cookie说明：1、$name参数用于指定cookie名称；2、$value参数用于设置cookie值；</code></pre></li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PHP会话控制"><a href="#PHP会话控制" class="headerlink" title="PHP会话控制"></a>PHP会话控制</h3><h4 id="session"><a href="#session" class="headerlink" title="session"></a>session</h4><ul><li><p><strong>session作用</strong></p><p>1、SESSION允许通过将数据存储在HTTP服务器中，以在整个用户会话过程中保持该数据；所以，SESSION不仅是一个时间概念，还包括了特定的用户和服务器；</p><p>2、SESSION提供在PHP脚本中定义全局变量的方法，使得这个全局变量在同一个SESSION中对于所有的PHP脚本文件内都有效。所以，SESSION是基于HTTP服务器的用于保持状态的方法；</p></li><li><p><strong>session工作原理</strong></p><p><img src="/.top//Users\YSILHO~1\AppData\Local\Temp\1550312056583.png" srcset="/img/loading.gif" alt="1550312056583"></p></li><li><p><strong>不同浏览器的cookie位置</strong></p><p>1、在Windows系统上（Win7为例）浏览器的Cookie数据存在%APPDATA%\Microsoft\Windows\Cookies\目录中的xxx.txt文件</p><p>2、Firefox的Cookie数据存储在：%APPDATA%\Mozilla\Firefox\Profiles\目录中的xxx.default目录，名为cookies.sqlite的文件；</p><p>3、Chrome的Cookie数据存储在：%LOCALAPPDATA%\Google\Chrome\UserData\Default目录中，名为Cookies的文件；</p></li><li><p><strong>session相关的函数</strong></p><ul><li><p><strong>session_start</strong></p><pre><code>bool session_start([array $options = []])描述：启动新会话，或者重用现有会话说明：1、$options参数是一个关联数组，如果提供的话，则会用其中的项目覆盖“会话配置”中的配置选项；2、如果通过GET或者POST方式，或者使用cookie提交了会话ID，则会重用现有会话； </code></pre></li><li><p><strong>session_id</strong></p><pre><code>string session_id([string $id])描述：获取、设置当前会话ID说明：1、如果指定$id参数的值，则使用指定值作为会话ID；2、必须在调用session_start()函数之前调用session_id()函数；</code></pre></li><li><p><strong>session_name</strong></p><pre><code>string session_name([string$name])描述：读取/设置会话名称语法说明：1、如果指定$name参数，session_name()函数会更新会话名称，并返回原来的会话名称；2、必须在调用session_start()函数之前调用session_name()函数；与SESSION相关的函数；</code></pre></li><li><p><strong>session_destroy</strong></p><pre><code>string session_destroy(void)描述：销毁一个会话中的全部数据</code></pre><h4 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h4></li></ul></li><li><p><strong>cookie 相关函数</strong></p><ul><li><p>setcookie</p><pre><code>boolsetcookie(string$name[,string$value=&quot;&quot;[,int$expire=0[,string$path=&quot;&quot;[,string$domain=&quot;&quot;]]]])描述：设置cookie说明：1、$name参数用于指定cookie名称；2、$value参数用于设置cookie值；</code></pre></li></ul></li></ul>]]></content>
     
     
     <categories>
@@ -1426,7 +1492,7 @@
     <link href="/2018/12/20/%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <url>/2018/12/20/%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%E7%90%86%E8%AE%BA%E4%B8%8E%E5%AE%9E%E8%B7%B5%EF%BC%88%E4%B8%80%EF%BC%89/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="电影推荐系统原理"><a href="#电影推荐系统原理" class="headerlink" title="电影推荐系统原理"></a>电影推荐系统原理</h3><h5 id="基于内容的推荐系统"><a href="#基于内容的推荐系统" class="headerlink" title="基于内容的推荐系统"></a>基于内容的推荐系统</h5><p><img src="C:\Users\YSILHO~1\AppData\Local\Temp\1550153370732.png" srcset="/img/loading.gif" alt="1550153370732"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="电影推荐系统原理"><a href="#电影推荐系统原理" class="headerlink" title="电影推荐系统原理"></a>电影推荐系统原理</h3><h5 id="基于内容的推荐系统"><a href="#基于内容的推荐系统" class="headerlink" title="基于内容的推荐系统"></a>基于内容的推荐系统</h5><p><img src="/.top//Users\YSILHO~1\AppData\Local\Temp\1550153370732.png" srcset="/img/loading.gif" alt="1550153370732"></p>]]></content>
     
     
     <categories>
@@ -1979,6 +2045,39 @@
   
   
   <entry>
+    <title>数据分析05：matplotlib直方图</title>
+    <link href="/2018/03/02/05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE/"/>
+    <url>/2018/03/02/05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt&#39;&#39;&#39;    由于一系列不等的纵形图组成，表示数据分布的情况    例如：某年级同学的身高分布    需要注意与 柱形图的区别&#39;&#39;&#39;# # 例# mu = 100    #均值# sigma = 20    # 标准差## x = mu + sigma * np.random.random(1000)# plt.hist(x,bins=20,density=True)# plt.show()### # 双变量图 频率越低越暗# # x的中心为2# x = np.random.randn(1000) +2# # y的中心为3# y = np.random.randn(1000)+3## plt.hist2d(x,y,bins=40)# plt.show()# 练习&#39;&#39;&#39;    随机生成2000个数据，均值为10， 方差3；    绘制两个直方图， bins =10 和50 ，normed ／density 分别为True,False;    随机生成x,y 各2000个， x均值1 ，y 均值5;    绘制2-D直方图， bins = 40;&#39;&#39;&#39;# 均值ava = 10# 方差variance = 3sigma = np.sqrt(variance)x = ava + sigma * np.random.random(2000)plt.hist(x,bins=10,density=True)plt.show()plt.hist(x,bins=50,density=False)plt.show()x = np.random.randn(2000) +1y = np.random.randn(2000) + 5plt.hist2d(x,y,bins=40)plt.show()</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>数据分析</category>
+      
+      <category>Python3</category>
+      
+      <category>Matplotlib</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数据分析</tag>
+      
+      <tag>Python3</tag>
+      
+      <tag>Matplotlib</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>数据分析07：matplotlib箱线图</title>
     <link href="/2018/03/02/07-matplotlib%E7%AE%B1%E7%BA%BF%E5%9B%BE/"/>
     <url>/2018/03/02/07-matplotlib%E7%AE%B1%E7%BA%BF%E5%9B%BE/</url>
@@ -2045,77 +2144,11 @@
   
   
   <entry>
-    <title>数据分析05：matplotlib直方图</title>
-    <link href="/2018/03/02/05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE/"/>
-    <url>/2018/03/02/05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt&#39;&#39;&#39;    由于一系列不等的纵形图组成，表示数据分布的情况    例如：某年级同学的身高分布    需要注意与 柱形图的区别&#39;&#39;&#39;# # 例# mu = 100    #均值# sigma = 20    # 标准差## x = mu + sigma * np.random.random(1000)# plt.hist(x,bins=20,density=True)# plt.show()### # 双变量图 频率越低越暗# # x的中心为2# x = np.random.randn(1000) +2# # y的中心为3# y = np.random.randn(1000)+3## plt.hist2d(x,y,bins=40)# plt.show()# 练习&#39;&#39;&#39;    随机生成2000个数据，均值为10， 方差3；    绘制两个直方图， bins =10 和50 ，normed ／density 分别为True,False;    随机生成x,y 各2000个， x均值1 ，y 均值5;    绘制2-D直方图， bins = 40;&#39;&#39;&#39;# 均值ava = 10# 方差variance = 3sigma = np.sqrt(variance)x = ava + sigma * np.random.random(2000)plt.hist(x,bins=10,density=True)plt.show()plt.hist(x,bins=50,density=False)plt.show()x = np.random.randn(2000) +1y = np.random.randn(2000) + 5plt.hist2d(x,y,bins=40)plt.show()</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>数据分析</category>
-      
-      <category>Python3</category>
-      
-      <category>Matplotlib</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>数据分析</tag>
-      
-      <tag>Python3</tag>
-      
-      <tag>Matplotlib</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>数据分析04：matplotlib柱形图</title>
     <link href="/2018/03/02/04-matploylib%E6%9F%B1%E5%BD%A2%E5%9B%BE/"/>
     <url>/2018/03/02/04-matploylib%E6%9F%B1%E5%BD%A2%E5%9B%BE/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt# 柱形图# 例一N =5y =  [15,28,10,30,25]index = np.arange(N)p = plt.bar(index,height=y)plt.show()# 例2p1 = plt.bar(0,bottom=index,width=y,height=0.5,align=&#39;edge&#39;,color=&#39;red&#39;,orientation=&#39;horizontal&#39;)plt.show()p2 = plt.barh(index,width= y , align=&#39;edge&#39;,color =&#39;green&#39;,height=0.5)plt.show()# 例3sales_BJ = [52,55,63,53]sales_SH = [44,66,55,41]index = np.arange(4)bar_width = 0.3# 竖着显示plt.bar(index,sales_BJ,bar_width)plt.bar(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;)plt.show()# 横着显示plt.barh(index,sales_BJ,bar_width)plt.barh(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;)plt.show()# 层叠图plt.bar(index,sales_BJ,bar_width)plt.bar(index,sales_SH,bar_width,color=&#39;r&#39;,bottom=sales_BJ)plt.show()# 练习&#39;&#39;&#39;    生成两组大小为5的数据；    画出两组数据 水平的条形图；    采用并列，层叠两种方式；&#39;&#39;&#39;N =5n1 = np.random.randint(1,100,N)n2 = np.random.randint(1,100,N)index = np.arange(N)bar_width = 0.3# 并列显示plt.bar(index,n1,bar_width)plt.bar(index+bar_width,n2,bar_width,color=&#39;r&#39;)plt.show()# 层叠显示plt.bar(index,n1,bar_width)plt.bar(index,n2,bar_width,color=&#39;r&#39;,bottom=n1)plt.show()</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>数据分析</category>
-      
-      <category>Python3</category>
-      
-      <category>Matplotlib</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>数据分析</tag>
-      
-      <tag>Python3</tag>
-      
-      <tag>Matplotlib</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>数据分析02：matplotlib散点图</title>
-    <link href="/2018/03/02/02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE/"/>
-    <url>/2018/03/02/02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt&#39;&#39;&#39;    散点图显示两组数据的值，每个点的坐标位置的值决定    用户观察两种变量的相关性：        正相关        负相关        不相关&#39;&#39;&#39;# 正相关height = [161,170,174,165,182,175]weight = [50,65,70,62,81,75]plt.scatter(height,weight)plt.show()# 不相关N = 1000x = np.random.randn(N)y = np.random.randn(N)plt.scatter(x,y)plt.show()# 散点图的外观&#39;&#39;&#39;    c    颜色    s    点（面积）大小    alpha       透明度        值的范围[0,1]        通过调节透明度，来观察点的集中性    marker      点形状&#39;&#39;&#39;# 练习&#39;&#39;&#39;    使用000001.csv的数据    计算最高价 和开盘价之差    绘出前后两天diff的散点图， 研究是否具有相关性&#39;&#39;&#39;height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True)change = height -opentomorrow = change[2:]yesterday = change[:-2]plt.scatter(yesterday,tomorrow,alpha=0.2,)plt.show()</code></pre>]]></content>
     
     
     <categories>
@@ -2177,6 +2210,39 @@
   
   
   <entry>
+    <title>数据分析02：matplotlib散点图</title>
+    <link href="/2018/03/02/02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE/"/>
+    <url>/2018/03/02/02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt&#39;&#39;&#39;    散点图显示两组数据的值，每个点的坐标位置的值决定    用户观察两种变量的相关性：        正相关        负相关        不相关&#39;&#39;&#39;# 正相关height = [161,170,174,165,182,175]weight = [50,65,70,62,81,75]plt.scatter(height,weight)plt.show()# 不相关N = 1000x = np.random.randn(N)y = np.random.randn(N)plt.scatter(x,y)plt.show()# 散点图的外观&#39;&#39;&#39;    c    颜色    s    点（面积）大小    alpha       透明度        值的范围[0,1]        通过调节透明度，来观察点的集中性    marker      点形状&#39;&#39;&#39;# 练习&#39;&#39;&#39;    使用000001.csv的数据    计算最高价 和开盘价之差    绘出前后两天diff的散点图， 研究是否具有相关性&#39;&#39;&#39;height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True)change = height -opentomorrow = change[2:]yesterday = change[:-2]plt.scatter(yesterday,tomorrow,alpha=0.2,)plt.show()</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>数据分析</category>
+      
+      <category>Python3</category>
+      
+      <category>Matplotlib</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>数据分析</tag>
+      
+      <tag>Python3</tag>
+      
+      <tag>Matplotlib</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>数据分析03：matplotlib折线图</title>
     <link href="/2018/03/02/03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE/"/>
     <url>/2018/03/02/03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE/</url>
@@ -2210,37 +2276,6 @@
   
   
   <entry>
-    <title>CentOS-Maven配置</title>
-    <link href="/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/"/>
-    <url>/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Centos-Maven配置"><a href="#Centos-Maven配置" class="headerlink" title="Centos-Maven配置"></a>Centos-Maven配置</h1><p> 配置maven镜像</p><pre><code class="xml">&lt;mirror&gt;    &lt;id&gt;alimaven&lt;/id&gt;    &lt;name&gt;aliyun maven&lt;/name&gt;  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;&lt;/mirror&gt;</code></pre><p>maven配置路径 </p><pre><code class="shell">export M2_HOME=/usr/local/maven3/apache-maven-3.6.3export PATH=$PATH$:M2_HOME/binsource /etc/profile</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-      <category>SpringBoot</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>服务端</tag>
-      
-      <tag>Java</tag>
-      
-      <tag>SpringBoot</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>SpringBoot-WebSocket聊天室</title>
     <link href="/2018/03/02/SpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4/"/>
     <url>/2018/03/02/SpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4/</url>
@@ -2259,44 +2294,13 @@
     
     <tags>
       
-      <tag>服务端</tag>
-      
       <tag>Java</tag>
+      
+      <tag>服务端</tag>
       
       <tag>SpringBoot</tag>
       
       <tag>WebSocket</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>SpringBoot启动自定义方法</title>
-    <link href="/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/"/>
-    <url>/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot启动自定义方法"><a href="#SpringBoot启动自定义方法" class="headerlink" title="SpringBoot启动自定义方法"></a>SpringBoot启动自定义方法</h1><h2 id="一、实现CommandLineRunner接口，重写run方法"><a href="#一、实现CommandLineRunner接口，重写run方法" class="headerlink" title="一、实现CommandLineRunner接口，重写run方法"></a>一、实现CommandLineRunner接口，重写run方法</h2><pre><code class="java">import org.springframework.boot.CommandLineRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart1 implements CommandLineRunner{    @Override    public void run(String... args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="二、实现ApplicationRunner接口，重写un方法"><a href="#二、实现ApplicationRunner接口，重写un方法" class="headerlink" title="二、实现ApplicationRunner接口，重写un方法"></a>二、实现ApplicationRunner接口，重写un方法</h2><pre><code class="java">import org.springframework.boot.ApplicationArguments;import org.springframework.boot.ApplicationRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart2 implements ApplicationRunner {    @Override    public void run(ApplicationArguments args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="三、初始化方法加上-PostConstruct注解"><a href="#三、初始化方法加上-PostConstruct注解" class="headerlink" title="三、初始化方法加上@PostConstruct注解"></a>三、初始化方法加上@PostConstruct注解</h2><pre><code class="java">import javax.annotation.PostConstruct;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart3{    @PostConstruct    public void test() throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h4 id="四、其他实现思路"><a href="#四、其他实现思路" class="headerlink" title="四、其他实现思路"></a>四、其他实现思路</h4><pre><code class="java">import org.springframework.context.annotation.Bean;import org.springframework.context.annotation.Configuration;import com.gzy.demo.NettyClient;@Configurationpublic class MyStart4 {    @Bean    public String startNetty() {        try {            NettyClient.connect(10007, &quot;127.0.0.1&quot;);        } catch (Exception e) {            e.printStackTrace();        }        return &quot;startNetty&quot;;    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-      <category>SpringBoot</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>服务端</tag>
-      
-      <tag>Java</tag>
-      
-      <tag>SpringBoot</tag>
       
     </tags>
     
@@ -2323,9 +2327,71 @@
     
     <tags>
       
+      <tag>Java</tag>
+      
       <tag>服务端</tag>
       
+      <tag>SpringBoot</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SpringBoot启动自定义方法</title>
+    <link href="/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/"/>
+    <url>/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot启动自定义方法"><a href="#SpringBoot启动自定义方法" class="headerlink" title="SpringBoot启动自定义方法"></a>SpringBoot启动自定义方法</h1><h2 id="一、实现CommandLineRunner接口，重写run方法"><a href="#一、实现CommandLineRunner接口，重写run方法" class="headerlink" title="一、实现CommandLineRunner接口，重写run方法"></a>一、实现CommandLineRunner接口，重写run方法</h2><pre><code class="java">import org.springframework.boot.CommandLineRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart1 implements CommandLineRunner{    @Override    public void run(String... args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="二、实现ApplicationRunner接口，重写un方法"><a href="#二、实现ApplicationRunner接口，重写un方法" class="headerlink" title="二、实现ApplicationRunner接口，重写un方法"></a>二、实现ApplicationRunner接口，重写un方法</h2><pre><code class="java">import org.springframework.boot.ApplicationArguments;import org.springframework.boot.ApplicationRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart2 implements ApplicationRunner {    @Override    public void run(ApplicationArguments args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="三、初始化方法加上-PostConstruct注解"><a href="#三、初始化方法加上-PostConstruct注解" class="headerlink" title="三、初始化方法加上@PostConstruct注解"></a>三、初始化方法加上@PostConstruct注解</h2><pre><code class="java">import javax.annotation.PostConstruct;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart3{    @PostConstruct    public void test() throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h4 id="四、其他实现思路"><a href="#四、其他实现思路" class="headerlink" title="四、其他实现思路"></a>四、其他实现思路</h4><pre><code class="java">import org.springframework.context.annotation.Bean;import org.springframework.context.annotation.Configuration;import com.gzy.demo.NettyClient;@Configurationpublic class MyStart4 {    @Bean    public String startNetty() {        try {            NettyClient.connect(10007, &quot;127.0.0.1&quot;);        } catch (Exception e) {            e.printStackTrace();        }        return &quot;startNetty&quot;;    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+      <category>SpringBoot</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
       <tag>Java</tag>
+      
+      <tag>服务端</tag>
+      
+      <tag>SpringBoot</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>CentOS-Maven配置</title>
+    <link href="/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/"/>
+    <url>/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Centos-Maven配置"><a href="#Centos-Maven配置" class="headerlink" title="Centos-Maven配置"></a>Centos-Maven配置</h1><p> 配置maven镜像</p><pre><code class="xml">&lt;mirror&gt;    &lt;id&gt;alimaven&lt;/id&gt;    &lt;name&gt;aliyun maven&lt;/name&gt;  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;&lt;/mirror&gt;</code></pre><p>maven配置路径 </p><pre><code class="shell">export M2_HOME=/usr/local/maven3/apache-maven-3.6.3export PATH=$PATH$:M2_HOME/binsource /etc/profile</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+      <category>SpringBoot</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+      <tag>服务端</tag>
       
       <tag>SpringBoot</tag>
       
@@ -2585,11 +2651,11 @@
   
   
   <entry>
-    <title>MySQL深入浅出--数据库相关操作</title>
-    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
-    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
+    <title>MySQL深入浅出--MySQL相关操作</title>
+    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
+    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="数据库相关操作"><a href="#数据库相关操作" class="headerlink" title="数据库相关操作"></a>数据库相关操作</h3><ul><li><p>创建数据库   </p><pre><code class="mysql">CREATE {DATABASE|SCHEMA} db_name;</code></pre><ul><li><p>检测数据库名称是否存在，不存在则创建</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name;</code></pre></li><li><p>创建数据库同时指定编码方式</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li></ul></li><li><p>查看当前服务器下全部数据库</p><pre><code class="mysql">SHOW DATABASES|SCHEMAS;</code></pre></li><li><p>查看指定数据库详细信息</p><pre><code class="mysql">SHOW CREATE DATABASE db_name;</code></pre></li><li><p>修改指定数据库的编码方式</p><pre><code class="mysql">ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li><li><p>打开指定数据库</p><pre><code class="mysql">USE db_name;</code></pre></li><li><p>得到当前打开的数据库</p><pre><code class="mysql">SELECT DATABASE()|SCHEMA();</code></pre></li><li><p>删除指定的数据库</p><pre><code class="mysql">DROP DATABASE db_name;</code></pre><ul><li><p>如果数据库存在则删除</p><pre><code class="mysql">DROP DATABASE [IF EXISTS] db_name;</code></pre></li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="MySQL-操作"><a href="#MySQL-操作" class="headerlink" title="MySQL 操作"></a>MySQL 操作</h3><h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>​    my.cnf  是 MySQL 的配置文件</p><h4 id="登录-退出MySQL"><a href="#登录-退出MySQL" class="headerlink" title="登录/退出MySQL"></a>登录/退出MySQL</h4><p>注意：</p><p>​    1、命令行结束符号使用英文分号;   或者 \g</p><p>​    2、通过help 或者\h 或者?加上相关关键字 来查看手册</p><p>​    3、\c可以取消当前命令的执行</p><h5 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h5><ul><li>mysql -uroot -p</li><li>mysql -uroot -proot</li><li>mysql -hlocalhost -uroot -p -P3306</li><li>登录同时修改命令提示符<ul><li>mysql -uroot -p –prompt=命令提示符</li></ul></li><li>获取版本号<ul><li>mysql -V</li><li>mysql –version</li></ul></li><li>登录同时打开指定数据库<ul><li>mysql -uroot -p -D db_name</li></ul></li></ul><h5 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h5><ul><li>exit</li><li>quit</li><li>\q</li><li>ctrl + c</li></ul><h4 id="SQL语句语法规范"><a href="#SQL语句语法规范" class="headerlink" title="SQL语句语法规范"></a>SQL语句语法规范</h4><ul><li>常用MySQL的关键字需要大写</li><li>库名、表名、字段名称等使用小写</li><li>SQL语句支持折行操作，拆分的时候不能把完整单词拆开</li><li>数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号<code></code>将其括起来</li></ul><h4 id="常用SQL语句"><a href="#常用SQL语句" class="headerlink" title="常用SQL语句"></a>常用SQL语句</h4><ul><li>SELECT USER()     得到登录的用户</li><li>SELECT VERSION()     得到MySQL的版本信息</li><li>SELECT NOW()         得到当前的日期时间</li><li>SELECT DATABASE()     得到当前打开的数据库</li></ul>]]></content>
     
     
     <categories>
@@ -2612,11 +2678,11 @@
   
   
   <entry>
-    <title>MySQL深入浅出--MySQL相关操作</title>
-    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
-    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
+    <title>MySQL深入浅出--数据库相关操作</title>
+    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
+    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="MySQL-操作"><a href="#MySQL-操作" class="headerlink" title="MySQL 操作"></a>MySQL 操作</h3><h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>​    my.cnf  是 MySQL 的配置文件</p><h4 id="登录-退出MySQL"><a href="#登录-退出MySQL" class="headerlink" title="登录/退出MySQL"></a>登录/退出MySQL</h4><p>注意：</p><p>​    1、命令行结束符号使用英文分号;   或者 \g</p><p>​    2、通过help 或者\h 或者?加上相关关键字 来查看手册</p><p>​    3、\c可以取消当前命令的执行</p><h5 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h5><ul><li>mysql -uroot -p</li><li>mysql -uroot -proot</li><li>mysql -hlocalhost -uroot -p -P3306</li><li>登录同时修改命令提示符<ul><li>mysql -uroot -p –prompt=命令提示符</li></ul></li><li>获取版本号<ul><li>mysql -V</li><li>mysql –version</li></ul></li><li>登录同时打开指定数据库<ul><li>mysql -uroot -p -D db_name</li></ul></li></ul><h5 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h5><ul><li>exit</li><li>quit</li><li>\q</li><li>ctrl + c</li></ul><h4 id="SQL语句语法规范"><a href="#SQL语句语法规范" class="headerlink" title="SQL语句语法规范"></a>SQL语句语法规范</h4><ul><li>常用MySQL的关键字需要大写</li><li>库名、表名、字段名称等使用小写</li><li>SQL语句支持折行操作，拆分的时候不能把完整单词拆开</li><li>数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号<code></code>将其括起来</li></ul><h4 id="常用SQL语句"><a href="#常用SQL语句" class="headerlink" title="常用SQL语句"></a>常用SQL语句</h4><ul><li>SELECT USER()     得到登录的用户</li><li>SELECT VERSION()     得到MySQL的版本信息</li><li>SELECT NOW()         得到当前的日期时间</li><li>SELECT DATABASE()     得到当前打开的数据库</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="数据库相关操作"><a href="#数据库相关操作" class="headerlink" title="数据库相关操作"></a>数据库相关操作</h3><ul><li><p>创建数据库   </p><pre><code class="mysql">CREATE {DATABASE|SCHEMA} db_name;</code></pre><ul><li><p>检测数据库名称是否存在，不存在则创建</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name;</code></pre></li><li><p>创建数据库同时指定编码方式</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li></ul></li><li><p>查看当前服务器下全部数据库</p><pre><code class="mysql">SHOW DATABASES|SCHEMAS;</code></pre></li><li><p>查看指定数据库详细信息</p><pre><code class="mysql">SHOW CREATE DATABASE db_name;</code></pre></li><li><p>修改指定数据库的编码方式</p><pre><code class="mysql">ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li><li><p>打开指定数据库</p><pre><code class="mysql">USE db_name;</code></pre></li><li><p>得到当前打开的数据库</p><pre><code class="mysql">SELECT DATABASE()|SCHEMA();</code></pre></li><li><p>删除指定的数据库</p><pre><code class="mysql">DROP DATABASE db_name;</code></pre><ul><li><p>如果数据库存在则删除</p><pre><code class="mysql">DROP DATABASE [IF EXISTS] db_name;</code></pre></li></ul></li></ul>]]></content>
     
     
     <categories>
@@ -2828,11 +2894,11 @@
   
   
   <entry>
-    <title>Java-Scanner类</title>
-    <link href="/2016/03/02/Java-Scanner%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-Scanner%E7%B1%BB/</url>
+    <title>Java-FileStreamIO</title>
+    <link href="/2016/03/02/Java-FileStreamIO/"/>
+    <url>/2016/03/02/Java-FileStreamIO/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-Scanner类"><a href="#Java-Scanner类" class="headerlink" title="Java-Scanner类"></a>Java-Scanner类</h1><pre><code>import java.util.Scanner;public class ScannerDemo {    //Scanner类 获取用户的输入    /*        next() 与 nextLine() 区别        next():            1、一定要读取到有效字符后才可以结束输入。            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。        next() 不能得到带有空格的字符串。        nextLine()：            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。            2、可以获得空白。        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：     */    public void NextDemo() {        //从键盘接收数据        Scanner scan1 = new Scanner(System.in);        //next方式接收字符串        System.out.println(&quot;next方式接收：&quot;);        //判断是否还有输入        if (scan1.hasNext()) {            String str1 = scan1.next();            System.out.println(&quot;输入的数据为：&quot; + str1);        }        scan1.close();    }    public void NextLineDemo() {        //从键盘接收数据        Scanner scan2 = new Scanner(System.in);        //nextLine方式接收字符串        System.out.println(&quot;nextLine方式接收：&quot;);        //判断是否还有输入        if (scan2.hasNext()) {            String str2 = scan2.nextLine();            System.out.println(&quot;输入的数据为：&quot; + str2);        }        scan2.close();    }    public static void main(String[] args) {        ScannerDemo s = new ScannerDemo();//        s.NextDemo();        s.NextLineDemo();    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-FileStreamIO"><a href="#Java-FileStreamIO" class="headerlink" title="Java-FileStreamIO"></a>Java-FileStreamIO</h1><pre><code>import java.io.*;public class StreamFileIODemo {    public void printChar() throws IOException {        //使用BufferedReader从控制台读取输入        char c;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符，按Q键退出&quot;);        do {            //read() 读取字符            c = (char) br1.read();            System.out.println(c);        } while (c != &#39;Q&#39;);    }    public void printStr() throws IOException{        String str1;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;);        do {            //readLine() 读取字符串            str1 = br1.readLine();            System.out.println(str1);        } while (!str1.equals(&quot;end&quot;));    }    public void ReadFileDemo() throws IOException{        //FileInputStream 从文件读取数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  InputStream out = new FileInputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public int read(int r)throws IOException{}                这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。            4    public int read(byte[] r) throws IOException{}                这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。            5    public int available() throws IOException{}                返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。         */        System.out.println(&quot;打印输出读取文件demo&quot;);        InputStream is1 = new FileInputStream(&quot;test.txt&quot;);        int size = is1.available();        for (int i=0;i&lt;size;i++) {            System.out.println((char) is1.read());        }    }    public void WriteFileDemo() throws IOException {        //FileOutputStream 创建一个文件向文件中写数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  OutputStream f = new FileOutputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public void write(int w)throws IOException{}                这个方法把指定的字节写到输出流中。            4    public void write(byte[] w)                把指定数组中w.length长度的字节写到OutputStream中。         */        System.out.println(&quot;打印输出写入文件demo&quot;);        byte bWrite[] = {11,21,3,38,5};        OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;);        for (int i=0;i&lt;bWrite.length;i++){            os1.write(bWrite[i]);        }        os1.close();    }    public void CreateDirs(){        //文件和I/O ，目录        /*            File类            - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。            - mkdirs()方法创建一个文件夹和它的所有父文件夹。        */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;;        File dir1 = new File(dirname);        //   创建目录        dir1.mkdirs();    }    public void ReadDirs(){        /*            一个目录其实就是一个 File 对象，它包含其他文件和文件夹。            如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。            可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;;        File dir2 = new File(dirname);        if (dir2.isDirectory()){            System.out.println(&quot;目录&quot;+ dirname);            String[] s1 = dir2.list();            for (int i=0;i&lt;s1.length;i++){                File f = new File(dirname + &#39;/&#39; + s1[i]);                if (f.isDirectory()){                    System.out.println(s1[i] + &quot;是一个目录&quot;);                }else {                    System.out.println(s1[i] + &quot;是一个文件&quot;);                }            }        }else {            System.out.println(dirname +&quot;不是一个目录&quot;);        }    }    public void DeleteDirs(){        //删除文件/目录        /*            删除文件可以使用 java.io.File.delete() 方法            当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;;        File dir3 = new File(dirname);        File[] files = dir3.listFiles();        if (files != null){            for (File f: files){                if (!f.isDirectory()){                    f.delete();                }            }        }        dir3.delete();        System.out.println(&quot;删除成功&quot;);    }    public static void main(String[] args) throws IOException {        StreamFileIODemo s = new StreamFileIODemo();//        s.printChar();//        s.printStr();//        s.WriteFileDemo();//        s.CreateDirs();//        s.ReadDirs();        s.DeleteDirs();    }}</code></pre>]]></content>
     
     
     <categories>
@@ -2878,11 +2944,11 @@
   
   
   <entry>
-    <title>Java-String类</title>
-    <link href="/2016/03/02/Java-String%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-String%E7%B1%BB/</url>
+    <title>Java-Scanner类</title>
+    <link href="/2016/03/02/Java-Scanner%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-Scanner%E7%B1%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-String类"><a href="#Java-String类" class="headerlink" title="Java-String类"></a>Java-String类</h1><pre><code>public class StringDemo {    //String 方法    /*        SN(序号)    方法描述1    char charAt(int index)返回指定索引处的 char 值。2    int compareTo(Object o)把这个字符串和另一个对象比较。3    int compareTo(String anotherString)按字典顺序比较两个字符串。4    int compareToIgnoreCase(String str)按字典顺序比较两个字符串，不考虑大小写。5    String concat(String str)将指定字符串连接到此字符串的结尾。6    boolean contentEquals(StringBuffer sb)当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。7    static String copyValueOf(char[] data)返回指定数组中表示该字符序列的 String。8    static String copyValueOf(char[] data, int offset, int count)返回指定数组中表示该字符序列的 String。9    boolean endsWith(String suffix)测试此字符串是否以指定的后缀结束。10    boolean equals(Object anObject)将此字符串与指定的对象比较。11    boolean equalsIgnoreCase(String anotherString)将此 String 与另一个 String 比较，不考虑大小写。12    byte[] getBytes() 使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。13    byte[] getBytes(String charsetName)使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。14    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此字符串复制到目标字符数组。15    int hashCode()返回此字符串的哈希码。16    int indexOf(int ch)返回指定字符在此字符串中第一次出现处的索引。17    int indexOf(int ch, int fromIndex)返回在此字符串中第一次出现指定字符处的索引，从指定的索引开始搜索。18    int indexOf(String str) 返回指定子字符串在此字符串中第一次出现处的索引。19    int indexOf(String str, int fromIndex)返回指定子字符串在此字符串中第一次出现处的索引，从指定的索引开始。20    String intern() 返回字符串对象的规范化表示形式。21    int lastIndexOf(int ch) 返回指定字符在此字符串中最后一次出现处的索引。22    int lastIndexOf(int ch, int fromIndex)返回指定字符在此字符串中最后一次出现处的索引，从指定的索引处开始进行反向搜索。23    int lastIndexOf(String str)返回指定子字符串在此字符串中最右边出现处的索引。24    int lastIndexOf(String str, int fromIndex) 返回指定子字符串在此字符串中最后一次出现处的索引，从指定的索引开始反向搜索。25    int length()返回此字符串的长度。26    boolean matches(String regex)告知此字符串是否匹配给定的正则表达式。27    boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)测试两个字符串区域是否相等。28    boolean regionMatches(int toffset, String other, int ooffset, int len)测试两个字符串区域是否相等。29    String replace(char oldChar, char newChar)返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。30    String replaceAll(String regex, String replacement)使用给定的 replacement 替换此字符串所有匹配给定的正则表达式的子字符串。31    String replaceFirst(String regex, String replacement) 使用给定的 replacement 替换此字符串匹配给定的正则表达式的第一个子字符串。32    String[] split(String regex)根据给定正则表达式的匹配拆分此字符串。33    String[] split(String regex, int limit)根据匹配给定的正则表达式来拆分此字符串。34    boolean startsWith(String prefix)测试此字符串是否以指定的前缀开始。35    boolean startsWith(String prefix, int toffset)测试此字符串从指定索引开始的子字符串是否以指定前缀开始。36    CharSequence subSequence(int beginIndex, int endIndex) 返回一个新的字符序列，它是此序列的一个子序列。37    String substring(int beginIndex)返回一个新的字符串，它是此字符串的一个子字符串。38    String substring(int beginIndex, int endIndex)返回一个新字符串，它是此字符串的一个子字符串。39    char[] toCharArray()将此字符串转换为一个新的字符数组。40    String toLowerCase()使用默认语言环境的规则将此 String 中的所有字符都转换为小写。41    String toLowerCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为小写。42    String toString() 返回此对象本身（它已经是一个字符串！）。43    String toUpperCase()使用默认语言环境的规则将此 String 中的所有字符都转换为大写。44    String toUpperCase(Locale locale)使用给定 Locale 的规则将此 String 中的所有字符都转换为大写。45    String trim()返回字符串的副本，忽略前导空白和尾部空白。46    static String valueOf(primitive data type x)返回给定data type类型x参数的字符串表示形式。     */    public static void main(String[] args) {        char[] hello = {&#39;g&#39;, &#39;z&#39;, &#39;y&#39;};        String helloString = new String(hello);        System.out.println(helloString);        System.out.println(helloString.length());    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-Scanner类"><a href="#Java-Scanner类" class="headerlink" title="Java-Scanner类"></a>Java-Scanner类</h1><pre><code>import java.util.Scanner;public class ScannerDemo {    //Scanner类 获取用户的输入    /*        next() 与 nextLine() 区别        next():            1、一定要读取到有效字符后才可以结束输入。            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。        next() 不能得到带有空格的字符串。        nextLine()：            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。            2、可以获得空白。        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：     */    public void NextDemo() {        //从键盘接收数据        Scanner scan1 = new Scanner(System.in);        //next方式接收字符串        System.out.println(&quot;next方式接收：&quot;);        //判断是否还有输入        if (scan1.hasNext()) {            String str1 = scan1.next();            System.out.println(&quot;输入的数据为：&quot; + str1);        }        scan1.close();    }    public void NextLineDemo() {        //从键盘接收数据        Scanner scan2 = new Scanner(System.in);        //nextLine方式接收字符串        System.out.println(&quot;nextLine方式接收：&quot;);        //判断是否还有输入        if (scan2.hasNext()) {            String str2 = scan2.nextLine();            System.out.println(&quot;输入的数据为：&quot; + str2);        }        scan2.close();    }    public static void main(String[] args) {        ScannerDemo s = new ScannerDemo();//        s.NextDemo();        s.NextLineDemo();    }}</code></pre>]]></content>
     
     
     <categories>
@@ -2928,11 +2994,11 @@
   
   
   <entry>
-    <title>Java-FileStreamIO</title>
-    <link href="/2016/03/02/Java-FileStreamIO/"/>
-    <url>/2016/03/02/Java-FileStreamIO/</url>
+    <title>Java-SwitchCase语句</title>
+    <link href="/2016/03/02/Java-SwitchCase/"/>
+    <url>/2016/03/02/Java-SwitchCase/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-FileStreamIO"><a href="#Java-FileStreamIO" class="headerlink" title="Java-FileStreamIO"></a>Java-FileStreamIO</h1><pre><code>import java.io.*;public class StreamFileIODemo {    public void printChar() throws IOException {        //使用BufferedReader从控制台读取输入        char c;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符，按Q键退出&quot;);        do {            //read() 读取字符            c = (char) br1.read();            System.out.println(c);        } while (c != &#39;Q&#39;);    }    public void printStr() throws IOException{        String str1;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;);        do {            //readLine() 读取字符串            str1 = br1.readLine();            System.out.println(str1);        } while (!str1.equals(&quot;end&quot;));    }    public void ReadFileDemo() throws IOException{        //FileInputStream 从文件读取数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  InputStream out = new FileInputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public int read(int r)throws IOException{}                这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。            4    public int read(byte[] r) throws IOException{}                这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。            5    public int available() throws IOException{}                返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。         */        System.out.println(&quot;打印输出读取文件demo&quot;);        InputStream is1 = new FileInputStream(&quot;test.txt&quot;);        int size = is1.available();        for (int i=0;i&lt;size;i++) {            System.out.println((char) is1.read());        }    }    public void WriteFileDemo() throws IOException {        //FileOutputStream 创建一个文件向文件中写数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  OutputStream f = new FileOutputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public void write(int w)throws IOException{}                这个方法把指定的字节写到输出流中。            4    public void write(byte[] w)                把指定数组中w.length长度的字节写到OutputStream中。         */        System.out.println(&quot;打印输出写入文件demo&quot;);        byte bWrite[] = {11,21,3,38,5};        OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;);        for (int i=0;i&lt;bWrite.length;i++){            os1.write(bWrite[i]);        }        os1.close();    }    public void CreateDirs(){        //文件和I/O ，目录        /*            File类            - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。            - mkdirs()方法创建一个文件夹和它的所有父文件夹。        */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;;        File dir1 = new File(dirname);        //   创建目录        dir1.mkdirs();    }    public void ReadDirs(){        /*            一个目录其实就是一个 File 对象，它包含其他文件和文件夹。            如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。            可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;;        File dir2 = new File(dirname);        if (dir2.isDirectory()){            System.out.println(&quot;目录&quot;+ dirname);            String[] s1 = dir2.list();            for (int i=0;i&lt;s1.length;i++){                File f = new File(dirname + &#39;/&#39; + s1[i]);                if (f.isDirectory()){                    System.out.println(s1[i] + &quot;是一个目录&quot;);                }else {                    System.out.println(s1[i] + &quot;是一个文件&quot;);                }            }        }else {            System.out.println(dirname +&quot;不是一个目录&quot;);        }    }    public void DeleteDirs(){        //删除文件/目录        /*            删除文件可以使用 java.io.File.delete() 方法            当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;;        File dir3 = new File(dirname);        File[] files = dir3.listFiles();        if (files != null){            for (File f: files){                if (!f.isDirectory()){                    f.delete();                }            }        }        dir3.delete();        System.out.println(&quot;删除成功&quot;);    }    public static void main(String[] args) throws IOException {        StreamFileIODemo s = new StreamFileIODemo();//        s.printChar();//        s.printStr();//        s.WriteFileDemo();//        s.CreateDirs();//        s.ReadDirs();        s.DeleteDirs();    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-SwitchCase语句"><a href="#Java-SwitchCase语句" class="headerlink" title="Java-SwitchCase语句"></a>Java-SwitchCase语句</h1><pre><code>public class SwitchCase {    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。    /*        switch(expression){            case value :                //语句                break; //可选            case value :                //语句                break; //可选            //你可以有任意数量的case语句            default : //可选                //语句   不需要break        }     */    public static void main(String[]args){        char grade =&#39;C&#39;;        switch (grade)        {            case &#39;A&#39;:                System.out.println(&quot;优秀&quot;);                break;            case &#39;B&#39;:            case &#39;C&#39;:                System.out.println(&quot;良好&quot;);                break;            case &#39;D&#39;:                System.out.println(&quot;及格&quot;);                break;            case &#39;F&#39;:                System.out.println(&quot;你还需要继续努力&quot;);                break;            default:                System.out.println(&quot;未知等级&quot;);        }        System.out.println(&quot;你的等级是&quot; + grade);    }}</code></pre>]]></content>
     
     
     <categories>
@@ -2953,11 +3019,11 @@
   
   
   <entry>
-    <title>Java循环结构</title>
-    <link href="/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    <url>/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</url>
+    <title>Java-String类</title>
+    <link href="/2016/03/02/Java-String%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-String%E7%B1%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java循环结构"><a href="#Java循环结构" class="headerlink" title="Java循环结构"></a>Java循环结构</h1><pre><code>public class LoopStructure {    /*        while 循环        do…while 循环        for 循环     */    public static void main(String[] args) {        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环        System.out.println(&quot;while 循环&quot;);        int x = 10;        while (x &lt; 20) {            System.out.println(x);            x++;        }        // do…while 循环，至少执行一次        /*            do {                //代码语句            }while(布尔表达式);         */        System.out.println(&quot;do…while循环&quot;);        int y = 10;        do {            System.out.println(y);            y++;        } while (y &lt; 10);        // for 循环，执行前就确定执行次数        /*            for(初始化; 布尔表达式; 更新) {                //代码语句            }         */        System.out.println(&quot;for 循环&quot;);        for (int z = 0; z &lt; 20; z = z + 1) {            System.out.println(z);        }        //增强for循环        /*            for(声明语句 : 表达式)            {                //代码句子            }         */        System.out.println(&quot;增强for 循环&quot;);        int[] numbers = {10, 20, 30, 40, 50};        for (int number : numbers) {            System.out.println(number);        }        String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;};        for (String name : names) {            System.out.println(name);        }        //break关键字        /*            break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。            break 跳出最里层的循环，并且继续执行该循环下面的语句。         */        System.out.println(&quot;break关键字&quot;);        int[] numbers1 = {10, 20, 30, 40, 50};        for (int number : numbers1) {            if (number == 30) {                break;            }            System.out.println(number);        }        //continue关键字        /*            continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。            在 for 循环中，continue 语句使程序立即跳转到更新语句。            在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。         */        System.out.println(&quot;continue关键字&quot;);        int[] numbers2 = {10, 20, 30, 40, 50};        for (int number : numbers2) {            if (number == 30) {                continue;            }            System.out.println(number);        }    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-String类"><a href="#Java-String类" class="headerlink" title="Java-String类"></a>Java-String类</h1><pre><code>public class StringDemo {    //String 方法    /*        SN(序号)    方法描述1    char charAt(int index)返回指定索引处的 char 值。2    int compareTo(Object o)把这个字符串和另一个对象比较。3    int compareTo(String anotherString)按字典顺序比较两个字符串。4    int compareToIgnoreCase(String str)按字典顺序比较两个字符串，不考虑大小写。5    String concat(String str)将指定字符串连接到此字符串的结尾。6    boolean contentEquals(StringBuffer sb)当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。7    static String copyValueOf(char[] data)返回指定数组中表示该字符序列的 String。8    static String copyValueOf(char[] data, int offset, int count)返回指定数组中表示该字符序列的 String。9    boolean endsWith(String suffix)测试此字符串是否以指定的后缀结束。10    boolean equals(Object anObject)将此字符串与指定的对象比较。11    boolean equalsIgnoreCase(String anotherString)将此 String 与另一个 String 比较，不考虑大小写。12    byte[] getBytes() 使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。13    byte[] getBytes(String charsetName)使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。14    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此字符串复制到目标字符数组。15    int hashCode()返回此字符串的哈希码。16    int indexOf(int ch)返回指定字符在此字符串中第一次出现处的索引。17    int indexOf(int ch, int fromIndex)返回在此字符串中第一次出现指定字符处的索引，从指定的索引开始搜索。18    int indexOf(String str) 返回指定子字符串在此字符串中第一次出现处的索引。19    int indexOf(String str, int fromIndex)返回指定子字符串在此字符串中第一次出现处的索引，从指定的索引开始。20    String intern() 返回字符串对象的规范化表示形式。21    int lastIndexOf(int ch) 返回指定字符在此字符串中最后一次出现处的索引。22    int lastIndexOf(int ch, int fromIndex)返回指定字符在此字符串中最后一次出现处的索引，从指定的索引处开始进行反向搜索。23    int lastIndexOf(String str)返回指定子字符串在此字符串中最右边出现处的索引。24    int lastIndexOf(String str, int fromIndex) 返回指定子字符串在此字符串中最后一次出现处的索引，从指定的索引开始反向搜索。25    int length()返回此字符串的长度。26    boolean matches(String regex)告知此字符串是否匹配给定的正则表达式。27    boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)测试两个字符串区域是否相等。28    boolean regionMatches(int toffset, String other, int ooffset, int len)测试两个字符串区域是否相等。29    String replace(char oldChar, char newChar)返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。30    String replaceAll(String regex, String replacement)使用给定的 replacement 替换此字符串所有匹配给定的正则表达式的子字符串。31    String replaceFirst(String regex, String replacement) 使用给定的 replacement 替换此字符串匹配给定的正则表达式的第一个子字符串。32    String[] split(String regex)根据给定正则表达式的匹配拆分此字符串。33    String[] split(String regex, int limit)根据匹配给定的正则表达式来拆分此字符串。34    boolean startsWith(String prefix)测试此字符串是否以指定的前缀开始。35    boolean startsWith(String prefix, int toffset)测试此字符串从指定索引开始的子字符串是否以指定前缀开始。36    CharSequence subSequence(int beginIndex, int endIndex) 返回一个新的字符序列，它是此序列的一个子序列。37    String substring(int beginIndex)返回一个新的字符串，它是此字符串的一个子字符串。38    String substring(int beginIndex, int endIndex)返回一个新字符串，它是此字符串的一个子字符串。39    char[] toCharArray()将此字符串转换为一个新的字符数组。40    String toLowerCase()使用默认语言环境的规则将此 String 中的所有字符都转换为小写。41    String toLowerCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为小写。42    String toString() 返回此对象本身（它已经是一个字符串！）。43    String toUpperCase()使用默认语言环境的规则将此 String 中的所有字符都转换为大写。44    String toUpperCase(Locale locale)使用给定 Locale 的规则将此 String 中的所有字符都转换为大写。45    String trim()返回字符串的副本，忽略前导空白和尾部空白。46    static String valueOf(primitive data type x)返回给定data type类型x参数的字符串表示形式。     */    public static void main(String[] args) {        char[] hello = {&#39;g&#39;, &#39;z&#39;, &#39;y&#39;};        String helloString = new String(hello);        System.out.println(helloString);        System.out.println(helloString.length());    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3003,11 +3069,11 @@
   
   
   <entry>
-    <title>Java日期和时间</title>
-    <link href="/2016/03/02/Java%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4/"/>
-    <url>/2016/03/02/Java%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4/</url>
+    <title>Java循环结构</title>
+    <link href="/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    <url>/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java日期和时间"><a href="#Java日期和时间" class="headerlink" title="Java日期和时间"></a>Java日期和时间</h1><pre><code>import java.text.SimpleDateFormat;import java.util.Date;import java.util.*;public class DateTimeDemo {    //日期时间    public static void main(String[] args){        //获取当前时间        Date date = new Date();        System.out.println(date.toString());        //格式化日期        /*            日期和时间的格式化编码时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下：字母    描述    示例G    纪元标记    ADy    四位年份    2001M    月份    July or 07d    一个月的日期    10h     A.M./P.M. (1~12)格式小时    12H    一天中的小时 (0~23)    22m    分钟数    30s    秒数    55S    毫秒数    234E    星期几    TuesdayD    一年中的日子    360F    一个月中第几周的周几    2 (second Wed. in July)w    一年中第几周    40W    一个月中第几周    1a    A.M./P.M. 标记    PMk    一天中的小时(1~24)    24K     A.M./P.M. (0~11)格式小时    10z    时区    Eastern Standard Time&#39;    文字定界符    Delimiter&quot;    单引号    `         */        SimpleDateFormat ft = new SimpleDateFormat(&quot;yyyy-MM-dd hh:mm:ss&quot;);        System.out.println(&quot;SimpleDateFormat时间格式转换&quot;);        System.out.println(ft.format(date));        //printf格式化时间  以%t 开头        /*            转  换  符             说    明              示    例                c           包括全部日期和时间信息         星期六 十月 27 14:21:20 CST 2007                F           &quot;年-月-日&quot;格式               2007-10-27                D           &quot;月/日/年&quot;格式               10/27/07                r           &quot;HH:MM:SS PM&quot;格式（12时制）   02:25:51 下午                T           &quot;HH:MM:SS&quot;格式（24时制）   14:28:16                R           &quot;HH:MM&quot;格式（24时制）         14:28         */        System.out.println(&quot;printf时间格式转换&quot;);        System.out.printf(&quot;全部日期和时间信息：%tc%n&quot;,date);        System.out.printf(&quot;年-月-日格式：%tF%n&quot;,date);        System.out.printf(&quot;月/日/年格式：%tD%n&quot;,date);        System.out.printf(&quot;HH:MM:SS PM(12小时)：%tr%n&quot;,date);        System.out.printf(&quot;HH:MM:SS (24小时)：%tT%n&quot;,date);        System.out.printf(&quot;HH:MM (24小时)：%tR%n&quot;,date);        //定义日期转换字符，抽取转换为新字符串        System.out.println(&quot;使日期转换生成新字符串&quot;);        //b的使用，月份简称        String str=String.format(Locale.US,&quot;英文月份简称：%tb&quot;,date);        System.out.println(str);        System.out.printf(&quot;本地月份简称：%tb%n&quot;,date);        //B的使用，月份全称        str=String.format(Locale.US,&quot;英文月份全称：%tB&quot;,date);        System.out.println(str);        System.out.printf(&quot;本地月份全称：%tB%n&quot;,date);        //a的使用，星期简称        str=String.format(Locale.US,&quot;英文星期的简称：%ta&quot;,date);        System.out.println(str);        //A的使用，星期全称        System.out.printf(&quot;本地星期的简称：%tA%n&quot;,date);        //C的使用，年前两位        System.out.printf(&quot;年的前两位数字（不足两位前面补0）：%tC%n&quot;,date);        //y的使用，年后两位        System.out.printf(&quot;年的后两位数字（不足两位前面补0）：%ty%n&quot;,date);        //j的使用，一年的天数        System.out.printf(&quot;一年中的天数（即年的第几天）：%tj%n&quot;,date);        //m的使用，月份        System.out.printf(&quot;两位数字的月份（不足两位前面补0）：%tm%n&quot;,date);        //d的使用，日（二位，不够补零）        System.out.printf(&quot;两位数字的日（不足两位前面补0）：%td%n&quot;,date);        //e的使用，日（一位不补零）        System.out.printf(&quot;月份的日（前面不补0）：%te&quot;,date);        //Calendar 对象        /*            常量                        描述            Calendar.YEAR            年份            Calendar.MONTH            月份            Calendar.DATE            日期            Calendar.DAY_OF_MONTH    日期，和上面的字段意义完全相同            Calendar.HOUR            12小时制的小时            Calendar.HOUR_OF_DAY    24小时制的小时            Calendar.MINUTE            分钟            Calendar.SECOND            秒            Calendar.DAY_OF_WEEK    星期几         */        //GregorianCalendar类        /*            序号    构造函数和说明1    GregorianCalendar()在具有默认语言环境的默认时区内使用当前时间构造一个默认的 GregorianCalendar。2    GregorianCalendar(int year, int month, int date)在具有默认语言环境的默认时区内构造一个带有给定日期设置的 GregorianCalendar3    GregorianCalendar(int year, int month, int date, int hour, int minute)为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。4    GregorianCalendar(int year, int month, int date, int hour, int minute, int second)  为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。5    GregorianCalendar(Locale aLocale)在具有给定语言环境的默认时区内构造一个基于当前时间的 GregorianCalendar。6    GregorianCalendar(TimeZone zone)在具有默认语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。7    GregorianCalendar(TimeZone zone, Locale aLocale) 在具有给定语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。这里是GregorianCalendar 类提供的一些有用的方法列表：序号    方法和说明1    void add(int field, int amount)根据日历规则，将指定的（有符号的）时间量添加到给定的日历字段中。2    protected void computeFields()转换UTC毫秒值为时间域值3    protected void computeTime()覆盖Calendar ，转换时间域值为UTC毫秒值4    boolean equals(Object obj)比较此 GregorianCalendar 与指定的 Object。5    int get(int field)获取指定字段的时间值6    int getActualMaximum(int field)返回当前日期，给定字段的最大值7    int getActualMinimum(int field)返回当前日期，给定字段的最小值8    int getGreatestMinimum(int field) 返回此 GregorianCalendar 实例给定日历字段的最高的最小值。9    Date getGregorianChange()获得格里高利历的更改日期。10    int getLeastMaximum(int field)返回此 GregorianCalendar 实例给定日历字段的最低的最大值11    int getMaximum(int field)返回此 GregorianCalendar 实例的给定日历字段的最大值。12    Date getTime()获取日历当前时间。13    long getTimeInMillis()获取用长整型表示的日历的当前时间14    TimeZone getTimeZone()获取时区。15    int getMinimum(int field)返回给定字段的最小值。16    int hashCode()重写hashCode.17    boolean isLeapYear(int year)确定给定的年份是否为闰年。18    void roll(int field, boolean up)在给定的时间字段上添加或减去（上/下）单个时间单元，不更改更大的字段。19    void set(int field, int value)用给定的值设置时间字段。20    void set(int year, int month, int date)设置年、月、日的值。21    void set(int year, int month, int date, int hour, int minute)设置年、月、日、小时、分钟的值。22    void set(int year, int month, int date, int hour, int minute, int second)设置年、月、日、小时、分钟、秒的值。23    void setGregorianChange(Date date)设置 GregorianCalendar 的更改日期。24    void setTime(Date date)用给定的日期设置Calendar的当前时间。25    void setTimeInMillis(long millis)用给定的long型毫秒数设置Calendar的当前时间。26    void setTimeZone(TimeZone value)用给定时区值设置当前时区。27    String toString()返回代表日历的字符串。         */        String months[] = {                &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;,                &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;,                &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;};        int year;        // 初始化 Gregorian 日历        // 使用当前时间和日期        // 默认为本地时间和时区        GregorianCalendar gcalendar = new GregorianCalendar();        // 显示当前时间和日期的信息        System.out.print(&quot;Date: &quot;);        System.out.print(months[gcalendar.get(Calendar.MONTH)]);        System.out.print(&quot; &quot; + gcalendar.get(Calendar.DATE) + &quot; &quot;);        System.out.println(year = gcalendar.get(Calendar.YEAR));        System.out.print(&quot;Time: &quot;);        System.out.print(gcalendar.get(Calendar.HOUR) + &quot;:&quot;);        System.out.print(gcalendar.get(Calendar.MINUTE) + &quot;:&quot;);        System.out.println(gcalendar.get(Calendar.SECOND));        // 测试当前年份是否为闰年        if(gcalendar.isLeapYear(year)) {            System.out.println(&quot;当前年份是闰年&quot;);        }        else {            System.out.println(&quot;当前年份不是闰年&quot;);        }    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java循环结构"><a href="#Java循环结构" class="headerlink" title="Java循环结构"></a>Java循环结构</h1><pre><code>public class LoopStructure {    /*        while 循环        do…while 循环        for 循环     */    public static void main(String[] args) {        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环        System.out.println(&quot;while 循环&quot;);        int x = 10;        while (x &lt; 20) {            System.out.println(x);            x++;        }        // do…while 循环，至少执行一次        /*            do {                //代码语句            }while(布尔表达式);         */        System.out.println(&quot;do…while循环&quot;);        int y = 10;        do {            System.out.println(y);            y++;        } while (y &lt; 10);        // for 循环，执行前就确定执行次数        /*            for(初始化; 布尔表达式; 更新) {                //代码语句            }         */        System.out.println(&quot;for 循环&quot;);        for (int z = 0; z &lt; 20; z = z + 1) {            System.out.println(z);        }        //增强for循环        /*            for(声明语句 : 表达式)            {                //代码句子            }         */        System.out.println(&quot;增强for 循环&quot;);        int[] numbers = {10, 20, 30, 40, 50};        for (int number : numbers) {            System.out.println(number);        }        String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;};        for (String name : names) {            System.out.println(name);        }        //break关键字        /*            break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。            break 跳出最里层的循环，并且继续执行该循环下面的语句。         */        System.out.println(&quot;break关键字&quot;);        int[] numbers1 = {10, 20, 30, 40, 50};        for (int number : numbers1) {            if (number == 30) {                break;            }            System.out.println(number);        }        //continue关键字        /*            continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。            在 for 循环中，continue 语句使程序立即跳转到更新语句。            在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。         */        System.out.println(&quot;continue关键字&quot;);        int[] numbers2 = {10, 20, 30, 40, 50};        for (int number : numbers2) {            if (number == 30) {                continue;            }            System.out.println(number);        }    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3033,6 +3099,31 @@
     <url>/2016/03/02/Java%E6%95%B0%E7%BB%84/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java数组"><a href="#Java数组" class="headerlink" title="Java数组"></a>Java数组</h1><pre><code>public class ArrayDemo {    //声明数组    // 数据类型[] 数组名称;  dataType[] arrayName;    //创建数组    // 数据名称 = new dataType[arraySize];    //dataType[] arrayName = {value0,value1,value2,...,valuek};    public static void main(String[] args){        //数组大小        int size =4;        //定义数组        double[] TestList = new double[size];        TestList[0] = 3.2;        TestList[1] = 2.6;        TestList[2] = 4.7;        TestList[3] = 5.6;        double total =0;        for (int i=0; i&lt;size; i++){            total = total + TestList[i];        }        System.out.println(total);        double[] list1 = {1.4,2.8,3.6,4.9};        //打印所有数组元素        for (int i=0;i&lt;list1.length;i++){            System.out.println(list1[i]);        }        //计算所有元素的和        double sum = 0;        for (int i =0;i&lt;list1.length;i++){            sum = sum + list1[i];        }        System.out.println(sum);        //查找最大元素        double max = list1[0];        for (int i=0; i&lt;list1.length;i++){            if (list1[i] &gt; max){                max = list1[i];            }        }        System.out.println(max);    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java日期和时间</title>
+    <link href="/2016/03/02/Java%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4/"/>
+    <url>/2016/03/02/Java%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java日期和时间"><a href="#Java日期和时间" class="headerlink" title="Java日期和时间"></a>Java日期和时间</h1><pre><code>import java.text.SimpleDateFormat;import java.util.Date;import java.util.*;public class DateTimeDemo {    //日期时间    public static void main(String[] args){        //获取当前时间        Date date = new Date();        System.out.println(date.toString());        //格式化日期        /*            日期和时间的格式化编码时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下：字母    描述    示例G    纪元标记    ADy    四位年份    2001M    月份    July or 07d    一个月的日期    10h     A.M./P.M. (1~12)格式小时    12H    一天中的小时 (0~23)    22m    分钟数    30s    秒数    55S    毫秒数    234E    星期几    TuesdayD    一年中的日子    360F    一个月中第几周的周几    2 (second Wed. in July)w    一年中第几周    40W    一个月中第几周    1a    A.M./P.M. 标记    PMk    一天中的小时(1~24)    24K     A.M./P.M. (0~11)格式小时    10z    时区    Eastern Standard Time&#39;    文字定界符    Delimiter&quot;    单引号    `         */        SimpleDateFormat ft = new SimpleDateFormat(&quot;yyyy-MM-dd hh:mm:ss&quot;);        System.out.println(&quot;SimpleDateFormat时间格式转换&quot;);        System.out.println(ft.format(date));        //printf格式化时间  以%t 开头        /*            转  换  符             说    明              示    例                c           包括全部日期和时间信息         星期六 十月 27 14:21:20 CST 2007                F           &quot;年-月-日&quot;格式               2007-10-27                D           &quot;月/日/年&quot;格式               10/27/07                r           &quot;HH:MM:SS PM&quot;格式（12时制）   02:25:51 下午                T           &quot;HH:MM:SS&quot;格式（24时制）   14:28:16                R           &quot;HH:MM&quot;格式（24时制）         14:28         */        System.out.println(&quot;printf时间格式转换&quot;);        System.out.printf(&quot;全部日期和时间信息：%tc%n&quot;,date);        System.out.printf(&quot;年-月-日格式：%tF%n&quot;,date);        System.out.printf(&quot;月/日/年格式：%tD%n&quot;,date);        System.out.printf(&quot;HH:MM:SS PM(12小时)：%tr%n&quot;,date);        System.out.printf(&quot;HH:MM:SS (24小时)：%tT%n&quot;,date);        System.out.printf(&quot;HH:MM (24小时)：%tR%n&quot;,date);        //定义日期转换字符，抽取转换为新字符串        System.out.println(&quot;使日期转换生成新字符串&quot;);        //b的使用，月份简称        String str=String.format(Locale.US,&quot;英文月份简称：%tb&quot;,date);        System.out.println(str);        System.out.printf(&quot;本地月份简称：%tb%n&quot;,date);        //B的使用，月份全称        str=String.format(Locale.US,&quot;英文月份全称：%tB&quot;,date);        System.out.println(str);        System.out.printf(&quot;本地月份全称：%tB%n&quot;,date);        //a的使用，星期简称        str=String.format(Locale.US,&quot;英文星期的简称：%ta&quot;,date);        System.out.println(str);        //A的使用，星期全称        System.out.printf(&quot;本地星期的简称：%tA%n&quot;,date);        //C的使用，年前两位        System.out.printf(&quot;年的前两位数字（不足两位前面补0）：%tC%n&quot;,date);        //y的使用，年后两位        System.out.printf(&quot;年的后两位数字（不足两位前面补0）：%ty%n&quot;,date);        //j的使用，一年的天数        System.out.printf(&quot;一年中的天数（即年的第几天）：%tj%n&quot;,date);        //m的使用，月份        System.out.printf(&quot;两位数字的月份（不足两位前面补0）：%tm%n&quot;,date);        //d的使用，日（二位，不够补零）        System.out.printf(&quot;两位数字的日（不足两位前面补0）：%td%n&quot;,date);        //e的使用，日（一位不补零）        System.out.printf(&quot;月份的日（前面不补0）：%te&quot;,date);        //Calendar 对象        /*            常量                        描述            Calendar.YEAR            年份            Calendar.MONTH            月份            Calendar.DATE            日期            Calendar.DAY_OF_MONTH    日期，和上面的字段意义完全相同            Calendar.HOUR            12小时制的小时            Calendar.HOUR_OF_DAY    24小时制的小时            Calendar.MINUTE            分钟            Calendar.SECOND            秒            Calendar.DAY_OF_WEEK    星期几         */        //GregorianCalendar类        /*            序号    构造函数和说明1    GregorianCalendar()在具有默认语言环境的默认时区内使用当前时间构造一个默认的 GregorianCalendar。2    GregorianCalendar(int year, int month, int date)在具有默认语言环境的默认时区内构造一个带有给定日期设置的 GregorianCalendar3    GregorianCalendar(int year, int month, int date, int hour, int minute)为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。4    GregorianCalendar(int year, int month, int date, int hour, int minute, int second)  为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。5    GregorianCalendar(Locale aLocale)在具有给定语言环境的默认时区内构造一个基于当前时间的 GregorianCalendar。6    GregorianCalendar(TimeZone zone)在具有默认语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。7    GregorianCalendar(TimeZone zone, Locale aLocale) 在具有给定语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。这里是GregorianCalendar 类提供的一些有用的方法列表：序号    方法和说明1    void add(int field, int amount)根据日历规则，将指定的（有符号的）时间量添加到给定的日历字段中。2    protected void computeFields()转换UTC毫秒值为时间域值3    protected void computeTime()覆盖Calendar ，转换时间域值为UTC毫秒值4    boolean equals(Object obj)比较此 GregorianCalendar 与指定的 Object。5    int get(int field)获取指定字段的时间值6    int getActualMaximum(int field)返回当前日期，给定字段的最大值7    int getActualMinimum(int field)返回当前日期，给定字段的最小值8    int getGreatestMinimum(int field) 返回此 GregorianCalendar 实例给定日历字段的最高的最小值。9    Date getGregorianChange()获得格里高利历的更改日期。10    int getLeastMaximum(int field)返回此 GregorianCalendar 实例给定日历字段的最低的最大值11    int getMaximum(int field)返回此 GregorianCalendar 实例的给定日历字段的最大值。12    Date getTime()获取日历当前时间。13    long getTimeInMillis()获取用长整型表示的日历的当前时间14    TimeZone getTimeZone()获取时区。15    int getMinimum(int field)返回给定字段的最小值。16    int hashCode()重写hashCode.17    boolean isLeapYear(int year)确定给定的年份是否为闰年。18    void roll(int field, boolean up)在给定的时间字段上添加或减去（上/下）单个时间单元，不更改更大的字段。19    void set(int field, int value)用给定的值设置时间字段。20    void set(int year, int month, int date)设置年、月、日的值。21    void set(int year, int month, int date, int hour, int minute)设置年、月、日、小时、分钟的值。22    void set(int year, int month, int date, int hour, int minute, int second)设置年、月、日、小时、分钟、秒的值。23    void setGregorianChange(Date date)设置 GregorianCalendar 的更改日期。24    void setTime(Date date)用给定的日期设置Calendar的当前时间。25    void setTimeInMillis(long millis)用给定的long型毫秒数设置Calendar的当前时间。26    void setTimeZone(TimeZone value)用给定时区值设置当前时区。27    String toString()返回代表日历的字符串。         */        String months[] = {                &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;,                &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;,                &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;};        int year;        // 初始化 Gregorian 日历        // 使用当前时间和日期        // 默认为本地时间和时区        GregorianCalendar gcalendar = new GregorianCalendar();        // 显示当前时间和日期的信息        System.out.print(&quot;Date: &quot;);        System.out.print(months[gcalendar.get(Calendar.MONTH)]);        System.out.print(&quot; &quot; + gcalendar.get(Calendar.DATE) + &quot; &quot;);        System.out.println(year = gcalendar.get(Calendar.YEAR));        System.out.print(&quot;Time: &quot;);        System.out.print(gcalendar.get(Calendar.HOUR) + &quot;:&quot;);        System.out.print(gcalendar.get(Calendar.MINUTE) + &quot;:&quot;);        System.out.println(gcalendar.get(Calendar.SECOND));        // 测试当前年份是否为闰年        if(gcalendar.isLeapYear(year)) {            System.out.println(&quot;当前年份是闰年&quot;);        }        else {            System.out.println(&quot;当前年份不是闰年&quot;);        }    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3083,31 +3174,6 @@
     <url>/2016/03/02/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java正则表达式"><a href="#Java正则表达式" class="headerlink" title="Java正则表达式"></a>Java正则表达式</h1><pre><code>import java.util.regex.*;public class RegularExpressionDemo {    /*        Pattern 类：        pattern 对象是一个正则表达式的编译表示。        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。        该方法接受一个正则表达式作为它的第一个参数。        Matcher 类：        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。        与Pattern 类一样，Matcher 也没有公共构造方法。        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。        PatternSyntaxException：        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。     */    /*        正则表达式语法        字符          说明        \             将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如，&quot;n&quot;匹配字符&quot;n&quot;。&quot;\n&quot;匹配换行符。序列&quot;\\\\&quot;匹配&quot;\\&quot;，&quot;\\(&quot;匹配&quot;(&quot;。        ^             匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与&quot;\n&quot;或&quot;\r&quot;之后的位置匹配。        $             匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与&quot;\n&quot;或&quot;\r&quot;之前的位置匹配。        *             零次或多次匹配前面的字符或子表达式。例如，zo* 匹配&quot;z&quot;和&quot;zoo&quot;。* 等效于 {0,}。        +             一次或多次匹配前面的字符或子表达式。例如，&quot;zo+&quot;与&quot;zo&quot;和&quot;zoo&quot;匹配，但与&quot;z&quot;不匹配。+ 等效于 {1,}。        ?             零次或一次匹配前面的字符或子表达式。例如，&quot;do(es)?&quot;匹配&quot;do&quot;或&quot;does&quot;中的&quot;do&quot;。? 等效于 {0,1}。        {n}           n 是非负整数。正好匹配 n 次。例如，&quot;o{2}&quot;与&quot;Bob&quot;中的&quot;o&quot;不匹配，但与&quot;food&quot;中的两个&quot;o&quot;匹配。        {n,}          n 是非负整数。至少匹配 n 次。例如，&quot;o{2,}&quot;不匹配&quot;Bob&quot;中的&quot;o&quot;，而匹配&quot;foooood&quot;中的所有 o。&quot;o{1,}&quot;等效于&quot;o+&quot;。&quot;o{0,}&quot;等效于&quot;o*&quot;。        {n,m}         m 和 n 是非负整数，其中 n &lt;= m。匹配至少 n 次，至多 m 次。例如，&quot;o{1,3}&quot;匹配&quot;fooooood&quot;中的头三个 o。&#39;o{0,1}&#39; 等效于 &#39;o?&#39;。注意：您不能将空格插入逗号和数字之间。        ?            当此字符紧随任何其他限定符（*、+、?、{n}、{n,}、{n,m}）之后时，匹配模式是&quot;非贪心的&quot;。&quot;非贪心的&quot;模式匹配搜索到的、尽可能短的字符串，而默认的&quot;贪心的&quot;模式匹配搜索到的、尽可能长的字符串。例如，在字符串&quot;oooo&quot;中，&quot;o+?&quot;只匹配单个&quot;o&quot;，而&quot;o+&quot;匹配所有&quot;o&quot;。        .            匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。        (pattern)     匹配 pattern 并捕获该匹配的子表达式。可以使用 $0…$9 属性从结果&quot;匹配&quot;集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用&quot;\(&quot;或者&quot;\)&quot;。        (?:pattern)   匹配 pattern 但不捕获该匹配的子表达式，即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用&quot;or&quot;字符 (|) 组合模式部件的情况很有用。例如，&#39;industr(?:y|ies) 是比 &#39;industry|industries&#39; 更经济的表达式。        (?=pattern)   执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 pattern 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?=95|98|NT|2000)&#39; 匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;，但不匹配&quot;Windows 3.1&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。        (?!pattern)   执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 pattern 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?!95|98|NT|2000)&#39; 匹配&quot;Windows 3.1&quot;中的 &quot;Windows&quot;，但不匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。        x|y           匹配 x 或 y。例如，&#39;z|food&#39; 匹配&quot;z&quot;或&quot;food&quot;。&#39;(z|f)ood&#39; 匹配&quot;zood&quot;或&quot;food&quot;。       [xyz]         字符集。匹配包含的任一字符。例如，&quot;[abc]&quot;匹配&quot;plain&quot;中的&quot;a&quot;。       [^xyz]        反向字符集。匹配未包含的任何字符。例如，&quot;[^abc]&quot;匹配&quot;plain&quot;中&quot;p&quot;，&quot;l&quot;，&quot;i&quot;，&quot;n&quot;。       [a-z]         字符范围。匹配指定范围内的任何字符。例如，&quot;[a-z]&quot;匹配&quot;a&quot;到&quot;z&quot;范围内的任何小写字母。       [^a-z]       反向范围字符。匹配不在指定的范围内的任何字符。例如，&quot;[^a-z]&quot;匹配任何不在&quot;a&quot;到&quot;z&quot;范围内的任何字符。        \b          匹配一个字边界，即字与空格间的位置。例如，&quot;er\b&quot;匹配&quot;never&quot;中的&quot;er&quot;，但不匹配&quot;verb&quot;中的&quot;er&quot;。        \B          非字边界匹配。&quot;er\B&quot;匹配&quot;verb&quot;中的&quot;er&quot;，但不匹配&quot;never&quot;中的&quot;er&quot;。        \cx         匹配 x 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。x 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是&quot;c&quot;字符本身。        \d          数字字符匹配。等效于 [0-9]。        \D          非数字字符匹配。等效于 [^0-9]。        \f          换页符匹配。等效于 \x0c 和 \cL。        \n          换行符匹配。等效于 \x0a 和 \cJ。        \r          匹配一个回车符。等效于 \x0d 和 \cM。        \s          匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。        \S          匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。        \t          制表符匹配。与 \x09 和 \cI 等效。        \v          垂直制表符匹配。与 \x0b 和 \cK 等效。        \w          匹配任何字类字符，包括下划线。与&quot;[A-Za-z0-9_]&quot;等效。        \W          与任何非单词字符匹配。与&quot;[^A-Za-z0-9_]&quot;等效。        \xn         匹配 n，此处的 n 是一个十六进制转义码。十六进制转义码必须正好是两位数长。例如，&quot;\x41&quot;匹配&quot;A&quot;。&quot;\x041&quot;与&quot;\x04&quot;&amp;&quot;1&quot;等效。允许在正则表达式中使用 ASCII 代码。        \num        匹配 num，此处的 num 是一个正整数。到捕获匹配的反向引用。例如，&quot;(.)\1&quot;匹配两个连续的相同字符。        \n          标识一个八进制转义码或反向引用。如果 \n 前面至少有 n 个捕获子表达式，那么 n 是反向引用。否则，如果 n 是八进制数 (0-7)，那么 n 是八进制转义码。        \nm         标识一个八进制转义码或反向引用。如果 \nm 前面至少有 nm 个捕获子表达式，那么 nm 是反向引用。如果 \nm 前面至少有 n 个捕获，则 n 是反向引用，后面跟有字符 m。如果两种前面的情况都不存在，则 \nm 匹配八进制值 nm，其中 n 和 m 是八进制数字 (0-7)。        \nml        当 n 是八进制数 (0-3)，m 和 l 是八进制数 (0-7) 时，匹配八进制转义码 nml。     */}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java-SwitchCase语句</title>
-    <link href="/2016/03/02/Java-SwitchCase/"/>
-    <url>/2016/03/02/Java-SwitchCase/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-SwitchCase语句"><a href="#Java-SwitchCase语句" class="headerlink" title="Java-SwitchCase语句"></a>Java-SwitchCase语句</h1><pre><code>public class SwitchCase {    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。    /*        switch(expression){            case value :                //语句                break; //可选            case value :                //语句                break; //可选            //你可以有任意数量的case语句            default : //可选                //语句   不需要break        }     */    public static void main(String[]args){        char grade =&#39;C&#39;;        switch (grade)        {            case &#39;A&#39;:                System.out.println(&quot;优秀&quot;);                break;            case &#39;B&#39;:            case &#39;C&#39;:                System.out.println(&quot;良好&quot;);                break;            case &#39;D&#39;:                System.out.println(&quot;及格&quot;);                break;            case &#39;F&#39;:                System.out.println(&quot;你还需要继续努力&quot;);                break;            default:                System.out.println(&quot;未知等级&quot;);        }        System.out.println(&quot;你的等级是&quot; + grade);    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3236,7 +3302,7 @@
     <link href="/2016/01/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
     <url>/2016/01/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Markdown基本语法"><a href="#Markdown基本语法" class="headerlink" title="Markdown基本语法"></a>Markdown基本语法</h1><h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><p>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p><p>注：标准语法一般在#后跟个空格再写文字</p><pre><code class="bash"># 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题</code></pre><p>效果如下：</p><h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><hr><h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><ul><li><h5 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h5></li></ul><p>要加粗的文字左右分别用两个*号包起来</p><ul><li><h5 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h5></li></ul><p>要倾斜的文字左右分别用一个*号包起来</p><ul><li><h5 id="斜体加粗"><a href="#斜体加粗" class="headerlink" title="斜体加粗"></a>斜体加粗</h5></li></ul><p>要倾斜和加粗的文字左右分别用三个*号包起来</p><ul><li><h5 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h5></li></ul><p>要加删除线的文字左右分别用两个~~号包起来</p><p>示例：</p><pre><code class="undefined">**这是加粗的文字***这是倾斜的文字*`***这是斜体加粗的文字***~~这是加删除线的文字~~</code></pre><p>效果如下：</p><p><strong>这是加粗的文字</strong><br> <em>这是倾斜的文字</em><br> <strong><em>这是斜体加粗的文字\</em></strong><br> <del>这是加删除线的文字</del></p><hr><h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;<br> n个…<br> 貌似可以一直加下去，但没神马卵用</p><p>示例：</p><pre><code class="ruby">&gt;这是引用的内容&gt;&gt;这是引用的内容&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容</code></pre><p>效果如下：</p><blockquote><p>这是引用的内容</p><blockquote><p>这是引用的内容</p><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>这是引用的内容</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote><h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><p>三个或者三个以上的 - 或者 * 都可以。</p><p>示例：</p><pre><code class="undefined">-------********</code></pre><p>效果如下：<br> 可以看到，显示效果是一样的。</p><hr><hr><hr><hr><h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><p>语法：</p><pre><code class="bash">![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;)图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</code></pre><p>示例：</p><p><img src="&quot;图片地址&quot;" srcset="/img/loading.gif" alt=""></p><p><strong>上传本地图片直接点击导航栏的图片标志，选择图片即可</strong></p><h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><p>语法：</p><pre><code class="csharp">[超链接名](超链接地址 &quot;超链接title&quot;)title可加可不加</code></pre><p>示例：</p><pre><code class="csharp">[简书](http://jianshu.com)[百度](http://baidu.com)</code></pre><p>效果如下：</p><p><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank" rel="noopener">简书</a><br> <a href="http://baidu.com" target="_blank" rel="noopener">百度</a></p><p>注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。</p><p>示例：</p><pre><code class="xml">&lt;a href=&quot;超链接地址&quot; target=&quot;_blank&quot;&gt;超链接名&lt;/a&gt;</code></pre><p><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a></p><hr><h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><ul><li><h5 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h5></li></ul><p>语法：<br> 无序列表用 - + * 任何一种都可以</p><pre><code class="undefined">- 列表内容+ 列表内容* 列表内容注意：- + * 跟内容之间都要有一个空格</code></pre><p>效果如下：</p><ul><li><p>列表内容</p></li><li><p>列表内容</p></li><li><p>列表内容</p></li><li><h5 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h5></li></ul><p>语法：<br> 数字加点</p><pre><code class="undefined">1. 列表内容2. 列表内容3. 列表内容注意：序号跟内容之间要有空格</code></pre><p>效果如下：</p><ol><li>列表内容</li><li>列表内容</li><li>列表内容</li></ol><ul><li><h5 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h5></li></ul><p><strong>上一级和下一级之间敲三个空格即可</strong></p><ul><li>一级无序列表内容<ul><li>二级无序列表内容</li><li>二级无序列表内容</li><li>二级无序列表内容</li></ul></li><li>一级无序列表内容<ol><li>二级有序列表内容</li><li>二级有序列表内容</li><li>二级有序列表内容</li></ol></li></ul><ol><li>一级有序列表内容<ul><li>二级无序列表内容</li><li>二级无序列表内容</li><li>二级无序列表内容</li></ul></li><li>一级有序列表内容<ol><li>二级有序列表内容</li><li>二级有序列表内容</li><li>二级有序列表内容</li></ol></li></ol><hr><h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><p>语法：</p><pre><code class="ruby">表头|表头|表头---|:--:|---:内容|内容|内容内容|内容|内容第二行分割表头和内容。- 有一个就行，为了对齐，多加了几个文字默认居左-两边加：表示文字居中-右边加：表示文字居右注：原生的语法两边都要用 | 包起来。此处省略</code></pre><p>示例：</p><pre><code class="ruby">姓名|技能|排行--|:--:|--:刘备|哭|大哥关羽|打|二哥张飞|骂|三弟</code></pre><p>效果如下：</p><table><thead><tr><th>姓名</th><th style="text-align:center">技能</th><th style="text-align:right">排行</th></tr></thead><tbody><tr><td>刘备</td><td style="text-align:center">哭</td><td style="text-align:right">大哥</td></tr><tr><td>关羽</td><td style="text-align:center">打</td><td style="text-align:right">二哥</td></tr><tr><td>张飞</td><td style="text-align:center">骂</td><td style="text-align:right">三弟</td></tr></tbody></table><h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><p>语法：<br> 单行代码：代码之间分别用一个反引号包起来</p><pre><code class="go">    `代码内容`</code></pre><p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p><pre><code class="go">(```)  代码...  代码...  代码...(```)</code></pre><blockquote><p>注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</p></blockquote><p>示例：</p><p>单行代码</p><pre><code class="go">`create database hero;`</code></pre><p>代码块</p><pre><code class="kotlin">(```)    function fun(){         echo &quot;这是一句非常牛逼的代码&quot;;    }    fun();(```)</code></pre><p>效果如下：</p><p>单行代码</p><pre><code>create database hero;</code></pre><p>代码块</p><pre><code class="kotlin">function fun(){  echo &quot;这是一句非常牛逼的代码&quot;;}fun();</code></pre><h1 id="十、流程图"><a href="#十、流程图" class="headerlink" title="十、流程图"></a>十、流程图</h1><pre><code class="php">```flowst=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&amp;```</code></pre><pre><code class="flow">st=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&amp;</code></pre><p><code>`</code></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Markdown基本语法"><a href="#Markdown基本语法" class="headerlink" title="Markdown基本语法"></a>Markdown基本语法</h1><h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><p>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p><p>注：标准语法一般在#后跟个空格再写文字</p><pre><code class="bash"># 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题</code></pre><p>效果如下：</p><h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><hr><h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><ul><li><h5 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h5></li></ul><p>要加粗的文字左右分别用两个*号包起来</p><ul><li><h5 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h5></li></ul><p>要倾斜的文字左右分别用一个*号包起来</p><ul><li><h5 id="斜体加粗"><a href="#斜体加粗" class="headerlink" title="斜体加粗"></a>斜体加粗</h5></li></ul><p>要倾斜和加粗的文字左右分别用三个*号包起来</p><ul><li><h5 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h5></li></ul><p>要加删除线的文字左右分别用两个~~号包起来</p><p>示例：</p><pre><code class="undefined">**这是加粗的文字***这是倾斜的文字*`***这是斜体加粗的文字***~~这是加删除线的文字~~</code></pre><p>效果如下：</p><p><strong>这是加粗的文字</strong><br> <em>这是倾斜的文字</em><br> <strong><em>这是斜体加粗的文字\</em></strong><br> <del>这是加删除线的文字</del></p><hr><h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;<br> n个…<br> 貌似可以一直加下去，但没神马卵用</p><p>示例：</p><pre><code class="ruby">&gt;这是引用的内容&gt;&gt;这是引用的内容&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容</code></pre><p>效果如下：</p><blockquote><p>这是引用的内容</p><blockquote><p>这是引用的内容</p><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>这是引用的内容</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote><h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><p>三个或者三个以上的 - 或者 * 都可以。</p><p>示例：</p><pre><code class="undefined">-------********</code></pre><p>效果如下：<br> 可以看到，显示效果是一样的。</p><hr><hr><hr><hr><h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><p>语法：</p><pre><code class="bash">![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;)图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</code></pre><p>示例：</p><p><img src="/.top//&quot;图片地址&quot;" srcset="/img/loading.gif" alt=""></p><p><strong>上传本地图片直接点击导航栏的图片标志，选择图片即可</strong></p><h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><p>语法：</p><pre><code class="csharp">[超链接名](超链接地址 &quot;超链接title&quot;)title可加可不加</code></pre><p>示例：</p><pre><code class="csharp">[简书](http://jianshu.com)[百度](http://baidu.com)</code></pre><p>效果如下：</p><p><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank" rel="noopener">简书</a><br> <a href="http://baidu.com" target="_blank" rel="noopener">百度</a></p><p>注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。</p><p>示例：</p><pre><code class="xml">&lt;a href=&quot;超链接地址&quot; target=&quot;_blank&quot;&gt;超链接名&lt;/a&gt;</code></pre><p><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a></p><hr><h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><ul><li><h5 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h5></li></ul><p>语法：<br> 无序列表用 - + * 任何一种都可以</p><pre><code class="undefined">- 列表内容+ 列表内容* 列表内容注意：- + * 跟内容之间都要有一个空格</code></pre><p>效果如下：</p><ul><li><p>列表内容</p></li><li><p>列表内容</p></li><li><p>列表内容</p></li><li><h5 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h5></li></ul><p>语法：<br> 数字加点</p><pre><code class="undefined">1. 列表内容2. 列表内容3. 列表内容注意：序号跟内容之间要有空格</code></pre><p>效果如下：</p><ol><li>列表内容</li><li>列表内容</li><li>列表内容</li></ol><ul><li><h5 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h5></li></ul><p><strong>上一级和下一级之间敲三个空格即可</strong></p><ul><li>一级无序列表内容<ul><li>二级无序列表内容</li><li>二级无序列表内容</li><li>二级无序列表内容</li></ul></li><li>一级无序列表内容<ol><li>二级有序列表内容</li><li>二级有序列表内容</li><li>二级有序列表内容</li></ol></li></ul><ol><li>一级有序列表内容<ul><li>二级无序列表内容</li><li>二级无序列表内容</li><li>二级无序列表内容</li></ul></li><li>一级有序列表内容<ol><li>二级有序列表内容</li><li>二级有序列表内容</li><li>二级有序列表内容</li></ol></li></ol><hr><h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><p>语法：</p><pre><code class="ruby">表头|表头|表头---|:--:|---:内容|内容|内容内容|内容|内容第二行分割表头和内容。- 有一个就行，为了对齐，多加了几个文字默认居左-两边加：表示文字居中-右边加：表示文字居右注：原生的语法两边都要用 | 包起来。此处省略</code></pre><p>示例：</p><pre><code class="ruby">姓名|技能|排行--|:--:|--:刘备|哭|大哥关羽|打|二哥张飞|骂|三弟</code></pre><p>效果如下：</p><table><thead><tr><th>姓名</th><th style="text-align:center">技能</th><th style="text-align:right">排行</th></tr></thead><tbody><tr><td>刘备</td><td style="text-align:center">哭</td><td style="text-align:right">大哥</td></tr><tr><td>关羽</td><td style="text-align:center">打</td><td style="text-align:right">二哥</td></tr><tr><td>张飞</td><td style="text-align:center">骂</td><td style="text-align:right">三弟</td></tr></tbody></table><h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><p>语法：<br> 单行代码：代码之间分别用一个反引号包起来</p><pre><code class="go">    `代码内容`</code></pre><p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p><pre><code class="go">(```)  代码...  代码...  代码...(```)</code></pre><blockquote><p>注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</p></blockquote><p>示例：</p><p>单行代码</p><pre><code class="go">`create database hero;`</code></pre><p>代码块</p><pre><code class="kotlin">(```)    function fun(){         echo &quot;这是一句非常牛逼的代码&quot;;    }    fun();(```)</code></pre><p>效果如下：</p><p>单行代码</p><pre><code>create database hero;</code></pre><p>代码块</p><pre><code class="kotlin">function fun(){  echo &quot;这是一句非常牛逼的代码&quot;;}fun();</code></pre><h1 id="十、流程图"><a href="#十、流程图" class="headerlink" title="十、流程图"></a>十、流程图</h1><pre><code class="php">```flowst=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&amp;```</code></pre><pre><code class="flow">st=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&amp;</code></pre><p><code>`</code></p>]]></content>
     
     
     <categories>
