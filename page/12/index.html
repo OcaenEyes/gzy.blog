@@ -133,30 +133,35 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java正则表达式/">
-        <p class="h4 index-header">Java正则表达式</p>
+      <a href="/2016/03/02/Java条件语句/">
+        <p class="h4 index-header">Java条件语句</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java正则表达式import java.util.regex.*;
-public class RegularExpressionDemo {
+          <div class="index-text mb-1">Java条件语句public class IfElse {
     /*
-        Pattern 类：
-        pattern 对象是一个正则表达式的编译表示。
-        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。
-        该方法接受一个正则表达式作为它的第一个参数。
-
-        Matcher 类：
-        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。
-        与Pattern 类一样，Matcher 也没有公共构造方法。
-        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
-
-        PatternSyntaxException：
-        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
+        条件语句 - if...else
      */
-    /*</div>
+    public static void main(String[] args) {
+        int x = 10;
+        /*
+            if(布尔表达式){
+                //如果布尔表达式的值为true
+            }else{
+                //如果布尔表达式的值为false
+            }
+         */
+        if (x &lt; 20) {
+            System.out.println(&quot;这是一个if判断语句&quot;);
+        } else {
+            System.out.println(&quot;这是一个else判断语句&quot;);
+        }
+
+        /*
+            if(布尔表达式 1){
+                </div>
         </div>
       </a>
 
@@ -184,31 +189,30 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-SwitchCase/">
-        <p class="h4 index-header">Java-SwitchCase语句</p>
+      <a href="/2016/03/02/Java正则表达式/">
+        <p class="h4 index-header">Java正则表达式</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-SwitchCase语句public class SwitchCase {
-    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支
-    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。
+          <div class="index-text mb-1">Java正则表达式import java.util.regex.*;
+public class RegularExpressionDemo {
     /*
-        switch(expression){
-            case value :
-                //语句
-                break; //可选
-            case value :
-                //语句
-                break; //可选
-            //你可以有任意数量的case语句
-            default : //可选
-                //语句   不需要break
-        }
-     */
+        Pattern 类：
+        pattern 对象是一个正则表达式的编译表示。
+        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。
+        该方法接受一个正则表达式作为它的第一个参数。
 
-    public static void main(String[]</div>
+        Matcher 类：
+        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。
+        与Pattern 类一样，Matcher 也没有公共构造方法。
+        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
+
+        PatternSyntaxException：
+        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
+     */
+    /*</div>
         </div>
       </a>
 
