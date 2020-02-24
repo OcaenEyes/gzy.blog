@@ -133,30 +133,24 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-FileStreamIO/">
-        <p class="h4 index-header">Java-FileStreamIO</p>
+      <a href="/2016/03/02/Java-NumberMath类/">
+        <p class="h4 index-header">Java-NumberMath类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
+          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
+    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
+    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
 
-public class StreamFileIODemo {
-    public void printChar() throws IOException {
-        //使用BufferedReader从控制台读取输入
-        char c;
-        //使用System.in 创建BufferedReader
-        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println(&quot;输入字符，按Q键退出&quot;);
-        do {
-            //read() 读取字符
-            c = (char) br1.read();
-            System.out.println(c);
-        } while (c != &#39;Q&#39;);
+    private static void test(double num) {
+        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
+        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
+        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
     }
 
-    pu</div>
+    public st</div>
         </div>
       </a>
 
@@ -184,24 +178,30 @@ public class StreamFileIODemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-NumberMath类/">
-        <p class="h4 index-header">Java-NumberMath类</p>
+      <a href="/2016/03/02/Java-FileStreamIO/">
+        <p class="h4 index-header">Java-FileStreamIO</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
-    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
-    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
+          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
 
-    private static void test(double num) {
-        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
-        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
-        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
+public class StreamFileIODemo {
+    public void printChar() throws IOException {
+        //使用BufferedReader从控制台读取输入
+        char c;
+        //使用System.in 创建BufferedReader
+        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println(&quot;输入字符，按Q键退出&quot;);
+        do {
+            //read() 读取字符
+            c = (char) br1.read();
+            System.out.println(c);
+        } while (c != &#39;Q&#39;);
     }
 
-    public st</div>
+    pu</div>
         </div>
       </a>
 
@@ -333,31 +333,32 @@ public class ScannerDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-SwitchCase/">
-        <p class="h4 index-header">Java-SwitchCase语句</p>
+      <a href="/2016/03/02/Java-String类/">
+        <p class="h4 index-header">Java-String类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-SwitchCase语句public class SwitchCase {
-    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支
-    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。
+          <div class="index-text mb-1">Java-String类public class StringDemo {
+    //String 方法
     /*
-        switch(expression){
-            case value :
-                //语句
-                break; //可选
-            case value :
-                //语句
-                break; //可选
-            //你可以有任意数量的case语句
-            default : //可选
-                //语句   不需要break
-        }
-     */
-
-    public static void main(String[]</div>
+        SN(序号)    方法描述
+1    char charAt(int index)
+返回指定索引处的 char 值。
+2    int compareTo(Object o)
+把这个字符串和另一个对象比较。
+3    int compareTo(String anotherString)
+按字典顺序比较两个字符串。
+4    int compareToIgnoreCase(String str)
+按字典顺序比较两个字符串，不考虑大小写。
+5    String concat(String str)
+将指定字符串连接到此字符串的结尾。
+6    boolean contentEquals(StringBuffer sb)
+当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。
+7    static String copyValueOf(char[] data)
+返回指定数组中表示该字符序列的 String。
+8    stati</div>
         </div>
       </a>
 
@@ -385,32 +386,31 @@ public class ScannerDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-String类/">
-        <p class="h4 index-header">Java-String类</p>
+      <a href="/2016/03/02/Java-SwitchCase/">
+        <p class="h4 index-header">Java-SwitchCase语句</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-String类public class StringDemo {
-    //String 方法
+          <div class="index-text mb-1">Java-SwitchCase语句public class SwitchCase {
+    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支
+    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。
     /*
-        SN(序号)    方法描述
-1    char charAt(int index)
-返回指定索引处的 char 值。
-2    int compareTo(Object o)
-把这个字符串和另一个对象比较。
-3    int compareTo(String anotherString)
-按字典顺序比较两个字符串。
-4    int compareToIgnoreCase(String str)
-按字典顺序比较两个字符串，不考虑大小写。
-5    String concat(String str)
-将指定字符串连接到此字符串的结尾。
-6    boolean contentEquals(StringBuffer sb)
-当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。
-7    static String copyValueOf(char[] data)
-返回指定数组中表示该字符序列的 String。
-8    stati</div>
+        switch(expression){
+            case value :
+                //语句
+                break; //可选
+            case value :
+                //语句
+                break; //可选
+            //你可以有任意数量的case语句
+            default : //可选
+                //语句   不需要break
+        }
+     */
+
+    public static void main(String[]</div>
         </div>
       </a>
 
