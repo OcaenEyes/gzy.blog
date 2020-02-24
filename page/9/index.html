@@ -133,30 +133,18 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/SpringBoot启动自定义方法/">
-        <p class="h4 index-header">SpringBoot启动自定义方法</p>
+      <a href="/2018/03/02/SpringBoot数据访问-整合JPA/">
+        <p class="h4 index-header">SpringBoot数据访问JPA</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
+          <div class="index-text mb-1">SpringBoot数据访问-整合JPA
+Entity –定义实体类，与数据表映射
+Repository —定义操作，操作实体类中的数据表
 
-import com.gzy.demo.NettyClient;
-
-@Component
-public class MyStart1 implements CommandLineRunner{
-
-    @Override
-    public void run(String... args) throws Exception {
-        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
-    }
-}
-
-
-二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
-import org.springframework.boot</div>
+</div>
         </div>
       </a>
 
@@ -190,18 +178,30 @@ import org.springframework.boot</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/SpringBoot数据访问-整合JPA/">
-        <p class="h4 index-header">SpringBoot数据访问JPA</p>
+      <a href="/2018/03/02/SpringBoot启动自定义方法/">
+        <p class="h4 index-header">SpringBoot启动自定义方法</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">SpringBoot数据访问-整合JPA
-Entity –定义实体类，与数据表映射
-Repository —定义操作，操作实体类中的数据表
+          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
-</div>
+import com.gzy.demo.NettyClient;
+
+@Component
+public class MyStart1 implements CommandLineRunner{
+
+    @Override
+    public void run(String... args) throws Exception {
+        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
+    }
+}
+
+
+二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot</div>
         </div>
       </a>
 
