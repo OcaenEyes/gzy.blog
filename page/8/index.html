@@ -133,6 +133,54 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/09/01/推荐系统常用算法、/">
+        <p class="h4 index-header">推荐系统常用算法</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">一、基于内容推荐基于内容的推荐（Content-based Recommendation）是信息过滤技术的延续与发展，它是建立在项目的内容信息上作出推荐的，而不需要依据用户对项目的评价意见，更多地需要用机 器学习的方法从关于内容的特征描述的事例中得到用户的兴趣资料。在基于内容的推荐系统中，项目或对象是通过相关的特征的属性来定义，系统基于用户评价对象 的特征，学习用户的兴趣，考察用户资料与待预测项目的相匹配程度。用户的资料模型取决于所用学习方法，常用的有决策树、神经网络和基于向量的表示方法等。 基于内容的用户资料是需要有用户的历史数据，用户资料模型可能随着用户的偏好改变而发生变化。
+基于内容推荐方法的优点是：
+1）不需要其它用户的数据，没有冷开始问题和稀疏问题。
+2）能为具有特殊兴趣爱好的用户进行推荐。
+3）能推荐新的或不是很流行的项目，没有新项目问题。
+4）通过列出推荐项目的内容特征，可以解释为什么推荐那些项目。
+5）已有比较好的技术，如关于分类学习方面的技术已相当成熟。
+缺点是要求内容能容易抽取成有意义的特征，要求特征内容有良好的结构性，并且用户的口味必须能够用内容特征形式来表达，不</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-09-01&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/06-matplotlib饼状图/">
         <p class="h4 index-header">数据分析06：matplotlib饼状图</p>
         
@@ -198,6 +246,69 @@ explode = [0,0,0.08,0]
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/07-matplotlib箱线图/">
+        <p class="h4 index-header">数据分析07：matplotlib箱线图</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
+
+&#39;&#39;&#39;
+    箱形图（Box-plot）又称为盒须图，盒式图，或 箱线图；
+    是一种用在显示一组数据分散情况的资料统计图；
+    上边缘，上四分位数，中位数，下四分位数，下边缘，异常值；
+&#39;&#39;&#39;
+
+np.random.seed(100)
+data = np.random.normal(size=1000,loc=0,scale=1)
+# sym 指定异常值的点；whis虚线的长度， 通过调整whis的大小来决定收入异常值的多少
+plt.boxplot(data,sym =&#39;o&#39;,whis=1.5)
+plt.show()
+
+# 同一张图中显示多个箱线图
+
+# 4组 1000的数据
+data = np.random.normal(size=(1000,4),loc = 0,scale=1)
+# 每组的标签为ABCD
+labels = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/05-matplotlib直方图/">
         <p class="h4 index-header">数据分析05：matplotlib直方图</p>
         
@@ -237,69 +348,6 @@ import matplotlib.pyplot as plt
 &#39;&#39;&#39;
     随机生成2000个数据，均值为10， 方差3；
     绘制两个直方图， bins =</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/categories/Python3">Python3</a>&nbsp;
-          
-            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/tags/Python3">Python3</a>&nbsp;
-          
-            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/07-matplotlib箱线图/">
-        <p class="h4 index-header">数据分析07：matplotlib箱线图</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">import numpy as np
-import matplotlib.pyplot as plt
-
-&#39;&#39;&#39;
-    箱形图（Box-plot）又称为盒须图，盒式图，或 箱线图；
-    是一种用在显示一组数据分散情况的资料统计图；
-    上边缘，上四分位数，中位数，下四分位数，下边缘，异常值；
-&#39;&#39;&#39;
-
-np.random.seed(100)
-data = np.random.normal(size=1000,loc=0,scale=1)
-# sym 指定异常值的点；whis虚线的长度， 通过调整whis的大小来决定收入异常值的多少
-plt.boxplot(data,sym =&#39;o&#39;,whis=1.5)
-plt.show()
-
-# 同一张图中显示多个箱线图
-
-# 4组 1000的数据
-data = np.random.normal(size=(1000,4),loc = 0,scale=1)
-# 每组的标签为ABCD
-labels = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39</div>
         </div>
       </a>
 
@@ -547,83 +595,6 @@ print(x,&quot;\n&quot;,type(x))
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/02-matplotlib散点图/">
-        <p class="h4 index-header">数据分析02：matplotlib散点图</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">import numpy as np
-import matplotlib.pyplot as plt
-
-&#39;&#39;&#39;
-    散点图显示两组数据的值，每个点的坐标位置的值决定
-    用户观察两种变量的相关性：
-        正相关
-        负相关
-        不相关
-
-&#39;&#39;&#39;
-
-# 正相关
-height = [161,170,174,165,182,175]
-weight = [50,65,70,62,81,75]
-plt.scatter(height,weight)
-plt.show()
-
-
-# 不相关
-N = 1000
-x = np.random.randn(N)
-y = np.random.randn(N)
-plt.scatter(x,y)
-plt.show()
-
-
-# 散点图的外观
-&#39;&#39;&#39;
-    c    颜色
-    s    点（面积）大小
-    alpha       透明度
-        值的范围[0,1]
-        通过调节透明度，来观察点的集中性
-    marker   </div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/categories/Python3">Python3</a>&nbsp;
-          
-            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/tags/Python3">Python3</a>&nbsp;
-          
-            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/03-matplotlib折线图/">
         <p class="h4 index-header">数据分析03：matplotlib折线图</p>
         
@@ -721,9 +692,9 @@ source /etc/profile
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
             <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
           
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
@@ -780,9 +751,9 @@ import java.util.concurrent.CopyOnWriteArraySet;
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
             <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
           
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           

@@ -16,6 +16,20 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[关于产品增长的一些思考]]></title>
+    <url>%2F2020%2F02%2F08%2F%E5%85%B3%E4%BA%8E%E4%BA%A7%E5%93%81%E5%A2%9E%E9%95%BF%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83%2F</url>
+    <content type="text"><![CDATA[关于产品增长的一些思考增长的定义：增长是把产品的价值传播最大化的过程，即为，让更多用户更快更顺利更频繁的体验到产品的核心价值。 思维框架前提条件 产品本身有核心价值 公司的商业变现模式有效 公司战略本身符合行业和市场本身趋势 依赖条件 比较完整而精确的数据 能够操作实验，且能及时获得反馈 可以依靠技术和精细化的产品、运营手段驱动增长 基于产品形态和数据分析，利用技术手段达到数据倍数的增长。 关键特点 要关注用户生命周期，不要仅仅限制于拉新 通过科学方法带来高效、持续的增长 强调实验和数据驱动 跨功能增长团队，直接对指标负责 内核逻辑1、精准定义问题—细分问题并设计权重 2、定义清晰目标—收集问题相关的信息 3、解决思路及方案—针对高权重的问题 操作方案： 根据业务现状、灵活调整，找合适的增长点 集中火力，重点突破 借鉴其他产品的策略，可持续增长 在公司业务的不同阶段，增长的重点工作方向不同 从全局看增长明确是否已准备好进行大规模增长PMF（Product Market Fit）产品市场契合，即，不仅有用户需要你的产品，并且在较长时间内重复使用它。 大规模增长的判断条件：==达到PMF后== 新产品/初创产品的增长顺序尽量改变增长推荐顺序—RARRA，通过打磨产品实现PMF，然后有策略又不知道推进增长 判断是否达到PMF 直观表现：高自然增长率，有口碑，核心用户留存和使用率高 数据表现：用户留存率高，留存曲线更扁平 寻找PMF的步骤即为产品验证的过程 找到需求市场：市场足够大，足够紧急，解决问题能给用户创造价值 构建MVP：验证产品是否真的需要 通过数据反馈优化产品，直至达到PMF 评估增长的重点AARRR模型 适用于各行业，==但是产品阶段不同，产品品类不同，产品所处的市场周期不同决定了产品增长的重点会有所不同。== 寻找增长重点的四个有效步骤目标市场处于什么阶段？ 增量市场：重点在获客，抢占流量红利 存量市场：重点在留存和变现；寻找增量市场 自身产品处于生命周期的哪个阶段？ 探索期：PMF留存 成长期：获客 成熟期：留存+获客+变现 衰退期：留存+变现+迁移（寻找第二增长曲线） 判断生命周期的方法： 参考市场渗透度曲线 参考净增长+留存矩阵 自身产品属于哪个品类？类别： 工具 内容 游戏 社交 电商 平台 SaaS 复合产品 洞察 社交或互动属性的产品，可依赖社交获客和留存 用户付费意愿高的产品直接去变现，从而支持买辆获客 免费高频机用户投入时间大的产品先做留存，再变现 越来越复合型的产品模式，将社交/付费和留存结合起来 自身产品的商业模式有哪些独特的重要因素？（对产品增长有影响的）]]></content>
+      <categories>
+        <category>产品</category>
+        <category>增长产品</category>
+      </categories>
+      <tags>
+        <tag>产品</tag>
+        <tag>增长</tag>
+        <tag>GrowthHacking</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[态势感知与安全运营平台]]></title>
     <url>%2F2020%2F02%2F07%2F%E6%80%81%E5%8A%BF%E6%84%9F%E7%9F%A5%E4%B8%8E%E5%AE%89%E5%85%A8%E8%BF%90%E8%90%A5%E5%B9%B3%E5%8F%B0%2F</url>
     <content type="text"><![CDATA[态势感知与安全运营平台产品概述针对各种网络安全数据进行分析处理，提供资产、危险、脆弱性的相关管理，并提供对危险的事前预警、事中发现、事后回溯功能，贯穿威胁的整个生命周期管理。 平台简介产品组成 流量传感器 采集网络中的流量数据，将原始的网络流量转化为安session方式记录的格式化流量日志，全流量日志会加密传输至分析平台存储用于后期分析 内置流量检测引擎 web漏洞检测引擎 webshell 活动检测引擎 网络入侵检测引擎 常部署于需监听流量的网络节点旁，接受镜像流量 日志采集探针 对网络内各业务应用系统、设备、服务器、终端等设备通过主动采集或被动接受等方式对日志进行采集和归一化处理，方便数据流后面的关联规则和数据分析快速使用 兼具负责对内网资产进行扫描识别，收集资产数据 关联规则引擎 负责对来自日志采集探针的大量日志信息进行实时流解析，并匹配关联规则，对异常行为产生关联告警 分析平台 存储流量传感器和日志采集探针提交的流量日志、设备日志、系统日志 分析平台底层对数据进行处理 文件威胁鉴定器 终端安全管理系统 产品架构产品功能威胁管理资产管理拓扑管理漏洞管理日志搜索场景化分析工单调查分析知识库报表管理仪表展示态势感知级联管理]]></content>
@@ -340,9 +354,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[AI时代决策效率革命]]></title>
-    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[AI时代如何提升个人认知]]></title>
+    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5%2F</url>
+    <content type="text"><![CDATA[AI时间如何提升个人认知 思考比学习知识更重要。 外部原因​ 当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。 比如： 互联网 共享经济 大数据 内部原因 《论思考》 、《论书籍和写作》——叔本华 读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。]]></content>
       <categories>
         <category>Artificial Intelligence</category>
       </categories>
@@ -352,9 +366,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[AI时代如何提升个人认知]]></title>
-    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5%2F</url>
-    <content type="text"><![CDATA[AI时间如何提升个人认知 思考比学习知识更重要。 外部原因​ 当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。 比如： 互联网 共享经济 大数据 内部原因 《论思考》 、《论书籍和写作》——叔本华 读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。]]></content>
+    <title><![CDATA[AI时代决策效率革命]]></title>
+    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>Artificial Intelligence</category>
       </categories>
@@ -915,9 +929,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析05：matplotlib直方图]]></title>
-    <url>%2F2018%2F03%2F02%2F05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 由于一系列不等的纵形图组成，表示数据分布的情况 例如：某年级同学的身高分布 需要注意与 柱形图的区别 &#39;&#39;&#39; # # 例 # mu = 100 #均值 # sigma = 20 # 标准差 # # x = mu + sigma * np.random.random(1000) # plt.hist(x,bins=20,density=True) # plt.show() # # # # 双变量图 频率越低越暗 # # x的中心为2 # x = np.random.randn(1000) +2 # # y的中心为3 # y = np.random.randn(1000)+3 # # plt.hist2d(x,y,bins=40) # plt.show() # 练习 &#39;&#39;&#39; 随机生成2000个数据，均值为10， 方差3； 绘制两个直方图， bins =10 和50 ，normed ／density 分别为True,False; 随机生成x,y 各2000个， x均值1 ，y 均值5; 绘制2-D直方图， bins = 40; &#39;&#39;&#39; # 均值 ava = 10 # 方差 variance = 3 sigma = np.sqrt(variance) x = ava + sigma * np.random.random(2000) plt.hist(x,bins=10,density=True) plt.show() plt.hist(x,bins=50,density=False) plt.show() x = np.random.randn(2000) +1 y = np.random.randn(2000) + 5 plt.hist2d(x,y,bins=40) plt.show()]]></content>
+    <title><![CDATA[数据分析07：matplotlib箱线图]]></title>
+    <url>%2F2018%2F03%2F02%2F07-matplotlib%E7%AE%B1%E7%BA%BF%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 箱形图（Box-plot）又称为盒须图，盒式图，或 箱线图； 是一种用在显示一组数据分散情况的资料统计图； 上边缘，上四分位数，中位数，下四分位数，下边缘，异常值； &#39;&#39;&#39; np.random.seed(100) data = np.random.normal(size=1000,loc=0,scale=1) # sym 指定异常值的点；whis虚线的长度， 通过调整whis的大小来决定收入异常值的多少 plt.boxplot(data,sym =&#39;o&#39;,whis=1.5) plt.show() # 同一张图中显示多个箱线图 # 4组 1000的数据 data = np.random.normal(size=(1000,4),loc = 0,scale=1) # 每组的标签为ABCD labels = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;] plt.boxplot(data,labels=labels) plt.show() # 练习 &#39;&#39;&#39; 随机生成 100 *5 的数组； 绘制箱线图，使用sym ,whis参数 &#39;&#39;&#39; data = np.random.normal(size=(100,5),loc = 0,scale=1) plt.boxplot(data,sym=&#39;o&#39;,whis=0.5) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python3</category>
@@ -930,9 +944,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析07：matplotlib箱线图]]></title>
-    <url>%2F2018%2F03%2F02%2F07-matplotlib%E7%AE%B1%E7%BA%BF%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 箱形图（Box-plot）又称为盒须图，盒式图，或 箱线图； 是一种用在显示一组数据分散情况的资料统计图； 上边缘，上四分位数，中位数，下四分位数，下边缘，异常值； &#39;&#39;&#39; np.random.seed(100) data = np.random.normal(size=1000,loc=0,scale=1) # sym 指定异常值的点；whis虚线的长度， 通过调整whis的大小来决定收入异常值的多少 plt.boxplot(data,sym =&#39;o&#39;,whis=1.5) plt.show() # 同一张图中显示多个箱线图 # 4组 1000的数据 data = np.random.normal(size=(1000,4),loc = 0,scale=1) # 每组的标签为ABCD labels = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;] plt.boxplot(data,labels=labels) plt.show() # 练习 &#39;&#39;&#39; 随机生成 100 *5 的数组； 绘制箱线图，使用sym ,whis参数 &#39;&#39;&#39; data = np.random.normal(size=(100,5),loc = 0,scale=1) plt.boxplot(data,sym=&#39;o&#39;,whis=0.5) plt.show()]]></content>
+    <title><![CDATA[数据分析05：matplotlib直方图]]></title>
+    <url>%2F2018%2F03%2F02%2F05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 由于一系列不等的纵形图组成，表示数据分布的情况 例如：某年级同学的身高分布 需要注意与 柱形图的区别 &#39;&#39;&#39; # # 例 # mu = 100 #均值 # sigma = 20 # 标准差 # # x = mu + sigma * np.random.random(1000) # plt.hist(x,bins=20,density=True) # plt.show() # # # # 双变量图 频率越低越暗 # # x的中心为2 # x = np.random.randn(1000) +2 # # y的中心为3 # y = np.random.randn(1000)+3 # # plt.hist2d(x,y,bins=40) # plt.show() # 练习 &#39;&#39;&#39; 随机生成2000个数据，均值为10， 方差3； 绘制两个直方图， bins =10 和50 ，normed ／density 分别为True,False; 随机生成x,y 各2000个， x均值1 ，y 均值5; 绘制2-D直方图， bins = 40; &#39;&#39;&#39; # 均值 ava = 10 # 方差 variance = 3 sigma = np.sqrt(variance) x = ava + sigma * np.random.random(2000) plt.hist(x,bins=10,density=True) plt.show() plt.hist(x,bins=50,density=False) plt.show() x = np.random.randn(2000) +1 y = np.random.randn(2000) + 5 plt.hist2d(x,y,bins=40) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python3</category>
@@ -990,21 +1004,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
-    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
-      <categories>
-        <category>数据分析</category>
-        <category>Python3</category>
-        <category>Matplotlib</category>
-      </categories>
-      <tags>
-        <tag>数据分析</tag>
-        <tag>Python3</tag>
-        <tag>Matplotlib</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[数据分析03：matplotlib折线图]]></title>
     <url>%2F2018%2F03%2F02%2F03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE%2F</url>
     <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt import matplotlib.dates as mdates &#39;&#39;&#39; 折线图，用直线段将各数据连接起来组成的图形 常用来观察数据随时间变化的趋势 例如：股票价格，温度变化 &#39;&#39;&#39; date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True) plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;) plt.plot_date(date,open,linestyle=&#39;-&#39;,color=&quot;red&quot;,marker =&#39;o&#39;) plt.show() # 练习 &#39;&#39;&#39; 画出x值为[0,10]的正弦函数图像 &#39;&#39;&#39; x = np.linspace(0,10,100) y = np.sin(x) plt.plot(x,y) plt.show()]]></content>
@@ -1028,8 +1027,8 @@
         <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>服务端</tag>
         <tag>Java</tag>
+        <tag>服务端</tag>
         <tag>SpringBoot</tag>
       </tags>
   </entry>
@@ -1042,8 +1041,8 @@
         <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>服务端</tag>
         <tag>Java</tag>
+        <tag>服务端</tag>
         <tag>SpringBoot</tag>
         <tag>WebSocket</tag>
       </tags>
@@ -1057,8 +1056,8 @@
         <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>服务端</tag>
         <tag>Java</tag>
+        <tag>服务端</tag>
         <tag>SpringBoot</tag>
       </tags>
   </entry>
@@ -1071,9 +1070,24 @@
         <category>SpringBoot</category>
       </categories>
       <tags>
-        <tag>服务端</tag>
         <tag>Java</tag>
+        <tag>服务端</tag>
         <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
+    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
+      <categories>
+        <category>数据分析</category>
+        <category>Python3</category>
+        <category>Matplotlib</category>
+      </categories>
+      <tags>
+        <tag>数据分析</tag>
+        <tag>Python3</tag>
+        <tag>Matplotlib</tag>
       </tags>
   </entry>
   <entry>
@@ -1296,17 +1310,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-FileStreamIO]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-FileStreamIO%2F</url>
-    <content type="text"><![CDATA[Java-FileStreamIOimport java.io.*; public class StreamFileIODemo { public void printChar() throws IOException { //使用BufferedReader从控制台读取输入 char c; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符，按Q键退出&quot;); do { //read() 读取字符 c = (char) br1.read(); System.out.println(c); } while (c != &#39;Q&#39;); } public void printStr() throws IOException{ String str1; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;); do { //readLine() 读取字符串 str1 = br1.readLine(); System.out.println(str1); } while (!str1.equals(&quot;end&quot;)); } public void ReadFileDemo() throws IOException{ //FileInputStream 从文件读取数据 // File f = new File(&quot;C:/java/hello&quot;); // InputStream out = new FileInputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public int read(int r)throws IOException{} 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 4 public int read(byte[] r) throws IOException{} 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 5 public int available() throws IOException{} 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 */ System.out.println(&quot;打印输出读取文件demo&quot;); InputStream is1 = new FileInputStream(&quot;test.txt&quot;); int size = is1.available(); for (int i=0;i&lt;size;i++) { System.out.println((char) is1.read()); } } public void WriteFileDemo() throws IOException { //FileOutputStream 创建一个文件向文件中写数据 // File f = new File(&quot;C:/java/hello&quot;); // OutputStream f = new FileOutputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public void write(int w)throws IOException{} 这个方法把指定的字节写到输出流中。 4 public void write(byte[] w) 把指定数组中w.length长度的字节写到OutputStream中。 */ System.out.println(&quot;打印输出写入文件demo&quot;); byte bWrite[] = {11,21,3,38,5}; OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;); for (int i=0;i&lt;bWrite.length;i++){ os1.write(bWrite[i]); } os1.close(); } public void CreateDirs(){ //文件和I/O ，目录 /* File类 - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。 - mkdirs()方法创建一个文件夹和它的所有父文件夹。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;; File dir1 = new File(dirname); // 创建目录 dir1.mkdirs(); } public void ReadDirs(){ /* 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。 如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。 可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;; File dir2 = new File(dirname); if (dir2.isDirectory()){ System.out.println(&quot;目录&quot;+ dirname); String[] s1 = dir2.list(); for (int i=0;i&lt;s1.length;i++){ File f = new File(dirname + &#39;/&#39; + s1[i]); if (f.isDirectory()){ System.out.println(s1[i] + &quot;是一个目录&quot;); }else { System.out.println(s1[i] + &quot;是一个文件&quot;); } } }else { System.out.println(dirname +&quot;不是一个目录&quot;); } } public void DeleteDirs(){ //删除文件/目录 /* 删除文件可以使用 java.io.File.delete() 方法 当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;; File dir3 = new File(dirname); File[] files = dir3.listFiles(); if (files != null){ for (File f: files){ if (!f.isDirectory()){ f.delete(); } } } dir3.delete(); System.out.println(&quot;删除成功&quot;); } public static void main(String[] args) throws IOException { StreamFileIODemo s = new StreamFileIODemo(); // s.printChar(); // s.printStr(); // s.WriteFileDemo(); // s.CreateDirs(); // s.ReadDirs(); s.DeleteDirs(); } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java-NumberMath类]]></title>
     <url>%2F2016%2F03%2F02%2FJava-NumberMath%E7%B1%BB%2F</url>
     <content type="text"><![CDATA[Java-NumberMath类public class NumberAndMath { //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类 // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数 private static void test(double num) { System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num)); System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num)); System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num)); } public static void main(String[] args) { System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2)); System.out.println(&quot;0度的余弦值&quot; + Math.cos(0)); System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3)); System.out.println(&quot;1的反正切值&quot; + Math.atan(1)); System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2)); double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6}; for (double num : nums) { test(num); } /* 序号 方法与描述 1 xxxValue() 将 Number 对象转换为xxx数据类型的值并返回。 2 compareTo() 将number对象与参数比较。 3 equals() 判断number对象是否与参数相等。 4 valueOf() 返回一个 Number 对象指定的内置数据类型 5 toString() 以字符串形式返回值。 6 parseInt() 将字符串解析为int类型。 7 abs() 返回参数的绝对值。 8 ceil() 返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。 9 floor() 返回小于等于（&lt;=）给定参数的最大整数 。 10 rint() 返回与参数最接近的整数。返回类型为double。 11 round() 它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。 12 min() 返回两个参数中的最小值。 13 max() 返回两个参数中的最大值。 14 exp() 返回自然数底数e的参数次方。 15 log() 返回参数的自然数底数的对数值。 16 pow() 返回第一个参数的第二个参数次方。 17 sqrt() 求参数的算术平方根。 18 sin() 求指定double类型参数的正弦值。 19 cos() 求指定double类型参数的余弦值。 20 tan() 求指定double类型参数的正切值。 21 asin() 求指定double类型参数的反正弦值。 22 acos() 求指定double类型参数的反余弦值。 23 atan() 求指定double类型参数的反正切值。 24 atan2() 将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。 25 toDegrees() 将参数转化为角度。 26 toRadians() 将角度转换为弧度。 27 random() 返回一个随机数。 */ } }]]></content>
@@ -1318,9 +1321,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-Scanner类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
+    <title><![CDATA[Java-FileStreamIO]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-FileStreamIO%2F</url>
+    <content type="text"><![CDATA[Java-FileStreamIOimport java.io.*; public class StreamFileIODemo { public void printChar() throws IOException { //使用BufferedReader从控制台读取输入 char c; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符，按Q键退出&quot;); do { //read() 读取字符 c = (char) br1.read(); System.out.println(c); } while (c != &#39;Q&#39;); } public void printStr() throws IOException{ String str1; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;); do { //readLine() 读取字符串 str1 = br1.readLine(); System.out.println(str1); } while (!str1.equals(&quot;end&quot;)); } public void ReadFileDemo() throws IOException{ //FileInputStream 从文件读取数据 // File f = new File(&quot;C:/java/hello&quot;); // InputStream out = new FileInputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public int read(int r)throws IOException{} 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 4 public int read(byte[] r) throws IOException{} 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 5 public int available() throws IOException{} 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 */ System.out.println(&quot;打印输出读取文件demo&quot;); InputStream is1 = new FileInputStream(&quot;test.txt&quot;); int size = is1.available(); for (int i=0;i&lt;size;i++) { System.out.println((char) is1.read()); } } public void WriteFileDemo() throws IOException { //FileOutputStream 创建一个文件向文件中写数据 // File f = new File(&quot;C:/java/hello&quot;); // OutputStream f = new FileOutputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public void write(int w)throws IOException{} 这个方法把指定的字节写到输出流中。 4 public void write(byte[] w) 把指定数组中w.length长度的字节写到OutputStream中。 */ System.out.println(&quot;打印输出写入文件demo&quot;); byte bWrite[] = {11,21,3,38,5}; OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;); for (int i=0;i&lt;bWrite.length;i++){ os1.write(bWrite[i]); } os1.close(); } public void CreateDirs(){ //文件和I/O ，目录 /* File类 - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。 - mkdirs()方法创建一个文件夹和它的所有父文件夹。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;; File dir1 = new File(dirname); // 创建目录 dir1.mkdirs(); } public void ReadDirs(){ /* 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。 如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。 可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;; File dir2 = new File(dirname); if (dir2.isDirectory()){ System.out.println(&quot;目录&quot;+ dirname); String[] s1 = dir2.list(); for (int i=0;i&lt;s1.length;i++){ File f = new File(dirname + &#39;/&#39; + s1[i]); if (f.isDirectory()){ System.out.println(s1[i] + &quot;是一个目录&quot;); }else { System.out.println(s1[i] + &quot;是一个文件&quot;); } } }else { System.out.println(dirname +&quot;不是一个目录&quot;); } } public void DeleteDirs(){ //删除文件/目录 /* 删除文件可以使用 java.io.File.delete() 方法 当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;; File dir3 = new File(dirname); File[] files = dir3.listFiles(); if (files != null){ for (File f: files){ if (!f.isDirectory()){ f.delete(); } } } dir3.delete(); System.out.println(&quot;删除成功&quot;); } public static void main(String[] args) throws IOException { StreamFileIODemo s = new StreamFileIODemo(); // s.printChar(); // s.printStr(); // s.WriteFileDemo(); // s.CreateDirs(); // s.ReadDirs(); s.DeleteDirs(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1373,31 +1376,20 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Java-Scanner类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java循环结构]]></title>
     <url>%2F2016%2F03%2F02%2FJava%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
     <content type="text"><![CDATA[Java循环结构public class LoopStructure { /* while 循环 do…while 循环 for 循环 */ public static void main(String[] args) { //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环 System.out.println(&quot;while 循环&quot;); int x = 10; while (x &lt; 20) { System.out.println(x); x++; } // do…while 循环，至少执行一次 /* do { //代码语句 }while(布尔表达式); */ System.out.println(&quot;do…while循环&quot;); int y = 10; do { System.out.println(y); y++; } while (y &lt; 10); // for 循环，执行前就确定执行次数 /* for(初始化; 布尔表达式; 更新) { //代码语句 } */ System.out.println(&quot;for 循环&quot;); for (int z = 0; z &lt; 20; z = z + 1) { System.out.println(z); } //增强for循环 /* for(声明语句 : 表达式) { //代码句子 } */ System.out.println(&quot;增强for 循环&quot;); int[] numbers = {10, 20, 30, 40, 50}; for (int number : numbers) { System.out.println(number); } String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;}; for (String name : names) { System.out.println(name); } //break关键字 /* break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。 break 跳出最里层的循环，并且继续执行该循环下面的语句。 */ System.out.println(&quot;break关键字&quot;); int[] numbers1 = {10, 20, 30, 40, 50}; for (int number : numbers1) { if (number == 30) { break; } System.out.println(number); } //continue关键字 /* continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。 在 for 循环中，continue 语句使程序立即跳转到更新语句。 在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。 */ System.out.println(&quot;continue关键字&quot;); int[] numbers2 = {10, 20, 30, 40, 50}; for (int number : numbers2) { if (number == 30) { continue; } System.out.println(number); } } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java数组]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
-    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java日期和时间]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%2F</url>
-    <content type="text"><![CDATA[Java日期和时间import java.text.SimpleDateFormat; import java.util.Date; import java.util.*; public class DateTimeDemo { //日期时间 public static void main(String[] args){ //获取当前时间 Date date = new Date(); System.out.println(date.toString()); //格式化日期 /* 日期和时间的格式化编码 时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下： 字母 描述 示例 G 纪元标记 AD y 四位年份 2001 M 月份 July or 07 d 一个月的日期 10 h A.M./P.M. (1~12)格式小时 12 H 一天中的小时 (0~23) 22 m 分钟数 30 s 秒数 55 S 毫秒数 234 E 星期几 Tuesday D 一年中的日子 360 F 一个月中第几周的周几 2 (second Wed. in July) w 一年中第几周 40 W 一个月中第几周 1 a A.M./P.M. 标记 PM k 一天中的小时(1~24) 24 K A.M./P.M. (0~11)格式小时 10 z 时区 Eastern Standard Time &#39; 文字定界符 Delimiter &quot; 单引号 ` */ SimpleDateFormat ft = new SimpleDateFormat(&quot;yyyy-MM-dd hh:mm:ss&quot;); System.out.println(&quot;SimpleDateFormat时间格式转换&quot;); System.out.println(ft.format(date)); //printf格式化时间 以%t 开头 /* 转 换 符 说 明 示 例 c 包括全部日期和时间信息 星期六 十月 27 14:21:20 CST 2007 F &quot;年-月-日&quot;格式 2007-10-27 D &quot;月/日/年&quot;格式 10/27/07 r &quot;HH:MM:SS PM&quot;格式（12时制） 02:25:51 下午 T &quot;HH:MM:SS&quot;格式（24时制） 14:28:16 R &quot;HH:MM&quot;格式（24时制） 14:28 */ System.out.println(&quot;printf时间格式转换&quot;); System.out.printf(&quot;全部日期和时间信息：%tc%n&quot;,date); System.out.printf(&quot;年-月-日格式：%tF%n&quot;,date); System.out.printf(&quot;月/日/年格式：%tD%n&quot;,date); System.out.printf(&quot;HH:MM:SS PM(12小时)：%tr%n&quot;,date); System.out.printf(&quot;HH:MM:SS (24小时)：%tT%n&quot;,date); System.out.printf(&quot;HH:MM (24小时)：%tR%n&quot;,date); //定义日期转换字符，抽取转换为新字符串 System.out.println(&quot;使日期转换生成新字符串&quot;); //b的使用，月份简称 String str=String.format(Locale.US,&quot;英文月份简称：%tb&quot;,date); System.out.println(str); System.out.printf(&quot;本地月份简称：%tb%n&quot;,date); //B的使用，月份全称 str=String.format(Locale.US,&quot;英文月份全称：%tB&quot;,date); System.out.println(str); System.out.printf(&quot;本地月份全称：%tB%n&quot;,date); //a的使用，星期简称 str=String.format(Locale.US,&quot;英文星期的简称：%ta&quot;,date); System.out.println(str); //A的使用，星期全称 System.out.printf(&quot;本地星期的简称：%tA%n&quot;,date); //C的使用，年前两位 System.out.printf(&quot;年的前两位数字（不足两位前面补0）：%tC%n&quot;,date); //y的使用，年后两位 System.out.printf(&quot;年的后两位数字（不足两位前面补0）：%ty%n&quot;,date); //j的使用，一年的天数 System.out.printf(&quot;一年中的天数（即年的第几天）：%tj%n&quot;,date); //m的使用，月份 System.out.printf(&quot;两位数字的月份（不足两位前面补0）：%tm%n&quot;,date); //d的使用，日（二位，不够补零） System.out.printf(&quot;两位数字的日（不足两位前面补0）：%td%n&quot;,date); //e的使用，日（一位不补零） System.out.printf(&quot;月份的日（前面不补0）：%te&quot;,date); //Calendar 对象 /* 常量 描述 Calendar.YEAR 年份 Calendar.MONTH 月份 Calendar.DATE 日期 Calendar.DAY_OF_MONTH 日期，和上面的字段意义完全相同 Calendar.HOUR 12小时制的小时 Calendar.HOUR_OF_DAY 24小时制的小时 Calendar.MINUTE 分钟 Calendar.SECOND 秒 Calendar.DAY_OF_WEEK 星期几 */ //GregorianCalendar类 /* 序号 构造函数和说明 1 GregorianCalendar() 在具有默认语言环境的默认时区内使用当前时间构造一个默认的 GregorianCalendar。 2 GregorianCalendar(int year, int month, int date) 在具有默认语言环境的默认时区内构造一个带有给定日期设置的 GregorianCalendar 3 GregorianCalendar(int year, int month, int date, int hour, int minute) 为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。 4 GregorianCalendar(int year, int month, int date, int hour, int minute, int second) 为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。 5 GregorianCalendar(Locale aLocale) 在具有给定语言环境的默认时区内构造一个基于当前时间的 GregorianCalendar。 6 GregorianCalendar(TimeZone zone) 在具有默认语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。 7 GregorianCalendar(TimeZone zone, Locale aLocale) 在具有给定语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。 这里是GregorianCalendar 类提供的一些有用的方法列表： 序号 方法和说明 1 void add(int field, int amount) 根据日历规则，将指定的（有符号的）时间量添加到给定的日历字段中。 2 protected void computeFields() 转换UTC毫秒值为时间域值 3 protected void computeTime() 覆盖Calendar ，转换时间域值为UTC毫秒值 4 boolean equals(Object obj) 比较此 GregorianCalendar 与指定的 Object。 5 int get(int field) 获取指定字段的时间值 6 int getActualMaximum(int field) 返回当前日期，给定字段的最大值 7 int getActualMinimum(int field) 返回当前日期，给定字段的最小值 8 int getGreatestMinimum(int field) 返回此 GregorianCalendar 实例给定日历字段的最高的最小值。 9 Date getGregorianChange() 获得格里高利历的更改日期。 10 int getLeastMaximum(int field) 返回此 GregorianCalendar 实例给定日历字段的最低的最大值 11 int getMaximum(int field) 返回此 GregorianCalendar 实例的给定日历字段的最大值。 12 Date getTime() 获取日历当前时间。 13 long getTimeInMillis() 获取用长整型表示的日历的当前时间 14 TimeZone getTimeZone() 获取时区。 15 int getMinimum(int field) 返回给定字段的最小值。 16 int hashCode() 重写hashCode. 17 boolean isLeapYear(int year) 确定给定的年份是否为闰年。 18 void roll(int field, boolean up) 在给定的时间字段上添加或减去（上/下）单个时间单元，不更改更大的字段。 19 void set(int field, int value) 用给定的值设置时间字段。 20 void set(int year, int month, int date) 设置年、月、日的值。 21 void set(int year, int month, int date, int hour, int minute) 设置年、月、日、小时、分钟的值。 22 void set(int year, int month, int date, int hour, int minute, int second) 设置年、月、日、小时、分钟、秒的值。 23 void setGregorianChange(Date date) 设置 GregorianCalendar 的更改日期。 24 void setTime(Date date) 用给定的日期设置Calendar的当前时间。 25 void setTimeInMillis(long millis) 用给定的long型毫秒数设置Calendar的当前时间。 26 void setTimeZone(TimeZone value) 用给定时区值设置当前时区。 27 String toString() 返回代表日历的字符串。 */ String months[] = { &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;}; int year; // 初始化 Gregorian 日历 // 使用当前时间和日期 // 默认为本地时间和时区 GregorianCalendar gcalendar = new GregorianCalendar(); // 显示当前时间和日期的信息 System.out.print(&quot;Date: &quot;); System.out.print(months[gcalendar.get(Calendar.MONTH)]); System.out.print(&quot; &quot; + gcalendar.get(Calendar.DATE) + &quot; &quot;); System.out.println(year = gcalendar.get(Calendar.YEAR)); System.out.print(&quot;Time: &quot;); System.out.print(gcalendar.get(Calendar.HOUR) + &quot;:&quot;); System.out.print(gcalendar.get(Calendar.MINUTE) + &quot;:&quot;); System.out.println(gcalendar.get(Calendar.SECOND)); // 测试当前年份是否为闰年 if(gcalendar.isLeapYear(year)) { System.out.println(&quot;当前年份是闰年&quot;); } else { System.out.println(&quot;当前年份不是闰年&quot;); } } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1417,6 +1409,28 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[Java日期和时间]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%2F</url>
+    <content type="text"><![CDATA[Java日期和时间import java.text.SimpleDateFormat; import java.util.Date; import java.util.*; public class DateTimeDemo { //日期时间 public static void main(String[] args){ //获取当前时间 Date date = new Date(); System.out.println(date.toString()); //格式化日期 /* 日期和时间的格式化编码 时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下： 字母 描述 示例 G 纪元标记 AD y 四位年份 2001 M 月份 July or 07 d 一个月的日期 10 h A.M./P.M. (1~12)格式小时 12 H 一天中的小时 (0~23) 22 m 分钟数 30 s 秒数 55 S 毫秒数 234 E 星期几 Tuesday D 一年中的日子 360 F 一个月中第几周的周几 2 (second Wed. in July) w 一年中第几周 40 W 一个月中第几周 1 a A.M./P.M. 标记 PM k 一天中的小时(1~24) 24 K A.M./P.M. (0~11)格式小时 10 z 时区 Eastern Standard Time &#39; 文字定界符 Delimiter &quot; 单引号 ` */ SimpleDateFormat ft = new SimpleDateFormat(&quot;yyyy-MM-dd hh:mm:ss&quot;); System.out.println(&quot;SimpleDateFormat时间格式转换&quot;); System.out.println(ft.format(date)); //printf格式化时间 以%t 开头 /* 转 换 符 说 明 示 例 c 包括全部日期和时间信息 星期六 十月 27 14:21:20 CST 2007 F &quot;年-月-日&quot;格式 2007-10-27 D &quot;月/日/年&quot;格式 10/27/07 r &quot;HH:MM:SS PM&quot;格式（12时制） 02:25:51 下午 T &quot;HH:MM:SS&quot;格式（24时制） 14:28:16 R &quot;HH:MM&quot;格式（24时制） 14:28 */ System.out.println(&quot;printf时间格式转换&quot;); System.out.printf(&quot;全部日期和时间信息：%tc%n&quot;,date); System.out.printf(&quot;年-月-日格式：%tF%n&quot;,date); System.out.printf(&quot;月/日/年格式：%tD%n&quot;,date); System.out.printf(&quot;HH:MM:SS PM(12小时)：%tr%n&quot;,date); System.out.printf(&quot;HH:MM:SS (24小时)：%tT%n&quot;,date); System.out.printf(&quot;HH:MM (24小时)：%tR%n&quot;,date); //定义日期转换字符，抽取转换为新字符串 System.out.println(&quot;使日期转换生成新字符串&quot;); //b的使用，月份简称 String str=String.format(Locale.US,&quot;英文月份简称：%tb&quot;,date); System.out.println(str); System.out.printf(&quot;本地月份简称：%tb%n&quot;,date); //B的使用，月份全称 str=String.format(Locale.US,&quot;英文月份全称：%tB&quot;,date); System.out.println(str); System.out.printf(&quot;本地月份全称：%tB%n&quot;,date); //a的使用，星期简称 str=String.format(Locale.US,&quot;英文星期的简称：%ta&quot;,date); System.out.println(str); //A的使用，星期全称 System.out.printf(&quot;本地星期的简称：%tA%n&quot;,date); //C的使用，年前两位 System.out.printf(&quot;年的前两位数字（不足两位前面补0）：%tC%n&quot;,date); //y的使用，年后两位 System.out.printf(&quot;年的后两位数字（不足两位前面补0）：%ty%n&quot;,date); //j的使用，一年的天数 System.out.printf(&quot;一年中的天数（即年的第几天）：%tj%n&quot;,date); //m的使用，月份 System.out.printf(&quot;两位数字的月份（不足两位前面补0）：%tm%n&quot;,date); //d的使用，日（二位，不够补零） System.out.printf(&quot;两位数字的日（不足两位前面补0）：%td%n&quot;,date); //e的使用，日（一位不补零） System.out.printf(&quot;月份的日（前面不补0）：%te&quot;,date); //Calendar 对象 /* 常量 描述 Calendar.YEAR 年份 Calendar.MONTH 月份 Calendar.DATE 日期 Calendar.DAY_OF_MONTH 日期，和上面的字段意义完全相同 Calendar.HOUR 12小时制的小时 Calendar.HOUR_OF_DAY 24小时制的小时 Calendar.MINUTE 分钟 Calendar.SECOND 秒 Calendar.DAY_OF_WEEK 星期几 */ //GregorianCalendar类 /* 序号 构造函数和说明 1 GregorianCalendar() 在具有默认语言环境的默认时区内使用当前时间构造一个默认的 GregorianCalendar。 2 GregorianCalendar(int year, int month, int date) 在具有默认语言环境的默认时区内构造一个带有给定日期设置的 GregorianCalendar 3 GregorianCalendar(int year, int month, int date, int hour, int minute) 为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。 4 GregorianCalendar(int year, int month, int date, int hour, int minute, int second) 为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。 5 GregorianCalendar(Locale aLocale) 在具有给定语言环境的默认时区内构造一个基于当前时间的 GregorianCalendar。 6 GregorianCalendar(TimeZone zone) 在具有默认语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。 7 GregorianCalendar(TimeZone zone, Locale aLocale) 在具有给定语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。 这里是GregorianCalendar 类提供的一些有用的方法列表： 序号 方法和说明 1 void add(int field, int amount) 根据日历规则，将指定的（有符号的）时间量添加到给定的日历字段中。 2 protected void computeFields() 转换UTC毫秒值为时间域值 3 protected void computeTime() 覆盖Calendar ，转换时间域值为UTC毫秒值 4 boolean equals(Object obj) 比较此 GregorianCalendar 与指定的 Object。 5 int get(int field) 获取指定字段的时间值 6 int getActualMaximum(int field) 返回当前日期，给定字段的最大值 7 int getActualMinimum(int field) 返回当前日期，给定字段的最小值 8 int getGreatestMinimum(int field) 返回此 GregorianCalendar 实例给定日历字段的最高的最小值。 9 Date getGregorianChange() 获得格里高利历的更改日期。 10 int getLeastMaximum(int field) 返回此 GregorianCalendar 实例给定日历字段的最低的最大值 11 int getMaximum(int field) 返回此 GregorianCalendar 实例的给定日历字段的最大值。 12 Date getTime() 获取日历当前时间。 13 long getTimeInMillis() 获取用长整型表示的日历的当前时间 14 TimeZone getTimeZone() 获取时区。 15 int getMinimum(int field) 返回给定字段的最小值。 16 int hashCode() 重写hashCode. 17 boolean isLeapYear(int year) 确定给定的年份是否为闰年。 18 void roll(int field, boolean up) 在给定的时间字段上添加或减去（上/下）单个时间单元，不更改更大的字段。 19 void set(int field, int value) 用给定的值设置时间字段。 20 void set(int year, int month, int date) 设置年、月、日的值。 21 void set(int year, int month, int date, int hour, int minute) 设置年、月、日、小时、分钟的值。 22 void set(int year, int month, int date, int hour, int minute, int second) 设置年、月、日、小时、分钟、秒的值。 23 void setGregorianChange(Date date) 设置 GregorianCalendar 的更改日期。 24 void setTime(Date date) 用给定的日期设置Calendar的当前时间。 25 void setTimeInMillis(long millis) 用给定的long型毫秒数设置Calendar的当前时间。 26 void setTimeZone(TimeZone value) 用给定时区值设置当前时区。 27 String toString() 返回代表日历的字符串。 */ String months[] = { &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;}; int year; // 初始化 Gregorian 日历 // 使用当前时间和日期 // 默认为本地时间和时区 GregorianCalendar gcalendar = new GregorianCalendar(); // 显示当前时间和日期的信息 System.out.print(&quot;Date: &quot;); System.out.print(months[gcalendar.get(Calendar.MONTH)]); System.out.print(&quot; &quot; + gcalendar.get(Calendar.DATE) + &quot; &quot;); System.out.println(year = gcalendar.get(Calendar.YEAR)); System.out.print(&quot;Time: &quot;); System.out.print(gcalendar.get(Calendar.HOUR) + &quot;:&quot;); System.out.print(gcalendar.get(Calendar.MINUTE) + &quot;:&quot;); System.out.println(gcalendar.get(Calendar.SECOND)); // 测试当前年份是否为闰年 if(gcalendar.isLeapYear(year)) { System.out.println(&quot;当前年份是闰年&quot;); } else { System.out.println(&quot;当前年份不是闰年&quot;); } } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java数组]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Java正则表达式]]></title>
     <url>%2F2016%2F03%2F02%2FJava%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%2F</url>
     <content type="text"><![CDATA[Java正则表达式import java.util.regex.*; public class RegularExpressionDemo { /* Pattern 类： pattern 对象是一个正则表达式的编译表示。 Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。 该方法接受一个正则表达式作为它的第一个参数。 Matcher 类： Matcher 对象是对输入字符串进行解释和匹配操作的引擎。 与Pattern 类一样，Matcher 也没有公共构造方法。 需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。 PatternSyntaxException： PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。 */ /* 正则表达式语法 字符 说明 \ 将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如，&quot;n&quot;匹配字符&quot;n&quot;。&quot;\n&quot;匹配换行符。序列&quot;\\\\&quot;匹配&quot;\\&quot;，&quot;\\(&quot;匹配&quot;(&quot;。 ^ 匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与&quot;\n&quot;或&quot;\r&quot;之后的位置匹配。 $ 匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与&quot;\n&quot;或&quot;\r&quot;之前的位置匹配。 * 零次或多次匹配前面的字符或子表达式。例如，zo* 匹配&quot;z&quot;和&quot;zoo&quot;。* 等效于 {0,}。 + 一次或多次匹配前面的字符或子表达式。例如，&quot;zo+&quot;与&quot;zo&quot;和&quot;zoo&quot;匹配，但与&quot;z&quot;不匹配。+ 等效于 {1,}。 ? 零次或一次匹配前面的字符或子表达式。例如，&quot;do(es)?&quot;匹配&quot;do&quot;或&quot;does&quot;中的&quot;do&quot;。? 等效于 {0,1}。 {n} n 是非负整数。正好匹配 n 次。例如，&quot;o{2}&quot;与&quot;Bob&quot;中的&quot;o&quot;不匹配，但与&quot;food&quot;中的两个&quot;o&quot;匹配。 {n,} n 是非负整数。至少匹配 n 次。例如，&quot;o{2,}&quot;不匹配&quot;Bob&quot;中的&quot;o&quot;，而匹配&quot;foooood&quot;中的所有 o。&quot;o{1,}&quot;等效于&quot;o+&quot;。&quot;o{0,}&quot;等效于&quot;o*&quot;。 {n,m} m 和 n 是非负整数，其中 n &lt;= m。匹配至少 n 次，至多 m 次。例如，&quot;o{1,3}&quot;匹配&quot;fooooood&quot;中的头三个 o。&#39;o{0,1}&#39; 等效于 &#39;o?&#39;。注意：您不能将空格插入逗号和数字之间。 ? 当此字符紧随任何其他限定符（*、+、?、{n}、{n,}、{n,m}）之后时，匹配模式是&quot;非贪心的&quot;。&quot;非贪心的&quot;模式匹配搜索到的、尽可能短的字符串，而默认的&quot;贪心的&quot;模式匹配搜索到的、尽可能长的字符串。例如，在字符串&quot;oooo&quot;中，&quot;o+?&quot;只匹配单个&quot;o&quot;，而&quot;o+&quot;匹配所有&quot;o&quot;。 . 匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。 (pattern) 匹配 pattern 并捕获该匹配的子表达式。可以使用 $0…$9 属性从结果&quot;匹配&quot;集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用&quot;\(&quot;或者&quot;\)&quot;。 (?:pattern) 匹配 pattern 但不捕获该匹配的子表达式，即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用&quot;or&quot;字符 (|) 组合模式部件的情况很有用。例如，&#39;industr(?:y|ies) 是比 &#39;industry|industries&#39; 更经济的表达式。 (?=pattern) 执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 pattern 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?=95|98|NT|2000)&#39; 匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;，但不匹配&quot;Windows 3.1&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。 (?!pattern) 执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 pattern 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?!95|98|NT|2000)&#39; 匹配&quot;Windows 3.1&quot;中的 &quot;Windows&quot;，但不匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。 x|y 匹配 x 或 y。例如，&#39;z|food&#39; 匹配&quot;z&quot;或&quot;food&quot;。&#39;(z|f)ood&#39; 匹配&quot;zood&quot;或&quot;food&quot;。 [xyz] 字符集。匹配包含的任一字符。例如，&quot;[abc]&quot;匹配&quot;plain&quot;中的&quot;a&quot;。 [^xyz] 反向字符集。匹配未包含的任何字符。例如，&quot;[^abc]&quot;匹配&quot;plain&quot;中&quot;p&quot;，&quot;l&quot;，&quot;i&quot;，&quot;n&quot;。 [a-z] 字符范围。匹配指定范围内的任何字符。例如，&quot;[a-z]&quot;匹配&quot;a&quot;到&quot;z&quot;范围内的任何小写字母。 [^a-z] 反向范围字符。匹配不在指定的范围内的任何字符。例如，&quot;[^a-z]&quot;匹配任何不在&quot;a&quot;到&quot;z&quot;范围内的任何字符。 \b 匹配一个字边界，即字与空格间的位置。例如，&quot;er\b&quot;匹配&quot;never&quot;中的&quot;er&quot;，但不匹配&quot;verb&quot;中的&quot;er&quot;。 \B 非字边界匹配。&quot;er\B&quot;匹配&quot;verb&quot;中的&quot;er&quot;，但不匹配&quot;never&quot;中的&quot;er&quot;。 \cx 匹配 x 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。x 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是&quot;c&quot;字符本身。 \d 数字字符匹配。等效于 [0-9]。 \D 非数字字符匹配。等效于 [^0-9]。 \f 换页符匹配。等效于 \x0c 和 \cL。 \n 换行符匹配。等效于 \x0a 和 \cJ。 \r 匹配一个回车符。等效于 \x0d 和 \cM。 \s 匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。 \S 匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。 \t 制表符匹配。与 \x09 和 \cI 等效。 \v 垂直制表符匹配。与 \x0b 和 \cK 等效。 \w 匹配任何字类字符，包括下划线。与&quot;[A-Za-z0-9_]&quot;等效。 \W 与任何非单词字符匹配。与&quot;[^A-Za-z0-9_]&quot;等效。 \xn 匹配 n，此处的 n 是一个十六进制转义码。十六进制转义码必须正好是两位数长。例如，&quot;\x41&quot;匹配&quot;A&quot;。&quot;\x041&quot;与&quot;\x04&quot;&amp;&quot;1&quot;等效。允许在正则表达式中使用 ASCII 代码。 \num 匹配 num，此处的 num 是一个正整数。到捕获匹配的反向引用。例如，&quot;(.)\1&quot;匹配两个连续的相同字符。 \n 标识一个八进制转义码或反向引用。如果 \n 前面至少有 n 个捕获子表达式，那么 n 是反向引用。否则，如果 n 是八进制数 (0-7)，那么 n 是八进制转义码。 \nm 标识一个八进制转义码或反向引用。如果 \nm 前面至少有 nm 个捕获子表达式，那么 nm 是反向引用。如果 \nm 前面至少有 n 个捕获，则 n 是反向引用，后面跟有字符 m。如果两种前面的情况都不存在，则 \nm 匹配八进制值 nm，其中 n 和 m 是八进制数字 (0-7)。 \nml 当 n 是八进制数 (0-3)，m 和 l 是八进制数 (0-7) 时，匹配八进制转义码 nml。 */ }]]></content>
@@ -1428,9 +1442,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java基本数据类型]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[Java基本数据类型public class DataType { /* 内置数据类型 引用数据类型 */ public static void main(String[] args) { // byte System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE); System.out.println(&quot;包装类：java.lang.Byte&quot;); System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE); System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE); System.out.println(); // short System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE); System.out.println(&quot;包装类：java.lang.Short&quot;); System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE); System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE); System.out.println(); // int System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE); System.out.println(&quot;包装类：java.lang.Integer&quot;); System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE); System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE); System.out.println(); // long System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE); System.out.println(&quot;包装类：java.lang.Long&quot;); System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE); System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE); System.out.println(); // float System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE); System.out.println(&quot;包装类：java.lang.Float&quot;); System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE); System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE); System.out.println(); // double System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE); System.out.println(&quot;包装类：java.lang.Double&quot;); System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE); System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE); System.out.println(); // char System.out.println(&quot;基本类型：char 二进制位数：&quot; + Character.SIZE); System.out.println(&quot;包装类：java.lang.Character&quot;); // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台 System.out.println(&quot;最小值：Character.MIN_VALUE=&quot; + (int) Character.MIN_VALUE); // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台 System.out.println(&quot;最大值：Character.MAX_VALUE=&quot; + (int) Character.MAX_VALUE); } }]]></content>
+    <title><![CDATA[Java对象和类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java对象和类public class ObjectAndClass { /* - 多态 - 继承 - 封装 - 抽象 - 类 ： 是一个模板，用来描述 - 对象 ： 是类class的一个实例，具有状态和行为 - 实例 - 方法 - 重载 */ //定义一个Dog类 public static class Dog { //成员变量 StringDemo color; int age; StringDemo name; //类方法 void barking(){ System.out.println(&quot;汪！汪！汪！&quot;); } void hungry(){ System.out.println(&quot;好饿哦！&quot;); } void sleeping(){ System.out.println(&quot;好困哦！&quot;); } void setAge(int age){ this.age = age; } } public static void main(String[]args) { /* 创建对象 声明： 声明一个对象， 对象类型 和对象名称 实例化： new创建 初始化： 创建时调用构造方法生成 */ Dog dog = new Dog(); dog.hungry(); dog.barking(); dog.sleeping(); System.out.println(dog.age); dog.setAge(24); System.out.println(dog.age); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1439,9 +1453,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java对象和类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java对象和类public class ObjectAndClass { /* - 多态 - 继承 - 封装 - 抽象 - 类 ： 是一个模板，用来描述 - 对象 ： 是类class的一个实例，具有状态和行为 - 实例 - 方法 - 重载 */ //定义一个Dog类 public static class Dog { //成员变量 StringDemo color; int age; StringDemo name; //类方法 void barking(){ System.out.println(&quot;汪！汪！汪！&quot;); } void hungry(){ System.out.println(&quot;好饿哦！&quot;); } void sleeping(){ System.out.println(&quot;好困哦！&quot;); } void setAge(int age){ this.age = age; } } public static void main(String[]args) { /* 创建对象 声明： 声明一个对象， 对象类型 和对象名称 实例化： new创建 初始化： 创建时调用构造方法生成 */ Dog dog = new Dog(); dog.hungry(); dog.barking(); dog.sleeping(); System.out.println(dog.age); dog.setAge(24); System.out.println(dog.age); } }]]></content>
+    <title><![CDATA[Java基本数据类型]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[Java基本数据类型public class DataType { /* 内置数据类型 引用数据类型 */ public static void main(String[] args) { // byte System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE); System.out.println(&quot;包装类：java.lang.Byte&quot;); System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE); System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE); System.out.println(); // short System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE); System.out.println(&quot;包装类：java.lang.Short&quot;); System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE); System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE); System.out.println(); // int System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE); System.out.println(&quot;包装类：java.lang.Integer&quot;); System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE); System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE); System.out.println(); // long System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE); System.out.println(&quot;包装类：java.lang.Long&quot;); System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE); System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE); System.out.println(); // float System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE); System.out.println(&quot;包装类：java.lang.Float&quot;); System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE); System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE); System.out.println(); // double System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE); System.out.println(&quot;包装类：java.lang.Double&quot;); System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE); System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE); System.out.println(); // char System.out.println(&quot;基本类型：char 二进制位数：&quot; + Character.SIZE); System.out.println(&quot;包装类：java.lang.Character&quot;); // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台 System.out.println(&quot;最小值：Character.MIN_VALUE=&quot; + (int) Character.MIN_VALUE); // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台 System.out.println(&quot;最大值：Character.MAX_VALUE=&quot; + (int) Character.MAX_VALUE); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>

@@ -175,9 +175,9 @@ import org.springframework.boot</div>
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
             <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
           
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
@@ -220,11 +220,88 @@ Repository —定义操作，操作实体类中的数据表
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
             <a href="/tags/Java">Java</a>&nbsp;
           
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/02-matplotlib散点图/">
+        <p class="h4 index-header">数据分析02：matplotlib散点图</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
+
+&#39;&#39;&#39;
+    散点图显示两组数据的值，每个点的坐标位置的值决定
+    用户观察两种变量的相关性：
+        正相关
+        负相关
+        不相关
+
+&#39;&#39;&#39;
+
+# 正相关
+height = [161,170,174,165,182,175]
+weight = [50,65,70,62,81,75]
+plt.scatter(height,weight)
+plt.show()
+
+
+# 不相关
+N = 1000
+x = np.random.randn(N)
+y = np.random.randn(N)
+plt.scatter(x,y)
+plt.show()
+
+
+# 散点图的外观
+&#39;&#39;&#39;
+    c    颜色
+    s    点（面积）大小
+    alpha       透明度
+        值的范围[0,1]
+        通过调节透明度，来观察点的集中性
+    marker   </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
           
         
       </div>
@@ -644,70 +721,6 @@ heightFOrRowAtIndexPath         : 获取单元格高</div>
             <a href="/tags/iOS">iOS</a>&nbsp;
           
             <a href="/tags/Navtive">Navtive</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--MySQL中数据类型/">
-        <p class="h4 index-header">MySQL深入浅出--MySQL中数据类型</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">MySQL数据类型数值型整数型
-INT
-TINYINT
-BIGINT
-BOOL,BOOLEAN
-SMALLINT
-MEDIUMINT
-
-浮点型
-FLOAT
-DOUBLE
-DECIMAL
-
-字符串类型说明：
-1、CHAR效率高于VARCHAR,CHAR相当于拿空间换时间，VARCHAR拿时间换空间
-2、CHAR默认存储数据的时候，后面会用空格填充到指定长度；而在检索的时候会去掉后面空格；VARCHAR在保存的时候不进行填充，尾部的空格会留下
-3、TEXT列不能有默认值,检索的时候不存在大小写转换
-
-CHAR
-VARCHAR
-TINYTEXT
-TEXT
-MEDIUMTEXT
-LONGTEXT
-EMUM(‘value1’,’value2’,…)
-SET(‘value1’,’value2’,…)
-
-日期时间类型二进制类型</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
           
         
       </div>
