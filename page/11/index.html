@@ -194,24 +194,30 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-NumberMath类/">
-        <p class="h4 index-header">Java-NumberMath类</p>
+      <a href="/2016/03/02/Java-FileStreamIO/">
+        <p class="h4 index-header">Java-FileStreamIO</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
-    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
-    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
+          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
 
-    private static void test(double num) {
-        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
-        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
-        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
+public class StreamFileIODemo {
+    public void printChar() throws IOException {
+        //使用BufferedReader从控制台读取输入
+        char c;
+        //使用System.in 创建BufferedReader
+        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println(&quot;输入字符，按Q键退出&quot;);
+        do {
+            //read() 读取字符
+            c = (char) br1.read();
+            System.out.println(c);
+        } while (c != &#39;Q&#39;);
     }
 
-    public st</div>
+    pu</div>
         </div>
       </a>
 
@@ -239,30 +245,24 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-FileStreamIO/">
-        <p class="h4 index-header">Java-FileStreamIO</p>
+      <a href="/2016/03/02/Java-NumberMath类/">
+        <p class="h4 index-header">Java-NumberMath类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
+          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
+    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
+    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
 
-public class StreamFileIODemo {
-    public void printChar() throws IOException {
-        //使用BufferedReader从控制台读取输入
-        char c;
-        //使用System.in 创建BufferedReader
-        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println(&quot;输入字符，按Q键退出&quot;);
-        do {
-            //read() 读取字符
-            c = (char) br1.read();
-            System.out.println(c);
-        } while (c != &#39;Q&#39;);
+    private static void test(double num) {
+        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
+        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
+        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
     }
 
-    pu</div>
+    public st</div>
         </div>
       </a>
 
@@ -548,33 +548,36 @@ public class ExceptionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java数组/">
-        <p class="h4 index-header">Java数组</p>
+      <a href="/2016/03/02/Java循环结构/">
+        <p class="h4 index-header">Java循环结构</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java数组public class ArrayDemo {
-    //声明数组
-    // 数据类型[] 数组名称;  dataType[] arrayName;
+          <div class="index-text mb-1">Java循环结构public class LoopStructure {
+    /*
+        while 循环
+        do…while 循环
+        for 循环
+     */
 
-    //创建数组
-    // 数据名称 = new dataType[arraySize];
+    public static void main(String[] args) {
+        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
+        System.out.println(&quot;while 循环&quot;);
+        int x = 10;
+        while (x &lt; 20) {
+            System.out.println(x);
+            x++;
+        }
 
-    //dataType[] arrayName = {value0,value1,value2,...,valuek};
-    public static void main(String[] args){
-        //数组大小
-        int size =4;
-        //定义数组
-        double[] TestList = new double[size];
-        TestList[0] = 3.2;
-        TestList[1] = 2.6;
-        TestList[2] = 4.7;
-        TestList[3] = 5.6;
-
-        double total =0;
-        for (int i=0; i&</div>
+        // do…while 循环，至少执行一次
+        /*
+            do {
+                //代码语句
+            }while(布尔表达式);
+         */
+        System.o</div>
         </div>
       </a>
 
@@ -602,37 +605,33 @@ public class ExceptionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java日期和时间/">
-        <p class="h4 index-header">Java日期和时间</p>
+      <a href="/2016/03/02/Java数组/">
+        <p class="h4 index-header">Java数组</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java日期和时间import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.*;
+          <div class="index-text mb-1">Java数组public class ArrayDemo {
+    //声明数组
+    // 数据类型[] 数组名称;  dataType[] arrayName;
 
-public class DateTimeDemo {
-    //日期时间
+    //创建数组
+    // 数据名称 = new dataType[arraySize];
+
+    //dataType[] arrayName = {value0,value1,value2,...,valuek};
     public static void main(String[] args){
-        //获取当前时间
-        Date date = new Date();
-        System.out.println(date.toString());
+        //数组大小
+        int size =4;
+        //定义数组
+        double[] TestList = new double[size];
+        TestList[0] = 3.2;
+        TestList[1] = 2.6;
+        TestList[2] = 4.7;
+        TestList[3] = 5.6;
 
-
-        //格式化日期
-        /*
-            日期和时间的格式化编码
-时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下：
-
-字母    描述    示例
-G    纪元标记    AD
-y    四位年份    2001
-M    月份    July or 07
-d    一个月的日期    10
-h     A.M./P.M. (1~12)格式小时    12
-H    一天中的小</div>
+        double total =0;
+        for (int i=0; i&</div>
         </div>
       </a>
 
