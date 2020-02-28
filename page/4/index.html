@@ -214,6 +214,87 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/02/22/php即时通讯-http/">
+        <p class="h4 index-header">php即时通讯-http</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">HTTP
+一个应用层协议
+Header + Body组成
+比TCP更高级
+短链接
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-02-22&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/php">php</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/php">php</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/02/22/php即时通讯-WebSocket/">
+        <p class="h4 index-header">php即时通讯-WebSocket</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">WebSocket
+一个应用层协议
+长链接
+主流即时通讯协议
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-02-22&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/php">php</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/php">php</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2019/01/22/php开发APP后端---学习异常监控/">
         <p class="h4 index-header">php开发APP后端---学习异常监控</p>
         
@@ -270,32 +351,14 @@ Crash ，卡顿 ，exception， ANR 的次数
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/22/redis学习--安装入门/">
-        <p class="h4 index-header">redis学习---安装入门</p>
+      <a href="/2019/01/22/redis学习-数据类型/">
+        <p class="h4 index-header">redis学习---数据类型</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">CentOS下安装启动# 下载安装fedora的仓库
-yum install epel-release
-# 安装redis
-yum install redis
-# 开启redis服务
-service redis start
-# 可选项，修改可访问的域名IP，修改保护模式为no
-vi /etc/redis.conf
-    注释掉 bind 127.0.0.1
-    改 protected  为 no 
-# 重启redis服务
-service redis restart
-# 根据需要可，修改防火墙，增加6379端口
-firewall-cmd --zone=public --add-port=6379/tcp -permanent   (-permanent,长期生效)
-# 查询端口
-firewall-cmd --zone-public --query-port=6379/tcp
-# 连接redis
-redis-cli -h host -p port -a password
-</div>
+          <div class="index-text mb-1">redis数据类型string字符串</div>
         </div>
       </a>
 
@@ -325,14 +388,32 @@ redis-cli -h host -p port -a password
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/22/redis学习-数据类型/">
-        <p class="h4 index-header">redis学习---数据类型</p>
+      <a href="/2019/01/22/redis学习--安装入门/">
+        <p class="h4 index-header">redis学习---安装入门</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">redis数据类型string字符串</div>
+          <div class="index-text mb-1">CentOS下安装启动# 下载安装fedora的仓库
+yum install epel-release
+# 安装redis
+yum install redis
+# 开启redis服务
+service redis start
+# 可选项，修改可访问的域名IP，修改保护模式为no
+vi /etc/redis.conf
+    注释掉 bind 127.0.0.1
+    改 protected  为 no 
+# 重启redis服务
+service redis restart
+# 根据需要可，修改防火墙，增加6379端口
+firewall-cmd --zone=public --add-port=6379/tcp -permanent   (-permanent,长期生效)
+# 查询端口
+firewall-cmd --zone-public --query-port=6379/tcp
+# 连接redis
+redis-cli -h host -p port -a password
+</div>
         </div>
       </a>
 
@@ -621,100 +702,11 @@ Score = S0 + S(Users) – S(Time)
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/04/Python数据挖掘——概要/">
-        <p class="h4 index-header">Python数据挖掘——概要</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">一、数据挖掘过程1.数据选择
-分析业务需求后，选择应用于需求业务相关的数据：业务原始数据、公开的数据集、也可通过爬虫采集网站结构化的数据。明确业务需求并选择好针对性的数据是数据挖掘的先决条件。
-2.数据预处理
-通常选择好的数据会有噪音，不完整等缺陷，需要对数据进行清洗，缺失项处理，集成，转换以及归纳：python字符串处理（相当方便）、正则式匹配、pandas、beautifulsoup处理Html标签等等工具。
-3.特征工程/数据转换
-根据选择的算法，对预处理好的数据提取特征，并转换为特定数据挖掘算法的分析模型。
-4.数据挖掘
-使用选择好的数据挖掘算法对数据进行处理后得到信息。
-5.解释与评价
-对数据挖掘后的信息加以分析解释，并应用于实际的工作领域。
-二、数据挖掘常用算法简介1.关联分析算法关联规则在于找出具有最小支持度阈值和最小置信度阈值的不同域的数据之间的关联。在关联规则的分析算法研究中，算法的效率是核心的问题。经典的算法有：Apriori算法，AprioriTid算法，FP-growth算法；
-2.分类算法决策树算法：以树形结构表示分类或者决策集合，产生规则或者发现规律。主要有</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-01-04&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-            <a href="/categories/Data%20Mining">Data Mining</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Python3">Python3</a>&nbsp;
-          
-            <a href="/tags/Data%20Mining">Data Mining</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/02/常见的研究者认知偏误/">
-        <p class="h4 index-header">常见的研究者认知偏误</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">常见的研究者认知偏误前言：
-认知偏误（Cognitive bias）是一种常见的现象，它是指当我们思考问题或做决策时，大脑会有一些固定的思维倾向。这个过程多是无意识的，有时也会带来正面作用，如帮助我们在纷繁复杂的环境中节省思考时间，更高效地做出决定但是在研究中，认知偏误易导致研究结果不准确，降低研究的价值。我们都希望研究是客观、理性、反映真实情况的，了解常见的认知偏误可以帮助我们在工作中尽量规避它们，得出更准确的结论。实际上每个人都会有认知偏误，包括用户研究者和用户。
-今天我们就来说说研究者的常见认知偏误，下次有机会再谈谈用户的，敬请期待。
-一、 确认偏误（Confirmation bias）当人们本来就持有某种观点时，对这种观点的感知和注意度会被放大，会选择性地回忆或收集关于它的事例。人们对于自己原本就相信的观点会更容易接受，而把反面观点搁置在一旁。举个例子：有些人认为女司机不擅长开车，更容易造成事故，所以当新闻中的事故与女司机有关时，他们会觉得“果然如此”。而实际上男司机的事故率比女司机更高。
-在用户研究中，当你的预设想法是用户对A设计的满意度比B设计更高时，在研究中你可能会更关注</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-01-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E5%B0%8F%E8%AE%B0">小记</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E8%AE%A4%E7%9F%A5%E5%81%8F%E8%AF%AF">认知偏误</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
 
 
   <nav aria-label="index posts navigation">
     <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/3/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/5/"><i class="fas fa-angle-double-right"></i></a>
+      <a class="extend prev" rel="prev" href="/page/3/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/5/"><i class="fas fa-angle-double-right"></i></a>
     </span>
   </nav>
   

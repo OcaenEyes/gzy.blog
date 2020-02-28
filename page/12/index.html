@@ -133,37 +133,36 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java日期和时间/">
-        <p class="h4 index-header">Java日期和时间</p>
+      <a href="/2016/03/02/Java循环结构/">
+        <p class="h4 index-header">Java循环结构</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java日期和时间import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.*;
+          <div class="index-text mb-1">Java循环结构public class LoopStructure {
+    /*
+        while 循环
+        do…while 循环
+        for 循环
+     */
 
-public class DateTimeDemo {
-    //日期时间
-    public static void main(String[] args){
-        //获取当前时间
-        Date date = new Date();
-        System.out.println(date.toString());
+    public static void main(String[] args) {
+        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
+        System.out.println(&quot;while 循环&quot;);
+        int x = 10;
+        while (x &lt; 20) {
+            System.out.println(x);
+            x++;
+        }
 
-
-        //格式化日期
+        // do…while 循环，至少执行一次
         /*
-            日期和时间的格式化编码
-时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下：
-
-字母    描述    示例
-G    纪元标记    AD
-y    四位年份    2001
-M    月份    July or 07
-d    一个月的日期    10
-h     A.M./P.M. (1~12)格式小时    12
-H    一天中的小</div>
+            do {
+                //代码语句
+            }while(布尔表达式);
+         */
+        System.o</div>
         </div>
       </a>
 
@@ -247,6 +246,60 @@ H    一天中的小</div>
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java数组/">
+        <p class="h4 index-header">Java数组</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java数组public class ArrayDemo {
+    //声明数组
+    // 数据类型[] 数组名称;  dataType[] arrayName;
+
+    //创建数组
+    // 数据名称 = new dataType[arraySize];
+
+    //dataType[] arrayName = {value0,value1,value2,...,valuek};
+    public static void main(String[] args){
+        //数组大小
+        int size =4;
+        //定义数组
+        double[] TestList = new double[size];
+        TestList[0] = 3.2;
+        TestList[1] = 2.6;
+        TestList[2] = 4.7;
+        TestList[3] = 5.6;
+
+        double total =0;
+        for (int i=0; i&</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java正则表达式/">
         <p class="h4 index-header">Java正则表达式</p>
         
@@ -298,28 +351,37 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java基本数据类型/">
-        <p class="h4 index-header">Java基本数据类型</p>
+      <a href="/2016/03/02/Java日期和时间/">
+        <p class="h4 index-header">Java日期和时间</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java基本数据类型public class DataType {
-    /*
-        内置数据类型
-        引用数据类型
-     */
-    public static void main(String[] args) {
-        // byte
-        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);
-        System.out.println(&quot;包装类：java.lang.Byte&quot;);
-        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);
-        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);
-        System.out.println();
+          <div class="index-text mb-1">Java日期和时间import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.*;
 
-        // short
-        System.out.println</div>
+public class DateTimeDemo {
+    //日期时间
+    public static void main(String[] args){
+        //获取当前时间
+        Date date = new Date();
+        System.out.println(date.toString());
+
+
+        //格式化日期
+        /*
+            日期和时间的格式化编码
+时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下：
+
+字母    描述    示例
+G    纪元标记    AD
+y    四位年份    2001
+M    月份    July or 07
+d    一个月的日期    10
+h     A.M./P.M. (1~12)格式小时    12
+H    一天中的小</div>
         </div>
       </a>
 
@@ -384,6 +446,55 @@ public class RegularExpressionDemo {
         }
 
         void sle</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java基本数据类型/">
+        <p class="h4 index-header">Java基本数据类型</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java基本数据类型public class DataType {
+    /*
+        内置数据类型
+        引用数据类型
+     */
+    public static void main(String[] args) {
+        // byte
+        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);
+        System.out.println(&quot;包装类：java.lang.Byte&quot;);
+        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);
+        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);
+        System.out.println();
+
+        // short
+        System.out.println</div>
         </div>
       </a>
 
@@ -520,81 +631,6 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/01/01/Markdown基本语法/">
-        <p class="h4 index-header">Markdown基本语法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Markdown基本语法一、标题一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。
-注：标准语法一般在#后跟个空格再写文字
-# 这是一级标题
-## 这是二级标题
-### 这是三级标题
-#### 这是四级标题
-##### 这是五级标题
-###### 这是六级标题
-
-效果如下：
-这是一级标题这是二级标题这是三级标题这是四级标题这是五级标题这是六级标题
-二、字体
-加粗
-
-要加粗的文字左右分别用两个*号包起来
-
-斜体
-
-要倾斜的文字左右分别用一个*号包起来
-
-斜体加粗
-
-要倾斜和加粗的文字左右分别用三个*号包起来
-
-删除线
-
-要加删除线的文字左右分别用两个~~号包起来
-示例：
-**这是加粗的文字**
-*这是倾斜的文字*`
-***这是斜体加粗的文字***
-~~这是加删除线的文字~~
-
-效果如下：
-这是加粗的文字 这是倾斜的文字 这是斜体加粗的文字\ 这是加删除线的文字
-
-三、引用在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt; n个… 貌似可以一直加下去，但没神马卵用
-示例：
-&gt;这是引用的内容
-&gt;&gt;这是引用的内容
-&g</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-01-01&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Markdownd">Markdownd</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Markdown">Markdown</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/01/01/Markdown数学公式语法/">
         <p class="h4 index-header">Markdown数学公式语法</p>
         
@@ -642,49 +678,11 @@ public class RegularExpressionDemo {
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2015/07/20/百年歌自苦，未见有知音/">
-        <p class="h4 index-header">生活随笔</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">孤村落日残霞，轻烟老树寒鸦，一点飞鸿影下。 
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2015-07-20&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%9D%82%E8%B0%88">杂谈</a>&nbsp;
-          
-            <a href="/categories/%E9%9A%8F%E7%AC%94">随笔</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%9D%82%E8%B0%88">杂谈</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
 
 
   <nav aria-label="index posts navigation">
     <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/11/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span>
+      <a class="extend prev" rel="prev" href="/page/11/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/13/"><i class="fas fa-angle-double-right"></i></a>
     </span>
   </nav>
   

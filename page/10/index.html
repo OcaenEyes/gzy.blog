@@ -133,6 +133,171 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/11/23/MySQL基础语法/">
+        <p class="h4 index-header">MySQL基础语法</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">SQL 对大小写不敏感；SQL 语句后面的分号
+MySQL基础语法DML 数据操作语言
+SELECT  从数据获取数据
+SELECT 列名称 FROM 表名称;
+SELECT 语句用于从表中选取数据,结果被存储在一个结果表中（称为结果集）。
+SELECT DISTINCT 列名称 FROM 表名称;   去重查询
+SELECT 列名称 FROM 表名称 WHERE 列 运算符 值;   有条件地从表中选取数据   SELECT * FROM Persons WHERE FirstName=’Bush’
+
+
+
+ | 操作符  | 描述         |
+ | ------- | ------------ |
+ | =       | 等于         |
+ | &lt;&gt;      | 不等于       |
+ | &gt;       | 大于         |
+ | &lt;       | 小于         |
+ | &gt;=      | 大于等于     |
+ | &lt;=      | 小于等于     |
+ | BETWEEN | 在某个范围内 |
+ </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-11-23&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/11/06/iOS开发基础/">
+        <p class="h4 index-header">iOS开发基础</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">iOS开发基础
+基础UI组件
+
+
+UILabel
+UIButton
+UIView
+UIWindow
+UIViewVontroller
+定时器和视图移动
+UISwitch
+UISlider
+UIProgressView
+步进器和分栏控件
+UITextField
+UIScrollView
+UITouch
+UIGesture手势
+XIB控件
+
+
+高级UI组件
+
+
+手动布局子视图
+
+自动布局子视图
+
+事件响应链
+
+导航控制器
+
+
+基础
+切换
+
+
+导航栏和工具栏
+
+分栏控制器
+
+
+基础
+高级
+
+
+UIPickerView
+
+NSUserDefults
+
+多界面传值
+
+UITableView
+
+
+基础
+
+
+dataSource 数据代理对象
+delegate 普通代理对象
+numberOfSectionsInTableView         获得组数协议
+numberOfRowsInSection         获得行数协议
+cellForRowAtIndexPath         创建单元格协议
+
+
+协议
+
+
+heightFOrRowAtIndexPath         : 获取单元格高</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-11-06&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91">移动开发</a>&nbsp;
+          
+            <a href="/categories/Native">Native</a>&nbsp;
+          
+            <a href="/categories/iOS">iOS</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/iOS">iOS</a>&nbsp;
+          
+            <a href="/tags/Navtive">Navtive</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2017/10/25/MySQL深入浅出--MySQL中数据类型/">
         <p class="h4 index-header">MySQL深入浅出--MySQL中数据类型</p>
         
@@ -266,79 +431,6 @@ AUTO_INCREMENT
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
-        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
-登录/退出MySQL注意：
-​    1、命令行结束符号使用英文分号;   或者 \g
-​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
-​    3、\c可以取消当前命令的执行
-登录
-mysql -uroot -p
-mysql -uroot -proot
-mysql -hlocalhost -uroot -p -P3306
-登录同时修改命令提示符
-mysql -uroot -p –prompt=命令提示符
-
-
-获取版本号
-mysql -V
-mysql –version
-
-
-登录同时打开指定数据库
-mysql -uroot -p -D db_name
-
-
-
-退出
-exit
-quit
-\q
-ctrl + c
-
-SQL语句语法规范
-常用MySQL的关键字需要大写
-库名、表名、字段名称等使用小写
-SQL语句支持折行操作，拆分的时候不能把完整单词拆开
-数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
-
-常用SQL语句
-SELECT USER()   </div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2017/10/25/MySQL深入浅出--数据库相关操作/">
         <p class="h4 index-header">MySQL深入浅出--数据库相关操作</p>
         
@@ -387,6 +479,79 @@ DROP DATABASE db_name;
 
 如果数据库存在则删除
 DROP DATABASE [IF EXIS</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
+        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
+登录/退出MySQL注意：
+​    1、命令行结束符号使用英文分号;   或者 \g
+​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
+​    3、\c可以取消当前命令的执行
+登录
+mysql -uroot -p
+mysql -uroot -proot
+mysql -hlocalhost -uroot -p -P3306
+登录同时修改命令提示符
+mysql -uroot -p –prompt=命令提示符
+
+
+获取版本号
+mysql -V
+mysql –version
+
+
+登录同时打开指定数据库
+mysql -uroot -p -D db_name
+
+
+
+退出
+exit
+quit
+\q
+ctrl + c
+
+SQL语句语法规范
+常用MySQL的关键字需要大写
+库名、表名、字段名称等使用小写
+SQL语句支持折行操作，拆分的时候不能把完整单词拆开
+数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
+
+常用SQL语句
+SELECT USER()   </div>
         </div>
       </a>
 
@@ -651,160 +816,11 @@ prompt 提示符;
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/02/25/数据思维打磨产品/">
-        <p class="h4 index-header">数据思维打磨产品</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">什么是数据思维？
-收集数据
-做出决策
-高效执行
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-02-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E6%80%9D%E7%BB%B4">数据思维</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E6%80%9D%E7%BB%B4">数据思维</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/07/20/电商产品网站成交总额/">
-        <p class="h4 index-header">电商产品网站成交总额</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">电商产品网站成交总额
-用户数
-访客数
-自然流量
-营销流量
-
-
-转化率
-目的一 拉新
-品牌认知
-转入
-
-
-购买考虑
-实现
-转出
-
-
-
-
-目的二 促进复购
-购买尝试
-复购
-沉睡
-流失
-
-
-多次购买
-复购
-沉睡
-流失
-
-
-忠诚用户
-复购
-沉睡
-流失
-
-
-
-
-目的三 推荐代购
-
-
-
-
-客单价
-产品单价
-前台价格
-智慧定价
-
-
-优惠价格
-促销建议
-
-
-
-
-关联产品数
-套装促销
-商品关联度
-商品热度
-
-
-
-
-
-
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-07-20&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/categories/%E7%94%B5%E5%95%86">电商</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E7%94%B5%E5%95%86">电商</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
 
 
   <nav aria-label="index posts navigation">
     <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/9/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><a class="extend next" rel="next" href="/page/11/"><i class="fas fa-angle-double-right"></i></a>
+      <a class="extend prev" rel="prev" href="/page/9/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="page-number" href="/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/">11</a><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/11/"><i class="fas fa-angle-double-right"></i></a>
     </span>
   </nav>
   
