@@ -26,9 +26,9 @@
       
       <tag>产品</tag>
       
-      <tag>营销</tag>
-      
       <tag>增长</tag>
+      
+      <tag>营销</tag>
       
     </tags>
     
@@ -214,9 +214,9 @@
       
       <tag>产品</tag>
       
-      <tag>心理学</tag>
-      
       <tag>营销</tag>
+      
+      <tag>心理学</tag>
       
     </tags>
     
@@ -702,9 +702,9 @@
     
     <tags>
       
-      <tag>营销</tag>
-      
       <tag>内容</tag>
+      
+      <tag>营销</tag>
       
       <tag>商业</tag>
       
@@ -910,11 +910,11 @@
   
   
   <entry>
-    <title>php即时通讯-socket</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
+    <title>php即时通讯-WebSocket</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul><li>一个应用层协议</li><li>长链接</li><li>主流即时通讯协议</li></ul>]]></content>
     
     
     <categories>
@@ -935,11 +935,11 @@
   
   
   <entry>
-    <title>php即时通讯-多进程</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/</url>
+    <title>php即时通讯-socket</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h3><ul><li>系统进程</li><li>用户进程</li><li>并发执行</li><li>性能更高</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
     
     
     <categories>
@@ -985,11 +985,11 @@
   
   
   <entry>
-    <title>php即时通讯-WebSocket</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
+    <title>php即时通讯-多进程</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-%E5%A4%9A%E8%BF%9B%E7%A8%8B/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul><li>一个应用层协议</li><li>长链接</li><li>主流即时通讯协议</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="多进程"><a href="#多进程" class="headerlink" title="多进程"></a>多进程</h3><ul><li>系统进程</li><li>用户进程</li><li>并发执行</li><li>性能更高</li></ul>]]></content>
     
     
     <categories>
@@ -1037,11 +1037,11 @@
   
   
   <entry>
-    <title>redis学习---数据类型</title>
-    <link href="/2019/01/22/redis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    <url>/2019/01/22/redis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
+    <title>redis学习---安装入门</title>
+    <link href="/2019/01/22/redis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8/"/>
+    <url>/2019/01/22/redis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="redis数据类型"><a href="#redis数据类型" class="headerlink" title="redis数据类型"></a>redis数据类型</h3><h4 id="string字符串"><a href="#string字符串" class="headerlink" title="string字符串"></a>string字符串</h4>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="CentOS下安装启动"><a href="#CentOS下安装启动" class="headerlink" title="CentOS下安装启动"></a>CentOS下安装启动</h3><pre><code># 下载安装fedora的仓库yum install epel-release</code></pre><pre><code># 安装redisyum install redis</code></pre><pre><code># 开启redis服务service redis start</code></pre><pre><code># 可选项，修改可访问的域名IP，修改保护模式为novi /etc/redis.conf    注释掉 bind 127.0.0.1    改 protected  为 no </code></pre><pre><code># 重启redis服务service redis restart</code></pre><pre><code># 根据需要可，修改防火墙，增加6379端口firewall-cmd --zone=public --add-port=6379/tcp -permanent   (-permanent,长期生效)# 查询端口firewall-cmd --zone-public --query-port=6379/tcp</code></pre><pre><code># 连接redisredis-cli -h host -p port -a password</code></pre>]]></content>
     
     
     <categories>
@@ -1064,11 +1064,11 @@
   
   
   <entry>
-    <title>redis学习---安装入门</title>
-    <link href="/2019/01/22/redis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8/"/>
-    <url>/2019/01/22/redis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8/</url>
+    <title>redis学习---数据类型</title>
+    <link href="/2019/01/22/redis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <url>/2019/01/22/redis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="CentOS下安装启动"><a href="#CentOS下安装启动" class="headerlink" title="CentOS下安装启动"></a>CentOS下安装启动</h3><pre><code># 下载安装fedora的仓库yum install epel-release</code></pre><pre><code># 安装redisyum install redis</code></pre><pre><code># 开启redis服务service redis start</code></pre><pre><code># 可选项，修改可访问的域名IP，修改保护模式为novi /etc/redis.conf    注释掉 bind 127.0.0.1    改 protected  为 no </code></pre><pre><code># 重启redis服务service redis restart</code></pre><pre><code># 根据需要可，修改防火墙，增加6379端口firewall-cmd --zone=public --add-port=6379/tcp -permanent   (-permanent,长期生效)# 查询端口firewall-cmd --zone-public --query-port=6379/tcp</code></pre><pre><code># 连接redisredis-cli -h host -p port -a password</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="redis数据类型"><a href="#redis数据类型" class="headerlink" title="redis数据类型"></a>redis数据类型</h3><h4 id="string字符串"><a href="#string字符串" class="headerlink" title="string字符串"></a>string字符串</h4>]]></content>
     
     
     <categories>
@@ -1902,11 +1902,11 @@
   
   
   <entry>
-    <title>Python数据挖掘——数据预处理</title>
-    <link href="/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/"/>
-    <url>/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</url>
+    <title>Python数据挖掘——基础知识</title>
+    <link href="/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <url>/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Python数据挖掘——数据预处理"><a href="#Python数据挖掘——数据预处理" class="headerlink" title="Python数据挖掘——数据预处理"></a>Python数据挖掘——数据预处理</h2><ul><li>数据预处理<ul><li>数据质量<ul><li>准确性、完整性、一致性、时效性、可信性、可解释性</li></ul></li><li>数据预处理的主要任务<ul><li>数据清理</li><li>数据集成</li><li>数据归约<ul><li>维归约</li><li>数值归约</li></ul></li><li>数据变换<ul><li>规范化</li><li>数据离散化</li><li>概念分层产生</li></ul></li></ul></li></ul></li><li>数据清理（试图填充缺失的值，光滑噪声并识别离群点，纠正数据的不一致）<ul><li>缺失值<ul><li>忽略元组</li><li>人工填写缺失值</li><li>使用一个全局常量填充缺失值</li><li>使用属性的中心度量（均值／中位数）填充缺失值</li><li>使用与给定元组属于同一类的所有样本的均值／中位数</li><li>使用最可能的值 填充缺失值</li><li>注：某些情况，缺失值并不代表错误</li></ul></li><li>噪声数据（噪声是被测量的变量的随机误差或方差）<ul><li>分箱（通过考察数据的近邻，来光滑有序数据值）<ul><li>用箱均值</li><li>用箱中位数</li><li>用箱边界</li></ul></li><li>回归</li><li>离群点分析（通过聚类来检测离群点）</li></ul></li><li>数据清理化为一个过程<ul><li>首先进行偏差检测，还要防止字段过载<ul><li>唯一性规则</li><li>连续性规则</li><li>空值规则</li></ul></li><li>偏差检测商业工具<ul><li>数据清洗工具</li><li>数据审计工具</li></ul></li><li>数据迁移工具<ul><li>EIL工具</li></ul></li></ul></li></ul></li><li>数据集成<ul><li>实体识别问题</li><li>冗余和相关分析</li><li>元组重复</li><li>数据值冲突的检测与处理</li></ul></li><li>数据归约<ul><li>数据变换与数据离散化</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Python数据挖掘——基础知识"><a href="#Python数据挖掘——基础知识" class="headerlink" title="Python数据挖掘——基础知识"></a>Python数据挖掘——基础知识</h2><ul><li>数据挖掘又称从数据中 挖掘知识、知识提取、数据／模式分析</li><li>即为：从数据中发现知识的过程<ul><li>1、数据清理 （消除噪声，删除不一致数据）</li><li>2、数据集成 （多种数据源 组合在一起）</li><li>3、数据选择 （从数据库中提取和分析任务相关的数据）</li><li>4、数据变换 （通过汇总或聚焦操作，把数据变换和统一成适合挖掘的形式）</li><li>5、数据挖掘 （基本步骤，使用智能化方法提取数据）</li><li>6、模式评估 （根据某种兴趣度量，识别代表知识的真正的有趣模式）</li><li>7、知识表示 （使用可视化和知识表示技术，向用户提供数据挖掘的知识）</li></ul></li><li>广义：从大量的数据中挖掘有趣模式和知识的过程</li><li>数据挖掘的模式：<ul><li>描述性：描述性挖掘任务刻画目标数据中数据的一般性质</li><li>预测性：预测性挖掘任务在当前数据上进行归纳，以便作出预测</li></ul></li><li>数据挖掘功能<ul><li>离群点分析</li><li>特征化与区分<ul><li>数据特征化 是目标类数据的一般性／特性的汇总</li><li>数据区分是将目标数据对象的一般性 与一个／多个对比类对象的一般性进行比较</li></ul></li><li>频繁模式、关联和相关性<ul><li>频繁模式包括频繁项集、序列模式和频繁子结构</li><li>频繁项集挖掘是频繁模式的基础</li></ul></li><li>聚类分析<ul><li>最大化类内相似性</li><li>最小化类间相似性</li></ul></li><li>分类与回归</li></ul></li><li>数据挖掘使用的技术<ul><li>统计学</li><li>数据库系统</li><li>数据仓库</li><li>信息检索</li><li>机器学习</li><li>模式识别</li><li>可视化</li><li>算法</li><li>高性能计算</li><li>应用</li></ul></li><li>数据挖掘的主要问题<ul><li>挖掘方法</li><li>用户交互</li><li>有效性与伸缩性</li><li>数据类型的多样性</li><li>数据挖掘与社会</li></ul></li></ul>]]></content>
     
     
     <categories>
@@ -1931,11 +1931,11 @@
   
   
   <entry>
-    <title>Python数据挖掘——基础知识</title>
-    <link href="/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <url>/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <title>Python数据挖掘——数据预处理</title>
+    <link href="/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/"/>
+    <url>/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Python数据挖掘——基础知识"><a href="#Python数据挖掘——基础知识" class="headerlink" title="Python数据挖掘——基础知识"></a>Python数据挖掘——基础知识</h2><ul><li>数据挖掘又称从数据中 挖掘知识、知识提取、数据／模式分析</li><li>即为：从数据中发现知识的过程<ul><li>1、数据清理 （消除噪声，删除不一致数据）</li><li>2、数据集成 （多种数据源 组合在一起）</li><li>3、数据选择 （从数据库中提取和分析任务相关的数据）</li><li>4、数据变换 （通过汇总或聚焦操作，把数据变换和统一成适合挖掘的形式）</li><li>5、数据挖掘 （基本步骤，使用智能化方法提取数据）</li><li>6、模式评估 （根据某种兴趣度量，识别代表知识的真正的有趣模式）</li><li>7、知识表示 （使用可视化和知识表示技术，向用户提供数据挖掘的知识）</li></ul></li><li>广义：从大量的数据中挖掘有趣模式和知识的过程</li><li>数据挖掘的模式：<ul><li>描述性：描述性挖掘任务刻画目标数据中数据的一般性质</li><li>预测性：预测性挖掘任务在当前数据上进行归纳，以便作出预测</li></ul></li><li>数据挖掘功能<ul><li>离群点分析</li><li>特征化与区分<ul><li>数据特征化 是目标类数据的一般性／特性的汇总</li><li>数据区分是将目标数据对象的一般性 与一个／多个对比类对象的一般性进行比较</li></ul></li><li>频繁模式、关联和相关性<ul><li>频繁模式包括频繁项集、序列模式和频繁子结构</li><li>频繁项集挖掘是频繁模式的基础</li></ul></li><li>聚类分析<ul><li>最大化类内相似性</li><li>最小化类间相似性</li></ul></li><li>分类与回归</li></ul></li><li>数据挖掘使用的技术<ul><li>统计学</li><li>数据库系统</li><li>数据仓库</li><li>信息检索</li><li>机器学习</li><li>模式识别</li><li>可视化</li><li>算法</li><li>高性能计算</li><li>应用</li></ul></li><li>数据挖掘的主要问题<ul><li>挖掘方法</li><li>用户交互</li><li>有效性与伸缩性</li><li>数据类型的多样性</li><li>数据挖掘与社会</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Python数据挖掘——数据预处理"><a href="#Python数据挖掘——数据预处理" class="headerlink" title="Python数据挖掘——数据预处理"></a>Python数据挖掘——数据预处理</h2><ul><li>数据预处理<ul><li>数据质量<ul><li>准确性、完整性、一致性、时效性、可信性、可解释性</li></ul></li><li>数据预处理的主要任务<ul><li>数据清理</li><li>数据集成</li><li>数据归约<ul><li>维归约</li><li>数值归约</li></ul></li><li>数据变换<ul><li>规范化</li><li>数据离散化</li><li>概念分层产生</li></ul></li></ul></li></ul></li><li>数据清理（试图填充缺失的值，光滑噪声并识别离群点，纠正数据的不一致）<ul><li>缺失值<ul><li>忽略元组</li><li>人工填写缺失值</li><li>使用一个全局常量填充缺失值</li><li>使用属性的中心度量（均值／中位数）填充缺失值</li><li>使用与给定元组属于同一类的所有样本的均值／中位数</li><li>使用最可能的值 填充缺失值</li><li>注：某些情况，缺失值并不代表错误</li></ul></li><li>噪声数据（噪声是被测量的变量的随机误差或方差）<ul><li>分箱（通过考察数据的近邻，来光滑有序数据值）<ul><li>用箱均值</li><li>用箱中位数</li><li>用箱边界</li></ul></li><li>回归</li><li>离群点分析（通过聚类来检测离群点）</li></ul></li><li>数据清理化为一个过程<ul><li>首先进行偏差检测，还要防止字段过载<ul><li>唯一性规则</li><li>连续性规则</li><li>空值规则</li></ul></li><li>偏差检测商业工具<ul><li>数据清洗工具</li><li>数据审计工具</li></ul></li><li>数据迁移工具<ul><li>EIL工具</li></ul></li></ul></li></ul></li><li>数据集成<ul><li>实体识别问题</li><li>冗余和相关分析</li><li>元组重复</li><li>数据值冲突的检测与处理</li></ul></li><li>数据归约<ul><li>数据变换与数据离散化</li></ul></li></ul>]]></content>
     
     
     <categories>
@@ -2342,37 +2342,6 @@
   
   
   <entry>
-    <title>CentOS-Maven配置</title>
-    <link href="/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/"/>
-    <url>/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Centos-Maven配置"><a href="#Centos-Maven配置" class="headerlink" title="Centos-Maven配置"></a>Centos-Maven配置</h1><p> 配置maven镜像</p><pre><code class="xml">&lt;mirror&gt;    &lt;id&gt;alimaven&lt;/id&gt;    &lt;name&gt;aliyun maven&lt;/name&gt;  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;&lt;/mirror&gt;</code></pre><p>maven配置路径 </p><pre><code class="shell">export M2_HOME=/usr/local/maven3/apache-maven-3.6.3export PATH=$PATH$:M2_HOME/binsource /etc/profile</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-      <category>SpringBoot</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-      <tag>服务端</tag>
-      
-      <tag>SpringBoot</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>数据分析03：matplotlib折线图</title>
     <link href="/2018/03/02/03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE/"/>
     <url>/2018/03/02/03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE/</url>
@@ -2406,42 +2375,11 @@
   
   
   <entry>
-    <title>SpringBoot启动自定义方法</title>
-    <link href="/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/"/>
-    <url>/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/</url>
+    <title>CentOS-Maven配置</title>
+    <link href="/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/"/>
+    <url>/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot启动自定义方法"><a href="#SpringBoot启动自定义方法" class="headerlink" title="SpringBoot启动自定义方法"></a>SpringBoot启动自定义方法</h1><h2 id="一、实现CommandLineRunner接口，重写run方法"><a href="#一、实现CommandLineRunner接口，重写run方法" class="headerlink" title="一、实现CommandLineRunner接口，重写run方法"></a>一、实现CommandLineRunner接口，重写run方法</h2><pre><code class="java">import org.springframework.boot.CommandLineRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart1 implements CommandLineRunner{    @Override    public void run(String... args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="二、实现ApplicationRunner接口，重写un方法"><a href="#二、实现ApplicationRunner接口，重写un方法" class="headerlink" title="二、实现ApplicationRunner接口，重写un方法"></a>二、实现ApplicationRunner接口，重写un方法</h2><pre><code class="java">import org.springframework.boot.ApplicationArguments;import org.springframework.boot.ApplicationRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart2 implements ApplicationRunner {    @Override    public void run(ApplicationArguments args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="三、初始化方法加上-PostConstruct注解"><a href="#三、初始化方法加上-PostConstruct注解" class="headerlink" title="三、初始化方法加上@PostConstruct注解"></a>三、初始化方法加上@PostConstruct注解</h2><pre><code class="java">import javax.annotation.PostConstruct;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart3{    @PostConstruct    public void test() throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h4 id="四、其他实现思路"><a href="#四、其他实现思路" class="headerlink" title="四、其他实现思路"></a>四、其他实现思路</h4><pre><code class="java">import org.springframework.context.annotation.Bean;import org.springframework.context.annotation.Configuration;import com.gzy.demo.NettyClient;@Configurationpublic class MyStart4 {    @Bean    public String startNetty() {        try {            NettyClient.connect(10007, &quot;127.0.0.1&quot;);        } catch (Exception e) {            e.printStackTrace();        }        return &quot;startNetty&quot;;    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-      <category>SpringBoot</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-      <tag>服务端</tag>
-      
-      <tag>SpringBoot</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>SpringBoot数据访问JPA</title>
-    <link href="/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/"/>
-    <url>/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot数据访问-整合JPA"><a href="#SpringBoot数据访问-整合JPA" class="headerlink" title="SpringBoot数据访问-整合JPA"></a>SpringBoot数据访问-整合JPA</h1><ul><li>Entity –定义实体类，与数据表映射</li><li>Repository —定义操作，操作实体类中的数据表</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Centos-Maven配置"><a href="#Centos-Maven配置" class="headerlink" title="Centos-Maven配置"></a>Centos-Maven配置</h1><p> 配置maven镜像</p><pre><code class="xml">&lt;mirror&gt;    &lt;id&gt;alimaven&lt;/id&gt;    &lt;name&gt;aliyun maven&lt;/name&gt;  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;&lt;/mirror&gt;</code></pre><p>maven配置路径 </p><pre><code class="shell">export M2_HOME=/usr/local/maven3/apache-maven-3.6.3export PATH=$PATH$:M2_HOME/binsource /etc/profile</code></pre>]]></content>
     
     
     <categories>
@@ -2455,9 +2393,9 @@
     
     <tags>
       
-      <tag>Java</tag>
-      
       <tag>服务端</tag>
+      
+      <tag>Java</tag>
       
       <tag>SpringBoot</tag>
       
@@ -2486,13 +2424,75 @@
     
     <tags>
       
-      <tag>Java</tag>
-      
       <tag>服务端</tag>
+      
+      <tag>Java</tag>
       
       <tag>SpringBoot</tag>
       
       <tag>WebSocket</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SpringBoot数据访问JPA</title>
+    <link href="/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/"/>
+    <url>/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot数据访问-整合JPA"><a href="#SpringBoot数据访问-整合JPA" class="headerlink" title="SpringBoot数据访问-整合JPA"></a>SpringBoot数据访问-整合JPA</h1><ul><li>Entity –定义实体类，与数据表映射</li><li>Repository —定义操作，操作实体类中的数据表</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+      <category>SpringBoot</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>服务端</tag>
+      
+      <tag>Java</tag>
+      
+      <tag>SpringBoot</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SpringBoot启动自定义方法</title>
+    <link href="/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/"/>
+    <url>/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot启动自定义方法"><a href="#SpringBoot启动自定义方法" class="headerlink" title="SpringBoot启动自定义方法"></a>SpringBoot启动自定义方法</h1><h2 id="一、实现CommandLineRunner接口，重写run方法"><a href="#一、实现CommandLineRunner接口，重写run方法" class="headerlink" title="一、实现CommandLineRunner接口，重写run方法"></a>一、实现CommandLineRunner接口，重写run方法</h2><pre><code class="java">import org.springframework.boot.CommandLineRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart1 implements CommandLineRunner{    @Override    public void run(String... args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="二、实现ApplicationRunner接口，重写un方法"><a href="#二、实现ApplicationRunner接口，重写un方法" class="headerlink" title="二、实现ApplicationRunner接口，重写un方法"></a>二、实现ApplicationRunner接口，重写un方法</h2><pre><code class="java">import org.springframework.boot.ApplicationArguments;import org.springframework.boot.ApplicationRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart2 implements ApplicationRunner {    @Override    public void run(ApplicationArguments args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="三、初始化方法加上-PostConstruct注解"><a href="#三、初始化方法加上-PostConstruct注解" class="headerlink" title="三、初始化方法加上@PostConstruct注解"></a>三、初始化方法加上@PostConstruct注解</h2><pre><code class="java">import javax.annotation.PostConstruct;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart3{    @PostConstruct    public void test() throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h4 id="四、其他实现思路"><a href="#四、其他实现思路" class="headerlink" title="四、其他实现思路"></a>四、其他实现思路</h4><pre><code class="java">import org.springframework.context.annotation.Bean;import org.springframework.context.annotation.Configuration;import com.gzy.demo.NettyClient;@Configurationpublic class MyStart4 {    @Bean    public String startNetty() {        try {            NettyClient.connect(10007, &quot;127.0.0.1&quot;);        } catch (Exception e) {            e.printStackTrace();        }        return &quot;startNetty&quot;;    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+      <category>SpringBoot</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>服务端</tag>
+      
+      <tag>Java</tag>
+      
+      <tag>SpringBoot</tag>
       
     </tags>
     
@@ -2750,11 +2750,11 @@
   
   
   <entry>
-    <title>MySQL深入浅出--数据库相关操作</title>
-    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
-    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
+    <title>MySQL深入浅出--MySQL相关操作</title>
+    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
+    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="数据库相关操作"><a href="#数据库相关操作" class="headerlink" title="数据库相关操作"></a>数据库相关操作</h3><ul><li><p>创建数据库   </p><pre><code class="mysql">CREATE {DATABASE|SCHEMA} db_name;</code></pre><ul><li><p>检测数据库名称是否存在，不存在则创建</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name;</code></pre></li><li><p>创建数据库同时指定编码方式</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li></ul></li><li><p>查看当前服务器下全部数据库</p><pre><code class="mysql">SHOW DATABASES|SCHEMAS;</code></pre></li><li><p>查看指定数据库详细信息</p><pre><code class="mysql">SHOW CREATE DATABASE db_name;</code></pre></li><li><p>修改指定数据库的编码方式</p><pre><code class="mysql">ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li><li><p>打开指定数据库</p><pre><code class="mysql">USE db_name;</code></pre></li><li><p>得到当前打开的数据库</p><pre><code class="mysql">SELECT DATABASE()|SCHEMA();</code></pre></li><li><p>删除指定的数据库</p><pre><code class="mysql">DROP DATABASE db_name;</code></pre><ul><li><p>如果数据库存在则删除</p><pre><code class="mysql">DROP DATABASE [IF EXISTS] db_name;</code></pre></li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="MySQL-操作"><a href="#MySQL-操作" class="headerlink" title="MySQL 操作"></a>MySQL 操作</h3><h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>​    my.cnf  是 MySQL 的配置文件</p><h4 id="登录-退出MySQL"><a href="#登录-退出MySQL" class="headerlink" title="登录/退出MySQL"></a>登录/退出MySQL</h4><p>注意：</p><p>​    1、命令行结束符号使用英文分号;   或者 \g</p><p>​    2、通过help 或者\h 或者?加上相关关键字 来查看手册</p><p>​    3、\c可以取消当前命令的执行</p><h5 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h5><ul><li>mysql -uroot -p</li><li>mysql -uroot -proot</li><li>mysql -hlocalhost -uroot -p -P3306</li><li>登录同时修改命令提示符<ul><li>mysql -uroot -p –prompt=命令提示符</li></ul></li><li>获取版本号<ul><li>mysql -V</li><li>mysql –version</li></ul></li><li>登录同时打开指定数据库<ul><li>mysql -uroot -p -D db_name</li></ul></li></ul><h5 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h5><ul><li>exit</li><li>quit</li><li>\q</li><li>ctrl + c</li></ul><h4 id="SQL语句语法规范"><a href="#SQL语句语法规范" class="headerlink" title="SQL语句语法规范"></a>SQL语句语法规范</h4><ul><li>常用MySQL的关键字需要大写</li><li>库名、表名、字段名称等使用小写</li><li>SQL语句支持折行操作，拆分的时候不能把完整单词拆开</li><li>数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号<code></code>将其括起来</li></ul><h4 id="常用SQL语句"><a href="#常用SQL语句" class="headerlink" title="常用SQL语句"></a>常用SQL语句</h4><ul><li>SELECT USER()     得到登录的用户</li><li>SELECT VERSION()     得到MySQL的版本信息</li><li>SELECT NOW()         得到当前的日期时间</li><li>SELECT DATABASE()     得到当前打开的数据库</li></ul>]]></content>
     
     
     <categories>
@@ -2777,11 +2777,11 @@
   
   
   <entry>
-    <title>MySQL深入浅出--MySQL相关操作</title>
-    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
-    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--MySQL%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
+    <title>MySQL深入浅出--数据库相关操作</title>
+    <link href="/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/"/>
+    <url>/2017/10/25/MySQL%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA--%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9B%B8%E5%85%B3%E6%93%8D%E4%BD%9C/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="MySQL-操作"><a href="#MySQL-操作" class="headerlink" title="MySQL 操作"></a>MySQL 操作</h3><h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><p>​    my.cnf  是 MySQL 的配置文件</p><h4 id="登录-退出MySQL"><a href="#登录-退出MySQL" class="headerlink" title="登录/退出MySQL"></a>登录/退出MySQL</h4><p>注意：</p><p>​    1、命令行结束符号使用英文分号;   或者 \g</p><p>​    2、通过help 或者\h 或者?加上相关关键字 来查看手册</p><p>​    3、\c可以取消当前命令的执行</p><h5 id="登录"><a href="#登录" class="headerlink" title="登录"></a>登录</h5><ul><li>mysql -uroot -p</li><li>mysql -uroot -proot</li><li>mysql -hlocalhost -uroot -p -P3306</li><li>登录同时修改命令提示符<ul><li>mysql -uroot -p –prompt=命令提示符</li></ul></li><li>获取版本号<ul><li>mysql -V</li><li>mysql –version</li></ul></li><li>登录同时打开指定数据库<ul><li>mysql -uroot -p -D db_name</li></ul></li></ul><h5 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h5><ul><li>exit</li><li>quit</li><li>\q</li><li>ctrl + c</li></ul><h4 id="SQL语句语法规范"><a href="#SQL语句语法规范" class="headerlink" title="SQL语句语法规范"></a>SQL语句语法规范</h4><ul><li>常用MySQL的关键字需要大写</li><li>库名、表名、字段名称等使用小写</li><li>SQL语句支持折行操作，拆分的时候不能把完整单词拆开</li><li>数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号<code></code>将其括起来</li></ul><h4 id="常用SQL语句"><a href="#常用SQL语句" class="headerlink" title="常用SQL语句"></a>常用SQL语句</h4><ul><li>SELECT USER()     得到登录的用户</li><li>SELECT VERSION()     得到MySQL的版本信息</li><li>SELECT NOW()         得到当前的日期时间</li><li>SELECT DATABASE()     得到当前打开的数据库</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="数据库相关操作"><a href="#数据库相关操作" class="headerlink" title="数据库相关操作"></a>数据库相关操作</h3><ul><li><p>创建数据库   </p><pre><code class="mysql">CREATE {DATABASE|SCHEMA} db_name;</code></pre><ul><li><p>检测数据库名称是否存在，不存在则创建</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name;</code></pre></li><li><p>创建数据库同时指定编码方式</p><pre><code class="mysql">CREATE DATABASE [IF NOT EXISTS] db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li></ul></li><li><p>查看当前服务器下全部数据库</p><pre><code class="mysql">SHOW DATABASES|SCHEMAS;</code></pre></li><li><p>查看指定数据库详细信息</p><pre><code class="mysql">SHOW CREATE DATABASE db_name;</code></pre></li><li><p>修改指定数据库的编码方式</p><pre><code class="mysql">ALTER DATABASE db_name [DEFAULT] CHARACTER SET [=] charset;</code></pre></li><li><p>打开指定数据库</p><pre><code class="mysql">USE db_name;</code></pre></li><li><p>得到当前打开的数据库</p><pre><code class="mysql">SELECT DATABASE()|SCHEMA();</code></pre></li><li><p>删除指定的数据库</p><pre><code class="mysql">DROP DATABASE db_name;</code></pre><ul><li><p>如果数据库存在则删除</p><pre><code class="mysql">DROP DATABASE [IF EXISTS] db_name;</code></pre></li></ul></li></ul>]]></content>
     
     
     <categories>
@@ -2993,11 +2993,11 @@
   
   
   <entry>
-    <title>Java-NumberMath类</title>
-    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
+    <title>Java-FileStreamIO</title>
+    <link href="/2016/03/02/Java-FileStreamIO/"/>
+    <url>/2016/03/02/Java-FileStreamIO/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-FileStreamIO"><a href="#Java-FileStreamIO" class="headerlink" title="Java-FileStreamIO"></a>Java-FileStreamIO</h1><pre><code>import java.io.*;public class StreamFileIODemo {    public void printChar() throws IOException {        //使用BufferedReader从控制台读取输入        char c;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符，按Q键退出&quot;);        do {            //read() 读取字符            c = (char) br1.read();            System.out.println(c);        } while (c != &#39;Q&#39;);    }    public void printStr() throws IOException{        String str1;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;);        do {            //readLine() 读取字符串            str1 = br1.readLine();            System.out.println(str1);        } while (!str1.equals(&quot;end&quot;));    }    public void ReadFileDemo() throws IOException{        //FileInputStream 从文件读取数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  InputStream out = new FileInputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public int read(int r)throws IOException{}                这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。            4    public int read(byte[] r) throws IOException{}                这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。            5    public int available() throws IOException{}                返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。         */        System.out.println(&quot;打印输出读取文件demo&quot;);        InputStream is1 = new FileInputStream(&quot;test.txt&quot;);        int size = is1.available();        for (int i=0;i&lt;size;i++) {            System.out.println((char) is1.read());        }    }    public void WriteFileDemo() throws IOException {        //FileOutputStream 创建一个文件向文件中写数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  OutputStream f = new FileOutputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public void write(int w)throws IOException{}                这个方法把指定的字节写到输出流中。            4    public void write(byte[] w)                把指定数组中w.length长度的字节写到OutputStream中。         */        System.out.println(&quot;打印输出写入文件demo&quot;);        byte bWrite[] = {11,21,3,38,5};        OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;);        for (int i=0;i&lt;bWrite.length;i++){            os1.write(bWrite[i]);        }        os1.close();    }    public void CreateDirs(){        //文件和I/O ，目录        /*            File类            - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。            - mkdirs()方法创建一个文件夹和它的所有父文件夹。        */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;;        File dir1 = new File(dirname);        //   创建目录        dir1.mkdirs();    }    public void ReadDirs(){        /*            一个目录其实就是一个 File 对象，它包含其他文件和文件夹。            如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。            可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;;        File dir2 = new File(dirname);        if (dir2.isDirectory()){            System.out.println(&quot;目录&quot;+ dirname);            String[] s1 = dir2.list();            for (int i=0;i&lt;s1.length;i++){                File f = new File(dirname + &#39;/&#39; + s1[i]);                if (f.isDirectory()){                    System.out.println(s1[i] + &quot;是一个目录&quot;);                }else {                    System.out.println(s1[i] + &quot;是一个文件&quot;);                }            }        }else {            System.out.println(dirname +&quot;不是一个目录&quot;);        }    }    public void DeleteDirs(){        //删除文件/目录        /*            删除文件可以使用 java.io.File.delete() 方法            当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;;        File dir3 = new File(dirname);        File[] files = dir3.listFiles();        if (files != null){            for (File f: files){                if (!f.isDirectory()){                    f.delete();                }            }        }        dir3.delete();        System.out.println(&quot;删除成功&quot;);    }    public static void main(String[] args) throws IOException {        StreamFileIODemo s = new StreamFileIODemo();//        s.printChar();//        s.printStr();//        s.WriteFileDemo();//        s.CreateDirs();//        s.ReadDirs();        s.DeleteDirs();    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3018,11 +3018,11 @@
   
   
   <entry>
-    <title>Java-FileStreamIO</title>
-    <link href="/2016/03/02/Java-FileStreamIO/"/>
-    <url>/2016/03/02/Java-FileStreamIO/</url>
+    <title>Java-NumberMath类</title>
+    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-FileStreamIO"><a href="#Java-FileStreamIO" class="headerlink" title="Java-FileStreamIO"></a>Java-FileStreamIO</h1><pre><code>import java.io.*;public class StreamFileIODemo {    public void printChar() throws IOException {        //使用BufferedReader从控制台读取输入        char c;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符，按Q键退出&quot;);        do {            //read() 读取字符            c = (char) br1.read();            System.out.println(c);        } while (c != &#39;Q&#39;);    }    public void printStr() throws IOException{        String str1;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;);        do {            //readLine() 读取字符串            str1 = br1.readLine();            System.out.println(str1);        } while (!str1.equals(&quot;end&quot;));    }    public void ReadFileDemo() throws IOException{        //FileInputStream 从文件读取数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  InputStream out = new FileInputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public int read(int r)throws IOException{}                这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。            4    public int read(byte[] r) throws IOException{}                这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。            5    public int available() throws IOException{}                返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。         */        System.out.println(&quot;打印输出读取文件demo&quot;);        InputStream is1 = new FileInputStream(&quot;test.txt&quot;);        int size = is1.available();        for (int i=0;i&lt;size;i++) {            System.out.println((char) is1.read());        }    }    public void WriteFileDemo() throws IOException {        //FileOutputStream 创建一个文件向文件中写数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  OutputStream f = new FileOutputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public void write(int w)throws IOException{}                这个方法把指定的字节写到输出流中。            4    public void write(byte[] w)                把指定数组中w.length长度的字节写到OutputStream中。         */        System.out.println(&quot;打印输出写入文件demo&quot;);        byte bWrite[] = {11,21,3,38,5};        OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;);        for (int i=0;i&lt;bWrite.length;i++){            os1.write(bWrite[i]);        }        os1.close();    }    public void CreateDirs(){        //文件和I/O ，目录        /*            File类            - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。            - mkdirs()方法创建一个文件夹和它的所有父文件夹。        */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;;        File dir1 = new File(dirname);        //   创建目录        dir1.mkdirs();    }    public void ReadDirs(){        /*            一个目录其实就是一个 File 对象，它包含其他文件和文件夹。            如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。            可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;;        File dir2 = new File(dirname);        if (dir2.isDirectory()){            System.out.println(&quot;目录&quot;+ dirname);            String[] s1 = dir2.list();            for (int i=0;i&lt;s1.length;i++){                File f = new File(dirname + &#39;/&#39; + s1[i]);                if (f.isDirectory()){                    System.out.println(s1[i] + &quot;是一个目录&quot;);                }else {                    System.out.println(s1[i] + &quot;是一个文件&quot;);                }            }        }else {            System.out.println(dirname +&quot;不是一个目录&quot;);        }    }    public void DeleteDirs(){        //删除文件/目录        /*            删除文件可以使用 java.io.File.delete() 方法            当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;;        File dir3 = new File(dirname);        File[] files = dir3.listFiles();        if (files != null){            for (File f: files){                if (!f.isDirectory()){                    f.delete();                }            }        }        dir3.delete();        System.out.println(&quot;删除成功&quot;);    }    public static void main(String[] args) throws IOException {        StreamFileIODemo s = new StreamFileIODemo();//        s.printChar();//        s.printStr();//        s.WriteFileDemo();//        s.CreateDirs();//        s.ReadDirs();        s.DeleteDirs();    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3193,61 +3193,11 @@
   
   
   <entry>
-    <title>Java条件语句</title>
-    <link href="/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/"/>
-    <url>/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java条件语句"><a href="#Java条件语句" class="headerlink" title="Java条件语句"></a>Java条件语句</h1><pre><code>public class IfElse {    /*        条件语句 - if...else     */    public static void main(String[] args) {        int x = 10;        /*            if(布尔表达式){                //如果布尔表达式的值为true            }else{                //如果布尔表达式的值为false            }         */        if (x &lt; 20) {            System.out.println(&quot;这是一个if判断语句&quot;);        } else {            System.out.println(&quot;这是一个else判断语句&quot;);        }        /*            if(布尔表达式 1){                //如果布尔表达式 1的值为true执行代码            }else if(布尔表达式 2){                //如果布尔表达式 2的值为true执行代码            }else if(布尔表达式 3){                //如果布尔表达式 3的值为true执行代码            }else if(布尔表达式 4){                //如果布尔表达式 4的值为true执行代码            }else if(布尔表达式 5){                //如果布尔表达式 5的值为true执行代码            }            else {                //如果以上布尔表达式都不为true执行代码            }         */        //嵌套的if...else语句        /*            if(布尔表达式 1){                ////如果布尔表达式 1的值为true执行代码                if(布尔表达式 2){                    ////如果布尔表达式 2的值为true执行代码                }            }         */    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Java数组</title>
     <link href="/2016/03/02/Java%E6%95%B0%E7%BB%84/"/>
     <url>/2016/03/02/Java%E6%95%B0%E7%BB%84/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java数组"><a href="#Java数组" class="headerlink" title="Java数组"></a>Java数组</h1><pre><code>public class ArrayDemo {    //声明数组    // 数据类型[] 数组名称;  dataType[] arrayName;    //创建数组    // 数据名称 = new dataType[arraySize];    //dataType[] arrayName = {value0,value1,value2,...,valuek};    public static void main(String[] args){        //数组大小        int size =4;        //定义数组        double[] TestList = new double[size];        TestList[0] = 3.2;        TestList[1] = 2.6;        TestList[2] = 4.7;        TestList[3] = 5.6;        double total =0;        for (int i=0; i&lt;size; i++){            total = total + TestList[i];        }        System.out.println(total);        double[] list1 = {1.4,2.8,3.6,4.9};        //打印所有数组元素        for (int i=0;i&lt;list1.length;i++){            System.out.println(list1[i]);        }        //计算所有元素的和        double sum = 0;        for (int i =0;i&lt;list1.length;i++){            sum = sum + list1[i];        }        System.out.println(sum);        //查找最大元素        double max = list1[0];        for (int i=0; i&lt;list1.length;i++){            if (list1[i] &gt; max){                max = list1[i];            }        }        System.out.println(max);    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java正则表达式</title>
-    <link href="/2016/03/02/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
-    <url>/2016/03/02/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java正则表达式"><a href="#Java正则表达式" class="headerlink" title="Java正则表达式"></a>Java正则表达式</h1><pre><code>import java.util.regex.*;public class RegularExpressionDemo {    /*        Pattern 类：        pattern 对象是一个正则表达式的编译表示。        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。        该方法接受一个正则表达式作为它的第一个参数。        Matcher 类：        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。        与Pattern 类一样，Matcher 也没有公共构造方法。        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。        PatternSyntaxException：        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。     */    /*        正则表达式语法        字符          说明        \             将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如，&quot;n&quot;匹配字符&quot;n&quot;。&quot;\n&quot;匹配换行符。序列&quot;\\\\&quot;匹配&quot;\\&quot;，&quot;\\(&quot;匹配&quot;(&quot;。        ^             匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与&quot;\n&quot;或&quot;\r&quot;之后的位置匹配。        $             匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与&quot;\n&quot;或&quot;\r&quot;之前的位置匹配。        *             零次或多次匹配前面的字符或子表达式。例如，zo* 匹配&quot;z&quot;和&quot;zoo&quot;。* 等效于 {0,}。        +             一次或多次匹配前面的字符或子表达式。例如，&quot;zo+&quot;与&quot;zo&quot;和&quot;zoo&quot;匹配，但与&quot;z&quot;不匹配。+ 等效于 {1,}。        ?             零次或一次匹配前面的字符或子表达式。例如，&quot;do(es)?&quot;匹配&quot;do&quot;或&quot;does&quot;中的&quot;do&quot;。? 等效于 {0,1}。        {n}           n 是非负整数。正好匹配 n 次。例如，&quot;o{2}&quot;与&quot;Bob&quot;中的&quot;o&quot;不匹配，但与&quot;food&quot;中的两个&quot;o&quot;匹配。        {n,}          n 是非负整数。至少匹配 n 次。例如，&quot;o{2,}&quot;不匹配&quot;Bob&quot;中的&quot;o&quot;，而匹配&quot;foooood&quot;中的所有 o。&quot;o{1,}&quot;等效于&quot;o+&quot;。&quot;o{0,}&quot;等效于&quot;o*&quot;。        {n,m}         m 和 n 是非负整数，其中 n &lt;= m。匹配至少 n 次，至多 m 次。例如，&quot;o{1,3}&quot;匹配&quot;fooooood&quot;中的头三个 o。&#39;o{0,1}&#39; 等效于 &#39;o?&#39;。注意：您不能将空格插入逗号和数字之间。        ?            当此字符紧随任何其他限定符（*、+、?、{n}、{n,}、{n,m}）之后时，匹配模式是&quot;非贪心的&quot;。&quot;非贪心的&quot;模式匹配搜索到的、尽可能短的字符串，而默认的&quot;贪心的&quot;模式匹配搜索到的、尽可能长的字符串。例如，在字符串&quot;oooo&quot;中，&quot;o+?&quot;只匹配单个&quot;o&quot;，而&quot;o+&quot;匹配所有&quot;o&quot;。        .            匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。        (pattern)     匹配 pattern 并捕获该匹配的子表达式。可以使用 $0…$9 属性从结果&quot;匹配&quot;集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用&quot;\(&quot;或者&quot;\)&quot;。        (?:pattern)   匹配 pattern 但不捕获该匹配的子表达式，即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用&quot;or&quot;字符 (|) 组合模式部件的情况很有用。例如，&#39;industr(?:y|ies) 是比 &#39;industry|industries&#39; 更经济的表达式。        (?=pattern)   执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 pattern 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?=95|98|NT|2000)&#39; 匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;，但不匹配&quot;Windows 3.1&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。        (?!pattern)   执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 pattern 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?!95|98|NT|2000)&#39; 匹配&quot;Windows 3.1&quot;中的 &quot;Windows&quot;，但不匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。        x|y           匹配 x 或 y。例如，&#39;z|food&#39; 匹配&quot;z&quot;或&quot;food&quot;。&#39;(z|f)ood&#39; 匹配&quot;zood&quot;或&quot;food&quot;。       [xyz]         字符集。匹配包含的任一字符。例如，&quot;[abc]&quot;匹配&quot;plain&quot;中的&quot;a&quot;。       [^xyz]        反向字符集。匹配未包含的任何字符。例如，&quot;[^abc]&quot;匹配&quot;plain&quot;中&quot;p&quot;，&quot;l&quot;，&quot;i&quot;，&quot;n&quot;。       [a-z]         字符范围。匹配指定范围内的任何字符。例如，&quot;[a-z]&quot;匹配&quot;a&quot;到&quot;z&quot;范围内的任何小写字母。       [^a-z]       反向范围字符。匹配不在指定的范围内的任何字符。例如，&quot;[^a-z]&quot;匹配任何不在&quot;a&quot;到&quot;z&quot;范围内的任何字符。        \b          匹配一个字边界，即字与空格间的位置。例如，&quot;er\b&quot;匹配&quot;never&quot;中的&quot;er&quot;，但不匹配&quot;verb&quot;中的&quot;er&quot;。        \B          非字边界匹配。&quot;er\B&quot;匹配&quot;verb&quot;中的&quot;er&quot;，但不匹配&quot;never&quot;中的&quot;er&quot;。        \cx         匹配 x 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。x 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是&quot;c&quot;字符本身。        \d          数字字符匹配。等效于 [0-9]。        \D          非数字字符匹配。等效于 [^0-9]。        \f          换页符匹配。等效于 \x0c 和 \cL。        \n          换行符匹配。等效于 \x0a 和 \cJ。        \r          匹配一个回车符。等效于 \x0d 和 \cM。        \s          匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。        \S          匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。        \t          制表符匹配。与 \x09 和 \cI 等效。        \v          垂直制表符匹配。与 \x0b 和 \cK 等效。        \w          匹配任何字类字符，包括下划线。与&quot;[A-Za-z0-9_]&quot;等效。        \W          与任何非单词字符匹配。与&quot;[^A-Za-z0-9_]&quot;等效。        \xn         匹配 n，此处的 n 是一个十六进制转义码。十六进制转义码必须正好是两位数长。例如，&quot;\x41&quot;匹配&quot;A&quot;。&quot;\x041&quot;与&quot;\x04&quot;&amp;&quot;1&quot;等效。允许在正则表达式中使用 ASCII 代码。        \num        匹配 num，此处的 num 是一个正整数。到捕获匹配的反向引用。例如，&quot;(.)\1&quot;匹配两个连续的相同字符。        \n          标识一个八进制转义码或反向引用。如果 \n 前面至少有 n 个捕获子表达式，那么 n 是反向引用。否则，如果 n 是八进制数 (0-7)，那么 n 是八进制转义码。        \nm         标识一个八进制转义码或反向引用。如果 \nm 前面至少有 nm 个捕获子表达式，那么 nm 是反向引用。如果 \nm 前面至少有 n 个捕获，则 n 是反向引用，后面跟有字符 m。如果两种前面的情况都不存在，则 \nm 匹配八进制值 nm，其中 n 和 m 是八进制数字 (0-7)。        \nml        当 n 是八进制数 (0-3)，m 和 l 是八进制数 (0-7) 时，匹配八进制转义码 nml。     */}</code></pre>]]></content>
     
     
     <categories>
@@ -3293,11 +3243,36 @@
   
   
   <entry>
-    <title>Java对象和类</title>
-    <link href="/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/"/>
-    <url>/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/</url>
+    <title>Java条件语句</title>
+    <link href="/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/"/>
+    <url>/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java对象和类"><a href="#Java对象和类" class="headerlink" title="Java对象和类"></a>Java对象和类</h1><pre><code>public class ObjectAndClass {    /*    - 多态    - 继承    - 封装    - 抽象    - 类 ： 是一个模板，用来描述    - 对象 ： 是类class的一个实例，具有状态和行为    - 实例    - 方法    - 重载     */    //定义一个Dog类    public static class Dog {        //成员变量        StringDemo color;        int age;        StringDemo name;        //类方法        void barking(){            System.out.println(&quot;汪！汪！汪！&quot;);        }        void hungry(){            System.out.println(&quot;好饿哦！&quot;);        }        void sleeping(){            System.out.println(&quot;好困哦！&quot;);        }        void setAge(int age){            this.age = age;        }    }    public static void main(String[]args) {        /*            创建对象            声明： 声明一个对象， 对象类型 和对象名称            实例化： new创建            初始化： 创建时调用构造方法生成         */        Dog dog = new Dog();        dog.hungry();        dog.barking();        dog.sleeping();        System.out.println(dog.age);        dog.setAge(24);        System.out.println(dog.age);    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java条件语句"><a href="#Java条件语句" class="headerlink" title="Java条件语句"></a>Java条件语句</h1><pre><code>public class IfElse {    /*        条件语句 - if...else     */    public static void main(String[] args) {        int x = 10;        /*            if(布尔表达式){                //如果布尔表达式的值为true            }else{                //如果布尔表达式的值为false            }         */        if (x &lt; 20) {            System.out.println(&quot;这是一个if判断语句&quot;);        } else {            System.out.println(&quot;这是一个else判断语句&quot;);        }        /*            if(布尔表达式 1){                //如果布尔表达式 1的值为true执行代码            }else if(布尔表达式 2){                //如果布尔表达式 2的值为true执行代码            }else if(布尔表达式 3){                //如果布尔表达式 3的值为true执行代码            }else if(布尔表达式 4){                //如果布尔表达式 4的值为true执行代码            }else if(布尔表达式 5){                //如果布尔表达式 5的值为true执行代码            }            else {                //如果以上布尔表达式都不为true执行代码            }         */        //嵌套的if...else语句        /*            if(布尔表达式 1){                ////如果布尔表达式 1的值为true执行代码                if(布尔表达式 2){                    ////如果布尔表达式 2的值为true执行代码                }            }         */    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java正则表达式</title>
+    <link href="/2016/03/02/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <url>/2016/03/02/Java%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java正则表达式"><a href="#Java正则表达式" class="headerlink" title="Java正则表达式"></a>Java正则表达式</h1><pre><code>import java.util.regex.*;public class RegularExpressionDemo {    /*        Pattern 类：        pattern 对象是一个正则表达式的编译表示。        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。        该方法接受一个正则表达式作为它的第一个参数。        Matcher 类：        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。        与Pattern 类一样，Matcher 也没有公共构造方法。        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。        PatternSyntaxException：        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。     */    /*        正则表达式语法        字符          说明        \             将下一字符标记为特殊字符、文本、反向引用或八进制转义符。例如，&quot;n&quot;匹配字符&quot;n&quot;。&quot;\n&quot;匹配换行符。序列&quot;\\\\&quot;匹配&quot;\\&quot;，&quot;\\(&quot;匹配&quot;(&quot;。        ^             匹配输入字符串开始的位置。如果设置了 RegExp 对象的 Multiline 属性，^ 还会与&quot;\n&quot;或&quot;\r&quot;之后的位置匹配。        $             匹配输入字符串结尾的位置。如果设置了 RegExp 对象的 Multiline 属性，$ 还会与&quot;\n&quot;或&quot;\r&quot;之前的位置匹配。        *             零次或多次匹配前面的字符或子表达式。例如，zo* 匹配&quot;z&quot;和&quot;zoo&quot;。* 等效于 {0,}。        +             一次或多次匹配前面的字符或子表达式。例如，&quot;zo+&quot;与&quot;zo&quot;和&quot;zoo&quot;匹配，但与&quot;z&quot;不匹配。+ 等效于 {1,}。        ?             零次或一次匹配前面的字符或子表达式。例如，&quot;do(es)?&quot;匹配&quot;do&quot;或&quot;does&quot;中的&quot;do&quot;。? 等效于 {0,1}。        {n}           n 是非负整数。正好匹配 n 次。例如，&quot;o{2}&quot;与&quot;Bob&quot;中的&quot;o&quot;不匹配，但与&quot;food&quot;中的两个&quot;o&quot;匹配。        {n,}          n 是非负整数。至少匹配 n 次。例如，&quot;o{2,}&quot;不匹配&quot;Bob&quot;中的&quot;o&quot;，而匹配&quot;foooood&quot;中的所有 o。&quot;o{1,}&quot;等效于&quot;o+&quot;。&quot;o{0,}&quot;等效于&quot;o*&quot;。        {n,m}         m 和 n 是非负整数，其中 n &lt;= m。匹配至少 n 次，至多 m 次。例如，&quot;o{1,3}&quot;匹配&quot;fooooood&quot;中的头三个 o。&#39;o{0,1}&#39; 等效于 &#39;o?&#39;。注意：您不能将空格插入逗号和数字之间。        ?            当此字符紧随任何其他限定符（*、+、?、{n}、{n,}、{n,m}）之后时，匹配模式是&quot;非贪心的&quot;。&quot;非贪心的&quot;模式匹配搜索到的、尽可能短的字符串，而默认的&quot;贪心的&quot;模式匹配搜索到的、尽可能长的字符串。例如，在字符串&quot;oooo&quot;中，&quot;o+?&quot;只匹配单个&quot;o&quot;，而&quot;o+&quot;匹配所有&quot;o&quot;。        .            匹配除&quot;\r\n&quot;之外的任何单个字符。若要匹配包括&quot;\r\n&quot;在内的任意字符，请使用诸如&quot;[\s\S]&quot;之类的模式。        (pattern)     匹配 pattern 并捕获该匹配的子表达式。可以使用 $0…$9 属性从结果&quot;匹配&quot;集合中检索捕获的匹配。若要匹配括号字符 ( )，请使用&quot;\(&quot;或者&quot;\)&quot;。        (?:pattern)   匹配 pattern 但不捕获该匹配的子表达式，即它是一个非捕获匹配，不存储供以后使用的匹配。这对于用&quot;or&quot;字符 (|) 组合模式部件的情况很有用。例如，&#39;industr(?:y|ies) 是比 &#39;industry|industries&#39; 更经济的表达式。        (?=pattern)   执行正向预测先行搜索的子表达式，该表达式匹配处于匹配 pattern 的字符串的起始点的字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?=95|98|NT|2000)&#39; 匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;，但不匹配&quot;Windows 3.1&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。        (?!pattern)   执行反向预测先行搜索的子表达式，该表达式匹配不处于匹配 pattern 的字符串的起始点的搜索字符串。它是一个非捕获匹配，即不能捕获供以后使用的匹配。例如，&#39;Windows (?!95|98|NT|2000)&#39; 匹配&quot;Windows 3.1&quot;中的 &quot;Windows&quot;，但不匹配&quot;Windows 2000&quot;中的&quot;Windows&quot;。预测先行不占用字符，即发生匹配后，下一匹配的搜索紧随上一匹配之后，而不是在组成预测先行的字符后。        x|y           匹配 x 或 y。例如，&#39;z|food&#39; 匹配&quot;z&quot;或&quot;food&quot;。&#39;(z|f)ood&#39; 匹配&quot;zood&quot;或&quot;food&quot;。       [xyz]         字符集。匹配包含的任一字符。例如，&quot;[abc]&quot;匹配&quot;plain&quot;中的&quot;a&quot;。       [^xyz]        反向字符集。匹配未包含的任何字符。例如，&quot;[^abc]&quot;匹配&quot;plain&quot;中&quot;p&quot;，&quot;l&quot;，&quot;i&quot;，&quot;n&quot;。       [a-z]         字符范围。匹配指定范围内的任何字符。例如，&quot;[a-z]&quot;匹配&quot;a&quot;到&quot;z&quot;范围内的任何小写字母。       [^a-z]       反向范围字符。匹配不在指定的范围内的任何字符。例如，&quot;[^a-z]&quot;匹配任何不在&quot;a&quot;到&quot;z&quot;范围内的任何字符。        \b          匹配一个字边界，即字与空格间的位置。例如，&quot;er\b&quot;匹配&quot;never&quot;中的&quot;er&quot;，但不匹配&quot;verb&quot;中的&quot;er&quot;。        \B          非字边界匹配。&quot;er\B&quot;匹配&quot;verb&quot;中的&quot;er&quot;，但不匹配&quot;never&quot;中的&quot;er&quot;。        \cx         匹配 x 指示的控制字符。例如，\cM 匹配 Control-M 或回车符。x 的值必须在 A-Z 或 a-z 之间。如果不是这样，则假定 c 就是&quot;c&quot;字符本身。        \d          数字字符匹配。等效于 [0-9]。        \D          非数字字符匹配。等效于 [^0-9]。        \f          换页符匹配。等效于 \x0c 和 \cL。        \n          换行符匹配。等效于 \x0a 和 \cJ。        \r          匹配一个回车符。等效于 \x0d 和 \cM。        \s          匹配任何空白字符，包括空格、制表符、换页符等。与 [ \f\n\r\t\v] 等效。        \S          匹配任何非空白字符。与 [^ \f\n\r\t\v] 等效。        \t          制表符匹配。与 \x09 和 \cI 等效。        \v          垂直制表符匹配。与 \x0b 和 \cK 等效。        \w          匹配任何字类字符，包括下划线。与&quot;[A-Za-z0-9_]&quot;等效。        \W          与任何非单词字符匹配。与&quot;[^A-Za-z0-9_]&quot;等效。        \xn         匹配 n，此处的 n 是一个十六进制转义码。十六进制转义码必须正好是两位数长。例如，&quot;\x41&quot;匹配&quot;A&quot;。&quot;\x041&quot;与&quot;\x04&quot;&amp;&quot;1&quot;等效。允许在正则表达式中使用 ASCII 代码。        \num        匹配 num，此处的 num 是一个正整数。到捕获匹配的反向引用。例如，&quot;(.)\1&quot;匹配两个连续的相同字符。        \n          标识一个八进制转义码或反向引用。如果 \n 前面至少有 n 个捕获子表达式，那么 n 是反向引用。否则，如果 n 是八进制数 (0-7)，那么 n 是八进制转义码。        \nm         标识一个八进制转义码或反向引用。如果 \nm 前面至少有 nm 个捕获子表达式，那么 nm 是反向引用。如果 \nm 前面至少有 n 个捕获，则 n 是反向引用，后面跟有字符 m。如果两种前面的情况都不存在，则 \nm 匹配八进制值 nm，其中 n 和 m 是八进制数字 (0-7)。        \nml        当 n 是八进制数 (0-3)，m 和 l 是八进制数 (0-7) 时，匹配八进制转义码 nml。     */}</code></pre>]]></content>
     
     
     <categories>
@@ -3323,6 +3298,31 @@
     <url>/2016/03/02/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java基本数据类型"><a href="#Java基本数据类型" class="headerlink" title="Java基本数据类型"></a>Java基本数据类型</h1><pre><code>public class DataType {    /*        内置数据类型        引用数据类型     */    public static void main(String[] args) {        // byte        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);        System.out.println(&quot;包装类：java.lang.Byte&quot;);        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);        System.out.println();        // short        System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE);        System.out.println(&quot;包装类：java.lang.Short&quot;);        System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE);        System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE);        System.out.println();        // int        System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE);        System.out.println(&quot;包装类：java.lang.Integer&quot;);        System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE);        System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE);        System.out.println();        // long        System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE);        System.out.println(&quot;包装类：java.lang.Long&quot;);        System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE);        System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE);        System.out.println();        // float        System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE);        System.out.println(&quot;包装类：java.lang.Float&quot;);        System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE);        System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE);        System.out.println();        // double        System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE);        System.out.println(&quot;包装类：java.lang.Double&quot;);        System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE);        System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE);        System.out.println();        // char        System.out.println(&quot;基本类型：char 二进制位数：&quot; + Character.SIZE);        System.out.println(&quot;包装类：java.lang.Character&quot;);        // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台        System.out.println(&quot;最小值：Character.MIN_VALUE=&quot;                + (int) Character.MIN_VALUE);        // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台        System.out.println(&quot;最大值：Character.MAX_VALUE=&quot;                + (int) Character.MAX_VALUE);    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java对象和类</title>
+    <link href="/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/"/>
+    <url>/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java对象和类"><a href="#Java对象和类" class="headerlink" title="Java对象和类"></a>Java对象和类</h1><pre><code>public class ObjectAndClass {    /*    - 多态    - 继承    - 封装    - 抽象    - 类 ： 是一个模板，用来描述    - 对象 ： 是类class的一个实例，具有状态和行为    - 实例    - 方法    - 重载     */    //定义一个Dog类    public static class Dog {        //成员变量        StringDemo color;        int age;        StringDemo name;        //类方法        void barking(){            System.out.println(&quot;汪！汪！汪！&quot;);        }        void hungry(){            System.out.println(&quot;好饿哦！&quot;);        }        void sleeping(){            System.out.println(&quot;好困哦！&quot;);        }        void setAge(int age){            this.age = age;        }    }    public static void main(String[]args) {        /*            创建对象            声明： 声明一个对象， 对象类型 和对象名称            实例化： new创建            初始化： 创建时调用构造方法生成         */        Dog dog = new Dog();        dog.hungry();        dog.barking();        dog.sleeping();        System.out.println(dog.age);        dog.setAge(24);        System.out.println(dog.age);    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3397,11 +3397,11 @@
   
   
   <entry>
-    <title>Markdown数学公式语法</title>
-    <link href="/2016/01/01/Markdown%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95/"/>
-    <url>/2016/01/01/Markdown%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95/</url>
+    <title>Markdown基本语法</title>
+    <link href="/2016/01/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
+    <url>/2016/01/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Markdown数学公式语法"><a href="#Markdown数学公式语法" class="headerlink" title="Markdown数学公式语法"></a>Markdown数学公式语法</h1><h2 id="行内与独行"><a href="#行内与独行" class="headerlink" title="行内与独行"></a>行内与独行</h2><ol><li>行内公式：将公式插入到本行内，符号：<code>$公式内容$</code>，如：$xyz$</li><li>独行公式：将公式插入到新的一行内，并且居中，符号：<code>$$公式内容$$</code>，如：$$xyz$$</li></ol><h2 id="上标、下标与组合"><a href="#上标、下标与组合" class="headerlink" title="上标、下标与组合"></a>上标、下标与组合</h2><ol><li>上标符号，符号：<code>^</code>，如：$x^4$</li><li>下标符号，符号：<code>_</code>，如：$x_1$</li><li>组合符号，符号：<code>{}</code>，如：${16}<em>{8}O{2+}</em>{2}$</li></ol><h2 id="汉字、字体与格式"><a href="#汉字、字体与格式" class="headerlink" title="汉字、字体与格式"></a>汉字、字体与格式</h2><ol><li>汉字形式，符号：<code>\mbox{}</code>，如：$V_{\mbox{初始}}$</li><li>字体控制，符号：<code>\displaystyle</code>，如：$\displaystyle \frac{x+y}{y+z}$</li><li>下划线符号，符号：<code>\underline</code>，如：$\underline{x+y}$</li><li>标签，符号<code>\tag{数字}</code>，如：$\tag{11}$</li><li>上大括号，符号：<code>\overbrace{算式}</code>，如：$\overbrace{a+b+c+d}^{2.0}$</li><li>下大括号，符号：<code>\underbrace{算式}</code>，如：$a+\underbrace{b+c}_{1.0}+d$</li><li>上位符号，符号：<code>\stacrel{上位符号}{基位符号}</code>，如：$\vec{x}\stackrel{\mathrm{def}}{=}{x_1,\dots,x_n}$</li></ol><h2 id="占位符"><a href="#占位符" class="headerlink" title="占位符"></a>占位符</h2><ol><li>两个quad空格，符号：<code>\qquad</code>，如：$x \qquad y$</li><li>quad空格，符号：<code>\quad</code>，如：$x \quad y$</li><li>大空格，符号<code>\</code>，如：$x \  y$</li><li>中空格，符号<code>\:</code>，如：$x : y$</li><li>小空格，符号<code>\,</code>，如：$x , y$</li><li>没有空格，符号<code></code>，如：$xy$</li><li>紧贴，符号<code>\!</code>，如：$x ! y$</li></ol><h2 id="定界符与组合"><a href="#定界符与组合" class="headerlink" title="定界符与组合"></a>定界符与组合</h2><ol><li>括号，符号：<code>（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)</code>，如：$（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)$</li><li>中括号，符号：<code>[]</code>，如：$[x+y]$</li><li>大括号，符号：<code>\{ \}</code>，如：${x+y}$</li><li>自适应括号，符号：<code>\left \right</code>，如：$\left(x\right)$，$\left(x{yz}\right)$</li><li>组合公式，符号：<code>{上位公式 \choose 下位公式}</code>，如：${n+1 \choose k}={n \choose k}+{n \choose k-1}$</li><li>组合公式，符号：<code>{上位公式 \atop 下位公式}</code>，如：$\sum_{k_0,k_1,\ldots&gt;0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$</li></ol><h2 id="四则运算"><a href="#四则运算" class="headerlink" title="四则运算"></a>四则运算</h2><ol><li>加法运算，符号：<code>+</code>，如：$x+y=z$</li><li>减法运算，符号：<code>-</code>，如：$x-y=z$</li><li>加减运算，符号：<code>\pm</code>，如：$x \pm y=z$</li><li>减甲运算，符号：<code>\mp</code>，如：$x \mp y=z$</li><li>乘法运算，符号：<code>\times</code>，如：$x \times y=z$</li><li>点乘运算，符号：<code>\cdot</code>，如：$x \cdot y=z$</li><li>星乘运算，符号：<code>\ast</code>，如：$x \ast y=z$</li><li>除法运算，符号：<code>\div</code>，如：$x \div y=z$</li><li>斜法运算，符号：<code>/</code>，如：$x/y=z$</li><li>分式表示，符号：<code>\frac{分子}{分母}</code>，如：$\frac{x+y}{y+z}$</li><li>分式表示，符号：<code>{分子} \voer {分母}</code>，如：${x+y} \over {y+z}$</li><li>绝对值表示，符号：<code>||</code>，如：$|x+y|$</li></ol><h2 id="高级运算"><a href="#高级运算" class="headerlink" title="高级运算"></a>高级运算</h2><ol><li>平均数运算，符号：<code>\overline{算式}</code>，如：$\overline{xyz}$</li><li>开二次方运算，符号：<code>\sqrt</code>，如：$\sqrt x$</li><li>开方运算，符号：<code>\sqrt[开方数]{被开方数}</code>，如：$\sqrt[3]{x+y}$</li><li>对数运算，符号：<code>\log</code>，如：$\log(x)$</li><li>极限运算，符号：<code>\lim</code>，如：$\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$</li><li>极限运算，符号：<code>\displaystyle \lim</code>，如：$\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$</li><li>求和运算，符号：<code>\sum</code>，如：$\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$</li><li>求和运算，符号：<code>\displaystyle \sum</code>，如：$\displaystyle \sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$</li><li>积分运算，符号：<code>\int</code>，如：$\int^{\infty}_{0}{xdx}$</li><li>积分运算，符号：<code>\displaystyle \int</code>，如：$\displaystyle \int^{\infty}_{0}{xdx}$</li><li>微分运算，符号：<code>\partial</code>，如：$\frac{\partial x}{\partial y}$</li><li>矩阵表示，符号：<code>\begin{matrix} \end{matrix}</code>，如：$\left[ \begin{matrix} 1 &amp;2 &amp;\cdots &amp;4\5 &amp;6 &amp;\cdots &amp;8\vdots &amp;\vdots &amp;\ddots &amp;\vdots\13 &amp;14 &amp;\cdots &amp;16\end{matrix} \right]$</li></ol><h2 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h2><ol><li>等于运算，符号：<code>=</code>，如：$x+y=z$</li><li>大于运算，符号：<code>&gt;</code>，如：$x+y&gt;z$</li><li>小于运算，符号：<code>&lt;</code>，如：$x+y&lt;z$</li><li>大于等于运算，符号：<code>\geq</code>，如：$x+y \geq z$</li><li>小于等于运算，符号：<code>\leq</code>，如：$x+y \leq z$</li><li>不等于运算，符号：<code>\neq</code>，如：$x+y \neq z$</li><li>不大于等于运算，符号：<code>\ngeq</code>，如：$x+y \ngeq z$</li><li>不大于等于运算，符号：<code>\not\geq</code>，如：$x+y \not\geq z$</li><li>不小于等于运算，符号：<code>\nleq</code>，如：$x+y \nleq z$</li><li>不小于等于运算，符号：<code>\not\leq</code>，如：$x+y \not\leq z$</li><li>约等于运算，符号：<code>\approx</code>，如：$x+y \approx z$</li><li>恒定等于运算，符号：<code>\equiv</code>，如：$x+y \equiv z$</li></ol><h2 id="集合运算"><a href="#集合运算" class="headerlink" title="集合运算"></a>集合运算</h2><ol><li>属于运算，符号：<code>\in</code>，如：$x \in y$</li><li>不属于运算，符号：<code>\notin</code>，如：$x \notin y$</li><li>不属于运算，符号：<code>\not\in</code>，如：$x \not\in y$</li><li>子集运算，符号：<code>\subset</code>，如：$x \subset y$</li><li>子集运算，符号：<code>\supset</code>，如：$x \supset y$</li><li>真子集运算，符号：<code>\subseteq</code>，如：$x \subseteq y$</li><li>非真子集运算，符号：<code>\subsetneq</code>，如：$x \subsetneq y$</li><li>真子集运算，符号：<code>\supseteq</code>，如：$x \supseteq y$</li><li>非真子集运算，符号：<code>\supsetneq</code>，如：$x \supsetneq y$</li><li>非子集运算，符号：<code>\not\subset</code>，如：$x \not\subset y$</li><li>非子集运算，符号：<code>\not\supset</code>，如：$x \not\supset y$</li><li>并集运算，符号：<code>\cup</code>，如：$x \cup y$</li><li>交集运算，符号：<code>\cap</code>，如：$x \cap y$</li><li>差集运算，符号：<code>\setminus</code>，如：$x \setminus y$</li><li>同或运算，符号：<code>\bigodot</code>，如：$x \bigodot y$</li><li>同与运算，符号：<code>\bigotimes</code>，如：$x \bigotimes y$</li><li>实数集合，符号：<code>\mathbb{R}</code>，如：<code>\mathbb{R}</code></li><li>自然数集合，符号：<code>\mathbb{Z}</code>，如：<code>\mathbb{Z}</code></li><li>空集，符号：<code>\emptyset</code>，如：$\emptyset$</li></ol><h2 id="数学符号"><a href="#数学符号" class="headerlink" title="数学符号"></a>数学符号</h2><ol><li>无穷，符号：<code>\infty</code>，如：$\infty$</li><li>虚数，符号：<code>\imath</code>，如：$\imath$</li><li>虚数，符号：<code>\jmath</code>，如：$\jmath$</li><li>数学符号，符号<code>\hat{a}</code>，如：$\hat{a}$</li><li>数学符号，符号<code>\check{a}</code>，如：$\check{a}$</li><li>数学符号，符号<code>\breve{a}</code>，如：$\breve{a}$</li><li>数学符号，符号<code>\tilde{a}</code>，如：$\tilde{a}$</li><li>数学符号，符号<code>\bar{a}</code>，如：$\bar{a}$</li><li>矢量符号，符号<code>\vec{a}</code>，如：$\vec{a}$</li><li>数学符号，符号<code>\acute{a}</code>，如：$\acute{a}$</li><li>数学符号，符号<code>\grave{a}</code>，如：$\grave{a}$</li><li>数学符号，符号<code>\mathring{a}</code>，如：$\mathring{a}$</li><li>一阶导数符号，符号<code>\dot{a}</code>，如：$\dot{a}$</li><li>二阶导数符号，符号<code>\ddot{a}</code>，如：$\ddot{a}$</li><li>上箭头，符号：<code>\uparrow</code>，如：$\uparrow$</li><li>上箭头，符号：<code>\Uparrow</code>，如：$\Uparrow$</li><li>下箭头，符号：<code>\downarrow</code>，如：$\downarrow$</li><li>下箭头，符号：<code>\Downarrow</code>，如：$\Downarrow$</li><li>左箭头，符号：<code>\leftarrow</code>，如：$\leftarrow$</li><li>左箭头，符号：<code>\Leftarrow</code>，如：$\Leftarrow$</li><li>右箭头，符号：<code>\rightarrow</code>，如：$\rightarrow$</li><li>右箭头，符号：<code>\Rightarrow</code>，如：$\Rightarrow$</li><li>底端对齐的省略号，符号：<code>\ldots</code>，如：$1,2,\ldots,n$</li><li>中线对齐的省略号，符号：<code>\cdots</code>，如：$x_1^2 + x_2^2 + \cdots + x_n^2$</li><li>竖直对齐的省略号，符号：<code>\vdots</code>，如：$\vdots$</li><li>斜对齐的省略号，符号：<code>\ddots</code>，如：$\ddots$</li></ol><h2 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h2><table><thead><tr><th>字母</th><th>实现</th><th>字母</th><th>实现</th></tr></thead><tbody><tr><td>A</td><td><code>A</code></td><td>α</td><td><code>\alhpa</code></td></tr><tr><td>B</td><td><code>B</code></td><td>β</td><td><code>\beta</code></td></tr><tr><td>Γ</td><td><code>\Gamma</code></td><td>γ</td><td><code>\gamma</code></td></tr><tr><td>Δ</td><td><code>\Delta</code></td><td>δ</td><td><code>\delta</code></td></tr><tr><td>E</td><td><code>E</code></td><td>ϵ</td><td><code>\epsilon</code></td></tr><tr><td>Z</td><td><code>Z</code></td><td>ζ</td><td><code>\zeta</code></td></tr><tr><td>H</td><td><code>H</code></td><td>η</td><td><code>\eta</code></td></tr><tr><td>Θ</td><td><code>\Theta</code></td><td>θ</td><td><code>\theta</code></td></tr><tr><td>I</td><td><code>I</code></td><td>ι</td><td><code>\iota</code></td></tr><tr><td>K</td><td><code>K</code></td><td>κ</td><td><code>\kappa</code></td></tr><tr><td>Λ</td><td><code>\Lambda</code></td><td>λ</td><td><code>\lambda</code></td></tr><tr><td>M</td><td><code>M</code></td><td>μ</td><td><code>\mu</code></td></tr><tr><td>N</td><td><code>N</code></td><td>ν</td><td><code>\nu</code></td></tr><tr><td>Ξ</td><td><code>\Xi</code></td><td>ξ</td><td><code>\xi</code></td></tr><tr><td>O</td><td><code>O</code></td><td>ο</td><td><code>\omicron</code></td></tr><tr><td>Π</td><td><code>\Pi</code></td><td>π</td><td><code>\pi</code></td></tr><tr><td>P</td><td><code>P</code></td><td>ρ</td><td><code>\rho</code></td></tr><tr><td>Σ</td><td><code>\Sigma</code></td><td>σ</td><td><code>\sigma</code></td></tr><tr><td>T</td><td><code>T</code></td><td>τ</td><td><code>\tau</code></td></tr><tr><td>Υ</td><td><code>\Upsilon</code></td><td>υ</td><td><code>\upsilon</code></td></tr><tr><td>Φ</td><td><code>\Phi</code></td><td>ϕ</td><td><code>\phi</code></td></tr><tr><td>X</td><td><code>X</code></td><td>χ</td><td><code>\chi</code></td></tr><tr><td>Ψ</td><td><code>\Psi</code></td><td>ψ</td><td><code>\psi</code></td></tr><tr><td>Ω</td><td><code>\v</code></td><td>ω</td><td><code>\omega</code></td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Markdown基本语法"><a href="#Markdown基本语法" class="headerlink" title="Markdown基本语法"></a>Markdown基本语法</h1><h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><p>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p><p>注：标准语法一般在#后跟个空格再写文字</p><pre><code class="bash"># 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题</code></pre><p>效果如下：</p><h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><hr><h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><ul><li><h5 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h5></li></ul><p>要加粗的文字左右分别用两个*号包起来</p><ul><li><h5 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h5></li></ul><p>要倾斜的文字左右分别用一个*号包起来</p><ul><li><h5 id="斜体加粗"><a href="#斜体加粗" class="headerlink" title="斜体加粗"></a>斜体加粗</h5></li></ul><p>要倾斜和加粗的文字左右分别用三个*号包起来</p><ul><li><h5 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h5></li></ul><p>要加删除线的文字左右分别用两个~~号包起来</p><p>示例：</p><pre><code class="undefined">**这是加粗的文字***这是倾斜的文字*`***这是斜体加粗的文字***~~这是加删除线的文字~~</code></pre><p>效果如下：</p><p><strong>这是加粗的文字</strong><br> <em>这是倾斜的文字</em><br> <strong><em>这是斜体加粗的文字\</em></strong><br> <del>这是加删除线的文字</del></p><hr><h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;<br> n个…<br> 貌似可以一直加下去，但没神马卵用</p><p>示例：</p><pre><code class="ruby">&gt;这是引用的内容&gt;&gt;这是引用的内容&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容</code></pre><p>效果如下：</p><blockquote><p>这是引用的内容</p><blockquote><p>这是引用的内容</p><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>这是引用的内容</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote><h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><p>三个或者三个以上的 - 或者 * 都可以。</p><p>示例：</p><pre><code class="undefined">-------********</code></pre><p>效果如下：<br> 可以看到，显示效果是一样的。</p><hr><hr><hr><hr><h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><p>语法：</p><pre><code class="bash">![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;)图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</code></pre><p>示例：</p><p><img src="/.top//&quot;图片地址&quot;" srcset="/img/loading.gif" alt=""></p><p><strong>上传本地图片直接点击导航栏的图片标志，选择图片即可</strong></p><h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><p>语法：</p><pre><code class="csharp">[超链接名](超链接地址 &quot;超链接title&quot;)title可加可不加</code></pre><p>示例：</p><pre><code class="csharp">[简书](http://jianshu.com)[百度](http://baidu.com)</code></pre><p>效果如下：</p><p><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank" rel="noopener">简书</a><br> <a href="http://baidu.com" target="_blank" rel="noopener">百度</a></p><p>注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。</p><p>示例：</p><pre><code class="xml">&lt;a href=&quot;超链接地址&quot; target=&quot;_blank&quot;&gt;超链接名&lt;/a&gt;</code></pre><p><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a></p><hr><h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><ul><li><h5 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h5></li></ul><p>语法：<br> 无序列表用 - + * 任何一种都可以</p><pre><code class="undefined">- 列表内容+ 列表内容* 列表内容注意：- + * 跟内容之间都要有一个空格</code></pre><p>效果如下：</p><ul><li><p>列表内容</p></li><li><p>列表内容</p></li><li><p>列表内容</p></li><li><h5 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h5></li></ul><p>语法：<br> 数字加点</p><pre><code class="undefined">1. 列表内容2. 列表内容3. 列表内容注意：序号跟内容之间要有空格</code></pre><p>效果如下：</p><ol><li>列表内容</li><li>列表内容</li><li>列表内容</li></ol><ul><li><h5 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h5></li></ul><p><strong>上一级和下一级之间敲三个空格即可</strong></p><ul><li>一级无序列表内容<ul><li>二级无序列表内容</li><li>二级无序列表内容</li><li>二级无序列表内容</li></ul></li><li>一级无序列表内容<ol><li>二级有序列表内容</li><li>二级有序列表内容</li><li>二级有序列表内容</li></ol></li></ul><ol><li>一级有序列表内容<ul><li>二级无序列表内容</li><li>二级无序列表内容</li><li>二级无序列表内容</li></ul></li><li>一级有序列表内容<ol><li>二级有序列表内容</li><li>二级有序列表内容</li><li>二级有序列表内容</li></ol></li></ol><hr><h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><p>语法：</p><pre><code class="ruby">表头|表头|表头---|:--:|---:内容|内容|内容内容|内容|内容第二行分割表头和内容。- 有一个就行，为了对齐，多加了几个文字默认居左-两边加：表示文字居中-右边加：表示文字居右注：原生的语法两边都要用 | 包起来。此处省略</code></pre><p>示例：</p><pre><code class="ruby">姓名|技能|排行--|:--:|--:刘备|哭|大哥关羽|打|二哥张飞|骂|三弟</code></pre><p>效果如下：</p><table><thead><tr><th>姓名</th><th style="text-align:center">技能</th><th style="text-align:right">排行</th></tr></thead><tbody><tr><td>刘备</td><td style="text-align:center">哭</td><td style="text-align:right">大哥</td></tr><tr><td>关羽</td><td style="text-align:center">打</td><td style="text-align:right">二哥</td></tr><tr><td>张飞</td><td style="text-align:center">骂</td><td style="text-align:right">三弟</td></tr></tbody></table><h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><p>语法：<br> 单行代码：代码之间分别用一个反引号包起来</p><pre><code class="go">    `代码内容`</code></pre><p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p><pre><code class="go">(```)  代码...  代码...  代码...(```)</code></pre><blockquote><p>注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</p></blockquote><p>示例：</p><p>单行代码</p><pre><code class="go">`create database hero;`</code></pre><p>代码块</p><pre><code class="kotlin">(```)    function fun(){         echo &quot;这是一句非常牛逼的代码&quot;;    }    fun();(```)</code></pre><p>效果如下：</p><p>单行代码</p><pre><code>create database hero;</code></pre><p>代码块</p><pre><code class="kotlin">function fun(){  echo &quot;这是一句非常牛逼的代码&quot;;}fun();</code></pre><h1 id="十、流程图"><a href="#十、流程图" class="headerlink" title="十、流程图"></a>十、流程图</h1><pre><code class="php">```flowst=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&amp;```</code></pre><pre><code class="flow">st=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&amp;</code></pre><p><code>`</code></p>]]></content>
     
     
     <categories>
@@ -3422,11 +3422,11 @@
   
   
   <entry>
-    <title>Markdown基本语法</title>
-    <link href="/2016/01/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/"/>
-    <url>/2016/01/01/Markdown%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</url>
+    <title>Markdown数学公式语法</title>
+    <link href="/2016/01/01/Markdown%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95/"/>
+    <url>/2016/01/01/Markdown%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F%E8%AF%AD%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Markdown基本语法"><a href="#Markdown基本语法" class="headerlink" title="Markdown基本语法"></a>Markdown基本语法</h1><h1 id="一、标题"><a href="#一、标题" class="headerlink" title="一、标题"></a>一、标题</h1><p>一个#是一级标题，二个#是二级标题，以此类推。支持六级标题。</p><p>注：标准语法一般在#后跟个空格再写文字</p><pre><code class="bash"># 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题</code></pre><p>效果如下：</p><h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><h3 id="这是三级标题"><a href="#这是三级标题" class="headerlink" title="这是三级标题"></a>这是三级标题</h3><h4 id="这是四级标题"><a href="#这是四级标题" class="headerlink" title="这是四级标题"></a>这是四级标题</h4><h5 id="这是五级标题"><a href="#这是五级标题" class="headerlink" title="这是五级标题"></a>这是五级标题</h5><h6 id="这是六级标题"><a href="#这是六级标题" class="headerlink" title="这是六级标题"></a>这是六级标题</h6><hr><h1 id="二、字体"><a href="#二、字体" class="headerlink" title="二、字体"></a>二、字体</h1><ul><li><h5 id="加粗"><a href="#加粗" class="headerlink" title="加粗"></a>加粗</h5></li></ul><p>要加粗的文字左右分别用两个*号包起来</p><ul><li><h5 id="斜体"><a href="#斜体" class="headerlink" title="斜体"></a>斜体</h5></li></ul><p>要倾斜的文字左右分别用一个*号包起来</p><ul><li><h5 id="斜体加粗"><a href="#斜体加粗" class="headerlink" title="斜体加粗"></a>斜体加粗</h5></li></ul><p>要倾斜和加粗的文字左右分别用三个*号包起来</p><ul><li><h5 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h5></li></ul><p>要加删除线的文字左右分别用两个~~号包起来</p><p>示例：</p><pre><code class="undefined">**这是加粗的文字***这是倾斜的文字*`***这是斜体加粗的文字***~~这是加删除线的文字~~</code></pre><p>效果如下：</p><p><strong>这是加粗的文字</strong><br> <em>这是倾斜的文字</em><br> <strong><em>这是斜体加粗的文字\</em></strong><br> <del>这是加删除线的文字</del></p><hr><h1 id="三、引用"><a href="#三、引用" class="headerlink" title="三、引用"></a>三、引用</h1><p>在引用的文字前加&gt;即可。引用也可以嵌套，如加两个&gt;&gt;三个&gt;&gt;&gt;<br> n个…<br> 貌似可以一直加下去，但没神马卵用</p><p>示例：</p><pre><code class="ruby">&gt;这是引用的内容&gt;&gt;这是引用的内容&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容</code></pre><p>效果如下：</p><blockquote><p>这是引用的内容</p><blockquote><p>这是引用的内容</p><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>这是引用的内容</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote><h1 id="四、分割线"><a href="#四、分割线" class="headerlink" title="四、分割线"></a>四、分割线</h1><p>三个或者三个以上的 - 或者 * 都可以。</p><p>示例：</p><pre><code class="undefined">-------********</code></pre><p>效果如下：<br> 可以看到，显示效果是一样的。</p><hr><hr><hr><hr><h1 id="五、图片"><a href="#五、图片" class="headerlink" title="五、图片"></a>五、图片</h1><p>语法：</p><pre><code class="bash">![图片alt](图片地址 &#39;&#39;图片title&#39;&#39;)图片alt就是显示在图片下面的文字，相当于对图片内容的解释。图片title是图片的标题，当鼠标移到图片上时显示的内容。title可加可不加</code></pre><p>示例：</p><p><img src="/.top//&quot;图片地址&quot;" srcset="/img/loading.gif" alt=""></p><p><strong>上传本地图片直接点击导航栏的图片标志，选择图片即可</strong></p><h1 id="六、超链接"><a href="#六、超链接" class="headerlink" title="六、超链接"></a>六、超链接</h1><p>语法：</p><pre><code class="csharp">[超链接名](超链接地址 &quot;超链接title&quot;)title可加可不加</code></pre><p>示例：</p><pre><code class="csharp">[简书](http://jianshu.com)[百度](http://baidu.com)</code></pre><p>效果如下：</p><p><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank" rel="noopener">简书</a><br> <a href="http://baidu.com" target="_blank" rel="noopener">百度</a></p><p>注：Markdown本身语法不支持链接在新页面中打开，貌似简书做了处理，是可以的。别的平台可能就不行了，如果想要在新页面中打开的话可以用html语言的a标签代替。</p><p>示例：</p><pre><code class="xml">&lt;a href=&quot;超链接地址&quot; target=&quot;_blank&quot;&gt;超链接名&lt;/a&gt;</code></pre><p><a href="https://www.jianshu.com/u/1f5ac0cf6a8b" target="_blank">简书</a></p><hr><h1 id="七、列表"><a href="#七、列表" class="headerlink" title="七、列表"></a>七、列表</h1><ul><li><h5 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h5></li></ul><p>语法：<br> 无序列表用 - + * 任何一种都可以</p><pre><code class="undefined">- 列表内容+ 列表内容* 列表内容注意：- + * 跟内容之间都要有一个空格</code></pre><p>效果如下：</p><ul><li><p>列表内容</p></li><li><p>列表内容</p></li><li><p>列表内容</p></li><li><h5 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h5></li></ul><p>语法：<br> 数字加点</p><pre><code class="undefined">1. 列表内容2. 列表内容3. 列表内容注意：序号跟内容之间要有空格</code></pre><p>效果如下：</p><ol><li>列表内容</li><li>列表内容</li><li>列表内容</li></ol><ul><li><h5 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h5></li></ul><p><strong>上一级和下一级之间敲三个空格即可</strong></p><ul><li>一级无序列表内容<ul><li>二级无序列表内容</li><li>二级无序列表内容</li><li>二级无序列表内容</li></ul></li><li>一级无序列表内容<ol><li>二级有序列表内容</li><li>二级有序列表内容</li><li>二级有序列表内容</li></ol></li></ul><ol><li>一级有序列表内容<ul><li>二级无序列表内容</li><li>二级无序列表内容</li><li>二级无序列表内容</li></ul></li><li>一级有序列表内容<ol><li>二级有序列表内容</li><li>二级有序列表内容</li><li>二级有序列表内容</li></ol></li></ol><hr><h1 id="八、表格"><a href="#八、表格" class="headerlink" title="八、表格"></a>八、表格</h1><p>语法：</p><pre><code class="ruby">表头|表头|表头---|:--:|---:内容|内容|内容内容|内容|内容第二行分割表头和内容。- 有一个就行，为了对齐，多加了几个文字默认居左-两边加：表示文字居中-右边加：表示文字居右注：原生的语法两边都要用 | 包起来。此处省略</code></pre><p>示例：</p><pre><code class="ruby">姓名|技能|排行--|:--:|--:刘备|哭|大哥关羽|打|二哥张飞|骂|三弟</code></pre><p>效果如下：</p><table><thead><tr><th>姓名</th><th style="text-align:center">技能</th><th style="text-align:right">排行</th></tr></thead><tbody><tr><td>刘备</td><td style="text-align:center">哭</td><td style="text-align:right">大哥</td></tr><tr><td>关羽</td><td style="text-align:center">打</td><td style="text-align:right">二哥</td></tr><tr><td>张飞</td><td style="text-align:center">骂</td><td style="text-align:right">三弟</td></tr></tbody></table><h1 id="九、代码"><a href="#九、代码" class="headerlink" title="九、代码"></a>九、代码</h1><p>语法：<br> 单行代码：代码之间分别用一个反引号包起来</p><pre><code class="go">    `代码内容`</code></pre><p>代码块：代码之间分别用三个反引号包起来，且两边的反引号单独占一行</p><pre><code class="go">(```)  代码...  代码...  代码...(```)</code></pre><blockquote><p>注：为了防止转译，前后三个反引号处加了小括号，实际是没有的。这里只是用来演示，实际中去掉两边小括号即可。</p></blockquote><p>示例：</p><p>单行代码</p><pre><code class="go">`create database hero;`</code></pre><p>代码块</p><pre><code class="kotlin">(```)    function fun(){         echo &quot;这是一句非常牛逼的代码&quot;;    }    fun();(```)</code></pre><p>效果如下：</p><p>单行代码</p><pre><code>create database hero;</code></pre><p>代码块</p><pre><code class="kotlin">function fun(){  echo &quot;这是一句非常牛逼的代码&quot;;}fun();</code></pre><h1 id="十、流程图"><a href="#十、流程图" class="headerlink" title="十、流程图"></a>十、流程图</h1><pre><code class="php">```flowst=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&amp;```</code></pre><pre><code class="flow">st=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&amp;</code></pre><p><code>`</code></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Markdown数学公式语法"><a href="#Markdown数学公式语法" class="headerlink" title="Markdown数学公式语法"></a>Markdown数学公式语法</h1><h2 id="行内与独行"><a href="#行内与独行" class="headerlink" title="行内与独行"></a>行内与独行</h2><ol><li>行内公式：将公式插入到本行内，符号：<code>$公式内容$</code>，如：$xyz$</li><li>独行公式：将公式插入到新的一行内，并且居中，符号：<code>$$公式内容$$</code>，如：$$xyz$$</li></ol><h2 id="上标、下标与组合"><a href="#上标、下标与组合" class="headerlink" title="上标、下标与组合"></a>上标、下标与组合</h2><ol><li>上标符号，符号：<code>^</code>，如：$x^4$</li><li>下标符号，符号：<code>_</code>，如：$x_1$</li><li>组合符号，符号：<code>{}</code>，如：${16}<em>{8}O{2+}</em>{2}$</li></ol><h2 id="汉字、字体与格式"><a href="#汉字、字体与格式" class="headerlink" title="汉字、字体与格式"></a>汉字、字体与格式</h2><ol><li>汉字形式，符号：<code>\mbox{}</code>，如：$V_{\mbox{初始}}$</li><li>字体控制，符号：<code>\displaystyle</code>，如：$\displaystyle \frac{x+y}{y+z}$</li><li>下划线符号，符号：<code>\underline</code>，如：$\underline{x+y}$</li><li>标签，符号<code>\tag{数字}</code>，如：$\tag{11}$</li><li>上大括号，符号：<code>\overbrace{算式}</code>，如：$\overbrace{a+b+c+d}^{2.0}$</li><li>下大括号，符号：<code>\underbrace{算式}</code>，如：$a+\underbrace{b+c}_{1.0}+d$</li><li>上位符号，符号：<code>\stacrel{上位符号}{基位符号}</code>，如：$\vec{x}\stackrel{\mathrm{def}}{=}{x_1,\dots,x_n}$</li></ol><h2 id="占位符"><a href="#占位符" class="headerlink" title="占位符"></a>占位符</h2><ol><li>两个quad空格，符号：<code>\qquad</code>，如：$x \qquad y$</li><li>quad空格，符号：<code>\quad</code>，如：$x \quad y$</li><li>大空格，符号<code>\</code>，如：$x \  y$</li><li>中空格，符号<code>\:</code>，如：$x : y$</li><li>小空格，符号<code>\,</code>，如：$x , y$</li><li>没有空格，符号<code></code>，如：$xy$</li><li>紧贴，符号<code>\!</code>，如：$x ! y$</li></ol><h2 id="定界符与组合"><a href="#定界符与组合" class="headerlink" title="定界符与组合"></a>定界符与组合</h2><ol><li>括号，符号：<code>（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)</code>，如：$（）\big(\big) \Big(\Big) \bigg(\bigg) \Bigg(\Bigg)$</li><li>中括号，符号：<code>[]</code>，如：$[x+y]$</li><li>大括号，符号：<code>\{ \}</code>，如：${x+y}$</li><li>自适应括号，符号：<code>\left \right</code>，如：$\left(x\right)$，$\left(x{yz}\right)$</li><li>组合公式，符号：<code>{上位公式 \choose 下位公式}</code>，如：${n+1 \choose k}={n \choose k}+{n \choose k-1}$</li><li>组合公式，符号：<code>{上位公式 \atop 下位公式}</code>，如：$\sum_{k_0,k_1,\ldots&gt;0 \atop k_0+k_1+\cdots=n}A_{k_0}A_{k_1}\cdots$</li></ol><h2 id="四则运算"><a href="#四则运算" class="headerlink" title="四则运算"></a>四则运算</h2><ol><li>加法运算，符号：<code>+</code>，如：$x+y=z$</li><li>减法运算，符号：<code>-</code>，如：$x-y=z$</li><li>加减运算，符号：<code>\pm</code>，如：$x \pm y=z$</li><li>减甲运算，符号：<code>\mp</code>，如：$x \mp y=z$</li><li>乘法运算，符号：<code>\times</code>，如：$x \times y=z$</li><li>点乘运算，符号：<code>\cdot</code>，如：$x \cdot y=z$</li><li>星乘运算，符号：<code>\ast</code>，如：$x \ast y=z$</li><li>除法运算，符号：<code>\div</code>，如：$x \div y=z$</li><li>斜法运算，符号：<code>/</code>，如：$x/y=z$</li><li>分式表示，符号：<code>\frac{分子}{分母}</code>，如：$\frac{x+y}{y+z}$</li><li>分式表示，符号：<code>{分子} \voer {分母}</code>，如：${x+y} \over {y+z}$</li><li>绝对值表示，符号：<code>||</code>，如：$|x+y|$</li></ol><h2 id="高级运算"><a href="#高级运算" class="headerlink" title="高级运算"></a>高级运算</h2><ol><li>平均数运算，符号：<code>\overline{算式}</code>，如：$\overline{xyz}$</li><li>开二次方运算，符号：<code>\sqrt</code>，如：$\sqrt x$</li><li>开方运算，符号：<code>\sqrt[开方数]{被开方数}</code>，如：$\sqrt[3]{x+y}$</li><li>对数运算，符号：<code>\log</code>，如：$\log(x)$</li><li>极限运算，符号：<code>\lim</code>，如：$\lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$</li><li>极限运算，符号：<code>\displaystyle \lim</code>，如：$\displaystyle \lim^{x \to \infty}_{y \to 0}{\frac{x}{y}}$</li><li>求和运算，符号：<code>\sum</code>，如：$\sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$</li><li>求和运算，符号：<code>\displaystyle \sum</code>，如：$\displaystyle \sum^{x \to \infty}_{y \to 0}{\frac{x}{y}}$</li><li>积分运算，符号：<code>\int</code>，如：$\int^{\infty}_{0}{xdx}$</li><li>积分运算，符号：<code>\displaystyle \int</code>，如：$\displaystyle \int^{\infty}_{0}{xdx}$</li><li>微分运算，符号：<code>\partial</code>，如：$\frac{\partial x}{\partial y}$</li><li>矩阵表示，符号：<code>\begin{matrix} \end{matrix}</code>，如：$\left[ \begin{matrix} 1 &amp;2 &amp;\cdots &amp;4\5 &amp;6 &amp;\cdots &amp;8\vdots &amp;\vdots &amp;\ddots &amp;\vdots\13 &amp;14 &amp;\cdots &amp;16\end{matrix} \right]$</li></ol><h2 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h2><ol><li>等于运算，符号：<code>=</code>，如：$x+y=z$</li><li>大于运算，符号：<code>&gt;</code>，如：$x+y&gt;z$</li><li>小于运算，符号：<code>&lt;</code>，如：$x+y&lt;z$</li><li>大于等于运算，符号：<code>\geq</code>，如：$x+y \geq z$</li><li>小于等于运算，符号：<code>\leq</code>，如：$x+y \leq z$</li><li>不等于运算，符号：<code>\neq</code>，如：$x+y \neq z$</li><li>不大于等于运算，符号：<code>\ngeq</code>，如：$x+y \ngeq z$</li><li>不大于等于运算，符号：<code>\not\geq</code>，如：$x+y \not\geq z$</li><li>不小于等于运算，符号：<code>\nleq</code>，如：$x+y \nleq z$</li><li>不小于等于运算，符号：<code>\not\leq</code>，如：$x+y \not\leq z$</li><li>约等于运算，符号：<code>\approx</code>，如：$x+y \approx z$</li><li>恒定等于运算，符号：<code>\equiv</code>，如：$x+y \equiv z$</li></ol><h2 id="集合运算"><a href="#集合运算" class="headerlink" title="集合运算"></a>集合运算</h2><ol><li>属于运算，符号：<code>\in</code>，如：$x \in y$</li><li>不属于运算，符号：<code>\notin</code>，如：$x \notin y$</li><li>不属于运算，符号：<code>\not\in</code>，如：$x \not\in y$</li><li>子集运算，符号：<code>\subset</code>，如：$x \subset y$</li><li>子集运算，符号：<code>\supset</code>，如：$x \supset y$</li><li>真子集运算，符号：<code>\subseteq</code>，如：$x \subseteq y$</li><li>非真子集运算，符号：<code>\subsetneq</code>，如：$x \subsetneq y$</li><li>真子集运算，符号：<code>\supseteq</code>，如：$x \supseteq y$</li><li>非真子集运算，符号：<code>\supsetneq</code>，如：$x \supsetneq y$</li><li>非子集运算，符号：<code>\not\subset</code>，如：$x \not\subset y$</li><li>非子集运算，符号：<code>\not\supset</code>，如：$x \not\supset y$</li><li>并集运算，符号：<code>\cup</code>，如：$x \cup y$</li><li>交集运算，符号：<code>\cap</code>，如：$x \cap y$</li><li>差集运算，符号：<code>\setminus</code>，如：$x \setminus y$</li><li>同或运算，符号：<code>\bigodot</code>，如：$x \bigodot y$</li><li>同与运算，符号：<code>\bigotimes</code>，如：$x \bigotimes y$</li><li>实数集合，符号：<code>\mathbb{R}</code>，如：<code>\mathbb{R}</code></li><li>自然数集合，符号：<code>\mathbb{Z}</code>，如：<code>\mathbb{Z}</code></li><li>空集，符号：<code>\emptyset</code>，如：$\emptyset$</li></ol><h2 id="数学符号"><a href="#数学符号" class="headerlink" title="数学符号"></a>数学符号</h2><ol><li>无穷，符号：<code>\infty</code>，如：$\infty$</li><li>虚数，符号：<code>\imath</code>，如：$\imath$</li><li>虚数，符号：<code>\jmath</code>，如：$\jmath$</li><li>数学符号，符号<code>\hat{a}</code>，如：$\hat{a}$</li><li>数学符号，符号<code>\check{a}</code>，如：$\check{a}$</li><li>数学符号，符号<code>\breve{a}</code>，如：$\breve{a}$</li><li>数学符号，符号<code>\tilde{a}</code>，如：$\tilde{a}$</li><li>数学符号，符号<code>\bar{a}</code>，如：$\bar{a}$</li><li>矢量符号，符号<code>\vec{a}</code>，如：$\vec{a}$</li><li>数学符号，符号<code>\acute{a}</code>，如：$\acute{a}$</li><li>数学符号，符号<code>\grave{a}</code>，如：$\grave{a}$</li><li>数学符号，符号<code>\mathring{a}</code>，如：$\mathring{a}$</li><li>一阶导数符号，符号<code>\dot{a}</code>，如：$\dot{a}$</li><li>二阶导数符号，符号<code>\ddot{a}</code>，如：$\ddot{a}$</li><li>上箭头，符号：<code>\uparrow</code>，如：$\uparrow$</li><li>上箭头，符号：<code>\Uparrow</code>，如：$\Uparrow$</li><li>下箭头，符号：<code>\downarrow</code>，如：$\downarrow$</li><li>下箭头，符号：<code>\Downarrow</code>，如：$\Downarrow$</li><li>左箭头，符号：<code>\leftarrow</code>，如：$\leftarrow$</li><li>左箭头，符号：<code>\Leftarrow</code>，如：$\Leftarrow$</li><li>右箭头，符号：<code>\rightarrow</code>，如：$\rightarrow$</li><li>右箭头，符号：<code>\Rightarrow</code>，如：$\Rightarrow$</li><li>底端对齐的省略号，符号：<code>\ldots</code>，如：$1,2,\ldots,n$</li><li>中线对齐的省略号，符号：<code>\cdots</code>，如：$x_1^2 + x_2^2 + \cdots + x_n^2$</li><li>竖直对齐的省略号，符号：<code>\vdots</code>，如：$\vdots$</li><li>斜对齐的省略号，符号：<code>\ddots</code>，如：$\ddots$</li></ol><h2 id="希腊字母"><a href="#希腊字母" class="headerlink" title="希腊字母"></a>希腊字母</h2><table><thead><tr><th>字母</th><th>实现</th><th>字母</th><th>实现</th></tr></thead><tbody><tr><td>A</td><td><code>A</code></td><td>α</td><td><code>\alhpa</code></td></tr><tr><td>B</td><td><code>B</code></td><td>β</td><td><code>\beta</code></td></tr><tr><td>Γ</td><td><code>\Gamma</code></td><td>γ</td><td><code>\gamma</code></td></tr><tr><td>Δ</td><td><code>\Delta</code></td><td>δ</td><td><code>\delta</code></td></tr><tr><td>E</td><td><code>E</code></td><td>ϵ</td><td><code>\epsilon</code></td></tr><tr><td>Z</td><td><code>Z</code></td><td>ζ</td><td><code>\zeta</code></td></tr><tr><td>H</td><td><code>H</code></td><td>η</td><td><code>\eta</code></td></tr><tr><td>Θ</td><td><code>\Theta</code></td><td>θ</td><td><code>\theta</code></td></tr><tr><td>I</td><td><code>I</code></td><td>ι</td><td><code>\iota</code></td></tr><tr><td>K</td><td><code>K</code></td><td>κ</td><td><code>\kappa</code></td></tr><tr><td>Λ</td><td><code>\Lambda</code></td><td>λ</td><td><code>\lambda</code></td></tr><tr><td>M</td><td><code>M</code></td><td>μ</td><td><code>\mu</code></td></tr><tr><td>N</td><td><code>N</code></td><td>ν</td><td><code>\nu</code></td></tr><tr><td>Ξ</td><td><code>\Xi</code></td><td>ξ</td><td><code>\xi</code></td></tr><tr><td>O</td><td><code>O</code></td><td>ο</td><td><code>\omicron</code></td></tr><tr><td>Π</td><td><code>\Pi</code></td><td>π</td><td><code>\pi</code></td></tr><tr><td>P</td><td><code>P</code></td><td>ρ</td><td><code>\rho</code></td></tr><tr><td>Σ</td><td><code>\Sigma</code></td><td>σ</td><td><code>\sigma</code></td></tr><tr><td>T</td><td><code>T</code></td><td>τ</td><td><code>\tau</code></td></tr><tr><td>Υ</td><td><code>\Upsilon</code></td><td>υ</td><td><code>\upsilon</code></td></tr><tr><td>Φ</td><td><code>\Phi</code></td><td>ϕ</td><td><code>\phi</code></td></tr><tr><td>X</td><td><code>X</code></td><td>χ</td><td><code>\chi</code></td></tr><tr><td>Ψ</td><td><code>\Psi</code></td><td>ψ</td><td><code>\psi</code></td></tr><tr><td>Ω</td><td><code>\v</code></td><td>ω</td><td><code>\omega</code></td></tr></tbody></table>]]></content>
     
     
     <categories>
