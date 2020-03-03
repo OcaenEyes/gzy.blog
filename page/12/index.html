@@ -182,6 +182,60 @@ public class ExceptionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java数组/">
+        <p class="h4 index-header">Java数组</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java数组public class ArrayDemo {
+    //声明数组
+    // 数据类型[] 数组名称;  dataType[] arrayName;
+
+    //创建数组
+    // 数据名称 = new dataType[arraySize];
+
+    //dataType[] arrayName = {value0,value1,value2,...,valuek};
+    public static void main(String[] args){
+        //数组大小
+        int size =4;
+        //定义数组
+        double[] TestList = new double[size];
+        TestList[0] = 3.2;
+        TestList[1] = 2.6;
+        TestList[2] = 4.7;
+        TestList[3] = 5.6;
+
+        double total =0;
+        for (int i=0; i&</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java循环结构/">
         <p class="h4 index-header">Java循环结构</p>
         
@@ -270,60 +324,6 @@ M    月份    July or 07
 d    一个月的日期    10
 h     A.M./P.M. (1~12)格式小时    12
 H    一天中的小</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java数组/">
-        <p class="h4 index-header">Java数组</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java数组public class ArrayDemo {
-    //声明数组
-    // 数据类型[] 数组名称;  dataType[] arrayName;
-
-    //创建数组
-    // 数据名称 = new dataType[arraySize];
-
-    //dataType[] arrayName = {value0,value1,value2,...,valuek};
-    public static void main(String[] args){
-        //数组大小
-        int size =4;
-        //定义数组
-        double[] TestList = new double[size];
-        TestList[0] = 3.2;
-        TestList[1] = 2.6;
-        TestList[2] = 4.7;
-        TestList[3] = 5.6;
-
-        double total =0;
-        for (int i=0; i&</div>
         </div>
       </a>
 
@@ -458,43 +458,30 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java对象和类/">
-        <p class="h4 index-header">Java对象和类</p>
+      <a href="/2016/03/02/Java-FileStreamIO/">
+        <p class="h4 index-header">Java-FileStreamIO</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java对象和类public class ObjectAndClass {
-    /*
-    - 多态
-    - 继承
-    - 封装
-    - 抽象
-    - 类 ： 是一个模板，用来描述
-    - 对象 ： 是类class的一个实例，具有状态和行为
-    - 实例
-    - 方法
-    - 重载
-     */
+          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
 
-    //定义一个Dog类
-    public static class Dog {
-        //成员变量
-        StringDemo color;
-        int age;
-        StringDemo name;
+public class StreamFileIODemo {
+    public void printChar() throws IOException {
+        //使用BufferedReader从控制台读取输入
+        char c;
+        //使用System.in 创建BufferedReader
+        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println(&quot;输入字符，按Q键退出&quot;);
+        do {
+            //read() 读取字符
+            c = (char) br1.read();
+            System.out.println(c);
+        } while (c != &#39;Q&#39;);
+    }
 
-        //类方法
-        void barking(){
-            System.out.println(&quot;汪！汪！汪！&quot;);
-        }
-
-        void hungry(){
-            System.out.println(&quot;好饿哦！&quot;);
-        }
-
-        void sle</div>
+    pu</div>
         </div>
       </a>
 
@@ -571,6 +558,70 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java对象和类/">
+        <p class="h4 index-header">Java对象和类</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java对象和类public class ObjectAndClass {
+    /*
+    - 多态
+    - 继承
+    - 封装
+    - 抽象
+    - 类 ： 是一个模板，用来描述
+    - 对象 ： 是类class的一个实例，具有状态和行为
+    - 实例
+    - 方法
+    - 重载
+     */
+
+    //定义一个Dog类
+    public static class Dog {
+        //成员变量
+        StringDemo color;
+        int age;
+        StringDemo name;
+
+        //类方法
+        void barking(){
+            System.out.println(&quot;汪！汪！汪！&quot;);
+        }
+
+        void hungry(){
+            System.out.println(&quot;好饿哦！&quot;);
+        }
+
+        void sle</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java运算符/">
         <p class="h4 index-header">Java运算符</p>
         
@@ -616,60 +667,6 @@ public class RegularExpressionDemo {
           <i class="iconfont icon-tag"></i>
           
             <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/01/2016-03-01-产品思维/">
-        <p class="h4 index-header">产品思维</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">产品思维设计一个产品使用结构化思维，并优先考虑用户需求
-1、适当提问来理解需求点比如“设计一支笔”，“实现一个游戏类的促活活动”
-需要先咨询到这支笔面向的用户群体是什么，用户的使用场景是什么，要解决用户什么样的诉求，尺寸、颜色等各类个性化的诉求，更多的咨询能更全面的捕捉用户需求，捕捉到用户的痛点需求后，可以考虑怎么来设计产品，产品的迭代计划
-2、明确目标用户和消费者，为用户考虑有些情况，目标用户和消费者并不是同一群人，需要了解产品的目标用户 和消费者是什么样的人。
-消费者是愿为产品付费的人，用户是使用产品的人。
-更多时候用户并不是单一人群，很大可能是是不同的用户群。
-3、有哪些使用场景，用户为什么要使用这个产品
-列出案例清单
-列出用户使用产品所有可能的使用目的和使用场景
-
-
-评估案例优先级-是否解决核心痛点
-升华考虑，用户使用这个产品的潜在动机是什么，产品可以通过激发用户的潜在动机，来满足他们的使用目的和使用场景
-
-4、现有产品能否良好满足这些需求？这些产品是否存在明显的缺陷？例如音乐软件，一直都是一个音乐播放器，国人需要好的音乐，好的音乐没有被发现，发现的效率极低。
-5、什么功能/修</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-01&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/categories/%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4">产品思维</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4">产品思维</a>&nbsp;
-          
-            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
           
         
       </div>
