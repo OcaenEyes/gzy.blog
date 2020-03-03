@@ -133,6 +133,63 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java循环结构/">
+        <p class="h4 index-header">Java循环结构</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java循环结构public class LoopStructure {
+    /*
+        while 循环
+        do…while 循环
+        for 循环
+     */
+
+    public static void main(String[] args) {
+        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
+        System.out.println(&quot;while 循环&quot;);
+        int x = 10;
+        while (x &lt; 20) {
+            System.out.println(x);
+            x++;
+        }
+
+        // do…while 循环，至少执行一次
+        /*
+            do {
+                //代码语句
+            }while(布尔表达式);
+         */
+        System.o</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java异常处理/">
         <p class="h4 index-header">Java异常处理</p>
         
@@ -236,36 +293,24 @@ public class ExceptionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java循环结构/">
-        <p class="h4 index-header">Java循环结构</p>
+      <a href="/2016/03/02/Java-NumberMath类/">
+        <p class="h4 index-header">Java-NumberMath类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java循环结构public class LoopStructure {
-    /*
-        while 循环
-        do…while 循环
-        for 循环
-     */
+          <div class="index-text mb-1">Java-NumberMath类public class NumberAndMath {
+    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类
+    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数
 
-    public static void main(String[] args) {
-        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
-        System.out.println(&quot;while 循环&quot;);
-        int x = 10;
-        while (x &lt; 20) {
-            System.out.println(x);
-            x++;
-        }
+    private static void test(double num) {
+        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));
+        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));
+        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));
+    }
 
-        // do…while 循环，至少执行一次
-        /*
-            do {
-                //代码语句
-            }while(布尔表达式);
-         */
-        System.o</div>
+    public st</div>
         </div>
       </a>
 
@@ -431,57 +476,6 @@ public class RegularExpressionDemo {
         PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
      */
     /*</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-FileStreamIO/">
-        <p class="h4 index-header">Java-FileStreamIO</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
-
-public class StreamFileIODemo {
-    public void printChar() throws IOException {
-        //使用BufferedReader从控制台读取输入
-        char c;
-        //使用System.in 创建BufferedReader
-        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println(&quot;输入字符，按Q键退出&quot;);
-        do {
-            //read() 读取字符
-            c = (char) br1.read();
-            System.out.println(c);
-        } while (c != &#39;Q&#39;);
-    }
-
-    pu</div>
         </div>
       </a>
 
