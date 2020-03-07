@@ -133,32 +133,34 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-String类/">
-        <p class="h4 index-header">Java-String类</p>
+      <a href="/2016/03/02/Java-StringBuffer/">
+        <p class="h4 index-header">Java-StringBuffer</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-String类public class StringDemo {
-    //String 方法
+          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
+    //StringBuffer  线程安全
+    //StringBuilder 速度快
+
     /*
-        SN(序号)    方法描述
-1    char charAt(int index)
-返回指定索引处的 char 值。
-2    int compareTo(Object o)
-把这个字符串和另一个对象比较。
-3    int compareTo(String anotherString)
-按字典顺序比较两个字符串。
-4    int compareToIgnoreCase(String str)
-按字典顺序比较两个字符串，不考虑大小写。
-5    String concat(String str)
-将指定字符串连接到此字符串的结尾。
-6    boolean contentEquals(StringBuffer sb)
-当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。
-7    static String copyValueOf(char[] data)
-返回指定数组中表示该字符序列的 String。
-8    stati</div>
+        序号    方法描述
+1    public StringBuffer append(String s)
+将指定的字符串追加到此字符序列。
+2    public StringBuffer reverse()
+ 将此字符序列用其反转形式取代。
+3    public delete(int start, int end)
+移除此序列的子字符串中的字符。
+4    public insert(int offset, int i)
+将 int 参数的字符串表示形式插入此序列中。
+5    replace(int start, int end, String str)
+使用给定 String 中的字符替换此序列的子字符串中的字符。
+     */
+
+    /*
+        序号    方法描述
+1    int capacity()</div>
         </div>
       </a>
 
