@@ -133,30 +133,28 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-FileStreamIO/">
-        <p class="h4 index-header">Java-FileStreamIO</p>
+      <a href="/2016/03/02/Java异常处理/">
+        <p class="h4 index-header">Java异常处理</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
+          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
 
-public class StreamFileIODemo {
-    public void printChar() throws IOException {
-        //使用BufferedReader从控制台读取输入
-        char c;
-        //使用System.in 创建BufferedReader
-        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println(&quot;输入字符，按Q键退出&quot;);
-        do {
-            //read() 读取字符
-            c = (char) br1.read();
-            System.out.println(c);
-        } while (c != &#39;Q&#39;);
-    }
+public class ExceptionDemo {
+    /*
+        三类异常
+        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
+        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
+        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
+     */
 
-    pu</div>
+    /*
+       内置异常类
+          非检查性异常
+            异常                                描述
+            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
         </div>
       </a>
 
@@ -211,61 +209,6 @@ public class StreamFileIODemo {
 
         double total =0;
         for (int i=0; i&</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java运算符/">
-        <p class="h4 index-header">Java运算符</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java运算符public class Operator {
-    /*
-        运算符
-        - 算术运算符
-        - 关系运算符
-        - 位运算符
-        - 逻辑运算符
-        - 赋值运算符
-        - 其他运算符
-     */
-    public static void main(String[] args) {
-        int a = 10;
-        int b = 20;
-        int c = 25;
-        int d = 25;
-
-        //算数运算符
-        //前缀自增自减法(++a,--a): 先进行自增或者自减运算，再进行表达式运算。
-        //后缀自增自减法(a++,a--): 先进行表达式运算，再进行自增或者自减运算
-        System.out.println(&quot;a + b = &quot; + (a + b));
-        System.out.println(&quot;a - b = &quot</div>
         </div>
       </a>
 
@@ -379,6 +322,61 @@ public class StreamFileIODemo {
         }
 
         void sle</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java运算符/">
+        <p class="h4 index-header">Java运算符</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java运算符public class Operator {
+    /*
+        运算符
+        - 算术运算符
+        - 关系运算符
+        - 位运算符
+        - 逻辑运算符
+        - 赋值运算符
+        - 其他运算符
+     */
+    public static void main(String[] args) {
+        int a = 10;
+        int b = 20;
+        int c = 25;
+        int d = 25;
+
+        //算数运算符
+        //前缀自增自减法(++a,--a): 先进行自增或者自减运算，再进行表达式运算。
+        //后缀自增自减法(a++,a--): 先进行表达式运算，再进行自增或者自减运算
+        System.out.println(&quot;a + b = &quot; + (a + b));
+        System.out.println(&quot;a - b = &quot</div>
         </div>
       </a>
 
