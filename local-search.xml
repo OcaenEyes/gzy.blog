@@ -647,11 +647,11 @@
   
   
   <entry>
-    <title>渠道类指标详解</title>
-    <link href="/2019/05/19/%E6%B8%A0%E9%81%93%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
-    <url>/2019/05/19/%E6%B8%A0%E9%81%93%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
+    <title>crash分析类指标详解</title>
+    <link href="/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
+    <url>/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1)本渠道全新用户</strong><br><strong>解释</strong>：首次在该渠道下载APP并激活的新用户数，并且以前从未在其他渠道下载过此APP（与全部用户进行去重）<br><strong>实例</strong>：若用户第一次下载安装应用是通过A渠道，启动后弹出提示升级到新版本，于是用户选择升级新版本，但是升级包属于B渠道下载的，升级完成后再启动一次。那么，该用户在A渠道算作是该渠道的全新用户，但在B渠道就不算是全新用户了。启动数据会分别在A渠道和B渠道各增加一次。<br><strong>2）激活</strong><br><strong>解释</strong>：用户下载安装APP之后，第一次启动应用算作激活<br><strong>实例</strong>：若用户只是下载并安装了APP而没有点击APP启动，不算作是激活<br><strong>3）升级用户</strong><br><strong>解释</strong>：该版本累计新用户中，从历史版本中升级到所选版本的用户个数<br><strong>实例</strong>：若1个用户从3.0版本升级到3.1版本，1个用户从2.0版本升级到3.1版本，那么对于3.1版本中的升级用户数为2。原理是通过设备识别号来定位用户，比对用户当前版本号和历史版本号之间的差异。<br><strong>4）某版本全新用户</strong><br><strong>解释</strong>：累计新用户数 – 升级用户数<br><strong>实例</strong>：某版本的累计新用户数若为100，该版本的升级用户数为30，那么该版本的全新用户数就为100-30=70人。<br><strong>5）初始渠道URL</strong><br><strong>解释</strong>：渠道商提供给开发者的应用程序下载链接地址<br><strong>实例</strong>：这里说的应用程序下载地址是指能够精确到应用程序APK安装包的那个链接地址，而不是包含安装包的页面的链接地址。<br><strong>6）生成渠道URL</strong><br><strong>解释</strong>：将初始URL输入“渠道来源管理”界面，然后点击由百度移动统计生成渠道URL，再将渠道URL提供给渠道商替换原始URL，即可对渠道来源进行细分统计了<br><strong>7）渠道来源激活量</strong><br><strong>解释</strong>：所选时段内，可追溯渠道来源的激活量。激活意为下载并第一次启动<br><strong>8）转化率</strong><br><strong>算法</strong>：激活量/去重点击量<br><strong>实例</strong>：若1月份内，可追溯到渠道来源的激活数量为50，经过去重的点击量为100，那么1月份的转化率为50/100=50%</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1) 错误次数</strong><br><strong>定义</strong>：在规定的时间段内，应用出现异常退出现象的次数总和。<br><strong>涵义</strong>：通常情况下，应用错误集中于两种：死机或强退，这样的现象都会严重影响用户体验，所以错误次数发生的越高，用户体验越差。降低错误次数是开发者应该时刻关注的重要指标。<br><strong>2) 错误率</strong><br><strong>定义</strong>：在规定时间段内，一个应用发生错误的比率（错误次数/启动次数）。<br><strong>涵义</strong>：产品质量是一个应用发展壮大的基石，与网站不同，移动应用一旦被分发之后就无法再收回，应用错误率高会降低用户对产品的信任和口碑。通过对应用的质量监控，找到错误代码并及时发布修复版本，可以有效弥补这一问题。</p>]]></content>
     
     
     <categories>
@@ -709,11 +709,11 @@
   
   
   <entry>
-    <title>crash分析类指标详解</title>
-    <link href="/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
-    <url>/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
+    <title>渠道类指标详解</title>
+    <link href="/2019/05/19/%E6%B8%A0%E9%81%93%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
+    <url>/2019/05/19/%E6%B8%A0%E9%81%93%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1) 错误次数</strong><br><strong>定义</strong>：在规定的时间段内，应用出现异常退出现象的次数总和。<br><strong>涵义</strong>：通常情况下，应用错误集中于两种：死机或强退，这样的现象都会严重影响用户体验，所以错误次数发生的越高，用户体验越差。降低错误次数是开发者应该时刻关注的重要指标。<br><strong>2) 错误率</strong><br><strong>定义</strong>：在规定时间段内，一个应用发生错误的比率（错误次数/启动次数）。<br><strong>涵义</strong>：产品质量是一个应用发展壮大的基石，与网站不同，移动应用一旦被分发之后就无法再收回，应用错误率高会降低用户对产品的信任和口碑。通过对应用的质量监控，找到错误代码并及时发布修复版本，可以有效弥补这一问题。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1)本渠道全新用户</strong><br><strong>解释</strong>：首次在该渠道下载APP并激活的新用户数，并且以前从未在其他渠道下载过此APP（与全部用户进行去重）<br><strong>实例</strong>：若用户第一次下载安装应用是通过A渠道，启动后弹出提示升级到新版本，于是用户选择升级新版本，但是升级包属于B渠道下载的，升级完成后再启动一次。那么，该用户在A渠道算作是该渠道的全新用户，但在B渠道就不算是全新用户了。启动数据会分别在A渠道和B渠道各增加一次。<br><strong>2）激活</strong><br><strong>解释</strong>：用户下载安装APP之后，第一次启动应用算作激活<br><strong>实例</strong>：若用户只是下载并安装了APP而没有点击APP启动，不算作是激活<br><strong>3）升级用户</strong><br><strong>解释</strong>：该版本累计新用户中，从历史版本中升级到所选版本的用户个数<br><strong>实例</strong>：若1个用户从3.0版本升级到3.1版本，1个用户从2.0版本升级到3.1版本，那么对于3.1版本中的升级用户数为2。原理是通过设备识别号来定位用户，比对用户当前版本号和历史版本号之间的差异。<br><strong>4）某版本全新用户</strong><br><strong>解释</strong>：累计新用户数 – 升级用户数<br><strong>实例</strong>：某版本的累计新用户数若为100，该版本的升级用户数为30，那么该版本的全新用户数就为100-30=70人。<br><strong>5）初始渠道URL</strong><br><strong>解释</strong>：渠道商提供给开发者的应用程序下载链接地址<br><strong>实例</strong>：这里说的应用程序下载地址是指能够精确到应用程序APK安装包的那个链接地址，而不是包含安装包的页面的链接地址。<br><strong>6）生成渠道URL</strong><br><strong>解释</strong>：将初始URL输入“渠道来源管理”界面，然后点击由百度移动统计生成渠道URL，再将渠道URL提供给渠道商替换原始URL，即可对渠道来源进行细分统计了<br><strong>7）渠道来源激活量</strong><br><strong>解释</strong>：所选时段内，可追溯渠道来源的激活量。激活意为下载并第一次启动<br><strong>8）转化率</strong><br><strong>算法</strong>：激活量/去重点击量<br><strong>实例</strong>：若1月份内，可追溯到渠道来源的激活数量为50，经过去重的点击量为100，那么1月份的转化率为50/100=50%</p>]]></content>
     
     
     <categories>
@@ -1088,31 +1088,6 @@
   
   
   <entry>
-    <title>php即时通讯-http</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><ul><li>一个应用层协议</li><li>Header + Body组成</li><li>比TCP更高级</li><li>短链接</li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>php</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>php</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>php即时通讯-WebSocket</title>
     <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
     <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
@@ -1168,6 +1143,31 @@
     <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Socket"><a href="#Socket" class="headerlink" title="Socket"></a>Socket</h3><ul><li>一个工具，一个接口</li><li>封装了TCP/IP 协议</li><li>建立长链接的基础</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>php</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>php即时通讯-http</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><ul><li>一个应用层协议</li><li>Header + Body组成</li><li>比TCP更高级</li><li>短链接</li></ul>]]></content>
     
     
     <categories>
@@ -1885,11 +1885,11 @@
   
   
   <entry>
-    <title>深度学习笔记——线性回归</title>
-    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
-    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</url>
+    <title>深度学习笔记——线性回归的从零开始实现</title>
+    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em>深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式</em></p><p><strong>单层神经网络：线性回归、Softmax回归</strong></p><p>线性回归输出是一个连续值，适用于回归问题。</p><p>​    如：预测房屋价格、气温、销售额等连续值问题</p><p>Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。</p><p>​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值</p><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><h3 id="线性回归基本要素"><a href="#线性回归基本要素" class="headerlink" title="线性回归基本要素"></a>线性回归基本要素</h3><p>以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）</p><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><p>设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）</p><p>线性回归假设输出与各个输入之间的线性关系：</p><p>y‘ = x1w1 + x2w2 + b;</p><p>其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 </p><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><p>模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。</p><h5 id="训练数据"><a href="#训练数据" class="headerlink" title="训练数据"></a>训练数据</h5><ul><li><p>训练数据集（training data set ）/ 训练集（training set）</p><p>多栋房屋数据，真实出售价格 、面积、房龄</p></li><li><p>样本（sample）</p><p>一栋房屋</p></li><li><p>标签（label）</p><p>真实出售价格</p></li><li><p>特征（feature）</p><p>预测标签的两个因素叫做特征；（面积、房龄）</p><p>特征用来表征样本的特点</p></li></ul><h5 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h5><ul><li>衡量价格测量值与真实值之间的误差</li><li>通常选取一个非负数作为误差，且数值越小表示误差越小</li></ul><h5 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h5><ul><li>解析解（analytical solution）<ul><li>当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来</li></ul></li><li>数值解（numerical solution）<ul><li>大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值</li><li>常用：小批量随机梯度下降（ mini-batch stochastic gradient descent）<ul><li>选取一组模型参数的初始值</li><li>对参数进行多次迭代，使得每次迭代都可能降低损失函数的值</li><li>每次迭代流程<ul><li>先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B</li><li>求小批量中数据样本的平均损失有关模型参数的导数（梯度）</li><li>用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量</li></ul></li></ul></li></ul></li></ul><h4 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h4><p><em>模型预测、模型推断或模型测试</em></p><p> 模型训练完成后，将模型参数w1;w2; b  在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。</p><p>然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。</p><h3 id="线性回归的表示方法"><a href="#线性回归的表示方法" class="headerlink" title="线性回归的表示方法"></a>线性回归的表示方法</h3><p>线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。</p><h4 id="神经网络图"><a href="#神经网络图" class="headerlink" title="神经网络图"></a>神经网络图</h4><h4 id="矢量计算表达式"><a href="#矢量计算表达式" class="headerlink" title="矢量计算表达式"></a>矢量计算表达式</h4>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
     
     
     <categories>
@@ -1916,11 +1916,11 @@
   
   
   <entry>
-    <title>深度学习笔记——线性回归的从零开始实现</title>
-    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/"/>
-    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/</url>
+    <title>深度学习笔记——线性回归</title>
+    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
+    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em>深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式</em></p><p><strong>单层神经网络：线性回归、Softmax回归</strong></p><p>线性回归输出是一个连续值，适用于回归问题。</p><p>​    如：预测房屋价格、气温、销售额等连续值问题</p><p>Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。</p><p>​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值</p><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><h3 id="线性回归基本要素"><a href="#线性回归基本要素" class="headerlink" title="线性回归基本要素"></a>线性回归基本要素</h3><p>以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）</p><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><p>设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）</p><p>线性回归假设输出与各个输入之间的线性关系：</p><p>y‘ = x1w1 + x2w2 + b;</p><p>其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 </p><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><p>模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。</p><h5 id="训练数据"><a href="#训练数据" class="headerlink" title="训练数据"></a>训练数据</h5><ul><li><p>训练数据集（training data set ）/ 训练集（training set）</p><p>多栋房屋数据，真实出售价格 、面积、房龄</p></li><li><p>样本（sample）</p><p>一栋房屋</p></li><li><p>标签（label）</p><p>真实出售价格</p></li><li><p>特征（feature）</p><p>预测标签的两个因素叫做特征；（面积、房龄）</p><p>特征用来表征样本的特点</p></li></ul><h5 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h5><ul><li>衡量价格测量值与真实值之间的误差</li><li>通常选取一个非负数作为误差，且数值越小表示误差越小</li></ul><h5 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h5><ul><li>解析解（analytical solution）<ul><li>当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来</li></ul></li><li>数值解（numerical solution）<ul><li>大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值</li><li>常用：小批量随机梯度下降（ mini-batch stochastic gradient descent）<ul><li>选取一组模型参数的初始值</li><li>对参数进行多次迭代，使得每次迭代都可能降低损失函数的值</li><li>每次迭代流程<ul><li>先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B</li><li>求小批量中数据样本的平均损失有关模型参数的导数（梯度）</li><li>用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量</li></ul></li></ul></li></ul></li></ul><h4 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h4><p><em>模型预测、模型推断或模型测试</em></p><p> 模型训练完成后，将模型参数w1;w2; b  在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。</p><p>然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。</p><h3 id="线性回归的表示方法"><a href="#线性回归的表示方法" class="headerlink" title="线性回归的表示方法"></a>线性回归的表示方法</h3><p>线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。</p><h4 id="神经网络图"><a href="#神经网络图" class="headerlink" title="神经网络图"></a>神经网络图</h4><h4 id="矢量计算表达式"><a href="#矢量计算表达式" class="headerlink" title="矢量计算表达式"></a>矢量计算表达式</h4>]]></content>
     
     
     <categories>
@@ -2005,33 +2005,6 @@
   
   
   <entry>
-    <title>AI是什么</title>
-    <link href="/2018/11/25/AI%E6%98%AF%E4%BB%80%E4%B9%88/"/>
-    <url>/2018/11/25/AI%E6%98%AF%E4%BB%80%E4%B9%88/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="AI是什么"><a href="#AI是什么" class="headerlink" title="AI是什么"></a>AI是什么</h3><p>AI，“Artificial Intelligence”的缩写，中文“人工智能”；可以理解为让机器具备类似人的智能，从而代替人类完成某些工作和任务。</p><ul><li><p>“强人工智能”</p><p>能够像人类一样去思考和推理，具备自我意识</p></li><li><p>“弱人工智能”</p><p>机器表现出来的特征是智能的，但是不具备自我意识</p><ul><li><p>通过相关规则编程，使机器按照程序逻辑完成特定的任务</p></li><li><p>针对某一任务向机器提供大量数据，使机器自己去学习，继而挖掘出规律，从而完成任务</p></li></ul></li></ul><h4 id="弱人工智能"><a href="#弱人工智能" class="headerlink" title="弱人工智能"></a>弱人工智能</h4><h5 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h5><p><em>从模型层次结构的角度可以分为浅层学习和深度学习</em></p><h6 id="浅层学习（Shallow-Learning）"><a href="#浅层学习（Shallow-Learning）" class="headerlink" title="浅层学习（Shallow Learning）"></a>浅层学习（Shallow Learning）</h6><ul><li><p>模型层次较浅，通常没有隐藏层、或只有一层隐藏层</p></li><li><p>可以做一些预测、分类、聚类、降低数据维度、压缩数据、商品推荐系统等工作</p></li><li><p>常见算法：</p><ul><li><p>线性回归</p></li><li><p>逻辑回归</p></li><li><p>随机森林</p></li><li><p>SVM</p></li><li><p>K-means</p></li><li><p>RBM</p></li><li><p>AutoEncoder</p></li><li><p>PCA</p></li><li><p>SOM</p></li><li><p>……</p></li></ul></li></ul><h6 id="深度学习（Deep-Learning）"><a href="#深度学习（Deep-Learning）" class="headerlink" title="深度学习（Deep Learning）"></a>深度学习（Deep Learning）</h6><ul><li>“深”是因为通常具有较多的隐藏层，进而拥有表达更多复杂函数的能力，进而能识别更复杂的特征</li><li>主要集中在CNN 和RNN</li><li><p><strong>CNN</strong></p><ul><li><p><strong>CNN</strong>为Convolution Neural NetWorks的缩写，也就是卷积神经网络</p></li><li><p>主要应用于计算机视觉、图像分类领域</p></li><li><p>应用场景示例</p><ul><li><p>美颜相机的滤镜</p></li><li><p>交通监控识别车辆车型、车牌号</p></li><li><p>商汤人脸识别</p></li><li><p>无人车</p></li><li><p>……</p></li></ul></li></ul></li><li><strong>RNN</strong><ul><li>Recurrent Neual NetWorks的缩写，递归神经网络</li><li>基于<strong>RNN</strong>还衍生出<strong>LSTM</strong>（Long-Short-Term-Memerory） 和<strong>GRU</strong>（Gated Recurrent Unit）等</li><li>具有记忆过去的能力，故用来处理一些有<strong>时间序列属性</strong>的数据，处理语言、文字具有优势</li><li>应用场景示例：<ul><li>Siri<strong>对话机器人</strong></li><li>谷歌翻译，<strong>机器翻译</strong></li><li>语音转文字</li><li>……</li></ul></li></ul></li></ul><h3 id="AI本质"><a href="#AI本质" class="headerlink" title="AI本质"></a>AI本质</h3><p><em>AI本质上都是一个函数</em></p><p><em>AI其实就是我们提供机器目前已有的数据，机器从数据去找出一个最能拟合这些数据的函数；当有新的数据需要预测时，机器通过之前找到的函数去预测新数据的对应结果。</em></p><ul><li><p>通用要素</p><p><strong>AI = 数据+算法+模型</strong></p></li><li><p>示例讲解—分类器模型为区分A 和B</p><ul><li><p>数据</p><ul><li>准备大量已标注过 是A  还是B的图片</li><li>只有数据量足够大，模型才能够学习足够准确的 区分A 和B的特征，在进行最终的AB任务区分上，才能表现出足够高的准确性</li></ul></li><li><p>算法</p><ul><li><p>网络架构设计：构建模型时，采用浅层网络还是深层网络，如为深层，则需多少层，每层油多少神经元，功能是什么等</p></li><li><p>预测函数的大致结构<br>$$<br>Y= f(W,X,b)<br>$$<br>Y ，是已有的图片数据的标签；（A和B的图片）</p><p>X，是已有的用来训练的数据；（该图是A 还是B）</p><p>W，权重；b，偏差 ； 这两个参数通过机器学习后得出</p></li><li><p>寻找W 和b 的过程，就是模型训练的过程</p></li></ul></li><li><p>模型</p><ul><li><p>将数据带入算法中训练，机器不断学习，当机器找到最优 W 权重，b 偏差；就意味着模型 train成功了</p></li><li><p>函数模型<br>$$<br>Y=f(W,X,b)<br>$$</p></li><li><p>提供新的数据输入该模型，算出新的数据是A或者B，即为模型的<strong>预测功能</strong></p></li></ul></li></ul></li></ul><p><strong>不管是简单的线性回归，还是复杂的深度神经网络模型，本质都是寻找一个能够良好拟合目前已有数据的函数</strong><br>$$<br>Y=f(W，X，b)<br>$$<br><strong>并且这个函数在新的未知数据上也能够表现良好。</strong></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Artificial Intelligence</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>人工智能</tag>
-      
-      <tag>Artificial Intelligence</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>几种机器学习原理</title>
     <link href="/2018/11/25/%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86/"/>
     <url>/2018/11/25/%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86/</url>
@@ -2064,6 +2037,33 @@
     <url>/2018/11/25/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E7%9A%84%E5%8E%86%E5%8F%B2/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="人工智能的诞生：1943-1956"><a href="#人工智能的诞生：1943-1956" class="headerlink" title="人工智能的诞生：1943 - 1956"></a>人工智能的诞生：1943 - 1956</h2><p>在20世纪40年代和50年代，来自不同领域（数学，心理学，工程学，经济学和政治学）的一批科学家开始探讨制造人工大脑的可能性。1956年，人工智能被确立为一门学科。</p><p>1956年的夏天，香农和一群年轻的学者在达特茅斯学院召开了一次头脑风暴式研讨会。会议的组织者是马文·闵斯基，约翰·麦卡锡和另两位资深科学家Claude Shannon以及Nathan Rochester，后者来自IBM。与会者包括Ray Solomonoff，Oliver Selfridge，Trenchard More，Arthur Samuel，Newell和Simon，他们中的每一位都将在AI研究的第一个十年中作出重要贡献。</p><p>会议虽然叫做“达特茅斯夏季人工智能研究会议”，其实它不同于今天我们召开几天的学术会议，因为一来没有什么可以报告的科研成果，二来这个会议持续了一个暑假。事实上，这是一次头脑风暴式的讨论会，这10位年轻的学者讨论的是当时计算机尚未解决，甚至尚未开展研究的问题，包括人工智能、自然语言处理和神经网络等。</p><p>会上纽厄尔和西蒙讨论了“逻辑理论家”，而麦卡锡则说服与会者接受“人工智能”一词作为本领域的名称。1956年达特矛斯会议上人工智能的名称和任务得以确定，同时出现了最初的成就和最早的一批研究者，因此这一事件被广泛承认为人工智能诞生的标志。</p><p>黄金年代：1956 - 1974</p><p>达特茅斯会议之后的数年是大发现的时代。对许多人而言，这一阶段开发出的程序堪称神奇：计算机可以解决代数应用题，证明几何定理，学习和使用英语。当时大多数人几乎无法相信机器能够如此“智能”。研究者们在私下的交流和公开发表的论文中表达出相当乐观的情绪，认为具有完全智能的机器将在二十年内出现。ARPA（国防高等研究计划署）等政府机构向这一新兴领域投入了大笔资金。</p><p>第一代AI研究者们非常乐观，曾作出了如下预言:</p><ul><li>1958年，H. A. Simon，Allen Newell：“十年之内，数字计算机将成为国际象棋世界冠军。” “十年之内，数字计算机将发现并证明一个重要的数学定理。”</li><li>1965年，H. A. Simon：“二十年内，机器将能完成人能做到的一切工作。”</li><li>1967年，Marvin Minsky：“一代之内……创造‘人工智能’的问题将获得实质上的解决。”</li><li>1970年，Marvin Minsky：“在三到八年的时间里我们将得到一台具有人类平均智能的机器。”</li></ul><p>早期，人工智能使用传统的人工智能方法进行研究，什么是传统的人工智能研究呢？简单的讲，就是首先了解人类是如何产生智能的，然后让计算机按照人的思路去做。因此在语音识别、机器翻译等领域迟迟不能突破，人工智能研究陷入低谷。</p><h2 id="第一次AI低谷：1974-1980"><a href="#第一次AI低谷：1974-1980" class="headerlink" title="第一次AI低谷：1974 - 1980"></a>第一次AI低谷：1974 - 1980</h2><p>由于人工智能研究者们对项目难度评估不足，这除了导致承诺无法兑现外，还让人们当初的乐观期望遭到严重打击。到了70年代，人工智能开始遭遇批评，研究经费也被转移到那些目标明确的特定项目上。</p><p>1972年康奈尔大学的教授弗雷德.贾里尼克（Fred Jelinek)被要求到IBM做语音识别。在之前各个大学和研究这个问题已经花了20多年的时间，主流的研究方法有两个特点，一个是让计算机尽可能地模拟人的发音特点和听觉特征，一个是让计算机尽可能的方法理解人所讲的完整的语句。对于前一项研究，有被称为特征提取，后一项的研究大都使用传统人工智能的方法，它基于规则和语义。</p><p>贾里尼克任务，人的大脑是一个信息源，从思考到找到合适的语句，再通过发音说出来，是一个编码的过程，经过媒介传播到耳朵，是一个解码的过程。既然是一个典型的通讯问题，那就可以用解决通讯方法来解决问题，为此贾里尼克用两个数据模型（马尔科夫模型）分别描述信源和信道。然后使用大量的语音数据来训练。最后，贾里尼克团队花了4年团队，将语音识别从过去的70%提高到90%。后来人们尝试使用此方法来解决其他智能问题，但因为缺少数据，结果不太理想。</p><p>在当时，由于计算机性能的瓶颈、计算复杂性的指数级增长、数据量缺失等问题，一些难题看上去好像完全找不到答案。比如像今天已经比较常见的机器视觉功能在当时就不可能找到一个足够大的数据库来支撑程序去学习，机器无法吸收足够的数据量自然也就谈不上视觉方面的智能化。</p><p>项目的停滞不但让批评者有机可乘——1973年Lighthill针对英国人工智能研究状况的报告批评了人工智能在实现其“宏伟目标”上的完全失败，也影响到了项目资金的流向。人工智能遭遇了6年左右的低谷。</p><h2 id="繁荣：1980-1987"><a href="#繁荣：1980-1987" class="headerlink" title="繁荣：1980 - 1987"></a>繁荣：1980 - 1987</h2><p>在80年代，一类名为“专家系统”的AI程序开始为全世界的公司所采纳，而“知识处理”成为了主流AI研究的焦点。1981年，日本经济产业省拨款八亿五千万美元支持第五代计算机项目。其目标是造出能够与人对话，翻译语言，解释图像，并且像人一样推理的机器。</p><p>受到日本刺激，其他国家纷纷作出响应。英国开始了耗资三亿五千万英镑的Alvey工程。美国一个企业协会组织了MCC（Microelectronics and Computer Technology Corporation，微电子与计算机技术集团），向AI和信息技术的大规模项目提供资助。DARPA也行动起来，组织了战略计算促进会（Strategic Computing Initiative），其1988年向AI的投资是1984年的三倍。人工智能又迎来了大发展。</p><p>专家系统是一种程序，能够依据一组从专门知识中推演出的逻辑规则在某一特定领域回答或解决问题。最早的示例由Edward Feigenbaum和他的学生们开发。1965年起设计的Dendral能够根据分光计读数分辨混合物。1972年设计的MYCIN能够诊断血液传染病。它们展示了这一方法的威力。专家系统仅限于一个很小的知识领域，从而避免了常识问题；其简单的设计又使它能够较为容易地编程实现或修改。总之，实践证明了这类程序的实用性。直到现在AI才开始变得实用起来。</p><p>专家系统的能力来自于它们存储的专业知识。这是70年代以来AI研究的一个新方向。Pamela McCorduck在书中写道，“不情愿的AI研究者们开始怀疑，因为它违背了科学研究中对最简化的追求。智能可能需要建立在对<a href="https://www.baidu.com/s?wd=%E5%88%86%E9%97%A8%E5%88%AB%E7%B1%BB&amp;tn=24004469_oem_dg&amp;rsv_dl=gh_pl_sl_csd" target="_blank" rel="noopener">分门别类</a>的大量知识的多种处理方法之上。” “70年代的教训是智能行为与知识处理关系非常密切。有时还需要在特定任务领域非常细致的知识。”知识库系统和知识工程成为了80年代AI研究的主要方向。</p><p>1982年，物理学家John Hopfield证明一种新型的神经网络（现被称为“Hopfield网络”）能够用一种全新的方式学习和处理信息。大约在同时（早于Paul Werbos），David Rumelhart推广了反向传播算法，一种神经网络训练方法。这些发现使1970年以来一直遭人遗弃的联结主义重获新生。</p><h2 id="第二次AI低谷：1987-1993"><a href="#第二次AI低谷：1987-1993" class="headerlink" title="第二次AI低谷：1987 - 1993"></a>第二次AI低谷：1987 - 1993</h2><p>“AI之冬”一词由经历过1974年经费削减的研究者们创造出来。他们注意到了对专家系统的狂热追捧，预计不久后人们将转向失望。事实被他们不幸言中：从80年代末到90年代初，AI遭遇了一系列财政问题。</p><p>变天的最早征兆是1987年AI硬件市场需求的突然下跌。Apple和IBM生产的台式机性能不断提升，到1987年时其性能已经超过了Symbolics和其他厂家生产的昂贵的Lisp机。老产品失去了存在的理由：一夜之间这个价值五亿美元的产业土崩瓦解。</p><p>XCON等最初大获成功的专家系统维护费用居高不下。它们难以升级，难以使用，脆弱（当输入异常时会出现<a href="https://www.baidu.com/s?wd=%E8%8E%AB%E5%90%8D%E5%85%B6%E5%A6%99&amp;tn=24004469_oem_dg&amp;rsv_dl=gh_pl_sl_csd" target="_blank" rel="noopener">莫名其妙</a>的错误），成了以前已经暴露的各种各样的问题的牺牲品。专家系统的实用性仅仅局限于某些特定情景。到了80年代晚期，战略计算促进会大幅削减对AI的资助。DARPA的新任领导认为AI并非“下一个浪潮”，拨款将倾向于那些看起来更容易出成果的项目。</p><p>1991年人们发现十年前日本人宏伟的“第五代工程”并没有实现。事实上其中一些目标，比如“与人展开交谈”，直到2010年也没有实现。与其他AI项目一样，期望比真正可能实现的要高得多。</p><h2 id="走在正确的路上：1993-2005"><a href="#走在正确的路上：1993-2005" class="headerlink" title="走在正确的路上：1993 - 2005"></a>走在正确的路上：1993 - 2005</h2><p>现已年过半百的AI终于实现了它最初的一些目标。它已被成功地用在技术产业中，不过有时是在幕后。这些成就有的归功于计算机性能的提升，有的则是在高尚的科学责任感驱使下对特定的课题不断追求而获得的。不过，至少在商业领域里AI的声誉已经不如往昔了。</p><p>“实现人类水平的智能”这一最初的梦想曾在60年代令全世界的想象力为之着迷，其失败的原因至今仍众说纷纭。各种因素的合力将AI拆分为各自为战的几个子领域，有时候它们甚至会用新名词来掩饰“人工智能”这块被玷污的金字招牌。AI比以往的任何时候都更加谨慎，却也更加成功。</p><p>第一次让全世界感到计算机智能水平有了质的飞跃实在1966年，IBM的超级计算机深蓝大战人类国际象棋冠军卡斯伯罗夫，卡斯伯罗夫是世界上最富传奇色彩的国际象棋世界冠军，这次比赛最后以4：2比分战胜了深蓝。对于这次比赛媒体认为深蓝虽然输了比赛，但这毕竟是国际象棋上计算机第一次战胜世界冠军两局。时隔一年后，改进后的深蓝<a href="https://www.baidu.com/s?wd=%E5%8D%B7%E5%9C%9F%E9%87%8D%E6%9D%A5&amp;tn=24004469_oem_dg&amp;rsv_dl=gh_pl_sl_csd" target="_blank" rel="noopener">卷土重来</a>，以3.5：2.5的比分战胜了斯伯罗夫。自从1997年以后，计算机下棋的本领越来越高，进步超过人的想象。到了现在，棋类游戏中计算机已经可以完败任何人类。</p><p>深蓝实际上收集了世界上百位国际大师的对弈棋谱，供计算机学习。这样一来，深蓝其实看到了名家们在各种局面下的走法。当然深蓝也会考虑卡斯伯罗夫可能采用的走法，对不同的状态给出可能性评估，然后根据对方下一步走法对盘面的影响，核实这些可能性的估计，找到一个最有利自己的状态，并走出这步棋。因此深蓝团队其实把一个机器智能问题变成了一个大数据和大量计算的问题。</p><p>越来越多的AI研究者们开始开发和使用复杂的数学工具。人们广泛地认识到，许多AI需要解决的问题已经成为数学，经济学和运筹学领域的研究课题。数学语言的共享不仅使AI可以与其他学科展开更高层次的合作，而且使研究结果更易于评估和证明。AI已成为一门更严格的科学分支。</p><p>Judea Pearl发表于1988年的名著将概率论和决策理论引入AI。现已投入应用的新工具包括贝叶斯网络，隐马尔可夫模型，信息论，随机模型和经典优化理论。针对神经网络和进化算法等“计算智能”范式的精确数学描述也被发展出来。</p><h2 id="大数据：2005-现在"><a href="#大数据：2005-现在" class="headerlink" title="大数据：2005 - 现在"></a>大数据：2005 - 现在</h2><p>从某种意义上讲，2005年是大数据元年，虽然大部分人感受不到数据带来的变化，但是一项科研成果却让全世界从事机器翻译的人感到震惊，那就是之前在机器翻译领域从来没有技术积累、不为人所知的Google，以巨大的优势打败了全世界所有机器翻译研究团队，一跃成为这个领域的领头羊。</p><p>就是Google花重金请到了当时世界上水平最高的机器翻译专家弗朗兹·奥科 (Franz Och)博士。奥科用了上万倍的数据来训练系统。量变的积累就导致了质变的发生。奥科能训练出一个六元模型，而当时大部分研究团队的数据量只够训练三元模型。简单地讲，一个 好的三元模型可以准确地构造英语句子中的短语和简单的句子成分之间的搭配，而六元模型则可以构造整个从句和复杂的句子成分之间的搭配，相当于将这些片段从一种语言到另一种语言直接对译过去了。不难想象，如果一个系统对大部分句子在很长的片段上直译，那么其准确性相比那些在词组单元做翻译的系统要准确得多。</p><p>如今在很多与“智能”有关的研究领域，比如图像识别和自然语言理解，如果所采用的方法无法利用数据量的优势，会被认为是落伍的。</p><p>数据驱动方法从20世纪70年代开始起步，在八九十年代得到缓慢但稳步的发展。进入21世纪后，由于互联网的出现，使得可用的数据量剧增，数据驱动方法的优势越来越明显，最终完成了从量变到质变的飞跃。如今很多需要类似人类智能才能做的事情，计算机已经可以胜任了，这得益于数据量的增加。</p><p>全世界各个领域数据不断向外扩展，渐渐形成了另外一个特点，那就是很多数据开始出现交叉，各个维度的数据从点和线渐渐连成了网，或者说，数据之间的关联性极大地增强，在这样的背景下，就出现了大数据。</p><p>大数据是一种思维方式的改变。现在的相比过去大了很多，量变带来了质变，思维方式、做事情的方法就应该和以往有所不同。这其实是帮助我们理解大数据概念的一把钥匙。在有大数据之前，计算机并不擅长解决需要人类智能来解决的问题，但是今天这些问题换个思路就可以解决了，其核心就是变智能问题为数据问题。由此，全世界开始了新的一轮技术革命——智能革命。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Artificial Intelligence</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>人工智能</tag>
+      
+      <tag>Artificial Intelligence</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>AI是什么</title>
+    <link href="/2018/11/25/AI%E6%98%AF%E4%BB%80%E4%B9%88/"/>
+    <url>/2018/11/25/AI%E6%98%AF%E4%BB%80%E4%B9%88/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="AI是什么"><a href="#AI是什么" class="headerlink" title="AI是什么"></a>AI是什么</h3><p>AI，“Artificial Intelligence”的缩写，中文“人工智能”；可以理解为让机器具备类似人的智能，从而代替人类完成某些工作和任务。</p><ul><li><p>“强人工智能”</p><p>能够像人类一样去思考和推理，具备自我意识</p></li><li><p>“弱人工智能”</p><p>机器表现出来的特征是智能的，但是不具备自我意识</p><ul><li><p>通过相关规则编程，使机器按照程序逻辑完成特定的任务</p></li><li><p>针对某一任务向机器提供大量数据，使机器自己去学习，继而挖掘出规律，从而完成任务</p></li></ul></li></ul><h4 id="弱人工智能"><a href="#弱人工智能" class="headerlink" title="弱人工智能"></a>弱人工智能</h4><h5 id="机器学习"><a href="#机器学习" class="headerlink" title="机器学习"></a>机器学习</h5><p><em>从模型层次结构的角度可以分为浅层学习和深度学习</em></p><h6 id="浅层学习（Shallow-Learning）"><a href="#浅层学习（Shallow-Learning）" class="headerlink" title="浅层学习（Shallow Learning）"></a>浅层学习（Shallow Learning）</h6><ul><li><p>模型层次较浅，通常没有隐藏层、或只有一层隐藏层</p></li><li><p>可以做一些预测、分类、聚类、降低数据维度、压缩数据、商品推荐系统等工作</p></li><li><p>常见算法：</p><ul><li><p>线性回归</p></li><li><p>逻辑回归</p></li><li><p>随机森林</p></li><li><p>SVM</p></li><li><p>K-means</p></li><li><p>RBM</p></li><li><p>AutoEncoder</p></li><li><p>PCA</p></li><li><p>SOM</p></li><li><p>……</p></li></ul></li></ul><h6 id="深度学习（Deep-Learning）"><a href="#深度学习（Deep-Learning）" class="headerlink" title="深度学习（Deep Learning）"></a>深度学习（Deep Learning）</h6><ul><li>“深”是因为通常具有较多的隐藏层，进而拥有表达更多复杂函数的能力，进而能识别更复杂的特征</li><li>主要集中在CNN 和RNN</li><li><p><strong>CNN</strong></p><ul><li><p><strong>CNN</strong>为Convolution Neural NetWorks的缩写，也就是卷积神经网络</p></li><li><p>主要应用于计算机视觉、图像分类领域</p></li><li><p>应用场景示例</p><ul><li><p>美颜相机的滤镜</p></li><li><p>交通监控识别车辆车型、车牌号</p></li><li><p>商汤人脸识别</p></li><li><p>无人车</p></li><li><p>……</p></li></ul></li></ul></li><li><strong>RNN</strong><ul><li>Recurrent Neual NetWorks的缩写，递归神经网络</li><li>基于<strong>RNN</strong>还衍生出<strong>LSTM</strong>（Long-Short-Term-Memerory） 和<strong>GRU</strong>（Gated Recurrent Unit）等</li><li>具有记忆过去的能力，故用来处理一些有<strong>时间序列属性</strong>的数据，处理语言、文字具有优势</li><li>应用场景示例：<ul><li>Siri<strong>对话机器人</strong></li><li>谷歌翻译，<strong>机器翻译</strong></li><li>语音转文字</li><li>……</li></ul></li></ul></li></ul><h3 id="AI本质"><a href="#AI本质" class="headerlink" title="AI本质"></a>AI本质</h3><p><em>AI本质上都是一个函数</em></p><p><em>AI其实就是我们提供机器目前已有的数据，机器从数据去找出一个最能拟合这些数据的函数；当有新的数据需要预测时，机器通过之前找到的函数去预测新数据的对应结果。</em></p><ul><li><p>通用要素</p><p><strong>AI = 数据+算法+模型</strong></p></li><li><p>示例讲解—分类器模型为区分A 和B</p><ul><li><p>数据</p><ul><li>准备大量已标注过 是A  还是B的图片</li><li>只有数据量足够大，模型才能够学习足够准确的 区分A 和B的特征，在进行最终的AB任务区分上，才能表现出足够高的准确性</li></ul></li><li><p>算法</p><ul><li><p>网络架构设计：构建模型时，采用浅层网络还是深层网络，如为深层，则需多少层，每层油多少神经元，功能是什么等</p></li><li><p>预测函数的大致结构<br>$$<br>Y= f(W,X,b)<br>$$<br>Y ，是已有的图片数据的标签；（A和B的图片）</p><p>X，是已有的用来训练的数据；（该图是A 还是B）</p><p>W，权重；b，偏差 ； 这两个参数通过机器学习后得出</p></li><li><p>寻找W 和b 的过程，就是模型训练的过程</p></li></ul></li><li><p>模型</p><ul><li><p>将数据带入算法中训练，机器不断学习，当机器找到最优 W 权重，b 偏差；就意味着模型 train成功了</p></li><li><p>函数模型<br>$$<br>Y=f(W,X,b)<br>$$</p></li><li><p>提供新的数据输入该模型，算出新的数据是A或者B，即为模型的<strong>预测功能</strong></p></li></ul></li></ul></li></ul><p><strong>不管是简单的线性回归，还是复杂的深度神经网络模型，本质都是寻找一个能够良好拟合目前已有数据的函数</strong><br>$$<br>Y=f(W，X，b)<br>$$<br><strong>并且这个函数在新的未知数据上也能够表现良好。</strong></p>]]></content>
     
     
     <categories>
@@ -2357,39 +2357,6 @@
   
   
   <entry>
-    <title>数据分析05：matplotlib直方图</title>
-    <link href="/2018/03/02/05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE/"/>
-    <url>/2018/03/02/05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt&#39;&#39;&#39;    由于一系列不等的纵形图组成，表示数据分布的情况    例如：某年级同学的身高分布    需要注意与 柱形图的区别&#39;&#39;&#39;# # 例# mu = 100    #均值# sigma = 20    # 标准差## x = mu + sigma * np.random.random(1000)# plt.hist(x,bins=20,density=True)# plt.show()### # 双变量图 频率越低越暗# # x的中心为2# x = np.random.randn(1000) +2# # y的中心为3# y = np.random.randn(1000)+3## plt.hist2d(x,y,bins=40)# plt.show()# 练习&#39;&#39;&#39;    随机生成2000个数据，均值为10， 方差3；    绘制两个直方图， bins =10 和50 ，normed ／density 分别为True,False;    随机生成x,y 各2000个， x均值1 ，y 均值5;    绘制2-D直方图， bins = 40;&#39;&#39;&#39;# 均值ava = 10# 方差variance = 3sigma = np.sqrt(variance)x = ava + sigma * np.random.random(2000)plt.hist(x,bins=10,density=True)plt.show()plt.hist(x,bins=50,density=False)plt.show()x = np.random.randn(2000) +1y = np.random.randn(2000) + 5plt.hist2d(x,y,bins=40)plt.show()</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>数据分析</category>
-      
-      <category>Python3</category>
-      
-      <category>Matplotlib</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>数据分析</tag>
-      
-      <tag>Python3</tag>
-      
-      <tag>Matplotlib</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>数据分析08：matplotlib颜色与样式</title>
     <link href="/2018/03/02/08-matplotlib%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%A0%B7%E5%BC%8F/"/>
     <url>/2018/03/02/08-matplotlib%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%A0%B7%E5%BC%8F/</url>
@@ -2456,11 +2423,11 @@
   
   
   <entry>
-    <title>数据分析04：matplotlib柱形图</title>
-    <link href="/2018/03/02/04-matploylib%E6%9F%B1%E5%BD%A2%E5%9B%BE/"/>
-    <url>/2018/03/02/04-matploylib%E6%9F%B1%E5%BD%A2%E5%9B%BE/</url>
+    <title>数据分析05：matplotlib直方图</title>
+    <link href="/2018/03/02/05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE/"/>
+    <url>/2018/03/02/05-matplotlib%E7%9B%B4%E6%96%B9%E5%9B%BE/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt# 柱形图# 例一N =5y =  [15,28,10,30,25]index = np.arange(N)p = plt.bar(index,height=y)plt.show()# 例2p1 = plt.bar(0,bottom=index,width=y,height=0.5,align=&#39;edge&#39;,color=&#39;red&#39;,orientation=&#39;horizontal&#39;)plt.show()p2 = plt.barh(index,width= y , align=&#39;edge&#39;,color =&#39;green&#39;,height=0.5)plt.show()# 例3sales_BJ = [52,55,63,53]sales_SH = [44,66,55,41]index = np.arange(4)bar_width = 0.3# 竖着显示plt.bar(index,sales_BJ,bar_width)plt.bar(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;)plt.show()# 横着显示plt.barh(index,sales_BJ,bar_width)plt.barh(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;)plt.show()# 层叠图plt.bar(index,sales_BJ,bar_width)plt.bar(index,sales_SH,bar_width,color=&#39;r&#39;,bottom=sales_BJ)plt.show()# 练习&#39;&#39;&#39;    生成两组大小为5的数据；    画出两组数据 水平的条形图；    采用并列，层叠两种方式；&#39;&#39;&#39;N =5n1 = np.random.randint(1,100,N)n2 = np.random.randint(1,100,N)index = np.arange(N)bar_width = 0.3# 并列显示plt.bar(index,n1,bar_width)plt.bar(index+bar_width,n2,bar_width,color=&#39;r&#39;)plt.show()# 层叠显示plt.bar(index,n1,bar_width)plt.bar(index,n2,bar_width,color=&#39;r&#39;,bottom=n1)plt.show()</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt&#39;&#39;&#39;    由于一系列不等的纵形图组成，表示数据分布的情况    例如：某年级同学的身高分布    需要注意与 柱形图的区别&#39;&#39;&#39;# # 例# mu = 100    #均值# sigma = 20    # 标准差## x = mu + sigma * np.random.random(1000)# plt.hist(x,bins=20,density=True)# plt.show()### # 双变量图 频率越低越暗# # x的中心为2# x = np.random.randn(1000) +2# # y的中心为3# y = np.random.randn(1000)+3## plt.hist2d(x,y,bins=40)# plt.show()# 练习&#39;&#39;&#39;    随机生成2000个数据，均值为10， 方差3；    绘制两个直方图， bins =10 和50 ，normed ／density 分别为True,False;    随机生成x,y 各2000个， x均值1 ，y 均值5;    绘制2-D直方图， bins = 40;&#39;&#39;&#39;# 均值ava = 10# 方差variance = 3sigma = np.sqrt(variance)x = ava + sigma * np.random.random(2000)plt.hist(x,bins=10,density=True)plt.show()plt.hist(x,bins=50,density=False)plt.show()x = np.random.randn(2000) +1y = np.random.randn(2000) + 5plt.hist2d(x,y,bins=40)plt.show()</code></pre>]]></content>
     
     
     <categories>
@@ -2489,42 +2456,11 @@
   
   
   <entry>
-    <title>SpringBoot数据访问JPA</title>
-    <link href="/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/"/>
-    <url>/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/</url>
+    <title>数据分析04：matplotlib柱形图</title>
+    <link href="/2018/03/02/04-matploylib%E6%9F%B1%E5%BD%A2%E5%9B%BE/"/>
+    <url>/2018/03/02/04-matploylib%E6%9F%B1%E5%BD%A2%E5%9B%BE/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot数据访问-整合JPA"><a href="#SpringBoot数据访问-整合JPA" class="headerlink" title="SpringBoot数据访问-整合JPA"></a>SpringBoot数据访问-整合JPA</h1><ul><li>Entity –定义实体类，与数据表映射</li><li>Repository —定义操作，操作实体类中的数据表</li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-      <category>SpringBoot</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>服务端</tag>
-      
-      <tag>Java</tag>
-      
-      <tag>SpringBoot</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>数据分析01：numpy基础</title>
-    <link href="/2018/03/02/01-numpy%E5%9F%BA%E7%A1%80/"/>
-    <url>/2018/03/02/01-numpy%E5%9F%BA%E7%A1%80/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as np# ndarray&#39;&#39;&#39;    # 三种创建方式    1、从python的基础数据对象转化    2、通过numpy内置的函数生成    3、从硬盘（文件）读取数据&#39;&#39;&#39;# 创建方法一a= [1,2,3,4]x1 = np.array(a)print(x1,&quot;\n&quot;,type(x1))# 创建方法二x = np.arange(5)print(x,&quot;\n&quot;,type(x))# # 创建方法三# date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True)# print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low)# 常用函数&#39;&#39;&#39;    min     最小值    max     最大值    median      中值    mean        均值    variance        方差    sort        &#39;&#39;&#39;c = np.random.randint(1,100,10)print(np.sort(c))print(np.mean(c))# 练习&#39;&#39;&#39;    使用numpy生成100以内的随机数组    将数组存储到文件，再从文件中读取数组    对数据进行sort ,max ,min ,mean ,variance&#39;&#39;&#39;N1 = np.random.randint(0,100,10)# 将N1 存储到文件中np.savetxt(&quot;0002.cvs&quot;,N1,fmt = &quot;%d&quot;,delimiter=&quot;,&quot;,header=&quot;number&quot;)# 从文件中读取数组N2 = np.loadtxt(&quot;0002.cvs&quot;,delimiter=&quot;,&quot;,skiprows=1)print(np.sort(N2))print(np.max(N2))</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt# 柱形图# 例一N =5y =  [15,28,10,30,25]index = np.arange(N)p = plt.bar(index,height=y)plt.show()# 例2p1 = plt.bar(0,bottom=index,width=y,height=0.5,align=&#39;edge&#39;,color=&#39;red&#39;,orientation=&#39;horizontal&#39;)plt.show()p2 = plt.barh(index,width= y , align=&#39;edge&#39;,color =&#39;green&#39;,height=0.5)plt.show()# 例3sales_BJ = [52,55,63,53]sales_SH = [44,66,55,41]index = np.arange(4)bar_width = 0.3# 竖着显示plt.bar(index,sales_BJ,bar_width)plt.bar(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;)plt.show()# 横着显示plt.barh(index,sales_BJ,bar_width)plt.barh(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;)plt.show()# 层叠图plt.bar(index,sales_BJ,bar_width)plt.bar(index,sales_SH,bar_width,color=&#39;r&#39;,bottom=sales_BJ)plt.show()# 练习&#39;&#39;&#39;    生成两组大小为5的数据；    画出两组数据 水平的条形图；    采用并列，层叠两种方式；&#39;&#39;&#39;N =5n1 = np.random.randint(1,100,N)n2 = np.random.randint(1,100,N)index = np.arange(N)bar_width = 0.3# 并列显示plt.bar(index,n1,bar_width)plt.bar(index+bar_width,n2,bar_width,color=&#39;r&#39;)plt.show()# 层叠显示plt.bar(index,n1,bar_width)plt.bar(index,n2,bar_width,color=&#39;r&#39;,bottom=n1)plt.show()</code></pre>]]></content>
     
     
     <categories>
@@ -2533,7 +2469,7 @@
       
       <category>Python3</category>
       
-      <category>Numpy</category>
+      <category>Matplotlib</category>
       
     </categories>
     
@@ -2544,7 +2480,7 @@
       
       <tag>Python3</tag>
       
-      <tag>Numpy</tag>
+      <tag>Matplotlib</tag>
       
     </tags>
     
@@ -2586,62 +2522,31 @@
   
   
   <entry>
-    <title>SpringBoot-WebSocket聊天室</title>
-    <link href="/2018/03/02/SpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4/"/>
-    <url>/2018/03/02/SpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4/</url>
+    <title>数据分析01：numpy基础</title>
+    <link href="/2018/03/02/01-numpy%E5%9F%BA%E7%A1%80/"/>
+    <url>/2018/03/02/01-numpy%E5%9F%BA%E7%A1%80/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot-WebSocket-聊天室"><a href="#SpringBoot-WebSocket-聊天室" class="headerlink" title="SpringBoot-WebSocket 聊天室"></a>SpringBoot-WebSocket 聊天室</h1><h2 id="配置类Config"><a href="#配置类Config" class="headerlink" title="配置类Config"></a>配置类Config</h2><pre><code class="java">// websocket配置@Bean    public ServerEndpointExporter serverEndpointExporter() {        return new ServerEndpointExporter();    }</code></pre><h2 id="业务类Controller"><a href="#业务类Controller" class="headerlink" title="业务类Controller"></a>业务类Controller</h2><pre><code class="java">import org.springframework.stereotype.Component;import javax.websocket.*;import javax.websocket.server.PathParam;import javax.websocket.server.ServerEndpoint;import java.util.HashMap;import java.util.Map;import java.util.concurrent.CopyOnWriteArraySet;/** *  * @Description: websocket的具体实现类 *  * 使用springboot的唯一区别是要@Component声明下，而使用独立容器是由容器自己管理websocket的， *  * 但在springboot中连容器都是spring管理的。 *     虽然@Component默认是单例模式的，但springboot还是会为每个websocket连接初始化一个bean， *     所以可以用一个静态set保存起来。*/@ServerEndpoint(value = &quot;/websocket/{nickName}&quot;)@Componentpublic class MyWebSocket {    //用来存放每个客户端对应的MyWebSocket对象。    private static CopyOnWriteArraySet&lt;MyWebSocket&gt; webSocketSet = new CopyOnWriteArraySet&lt;MyWebSocket&gt;();    private static Map&lt;Session, UserInfo&gt; connectmap = new HashMap&lt;&gt;();//用session作为key，保存用户信息    //与某个客户端的连接会话，需要通过它来给客户端发送数据    private Session session;    /**     * 连接建立成功调用的方法     */    @OnOpen    public void onOpen(Session session, @PathParam(&quot;nickName&quot;) String nickName) {        this.session = session;        UserInfo userInfo = new UserInfo(session.getId(),nickName);        connectmap.put(session,userInfo);        webSocketSet.add(this);     //加入set中        System.out.println(nickName+&quot; 上线了！当前在线人数为&quot; + webSocketSet.size());        //群发消息，告诉每一位        broadcast(nickName+&quot; 上线了！--&gt;当前在线人数为：&quot;+webSocketSet.size());    }    /**     * 连接关闭调用的方法     */    @OnClose    public void onClose() {        String nickName=connectmap.get(session).getNickName();        connectmap.remove(session);        webSocketSet.remove(this);  //从set中删除        System.out.println(nickName+&quot; 下线了！当前在线人数为&quot; + webSocketSet.size());        //群发消息，告诉每一位        broadcast(nickName+&quot; 下线，当前在线人数为：&quot;+webSocketSet.size());    }    /**     * 收到客户端消息后调用的方法     *     * @param message 客户端发送过来的消息     * */    @OnMessage    public void onMessage(String message, Session session) {        System.out.println(&quot;来自客户端的消息:&quot; + message);        //群发消息        String nickName=connectmap.get(session).getNickName();        broadcast(nickName+&quot; 说：&quot;+message);    }    /**     * 发生错误时调用     *     */    @OnError    public void onError(Session session, Throwable error) {        System.out.println(&quot;发生错误&quot;);        error.printStackTrace();    }    /**     * 群发自定义消息     * */    public  void broadcast(String message){        for (MyWebSocket item : webSocketSet) {            //同步异步说明参考：http://blog.csdn.net/who_is_xiaoming/article/details/53287691            //this.session.getBasicRemote().sendText(message);            item.session.getAsyncRemote().sendText(message);//异步发送消息.        }    }}</code></pre><h2 id="实体类Entity"><a href="#实体类Entity" class="headerlink" title="实体类Entity"></a>实体类Entity</h2><pre><code class="java">public class UserInfo {    private String id;    private String nickName;    private String password;    public UserInfo() {    }    public UserInfo(String id, String nickName) {        this.id = id;        this.nickName = nickName;    }    public String getId() {        return id;    }    public void setId(String id) {        this.id = id;    }    public String getNickName() {        return nickName;    }    public void setNickName(String nickName) {        this.nickName = nickName;    }    public String getPassword() {        return password;    }    public void setPassword(String password) {        this.password = password;    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as np# ndarray&#39;&#39;&#39;    # 三种创建方式    1、从python的基础数据对象转化    2、通过numpy内置的函数生成    3、从硬盘（文件）读取数据&#39;&#39;&#39;# 创建方法一a= [1,2,3,4]x1 = np.array(a)print(x1,&quot;\n&quot;,type(x1))# 创建方法二x = np.arange(5)print(x,&quot;\n&quot;,type(x))# # 创建方法三# date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True)# print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low)# 常用函数&#39;&#39;&#39;    min     最小值    max     最大值    median      中值    mean        均值    variance        方差    sort        &#39;&#39;&#39;c = np.random.randint(1,100,10)print(np.sort(c))print(np.mean(c))# 练习&#39;&#39;&#39;    使用numpy生成100以内的随机数组    将数组存储到文件，再从文件中读取数组    对数据进行sort ,max ,min ,mean ,variance&#39;&#39;&#39;N1 = np.random.randint(0,100,10)# 将N1 存储到文件中np.savetxt(&quot;0002.cvs&quot;,N1,fmt = &quot;%d&quot;,delimiter=&quot;,&quot;,header=&quot;number&quot;)# 从文件中读取数组N2 = np.loadtxt(&quot;0002.cvs&quot;,delimiter=&quot;,&quot;,skiprows=1)print(np.sort(N2))print(np.max(N2))</code></pre>]]></content>
     
     
     <categories>
       
-      <category>Java</category>
+      <category>数据分析</category>
       
-      <category>SpringBoot</category>
+      <category>Python3</category>
+      
+      <category>Numpy</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>服务端</tag>
+      <tag>数据分析</tag>
       
-      <tag>Java</tag>
+      <tag>Python3</tag>
       
-      <tag>SpringBoot</tag>
-      
-      <tag>WebSocket</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>CentOS-Maven配置</title>
-    <link href="/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/"/>
-    <url>/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Centos-Maven配置"><a href="#Centos-Maven配置" class="headerlink" title="Centos-Maven配置"></a>Centos-Maven配置</h1><p> 配置maven镜像</p><pre><code class="xml">&lt;mirror&gt;    &lt;id&gt;alimaven&lt;/id&gt;    &lt;name&gt;aliyun maven&lt;/name&gt;  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;&lt;/mirror&gt;</code></pre><p>maven配置路径 </p><pre><code class="shell">export M2_HOME=/usr/local/maven3/apache-maven-3.6.3export PATH=$PATH$:M2_HOME/binsource /etc/profile</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-      <category>SpringBoot</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>服务端</tag>
-      
-      <tag>Java</tag>
-      
-      <tag>SpringBoot</tag>
+      <tag>Numpy</tag>
       
     </tags>
     
@@ -2706,6 +2611,101 @@
       <tag>Python3</tag>
       
       <tag>Matplotlib</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SpringBoot数据访问JPA</title>
+    <link href="/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/"/>
+    <url>/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot数据访问-整合JPA"><a href="#SpringBoot数据访问-整合JPA" class="headerlink" title="SpringBoot数据访问-整合JPA"></a>SpringBoot数据访问-整合JPA</h1><ul><li>Entity –定义实体类，与数据表映射</li><li>Repository —定义操作，操作实体类中的数据表</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+      <category>SpringBoot</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>服务端</tag>
+      
+      <tag>Java</tag>
+      
+      <tag>SpringBoot</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>CentOS-Maven配置</title>
+    <link href="/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/"/>
+    <url>/2018/03/02/Centos-Maven%E9%85%8D%E7%BD%AE/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Centos-Maven配置"><a href="#Centos-Maven配置" class="headerlink" title="Centos-Maven配置"></a>Centos-Maven配置</h1><p> 配置maven镜像</p><pre><code class="xml">&lt;mirror&gt;    &lt;id&gt;alimaven&lt;/id&gt;    &lt;name&gt;aliyun maven&lt;/name&gt;  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;&lt;/mirror&gt;</code></pre><p>maven配置路径 </p><pre><code class="shell">export M2_HOME=/usr/local/maven3/apache-maven-3.6.3export PATH=$PATH$:M2_HOME/binsource /etc/profile</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+      <category>SpringBoot</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>服务端</tag>
+      
+      <tag>Java</tag>
+      
+      <tag>SpringBoot</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>SpringBoot-WebSocket聊天室</title>
+    <link href="/2018/03/02/SpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4/"/>
+    <url>/2018/03/02/SpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot-WebSocket-聊天室"><a href="#SpringBoot-WebSocket-聊天室" class="headerlink" title="SpringBoot-WebSocket 聊天室"></a>SpringBoot-WebSocket 聊天室</h1><h2 id="配置类Config"><a href="#配置类Config" class="headerlink" title="配置类Config"></a>配置类Config</h2><pre><code class="java">// websocket配置@Bean    public ServerEndpointExporter serverEndpointExporter() {        return new ServerEndpointExporter();    }</code></pre><h2 id="业务类Controller"><a href="#业务类Controller" class="headerlink" title="业务类Controller"></a>业务类Controller</h2><pre><code class="java">import org.springframework.stereotype.Component;import javax.websocket.*;import javax.websocket.server.PathParam;import javax.websocket.server.ServerEndpoint;import java.util.HashMap;import java.util.Map;import java.util.concurrent.CopyOnWriteArraySet;/** *  * @Description: websocket的具体实现类 *  * 使用springboot的唯一区别是要@Component声明下，而使用独立容器是由容器自己管理websocket的， *  * 但在springboot中连容器都是spring管理的。 *     虽然@Component默认是单例模式的，但springboot还是会为每个websocket连接初始化一个bean， *     所以可以用一个静态set保存起来。*/@ServerEndpoint(value = &quot;/websocket/{nickName}&quot;)@Componentpublic class MyWebSocket {    //用来存放每个客户端对应的MyWebSocket对象。    private static CopyOnWriteArraySet&lt;MyWebSocket&gt; webSocketSet = new CopyOnWriteArraySet&lt;MyWebSocket&gt;();    private static Map&lt;Session, UserInfo&gt; connectmap = new HashMap&lt;&gt;();//用session作为key，保存用户信息    //与某个客户端的连接会话，需要通过它来给客户端发送数据    private Session session;    /**     * 连接建立成功调用的方法     */    @OnOpen    public void onOpen(Session session, @PathParam(&quot;nickName&quot;) String nickName) {        this.session = session;        UserInfo userInfo = new UserInfo(session.getId(),nickName);        connectmap.put(session,userInfo);        webSocketSet.add(this);     //加入set中        System.out.println(nickName+&quot; 上线了！当前在线人数为&quot; + webSocketSet.size());        //群发消息，告诉每一位        broadcast(nickName+&quot; 上线了！--&gt;当前在线人数为：&quot;+webSocketSet.size());    }    /**     * 连接关闭调用的方法     */    @OnClose    public void onClose() {        String nickName=connectmap.get(session).getNickName();        connectmap.remove(session);        webSocketSet.remove(this);  //从set中删除        System.out.println(nickName+&quot; 下线了！当前在线人数为&quot; + webSocketSet.size());        //群发消息，告诉每一位        broadcast(nickName+&quot; 下线，当前在线人数为：&quot;+webSocketSet.size());    }    /**     * 收到客户端消息后调用的方法     *     * @param message 客户端发送过来的消息     * */    @OnMessage    public void onMessage(String message, Session session) {        System.out.println(&quot;来自客户端的消息:&quot; + message);        //群发消息        String nickName=connectmap.get(session).getNickName();        broadcast(nickName+&quot; 说：&quot;+message);    }    /**     * 发生错误时调用     *     */    @OnError    public void onError(Session session, Throwable error) {        System.out.println(&quot;发生错误&quot;);        error.printStackTrace();    }    /**     * 群发自定义消息     * */    public  void broadcast(String message){        for (MyWebSocket item : webSocketSet) {            //同步异步说明参考：http://blog.csdn.net/who_is_xiaoming/article/details/53287691            //this.session.getBasicRemote().sendText(message);            item.session.getAsyncRemote().sendText(message);//异步发送消息.        }    }}</code></pre><h2 id="实体类Entity"><a href="#实体类Entity" class="headerlink" title="实体类Entity"></a>实体类Entity</h2><pre><code class="java">public class UserInfo {    private String id;    private String nickName;    private String password;    public UserInfo() {    }    public UserInfo(String id, String nickName) {        this.id = id;        this.nickName = nickName;    }    public String getId() {        return id;    }    public void setId(String id) {        this.id = id;    }    public String getNickName() {        return nickName;    }    public void setNickName(String nickName) {        this.nickName = nickName;    }    public String getPassword() {        return password;    }    public void setPassword(String password) {        this.password = password;    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+      <category>SpringBoot</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>服务端</tag>
+      
+      <tag>Java</tag>
+      
+      <tag>SpringBoot</tag>
+      
+      <tag>WebSocket</tag>
       
     </tags>
     
@@ -3181,11 +3181,11 @@
   
   
   <entry>
-    <title>Java-String类</title>
-    <link href="/2016/03/02/Java-String%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-String%E7%B1%BB/</url>
+    <title>Java-SwitchCase语句</title>
+    <link href="/2016/03/02/Java-SwitchCase/"/>
+    <url>/2016/03/02/Java-SwitchCase/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-String类"><a href="#Java-String类" class="headerlink" title="Java-String类"></a>Java-String类</h1><pre><code>public class StringDemo {    //String 方法    /*        SN(序号)    方法描述1    char charAt(int index)返回指定索引处的 char 值。2    int compareTo(Object o)把这个字符串和另一个对象比较。3    int compareTo(String anotherString)按字典顺序比较两个字符串。4    int compareToIgnoreCase(String str)按字典顺序比较两个字符串，不考虑大小写。5    String concat(String str)将指定字符串连接到此字符串的结尾。6    boolean contentEquals(StringBuffer sb)当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。7    static String copyValueOf(char[] data)返回指定数组中表示该字符序列的 String。8    static String copyValueOf(char[] data, int offset, int count)返回指定数组中表示该字符序列的 String。9    boolean endsWith(String suffix)测试此字符串是否以指定的后缀结束。10    boolean equals(Object anObject)将此字符串与指定的对象比较。11    boolean equalsIgnoreCase(String anotherString)将此 String 与另一个 String 比较，不考虑大小写。12    byte[] getBytes() 使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。13    byte[] getBytes(String charsetName)使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。14    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此字符串复制到目标字符数组。15    int hashCode()返回此字符串的哈希码。16    int indexOf(int ch)返回指定字符在此字符串中第一次出现处的索引。17    int indexOf(int ch, int fromIndex)返回在此字符串中第一次出现指定字符处的索引，从指定的索引开始搜索。18    int indexOf(String str) 返回指定子字符串在此字符串中第一次出现处的索引。19    int indexOf(String str, int fromIndex)返回指定子字符串在此字符串中第一次出现处的索引，从指定的索引开始。20    String intern() 返回字符串对象的规范化表示形式。21    int lastIndexOf(int ch) 返回指定字符在此字符串中最后一次出现处的索引。22    int lastIndexOf(int ch, int fromIndex)返回指定字符在此字符串中最后一次出现处的索引，从指定的索引处开始进行反向搜索。23    int lastIndexOf(String str)返回指定子字符串在此字符串中最右边出现处的索引。24    int lastIndexOf(String str, int fromIndex) 返回指定子字符串在此字符串中最后一次出现处的索引，从指定的索引开始反向搜索。25    int length()返回此字符串的长度。26    boolean matches(String regex)告知此字符串是否匹配给定的正则表达式。27    boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)测试两个字符串区域是否相等。28    boolean regionMatches(int toffset, String other, int ooffset, int len)测试两个字符串区域是否相等。29    String replace(char oldChar, char newChar)返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。30    String replaceAll(String regex, String replacement)使用给定的 replacement 替换此字符串所有匹配给定的正则表达式的子字符串。31    String replaceFirst(String regex, String replacement) 使用给定的 replacement 替换此字符串匹配给定的正则表达式的第一个子字符串。32    String[] split(String regex)根据给定正则表达式的匹配拆分此字符串。33    String[] split(String regex, int limit)根据匹配给定的正则表达式来拆分此字符串。34    boolean startsWith(String prefix)测试此字符串是否以指定的前缀开始。35    boolean startsWith(String prefix, int toffset)测试此字符串从指定索引开始的子字符串是否以指定前缀开始。36    CharSequence subSequence(int beginIndex, int endIndex) 返回一个新的字符序列，它是此序列的一个子序列。37    String substring(int beginIndex)返回一个新的字符串，它是此字符串的一个子字符串。38    String substring(int beginIndex, int endIndex)返回一个新字符串，它是此字符串的一个子字符串。39    char[] toCharArray()将此字符串转换为一个新的字符数组。40    String toLowerCase()使用默认语言环境的规则将此 String 中的所有字符都转换为小写。41    String toLowerCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为小写。42    String toString() 返回此对象本身（它已经是一个字符串！）。43    String toUpperCase()使用默认语言环境的规则将此 String 中的所有字符都转换为大写。44    String toUpperCase(Locale locale)使用给定 Locale 的规则将此 String 中的所有字符都转换为大写。45    String trim()返回字符串的副本，忽略前导空白和尾部空白。46    static String valueOf(primitive data type x)返回给定data type类型x参数的字符串表示形式。     */    public static void main(String[] args) {        char[] hello = {&#39;g&#39;, &#39;z&#39;, &#39;y&#39;};        String helloString = new String(hello);        System.out.println(helloString);        System.out.println(helloString.length());    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-SwitchCase语句"><a href="#Java-SwitchCase语句" class="headerlink" title="Java-SwitchCase语句"></a>Java-SwitchCase语句</h1><pre><code>public class SwitchCase {    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。    /*        switch(expression){            case value :                //语句                break; //可选            case value :                //语句                break; //可选            //你可以有任意数量的case语句            default : //可选                //语句   不需要break        }     */    public static void main(String[]args){        char grade =&#39;C&#39;;        switch (grade)        {            case &#39;A&#39;:                System.out.println(&quot;优秀&quot;);                break;            case &#39;B&#39;:            case &#39;C&#39;:                System.out.println(&quot;良好&quot;);                break;            case &#39;D&#39;:                System.out.println(&quot;及格&quot;);                break;            case &#39;F&#39;:                System.out.println(&quot;你还需要继续努力&quot;);                break;            default:                System.out.println(&quot;未知等级&quot;);        }        System.out.println(&quot;你的等级是&quot; + grade);    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3231,186 +3231,11 @@
   
   
   <entry>
-    <title>Java-NumberMath类</title>
-    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Java循环结构</title>
     <link href="/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
     <url>/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java循环结构"><a href="#Java循环结构" class="headerlink" title="Java循环结构"></a>Java循环结构</h1><pre><code>public class LoopStructure {    /*        while 循环        do…while 循环        for 循环     */    public static void main(String[] args) {        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环        System.out.println(&quot;while 循环&quot;);        int x = 10;        while (x &lt; 20) {            System.out.println(x);            x++;        }        // do…while 循环，至少执行一次        /*            do {                //代码语句            }while(布尔表达式);         */        System.out.println(&quot;do…while循环&quot;);        int y = 10;        do {            System.out.println(y);            y++;        } while (y &lt; 10);        // for 循环，执行前就确定执行次数        /*            for(初始化; 布尔表达式; 更新) {                //代码语句            }         */        System.out.println(&quot;for 循环&quot;);        for (int z = 0; z &lt; 20; z = z + 1) {            System.out.println(z);        }        //增强for循环        /*            for(声明语句 : 表达式)            {                //代码句子            }         */        System.out.println(&quot;增强for 循环&quot;);        int[] numbers = {10, 20, 30, 40, 50};        for (int number : numbers) {            System.out.println(number);        }        String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;};        for (String name : names) {            System.out.println(name);        }        //break关键字        /*            break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。            break 跳出最里层的循环，并且继续执行该循环下面的语句。         */        System.out.println(&quot;break关键字&quot;);        int[] numbers1 = {10, 20, 30, 40, 50};        for (int number : numbers1) {            if (number == 30) {                break;            }            System.out.println(number);        }        //continue关键字        /*            continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。            在 for 循环中，continue 语句使程序立即跳转到更新语句。            在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。         */        System.out.println(&quot;continue关键字&quot;);        int[] numbers2 = {10, 20, 30, 40, 50};        for (int number : numbers2) {            if (number == 30) {                continue;            }            System.out.println(number);        }    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java-Scanner类</title>
-    <link href="/2016/03/02/Java-Scanner%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-Scanner%E7%B1%BB/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-Scanner类"><a href="#Java-Scanner类" class="headerlink" title="Java-Scanner类"></a>Java-Scanner类</h1><pre><code>import java.util.Scanner;public class ScannerDemo {    //Scanner类 获取用户的输入    /*        next() 与 nextLine() 区别        next():            1、一定要读取到有效字符后才可以结束输入。            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。        next() 不能得到带有空格的字符串。        nextLine()：            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。            2、可以获得空白。        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：     */    public void NextDemo() {        //从键盘接收数据        Scanner scan1 = new Scanner(System.in);        //next方式接收字符串        System.out.println(&quot;next方式接收：&quot;);        //判断是否还有输入        if (scan1.hasNext()) {            String str1 = scan1.next();            System.out.println(&quot;输入的数据为：&quot; + str1);        }        scan1.close();    }    public void NextLineDemo() {        //从键盘接收数据        Scanner scan2 = new Scanner(System.in);        //nextLine方式接收字符串        System.out.println(&quot;nextLine方式接收：&quot;);        //判断是否还有输入        if (scan2.hasNext()) {            String str2 = scan2.nextLine();            System.out.println(&quot;输入的数据为：&quot; + str2);        }        scan2.close();    }    public static void main(String[] args) {        ScannerDemo s = new ScannerDemo();//        s.NextDemo();        s.NextLineDemo();    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java-Character类</title>
-    <link href="/2016/03/02/Java-Character%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-Character%E7%B1%BB/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-Character类"><a href="#Java-Character类" class="headerlink" title="Java-Character类"></a>Java-Character类</h1><pre><code>public class CharacterDemo {    // 对单个字符进行操作    /*        转义序列    描述        \t    在文中该处插入一个tab键        \b    在文中该处插入一个后退键        \n    在文中该处换行        \r    在文中该处插入回车        \f    在文中该处插入换页符        \&#39;    在文中该处插入单引号        \&quot;    在文中该处插入双引号        \\    在文中该处插入反斜杠     */    //字符方法    /*        序号    方法与描述        1    isLetter()是否是一个字母        2    isDigit()是否是一个数字字符        3    isWhitespace()是否是一个空白字符        4    isUpperCase()是否是大写字母        5    isLowerCase()是否是小写字母        6    toUpperCase()指定字母的大写形式        7    toLowerCase()指定字母的小写形式        8    toString()返回字符的字符串形式，字符串的长度仅为1     */    public static void main(String[] args) {        System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;);    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java-StringBuffer</title>
-    <link href="/2016/03/02/Java-StringBuffer/"/>
-    <url>/2016/03/02/Java-StringBuffer/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-StringBuffer"><a href="#Java-StringBuffer" class="headerlink" title="Java-StringBuffer"></a>Java-StringBuffer</h1><pre><code>public class StringBufferAndStringBuilderDemo {    //StringBuffer  线程安全    //StringBuilder 速度快    /*        序号    方法描述1    public StringBuffer append(String s)将指定的字符串追加到此字符序列。2    public StringBuffer reverse() 将此字符序列用其反转形式取代。3    public delete(int start, int end)移除此序列的子字符串中的字符。4    public insert(int offset, int i)将 int 参数的字符串表示形式插入此序列中。5    replace(int start, int end, String str)使用给定 String 中的字符替换此序列的子字符串中的字符。     */    /*        序号    方法描述1    int capacity()返回当前容量。2    char charAt(int index)返回此序列中指定索引处的 char 值。3    void ensureCapacity(int minimumCapacity)确保容量至少等于指定的最小值。4    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此序列复制到目标字符数组 dst。5    int indexOf(String str)返回第一次出现的指定子字符串在该字符串中的索引。6    int indexOf(String str, int fromIndex)从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。7    int lastIndexOf(String str)返回最右边出现的指定子字符串在此字符串中的索引。8    int lastIndexOf(String str, int fromIndex)返回 String 对象中子字符串最后出现的位置。9    int length() 返回长度（字符数）。10    void setCharAt(int index, char ch)将给定索引处的字符设置为 ch。11    void setLength(int newLength)设置字符序列的长度。12    CharSequence subSequence(int start, int end)返回一个新的字符序列，该字符序列是此序列的子序列。13    String substring(int start)返回一个新的 String，它包含此字符序列当前所包含的字符子序列。14    String substring(int start, int end)返回一个新的 String，它包含此序列当前所包含的字符子序列。15    String toString()返回此序列中数据的字符串表示形式。     */    public static void main(String[] args){        StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;);        sBuffer.append(&quot;站点&quot;);        System.out.println(sBuffer);    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java-SwitchCase语句</title>
-    <link href="/2016/03/02/Java-SwitchCase/"/>
-    <url>/2016/03/02/Java-SwitchCase/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-SwitchCase语句"><a href="#Java-SwitchCase语句" class="headerlink" title="Java-SwitchCase语句"></a>Java-SwitchCase语句</h1><pre><code>public class SwitchCase {    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。    /*        switch(expression){            case value :                //语句                break; //可选            case value :                //语句                break; //可选            //你可以有任意数量的case语句            default : //可选                //语句   不需要break        }     */    public static void main(String[]args){        char grade =&#39;C&#39;;        switch (grade)        {            case &#39;A&#39;:                System.out.println(&quot;优秀&quot;);                break;            case &#39;B&#39;:            case &#39;C&#39;:                System.out.println(&quot;良好&quot;);                break;            case &#39;D&#39;:                System.out.println(&quot;及格&quot;);                break;            case &#39;F&#39;:                System.out.println(&quot;你还需要继续努力&quot;);                break;            default:                System.out.println(&quot;未知等级&quot;);        }        System.out.println(&quot;你的等级是&quot; + grade);    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java-FileStreamIO</title>
-    <link href="/2016/03/02/Java-FileStreamIO/"/>
-    <url>/2016/03/02/Java-FileStreamIO/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-FileStreamIO"><a href="#Java-FileStreamIO" class="headerlink" title="Java-FileStreamIO"></a>Java-FileStreamIO</h1><pre><code>import java.io.*;public class StreamFileIODemo {    public void printChar() throws IOException {        //使用BufferedReader从控制台读取输入        char c;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符，按Q键退出&quot;);        do {            //read() 读取字符            c = (char) br1.read();            System.out.println(c);        } while (c != &#39;Q&#39;);    }    public void printStr() throws IOException{        String str1;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;);        do {            //readLine() 读取字符串            str1 = br1.readLine();            System.out.println(str1);        } while (!str1.equals(&quot;end&quot;));    }    public void ReadFileDemo() throws IOException{        //FileInputStream 从文件读取数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  InputStream out = new FileInputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public int read(int r)throws IOException{}                这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。            4    public int read(byte[] r) throws IOException{}                这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。            5    public int available() throws IOException{}                返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。         */        System.out.println(&quot;打印输出读取文件demo&quot;);        InputStream is1 = new FileInputStream(&quot;test.txt&quot;);        int size = is1.available();        for (int i=0;i&lt;size;i++) {            System.out.println((char) is1.read());        }    }    public void WriteFileDemo() throws IOException {        //FileOutputStream 创建一个文件向文件中写数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  OutputStream f = new FileOutputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public void write(int w)throws IOException{}                这个方法把指定的字节写到输出流中。            4    public void write(byte[] w)                把指定数组中w.length长度的字节写到OutputStream中。         */        System.out.println(&quot;打印输出写入文件demo&quot;);        byte bWrite[] = {11,21,3,38,5};        OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;);        for (int i=0;i&lt;bWrite.length;i++){            os1.write(bWrite[i]);        }        os1.close();    }    public void CreateDirs(){        //文件和I/O ，目录        /*            File类            - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。            - mkdirs()方法创建一个文件夹和它的所有父文件夹。        */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;;        File dir1 = new File(dirname);        //   创建目录        dir1.mkdirs();    }    public void ReadDirs(){        /*            一个目录其实就是一个 File 对象，它包含其他文件和文件夹。            如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。            可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;;        File dir2 = new File(dirname);        if (dir2.isDirectory()){            System.out.println(&quot;目录&quot;+ dirname);            String[] s1 = dir2.list();            for (int i=0;i&lt;s1.length;i++){                File f = new File(dirname + &#39;/&#39; + s1[i]);                if (f.isDirectory()){                    System.out.println(s1[i] + &quot;是一个目录&quot;);                }else {                    System.out.println(s1[i] + &quot;是一个文件&quot;);                }            }        }else {            System.out.println(dirname +&quot;不是一个目录&quot;);        }    }    public void DeleteDirs(){        //删除文件/目录        /*            删除文件可以使用 java.io.File.delete() 方法            当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;;        File dir3 = new File(dirname);        File[] files = dir3.listFiles();        if (files != null){            for (File f: files){                if (!f.isDirectory()){                    f.delete();                }            }        }        dir3.delete();        System.out.println(&quot;删除成功&quot;);    }    public static void main(String[] args) throws IOException {        StreamFileIODemo s = new StreamFileIODemo();//        s.printChar();//        s.printStr();//        s.WriteFileDemo();//        s.CreateDirs();//        s.ReadDirs();        s.DeleteDirs();    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java日期和时间</title>
-    <link href="/2016/03/02/Java%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4/"/>
-    <url>/2016/03/02/Java%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java日期和时间"><a href="#Java日期和时间" class="headerlink" title="Java日期和时间"></a>Java日期和时间</h1><pre><code>import java.text.SimpleDateFormat;import java.util.Date;import java.util.*;public class DateTimeDemo {    //日期时间    public static void main(String[] args){        //获取当前时间        Date date = new Date();        System.out.println(date.toString());        //格式化日期        /*            日期和时间的格式化编码时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下：字母    描述    示例G    纪元标记    ADy    四位年份    2001M    月份    July or 07d    一个月的日期    10h     A.M./P.M. (1~12)格式小时    12H    一天中的小时 (0~23)    22m    分钟数    30s    秒数    55S    毫秒数    234E    星期几    TuesdayD    一年中的日子    360F    一个月中第几周的周几    2 (second Wed. in July)w    一年中第几周    40W    一个月中第几周    1a    A.M./P.M. 标记    PMk    一天中的小时(1~24)    24K     A.M./P.M. (0~11)格式小时    10z    时区    Eastern Standard Time&#39;    文字定界符    Delimiter&quot;    单引号    `         */        SimpleDateFormat ft = new SimpleDateFormat(&quot;yyyy-MM-dd hh:mm:ss&quot;);        System.out.println(&quot;SimpleDateFormat时间格式转换&quot;);        System.out.println(ft.format(date));        //printf格式化时间  以%t 开头        /*            转  换  符             说    明              示    例                c           包括全部日期和时间信息         星期六 十月 27 14:21:20 CST 2007                F           &quot;年-月-日&quot;格式               2007-10-27                D           &quot;月/日/年&quot;格式               10/27/07                r           &quot;HH:MM:SS PM&quot;格式（12时制）   02:25:51 下午                T           &quot;HH:MM:SS&quot;格式（24时制）   14:28:16                R           &quot;HH:MM&quot;格式（24时制）         14:28         */        System.out.println(&quot;printf时间格式转换&quot;);        System.out.printf(&quot;全部日期和时间信息：%tc%n&quot;,date);        System.out.printf(&quot;年-月-日格式：%tF%n&quot;,date);        System.out.printf(&quot;月/日/年格式：%tD%n&quot;,date);        System.out.printf(&quot;HH:MM:SS PM(12小时)：%tr%n&quot;,date);        System.out.printf(&quot;HH:MM:SS (24小时)：%tT%n&quot;,date);        System.out.printf(&quot;HH:MM (24小时)：%tR%n&quot;,date);        //定义日期转换字符，抽取转换为新字符串        System.out.println(&quot;使日期转换生成新字符串&quot;);        //b的使用，月份简称        String str=String.format(Locale.US,&quot;英文月份简称：%tb&quot;,date);        System.out.println(str);        System.out.printf(&quot;本地月份简称：%tb%n&quot;,date);        //B的使用，月份全称        str=String.format(Locale.US,&quot;英文月份全称：%tB&quot;,date);        System.out.println(str);        System.out.printf(&quot;本地月份全称：%tB%n&quot;,date);        //a的使用，星期简称        str=String.format(Locale.US,&quot;英文星期的简称：%ta&quot;,date);        System.out.println(str);        //A的使用，星期全称        System.out.printf(&quot;本地星期的简称：%tA%n&quot;,date);        //C的使用，年前两位        System.out.printf(&quot;年的前两位数字（不足两位前面补0）：%tC%n&quot;,date);        //y的使用，年后两位        System.out.printf(&quot;年的后两位数字（不足两位前面补0）：%ty%n&quot;,date);        //j的使用，一年的天数        System.out.printf(&quot;一年中的天数（即年的第几天）：%tj%n&quot;,date);        //m的使用，月份        System.out.printf(&quot;两位数字的月份（不足两位前面补0）：%tm%n&quot;,date);        //d的使用，日（二位，不够补零）        System.out.printf(&quot;两位数字的日（不足两位前面补0）：%td%n&quot;,date);        //e的使用，日（一位不补零）        System.out.printf(&quot;月份的日（前面不补0）：%te&quot;,date);        //Calendar 对象        /*            常量                        描述            Calendar.YEAR            年份            Calendar.MONTH            月份            Calendar.DATE            日期            Calendar.DAY_OF_MONTH    日期，和上面的字段意义完全相同            Calendar.HOUR            12小时制的小时            Calendar.HOUR_OF_DAY    24小时制的小时            Calendar.MINUTE            分钟            Calendar.SECOND            秒            Calendar.DAY_OF_WEEK    星期几         */        //GregorianCalendar类        /*            序号    构造函数和说明1    GregorianCalendar()在具有默认语言环境的默认时区内使用当前时间构造一个默认的 GregorianCalendar。2    GregorianCalendar(int year, int month, int date)在具有默认语言环境的默认时区内构造一个带有给定日期设置的 GregorianCalendar3    GregorianCalendar(int year, int month, int date, int hour, int minute)为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。4    GregorianCalendar(int year, int month, int date, int hour, int minute, int second)  为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。5    GregorianCalendar(Locale aLocale)在具有给定语言环境的默认时区内构造一个基于当前时间的 GregorianCalendar。6    GregorianCalendar(TimeZone zone)在具有默认语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。7    GregorianCalendar(TimeZone zone, Locale aLocale) 在具有给定语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。这里是GregorianCalendar 类提供的一些有用的方法列表：序号    方法和说明1    void add(int field, int amount)根据日历规则，将指定的（有符号的）时间量添加到给定的日历字段中。2    protected void computeFields()转换UTC毫秒值为时间域值3    protected void computeTime()覆盖Calendar ，转换时间域值为UTC毫秒值4    boolean equals(Object obj)比较此 GregorianCalendar 与指定的 Object。5    int get(int field)获取指定字段的时间值6    int getActualMaximum(int field)返回当前日期，给定字段的最大值7    int getActualMinimum(int field)返回当前日期，给定字段的最小值8    int getGreatestMinimum(int field) 返回此 GregorianCalendar 实例给定日历字段的最高的最小值。9    Date getGregorianChange()获得格里高利历的更改日期。10    int getLeastMaximum(int field)返回此 GregorianCalendar 实例给定日历字段的最低的最大值11    int getMaximum(int field)返回此 GregorianCalendar 实例的给定日历字段的最大值。12    Date getTime()获取日历当前时间。13    long getTimeInMillis()获取用长整型表示的日历的当前时间14    TimeZone getTimeZone()获取时区。15    int getMinimum(int field)返回给定字段的最小值。16    int hashCode()重写hashCode.17    boolean isLeapYear(int year)确定给定的年份是否为闰年。18    void roll(int field, boolean up)在给定的时间字段上添加或减去（上/下）单个时间单元，不更改更大的字段。19    void set(int field, int value)用给定的值设置时间字段。20    void set(int year, int month, int date)设置年、月、日的值。21    void set(int year, int month, int date, int hour, int minute)设置年、月、日、小时、分钟的值。22    void set(int year, int month, int date, int hour, int minute, int second)设置年、月、日、小时、分钟、秒的值。23    void setGregorianChange(Date date)设置 GregorianCalendar 的更改日期。24    void setTime(Date date)用给定的日期设置Calendar的当前时间。25    void setTimeInMillis(long millis)用给定的long型毫秒数设置Calendar的当前时间。26    void setTimeZone(TimeZone value)用给定时区值设置当前时区。27    String toString()返回代表日历的字符串。         */        String months[] = {                &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;,                &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;,                &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;};        int year;        // 初始化 Gregorian 日历        // 使用当前时间和日期        // 默认为本地时间和时区        GregorianCalendar gcalendar = new GregorianCalendar();        // 显示当前时间和日期的信息        System.out.print(&quot;Date: &quot;);        System.out.print(months[gcalendar.get(Calendar.MONTH)]);        System.out.print(&quot; &quot; + gcalendar.get(Calendar.DATE) + &quot; &quot;);        System.out.println(year = gcalendar.get(Calendar.YEAR));        System.out.print(&quot;Time: &quot;);        System.out.print(gcalendar.get(Calendar.HOUR) + &quot;:&quot;);        System.out.print(gcalendar.get(Calendar.MINUTE) + &quot;:&quot;);        System.out.println(gcalendar.get(Calendar.SECOND));        // 测试当前年份是否为闰年        if(gcalendar.isLeapYear(year)) {            System.out.println(&quot;当前年份是闰年&quot;);        }        else {            System.out.println(&quot;当前年份不是闰年&quot;);        }    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3456,6 +3281,81 @@
   
   
   <entry>
+    <title>Java数组</title>
+    <link href="/2016/03/02/Java%E6%95%B0%E7%BB%84/"/>
+    <url>/2016/03/02/Java%E6%95%B0%E7%BB%84/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java数组"><a href="#Java数组" class="headerlink" title="Java数组"></a>Java数组</h1><pre><code>public class ArrayDemo {    //声明数组    // 数据类型[] 数组名称;  dataType[] arrayName;    //创建数组    // 数据名称 = new dataType[arraySize];    //dataType[] arrayName = {value0,value1,value2,...,valuek};    public static void main(String[] args){        //数组大小        int size =4;        //定义数组        double[] TestList = new double[size];        TestList[0] = 3.2;        TestList[1] = 2.6;        TestList[2] = 4.7;        TestList[3] = 5.6;        double total =0;        for (int i=0; i&lt;size; i++){            total = total + TestList[i];        }        System.out.println(total);        double[] list1 = {1.4,2.8,3.6,4.9};        //打印所有数组元素        for (int i=0;i&lt;list1.length;i++){            System.out.println(list1[i]);        }        //计算所有元素的和        double sum = 0;        for (int i =0;i&lt;list1.length;i++){            sum = sum + list1[i];        }        System.out.println(sum);        //查找最大元素        double max = list1[0];        for (int i=0; i&lt;list1.length;i++){            if (list1[i] &gt; max){                max = list1[i];            }        }        System.out.println(max);    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java-String类</title>
+    <link href="/2016/03/02/Java-String%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-String%E7%B1%BB/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-String类"><a href="#Java-String类" class="headerlink" title="Java-String类"></a>Java-String类</h1><pre><code>public class StringDemo {    //String 方法    /*        SN(序号)    方法描述1    char charAt(int index)返回指定索引处的 char 值。2    int compareTo(Object o)把这个字符串和另一个对象比较。3    int compareTo(String anotherString)按字典顺序比较两个字符串。4    int compareToIgnoreCase(String str)按字典顺序比较两个字符串，不考虑大小写。5    String concat(String str)将指定字符串连接到此字符串的结尾。6    boolean contentEquals(StringBuffer sb)当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。7    static String copyValueOf(char[] data)返回指定数组中表示该字符序列的 String。8    static String copyValueOf(char[] data, int offset, int count)返回指定数组中表示该字符序列的 String。9    boolean endsWith(String suffix)测试此字符串是否以指定的后缀结束。10    boolean equals(Object anObject)将此字符串与指定的对象比较。11    boolean equalsIgnoreCase(String anotherString)将此 String 与另一个 String 比较，不考虑大小写。12    byte[] getBytes() 使用平台的默认字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。13    byte[] getBytes(String charsetName)使用指定的字符集将此 String 编码为 byte 序列，并将结果存储到一个新的 byte 数组中。14    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此字符串复制到目标字符数组。15    int hashCode()返回此字符串的哈希码。16    int indexOf(int ch)返回指定字符在此字符串中第一次出现处的索引。17    int indexOf(int ch, int fromIndex)返回在此字符串中第一次出现指定字符处的索引，从指定的索引开始搜索。18    int indexOf(String str) 返回指定子字符串在此字符串中第一次出现处的索引。19    int indexOf(String str, int fromIndex)返回指定子字符串在此字符串中第一次出现处的索引，从指定的索引开始。20    String intern() 返回字符串对象的规范化表示形式。21    int lastIndexOf(int ch) 返回指定字符在此字符串中最后一次出现处的索引。22    int lastIndexOf(int ch, int fromIndex)返回指定字符在此字符串中最后一次出现处的索引，从指定的索引处开始进行反向搜索。23    int lastIndexOf(String str)返回指定子字符串在此字符串中最右边出现处的索引。24    int lastIndexOf(String str, int fromIndex) 返回指定子字符串在此字符串中最后一次出现处的索引，从指定的索引开始反向搜索。25    int length()返回此字符串的长度。26    boolean matches(String regex)告知此字符串是否匹配给定的正则表达式。27    boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)测试两个字符串区域是否相等。28    boolean regionMatches(int toffset, String other, int ooffset, int len)测试两个字符串区域是否相等。29    String replace(char oldChar, char newChar)返回一个新的字符串，它是通过用 newChar 替换此字符串中出现的所有 oldChar 得到的。30    String replaceAll(String regex, String replacement)使用给定的 replacement 替换此字符串所有匹配给定的正则表达式的子字符串。31    String replaceFirst(String regex, String replacement) 使用给定的 replacement 替换此字符串匹配给定的正则表达式的第一个子字符串。32    String[] split(String regex)根据给定正则表达式的匹配拆分此字符串。33    String[] split(String regex, int limit)根据匹配给定的正则表达式来拆分此字符串。34    boolean startsWith(String prefix)测试此字符串是否以指定的前缀开始。35    boolean startsWith(String prefix, int toffset)测试此字符串从指定索引开始的子字符串是否以指定前缀开始。36    CharSequence subSequence(int beginIndex, int endIndex) 返回一个新的字符序列，它是此序列的一个子序列。37    String substring(int beginIndex)返回一个新的字符串，它是此字符串的一个子字符串。38    String substring(int beginIndex, int endIndex)返回一个新字符串，它是此字符串的一个子字符串。39    char[] toCharArray()将此字符串转换为一个新的字符数组。40    String toLowerCase()使用默认语言环境的规则将此 String 中的所有字符都转换为小写。41    String toLowerCase(Locale locale) 使用给定 Locale 的规则将此 String 中的所有字符都转换为小写。42    String toString() 返回此对象本身（它已经是一个字符串！）。43    String toUpperCase()使用默认语言环境的规则将此 String 中的所有字符都转换为大写。44    String toUpperCase(Locale locale)使用给定 Locale 的规则将此 String 中的所有字符都转换为大写。45    String trim()返回字符串的副本，忽略前导空白和尾部空白。46    static String valueOf(primitive data type x)返回给定data type类型x参数的字符串表示形式。     */    public static void main(String[] args) {        char[] hello = {&#39;g&#39;, &#39;z&#39;, &#39;y&#39;};        String helloString = new String(hello);        System.out.println(helloString);        System.out.println(helloString.length());    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java-StringBuffer</title>
+    <link href="/2016/03/02/Java-StringBuffer/"/>
+    <url>/2016/03/02/Java-StringBuffer/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-StringBuffer"><a href="#Java-StringBuffer" class="headerlink" title="Java-StringBuffer"></a>Java-StringBuffer</h1><pre><code>public class StringBufferAndStringBuilderDemo {    //StringBuffer  线程安全    //StringBuilder 速度快    /*        序号    方法描述1    public StringBuffer append(String s)将指定的字符串追加到此字符序列。2    public StringBuffer reverse() 将此字符序列用其反转形式取代。3    public delete(int start, int end)移除此序列的子字符串中的字符。4    public insert(int offset, int i)将 int 参数的字符串表示形式插入此序列中。5    replace(int start, int end, String str)使用给定 String 中的字符替换此序列的子字符串中的字符。     */    /*        序号    方法描述1    int capacity()返回当前容量。2    char charAt(int index)返回此序列中指定索引处的 char 值。3    void ensureCapacity(int minimumCapacity)确保容量至少等于指定的最小值。4    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此序列复制到目标字符数组 dst。5    int indexOf(String str)返回第一次出现的指定子字符串在该字符串中的索引。6    int indexOf(String str, int fromIndex)从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。7    int lastIndexOf(String str)返回最右边出现的指定子字符串在此字符串中的索引。8    int lastIndexOf(String str, int fromIndex)返回 String 对象中子字符串最后出现的位置。9    int length() 返回长度（字符数）。10    void setCharAt(int index, char ch)将给定索引处的字符设置为 ch。11    void setLength(int newLength)设置字符序列的长度。12    CharSequence subSequence(int start, int end)返回一个新的字符序列，该字符序列是此序列的子序列。13    String substring(int start)返回一个新的 String，它包含此字符序列当前所包含的字符子序列。14    String substring(int start, int end)返回一个新的 String，它包含此序列当前所包含的字符子序列。15    String toString()返回此序列中数据的字符串表示形式。     */    public static void main(String[] args){        StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;);        sBuffer.append(&quot;站点&quot;);        System.out.println(sBuffer);    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Java异常处理</title>
     <link href="/2016/03/02/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
     <url>/2016/03/02/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
@@ -3481,11 +3381,111 @@
   
   
   <entry>
-    <title>Java数组</title>
-    <link href="/2016/03/02/Java%E6%95%B0%E7%BB%84/"/>
-    <url>/2016/03/02/Java%E6%95%B0%E7%BB%84/</url>
+    <title>Java-Scanner类</title>
+    <link href="/2016/03/02/Java-Scanner%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-Scanner%E7%B1%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java数组"><a href="#Java数组" class="headerlink" title="Java数组"></a>Java数组</h1><pre><code>public class ArrayDemo {    //声明数组    // 数据类型[] 数组名称;  dataType[] arrayName;    //创建数组    // 数据名称 = new dataType[arraySize];    //dataType[] arrayName = {value0,value1,value2,...,valuek};    public static void main(String[] args){        //数组大小        int size =4;        //定义数组        double[] TestList = new double[size];        TestList[0] = 3.2;        TestList[1] = 2.6;        TestList[2] = 4.7;        TestList[3] = 5.6;        double total =0;        for (int i=0; i&lt;size; i++){            total = total + TestList[i];        }        System.out.println(total);        double[] list1 = {1.4,2.8,3.6,4.9};        //打印所有数组元素        for (int i=0;i&lt;list1.length;i++){            System.out.println(list1[i]);        }        //计算所有元素的和        double sum = 0;        for (int i =0;i&lt;list1.length;i++){            sum = sum + list1[i];        }        System.out.println(sum);        //查找最大元素        double max = list1[0];        for (int i=0; i&lt;list1.length;i++){            if (list1[i] &gt; max){                max = list1[i];            }        }        System.out.println(max);    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-Scanner类"><a href="#Java-Scanner类" class="headerlink" title="Java-Scanner类"></a>Java-Scanner类</h1><pre><code>import java.util.Scanner;public class ScannerDemo {    //Scanner类 获取用户的输入    /*        next() 与 nextLine() 区别        next():            1、一定要读取到有效字符后才可以结束输入。            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。        next() 不能得到带有空格的字符串。        nextLine()：            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。            2、可以获得空白。        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：     */    public void NextDemo() {        //从键盘接收数据        Scanner scan1 = new Scanner(System.in);        //next方式接收字符串        System.out.println(&quot;next方式接收：&quot;);        //判断是否还有输入        if (scan1.hasNext()) {            String str1 = scan1.next();            System.out.println(&quot;输入的数据为：&quot; + str1);        }        scan1.close();    }    public void NextLineDemo() {        //从键盘接收数据        Scanner scan2 = new Scanner(System.in);        //nextLine方式接收字符串        System.out.println(&quot;nextLine方式接收：&quot;);        //判断是否还有输入        if (scan2.hasNext()) {            String str2 = scan2.nextLine();            System.out.println(&quot;输入的数据为：&quot; + str2);        }        scan2.close();    }    public static void main(String[] args) {        ScannerDemo s = new ScannerDemo();//        s.NextDemo();        s.NextLineDemo();    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java-NumberMath类</title>
+    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java日期和时间</title>
+    <link href="/2016/03/02/Java%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4/"/>
+    <url>/2016/03/02/Java%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java日期和时间"><a href="#Java日期和时间" class="headerlink" title="Java日期和时间"></a>Java日期和时间</h1><pre><code>import java.text.SimpleDateFormat;import java.util.Date;import java.util.*;public class DateTimeDemo {    //日期时间    public static void main(String[] args){        //获取当前时间        Date date = new Date();        System.out.println(date.toString());        //格式化日期        /*            日期和时间的格式化编码时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下：字母    描述    示例G    纪元标记    ADy    四位年份    2001M    月份    July or 07d    一个月的日期    10h     A.M./P.M. (1~12)格式小时    12H    一天中的小时 (0~23)    22m    分钟数    30s    秒数    55S    毫秒数    234E    星期几    TuesdayD    一年中的日子    360F    一个月中第几周的周几    2 (second Wed. in July)w    一年中第几周    40W    一个月中第几周    1a    A.M./P.M. 标记    PMk    一天中的小时(1~24)    24K     A.M./P.M. (0~11)格式小时    10z    时区    Eastern Standard Time&#39;    文字定界符    Delimiter&quot;    单引号    `         */        SimpleDateFormat ft = new SimpleDateFormat(&quot;yyyy-MM-dd hh:mm:ss&quot;);        System.out.println(&quot;SimpleDateFormat时间格式转换&quot;);        System.out.println(ft.format(date));        //printf格式化时间  以%t 开头        /*            转  换  符             说    明              示    例                c           包括全部日期和时间信息         星期六 十月 27 14:21:20 CST 2007                F           &quot;年-月-日&quot;格式               2007-10-27                D           &quot;月/日/年&quot;格式               10/27/07                r           &quot;HH:MM:SS PM&quot;格式（12时制）   02:25:51 下午                T           &quot;HH:MM:SS&quot;格式（24时制）   14:28:16                R           &quot;HH:MM&quot;格式（24时制）         14:28         */        System.out.println(&quot;printf时间格式转换&quot;);        System.out.printf(&quot;全部日期和时间信息：%tc%n&quot;,date);        System.out.printf(&quot;年-月-日格式：%tF%n&quot;,date);        System.out.printf(&quot;月/日/年格式：%tD%n&quot;,date);        System.out.printf(&quot;HH:MM:SS PM(12小时)：%tr%n&quot;,date);        System.out.printf(&quot;HH:MM:SS (24小时)：%tT%n&quot;,date);        System.out.printf(&quot;HH:MM (24小时)：%tR%n&quot;,date);        //定义日期转换字符，抽取转换为新字符串        System.out.println(&quot;使日期转换生成新字符串&quot;);        //b的使用，月份简称        String str=String.format(Locale.US,&quot;英文月份简称：%tb&quot;,date);        System.out.println(str);        System.out.printf(&quot;本地月份简称：%tb%n&quot;,date);        //B的使用，月份全称        str=String.format(Locale.US,&quot;英文月份全称：%tB&quot;,date);        System.out.println(str);        System.out.printf(&quot;本地月份全称：%tB%n&quot;,date);        //a的使用，星期简称        str=String.format(Locale.US,&quot;英文星期的简称：%ta&quot;,date);        System.out.println(str);        //A的使用，星期全称        System.out.printf(&quot;本地星期的简称：%tA%n&quot;,date);        //C的使用，年前两位        System.out.printf(&quot;年的前两位数字（不足两位前面补0）：%tC%n&quot;,date);        //y的使用，年后两位        System.out.printf(&quot;年的后两位数字（不足两位前面补0）：%ty%n&quot;,date);        //j的使用，一年的天数        System.out.printf(&quot;一年中的天数（即年的第几天）：%tj%n&quot;,date);        //m的使用，月份        System.out.printf(&quot;两位数字的月份（不足两位前面补0）：%tm%n&quot;,date);        //d的使用，日（二位，不够补零）        System.out.printf(&quot;两位数字的日（不足两位前面补0）：%td%n&quot;,date);        //e的使用，日（一位不补零）        System.out.printf(&quot;月份的日（前面不补0）：%te&quot;,date);        //Calendar 对象        /*            常量                        描述            Calendar.YEAR            年份            Calendar.MONTH            月份            Calendar.DATE            日期            Calendar.DAY_OF_MONTH    日期，和上面的字段意义完全相同            Calendar.HOUR            12小时制的小时            Calendar.HOUR_OF_DAY    24小时制的小时            Calendar.MINUTE            分钟            Calendar.SECOND            秒            Calendar.DAY_OF_WEEK    星期几         */        //GregorianCalendar类        /*            序号    构造函数和说明1    GregorianCalendar()在具有默认语言环境的默认时区内使用当前时间构造一个默认的 GregorianCalendar。2    GregorianCalendar(int year, int month, int date)在具有默认语言环境的默认时区内构造一个带有给定日期设置的 GregorianCalendar3    GregorianCalendar(int year, int month, int date, int hour, int minute)为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。4    GregorianCalendar(int year, int month, int date, int hour, int minute, int second)  为具有默认语言环境的默认时区构造一个具有给定日期和时间设置的 GregorianCalendar。5    GregorianCalendar(Locale aLocale)在具有给定语言环境的默认时区内构造一个基于当前时间的 GregorianCalendar。6    GregorianCalendar(TimeZone zone)在具有默认语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。7    GregorianCalendar(TimeZone zone, Locale aLocale) 在具有给定语言环境的给定时区内构造一个基于当前时间的 GregorianCalendar。这里是GregorianCalendar 类提供的一些有用的方法列表：序号    方法和说明1    void add(int field, int amount)根据日历规则，将指定的（有符号的）时间量添加到给定的日历字段中。2    protected void computeFields()转换UTC毫秒值为时间域值3    protected void computeTime()覆盖Calendar ，转换时间域值为UTC毫秒值4    boolean equals(Object obj)比较此 GregorianCalendar 与指定的 Object。5    int get(int field)获取指定字段的时间值6    int getActualMaximum(int field)返回当前日期，给定字段的最大值7    int getActualMinimum(int field)返回当前日期，给定字段的最小值8    int getGreatestMinimum(int field) 返回此 GregorianCalendar 实例给定日历字段的最高的最小值。9    Date getGregorianChange()获得格里高利历的更改日期。10    int getLeastMaximum(int field)返回此 GregorianCalendar 实例给定日历字段的最低的最大值11    int getMaximum(int field)返回此 GregorianCalendar 实例的给定日历字段的最大值。12    Date getTime()获取日历当前时间。13    long getTimeInMillis()获取用长整型表示的日历的当前时间14    TimeZone getTimeZone()获取时区。15    int getMinimum(int field)返回给定字段的最小值。16    int hashCode()重写hashCode.17    boolean isLeapYear(int year)确定给定的年份是否为闰年。18    void roll(int field, boolean up)在给定的时间字段上添加或减去（上/下）单个时间单元，不更改更大的字段。19    void set(int field, int value)用给定的值设置时间字段。20    void set(int year, int month, int date)设置年、月、日的值。21    void set(int year, int month, int date, int hour, int minute)设置年、月、日、小时、分钟的值。22    void set(int year, int month, int date, int hour, int minute, int second)设置年、月、日、小时、分钟、秒的值。23    void setGregorianChange(Date date)设置 GregorianCalendar 的更改日期。24    void setTime(Date date)用给定的日期设置Calendar的当前时间。25    void setTimeInMillis(long millis)用给定的long型毫秒数设置Calendar的当前时间。26    void setTimeZone(TimeZone value)用给定时区值设置当前时区。27    String toString()返回代表日历的字符串。         */        String months[] = {                &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;,                &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;,                &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot;};        int year;        // 初始化 Gregorian 日历        // 使用当前时间和日期        // 默认为本地时间和时区        GregorianCalendar gcalendar = new GregorianCalendar();        // 显示当前时间和日期的信息        System.out.print(&quot;Date: &quot;);        System.out.print(months[gcalendar.get(Calendar.MONTH)]);        System.out.print(&quot; &quot; + gcalendar.get(Calendar.DATE) + &quot; &quot;);        System.out.println(year = gcalendar.get(Calendar.YEAR));        System.out.print(&quot;Time: &quot;);        System.out.print(gcalendar.get(Calendar.HOUR) + &quot;:&quot;);        System.out.print(gcalendar.get(Calendar.MINUTE) + &quot;:&quot;);        System.out.println(gcalendar.get(Calendar.SECOND));        // 测试当前年份是否为闰年        if(gcalendar.isLeapYear(year)) {            System.out.println(&quot;当前年份是闰年&quot;);        }        else {            System.out.println(&quot;当前年份不是闰年&quot;);        }    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java-Character类</title>
+    <link href="/2016/03/02/Java-Character%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-Character%E7%B1%BB/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-Character类"><a href="#Java-Character类" class="headerlink" title="Java-Character类"></a>Java-Character类</h1><pre><code>public class CharacterDemo {    // 对单个字符进行操作    /*        转义序列    描述        \t    在文中该处插入一个tab键        \b    在文中该处插入一个后退键        \n    在文中该处换行        \r    在文中该处插入回车        \f    在文中该处插入换页符        \&#39;    在文中该处插入单引号        \&quot;    在文中该处插入双引号        \\    在文中该处插入反斜杠     */    //字符方法    /*        序号    方法与描述        1    isLetter()是否是一个字母        2    isDigit()是否是一个数字字符        3    isWhitespace()是否是一个空白字符        4    isUpperCase()是否是大写字母        5    isLowerCase()是否是小写字母        6    toUpperCase()指定字母的大写形式        7    toLowerCase()指定字母的小写形式        8    toString()返回字符的字符串形式，字符串的长度仅为1     */    public static void main(String[] args) {        System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;);    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java-FileStreamIO</title>
+    <link href="/2016/03/02/Java-FileStreamIO/"/>
+    <url>/2016/03/02/Java-FileStreamIO/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-FileStreamIO"><a href="#Java-FileStreamIO" class="headerlink" title="Java-FileStreamIO"></a>Java-FileStreamIO</h1><pre><code>import java.io.*;public class StreamFileIODemo {    public void printChar() throws IOException {        //使用BufferedReader从控制台读取输入        char c;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符，按Q键退出&quot;);        do {            //read() 读取字符            c = (char) br1.read();            System.out.println(c);        } while (c != &#39;Q&#39;);    }    public void printStr() throws IOException{        String str1;        //使用System.in 创建BufferedReader        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));        System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;);        do {            //readLine() 读取字符串            str1 = br1.readLine();            System.out.println(str1);        } while (!str1.equals(&quot;end&quot;));    }    public void ReadFileDemo() throws IOException{        //FileInputStream 从文件读取数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  InputStream out = new FileInputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public int read(int r)throws IOException{}                这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。            4    public int read(byte[] r) throws IOException{}                这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。            5    public int available() throws IOException{}                返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。         */        System.out.println(&quot;打印输出读取文件demo&quot;);        InputStream is1 = new FileInputStream(&quot;test.txt&quot;);        int size = is1.available();        for (int i=0;i&lt;size;i++) {            System.out.println((char) is1.read());        }    }    public void WriteFileDemo() throws IOException {        //FileOutputStream 创建一个文件向文件中写数据        //  File f = new File(&quot;C:/java/hello&quot;);        //  OutputStream f = new FileOutputStream(f);        /*            序号    方法及描述            1    public void close() throws IOException{}                关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。            2    protected void finalize()throws IOException {}                这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。            3    public void write(int w)throws IOException{}                这个方法把指定的字节写到输出流中。            4    public void write(byte[] w)                把指定数组中w.length长度的字节写到OutputStream中。         */        System.out.println(&quot;打印输出写入文件demo&quot;);        byte bWrite[] = {11,21,3,38,5};        OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;);        for (int i=0;i&lt;bWrite.length;i++){            os1.write(bWrite[i]);        }        os1.close();    }    public void CreateDirs(){        //文件和I/O ，目录        /*            File类            - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。            - mkdirs()方法创建一个文件夹和它的所有父文件夹。        */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;;        File dir1 = new File(dirname);        //   创建目录        dir1.mkdirs();    }    public void ReadDirs(){        /*            一个目录其实就是一个 File 对象，它包含其他文件和文件夹。            如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。            可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;;        File dir2 = new File(dirname);        if (dir2.isDirectory()){            System.out.println(&quot;目录&quot;+ dirname);            String[] s1 = dir2.list();            for (int i=0;i&lt;s1.length;i++){                File f = new File(dirname + &#39;/&#39; + s1[i]);                if (f.isDirectory()){                    System.out.println(s1[i] + &quot;是一个目录&quot;);                }else {                    System.out.println(s1[i] + &quot;是一个文件&quot;);                }            }        }else {            System.out.println(dirname +&quot;不是一个目录&quot;);        }    }    public void DeleteDirs(){        //删除文件/目录        /*            删除文件可以使用 java.io.File.delete() 方法            当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败         */        String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;;        File dir3 = new File(dirname);        File[] files = dir3.listFiles();        if (files != null){            for (File f: files){                if (!f.isDirectory()){                    f.delete();                }            }        }        dir3.delete();        System.out.println(&quot;删除成功&quot;);    }    public static void main(String[] args) throws IOException {        StreamFileIODemo s = new StreamFileIODemo();//        s.printChar();//        s.printStr();//        s.WriteFileDemo();//        s.CreateDirs();//        s.ReadDirs();        s.DeleteDirs();    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3531,11 +3531,11 @@
   
   
   <entry>
-    <title>Java对象和类</title>
-    <link href="/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/"/>
-    <url>/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/</url>
+    <title>Java运算符</title>
+    <link href="/2016/03/02/Java%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
+    <url>/2016/03/02/Java%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java对象和类"><a href="#Java对象和类" class="headerlink" title="Java对象和类"></a>Java对象和类</h1><pre><code>public class ObjectAndClass {    /*    - 多态    - 继承    - 封装    - 抽象    - 类 ： 是一个模板，用来描述    - 对象 ： 是类class的一个实例，具有状态和行为    - 实例    - 方法    - 重载     */    //定义一个Dog类    public static class Dog {        //成员变量        StringDemo color;        int age;        StringDemo name;        //类方法        void barking(){            System.out.println(&quot;汪！汪！汪！&quot;);        }        void hungry(){            System.out.println(&quot;好饿哦！&quot;);        }        void sleeping(){            System.out.println(&quot;好困哦！&quot;);        }        void setAge(int age){            this.age = age;        }    }    public static void main(String[]args) {        /*            创建对象            声明： 声明一个对象， 对象类型 和对象名称            实例化： new创建            初始化： 创建时调用构造方法生成         */        Dog dog = new Dog();        dog.hungry();        dog.barking();        dog.sleeping();        System.out.println(dog.age);        dog.setAge(24);        System.out.println(dog.age);    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java运算符"><a href="#Java运算符" class="headerlink" title="Java运算符"></a>Java运算符</h1><pre><code>public class Operator {    /*        运算符        - 算术运算符        - 关系运算符        - 位运算符        - 逻辑运算符        - 赋值运算符        - 其他运算符     */    public static void main(String[] args) {        int a = 10;        int b = 20;        int c = 25;        int d = 25;        //算数运算符        //前缀自增自减法(++a,--a): 先进行自增或者自减运算，再进行表达式运算。        //后缀自增自减法(a++,a--): 先进行表达式运算，再进行自增或者自减运算        System.out.println(&quot;a + b = &quot; + (a + b));        System.out.println(&quot;a - b = &quot; + (a - b));        System.out.println(&quot;a * b = &quot; + (a * b));        System.out.println(&quot;b / a = &quot; + (b / a));        System.out.println(&quot;b % a = &quot; + (b % a));        System.out.println(&quot;c % a = &quot; + (c % a));        System.out.println(&quot;a++   = &quot; + (a++));        System.out.println(&quot;a--   = &quot; + (a--));        // 查看  d++ 与 ++d 的不同        System.out.println(&quot;d++   = &quot; + (d++));        System.out.println(&quot;++d   = &quot; + (++d));        //关系运算符        System.out.println(&quot;a == b = &quot; + (a == b));        System.out.println(&quot;a != b = &quot; + (a != b));        System.out.println(&quot;a &gt; b = &quot; + (a &gt; b));        System.out.println(&quot;a &lt; b = &quot; + (a &lt; b));        System.out.println(&quot;b &gt;= a = &quot; + (b &gt;= a));        System.out.println(&quot;b &lt;= a = &quot; + (b &lt;= a));        //位运算符        /*            操作符    描述                                                    例子            &amp;        如果相对应位都是1，则结果为1，否则为0                        （A＆B），得到12，即0000 1100            /        如果相对应位都是 0，则结果为 0，否则为 1                    （A | B）得到61，即 0011 1101            ^        如果相对应位值相同，则结果为0，否则为1                        （A ^ B）得到49，即 0011 0001            〜        按位取反运算符翻转操作数的每一位，即0变成1，1变成0。        （〜A）得到-61，即1100 0011            &lt;&lt;      按位左移运算符。左操作数按位左移右操作数指定的位数。          A &lt;&lt; 2得到240，即 1111 0000            &gt;&gt;         按位右移运算符。左操作数按位右移右操作数指定的位数。          A &gt;&gt; 2得到15即 1111            &gt;&gt;&gt;     按位右移补零操作符。左操作数的值按右操作数指定的位数右移，移动得到的空位以零填充。    A&gt;&gt;&gt;2得到15即0000 1111         */        //逻辑运算符        /*            操作符           描述                                                        例子            &amp;&amp;            称为逻辑与运算符。当且仅当两个操作数都为真，条件才为真。        （A &amp;&amp; B）为假。            //            称为逻辑或操作符。如果任何两个操作数任何一个为真，条件为真。    （A | | B）为真。            !            称为逻辑非运算符。用来反转操作数的逻辑状态。如果条件为true，                        则逻辑非运算符将得到false。                                    !(A &amp;&amp; B)为真。         */        //赋值运算符        /*            操作符                    描述                                                    例子               =               简单的赋值运算符，将右操作数的值赋给左侧操作数                    C = A + B将把A + B得到的值赋给C               + =               加和赋值操作符，它把左操作数和右操作数相加赋值给左操作数            C + = A等价于C = C + A               - =               减和赋值操作符，它把左操作数和右操作数相减赋值给左操作数            C - = A等价于C = C - A               * =               乘和赋值操作符，它把左操作数和右操作数相乘赋值给左操作数            C * = A等价于C = C * A               / =               除和赋值操作符，它把左操作数和右操作数相除赋值给左操作数            C / = A，C 与 A 同类型时等价于 C = C / A               (%)=               取模和赋值操作符，它把左操作数和右操作数取模后赋值给左操作数        C％= A等价于C = C％A               &lt;&lt; =               左移位赋值运算符    C &lt;&lt; = 2等价于C = C &lt;&lt; 2               &gt;&gt; =               右移位赋值运算符    C &gt;&gt; = 2等价于C = C &gt;&gt; 2               &amp;=               按位与赋值运算符    C＆= 2等价于C = C＆2               ^ =               按位异或赋值操作符    C ^ = 2等价于C = C ^ 2               | =               按位或赋值操作符    C | = 2等价于C = C | 2         */        //条件运算符        /*            三元运算符。该运算符有3个操作数，并且需要判断布尔表达式的值            variable x = (expression) ? value if true : value if false         */        int x, y;        x = 10;        y = (x == 5) ? 20 : 30;        System.out.println(&quot;Value of y is &quot; + y);        y = (x == 10) ? 20 : 30;        System.out.println(&quot;Value of y is &quot; + y);        //运算符优先级        /*            类别        操作符                        关联性            后缀        () [] . (点操作符)                左到右            一元        + + - !〜                        从右到左            乘性         * /%                            左到右            加性         + -                                左到右            移位         &gt;&gt; &gt;&gt;&gt;  &lt;&lt;                         左到右            关系         &gt;&gt; = &lt;&lt; =                         左到右            相等         ==  !=                            左到右            按位与        &amp;                                左到右            按位异或        ^                                左到右            按位或        /                                左到右            逻辑与        &amp;&amp;                                左到右            逻辑或        //                              左到右            条件        ？：                            从右到左            赋值        = + = - = * = / =％= &gt;&gt; = &lt;&lt; =＆= ^ = | =    从右到左            逗号        ，                                左到右         */    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3556,11 +3556,11 @@
   
   
   <entry>
-    <title>Java运算符</title>
-    <link href="/2016/03/02/Java%E8%BF%90%E7%AE%97%E7%AC%A6/"/>
-    <url>/2016/03/02/Java%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
+    <title>Java对象和类</title>
+    <link href="/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/"/>
+    <url>/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java运算符"><a href="#Java运算符" class="headerlink" title="Java运算符"></a>Java运算符</h1><pre><code>public class Operator {    /*        运算符        - 算术运算符        - 关系运算符        - 位运算符        - 逻辑运算符        - 赋值运算符        - 其他运算符     */    public static void main(String[] args) {        int a = 10;        int b = 20;        int c = 25;        int d = 25;        //算数运算符        //前缀自增自减法(++a,--a): 先进行自增或者自减运算，再进行表达式运算。        //后缀自增自减法(a++,a--): 先进行表达式运算，再进行自增或者自减运算        System.out.println(&quot;a + b = &quot; + (a + b));        System.out.println(&quot;a - b = &quot; + (a - b));        System.out.println(&quot;a * b = &quot; + (a * b));        System.out.println(&quot;b / a = &quot; + (b / a));        System.out.println(&quot;b % a = &quot; + (b % a));        System.out.println(&quot;c % a = &quot; + (c % a));        System.out.println(&quot;a++   = &quot; + (a++));        System.out.println(&quot;a--   = &quot; + (a--));        // 查看  d++ 与 ++d 的不同        System.out.println(&quot;d++   = &quot; + (d++));        System.out.println(&quot;++d   = &quot; + (++d));        //关系运算符        System.out.println(&quot;a == b = &quot; + (a == b));        System.out.println(&quot;a != b = &quot; + (a != b));        System.out.println(&quot;a &gt; b = &quot; + (a &gt; b));        System.out.println(&quot;a &lt; b = &quot; + (a &lt; b));        System.out.println(&quot;b &gt;= a = &quot; + (b &gt;= a));        System.out.println(&quot;b &lt;= a = &quot; + (b &lt;= a));        //位运算符        /*            操作符    描述                                                    例子            &amp;        如果相对应位都是1，则结果为1，否则为0                        （A＆B），得到12，即0000 1100            /        如果相对应位都是 0，则结果为 0，否则为 1                    （A | B）得到61，即 0011 1101            ^        如果相对应位值相同，则结果为0，否则为1                        （A ^ B）得到49，即 0011 0001            〜        按位取反运算符翻转操作数的每一位，即0变成1，1变成0。        （〜A）得到-61，即1100 0011            &lt;&lt;      按位左移运算符。左操作数按位左移右操作数指定的位数。          A &lt;&lt; 2得到240，即 1111 0000            &gt;&gt;         按位右移运算符。左操作数按位右移右操作数指定的位数。          A &gt;&gt; 2得到15即 1111            &gt;&gt;&gt;     按位右移补零操作符。左操作数的值按右操作数指定的位数右移，移动得到的空位以零填充。    A&gt;&gt;&gt;2得到15即0000 1111         */        //逻辑运算符        /*            操作符           描述                                                        例子            &amp;&amp;            称为逻辑与运算符。当且仅当两个操作数都为真，条件才为真。        （A &amp;&amp; B）为假。            //            称为逻辑或操作符。如果任何两个操作数任何一个为真，条件为真。    （A | | B）为真。            !            称为逻辑非运算符。用来反转操作数的逻辑状态。如果条件为true，                        则逻辑非运算符将得到false。                                    !(A &amp;&amp; B)为真。         */        //赋值运算符        /*            操作符                    描述                                                    例子               =               简单的赋值运算符，将右操作数的值赋给左侧操作数                    C = A + B将把A + B得到的值赋给C               + =               加和赋值操作符，它把左操作数和右操作数相加赋值给左操作数            C + = A等价于C = C + A               - =               减和赋值操作符，它把左操作数和右操作数相减赋值给左操作数            C - = A等价于C = C - A               * =               乘和赋值操作符，它把左操作数和右操作数相乘赋值给左操作数            C * = A等价于C = C * A               / =               除和赋值操作符，它把左操作数和右操作数相除赋值给左操作数            C / = A，C 与 A 同类型时等价于 C = C / A               (%)=               取模和赋值操作符，它把左操作数和右操作数取模后赋值给左操作数        C％= A等价于C = C％A               &lt;&lt; =               左移位赋值运算符    C &lt;&lt; = 2等价于C = C &lt;&lt; 2               &gt;&gt; =               右移位赋值运算符    C &gt;&gt; = 2等价于C = C &gt;&gt; 2               &amp;=               按位与赋值运算符    C＆= 2等价于C = C＆2               ^ =               按位异或赋值操作符    C ^ = 2等价于C = C ^ 2               | =               按位或赋值操作符    C | = 2等价于C = C | 2         */        //条件运算符        /*            三元运算符。该运算符有3个操作数，并且需要判断布尔表达式的值            variable x = (expression) ? value if true : value if false         */        int x, y;        x = 10;        y = (x == 5) ? 20 : 30;        System.out.println(&quot;Value of y is &quot; + y);        y = (x == 10) ? 20 : 30;        System.out.println(&quot;Value of y is &quot; + y);        //运算符优先级        /*            类别        操作符                        关联性            后缀        () [] . (点操作符)                左到右            一元        + + - !〜                        从右到左            乘性         * /%                            左到右            加性         + -                                左到右            移位         &gt;&gt; &gt;&gt;&gt;  &lt;&lt;                         左到右            关系         &gt;&gt; = &lt;&lt; =                         左到右            相等         ==  !=                            左到右            按位与        &amp;                                左到右            按位异或        ^                                左到右            按位或        /                                左到右            逻辑与        &amp;&amp;                                左到右            逻辑或        //                              左到右            条件        ？：                            从右到左            赋值        = + = - = * = / =％= &gt;&gt; = &lt;&lt; =＆= ^ = | =    从右到左            逗号        ，                                左到右         */    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java对象和类"><a href="#Java对象和类" class="headerlink" title="Java对象和类"></a>Java对象和类</h1><pre><code>public class ObjectAndClass {    /*    - 多态    - 继承    - 封装    - 抽象    - 类 ： 是一个模板，用来描述    - 对象 ： 是类class的一个实例，具有状态和行为    - 实例    - 方法    - 重载     */    //定义一个Dog类    public static class Dog {        //成员变量        StringDemo color;        int age;        StringDemo name;        //类方法        void barking(){            System.out.println(&quot;汪！汪！汪！&quot;);        }        void hungry(){            System.out.println(&quot;好饿哦！&quot;);        }        void sleeping(){            System.out.println(&quot;好困哦！&quot;);        }        void setAge(int age){            this.age = age;        }    }    public static void main(String[]args) {        /*            创建对象            声明： 声明一个对象， 对象类型 和对象名称            实例化： new创建            初始化： 创建时调用构造方法生成         */        Dog dog = new Dog();        dog.hungry();        dog.barking();        dog.sleeping();        System.out.println(dog.age);        dog.setAge(24);        System.out.println(dog.age);    }}</code></pre>]]></content>
     
     
     <categories>
