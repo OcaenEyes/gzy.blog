@@ -291,20 +291,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[crash分析类指标详解]]></title>
-    <url>%2F2019%2F05%2F19%2Fcrash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[1) 错误次数定义：在规定的时间段内，应用出现异常退出现象的次数总和。涵义：通常情况下，应用错误集中于两种：死机或强退，这样的现象都会严重影响用户体验，所以错误次数发生的越高，用户体验越差。降低错误次数是开发者应该时刻关注的重要指标。2) 错误率定义：在规定时间段内，一个应用发生错误的比率（错误次数/启动次数）。涵义：产品质量是一个应用发展壮大的基石，与网站不同，移动应用一旦被分发之后就无法再收回，应用错误率高会降低用户对产品的信任和口碑。通过对应用的质量监控，找到错误代码并及时发布修复版本，可以有效弥补这一问题。]]></content>
-      <categories>
-        <category>产品</category>
-        <category>数据产品</category>
-        <category>数据指标</category>
-      </categories>
-      <tags>
-        <tag>产品</tag>
-        <tag>数据指标</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[用户行为类指标详解]]></title>
     <url>%2F2019%2F05%2F19%2F%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[1) 使用时长定义：用户在应用程序上所停留的时间。主要分为平均使用时长和单次使用时长，平均使用时长是某一段时间内所有用户的全部访问时间的平均值。涵义：通过考量用户在应用上的停留时间，我们可以看出应用内容是否吸引用户，应用质量是否合格；还可以看出某个推广渠道到来的用户是否是深度使用用户，以此评判渠道质量。2) 使用频率定义：在一定时期内，同一个用户启动应用的次数。如在一天之内，同一个用户一共进行有效启动5次，那么该用户的日使用频率就是5次。涵义：使用频率和日启动次数类似，只是从另外一个角度衡量用户粘性，一个应用通常情况下用户粘性越高，那么用户的平均使用频率也就越高。3) 使用间隔定义：使用间隔是指同一用户相邻两次启动应用的时间间隔，例如某一用户第一次启动应用到第二次启动应用之间相隔2天，那么该用户的使用间隔即为2天。涵义：使用间隔也从侧面反映了应用的用户粘性，通常情况下使用间隔越短说明用户越依赖应用，也就是说应用的用户粘性越高。也可以据此来决定推送消息的时机和发版频率。4) 访问深度定义：我们将用户在一次启动应用过程中所到达的页面累计数量视为用户的访问深度， 例如某用户从启动APP到退出应用过程中，一共访问了12个页面，那么称该用户的访问深度为12。涵义：理论上来讲，访问深度越高，应用质量越好，用户对应用的依赖就越强5)页面跳出率定义：用户从当前页面离开应用程序的比例，离开指“退出或后台超过30秒”涵义：在“访问页面”报表中的参数，这里的离开指结束一次启动，比如某用户在当前页面接到电话，此时应用程序隐藏到后台运行，10秒钟后挂电话又回到了应用程序，这样的过程不算作是用户“离开”。如果超过30秒，才算作一次离开。]]></content>
@@ -322,6 +308,20 @@
     <title><![CDATA[渠道类指标详解]]></title>
     <url>%2F2019%2F05%2F19%2F%E6%B8%A0%E9%81%93%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3%2F</url>
     <content type="text"><![CDATA[1)本渠道全新用户解释：首次在该渠道下载APP并激活的新用户数，并且以前从未在其他渠道下载过此APP（与全部用户进行去重）实例：若用户第一次下载安装应用是通过A渠道，启动后弹出提示升级到新版本，于是用户选择升级新版本，但是升级包属于B渠道下载的，升级完成后再启动一次。那么，该用户在A渠道算作是该渠道的全新用户，但在B渠道就不算是全新用户了。启动数据会分别在A渠道和B渠道各增加一次。2）激活解释：用户下载安装APP之后，第一次启动应用算作激活实例：若用户只是下载并安装了APP而没有点击APP启动，不算作是激活3）升级用户解释：该版本累计新用户中，从历史版本中升级到所选版本的用户个数实例：若1个用户从3.0版本升级到3.1版本，1个用户从2.0版本升级到3.1版本，那么对于3.1版本中的升级用户数为2。原理是通过设备识别号来定位用户，比对用户当前版本号和历史版本号之间的差异。4）某版本全新用户解释：累计新用户数 – 升级用户数实例：某版本的累计新用户数若为100，该版本的升级用户数为30，那么该版本的全新用户数就为100-30=70人。5）初始渠道URL解释：渠道商提供给开发者的应用程序下载链接地址实例：这里说的应用程序下载地址是指能够精确到应用程序APK安装包的那个链接地址，而不是包含安装包的页面的链接地址。6）生成渠道URL解释：将初始URL输入“渠道来源管理”界面，然后点击由百度移动统计生成渠道URL，再将渠道URL提供给渠道商替换原始URL，即可对渠道来源进行细分统计了7）渠道来源激活量解释：所选时段内，可追溯渠道来源的激活量。激活意为下载并第一次启动8）转化率算法：激活量/去重点击量实例：若1月份内，可追溯到渠道来源的激活数量为50，经过去重的点击量为100，那么1月份的转化率为50/100=50%]]></content>
+      <categories>
+        <category>产品</category>
+        <category>数据产品</category>
+        <category>数据指标</category>
+      </categories>
+      <tags>
+        <tag>产品</tag>
+        <tag>数据指标</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[crash分析类指标详解]]></title>
+    <url>%2F2019%2F05%2F19%2Fcrash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[1) 错误次数定义：在规定的时间段内，应用出现异常退出现象的次数总和。涵义：通常情况下，应用错误集中于两种：死机或强退，这样的现象都会严重影响用户体验，所以错误次数发生的越高，用户体验越差。降低错误次数是开发者应该时刻关注的重要指标。2) 错误率定义：在规定时间段内，一个应用发生错误的比率（错误次数/启动次数）。涵义：产品质量是一个应用发展壮大的基石，与网站不同，移动应用一旦被分发之后就无法再收回，应用错误率高会降低用户对产品的信任和口碑。通过对应用的质量监控，找到错误代码并及时发布修复版本，可以有效弥补这一问题。]]></content>
       <categories>
         <category>产品</category>
         <category>数据产品</category>
@@ -426,9 +426,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[搭建自然语言处理的开发环境]]></title>
-    <url>%2F2019%2F03%2F01%2F%E6%90%AD%E5%BB%BA%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
-    <content type="text"><![CDATA[自然语言处理开发环境介绍 sublime vscode pycharm Anaconda3]]></content>
+    <title><![CDATA[案例-NLP实现预测天气冷暖感知度]]></title>
+    <url>%2F2019%2F03%2F01%2F%E6%A1%88%E4%BE%8B-NLP%E5%AE%9E%E7%8E%B0%E9%A2%84%E6%B5%8B%E5%A4%A9%E6%B0%94%E5%86%B7%E6%9A%96%E6%84%9F%E7%9F%A5%E5%BA%A6%2F</url>
+    <content type="text"><![CDATA[案例：NLP预测天气冷暖感知度1、案例需求 根据吃冰淇淋和喝水的数量，判断成都天气冷热程度。 成都春熙路街头采访记录一些游客吃了多少冰淇淋，又喝了几瓶水，他觉得成都天气怎么样（这里只考虑二分类问题，假设只有‘非常热’和‘一般热’） 其中特征向量包括两个分别是冰激凌数t1和喝水数t2，户外活动时长t3: 对应的标签类别分别是非常热A和一般热B。 2、实验数据准备 构造模拟数据 人员 冰淇淋 喝水 户外活动时长 冷热程度 判断描述 小王 8 4 2 A 小王吃了8个冰淇淋，喝了4瓶水，户外2小时，该地区天气非常热 小张 7 1 1 A 小张吃了7个冰淇淋，喝了1瓶水，户外1小时，该地区天气非常热 小李 1 4 4 B 小李吃了1个冰淇淋，喝了4瓶水，户外4小时，该地区天气一般热 小赵 3 0 5 B 小赵吃了3个冰淇淋，喝了0瓶水，户外5小时，该地区天气一般热 代码构造数据集 #!/usr/bin/python # -*- coding:utf-8 -*- &#39;&#39;&#39; author:gzy date:20190301 version:0.1.0 &#39;&#39;&#39; import numpy as np import matplotlib.pyplot as plt from matplotlib.font_manager import FontProperties class Temperature(): #设置字字体，避免汉字乱码 siyuanyahei = FontProperties(fname=&quot;../SourceHanSans-Normal.otf&quot;) #创建数据集，返回数据集和类标签 def create_dataset(self): # 数据集 datasets = np.array([[8,4,2],[7,1,1],[1,4,4],[3,0,5]]) #类标签 labels = [&#39;非常热&#39;,&#39;非常热&#39;,&#39;一般热&#39;,&#39;一般热&#39;] return datasets,labels 3、数据分析与可视化 可视化展示散点图 #可视化分析数据 def analyze_data_plot(self,x,y): fig = plt.figure() # 将画布分隔为1行1列一块 ax = fig.add_subplot(111) ax.scatter(x,y) #设置散点图的标题和横纵坐标 plt.title(&#39;游客领热感知散点图&#39;,fontproperties=self.siyuanyahei) plt.xlabel(&#39;天热吃冰激凌数目&#39;,fontproperties=self.siyuanyahei) plt.ylabel(&#39;天热喝水的数目&#39;,fontproperties=self.siyuanyahei) plt.show() 4、算法模型及原理讲解 KNN模型原理及欧式距离计算 什么是KNN算法模型 KNN工作原理 KNN算法思想 KNN算法流程 4.1、KNN算法模型​ k-近邻(KNN，k-NearestNeighbor)算法是一种基本分类与回归方法。k-近邻假设设定一个训练数据集(先验知识)，其中的实例类别已定。分类时候，对新的实例数据，根据其K个最近邻的训练实例的类别，通过多数表决等方式进行预测。 ==K近邻算法属于有监督学习，实际上利用训练数据集对特征向量空间进行划分，并作为其分类的”模型”。K值的选择、距离度量、以及分类决策规则是K近邻算法的三个基本要素。== 在本案例中，仅讨论分类问题中的k-近邻算法；输入值：案例的特征向量(吃冰淇淋、喝水、活动时间)，对应特征空间的点；输出值：案例的类别(非常热、一般热、舒适、一般冷、非常冷) 4.2、KNN工作原理 假设一个带有标签的数据集(训练样本集)，包含每条数据与所属分类的对应关系 输入没有标签的新数据后，将新数据的每个特征与样本集中数据对应的特征进行比较 计算新数据与样本数据集 中每条数据的距离 对求得的所有距离进行排序(从小到大，越小表示越相似) 取前K(K&lt;=20的奇数)个样本数据对应的分类标签 求K个数据中出现次数最多的分类标签作为新数据的分类 4.3、KNN算法思想 计算所有样本点 与 待分类样本之间的距离 计算完 样本距离进行排序 选取距离样本最近的k个点 针对这个k个点，统计各个类别分别有多少个 k个点钟某个类别最多，就将该样本划归该点 4.4、KNN算法模型流程与实现 搜集数据 数据采集过程，分为：非机构化数据、半结构化数据、数据化数据 准备数据 格式化处理，对不同类别的数据进行统一的格式化处理 如：将pdf,word,excel,sql等统一转化为txt 分析数据 看数据特点，有无缺失值，数据是离散还是连续 训练数据 不适用与KNN，但在其他一些监督学习中经常会用到 应用算法 针对完善的模型进行封装重构，进行实际应用 构造KNN分类器 #构造KNN分类器 def knn_Classifier(self,newV,datasets,labels,k): # 获取新样本的数据 # 获取样本库的数据 # 选择K值 # 计算样本数据与样本库数据之间的距离 # 根据距离进行排序 # 针对k个点，统计各个类别的数量 # 投票机制，少数服从多数原则 pass 欧式距离计算 # 欧氏距离计算 #方式一 d^2 = （x1-x2）^2 +(y1-y2)^2&quot; def ComputeEuclideanDistance(self,x1,x2,y1,y2): d = math.sqrt(math.pow((x1-x2),2)+math.pow((y1-y2),2)) return d # 方式二 def EuclideanDistance(self,instance1,instance2,length): d =0 for x in range(length): d += pow((instance1[x]-instance2[x]),2) return math.sqrt(d)]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Natural Language Processing</category>
@@ -439,9 +439,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[案例-NLP实现预测天气冷暖感知度]]></title>
-    <url>%2F2019%2F03%2F01%2F%E6%A1%88%E4%BE%8B-NLP%E5%AE%9E%E7%8E%B0%E9%A2%84%E6%B5%8B%E5%A4%A9%E6%B0%94%E5%86%B7%E6%9A%96%E6%84%9F%E7%9F%A5%E5%BA%A6%2F</url>
-    <content type="text"><![CDATA[案例：NLP预测天气冷暖感知度1、案例需求 根据吃冰淇淋和喝水的数量，判断成都天气冷热程度。 成都春熙路街头采访记录一些游客吃了多少冰淇淋，又喝了几瓶水，他觉得成都天气怎么样（这里只考虑二分类问题，假设只有‘非常热’和‘一般热’） 其中特征向量包括两个分别是冰激凌数t1和喝水数t2，户外活动时长t3: 对应的标签类别分别是非常热A和一般热B。 2、实验数据准备 构造模拟数据 人员 冰淇淋 喝水 户外活动时长 冷热程度 判断描述 小王 8 4 2 A 小王吃了8个冰淇淋，喝了4瓶水，户外2小时，该地区天气非常热 小张 7 1 1 A 小张吃了7个冰淇淋，喝了1瓶水，户外1小时，该地区天气非常热 小李 1 4 4 B 小李吃了1个冰淇淋，喝了4瓶水，户外4小时，该地区天气一般热 小赵 3 0 5 B 小赵吃了3个冰淇淋，喝了0瓶水，户外5小时，该地区天气一般热 代码构造数据集 #!/usr/bin/python # -*- coding:utf-8 -*- &#39;&#39;&#39; author:gzy date:20190301 version:0.1.0 &#39;&#39;&#39; import numpy as np import matplotlib.pyplot as plt from matplotlib.font_manager import FontProperties class Temperature(): #设置字字体，避免汉字乱码 siyuanyahei = FontProperties(fname=&quot;../SourceHanSans-Normal.otf&quot;) #创建数据集，返回数据集和类标签 def create_dataset(self): # 数据集 datasets = np.array([[8,4,2],[7,1,1],[1,4,4],[3,0,5]]) #类标签 labels = [&#39;非常热&#39;,&#39;非常热&#39;,&#39;一般热&#39;,&#39;一般热&#39;] return datasets,labels 3、数据分析与可视化 可视化展示散点图 #可视化分析数据 def analyze_data_plot(self,x,y): fig = plt.figure() # 将画布分隔为1行1列一块 ax = fig.add_subplot(111) ax.scatter(x,y) #设置散点图的标题和横纵坐标 plt.title(&#39;游客领热感知散点图&#39;,fontproperties=self.siyuanyahei) plt.xlabel(&#39;天热吃冰激凌数目&#39;,fontproperties=self.siyuanyahei) plt.ylabel(&#39;天热喝水的数目&#39;,fontproperties=self.siyuanyahei) plt.show() 4、算法模型及原理讲解 KNN模型原理及欧式距离计算 什么是KNN算法模型 KNN工作原理 KNN算法思想 KNN算法流程 4.1、KNN算法模型​ k-近邻(KNN，k-NearestNeighbor)算法是一种基本分类与回归方法。k-近邻假设设定一个训练数据集(先验知识)，其中的实例类别已定。分类时候，对新的实例数据，根据其K个最近邻的训练实例的类别，通过多数表决等方式进行预测。 ==K近邻算法属于有监督学习，实际上利用训练数据集对特征向量空间进行划分，并作为其分类的”模型”。K值的选择、距离度量、以及分类决策规则是K近邻算法的三个基本要素。== 在本案例中，仅讨论分类问题中的k-近邻算法；输入值：案例的特征向量(吃冰淇淋、喝水、活动时间)，对应特征空间的点；输出值：案例的类别(非常热、一般热、舒适、一般冷、非常冷) 4.2、KNN工作原理 假设一个带有标签的数据集(训练样本集)，包含每条数据与所属分类的对应关系 输入没有标签的新数据后，将新数据的每个特征与样本集中数据对应的特征进行比较 计算新数据与样本数据集 中每条数据的距离 对求得的所有距离进行排序(从小到大，越小表示越相似) 取前K(K&lt;=20的奇数)个样本数据对应的分类标签 求K个数据中出现次数最多的分类标签作为新数据的分类 4.3、KNN算法思想 计算所有样本点 与 待分类样本之间的距离 计算完 样本距离进行排序 选取距离样本最近的k个点 针对这个k个点，统计各个类别分别有多少个 k个点钟某个类别最多，就将该样本划归该点 4.4、KNN算法模型流程与实现 搜集数据 数据采集过程，分为：非机构化数据、半结构化数据、数据化数据 准备数据 格式化处理，对不同类别的数据进行统一的格式化处理 如：将pdf,word,excel,sql等统一转化为txt 分析数据 看数据特点，有无缺失值，数据是离散还是连续 训练数据 不适用与KNN，但在其他一些监督学习中经常会用到 应用算法 针对完善的模型进行封装重构，进行实际应用 构造KNN分类器 #构造KNN分类器 def knn_Classifier(self,newV,datasets,labels,k): # 获取新样本的数据 # 获取样本库的数据 # 选择K值 # 计算样本数据与样本库数据之间的距离 # 根据距离进行排序 # 针对k个点，统计各个类别的数量 # 投票机制，少数服从多数原则 pass 欧式距离计算 # 欧氏距离计算 #方式一 d^2 = （x1-x2）^2 +(y1-y2)^2&quot; def ComputeEuclideanDistance(self,x1,x2,y1,y2): d = math.sqrt(math.pow((x1-x2),2)+math.pow((y1-y2),2)) return d # 方式二 def EuclideanDistance(self,instance1,instance2,length): d =0 for x in range(length): d += pow((instance1[x]-instance2[x]),2) return math.sqrt(d)]]></content>
+    <title><![CDATA[搭建自然语言处理的开发环境]]></title>
+    <url>%2F2019%2F03%2F01%2F%E6%90%AD%E5%BB%BA%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
+    <content type="text"><![CDATA[自然语言处理开发环境介绍 sublime vscode pycharm Anaconda3]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Natural Language Processing</category>
@@ -465,18 +465,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[AI时代决策效率革命]]></title>
-    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
-    <content type="text"><![CDATA[]]></content>
-      <categories>
-        <category>Artificial Intelligence</category>
-      </categories>
-      <tags>
-        <tag>人工智能</tag>
-        <tag>Artificial Intelligence</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[AI时代如何提升个人认知]]></title>
     <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5%2F</url>
     <content type="text"><![CDATA[AI时间如何提升个人认知 思考比学习知识更重要。 外部原因​ 当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。 比如： 互联网 共享经济 大数据 内部原因 《论思考》 、《论书籍和写作》——叔本华 读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。]]></content>
@@ -489,9 +477,21 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-WebSocket]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket%2F</url>
-    <content type="text"><![CDATA[WebSocket 一个应用层协议 长链接 主流即时通讯协议]]></content>
+    <title><![CDATA[AI时代决策效率革命]]></title>
+    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
+    <content type="text"><![CDATA[]]></content>
+      <categories>
+        <category>Artificial Intelligence</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+        <tag>Artificial Intelligence</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[php即时通讯-http]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
+    <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
       <categories>
         <category>php</category>
       </categories>
@@ -522,9 +522,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-http]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
-    <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
+    <title><![CDATA[php即时通讯-WebSocket]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket%2F</url>
+    <content type="text"><![CDATA[WebSocket 一个应用层协议 长链接 主流即时通讯协议]]></content>
       <categories>
         <category>php</category>
       </categories>
@@ -545,9 +545,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---数据类型]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
+    <title><![CDATA[redis学习---安装入门]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -557,9 +557,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---安装入门]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
-    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
+    <title><![CDATA[redis学习---数据类型]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -898,9 +898,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[几种机器学习原理]]></title>
-    <url>%2F2018%2F11%2F25%2F%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%2F</url>
-    <content type="text"><![CDATA[几种机器学习算法原理机器学习过程什么问题适合用机器学习解决几种常见的模型和算法]]></content>
+    <title><![CDATA[AI是什么]]></title>
+    <url>%2F2018%2F11%2F25%2FAI%E6%98%AF%E4%BB%80%E4%B9%88%2F</url>
+    <content type="text"><![CDATA[AI是什么AI，“Artificial Intelligence”的缩写，中文“人工智能”；可以理解为让机器具备类似人的智能，从而代替人类完成某些工作和任务。 “强人工智能” 能够像人类一样去思考和推理，具备自我意识 “弱人工智能” 机器表现出来的特征是智能的，但是不具备自我意识 通过相关规则编程，使机器按照程序逻辑完成特定的任务 针对某一任务向机器提供大量数据，使机器自己去学习，继而挖掘出规律，从而完成任务 弱人工智能机器学习从模型层次结构的角度可以分为浅层学习和深度学习 浅层学习（Shallow Learning） 模型层次较浅，通常没有隐藏层、或只有一层隐藏层 可以做一些预测、分类、聚类、降低数据维度、压缩数据、商品推荐系统等工作 常见算法： 线性回归 逻辑回归 随机森林 SVM K-means RBM AutoEncoder PCA SOM …… 深度学习（Deep Learning） “深”是因为通常具有较多的隐藏层，进而拥有表达更多复杂函数的能力，进而能识别更复杂的特征 主要集中在CNN 和RNN CNN CNN为Convolution Neural NetWorks的缩写，也就是卷积神经网络 主要应用于计算机视觉、图像分类领域 应用场景示例 美颜相机的滤镜 交通监控识别车辆车型、车牌号 商汤人脸识别 无人车 …… RNN Recurrent Neual NetWorks的缩写，递归神经网络 基于RNN还衍生出LSTM（Long-Short-Term-Memerory） 和GRU（Gated Recurrent Unit）等 具有记忆过去的能力，故用来处理一些有时间序列属性的数据，处理语言、文字具有优势 应用场景示例： Siri对话机器人 谷歌翻译，机器翻译 语音转文字 …… AI本质AI本质上都是一个函数 AI其实就是我们提供机器目前已有的数据，机器从数据去找出一个最能拟合这些数据的函数；当有新的数据需要预测时，机器通过之前找到的函数去预测新数据的对应结果。 通用要素 AI = 数据+算法+模型 示例讲解—分类器模型为区分A 和B 数据 准备大量已标注过 是A 还是B的图片 只有数据量足够大，模型才能够学习足够准确的 区分A 和B的特征，在进行最终的AB任务区分上，才能表现出足够高的准确性 算法 网络架构设计：构建模型时，采用浅层网络还是深层网络，如为深层，则需多少层，每层油多少神经元，功能是什么等 预测函数的大致结构$$Y= f(W,X,b)$$Y ，是已有的图片数据的标签；（A和B的图片） X，是已有的用来训练的数据；（该图是A 还是B） W，权重；b，偏差 ； 这两个参数通过机器学习后得出 寻找W 和b 的过程，就是模型训练的过程 模型 将数据带入算法中训练，机器不断学习，当机器找到最优 W 权重，b 偏差；就意味着模型 train成功了 函数模型$$Y=f(W,X,b)$$ 提供新的数据输入该模型，算出新的数据是A或者B，即为模型的预测功能 不管是简单的线性回归，还是复杂的深度神经网络模型，本质都是寻找一个能够良好拟合目前已有数据的函数$$Y=f(W，X，b)$$并且这个函数在新的未知数据上也能够表现良好。]]></content>
       <categories>
         <category>Artificial Intelligence</category>
       </categories>
@@ -922,9 +922,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[AI是什么]]></title>
-    <url>%2F2018%2F11%2F25%2FAI%E6%98%AF%E4%BB%80%E4%B9%88%2F</url>
-    <content type="text"><![CDATA[AI是什么AI，“Artificial Intelligence”的缩写，中文“人工智能”；可以理解为让机器具备类似人的智能，从而代替人类完成某些工作和任务。 “强人工智能” 能够像人类一样去思考和推理，具备自我意识 “弱人工智能” 机器表现出来的特征是智能的，但是不具备自我意识 通过相关规则编程，使机器按照程序逻辑完成特定的任务 针对某一任务向机器提供大量数据，使机器自己去学习，继而挖掘出规律，从而完成任务 弱人工智能机器学习从模型层次结构的角度可以分为浅层学习和深度学习 浅层学习（Shallow Learning） 模型层次较浅，通常没有隐藏层、或只有一层隐藏层 可以做一些预测、分类、聚类、降低数据维度、压缩数据、商品推荐系统等工作 常见算法： 线性回归 逻辑回归 随机森林 SVM K-means RBM AutoEncoder PCA SOM …… 深度学习（Deep Learning） “深”是因为通常具有较多的隐藏层，进而拥有表达更多复杂函数的能力，进而能识别更复杂的特征 主要集中在CNN 和RNN CNN CNN为Convolution Neural NetWorks的缩写，也就是卷积神经网络 主要应用于计算机视觉、图像分类领域 应用场景示例 美颜相机的滤镜 交通监控识别车辆车型、车牌号 商汤人脸识别 无人车 …… RNN Recurrent Neual NetWorks的缩写，递归神经网络 基于RNN还衍生出LSTM（Long-Short-Term-Memerory） 和GRU（Gated Recurrent Unit）等 具有记忆过去的能力，故用来处理一些有时间序列属性的数据，处理语言、文字具有优势 应用场景示例： Siri对话机器人 谷歌翻译，机器翻译 语音转文字 …… AI本质AI本质上都是一个函数 AI其实就是我们提供机器目前已有的数据，机器从数据去找出一个最能拟合这些数据的函数；当有新的数据需要预测时，机器通过之前找到的函数去预测新数据的对应结果。 通用要素 AI = 数据+算法+模型 示例讲解—分类器模型为区分A 和B 数据 准备大量已标注过 是A 还是B的图片 只有数据量足够大，模型才能够学习足够准确的 区分A 和B的特征，在进行最终的AB任务区分上，才能表现出足够高的准确性 算法 网络架构设计：构建模型时，采用浅层网络还是深层网络，如为深层，则需多少层，每层油多少神经元，功能是什么等 预测函数的大致结构$$Y= f(W,X,b)$$Y ，是已有的图片数据的标签；（A和B的图片） X，是已有的用来训练的数据；（该图是A 还是B） W，权重；b，偏差 ； 这两个参数通过机器学习后得出 寻找W 和b 的过程，就是模型训练的过程 模型 将数据带入算法中训练，机器不断学习，当机器找到最优 W 权重，b 偏差；就意味着模型 train成功了 函数模型$$Y=f(W,X,b)$$ 提供新的数据输入该模型，算出新的数据是A或者B，即为模型的预测功能 不管是简单的线性回归，还是复杂的深度神经网络模型，本质都是寻找一个能够良好拟合目前已有数据的函数$$Y=f(W，X，b)$$并且这个函数在新的未知数据上也能够表现良好。]]></content>
+    <title><![CDATA[几种机器学习原理]]></title>
+    <url>%2F2018%2F11%2F25%2F%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%2F</url>
+    <content type="text"><![CDATA[几种机器学习算法原理机器学习过程什么问题适合用机器学习解决几种常见的模型和算法]]></content>
       <categories>
         <category>Artificial Intelligence</category>
       </categories>
@@ -947,9 +947,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Python数据挖掘——基础知识]]></title>
-    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%2F</url>
-    <content type="text"><![CDATA[Python数据挖掘——基础知识 数据挖掘又称从数据中 挖掘知识、知识提取、数据／模式分析 即为：从数据中发现知识的过程 1、数据清理 （消除噪声，删除不一致数据） 2、数据集成 （多种数据源 组合在一起） 3、数据选择 （从数据库中提取和分析任务相关的数据） 4、数据变换 （通过汇总或聚焦操作，把数据变换和统一成适合挖掘的形式） 5、数据挖掘 （基本步骤，使用智能化方法提取数据） 6、模式评估 （根据某种兴趣度量，识别代表知识的真正的有趣模式） 7、知识表示 （使用可视化和知识表示技术，向用户提供数据挖掘的知识） 广义：从大量的数据中挖掘有趣模式和知识的过程 数据挖掘的模式： 描述性：描述性挖掘任务刻画目标数据中数据的一般性质 预测性：预测性挖掘任务在当前数据上进行归纳，以便作出预测 数据挖掘功能 离群点分析 特征化与区分 数据特征化 是目标类数据的一般性／特性的汇总 数据区分是将目标数据对象的一般性 与一个／多个对比类对象的一般性进行比较 频繁模式、关联和相关性 频繁模式包括频繁项集、序列模式和频繁子结构 频繁项集挖掘是频繁模式的基础 聚类分析 最大化类内相似性 最小化类间相似性 分类与回归 数据挖掘使用的技术 统计学 数据库系统 数据仓库 信息检索 机器学习 模式识别 可视化 算法 高性能计算 应用 数据挖掘的主要问题 挖掘方法 用户交互 有效性与伸缩性 数据类型的多样性 数据挖掘与社会]]></content>
+    <title><![CDATA[Python数据挖掘——数据预处理]]></title>
+    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%2F</url>
+    <content type="text"><![CDATA[Python数据挖掘——数据预处理 数据预处理 数据质量 准确性、完整性、一致性、时效性、可信性、可解释性 数据预处理的主要任务 数据清理 数据集成 数据归约 维归约 数值归约 数据变换 规范化 数据离散化 概念分层产生 数据清理（试图填充缺失的值，光滑噪声并识别离群点，纠正数据的不一致） 缺失值 忽略元组 人工填写缺失值 使用一个全局常量填充缺失值 使用属性的中心度量（均值／中位数）填充缺失值 使用与给定元组属于同一类的所有样本的均值／中位数 使用最可能的值 填充缺失值 注：某些情况，缺失值并不代表错误 噪声数据（噪声是被测量的变量的随机误差或方差） 分箱（通过考察数据的近邻，来光滑有序数据值） 用箱均值 用箱中位数 用箱边界 回归 离群点分析（通过聚类来检测离群点） 数据清理化为一个过程 首先进行偏差检测，还要防止字段过载 唯一性规则 连续性规则 空值规则 偏差检测商业工具 数据清洗工具 数据审计工具 数据迁移工具 EIL工具 数据集成 实体识别问题 冗余和相关分析 元组重复 数据值冲突的检测与处理 数据归约 数据变换与数据离散化]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Data Mining</category>
@@ -960,9 +960,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Python数据挖掘——数据预处理]]></title>
-    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%2F</url>
-    <content type="text"><![CDATA[Python数据挖掘——数据预处理 数据预处理 数据质量 准确性、完整性、一致性、时效性、可信性、可解释性 数据预处理的主要任务 数据清理 数据集成 数据归约 维归约 数值归约 数据变换 规范化 数据离散化 概念分层产生 数据清理（试图填充缺失的值，光滑噪声并识别离群点，纠正数据的不一致） 缺失值 忽略元组 人工填写缺失值 使用一个全局常量填充缺失值 使用属性的中心度量（均值／中位数）填充缺失值 使用与给定元组属于同一类的所有样本的均值／中位数 使用最可能的值 填充缺失值 注：某些情况，缺失值并不代表错误 噪声数据（噪声是被测量的变量的随机误差或方差） 分箱（通过考察数据的近邻，来光滑有序数据值） 用箱均值 用箱中位数 用箱边界 回归 离群点分析（通过聚类来检测离群点） 数据清理化为一个过程 首先进行偏差检测，还要防止字段过载 唯一性规则 连续性规则 空值规则 偏差检测商业工具 数据清洗工具 数据审计工具 数据迁移工具 EIL工具 数据集成 实体识别问题 冗余和相关分析 元组重复 数据值冲突的检测与处理 数据归约 数据变换与数据离散化]]></content>
+    <title><![CDATA[Python数据挖掘——基础知识]]></title>
+    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%2F</url>
+    <content type="text"><![CDATA[Python数据挖掘——基础知识 数据挖掘又称从数据中 挖掘知识、知识提取、数据／模式分析 即为：从数据中发现知识的过程 1、数据清理 （消除噪声，删除不一致数据） 2、数据集成 （多种数据源 组合在一起） 3、数据选择 （从数据库中提取和分析任务相关的数据） 4、数据变换 （通过汇总或聚焦操作，把数据变换和统一成适合挖掘的形式） 5、数据挖掘 （基本步骤，使用智能化方法提取数据） 6、模式评估 （根据某种兴趣度量，识别代表知识的真正的有趣模式） 7、知识表示 （使用可视化和知识表示技术，向用户提供数据挖掘的知识） 广义：从大量的数据中挖掘有趣模式和知识的过程 数据挖掘的模式： 描述性：描述性挖掘任务刻画目标数据中数据的一般性质 预测性：预测性挖掘任务在当前数据上进行归纳，以便作出预测 数据挖掘功能 离群点分析 特征化与区分 数据特征化 是目标类数据的一般性／特性的汇总 数据区分是将目标数据对象的一般性 与一个／多个对比类对象的一般性进行比较 频繁模式、关联和相关性 频繁模式包括频繁项集、序列模式和频繁子结构 频繁项集挖掘是频繁模式的基础 聚类分析 最大化类内相似性 最小化类间相似性 分类与回归 数据挖掘使用的技术 统计学 数据库系统 数据仓库 信息检索 机器学习 模式识别 可视化 算法 高性能计算 应用 数据挖掘的主要问题 挖掘方法 用户交互 有效性与伸缩性 数据类型的多样性 数据挖掘与社会]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Data Mining</category>
@@ -1056,21 +1056,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析08：matplotlib颜色与样式]]></title>
-    <url>%2F2018%2F03%2F02%2F08-matplotlib%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%A0%B7%E5%BC%8F%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 颜色： - 八种内置默认颜色， 缩写 b :blue g :green r :red c :cyan m :magenta y :yellow k :black w :white - 其它颜色的表示方法 灰色阴影 html 十六进制 RGB 元组 &#39;&#39;&#39; y = np.arange(1,5) # 内置颜色表示 plt.plot(y,color =&#39;g&#39;) # 灰度表示方法 plt.plot(y+1,color = &#39;0.5&#39;) # html 十六进制 plt.plot(y+2,color = &#39;#ff00ff&#39;) # RGB 元组 plt.plot(y+3,color=(0.1,0.2,0.3)) plt.show() &#39;&#39;&#39; 线 linestyle =&#39;&#39; -- 虚线 -. 点化线 ： 点线 - 实线 样式字符串 可将 颜色，点型，线性 ，依次排列成一个字符串如： cx-- mo: kp- plt.plot(y,&#39;cx--&#39;) &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用样式字符串绘制两条线； 1、红色，实线，圆点 2、黄色，虚线，X点 3、绿色，点线，三角形点 &#39;&#39;&#39; y = np.arange(0,4) plt.plot(y,&#39;ro-&#39;,y+1,&#39;yx--&#39;,y+2,&#39;g&gt;:&#39;) plt.show()]]></content>
-      <categories>
-        <category>数据分析</category>
-        <category>Python3</category>
-        <category>Matplotlib</category>
-      </categories>
-      <tags>
-        <tag>数据分析</tag>
-        <tag>Python3</tag>
-        <tag>Matplotlib</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[数据分析07：matplotlib箱线图]]></title>
     <url>%2F2018%2F03%2F02%2F07-matplotlib%E7%AE%B1%E7%BA%BF%E5%9B%BE%2F</url>
     <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 箱形图（Box-plot）又称为盒须图，盒式图，或 箱线图； 是一种用在显示一组数据分散情况的资料统计图； 上边缘，上四分位数，中位数，下四分位数，下边缘，异常值； &#39;&#39;&#39; np.random.seed(100) data = np.random.normal(size=1000,loc=0,scale=1) # sym 指定异常值的点；whis虚线的长度， 通过调整whis的大小来决定收入异常值的多少 plt.boxplot(data,sym =&#39;o&#39;,whis=1.5) plt.show() # 同一张图中显示多个箱线图 # 4组 1000的数据 data = np.random.normal(size=(1000,4),loc = 0,scale=1) # 每组的标签为ABCD labels = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;] plt.boxplot(data,labels=labels) plt.show() # 练习 &#39;&#39;&#39; 随机生成 100 *5 的数组； 绘制箱线图，使用sym ,whis参数 &#39;&#39;&#39; data = np.random.normal(size=(100,5),loc = 0,scale=1) plt.boxplot(data,sym=&#39;o&#39;,whis=0.5) plt.show()]]></content>
@@ -1101,9 +1086,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析04：matplotlib柱形图]]></title>
-    <url>%2F2018%2F03%2F02%2F04-matploylib%E6%9F%B1%E5%BD%A2%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt # 柱形图 # 例一 N =5 y = [15,28,10,30,25] index = np.arange(N) p = plt.bar(index,height=y) plt.show() # 例2 p1 = plt.bar(0,bottom=index,width=y,height=0.5,align=&#39;edge&#39;,color=&#39;red&#39;,orientation=&#39;horizontal&#39;) plt.show() p2 = plt.barh(index,width= y , align=&#39;edge&#39;,color =&#39;green&#39;,height=0.5) plt.show() # 例3 sales_BJ = [52,55,63,53] sales_SH = [44,66,55,41] index = np.arange(4) bar_width = 0.3 # 竖着显示 plt.bar(index,sales_BJ,bar_width) plt.bar(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;) plt.show() # 横着显示 plt.barh(index,sales_BJ,bar_width) plt.barh(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;) plt.show() # 层叠图 plt.bar(index,sales_BJ,bar_width) plt.bar(index,sales_SH,bar_width,color=&#39;r&#39;,bottom=sales_BJ) plt.show() # 练习 &#39;&#39;&#39; 生成两组大小为5的数据； 画出两组数据 水平的条形图； 采用并列，层叠两种方式； &#39;&#39;&#39; N =5 n1 = np.random.randint(1,100,N) n2 = np.random.randint(1,100,N) index = np.arange(N) bar_width = 0.3 # 并列显示 plt.bar(index,n1,bar_width) plt.bar(index+bar_width,n2,bar_width,color=&#39;r&#39;) plt.show() # 层叠显示 plt.bar(index,n1,bar_width) plt.bar(index,n2,bar_width,color=&#39;r&#39;,bottom=n1) plt.show()]]></content>
+    <title><![CDATA[数据分析08：matplotlib颜色与样式]]></title>
+    <url>%2F2018%2F03%2F02%2F08-matplotlib%E9%A2%9C%E8%89%B2%E4%B8%8E%E6%A0%B7%E5%BC%8F%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 颜色： - 八种内置默认颜色， 缩写 b :blue g :green r :red c :cyan m :magenta y :yellow k :black w :white - 其它颜色的表示方法 灰色阴影 html 十六进制 RGB 元组 &#39;&#39;&#39; y = np.arange(1,5) # 内置颜色表示 plt.plot(y,color =&#39;g&#39;) # 灰度表示方法 plt.plot(y+1,color = &#39;0.5&#39;) # html 十六进制 plt.plot(y+2,color = &#39;#ff00ff&#39;) # RGB 元组 plt.plot(y+3,color=(0.1,0.2,0.3)) plt.show() &#39;&#39;&#39; 线 linestyle =&#39;&#39; -- 虚线 -. 点化线 ： 点线 - 实线 样式字符串 可将 颜色，点型，线性 ，依次排列成一个字符串如： cx-- mo: kp- plt.plot(y,&#39;cx--&#39;) &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用样式字符串绘制两条线； 1、红色，实线，圆点 2、黄色，虚线，X点 3、绿色，点线，三角形点 &#39;&#39;&#39; y = np.arange(0,4) plt.plot(y,&#39;ro-&#39;,y+1,&#39;yx--&#39;,y+2,&#39;g&gt;:&#39;) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python3</category>
@@ -1116,9 +1101,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
-    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
+    <title><![CDATA[数据分析04：matplotlib柱形图]]></title>
+    <url>%2F2018%2F03%2F02%2F04-matploylib%E6%9F%B1%E5%BD%A2%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt # 柱形图 # 例一 N =5 y = [15,28,10,30,25] index = np.arange(N) p = plt.bar(index,height=y) plt.show() # 例2 p1 = plt.bar(0,bottom=index,width=y,height=0.5,align=&#39;edge&#39;,color=&#39;red&#39;,orientation=&#39;horizontal&#39;) plt.show() p2 = plt.barh(index,width= y , align=&#39;edge&#39;,color =&#39;green&#39;,height=0.5) plt.show() # 例3 sales_BJ = [52,55,63,53] sales_SH = [44,66,55,41] index = np.arange(4) bar_width = 0.3 # 竖着显示 plt.bar(index,sales_BJ,bar_width) plt.bar(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;) plt.show() # 横着显示 plt.barh(index,sales_BJ,bar_width) plt.barh(index+bar_width,sales_SH,bar_width,color=&#39;r&#39;) plt.show() # 层叠图 plt.bar(index,sales_BJ,bar_width) plt.bar(index,sales_SH,bar_width,color=&#39;r&#39;,bottom=sales_BJ) plt.show() # 练习 &#39;&#39;&#39; 生成两组大小为5的数据； 画出两组数据 水平的条形图； 采用并列，层叠两种方式； &#39;&#39;&#39; N =5 n1 = np.random.randint(1,100,N) n2 = np.random.randint(1,100,N) index = np.arange(N) bar_width = 0.3 # 并列显示 plt.bar(index,n1,bar_width) plt.bar(index+bar_width,n2,bar_width,color=&#39;r&#39;) plt.show() # 层叠显示 plt.bar(index,n1,bar_width) plt.bar(index,n2,bar_width,color=&#39;r&#39;,bottom=n1) plt.show()]]></content>
       <categories>
         <category>数据分析</category>
         <category>Python3</category>
@@ -1157,6 +1142,21 @@
         <tag>服务端</tag>
         <tag>Java</tag>
         <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SpringBoot-WebSocket聊天室]]></title>
+    <url>%2F2018%2F03%2F02%2FSpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4%2F</url>
+    <content type="text"><![CDATA[SpringBoot-WebSocket 聊天室配置类Config// websocket配置 @Bean public ServerEndpointExporter serverEndpointExporter() { return new ServerEndpointExporter(); } 业务类Controllerimport org.springframework.stereotype.Component; import javax.websocket.*; import javax.websocket.server.PathParam; import javax.websocket.server.ServerEndpoint; import java.util.HashMap; import java.util.Map; import java.util.concurrent.CopyOnWriteArraySet; /** * * @Description: websocket的具体实现类 * * 使用springboot的唯一区别是要@Component声明下，而使用独立容器是由容器自己管理websocket的， * * 但在springboot中连容器都是spring管理的。 * 虽然@Component默认是单例模式的，但springboot还是会为每个websocket连接初始化一个bean， * 所以可以用一个静态set保存起来。 */ @ServerEndpoint(value = &quot;/websocket/{nickName}&quot;) @Component public class MyWebSocket { //用来存放每个客户端对应的MyWebSocket对象。 private static CopyOnWriteArraySet&lt;MyWebSocket&gt; webSocketSet = new CopyOnWriteArraySet&lt;MyWebSocket&gt;(); private static Map&lt;Session, UserInfo&gt; connectmap = new HashMap&lt;&gt;();//用session作为key，保存用户信息 //与某个客户端的连接会话，需要通过它来给客户端发送数据 private Session session; /** * 连接建立成功调用的方法 */ @OnOpen public void onOpen(Session session, @PathParam(&quot;nickName&quot;) String nickName) { this.session = session; UserInfo userInfo = new UserInfo(session.getId(),nickName); connectmap.put(session,userInfo); webSocketSet.add(this); //加入set中 System.out.println(nickName+&quot; 上线了！当前在线人数为&quot; + webSocketSet.size()); //群发消息，告诉每一位 broadcast(nickName+&quot; 上线了！--&gt;当前在线人数为：&quot;+webSocketSet.size()); } /** * 连接关闭调用的方法 */ @OnClose public void onClose() { String nickName=connectmap.get(session).getNickName(); connectmap.remove(session); webSocketSet.remove(this); //从set中删除 System.out.println(nickName+&quot; 下线了！当前在线人数为&quot; + webSocketSet.size()); //群发消息，告诉每一位 broadcast(nickName+&quot; 下线，当前在线人数为：&quot;+webSocketSet.size()); } /** * 收到客户端消息后调用的方法 * * @param message 客户端发送过来的消息 * */ @OnMessage public void onMessage(String message, Session session) { System.out.println(&quot;来自客户端的消息:&quot; + message); //群发消息 String nickName=connectmap.get(session).getNickName(); broadcast(nickName+&quot; 说：&quot;+message); } /** * 发生错误时调用 * */ @OnError public void onError(Session session, Throwable error) { System.out.println(&quot;发生错误&quot;); error.printStackTrace(); } /** * 群发自定义消息 * */ public void broadcast(String message){ for (MyWebSocket item : webSocketSet) { //同步异步说明参考：http://blog.csdn.net/who_is_xiaoming/article/details/53287691 //this.session.getBasicRemote().sendText(message); item.session.getAsyncRemote().sendText(message);//异步发送消息. } } } 实体类Entitypublic class UserInfo { private String id; private String nickName; private String password; public UserInfo() { } public UserInfo(String id, String nickName) { this.id = id; this.nickName = nickName; } public String getId() { return id; } public void setId(String id) { this.id = id; } public String getNickName() { return nickName; } public void setNickName(String nickName) { this.nickName = nickName; } public String getPassword() { return password; } public void setPassword(String password) { this.password = password; } }]]></content>
+      <categories>
+        <category>Java</category>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>服务端</tag>
+        <tag>Java</tag>
+        <tag>SpringBoot</tag>
+        <tag>WebSocket</tag>
       </tags>
   </entry>
   <entry>
@@ -1203,18 +1203,18 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[SpringBoot-WebSocket聊天室]]></title>
-    <url>%2F2018%2F03%2F02%2FSpringBoot-WebSocket%20%E8%81%8A%E5%A4%A9%E5%AE%A4%2F</url>
-    <content type="text"><![CDATA[SpringBoot-WebSocket 聊天室配置类Config// websocket配置 @Bean public ServerEndpointExporter serverEndpointExporter() { return new ServerEndpointExporter(); } 业务类Controllerimport org.springframework.stereotype.Component; import javax.websocket.*; import javax.websocket.server.PathParam; import javax.websocket.server.ServerEndpoint; import java.util.HashMap; import java.util.Map; import java.util.concurrent.CopyOnWriteArraySet; /** * * @Description: websocket的具体实现类 * * 使用springboot的唯一区别是要@Component声明下，而使用独立容器是由容器自己管理websocket的， * * 但在springboot中连容器都是spring管理的。 * 虽然@Component默认是单例模式的，但springboot还是会为每个websocket连接初始化一个bean， * 所以可以用一个静态set保存起来。 */ @ServerEndpoint(value = &quot;/websocket/{nickName}&quot;) @Component public class MyWebSocket { //用来存放每个客户端对应的MyWebSocket对象。 private static CopyOnWriteArraySet&lt;MyWebSocket&gt; webSocketSet = new CopyOnWriteArraySet&lt;MyWebSocket&gt;(); private static Map&lt;Session, UserInfo&gt; connectmap = new HashMap&lt;&gt;();//用session作为key，保存用户信息 //与某个客户端的连接会话，需要通过它来给客户端发送数据 private Session session; /** * 连接建立成功调用的方法 */ @OnOpen public void onOpen(Session session, @PathParam(&quot;nickName&quot;) String nickName) { this.session = session; UserInfo userInfo = new UserInfo(session.getId(),nickName); connectmap.put(session,userInfo); webSocketSet.add(this); //加入set中 System.out.println(nickName+&quot; 上线了！当前在线人数为&quot; + webSocketSet.size()); //群发消息，告诉每一位 broadcast(nickName+&quot; 上线了！--&gt;当前在线人数为：&quot;+webSocketSet.size()); } /** * 连接关闭调用的方法 */ @OnClose public void onClose() { String nickName=connectmap.get(session).getNickName(); connectmap.remove(session); webSocketSet.remove(this); //从set中删除 System.out.println(nickName+&quot; 下线了！当前在线人数为&quot; + webSocketSet.size()); //群发消息，告诉每一位 broadcast(nickName+&quot; 下线，当前在线人数为：&quot;+webSocketSet.size()); } /** * 收到客户端消息后调用的方法 * * @param message 客户端发送过来的消息 * */ @OnMessage public void onMessage(String message, Session session) { System.out.println(&quot;来自客户端的消息:&quot; + message); //群发消息 String nickName=connectmap.get(session).getNickName(); broadcast(nickName+&quot; 说：&quot;+message); } /** * 发生错误时调用 * */ @OnError public void onError(Session session, Throwable error) { System.out.println(&quot;发生错误&quot;); error.printStackTrace(); } /** * 群发自定义消息 * */ public void broadcast(String message){ for (MyWebSocket item : webSocketSet) { //同步异步说明参考：http://blog.csdn.net/who_is_xiaoming/article/details/53287691 //this.session.getBasicRemote().sendText(message); item.session.getAsyncRemote().sendText(message);//异步发送消息. } } } 实体类Entitypublic class UserInfo { private String id; private String nickName; private String password; public UserInfo() { } public UserInfo(String id, String nickName) { this.id = id; this.nickName = nickName; } public String getId() { return id; } public void setId(String id) { this.id = id; } public String getNickName() { return nickName; } public void setNickName(String nickName) { this.nickName = nickName; } public String getPassword() { return password; } public void setPassword(String password) { this.password = password; } }]]></content>
+    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
+    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
       <categories>
-        <category>Java</category>
-        <category>SpringBoot</category>
+        <category>数据分析</category>
+        <category>Python3</category>
+        <category>Matplotlib</category>
       </categories>
       <tags>
-        <tag>服务端</tag>
-        <tag>Java</tag>
-        <tag>SpringBoot</tag>
-        <tag>WebSocket</tag>
+        <tag>数据分析</tag>
+        <tag>Python3</tag>
+        <tag>Matplotlib</tag>
       </tags>
   </entry>
   <entry>
@@ -1426,9 +1426,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-SwitchCase语句]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-SwitchCase%2F</url>
-    <content type="text"><![CDATA[Java-SwitchCase语句public class SwitchCase { //switch case语句 判断一个变量与一系列值中某个值是否相等，每个值称为一个分支 // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。 /* switch(expression){ case value : //语句 break; //可选 case value : //语句 break; //可选 //你可以有任意数量的case语句 default : //可选 //语句 不需要break } */ public static void main(String[]args){ char grade =&#39;C&#39;; switch (grade) { case &#39;A&#39;: System.out.println(&quot;优秀&quot;); break; case &#39;B&#39;: case &#39;C&#39;: System.out.println(&quot;良好&quot;); break; case &#39;D&#39;: System.out.println(&quot;及格&quot;); break; case &#39;F&#39;: System.out.println(&quot;你还需要继续努力&quot;); break; default: System.out.println(&quot;未知等级&quot;); } System.out.println(&quot;你的等级是&quot; + grade); } }]]></content>
+    <title><![CDATA[Java-Character类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-Character%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-Character类public class CharacterDemo { // 对单个字符进行操作 /* 转义序列 描述 \t 在文中该处插入一个tab键 \b 在文中该处插入一个后退键 \n 在文中该处换行 \r 在文中该处插入回车 \f 在文中该处插入换页符 \&#39; 在文中该处插入单引号 \&quot; 在文中该处插入双引号 \\ 在文中该处插入反斜杠 */ //字符方法 /* 序号 方法与描述 1 isLetter() 是否是一个字母 2 isDigit() 是否是一个数字字符 3 isWhitespace() 是否是一个空白字符 4 isUpperCase() 是否是大写字母 5 isLowerCase() 是否是小写字母 6 toUpperCase() 指定字母的大写形式 7 toLowerCase() 指定字母的小写形式 8 toString() 返回字符的字符串形式，字符串的长度仅为1 */ public static void main(String[] args) { System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1448,17 +1448,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java循环结构]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
-    <content type="text"><![CDATA[Java循环结构public class LoopStructure { /* while 循环 do…while 循环 for 循环 */ public static void main(String[] args) { //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环 System.out.println(&quot;while 循环&quot;); int x = 10; while (x &lt; 20) { System.out.println(x); x++; } // do…while 循环，至少执行一次 /* do { //代码语句 }while(布尔表达式); */ System.out.println(&quot;do…while循环&quot;); int y = 10; do { System.out.println(y); y++; } while (y &lt; 10); // for 循环，执行前就确定执行次数 /* for(初始化; 布尔表达式; 更新) { //代码语句 } */ System.out.println(&quot;for 循环&quot;); for (int z = 0; z &lt; 20; z = z + 1) { System.out.println(z); } //增强for循环 /* for(声明语句 : 表达式) { //代码句子 } */ System.out.println(&quot;增强for 循环&quot;); int[] numbers = {10, 20, 30, 40, 50}; for (int number : numbers) { System.out.println(number); } String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;}; for (String name : names) { System.out.println(name); } //break关键字 /* break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。 break 跳出最里层的循环，并且继续执行该循环下面的语句。 */ System.out.println(&quot;break关键字&quot;); int[] numbers1 = {10, 20, 30, 40, 50}; for (int number : numbers1) { if (number == 30) { break; } System.out.println(number); } //continue关键字 /* continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。 在 for 循环中，continue 语句使程序立即跳转到更新语句。 在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。 */ System.out.println(&quot;continue关键字&quot;); int[] numbers2 = {10, 20, 30, 40, 50}; for (int number : numbers2) { if (number == 30) { continue; } System.out.println(number); } } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java条件语句]]></title>
     <url>%2F2016%2F03%2F02%2FJava%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%2F</url>
     <content type="text"><![CDATA[Java条件语句public class IfElse { /* 条件语句 - if...else */ public static void main(String[] args) { int x = 10; /* if(布尔表达式){ //如果布尔表达式的值为true }else{ //如果布尔表达式的值为false } */ if (x &lt; 20) { System.out.println(&quot;这是一个if判断语句&quot;); } else { System.out.println(&quot;这是一个else判断语句&quot;); } /* if(布尔表达式 1){ //如果布尔表达式 1的值为true执行代码 }else if(布尔表达式 2){ //如果布尔表达式 2的值为true执行代码 }else if(布尔表达式 3){ //如果布尔表达式 3的值为true执行代码 }else if(布尔表达式 4){ //如果布尔表达式 4的值为true执行代码 }else if(布尔表达式 5){ //如果布尔表达式 5的值为true执行代码 } else { //如果以上布尔表达式都不为true执行代码 } */ //嵌套的if...else语句 /* if(布尔表达式 1){ ////如果布尔表达式 1的值为true执行代码 if(布尔表达式 2){ ////如果布尔表达式 2的值为true执行代码 } } */ } }]]></content>
@@ -1470,9 +1459,20 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java数组]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
-    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
+    <title><![CDATA[Java异常处理]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%2F</url>
+    <content type="text"><![CDATA[Java异常处理import java.lang.Exception; public class ExceptionDemo { /* 三类异常 - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。 - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。 - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。 */ /* 内置异常类 非检查性异常 异常 描述 ArithmeticException 当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。 ArrayIndexOutOfBoundsException 用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。 ArrayStoreException 试图将错误类型的对象存储到一个对象数组时抛出的异常。 ClassCastException 当试图将对象强制转换为不是实例的子类时，抛出该异常。 IllegalArgumentException 抛出的异常表明向方法传递了一个不合法或不正确的参数。 IllegalMonitorStateException 抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。 IllegalStateException 在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。 IllegalThreadStateException 线程没有处于请求操作所要求的适当状态时抛出的异常。 IndexOutOfBoundsException 指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。 NegativeArraySizeException 如果应用程序试图创建大小为负的数组，则抛出该异常。 NullPointerException 当应用程序试图在需要对象的地方使用 null 时，抛出该异常 NumberFormatException 当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。 SecurityException 由安全管理器抛出的异常，指示存在安全侵犯。 StringIndexOutOfBoundsException 此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。 UnsupportedOperationException 当不支持请求的操作时，抛出该异常。 检查性异常类 异常 描述 ClassNotFoundException 应用程序试图加载类时，找不到相应的类，抛出该异常。 CloneNotSupportedException 当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。 IllegalAccessException 拒绝访问一个类的时候，抛出该异常。 InstantiationException 当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。 InterruptedException 一个线程被另一个线程中断，抛出该异常。 NoSuchFieldException 请求的变量不存在 NoSuchMethodException 请求的方法不存在 */ /* throws/throw 关键字 finally 关键字 finally 关键字用来创建在 try 代码块后面执行的代码块。 无论是否发生异常，finally 代码块中的代码总会被执行。 在 finally 代码块中，可以运行清理类型等收尾善后性质的语句 try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }finally{ // 程序代码 } */ public void getExceptiondemo(){ //捕获异常 /* try { // 程序代码 }catch(ExceptionName e1) { //Catch 块 } */ // 多重捕获异常 /* try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 } */ try { int[] a = new int[2]; System.out.println(a[3]); }catch (ArrayIndexOutOfBoundsException e){ System.out.println(&quot;Exception thrown&quot; +e); } System.out.println(&quot;out of the block&quot;); } public static void main(String[] args){ ExceptionDemo exp = new ExceptionDemo(); exp.getExceptiondemo(); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java-SwitchCase语句]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-SwitchCase%2F</url>
+    <content type="text"><![CDATA[Java-SwitchCase语句public class SwitchCase { //switch case语句 判断一个变量与一系列值中某个值是否相等，每个值称为一个分支 // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。 /* switch(expression){ case value : //语句 break; //可选 case value : //语句 break; //可选 //你可以有任意数量的case语句 default : //可选 //语句 不需要break } */ public static void main(String[]args){ char grade =&#39;C&#39;; switch (grade) { case &#39;A&#39;: System.out.println(&quot;优秀&quot;); break; case &#39;B&#39;: case &#39;C&#39;: System.out.println(&quot;良好&quot;); break; case &#39;D&#39;: System.out.println(&quot;及格&quot;); break; case &#39;F&#39;: System.out.println(&quot;你还需要继续努力&quot;); break; default: System.out.println(&quot;未知等级&quot;); } System.out.println(&quot;你的等级是&quot; + grade); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1503,9 +1503,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java异常处理]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%2F</url>
-    <content type="text"><![CDATA[Java异常处理import java.lang.Exception; public class ExceptionDemo { /* 三类异常 - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。 - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。 - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。 */ /* 内置异常类 非检查性异常 异常 描述 ArithmeticException 当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。 ArrayIndexOutOfBoundsException 用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。 ArrayStoreException 试图将错误类型的对象存储到一个对象数组时抛出的异常。 ClassCastException 当试图将对象强制转换为不是实例的子类时，抛出该异常。 IllegalArgumentException 抛出的异常表明向方法传递了一个不合法或不正确的参数。 IllegalMonitorStateException 抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。 IllegalStateException 在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。 IllegalThreadStateException 线程没有处于请求操作所要求的适当状态时抛出的异常。 IndexOutOfBoundsException 指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。 NegativeArraySizeException 如果应用程序试图创建大小为负的数组，则抛出该异常。 NullPointerException 当应用程序试图在需要对象的地方使用 null 时，抛出该异常 NumberFormatException 当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。 SecurityException 由安全管理器抛出的异常，指示存在安全侵犯。 StringIndexOutOfBoundsException 此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。 UnsupportedOperationException 当不支持请求的操作时，抛出该异常。 检查性异常类 异常 描述 ClassNotFoundException 应用程序试图加载类时，找不到相应的类，抛出该异常。 CloneNotSupportedException 当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。 IllegalAccessException 拒绝访问一个类的时候，抛出该异常。 InstantiationException 当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。 InterruptedException 一个线程被另一个线程中断，抛出该异常。 NoSuchFieldException 请求的变量不存在 NoSuchMethodException 请求的方法不存在 */ /* throws/throw 关键字 finally 关键字 finally 关键字用来创建在 try 代码块后面执行的代码块。 无论是否发生异常，finally 代码块中的代码总会被执行。 在 finally 代码块中，可以运行清理类型等收尾善后性质的语句 try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }finally{ // 程序代码 } */ public void getExceptiondemo(){ //捕获异常 /* try { // 程序代码 }catch(ExceptionName e1) { //Catch 块 } */ // 多重捕获异常 /* try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 } */ try { int[] a = new int[2]; System.out.println(a[3]); }catch (ArrayIndexOutOfBoundsException e){ System.out.println(&quot;Exception thrown&quot; +e); } System.out.println(&quot;out of the block&quot;); } public static void main(String[] args){ ExceptionDemo exp = new ExceptionDemo(); exp.getExceptiondemo(); } }]]></content>
+    <title><![CDATA[Java-Scanner类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1514,9 +1514,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-Scanner类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
+    <title><![CDATA[Java-FileStreamIO]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-FileStreamIO%2F</url>
+    <content type="text"><![CDATA[Java-FileStreamIOimport java.io.*; public class StreamFileIODemo { public void printChar() throws IOException { //使用BufferedReader从控制台读取输入 char c; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符，按Q键退出&quot;); do { //read() 读取字符 c = (char) br1.read(); System.out.println(c); } while (c != &#39;Q&#39;); } public void printStr() throws IOException{ String str1; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;); do { //readLine() 读取字符串 str1 = br1.readLine(); System.out.println(str1); } while (!str1.equals(&quot;end&quot;)); } public void ReadFileDemo() throws IOException{ //FileInputStream 从文件读取数据 // File f = new File(&quot;C:/java/hello&quot;); // InputStream out = new FileInputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public int read(int r)throws IOException{} 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 4 public int read(byte[] r) throws IOException{} 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 5 public int available() throws IOException{} 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 */ System.out.println(&quot;打印输出读取文件demo&quot;); InputStream is1 = new FileInputStream(&quot;test.txt&quot;); int size = is1.available(); for (int i=0;i&lt;size;i++) { System.out.println((char) is1.read()); } } public void WriteFileDemo() throws IOException { //FileOutputStream 创建一个文件向文件中写数据 // File f = new File(&quot;C:/java/hello&quot;); // OutputStream f = new FileOutputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public void write(int w)throws IOException{} 这个方法把指定的字节写到输出流中。 4 public void write(byte[] w) 把指定数组中w.length长度的字节写到OutputStream中。 */ System.out.println(&quot;打印输出写入文件demo&quot;); byte bWrite[] = {11,21,3,38,5}; OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;); for (int i=0;i&lt;bWrite.length;i++){ os1.write(bWrite[i]); } os1.close(); } public void CreateDirs(){ //文件和I/O ，目录 /* File类 - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。 - mkdirs()方法创建一个文件夹和它的所有父文件夹。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;; File dir1 = new File(dirname); // 创建目录 dir1.mkdirs(); } public void ReadDirs(){ /* 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。 如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。 可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;; File dir2 = new File(dirname); if (dir2.isDirectory()){ System.out.println(&quot;目录&quot;+ dirname); String[] s1 = dir2.list(); for (int i=0;i&lt;s1.length;i++){ File f = new File(dirname + &#39;/&#39; + s1[i]); if (f.isDirectory()){ System.out.println(s1[i] + &quot;是一个目录&quot;); }else { System.out.println(s1[i] + &quot;是一个文件&quot;); } } }else { System.out.println(dirname +&quot;不是一个目录&quot;); } } public void DeleteDirs(){ //删除文件/目录 /* 删除文件可以使用 java.io.File.delete() 方法 当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;; File dir3 = new File(dirname); File[] files = dir3.listFiles(); if (files != null){ for (File f: files){ if (!f.isDirectory()){ f.delete(); } } } dir3.delete(); System.out.println(&quot;删除成功&quot;); } public static void main(String[] args) throws IOException { StreamFileIODemo s = new StreamFileIODemo(); // s.printChar(); // s.printStr(); // s.WriteFileDemo(); // s.CreateDirs(); // s.ReadDirs(); s.DeleteDirs(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1547,9 +1547,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-Character类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-Character%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-Character类public class CharacterDemo { // 对单个字符进行操作 /* 转义序列 描述 \t 在文中该处插入一个tab键 \b 在文中该处插入一个后退键 \n 在文中该处换行 \r 在文中该处插入回车 \f 在文中该处插入换页符 \&#39; 在文中该处插入单引号 \&quot; 在文中该处插入双引号 \\ 在文中该处插入反斜杠 */ //字符方法 /* 序号 方法与描述 1 isLetter() 是否是一个字母 2 isDigit() 是否是一个数字字符 3 isWhitespace() 是否是一个空白字符 4 isUpperCase() 是否是大写字母 5 isLowerCase() 是否是小写字母 6 toUpperCase() 指定字母的大写形式 7 toLowerCase() 指定字母的小写形式 8 toString() 返回字符的字符串形式，字符串的长度仅为1 */ public static void main(String[] args) { System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;); } }]]></content>
+    <title><![CDATA[Java数组]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1558,20 +1558,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-FileStreamIO]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-FileStreamIO%2F</url>
-    <content type="text"><![CDATA[Java-FileStreamIOimport java.io.*; public class StreamFileIODemo { public void printChar() throws IOException { //使用BufferedReader从控制台读取输入 char c; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符，按Q键退出&quot;); do { //read() 读取字符 c = (char) br1.read(); System.out.println(c); } while (c != &#39;Q&#39;); } public void printStr() throws IOException{ String str1; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;); do { //readLine() 读取字符串 str1 = br1.readLine(); System.out.println(str1); } while (!str1.equals(&quot;end&quot;)); } public void ReadFileDemo() throws IOException{ //FileInputStream 从文件读取数据 // File f = new File(&quot;C:/java/hello&quot;); // InputStream out = new FileInputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public int read(int r)throws IOException{} 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 4 public int read(byte[] r) throws IOException{} 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 5 public int available() throws IOException{} 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 */ System.out.println(&quot;打印输出读取文件demo&quot;); InputStream is1 = new FileInputStream(&quot;test.txt&quot;); int size = is1.available(); for (int i=0;i&lt;size;i++) { System.out.println((char) is1.read()); } } public void WriteFileDemo() throws IOException { //FileOutputStream 创建一个文件向文件中写数据 // File f = new File(&quot;C:/java/hello&quot;); // OutputStream f = new FileOutputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public void write(int w)throws IOException{} 这个方法把指定的字节写到输出流中。 4 public void write(byte[] w) 把指定数组中w.length长度的字节写到OutputStream中。 */ System.out.println(&quot;打印输出写入文件demo&quot;); byte bWrite[] = {11,21,3,38,5}; OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;); for (int i=0;i&lt;bWrite.length;i++){ os1.write(bWrite[i]); } os1.close(); } public void CreateDirs(){ //文件和I/O ，目录 /* File类 - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。 - mkdirs()方法创建一个文件夹和它的所有父文件夹。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;; File dir1 = new File(dirname); // 创建目录 dir1.mkdirs(); } public void ReadDirs(){ /* 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。 如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。 可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;; File dir2 = new File(dirname); if (dir2.isDirectory()){ System.out.println(&quot;目录&quot;+ dirname); String[] s1 = dir2.list(); for (int i=0;i&lt;s1.length;i++){ File f = new File(dirname + &#39;/&#39; + s1[i]); if (f.isDirectory()){ System.out.println(s1[i] + &quot;是一个目录&quot;); }else { System.out.println(s1[i] + &quot;是一个文件&quot;); } } }else { System.out.println(dirname +&quot;不是一个目录&quot;); } } public void DeleteDirs(){ //删除文件/目录 /* 删除文件可以使用 java.io.File.delete() 方法 当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;; File dir3 = new File(dirname); File[] files = dir3.listFiles(); if (files != null){ for (File f: files){ if (!f.isDirectory()){ f.delete(); } } } dir3.delete(); System.out.println(&quot;删除成功&quot;); } public static void main(String[] args) throws IOException { StreamFileIODemo s = new StreamFileIODemo(); // s.printChar(); // s.printStr(); // s.WriteFileDemo(); // s.CreateDirs(); // s.ReadDirs(); s.DeleteDirs(); } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java基本数据类型]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[Java基本数据类型public class DataType { /* 内置数据类型 引用数据类型 */ public static void main(String[] args) { // byte System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE); System.out.println(&quot;包装类：java.lang.Byte&quot;); System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE); System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE); System.out.println(); // short System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE); System.out.println(&quot;包装类：java.lang.Short&quot;); System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE); System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE); System.out.println(); // int System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE); System.out.println(&quot;包装类：java.lang.Integer&quot;); System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE); System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE); System.out.println(); // long System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE); System.out.println(&quot;包装类：java.lang.Long&quot;); System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE); System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE); System.out.println(); // float System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE); System.out.println(&quot;包装类：java.lang.Float&quot;); System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE); System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE); System.out.println(); // double System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE); System.out.println(&quot;包装类：java.lang.Double&quot;); System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE); System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE); System.out.println(); // char System.out.println(&quot;基本类型：char 二进制位数：&quot; + Character.SIZE); System.out.println(&quot;包装类：java.lang.Character&quot;); // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台 System.out.println(&quot;最小值：Character.MIN_VALUE=&quot; + (int) Character.MIN_VALUE); // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台 System.out.println(&quot;最大值：Character.MAX_VALUE=&quot; + (int) Character.MAX_VALUE); } }]]></content>
+    <title><![CDATA[Java循环结构]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
+    <content type="text"><![CDATA[Java循环结构public class LoopStructure { /* while 循环 do…while 循环 for 循环 */ public static void main(String[] args) { //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环 System.out.println(&quot;while 循环&quot;); int x = 10; while (x &lt; 20) { System.out.println(x); x++; } // do…while 循环，至少执行一次 /* do { //代码语句 }while(布尔表达式); */ System.out.println(&quot;do…while循环&quot;); int y = 10; do { System.out.println(y); y++; } while (y &lt; 10); // for 循环，执行前就确定执行次数 /* for(初始化; 布尔表达式; 更新) { //代码语句 } */ System.out.println(&quot;for 循环&quot;); for (int z = 0; z &lt; 20; z = z + 1) { System.out.println(z); } //增强for循环 /* for(声明语句 : 表达式) { //代码句子 } */ System.out.println(&quot;增强for 循环&quot;); int[] numbers = {10, 20, 30, 40, 50}; for (int number : numbers) { System.out.println(number); } String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;}; for (String name : names) { System.out.println(name); } //break关键字 /* break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。 break 跳出最里层的循环，并且继续执行该循环下面的语句。 */ System.out.println(&quot;break关键字&quot;); int[] numbers1 = {10, 20, 30, 40, 50}; for (int number : numbers1) { if (number == 30) { break; } System.out.println(number); } //continue关键字 /* continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。 在 for 循环中，continue 语句使程序立即跳转到更新语句。 在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。 */ System.out.println(&quot;continue关键字&quot;); int[] numbers2 = {10, 20, 30, 40, 50}; for (int number : numbers2) { if (number == 30) { continue; } System.out.println(number); } } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1583,6 +1572,17 @@
     <title><![CDATA[Java运算符]]></title>
     <url>%2F2016%2F03%2F02%2FJava%E8%BF%90%E7%AE%97%E7%AC%A6%2F</url>
     <content type="text"><![CDATA[Java运算符public class Operator { /* 运算符 - 算术运算符 - 关系运算符 - 位运算符 - 逻辑运算符 - 赋值运算符 - 其他运算符 */ public static void main(String[] args) { int a = 10; int b = 20; int c = 25; int d = 25; //算数运算符 //前缀自增自减法(++a,--a): 先进行自增或者自减运算，再进行表达式运算。 //后缀自增自减法(a++,a--): 先进行表达式运算，再进行自增或者自减运算 System.out.println(&quot;a + b = &quot; + (a + b)); System.out.println(&quot;a - b = &quot; + (a - b)); System.out.println(&quot;a * b = &quot; + (a * b)); System.out.println(&quot;b / a = &quot; + (b / a)); System.out.println(&quot;b % a = &quot; + (b % a)); System.out.println(&quot;c % a = &quot; + (c % a)); System.out.println(&quot;a++ = &quot; + (a++)); System.out.println(&quot;a-- = &quot; + (a--)); // 查看 d++ 与 ++d 的不同 System.out.println(&quot;d++ = &quot; + (d++)); System.out.println(&quot;++d = &quot; + (++d)); //关系运算符 System.out.println(&quot;a == b = &quot; + (a == b)); System.out.println(&quot;a != b = &quot; + (a != b)); System.out.println(&quot;a &gt; b = &quot; + (a &gt; b)); System.out.println(&quot;a &lt; b = &quot; + (a &lt; b)); System.out.println(&quot;b &gt;= a = &quot; + (b &gt;= a)); System.out.println(&quot;b &lt;= a = &quot; + (b &lt;= a)); //位运算符 /* 操作符 描述 例子 &amp; 如果相对应位都是1，则结果为1，否则为0 （A＆B），得到12，即0000 1100 / 如果相对应位都是 0，则结果为 0，否则为 1 （A | B）得到61，即 0011 1101 ^ 如果相对应位值相同，则结果为0，否则为1 （A ^ B）得到49，即 0011 0001 〜 按位取反运算符翻转操作数的每一位，即0变成1，1变成0。 （〜A）得到-61，即1100 0011 &lt;&lt; 按位左移运算符。左操作数按位左移右操作数指定的位数。 A &lt;&lt; 2得到240，即 1111 0000 &gt;&gt; 按位右移运算符。左操作数按位右移右操作数指定的位数。 A &gt;&gt; 2得到15即 1111 &gt;&gt;&gt; 按位右移补零操作符。左操作数的值按右操作数指定的位数右移，移动得到的空位以零填充。 A&gt;&gt;&gt;2得到15即0000 1111 */ //逻辑运算符 /* 操作符 描述 例子 &amp;&amp; 称为逻辑与运算符。当且仅当两个操作数都为真，条件才为真。 （A &amp;&amp; B）为假。 // 称为逻辑或操作符。如果任何两个操作数任何一个为真，条件为真。 （A | | B）为真。 ! 称为逻辑非运算符。用来反转操作数的逻辑状态。如果条件为true， 则逻辑非运算符将得到false。 !(A &amp;&amp; B)为真。 */ //赋值运算符 /* 操作符 描述 例子 = 简单的赋值运算符，将右操作数的值赋给左侧操作数 C = A + B将把A + B得到的值赋给C + = 加和赋值操作符，它把左操作数和右操作数相加赋值给左操作数 C + = A等价于C = C + A - = 减和赋值操作符，它把左操作数和右操作数相减赋值给左操作数 C - = A等价于C = C - A * = 乘和赋值操作符，它把左操作数和右操作数相乘赋值给左操作数 C * = A等价于C = C * A / = 除和赋值操作符，它把左操作数和右操作数相除赋值给左操作数 C / = A，C 与 A 同类型时等价于 C = C / A (%)= 取模和赋值操作符，它把左操作数和右操作数取模后赋值给左操作数 C％= A等价于C = C％A &lt;&lt; = 左移位赋值运算符 C &lt;&lt; = 2等价于C = C &lt;&lt; 2 &gt;&gt; = 右移位赋值运算符 C &gt;&gt; = 2等价于C = C &gt;&gt; 2 &amp;= 按位与赋值运算符 C＆= 2等价于C = C＆2 ^ = 按位异或赋值操作符 C ^ = 2等价于C = C ^ 2 | = 按位或赋值操作符 C | = 2等价于C = C | 2 */ //条件运算符 /* 三元运算符。该运算符有3个操作数，并且需要判断布尔表达式的值 variable x = (expression) ? value if true : value if false */ int x, y; x = 10; y = (x == 5) ? 20 : 30; System.out.println(&quot;Value of y is &quot; + y); y = (x == 10) ? 20 : 30; System.out.println(&quot;Value of y is &quot; + y); //运算符优先级 /* 类别 操作符 关联性 后缀 () [] . (点操作符) 左到右 一元 + + - !〜 从右到左 乘性 * /% 左到右 加性 + - 左到右 移位 &gt;&gt; &gt;&gt;&gt; &lt;&lt; 左到右 关系 &gt;&gt; = &lt;&lt; = 左到右 相等 == != 左到右 按位与 &amp; 左到右 按位异或 ^ 左到右 按位或 / 左到右 逻辑与 &amp;&amp; 左到右 逻辑或 // 左到右 条件 ？： 从右到左 赋值 = + = - = * = / =％= &gt;&gt; = &lt;&lt; =＆= ^ = | = 从右到左 逗号 ， 左到右 */ } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java基本数据类型]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[Java基本数据类型public class DataType { /* 内置数据类型 引用数据类型 */ public static void main(String[] args) { // byte System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE); System.out.println(&quot;包装类：java.lang.Byte&quot;); System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE); System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE); System.out.println(); // short System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE); System.out.println(&quot;包装类：java.lang.Short&quot;); System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE); System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE); System.out.println(); // int System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE); System.out.println(&quot;包装类：java.lang.Integer&quot;); System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE); System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE); System.out.println(); // long System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE); System.out.println(&quot;包装类：java.lang.Long&quot;); System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE); System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE); System.out.println(); // float System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE); System.out.println(&quot;包装类：java.lang.Float&quot;); System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE); System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE); System.out.println(); // double System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE); System.out.println(&quot;包装类：java.lang.Double&quot;); System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE); System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE); System.out.println(); // char System.out.println(&quot;基本类型：char 二进制位数：&quot; + Character.SIZE); System.out.println(&quot;包装类：java.lang.Character&quot;); // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台 System.out.println(&quot;最小值：Character.MIN_VALUE=&quot; + (int) Character.MIN_VALUE); // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台 System.out.println(&quot;最大值：Character.MAX_VALUE=&quot; + (int) Character.MAX_VALUE); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
