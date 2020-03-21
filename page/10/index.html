@@ -133,6 +133,122 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/SpringBoot-WebSocket 聊天室/">
+        <p class="h4 index-header">SpringBoot-WebSocket聊天室</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">SpringBoot-WebSocket 聊天室配置类Config// websocket配置
+@Bean
+    public ServerEndpointExporter serverEndpointExporter() {
+        return new ServerEndpointExporter();
+    }
+
+
+业务类Controllerimport org.springframework.stereotype.Component;
+
+import javax.websocket.*;
+import javax.websocket.server.PathParam;
+import javax.websocket.server.ServerEndpoint;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.CopyOnWriteArraySet;
+
+/**
+ *  * @Description: websocket的具体实现类
+ *  * 使用springboot</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          
+            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
+          
+            <a href="/tags/WebSocket">WebSocket</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/Centos-Maven配置/">
+        <p class="h4 index-header">CentOS-Maven配置</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Centos-Maven配置 配置maven镜像
+&lt;mirror&gt;
+    &lt;id&gt;alimaven&lt;/id&gt;
+    &lt;name&gt;aliyun maven&lt;/name&gt;
+  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
+  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+&lt;/mirror&gt;
+
+maven配置路径 
+export M2_HOME=/usr/local/maven3/apache-maven-3.6.3
+export PATH=$PATH$:M2_HOME/bin
+
+source /etc/profile
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          
+            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/01/08/CentOS7防火墙控制与端口控制/">
         <p class="h4 index-header">CentOS7 防火墙控制与端口控制</p>
         
@@ -587,148 +703,6 @@ EMUM(‘value1’,’value2’,…)
 SET(‘value1’,’value2’,…)
 
 日期时间类型二进制类型</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--数据表相关操作/">
-        <p class="h4 index-header">MySQL深入浅出--数据表相关操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">数据表相关操作数据表
-描述
- 1、是数据库最重要的组成部分之一，数据是保存在数据表中
- 2、数据表由 行row 和 列column组成
- 3、表名要求唯一，不要包含特殊字符，最好语义明确
- 4、每个数据表至少有一列，行可有0 行，1行 或多行
-
-
-创建表
-CREATE TABLE [IF NOT EXISTS] tbl_name(
-    字段名称 字段类型 [完整性约束条件],
-    字段名称 字段类型 [完整性约束条件],
-    ...
-)ENGINE=存储引擎 CHARSET=编码方式;
-
-
-UNSIGNED        
-无符号，没有负数，从0开始
-
-ZEROFILL
-零填充，当数据的显示长度不够的时候可以使用前补0的效果填充至指定长度,字段会自动添加UNSIGNED
-
-NOT NULL
-非空约束，也就是插入值的时候这个字段必须要给值,值不能为空
-
-DEFAULT
-默认值，如果插入记录的时候没有给字段赋值，则使用默认值
-
-PRIMARY KEY
-主键，标识记录的唯一性，值不能重复，一个表只能有一个主键，自动禁止为空
-
-AUTO_INCREMENT
-自动增长，只能用于数值列</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
-        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
-登录/退出MySQL注意：
-​    1、命令行结束符号使用英文分号;   或者 \g
-​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
-​    3、\c可以取消当前命令的执行
-登录
-mysql -uroot -p
-mysql -uroot -proot
-mysql -hlocalhost -uroot -p -P3306
-登录同时修改命令提示符
-mysql -uroot -p –prompt=命令提示符
-
-
-获取版本号
-mysql -V
-mysql –version
-
-
-登录同时打开指定数据库
-mysql -uroot -p -D db_name
-
-
-
-退出
-exit
-quit
-\q
-ctrl + c
-
-SQL语句语法规范
-常用MySQL的关键字需要大写
-库名、表名、字段名称等使用小写
-SQL语句支持折行操作，拆分的时候不能把完整单词拆开
-数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
-
-常用SQL语句
-SELECT USER()   </div>
         </div>
       </a>
 

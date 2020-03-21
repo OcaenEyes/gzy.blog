@@ -133,6 +133,218 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/04/03/数字营销/">
+        <p class="h4 index-header">数字营销十大悖论</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">悖论一：原生化与商业化原生与商业化，不可兼得；怎样达到一个平衡点
+
+想要不带利益的原生UGC内容，就很难做到优秀的商业化
+好的商业化又会验证影响UGC的水准，掺杂了商业利益的内容，易被用户识别并唾弃
+
+悖论二：隐私保护和数据应用当前隐私保护和数据应用无法兼得的时代特征
+
+数据从发生到蔑视全部需要隐私和安全的保护
+怎么做到隐私保护的情况下，是数据获得应用造福人类
+
+悖论三：“围墙花园”与“公域数据”
+各个数据控制者为拒绝数据分享而高筑的壁垒–“围墙花园”
+
+强化了强势媒体的垄断地位
+
+削弱企业（广告主）在“公域数据”的能力
+数据应用变得割裂，不得不与众多强势媒体合作，也变得彻底黑箱化
+围墙花园、过于一刀切的隐私保护，抑制了行业的活力和创造力
+
+悖论四：精准与规模精准和规模很难兼得，只能尽量使二者达到一个可接受的平衡程度
+
+外部流量红利是不能持续的
+高浓度的目标人群的数量总是有限的，以及流量市场本身的竞争性降低了获得精准的概率
+任何一个单一媒体的投放，即时在高精度技术水平下，也是一个不断衰减的规模曲线
+
+悖论五：品牌和效果
+品牌和效果是数字营销的两端，品效合一不太可能在一次营销campai</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-04-03&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E8%90%A5%E9%94%80">营销</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+          
+            <a href="/tags/%E8%90%A5%E9%94%80">营销</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/03/01/搭建自然语言处理开发环境/">
+        <p class="h4 index-header">搭建自然语言处理的开发环境</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">自然语言处理开发环境介绍
+sublime
+
+vscode
+
+pycharm
+
+Anaconda3
+
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-03-01&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Natural%20Language%20Processing">Natural Language Processing</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/tags/Natural%20Language%20Processing">Natural Language Processing</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/03/01/案例-NLP实现预测天气冷暖感知度/">
+        <p class="h4 index-header">案例-NLP实现预测天气冷暖感知度</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">案例：NLP预测天气冷暖感知度1、案例需求
+根据吃冰淇淋和喝水的数量，判断成都天气冷热程度。
+成都春熙路街头采访记录一些游客吃了多少冰淇淋，又喝了几瓶水，他觉得成都天气怎么样（这里只考虑二分类问题，假设只有‘非常热’和‘一般热’）
+其中特征向量包括两个分别是冰激凌数t1和喝水数t2，户外活动时长t3:
+对应的标签类别分别是非常热A和一般热B。
+
+2、实验数据准备
+构造模拟数据
+
+
+
+
+人员
+冰淇淋
+喝水
+户外活动时长
+冷热程度
+判断描述
+
+
+
+
+小王
+8
+4
+2
+A
+小王吃了8个冰淇淋，喝了4瓶水，户外2小时，该地区天气非常热
+
+
+小张
+7
+1
+1
+A
+小张吃了7个冰淇淋，喝了1瓶水，户外1小时，该地区天气非常热
+
+
+小李
+1
+4
+4
+B
+小李吃了1个冰淇淋，喝了4瓶水，户外4小时，该地区天气一般热
+
+
+小赵
+3
+0
+5
+B
+小赵吃了3个冰淇淋，喝了0瓶水，户外5小时，该地区天气一般热
+
+
+
+
+代码构造数据集
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
+&#39;&#39;&#39;
+    author:gzy
+    date:20190301</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-03-01&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Natural%20Language%20Processing">Natural Language Processing</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/tags/Natural%20Language%20Processing">Natural Language Processing</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2019/03/01/自然语言处理概述/">
         <p class="h4 index-header">自然语言处理概述</p>
         
@@ -205,72 +417,21 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/02/27/AI数据标注是什么/">
-        <p class="h4 index-header">AI数据标注是什么</p>
+      <a href="/2019/02/25/AI时代决策效率革命/">
+        <p class="h4 index-header">AI时代决策效率革命</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">AI数据标注是什么​    只要跟“监督学习”沾边的产品／技术，比如图像识别、人脸识别、自然语言处理等，都又一个必不可少的流程：
-
-不断的使用标注后的数据去训练模型，不断调整模型参数，得到指标熟知更高的模型。
-数据处理流程拆解数据标注数据质量直接影响模型质量
-
-数据标注人员角色
-
-标注员：标注员负责标记数据
-审核员：审核员负责审核被标记数据的质量
-管理员：管理人员、发放任务、统计工资
-
-只有数据被审核员审核通过后，这批数据才能被算法同事使用
-
-数据标记流程
-
-任务分配
-
-标记程序设计
-
-
-
-进度跟踪
-
-质量跟踪
-
-模型训练
-示例：为提高识别精确度，可以采用的方式如：
-补充数据
-提供正例数据
-提供负例数据
-进而及提高差异度的识别
-
-
-优化数据
-修改以往的错误标注
-
-
-
-
-
-模型测试如无后台设计，则测试只能由人工抽样计算，繁琐且效率低下；故可以考虑后台计算
-
-模型测试需关注的指标
-
-精确率；又叫准确率
-​    识别为正确的样本数 ／ 识别出来的样本数
-
-召回率；又叫查全率（Recall Rate）
-​    识别为正确的样本数 ／ 所有样本中的正确的数
-
-精准率；又叫查准率
-
-真正例率（</div>
+          <div class="index-text mb-1">
+</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-02-27&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-02-25&nbsp;&nbsp;
         
         
           <i class="iconfont icon-inbox"></i>
@@ -340,125 +501,6 @@
             <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">人工智能</a>&nbsp;
           
             <a href="/tags/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/02/25/AI时代决策效率革命/">
-        <p class="h4 index-header">AI时代决策效率革命</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-02-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">人工智能</a>&nbsp;
-          
-            <a href="/tags/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/02/22/php即时通讯-WebSocket/">
-        <p class="h4 index-header">php即时通讯-WebSocket</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">WebSocket
-一个应用层协议
-长链接
-主流即时通讯协议
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-02-22&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/php">php</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/php">php</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/02/22/php即时通讯-http/">
-        <p class="h4 index-header">php即时通讯-http</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">HTTP
-一个应用层协议
-Header + Body组成
-比TCP更高级
-短链接
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-02-22&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/php">php</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/php">php</a>&nbsp;
           
         
       </div>
@@ -550,31 +592,17 @@ Header + Body组成
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/22/php开发APP后端---学习异常监控/">
-        <p class="h4 index-header">php开发APP后端---学习异常监控</p>
+      <a href="/2019/02/22/php即时通讯-WebSocket/">
+        <p class="h4 index-header">php即时通讯-WebSocket</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">APP端异常基本情况
-
-Crash   ，app突然发生闪退现象
-
-卡顿   ， 出现画面卡顿
-
-Exception  ， 程序被catch的 exception
-
-ANR  ，  出现提示无响应弹框（android）
-
-
-数据收集方案
-数据内容
-Crash ，卡顿 ，exception， ANR 的次数
-影响用户数
-
-收集实现
-表的设计
+          <div class="index-text mb-1">WebSocket
+一个应用层协议
+长链接
+主流即时通讯协议
 
 </div>
         </div>
@@ -582,7 +610,7 @@ Crash ，卡顿 ，exception， ANR 的次数
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-01-22&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-02-22&nbsp;&nbsp;
         
         
           <i class="iconfont icon-inbox"></i>
@@ -595,8 +623,6 @@ Crash ，卡顿 ，exception， ANR 的次数
           
             <a href="/tags/php">php</a>&nbsp;
           
-            <a href="/tags/%E5%90%8E%E7%AB%AF%E6%9C%8D%E5%8A%A1">后端服务</a>&nbsp;
-          
         
       </div>
     </div>
@@ -606,33 +632,37 @@ Crash ，卡顿 ，exception， ANR 的次数
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/01/22/redis学习-数据类型/">
-        <p class="h4 index-header">redis学习---数据类型</p>
+      <a href="/2019/02/22/php即时通讯-http/">
+        <p class="h4 index-header">php即时通讯-http</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">redis数据类型string字符串</div>
+          <div class="index-text mb-1">HTTP
+一个应用层协议
+Header + Body组成
+比TCP更高级
+短链接
+
+</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-01-22&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-02-22&nbsp;&nbsp;
         
         
           <i class="iconfont icon-inbox"></i>
           
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/redis">redis</a>&nbsp;
+            <a href="/categories/php">php</a>&nbsp;
           &nbsp;
         
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/redis">redis</a>&nbsp;
+            <a href="/tags/php">php</a>&nbsp;
           
         
       </div>
