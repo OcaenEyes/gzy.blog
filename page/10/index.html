@@ -133,16 +133,83 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/SpringBoot数据访问-整合JPA/">
-        <p class="h4 index-header">SpringBoot数据访问JPA</p>
+      <a href="/2018/03/02/SpringBoot启动自定义方法/">
+        <p class="h4 index-header">SpringBoot启动自定义方法</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">SpringBoot数据访问-整合JPA
-Entity –定义实体类，与数据表映射
-Repository —定义操作，操作实体类中的数据表
+          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.gzy.demo.NettyClient;
+
+@Component
+public class MyStart1 implements CommandLineRunner{
+
+    @Override
+    public void run(String... args) throws Exception {
+        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
+    }
+}
+
+
+二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          
+            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/Centos-Maven配置/">
+        <p class="h4 index-header">CentOS-Maven配置</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Centos-Maven配置 配置maven镜像
+&lt;mirror&gt;
+    &lt;id&gt;alimaven&lt;/id&gt;
+    &lt;name&gt;aliyun maven&lt;/name&gt;
+  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
+  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
+&lt;/mirror&gt;
+
+maven配置路径 
+export M2_HOME=/usr/local/maven3/apache-maven-3.6.3
+export PATH=$PATH$:M2_HOME/bin
+
+source /etc/profile
 
 </div>
         </div>
@@ -632,75 +699,6 @@ EMUM(‘value1’,’value2’,…)
 SET(‘value1’,’value2’,…)
 
 日期时间类型二进制类型</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--数据表相关操作/">
-        <p class="h4 index-header">MySQL深入浅出--数据表相关操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">数据表相关操作数据表
-描述
- 1、是数据库最重要的组成部分之一，数据是保存在数据表中
- 2、数据表由 行row 和 列column组成
- 3、表名要求唯一，不要包含特殊字符，最好语义明确
- 4、每个数据表至少有一列，行可有0 行，1行 或多行
-
-
-创建表
-CREATE TABLE [IF NOT EXISTS] tbl_name(
-    字段名称 字段类型 [完整性约束条件],
-    字段名称 字段类型 [完整性约束条件],
-    ...
-)ENGINE=存储引擎 CHARSET=编码方式;
-
-
-UNSIGNED        
-无符号，没有负数，从0开始
-
-ZEROFILL
-零填充，当数据的显示长度不够的时候可以使用前补0的效果填充至指定长度,字段会自动添加UNSIGNED
-
-NOT NULL
-非空约束，也就是插入值的时候这个字段必须要给值,值不能为空
-
-DEFAULT
-默认值，如果插入记录的时候没有给字段赋值，则使用默认值
-
-PRIMARY KEY
-主键，标识记录的唯一性，值不能重复，一个表只能有一个主键，自动禁止为空
-
-AUTO_INCREMENT
-自动增长，只能用于数值列</div>
         </div>
       </a>
 

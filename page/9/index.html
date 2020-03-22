@@ -133,6 +133,71 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/06-matplotlib饼状图/">
+        <p class="h4 index-header">数据分析06：matplotlib饼状图</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
+
+&#39;&#39;&#39;
+    饼状图显示一个数据系列中各项总和的比例；
+    饼状图中的数据点显示为整个饼状图的百分比；
+    如：前十大品牌占市场份额图
+
+&#39;&#39;&#39;
+# 例
+labels = &#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;
+fracs = [15.0,30.0,45.0,10.0]
+
+explode = [0,0.05,0,0.08]
+plt.axes(aspect=1)
+plt.pie(x=fracs,labels=labels,autopct=&quot;%.0f%%&quot;,explode=explode,shadow=True)
+plt.show()
+
+# 练习
+labels = &#39;SH&#39;,&#39;BJ&#39;,&#39;SZ&#39;,&#39;GZ&#39;
+fracs = [20,30,25,15]
+explode = [0,0,0.08,0]
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Numpy">Numpy</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Numpy">Numpy</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/08-matplotlib颜色与样式/">
         <p class="h4 index-header">数据分析08：matplotlib颜色与样式</p>
         
@@ -411,6 +476,77 @@ plt.bar(in</div>
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/01-numpy基础/">
+        <p class="h4 index-header">数据分析01：numpy基础</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+
+# ndarray
+
+&#39;&#39;&#39;
+    # 三种创建方式
+    1、从python的基础数据对象转化
+    2、通过numpy内置的函数生成
+    3、从硬盘（文件）读取数据
+&#39;&#39;&#39;
+# 创建方法一
+a= [1,2,3,4]
+x1 = np.array(a)
+print(x1,&quot;\n&quot;,type(x1))
+
+# 创建方法二
+x = np.arange(5)
+print(x,&quot;\n&quot;,type(x))
+
+# # 创建方法三
+# date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True)
+# print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low)
+
+
+# 常用函数
+&#39;&#39;&#39;
+    min     最小值
+    max     最大值
+ </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Numpy">Numpy</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Numpy">Numpy</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/02-matplotlib散点图/">
         <p class="h4 index-header">数据分析02：matplotlib散点图</p>
         
@@ -488,77 +624,6 @@ plt.show()
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/01-numpy基础/">
-        <p class="h4 index-header">数据分析01：numpy基础</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">import numpy as np
-
-# ndarray
-
-&#39;&#39;&#39;
-    # 三种创建方式
-    1、从python的基础数据对象转化
-    2、通过numpy内置的函数生成
-    3、从硬盘（文件）读取数据
-&#39;&#39;&#39;
-# 创建方法一
-a= [1,2,3,4]
-x1 = np.array(a)
-print(x1,&quot;\n&quot;,type(x1))
-
-# 创建方法二
-x = np.arange(5)
-print(x,&quot;\n&quot;,type(x))
-
-# # 创建方法三
-# date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True)
-# print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low)
-
-
-# 常用函数
-&#39;&#39;&#39;
-    min     最小值
-    max     最大值
- </div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/categories/Python3">Python3</a>&nbsp;
-          
-            <a href="/categories/Numpy">Numpy</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/tags/Python3">Python3</a>&nbsp;
-          
-            <a href="/tags/Numpy">Numpy</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/03-matplotlib折线图/">
         <p class="h4 index-header">数据分析03：matplotlib折线图</p>
         
@@ -606,118 +671,6 @@ plt.plot_date(date,open,linestyle=&#39;-&#39;,c</div>
             <a href="/tags/Python3">Python3</a>&nbsp;
           
             <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/Centos-Maven配置/">
-        <p class="h4 index-header">CentOS-Maven配置</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Centos-Maven配置 配置maven镜像
-&lt;mirror&gt;
-    &lt;id&gt;alimaven&lt;/id&gt;
-    &lt;name&gt;aliyun maven&lt;/name&gt;
-  &lt;url&gt;http://maven.aliyun.com/nexus/content/groups/public/&lt;/url&gt;
-  &lt;mirrorOf&gt;central&lt;/mirrorOf&gt;
-&lt;/mirror&gt;
-
-maven配置路径 
-export M2_HOME=/usr/local/maven3/apache-maven-3.6.3
-export PATH=$PATH$:M2_HOME/bin
-
-source /etc/profile
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          
-            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/SpringBoot启动自定义方法/">
-        <p class="h4 index-header">SpringBoot启动自定义方法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
-
-import com.gzy.demo.NettyClient;
-
-@Component
-public class MyStart1 implements CommandLineRunner{
-
-    @Override
-    public void run(String... args) throws Exception {
-        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
-    }
-}
-
-
-二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
-import org.springframework.boot</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          
-            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
         
       </div>
@@ -779,6 +732,51 @@ import java.util.concurrent.CopyOnWriteArraySet;
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
             <a href="/tags/WebSocket">WebSocket</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/SpringBoot数据访问-整合JPA/">
+        <p class="h4 index-header">SpringBoot数据访问JPA</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">SpringBoot数据访问-整合JPA
+Entity –定义实体类，与数据表映射
+Repository —定义操作，操作实体类中的数据表
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          
+            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
         
       </div>

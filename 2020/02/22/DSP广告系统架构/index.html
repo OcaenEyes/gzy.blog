@@ -15,7 +15,7 @@
   <meta name="description" content="This is MyBlog Notes.">
   <meta name="author" content="OceanEyes.GZY">
   <meta name="keywords" content="">
-  <title>分类 - php ~ 乔克叔叔杂货店</title>
+  <title>广告系统架构 ~ 乔克叔叔杂货店</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">&nbsp;<strong>乔克叔叔杂货店</strong>&nbsp;</a>
@@ -106,6 +106,41 @@
             </span>
 
             
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期六, 二月 22日 2020, 11:13 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    429 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      1 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
           </div>
 
           
@@ -116,105 +151,135 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h2 id="广告系统架构"><a href="#广告系统架构" class="headerlink" title="广告系统架构"></a>广告系统架构</h2><ul>
+<li>DSP<ul>
+<li>需求方平台，即为广告主服务平台，广告主可以通过DSP平台设置自己想要的受众，设置愿意出资多少购买这些受众的曝光，完成广告投放需求； 面向广告购买方</li>
+</ul>
+</li>
+<li>SSP<ul>
+<li>供应方平台，即为媒体服务平台，媒体方通过SSP平台完成广告资源的管理，如流量分配，价格，筛选等；面向广告售卖方</li>
+</ul>
+</li>
+<li>ADX<ul>
+<li>广告交易平台，即为连接买方和卖方；ADX将媒体的广告流量以拍卖的方式卖给DSP</li>
+</ul>
+</li>
+<li>DMP<ul>
+<li>数据管理平台，整合各方数据并提供数据分析、数据管理、数据调用，用来指导广告主进行广告优化和投放决策</li>
+</ul>
+</li>
+<li>RTB<ul>
+<li>实时竞价，100ms内完成计算，当前谁在这个广告位上提供的广告费用更高</li>
+</ul>
+</li>
+</ul>
+<p><strong>实用程序的方式进行广告投放的管理，并利用算法和技术自动实现精准的目标受众定向，把广告内容投放给对的人；效果：</strong></p>
+<ul>
+<li>对广告主<ul>
+<li>提高流量的采购效率，更低成本，更可靠稳定的流量</li>
+<li>可融合使用多种策略，投放不同的目标人群，使得广告的投放效果更加可控</li>
+<li>减少广告浪费，提升转化率，扩大覆盖面积</li>
+</ul>
+</li>
+<li>对媒体资源<ul>
+<li>实现资源的自动化售卖，提高流量的使用率</li>
+<li>有效利用优质流量和长尾流量</li>
+<li>并且能基于人员的属性、兴趣等标签对不同的流量给出不同售价，提升流量库存的收入</li>
+</ul>
+</li>
+</ul>
+<h3 id="DSP投放架构"><a href="#DSP投放架构" class="headerlink" title="DSP投放架构"></a>DSP投放架构</h3>
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
                 
-
-<div class="list-group">
-<!--  <p class="h4">共计 10 篇文章</p>-->
-  <hr>
-  
-    
-      
-      <p class="h5">2019</p>
-    
-    <a href="/2019/02/22/php即时通讯-WebSocket/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php即时通讯-WebSocket</span>
-      <span style="float: right;">02-22</span>
-    </a>
-  
-    
-    <a href="/2019/02/22/php即时通讯-http/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php即时通讯-http</span>
-      <span style="float: right;">02-22</span>
-    </a>
-  
-    
-    <a href="/2019/02/22/php即时通讯-多进程/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php即时通讯-多进程</span>
-      <span style="float: right;">02-22</span>
-    </a>
-  
-    
-    <a href="/2019/02/22/php即时通讯-socket/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php即时通讯-socket</span>
-      <span style="float: right;">02-22</span>
-    </a>
-  
-    
-    <a href="/2019/01/22/php开发APP后端---学习异常监控/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php开发APP后端---学习异常监控</span>
-      <span style="float: right;">01-22</span>
-    </a>
-  
-    
-    <a href="/2019/01/02/php开发APP后端---环境准备/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php开发APP后端---环境准备</span>
-      <span style="float: right;">01-02</span>
-    </a>
-  
-    
-    <a href="/2019/01/02/php开发APP后端--学习序言/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php开发APP后端---学习序言</span>
-      <span style="float: right;">01-02</span>
-    </a>
-  
-    
-      
-      <p class="h5">2018</p>
-    
-    <a href="/2018/12/22/php常用操作--文件操作/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php常用操作--文件操作</span>
-      <span style="float: right;">12-22</span>
-    </a>
-  
-    
-    <a href="/2018/12/21/php常用操作--会话控制/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php常用操作--会话控制</span>
-      <span style="float: right;">12-21</span>
-    </a>
-  
-    
-    <a href="/2018/12/20/php学习--常量/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php学习--常量</span>
-      <span style="float: right;">12-20</span>
-    </a>
-  
-</div>
-
-  <nav aria-label="index posts navigation">
-    <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/categories/php/page/2/">2</a><a class="extend next" rel="next" href="/categories/php/page/2/"><i class="fas fa-angle-double-right"></i></a>
-    </span>
-  </nav>
-  
-  <script>
-    for (ele of document.getElementById("pagination").getElementsByClassName("page-number")) {
-      ele.href += '#board';
-    }
-  </script>
-
-
-
-              </div>
-            </div>
+                  <a class="hover-with-bg" href="/categories/%E4%BA%A7%E5%93%81">产品</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/%E5%B9%BF%E5%91%8A">广告</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E4%BA%A7%E5%93%81">产品</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E5%B9%BF%E5%91%8A">广告</a>
+                
+                  <a class="hover-with-bg" href="/tags/DSP">DSP</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+   <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MjAzMS8xODU3OA==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+  
+  
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -287,6 +352,11 @@
 
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js"></script>
+  
+  <script src="/js/post.js"></script>
+
 
 
   <script src="/lib/smooth-scroll/smooth-scroll.min.js"></script>
@@ -327,7 +397,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "分类 - php&nbsp;",
+        "广告系统架构&nbsp;",
       ],
       cursorChar: "~",
       typeSpeed: 70,
