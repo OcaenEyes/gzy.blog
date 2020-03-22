@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[广告系统架构]]></title>
     <url>%2F2020%2F02%2F22%2FDSP%E5%B9%BF%E5%91%8A%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%2F</url>
-    <content type="text"><![CDATA[广告系统架构 DSP 需求方平台，即为广告主服务平台，广告主可以通过DSP平台设置自己想要的受众，设置愿意出资多少购买这些受众的曝光，完成广告投放需求； 面向广告购买方 SSP 供应方平台，即为媒体服务平台，媒体方通过SSP平台完成广告资源的管理，如流量分配，价格，筛选等；面向广告售卖方 ADX 广告交易平台，即为连接买方和卖方；ADX将媒体的广告流量以拍卖的方式卖给DSP DMP 数据管理平台，整合各方数据并提供数据分析、数据管理、数据调用，用来指导广告主进行广告优化和投放决策 RTB 实时竞价，100ms内完成计算，当前谁在这个广告位上提供的广告费用更高 实用程序的方式进行广告投放的管理，并利用算法和技术自动实现精准的目标受众定向，把广告内容投放给对的人；效果： 对广告主 提高流量的采购效率，更低成本，更可靠稳定的流量 可融合使用多种策略，投放不同的目标人群，使得广告的投放效果更加可控 减少广告浪费，提升转化率，扩大覆盖面积 对媒体资源 实现资源的自动化售卖，提高流量的使用率 有效利用优质流量和长尾流量 并且能基于人员的属性、兴趣等标签对不同的流量给出不同售价，提升流量库存的收入 DSP投放架构]]></content>
+    <content type="text"><![CDATA[广告系统架构 DSP 需求方平台，即为广告主服务平台，广告主可以通过DSP平台设置自己想要的受众，设置愿意出资多少购买这些受众的曝光，完成广告投放需求； 面向广告购买方 SSP 供应方平台，即为媒体服务平台，媒体方通过SSP平台完成广告资源的管理，如流量分配，价格，筛选等；面向广告售卖方 ADX 广告交易平台，即为连接买方和卖方；ADX将媒体的广告流量以拍卖的方式卖给DSP DMP 数据管理平台，整合各方数据并提供数据分析、数据管理、数据调用，用来指导广告主进行广告优化和投放决策 RTB 实时竞价，100ms内完成计算，当前谁在这个广告位上提供的广告费用更高 实用程序的方式进行广告投放的管理，并利用算法和技术自动实现精准的目标受众定向，把广告内容投放给对的人；效果： 对广告主 提高流量的采购效率，更低成本，更可靠稳定的流量 可融合使用多种策略，投放不同的目标人群，使得广告的投放效果更加可控 减少广告浪费，提升转化率，扩大覆盖面积 对媒体资源 实现资源的自动化售卖，提高流量的使用率 有效利用优质流量和长尾流量 并且能基于人员的属性、兴趣等标签对不同的流量给出不同售价，提升流量库存的收入 DSP投放架构 RTB竞价逻辑 平台核心要素流量资源不同的流量资源会有不同的效果，如何选择媒体和广告位是关键。 制定媒体策略首先需要分析目标受众，根据目标受众选择匹配的媒体资源。媒体策略可以从所要投放的广告位所在页面page、位置spot、流量inventory、价格price、和转化conversion五个角度制定 页面 包括渠道、载体（PC、WAP、APP）、媒体分类、频道、URL、页面关键词 位置 广告位所在的具体位置、尺寸的大小、广告位类型、屏次（首屏、第二屏） 流量 总流量的大小决定着采购的流量大小 价格 转化 投放策略及受众定向基础设置 出价上限 按照CPM、CPC设置，广告主设置能承受的价格上限 预算控制 提前设置预算避免过度消耗，分为每日预算、总预算 可设置曝光次数限制、点击次数限制；每日曝光、总曝光；每日点击、总点击 频次控制 广告主设置同一个用户在设定时间内看到特定广告的总次数 投放时间 设置投放日期和投放时段 不同的时间段都会对广告效果产生影响，比如周末、晚上高峰时段 受众定向 地区 客户端定向 设备类型 人群标签定向，基于DMP系统，不同兴趣爱好的人群进行广告投放 创意内容创意形式format 以何种形式呈现 图片 蚊子 图文 视频 表单 …… 用户交互方式engagement数据指标在广告投放过程中，必须关注广告的投放效果，以及时调整投放策略，达到效果最大化 基础指标 请求数：包含总请求数、有效请求数、参加竞价数、赢得竞价数 CPC：每点击成本 CPM：每千人成本 CTR：广告点击率，即广告点击次数/广告展示次数 高阶指标 独立访客数 访问数 网站到达率：用户到达landingpage的数量 / 点击数 ； 用户衡量该环节的用户流失率 频次：离线频次、累计频次 网站浏览量：用户到达目标页面产生的浏览量 二跳率 平均停留时长：用户到达目标页面后的平均停留时间 下载、激活、注册：该次广告投放引导用户下载、激活、注册的数量 付款金额、付款人次 程序化创意 用户数据中心DMP 反作弊常见作弊方式 CTR异常，明显高于正常水平 广告访问IP异常，某些IP产生大量的展示点击 点击热力图异常 有点击展示，却没有对应的广告请求 广告请求，展示、点击、跳转、时间顺序异常 无时间定向时，某时间段的请求，展示，点击数量明显高于正常水平 某些设备产生了大量的展示、点击 重复展示、点击 广告请求中的参数异常，如UA，IP，机型等 反作弊方法反作弊需要事前预防、事后溯源、人工排查、智能算法等多管齐下 反作弊的最终目的是识别机器人流量和正常流量，既要能准确的过滤非正常流量，又要保证正常流量不被过滤 广告来源 过滤爬虫IP，过滤内网IP，过滤长时间产生异常数据的IP 出现大量无refer的广告流量 refer与所投放的媒体不对应 用户标识 根据IP、cookie或者设备ID作为分辨用户的依据 用户行为对广告请求、请求频次、展示、展示频次、点击、点击频次进行分析 同一用户、同一时间在多个广告位产生了浏览或点击行为,或短时间内在同一广告位产生多次曝光或点击; 同一用户的广告浏览或点击时间间隔过于规律; 曝光数和点击数在某个时间点暴涨; 用户未浏览广告就直接产生了点击行为,通常表现为出现大量无曝光的点击; 用户浏览广告的面积和时长数据异常,可用广告可见度(Viewability)衡量和分析; 用户点击广告的位置过于规律或过于集中,一般用广告位热图来观察分析; 用户行为的各环节(浏览广告-&gt;点击广告-&gt;到站-&gt;转化)遵循严谨的时间先后顺序,如果点击广告的时间早于浏览广告的时间,或浏览和点击行为之间的时间间隔异常,一般可以判断为作弊 到站情况，综合考量用户留存、停留时间,访问深度等指标,用于分析转化用户的质量 关注用户的站内交互情况(点击、滚动、输入等操作)。和广告点击作弊一样,为了制造用户活跃的假象,作弊的方可能会利用机器产生大量页面点击,同样地,我们可以利用点击的区域、次数、频率、页面窗口大小等指标去伪存真]]></content>
       <categories>
         <category>产品</category>
         <category>广告</category>
@@ -56,21 +56,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[浅谈用户画像]]></title>
-    <url>%2F2020%2F02%2F08%2F%E6%B5%85%E8%B0%88%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%2F</url>
-    <content type="text"><![CDATA[什么是用户画像？维基百科定义 A user profile is a visual display of personal data associated with a specific user, or a customized desktop environment 用户画像就是与该用户相关联的数据的可视化展现；即：用户信息标签化 偏技术的定义 海量的数据标签，根据用户的目标、行为和观点的差异区分为不同的类型 常见的用户画像维度 金融用户评级画像 群体维度常见的画像-今日头条 为什么要做用户画像？宏观构建具象认知，构建战略、战术方向 为了在核心用户上达成统一 具象的认知，方便后期有的放矢 根据用户画像信息做产品设计，了解用户行为偏好 探索用户足迹，用户市场导向 详细了解真实用户是如何 与产品及相关内容进行互动的 从业务场景出发，解决实际的业务问题，针对用户生命周期的不同状态进行产品设计 微观构建底层数据基础，服务上层应用 用户画像可作为推荐系统（广告、搜索系统）重要一环 方便信息的处理有了标签后计算机可以方便的处理各个量化需求 统计分类 数据挖掘 如何构建用户画像构建用户静态/动态数据静态数据-评估价值用户相对稳定的信息，此类信息自成标签，如果已有真实信息则无需过多的建模预测，更多的是数据清洗；如果静态信息不准或缺失则需要建模预测 人口属性 性别 年龄 地域 商业属性 收入 职业 消费意向 风险评估状态 生活型态 CRM 客户状态 会员状态 生命价值 动态数据-循迹用户不断变化的行为信息 场景 访问设备 访问时段 媒体 访问媒体 访问页面 访问时长 访问频次 路径 流量来源 流量去向 标签与权重用户画像的最终形态：通过分析用户行为，最终为每个用户打上标签，以及该标签的权重 标签表征了内容，用户对该内容有兴趣、偏好、需求等 权重表征了指数，用户的兴趣、偏好指数； 也可能表征用户的需求度 数据建模方法标签= 用户标识 + 时间 + 行为类型 +接触点的聚合，某用户因为在什么时间、什么地点、做了什么事，所以会打上标签 事件模型收集用户行为，并结合上下文构建事件模型，5W who，唯一的用户标识 when，时间因素 where，地理位置 what，交互的内容/商品 which ，用户的行为（点击，浏览，购买，观看……） 整体思考建模用户标签的权重是会随着时间的增加而衰减 时间为衰减因子r，影响权重，每天衰减为昨天的r倍 行为类型、接触点决定权重 内容类型决定标签 用户偏好某内容的标签 = 衰减因子 行为类型权重 接触点权重 算法路线及常用算法模型 算法处理评估流程图 算法架构图 标签层级]]></content>
-      <categories>
-        <category>产品</category>
-        <category>数据</category>
-        <category>用户画像</category>
-      </categories>
-      <tags>
-        <tag>产品</tag>
-        <tag>数据</tag>
-        <tag>用户画像</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[推荐系统-个性化内容分发]]></title>
     <url>%2F2020%2F02%2F08%2F%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F-%E4%B8%AA%E6%80%A7%E5%8C%96%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91%2F</url>
     <content type="text"><![CDATA[什么是推荐系统？维基百科定义 推荐系统是一种信息过滤系统，用语预测用户对物品的“评分”或“偏好” 限定在电商购买决策过程的定义 电商应用向客户提供商品信息和建议，帮助用户决定应该够买什么产品。 这其中隐含了土建系统的2个重要的核心功能 路径优化 兴趣发现 推荐概述 推荐目标：合适的才是最好的 实现手段：数据、算法、架构、 核心功能：链路优化、兴趣发现 评价：满意度（点击率，转化率，时长）、准确、覆盖率、多样性、新颖性、惊喜性、信任度、鲁棒性、实时性、商业目标 两过程：从学习到决策过程 核心问题：如何构建一个用户对商品的评价模型 宗旨：服务提供方和消费方双赢 演进： 与搜索的异同：推荐被动，搜索主动； 推荐不明确货找人， 搜索明确人找货 推荐的几大挑战 大数据，稀疏，长尾，噪音 用户行为模式的挖掘和利用（行为的复杂性） 冷启动（新用户/新商品） 多样性与精确性的两难困境 用户界面与用户体验（个性化体验的可解释性） 好的推荐产品 5W when where who what why 推荐系统是怎么做到的？上下文 当前定位 当前季节 用户年龄 用户画像 用户静态数据 用户动态数据 协同过滤基于用户 基于内容 基于商品 基于模型 基于统计/知识推荐系统的相似度评估计算用户与用户， 商品与商品， 内容与内容的相似度 主要思想为，交集 / 并集 当交集与并集相等时，相似度为1 当交集为空时，相似度为 0 推荐的混合模型级联型使用后一个推荐方法优化前一个 特征递增前一个做为后一个的输入 特征组合将来自不同推荐数据源的特征组合，然后由其他推荐技术使用 元层次组合将不同的推荐模型融合 混合将多种不同的推荐算法的结果混合在一起 切换根据问题背景和实际情况采用不同的推荐技术 加权融合多种推荐类型的计算混合产生推荐 推荐系统的架构和模块演进 推荐系统架构 推荐流量分发 CVR (Click Value Rate): 转化率，衡量CPA广告效果的指标 CTR (Click Through Rate): 点击率 CPC (Cost Per Click): 按点击计费 CPA (Cost Per Action): 按成果数计费 CPM (Cost Per Mille): 按千次展现计费 PV (Page View): 流量 PV单价: 每PV的收入，衡量页面流量变现能力的指标 ADPV (Advertisement Page View): 载有广告的pageview流量 ADimp (ADimpression): 单个广告的展示次数 RPS (Revenue Per Search): 每搜索产生的收入，衡量搜索结果变现能力指标 ROI：投资回报率(ROI)是指通过投资而应返回的价值，它涵盖了企业的获利目标。利润投入的经营所必备的财产相关，因为管理人员必须通过投资和现有财产获得利润。又称会计收益率、投资利润率。 GMV：通常称为网站成交金额，属于电商平台企业成交类指标，主要指拍下订单的总金额，包含付款和未付款两部分 计算方式 ROI=订单额/消费量（即广告费用）=（单均额转化量）/（CPA转化量）=单均额/CPA CTR=点击量/展现量 CVR=转化量/点击量 CPM=（消费量/展现量）*1000 CPA=消费量/转化量=（CPC点击量）/（CVR点击量）=CPC/CVR CPC=消费量/点击量 模型部署 推荐召回召回分类兼顾成本与性能 user profile 标签索引列表 相似列表 协同过滤 Content-Based 基于图论的算法 knoledge-Based Context-Aware Hybrid-BAsed 热门列表 分类热门 运营人工推荐列表 召回的列表将作为推荐候选池 业界算法模型 相似度计算注意点 在不丧失区分度的情况下，空间尽量稠密 经验目标：稀疏度&gt; 1% 横向结合+纵向结合 相似度归一化 提高推荐的准确度 时间因子 对历史共现的数据和历史频次的数据进行降权 要更加侧重于新数据的影响力 召回—关联推荐 推荐排序问题抽象 个性化/非个性化模型 目标变形 预估流程与部署 调试 用户画像要素用户行为= 商品/内容 +显性操作 （购买、关注、下载）+隐形操作（时长、跳过） User profile 基础数据用户标签 用户的历史行为 用户session行为 用户自身的标签 Item/Content profile基础数据内容标签 内容的keyword 分类 热点标签 标题党 …… 用户画像标签 用户画像应用-选人中心 用户画像应用-DMP 用户画像应用-Right Time 消费周期 标签体系构建 标签建模 性别模型 购买力模型 关键词偏好 关键词模型 画像与数据分析结合 特征工程分类 用户特征 人口统计学特征 购物偏好 用户群体标签 商品特征 商品ID 商品静态属性 商品的关联卖家 商品所在的店铺 数据标注 样本关联 样本选择 样本采样 样本权重 负样本 特征处理 特征离散化、ID类特征 加快处理速度 非线性 特征平滑 威尔逊区间 PV越小，CTR的置信度越小 防止低PV的商品占优势 特征组合 非线性 PV+IPV组合，比CTR的信息更多 百度百科：在统计学中，一个概率样本的置信区间（Confidence interval）是对这个样本的某个总体参数的区间估计。置信区间展现的是这个参数的真实值有一定概率落在测量结果的周围的程度。置信区间给出的是被测量参数的测量值的可信程度，即前面所要求的“一定概率”。这个概率被称为置信水平。 特征聚合 特征降维 相似特征有相似权重 特征的权重近似于后验概率 评估指标 回归场景分类与推荐 各类算法比较 实时个性化 意图计算 E&amp;E 个性化 可配置化 分解]]></content>
@@ -84,6 +69,21 @@
         <tag>推荐系统</tag>
         <tag>个性化</tag>
         <tag>内容分发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[浅谈用户画像]]></title>
+    <url>%2F2020%2F02%2F08%2F%E6%B5%85%E8%B0%88%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%2F</url>
+    <content type="text"><![CDATA[什么是用户画像？维基百科定义 A user profile is a visual display of personal data associated with a specific user, or a customized desktop environment 用户画像就是与该用户相关联的数据的可视化展现；即：用户信息标签化 偏技术的定义 海量的数据标签，根据用户的目标、行为和观点的差异区分为不同的类型 常见的用户画像维度 金融用户评级画像 群体维度常见的画像-今日头条 为什么要做用户画像？宏观构建具象认知，构建战略、战术方向 为了在核心用户上达成统一 具象的认知，方便后期有的放矢 根据用户画像信息做产品设计，了解用户行为偏好 探索用户足迹，用户市场导向 详细了解真实用户是如何 与产品及相关内容进行互动的 从业务场景出发，解决实际的业务问题，针对用户生命周期的不同状态进行产品设计 微观构建底层数据基础，服务上层应用 用户画像可作为推荐系统（广告、搜索系统）重要一环 方便信息的处理有了标签后计算机可以方便的处理各个量化需求 统计分类 数据挖掘 如何构建用户画像构建用户静态/动态数据静态数据-评估价值用户相对稳定的信息，此类信息自成标签，如果已有真实信息则无需过多的建模预测，更多的是数据清洗；如果静态信息不准或缺失则需要建模预测 人口属性 性别 年龄 地域 商业属性 收入 职业 消费意向 风险评估状态 生活型态 CRM 客户状态 会员状态 生命价值 动态数据-循迹用户不断变化的行为信息 场景 访问设备 访问时段 媒体 访问媒体 访问页面 访问时长 访问频次 路径 流量来源 流量去向 标签与权重用户画像的最终形态：通过分析用户行为，最终为每个用户打上标签，以及该标签的权重 标签表征了内容，用户对该内容有兴趣、偏好、需求等 权重表征了指数，用户的兴趣、偏好指数； 也可能表征用户的需求度 数据建模方法标签= 用户标识 + 时间 + 行为类型 +接触点的聚合，某用户因为在什么时间、什么地点、做了什么事，所以会打上标签 事件模型收集用户行为，并结合上下文构建事件模型，5W who，唯一的用户标识 when，时间因素 where，地理位置 what，交互的内容/商品 which ，用户的行为（点击，浏览，购买，观看……） 整体思考建模用户标签的权重是会随着时间的增加而衰减 时间为衰减因子r，影响权重，每天衰减为昨天的r倍 行为类型、接触点决定权重 内容类型决定标签 用户偏好某内容的标签 = 衰减因子 行为类型权重 接触点权重 算法路线及常用算法模型 算法处理评估流程图 算法架构图 标签层级]]></content>
+      <categories>
+        <category>产品</category>
+        <category>数据</category>
+        <category>用户画像</category>
+      </categories>
+      <tags>
+        <tag>产品</tag>
+        <tag>数据</tag>
+        <tag>用户画像</tag>
       </tags>
   </entry>
   <entry>
@@ -283,9 +283,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[用户行为类指标详解]]></title>
-    <url>%2F2019%2F05%2F19%2F%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[1) 使用时长定义：用户在应用程序上所停留的时间。主要分为平均使用时长和单次使用时长，平均使用时长是某一段时间内所有用户的全部访问时间的平均值。涵义：通过考量用户在应用上的停留时间，我们可以看出应用内容是否吸引用户，应用质量是否合格；还可以看出某个推广渠道到来的用户是否是深度使用用户，以此评判渠道质量。2) 使用频率定义：在一定时期内，同一个用户启动应用的次数。如在一天之内，同一个用户一共进行有效启动5次，那么该用户的日使用频率就是5次。涵义：使用频率和日启动次数类似，只是从另外一个角度衡量用户粘性，一个应用通常情况下用户粘性越高，那么用户的平均使用频率也就越高。3) 使用间隔定义：使用间隔是指同一用户相邻两次启动应用的时间间隔，例如某一用户第一次启动应用到第二次启动应用之间相隔2天，那么该用户的使用间隔即为2天。涵义：使用间隔也从侧面反映了应用的用户粘性，通常情况下使用间隔越短说明用户越依赖应用，也就是说应用的用户粘性越高。也可以据此来决定推送消息的时机和发版频率。4) 访问深度定义：我们将用户在一次启动应用过程中所到达的页面累计数量视为用户的访问深度， 例如某用户从启动APP到退出应用过程中，一共访问了12个页面，那么称该用户的访问深度为12。涵义：理论上来讲，访问深度越高，应用质量越好，用户对应用的依赖就越强5)页面跳出率定义：用户从当前页面离开应用程序的比例，离开指“退出或后台超过30秒”涵义：在“访问页面”报表中的参数，这里的离开指结束一次启动，比如某用户在当前页面接到电话，此时应用程序隐藏到后台运行，10秒钟后挂电话又回到了应用程序，这样的过程不算作是用户“离开”。如果超过30秒，才算作一次离开。]]></content>
+    <title><![CDATA[crash分析类指标详解]]></title>
+    <url>%2F2019%2F05%2F19%2Fcrash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[1) 错误次数定义：在规定的时间段内，应用出现异常退出现象的次数总和。涵义：通常情况下，应用错误集中于两种：死机或强退，这样的现象都会严重影响用户体验，所以错误次数发生的越高，用户体验越差。降低错误次数是开发者应该时刻关注的重要指标。2) 错误率定义：在规定时间段内，一个应用发生错误的比率（错误次数/启动次数）。涵义：产品质量是一个应用发展壮大的基石，与网站不同，移动应用一旦被分发之后就无法再收回，应用错误率高会降低用户对产品的信任和口碑。通过对应用的质量监控，找到错误代码并及时发布修复版本，可以有效弥补这一问题。]]></content>
       <categories>
         <category>产品</category>
         <category>数据产品</category>
@@ -311,9 +311,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[crash分析类指标详解]]></title>
-    <url>%2F2019%2F05%2F19%2Fcrash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3%2F</url>
-    <content type="text"><![CDATA[1) 错误次数定义：在规定的时间段内，应用出现异常退出现象的次数总和。涵义：通常情况下，应用错误集中于两种：死机或强退，这样的现象都会严重影响用户体验，所以错误次数发生的越高，用户体验越差。降低错误次数是开发者应该时刻关注的重要指标。2) 错误率定义：在规定时间段内，一个应用发生错误的比率（错误次数/启动次数）。涵义：产品质量是一个应用发展壮大的基石，与网站不同，移动应用一旦被分发之后就无法再收回，应用错误率高会降低用户对产品的信任和口碑。通过对应用的质量监控，找到错误代码并及时发布修复版本，可以有效弥补这一问题。]]></content>
+    <title><![CDATA[用户行为类指标详解]]></title>
+    <url>%2F2019%2F05%2F19%2F%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3%2F</url>
+    <content type="text"><![CDATA[1) 使用时长定义：用户在应用程序上所停留的时间。主要分为平均使用时长和单次使用时长，平均使用时长是某一段时间内所有用户的全部访问时间的平均值。涵义：通过考量用户在应用上的停留时间，我们可以看出应用内容是否吸引用户，应用质量是否合格；还可以看出某个推广渠道到来的用户是否是深度使用用户，以此评判渠道质量。2) 使用频率定义：在一定时期内，同一个用户启动应用的次数。如在一天之内，同一个用户一共进行有效启动5次，那么该用户的日使用频率就是5次。涵义：使用频率和日启动次数类似，只是从另外一个角度衡量用户粘性，一个应用通常情况下用户粘性越高，那么用户的平均使用频率也就越高。3) 使用间隔定义：使用间隔是指同一用户相邻两次启动应用的时间间隔，例如某一用户第一次启动应用到第二次启动应用之间相隔2天，那么该用户的使用间隔即为2天。涵义：使用间隔也从侧面反映了应用的用户粘性，通常情况下使用间隔越短说明用户越依赖应用，也就是说应用的用户粘性越高。也可以据此来决定推送消息的时机和发版频率。4) 访问深度定义：我们将用户在一次启动应用过程中所到达的页面累计数量视为用户的访问深度， 例如某用户从启动APP到退出应用过程中，一共访问了12个页面，那么称该用户的访问深度为12。涵义：理论上来讲，访问深度越高，应用质量越好，用户对应用的依赖就越强5)页面跳出率定义：用户从当前页面离开应用程序的比例，离开指“退出或后台超过30秒”涵义：在“访问页面”报表中的参数，这里的离开指结束一次启动，比如某用户在当前页面接到电话，此时应用程序隐藏到后台运行，10秒钟后挂电话又回到了应用程序，这样的过程不算作是用户“离开”。如果超过30秒，才算作一次离开。]]></content>
       <categories>
         <category>产品</category>
         <category>数据产品</category>
@@ -418,9 +418,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[搭建自然语言处理的开发环境]]></title>
-    <url>%2F2019%2F03%2F01%2F%E6%90%AD%E5%BB%BA%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
-    <content type="text"><![CDATA[自然语言处理开发环境介绍 sublime vscode pycharm Anaconda3]]></content>
+    <title><![CDATA[案例-NLP实现预测天气冷暖感知度]]></title>
+    <url>%2F2019%2F03%2F01%2F%E6%A1%88%E4%BE%8B-NLP%E5%AE%9E%E7%8E%B0%E9%A2%84%E6%B5%8B%E5%A4%A9%E6%B0%94%E5%86%B7%E6%9A%96%E6%84%9F%E7%9F%A5%E5%BA%A6%2F</url>
+    <content type="text"><![CDATA[案例：NLP预测天气冷暖感知度1、案例需求 根据吃冰淇淋和喝水的数量，判断成都天气冷热程度。 成都春熙路街头采访记录一些游客吃了多少冰淇淋，又喝了几瓶水，他觉得成都天气怎么样（这里只考虑二分类问题，假设只有‘非常热’和‘一般热’） 其中特征向量包括两个分别是冰激凌数t1和喝水数t2，户外活动时长t3: 对应的标签类别分别是非常热A和一般热B。 2、实验数据准备 构造模拟数据 人员 冰淇淋 喝水 户外活动时长 冷热程度 判断描述 小王 8 4 2 A 小王吃了8个冰淇淋，喝了4瓶水，户外2小时，该地区天气非常热 小张 7 1 1 A 小张吃了7个冰淇淋，喝了1瓶水，户外1小时，该地区天气非常热 小李 1 4 4 B 小李吃了1个冰淇淋，喝了4瓶水，户外4小时，该地区天气一般热 小赵 3 0 5 B 小赵吃了3个冰淇淋，喝了0瓶水，户外5小时，该地区天气一般热 代码构造数据集 #!/usr/bin/python # -*- coding:utf-8 -*- &#39;&#39;&#39; author:gzy date:20190301 version:0.1.0 &#39;&#39;&#39; import numpy as np import matplotlib.pyplot as plt from matplotlib.font_manager import FontProperties class Temperature(): #设置字字体，避免汉字乱码 siyuanyahei = FontProperties(fname=&quot;../SourceHanSans-Normal.otf&quot;) #创建数据集，返回数据集和类标签 def create_dataset(self): # 数据集 datasets = np.array([[8,4,2],[7,1,1],[1,4,4],[3,0,5]]) #类标签 labels = [&#39;非常热&#39;,&#39;非常热&#39;,&#39;一般热&#39;,&#39;一般热&#39;] return datasets,labels 3、数据分析与可视化 可视化展示散点图 #可视化分析数据 def analyze_data_plot(self,x,y): fig = plt.figure() # 将画布分隔为1行1列一块 ax = fig.add_subplot(111) ax.scatter(x,y) #设置散点图的标题和横纵坐标 plt.title(&#39;游客领热感知散点图&#39;,fontproperties=self.siyuanyahei) plt.xlabel(&#39;天热吃冰激凌数目&#39;,fontproperties=self.siyuanyahei) plt.ylabel(&#39;天热喝水的数目&#39;,fontproperties=self.siyuanyahei) plt.show() 4、算法模型及原理讲解 KNN模型原理及欧式距离计算 什么是KNN算法模型 KNN工作原理 KNN算法思想 KNN算法流程 4.1、KNN算法模型​ k-近邻(KNN，k-NearestNeighbor)算法是一种基本分类与回归方法。k-近邻假设设定一个训练数据集(先验知识)，其中的实例类别已定。分类时候，对新的实例数据，根据其K个最近邻的训练实例的类别，通过多数表决等方式进行预测。 ==K近邻算法属于有监督学习，实际上利用训练数据集对特征向量空间进行划分，并作为其分类的”模型”。K值的选择、距离度量、以及分类决策规则是K近邻算法的三个基本要素。== 在本案例中，仅讨论分类问题中的k-近邻算法；输入值：案例的特征向量(吃冰淇淋、喝水、活动时间)，对应特征空间的点；输出值：案例的类别(非常热、一般热、舒适、一般冷、非常冷) 4.2、KNN工作原理 假设一个带有标签的数据集(训练样本集)，包含每条数据与所属分类的对应关系 输入没有标签的新数据后，将新数据的每个特征与样本集中数据对应的特征进行比较 计算新数据与样本数据集 中每条数据的距离 对求得的所有距离进行排序(从小到大，越小表示越相似) 取前K(K&lt;=20的奇数)个样本数据对应的分类标签 求K个数据中出现次数最多的分类标签作为新数据的分类 4.3、KNN算法思想 计算所有样本点 与 待分类样本之间的距离 计算完 样本距离进行排序 选取距离样本最近的k个点 针对这个k个点，统计各个类别分别有多少个 k个点钟某个类别最多，就将该样本划归该点 4.4、KNN算法模型流程与实现 搜集数据 数据采集过程，分为：非机构化数据、半结构化数据、数据化数据 准备数据 格式化处理，对不同类别的数据进行统一的格式化处理 如：将pdf,word,excel,sql等统一转化为txt 分析数据 看数据特点，有无缺失值，数据是离散还是连续 训练数据 不适用与KNN，但在其他一些监督学习中经常会用到 应用算法 针对完善的模型进行封装重构，进行实际应用 构造KNN分类器 #构造KNN分类器 def knn_Classifier(self,newV,datasets,labels,k): # 获取新样本的数据 # 获取样本库的数据 # 选择K值 # 计算样本数据与样本库数据之间的距离 # 根据距离进行排序 # 针对k个点，统计各个类别的数量 # 投票机制，少数服从多数原则 pass 欧式距离计算 # 欧氏距离计算 #方式一 d^2 = （x1-x2）^2 +(y1-y2)^2&quot; def ComputeEuclideanDistance(self,x1,x2,y1,y2): d = math.sqrt(math.pow((x1-x2),2)+math.pow((y1-y2),2)) return d # 方式二 def EuclideanDistance(self,instance1,instance2,length): d =0 for x in range(length): d += pow((instance1[x]-instance2[x]),2) return math.sqrt(d)]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Natural Language Processing</category>
@@ -431,9 +431,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[案例-NLP实现预测天气冷暖感知度]]></title>
-    <url>%2F2019%2F03%2F01%2F%E6%A1%88%E4%BE%8B-NLP%E5%AE%9E%E7%8E%B0%E9%A2%84%E6%B5%8B%E5%A4%A9%E6%B0%94%E5%86%B7%E6%9A%96%E6%84%9F%E7%9F%A5%E5%BA%A6%2F</url>
-    <content type="text"><![CDATA[案例：NLP预测天气冷暖感知度1、案例需求 根据吃冰淇淋和喝水的数量，判断成都天气冷热程度。 成都春熙路街头采访记录一些游客吃了多少冰淇淋，又喝了几瓶水，他觉得成都天气怎么样（这里只考虑二分类问题，假设只有‘非常热’和‘一般热’） 其中特征向量包括两个分别是冰激凌数t1和喝水数t2，户外活动时长t3: 对应的标签类别分别是非常热A和一般热B。 2、实验数据准备 构造模拟数据 人员 冰淇淋 喝水 户外活动时长 冷热程度 判断描述 小王 8 4 2 A 小王吃了8个冰淇淋，喝了4瓶水，户外2小时，该地区天气非常热 小张 7 1 1 A 小张吃了7个冰淇淋，喝了1瓶水，户外1小时，该地区天气非常热 小李 1 4 4 B 小李吃了1个冰淇淋，喝了4瓶水，户外4小时，该地区天气一般热 小赵 3 0 5 B 小赵吃了3个冰淇淋，喝了0瓶水，户外5小时，该地区天气一般热 代码构造数据集 #!/usr/bin/python # -*- coding:utf-8 -*- &#39;&#39;&#39; author:gzy date:20190301 version:0.1.0 &#39;&#39;&#39; import numpy as np import matplotlib.pyplot as plt from matplotlib.font_manager import FontProperties class Temperature(): #设置字字体，避免汉字乱码 siyuanyahei = FontProperties(fname=&quot;../SourceHanSans-Normal.otf&quot;) #创建数据集，返回数据集和类标签 def create_dataset(self): # 数据集 datasets = np.array([[8,4,2],[7,1,1],[1,4,4],[3,0,5]]) #类标签 labels = [&#39;非常热&#39;,&#39;非常热&#39;,&#39;一般热&#39;,&#39;一般热&#39;] return datasets,labels 3、数据分析与可视化 可视化展示散点图 #可视化分析数据 def analyze_data_plot(self,x,y): fig = plt.figure() # 将画布分隔为1行1列一块 ax = fig.add_subplot(111) ax.scatter(x,y) #设置散点图的标题和横纵坐标 plt.title(&#39;游客领热感知散点图&#39;,fontproperties=self.siyuanyahei) plt.xlabel(&#39;天热吃冰激凌数目&#39;,fontproperties=self.siyuanyahei) plt.ylabel(&#39;天热喝水的数目&#39;,fontproperties=self.siyuanyahei) plt.show() 4、算法模型及原理讲解 KNN模型原理及欧式距离计算 什么是KNN算法模型 KNN工作原理 KNN算法思想 KNN算法流程 4.1、KNN算法模型​ k-近邻(KNN，k-NearestNeighbor)算法是一种基本分类与回归方法。k-近邻假设设定一个训练数据集(先验知识)，其中的实例类别已定。分类时候，对新的实例数据，根据其K个最近邻的训练实例的类别，通过多数表决等方式进行预测。 ==K近邻算法属于有监督学习，实际上利用训练数据集对特征向量空间进行划分，并作为其分类的”模型”。K值的选择、距离度量、以及分类决策规则是K近邻算法的三个基本要素。== 在本案例中，仅讨论分类问题中的k-近邻算法；输入值：案例的特征向量(吃冰淇淋、喝水、活动时间)，对应特征空间的点；输出值：案例的类别(非常热、一般热、舒适、一般冷、非常冷) 4.2、KNN工作原理 假设一个带有标签的数据集(训练样本集)，包含每条数据与所属分类的对应关系 输入没有标签的新数据后，将新数据的每个特征与样本集中数据对应的特征进行比较 计算新数据与样本数据集 中每条数据的距离 对求得的所有距离进行排序(从小到大，越小表示越相似) 取前K(K&lt;=20的奇数)个样本数据对应的分类标签 求K个数据中出现次数最多的分类标签作为新数据的分类 4.3、KNN算法思想 计算所有样本点 与 待分类样本之间的距离 计算完 样本距离进行排序 选取距离样本最近的k个点 针对这个k个点，统计各个类别分别有多少个 k个点钟某个类别最多，就将该样本划归该点 4.4、KNN算法模型流程与实现 搜集数据 数据采集过程，分为：非机构化数据、半结构化数据、数据化数据 准备数据 格式化处理，对不同类别的数据进行统一的格式化处理 如：将pdf,word,excel,sql等统一转化为txt 分析数据 看数据特点，有无缺失值，数据是离散还是连续 训练数据 不适用与KNN，但在其他一些监督学习中经常会用到 应用算法 针对完善的模型进行封装重构，进行实际应用 构造KNN分类器 #构造KNN分类器 def knn_Classifier(self,newV,datasets,labels,k): # 获取新样本的数据 # 获取样本库的数据 # 选择K值 # 计算样本数据与样本库数据之间的距离 # 根据距离进行排序 # 针对k个点，统计各个类别的数量 # 投票机制，少数服从多数原则 pass 欧式距离计算 # 欧氏距离计算 #方式一 d^2 = （x1-x2）^2 +(y1-y2)^2&quot; def ComputeEuclideanDistance(self,x1,x2,y1,y2): d = math.sqrt(math.pow((x1-x2),2)+math.pow((y1-y2),2)) return d # 方式二 def EuclideanDistance(self,instance1,instance2,length): d =0 for x in range(length): d += pow((instance1[x]-instance2[x]),2) return math.sqrt(d)]]></content>
+    <title><![CDATA[搭建自然语言处理的开发环境]]></title>
+    <url>%2F2019%2F03%2F01%2F%E6%90%AD%E5%BB%BA%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%2F</url>
+    <content type="text"><![CDATA[自然语言处理开发环境介绍 sublime vscode pycharm Anaconda3]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Natural Language Processing</category>
@@ -457,18 +457,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[AI时代决策效率革命]]></title>
-    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
-    <content type="text"><![CDATA[]]></content>
-      <categories>
-        <category>Artificial Intelligence</category>
-      </categories>
-      <tags>
-        <tag>人工智能</tag>
-        <tag>Artificial Intelligence</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[AI时代如何提升个人认知]]></title>
     <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5%2F</url>
     <content type="text"><![CDATA[AI时间如何提升个人认知 思考比学习知识更重要。 外部原因​ 当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。 比如： 互联网 共享经济 大数据 内部原因 《论思考》 、《论书籍和写作》——叔本华 读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。]]></content>
@@ -481,14 +469,15 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[php即时通讯-WebSocket]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket%2F</url>
-    <content type="text"><![CDATA[WebSocket 一个应用层协议 长链接 主流即时通讯协议]]></content>
+    <title><![CDATA[AI时代决策效率革命]]></title>
+    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
+    <content type="text"><![CDATA[]]></content>
       <categories>
-        <category>php</category>
+        <category>Artificial Intelligence</category>
       </categories>
       <tags>
-        <tag>php</tag>
+        <tag>人工智能</tag>
+        <tag>Artificial Intelligence</tag>
       </tags>
   </entry>
   <entry>
@@ -506,6 +495,17 @@
     <title><![CDATA[php即时通讯-http]]></title>
     <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
     <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[php即时通讯-WebSocket]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket%2F</url>
+    <content type="text"><![CDATA[WebSocket 一个应用层协议 长链接 主流即时通讯协议]]></content>
       <categories>
         <category>php</category>
       </categories>
@@ -836,9 +836,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[深度学习笔记——线性回归]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
+    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -850,9 +850,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
-    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
+    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -902,6 +902,18 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[几种机器学习原理]]></title>
+    <url>%2F2018%2F11%2F25%2F%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%2F</url>
+    <content type="text"><![CDATA[几种机器学习算法原理机器学习过程什么问题适合用机器学习解决几种常见的模型和算法]]></content>
+      <categories>
+        <category>Artificial Intelligence</category>
+      </categories>
+      <tags>
+        <tag>人工智能</tag>
+        <tag>Artificial Intelligence</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[AI是什么]]></title>
     <url>%2F2018%2F11%2F25%2FAI%E6%98%AF%E4%BB%80%E4%B9%88%2F</url>
     <content type="text"><![CDATA[AI是什么AI，“Artificial Intelligence”的缩写，中文“人工智能”；可以理解为让机器具备类似人的智能，从而代替人类完成某些工作和任务。 “强人工智能” 能够像人类一样去思考和推理，具备自我意识 “弱人工智能” 机器表现出来的特征是智能的，但是不具备自我意识 通过相关规则编程，使机器按照程序逻辑完成特定的任务 针对某一任务向机器提供大量数据，使机器自己去学习，继而挖掘出规律，从而完成任务 弱人工智能机器学习从模型层次结构的角度可以分为浅层学习和深度学习 浅层学习（Shallow Learning） 模型层次较浅，通常没有隐藏层、或只有一层隐藏层 可以做一些预测、分类、聚类、降低数据维度、压缩数据、商品推荐系统等工作 常见算法： 线性回归 逻辑回归 随机森林 SVM K-means RBM AutoEncoder PCA SOM …… 深度学习（Deep Learning） “深”是因为通常具有较多的隐藏层，进而拥有表达更多复杂函数的能力，进而能识别更复杂的特征 主要集中在CNN 和RNN CNN CNN为Convolution Neural NetWorks的缩写，也就是卷积神经网络 主要应用于计算机视觉、图像分类领域 应用场景示例 美颜相机的滤镜 交通监控识别车辆车型、车牌号 商汤人脸识别 无人车 …… RNN Recurrent Neual NetWorks的缩写，递归神经网络 基于RNN还衍生出LSTM（Long-Short-Term-Memerory） 和GRU（Gated Recurrent Unit）等 具有记忆过去的能力，故用来处理一些有时间序列属性的数据，处理语言、文字具有优势 应用场景示例： Siri对话机器人 谷歌翻译，机器翻译 语音转文字 …… AI本质AI本质上都是一个函数 AI其实就是我们提供机器目前已有的数据，机器从数据去找出一个最能拟合这些数据的函数；当有新的数据需要预测时，机器通过之前找到的函数去预测新数据的对应结果。 通用要素 AI = 数据+算法+模型 示例讲解—分类器模型为区分A 和B 数据 准备大量已标注过 是A 还是B的图片 只有数据量足够大，模型才能够学习足够准确的 区分A 和B的特征，在进行最终的AB任务区分上，才能表现出足够高的准确性 算法 网络架构设计：构建模型时，采用浅层网络还是深层网络，如为深层，则需多少层，每层油多少神经元，功能是什么等 预测函数的大致结构$$Y= f(W,X,b)$$Y ，是已有的图片数据的标签；（A和B的图片） X，是已有的用来训练的数据；（该图是A 还是B） W，权重；b，偏差 ； 这两个参数通过机器学习后得出 寻找W 和b 的过程，就是模型训练的过程 模型 将数据带入算法中训练，机器不断学习，当机器找到最优 W 权重，b 偏差；就意味着模型 train成功了 函数模型$$Y=f(W,X,b)$$ 提供新的数据输入该模型，算出新的数据是A或者B，即为模型的预测功能 不管是简单的线性回归，还是复杂的深度神经网络模型，本质都是寻找一个能够良好拟合目前已有数据的函数$$Y=f(W，X，b)$$并且这个函数在新的未知数据上也能够表现良好。]]></content>
@@ -926,18 +938,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[几种机器学习原理]]></title>
-    <url>%2F2018%2F11%2F25%2F%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86%2F</url>
-    <content type="text"><![CDATA[几种机器学习算法原理机器学习过程什么问题适合用机器学习解决几种常见的模型和算法]]></content>
-      <categories>
-        <category>Artificial Intelligence</category>
-      </categories>
-      <tags>
-        <tag>人工智能</tag>
-        <tag>Artificial Intelligence</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[学习如何为产品选择合适的推荐算法]]></title>
     <url>%2F2018%2F11%2F25%2F%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E4%B8%BA%E4%BA%A7%E5%93%81%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95%2F</url>
     <content type="text"><![CDATA[常见推荐机制/算法基础推荐机制 机制 应用场景 原理概述 内容推荐 适用于冷启动 基于内容的协同过滤 数据量较大 判断内容相似度，相似度高的内容；播放内容A的用户，也会对内容B感兴趣 基于用户的协同过滤 数据量较大，但数据量越大可信度越低 把数据代入专门计算相似度的公式，获得不同用户（二者）口味的相似度；推测相似度高的用户，喜好的内容也类似，进而可以相互推荐 基于标签的推荐 适用于冷启动 协同过滤的风险协同过滤技术在个性化推荐初期具有较好的效果，但随着产品结构、内容复杂度和用户人数的不断增加，协同过滤技术的缺点也一点一点的暴露出来了。 稀疏性（sparity）大多数推荐系统中，每个用户涉及的信息量较为有限；用户数据最多不过评估到了百分分之一，造成评估矩阵数据相当稀疏，增加寻找相似用户集的难度，导致推荐效果大大降低 扩展性（scalability）“最近邻居”算法的计算量虽则用户和项的增加而大大增加，对于百万之巨的数目，通常的算法将遭遇严重的扩展性问题 精确性（accuracy）寻找相近用户来产生推荐集，在数据量较大的情况下，推荐的可信度也会降低 经典算法 算法 应用机制 原理概述 topN 基础算法 1、直接用List的sort方法进行排序处理 2、使用排序二叉树进行排序，然后取出前N名 3、使用最大堆排序，然后取出前N名 矩阵算法 基础算法 找到内容和内容之间相关性最高的，用topN的方式排序，就可以将内容相关性高的做推荐 内容关联算法 内容推荐 将item的基本属性、内容信息提取出来；抽出taglist，为每一个tag赋一个权重。不需要冷启动，时效高；但是对item需要解析，所以对音视频等不太友好；推出的内容缺乏惊喜，内容同质化严重 协同过滤算法 协同过滤 有惊喜，只依赖用户行为，不需要对内容完全解析；但是需要大量数据才能运转 神经网络矩阵分解 协同推荐基础算法 用户和内容之间自关联，用cf-nade建模为用户和内容评分，模型中可以用隐式反馈（动态指标）帮助克服评分稀疏的问题 【注：显示反馈-评分，评级；隐式反馈-操作行为等指标】 slope one 基于内容协同过滤 通过评分之间的差值，推测另一个得分f(x) = x+b 用户行为轨迹 严格来说不算是一种算法，该逻辑的重点是依据单个用户的一条行为轨迹，对场景进行切分。 实现与场景匹配有助于提升推荐效果，能够提升用户的使用时长，以及用户活跃度 混合合推荐算法：没有哪种推荐技术敢说自己没有弊端, 往往一个好的推荐系统也不是只用一种推荐技术就解决问题, 往往都是相互结合来弥补彼此的不足, 常见的组合方式如下 混合推荐技术: 同时使用多种推荐技术再加权取最优; 切换推荐技术: 根据用户场景使用不同的推荐技术; 特征组合推荐技术: 将一种推荐技术的输出作为特征放到另一个推荐技术当中; 层叠推荐技术: 一个推荐模块过程中从另一个推荐模块中获取结果用于自己产出结果 综合所有的推荐策略和算法，大致可以分为以下常见的推荐策略： 基于内容的推荐； 协同过滤推荐； 混合推荐； 流行度推荐； 其他更高级的；]]></content>
@@ -951,9 +951,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Python数据挖掘——基础知识]]></title>
-    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%2F</url>
-    <content type="text"><![CDATA[Python数据挖掘——基础知识 数据挖掘又称从数据中 挖掘知识、知识提取、数据／模式分析 即为：从数据中发现知识的过程 1、数据清理 （消除噪声，删除不一致数据） 2、数据集成 （多种数据源 组合在一起） 3、数据选择 （从数据库中提取和分析任务相关的数据） 4、数据变换 （通过汇总或聚焦操作，把数据变换和统一成适合挖掘的形式） 5、数据挖掘 （基本步骤，使用智能化方法提取数据） 6、模式评估 （根据某种兴趣度量，识别代表知识的真正的有趣模式） 7、知识表示 （使用可视化和知识表示技术，向用户提供数据挖掘的知识） 广义：从大量的数据中挖掘有趣模式和知识的过程 数据挖掘的模式： 描述性：描述性挖掘任务刻画目标数据中数据的一般性质 预测性：预测性挖掘任务在当前数据上进行归纳，以便作出预测 数据挖掘功能 离群点分析 特征化与区分 数据特征化 是目标类数据的一般性／特性的汇总 数据区分是将目标数据对象的一般性 与一个／多个对比类对象的一般性进行比较 频繁模式、关联和相关性 频繁模式包括频繁项集、序列模式和频繁子结构 频繁项集挖掘是频繁模式的基础 聚类分析 最大化类内相似性 最小化类间相似性 分类与回归 数据挖掘使用的技术 统计学 数据库系统 数据仓库 信息检索 机器学习 模式识别 可视化 算法 高性能计算 应用 数据挖掘的主要问题 挖掘方法 用户交互 有效性与伸缩性 数据类型的多样性 数据挖掘与社会]]></content>
+    <title><![CDATA[Python数据挖掘——数据预处理]]></title>
+    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%2F</url>
+    <content type="text"><![CDATA[Python数据挖掘——数据预处理 数据预处理 数据质量 准确性、完整性、一致性、时效性、可信性、可解释性 数据预处理的主要任务 数据清理 数据集成 数据归约 维归约 数值归约 数据变换 规范化 数据离散化 概念分层产生 数据清理（试图填充缺失的值，光滑噪声并识别离群点，纠正数据的不一致） 缺失值 忽略元组 人工填写缺失值 使用一个全局常量填充缺失值 使用属性的中心度量（均值／中位数）填充缺失值 使用与给定元组属于同一类的所有样本的均值／中位数 使用最可能的值 填充缺失值 注：某些情况，缺失值并不代表错误 噪声数据（噪声是被测量的变量的随机误差或方差） 分箱（通过考察数据的近邻，来光滑有序数据值） 用箱均值 用箱中位数 用箱边界 回归 离群点分析（通过聚类来检测离群点） 数据清理化为一个过程 首先进行偏差检测，还要防止字段过载 唯一性规则 连续性规则 空值规则 偏差检测商业工具 数据清洗工具 数据审计工具 数据迁移工具 EIL工具 数据集成 实体识别问题 冗余和相关分析 元组重复 数据值冲突的检测与处理 数据归约 数据变换与数据离散化]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Data Mining</category>
@@ -964,9 +964,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Python数据挖掘——数据预处理]]></title>
-    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86%2F</url>
-    <content type="text"><![CDATA[Python数据挖掘——数据预处理 数据预处理 数据质量 准确性、完整性、一致性、时效性、可信性、可解释性 数据预处理的主要任务 数据清理 数据集成 数据归约 维归约 数值归约 数据变换 规范化 数据离散化 概念分层产生 数据清理（试图填充缺失的值，光滑噪声并识别离群点，纠正数据的不一致） 缺失值 忽略元组 人工填写缺失值 使用一个全局常量填充缺失值 使用属性的中心度量（均值／中位数）填充缺失值 使用与给定元组属于同一类的所有样本的均值／中位数 使用最可能的值 填充缺失值 注：某些情况，缺失值并不代表错误 噪声数据（噪声是被测量的变量的随机误差或方差） 分箱（通过考察数据的近邻，来光滑有序数据值） 用箱均值 用箱中位数 用箱边界 回归 离群点分析（通过聚类来检测离群点） 数据清理化为一个过程 首先进行偏差检测，还要防止字段过载 唯一性规则 连续性规则 空值规则 偏差检测商业工具 数据清洗工具 数据审计工具 数据迁移工具 EIL工具 数据集成 实体识别问题 冗余和相关分析 元组重复 数据值冲突的检测与处理 数据归约 数据变换与数据离散化]]></content>
+    <title><![CDATA[Python数据挖掘——基础知识]]></title>
+    <url>%2F2018%2F11%2F20%2FPython%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%2F</url>
+    <content type="text"><![CDATA[Python数据挖掘——基础知识 数据挖掘又称从数据中 挖掘知识、知识提取、数据／模式分析 即为：从数据中发现知识的过程 1、数据清理 （消除噪声，删除不一致数据） 2、数据集成 （多种数据源 组合在一起） 3、数据选择 （从数据库中提取和分析任务相关的数据） 4、数据变换 （通过汇总或聚焦操作，把数据变换和统一成适合挖掘的形式） 5、数据挖掘 （基本步骤，使用智能化方法提取数据） 6、模式评估 （根据某种兴趣度量，识别代表知识的真正的有趣模式） 7、知识表示 （使用可视化和知识表示技术，向用户提供数据挖掘的知识） 广义：从大量的数据中挖掘有趣模式和知识的过程 数据挖掘的模式： 描述性：描述性挖掘任务刻画目标数据中数据的一般性质 预测性：预测性挖掘任务在当前数据上进行归纳，以便作出预测 数据挖掘功能 离群点分析 特征化与区分 数据特征化 是目标类数据的一般性／特性的汇总 数据区分是将目标数据对象的一般性 与一个／多个对比类对象的一般性进行比较 频繁模式、关联和相关性 频繁模式包括频繁项集、序列模式和频繁子结构 频繁项集挖掘是频繁模式的基础 聚类分析 最大化类内相似性 最小化类间相似性 分类与回归 数据挖掘使用的技术 统计学 数据库系统 数据仓库 信息检索 机器学习 模式识别 可视化 算法 高性能计算 应用 数据挖掘的主要问题 挖掘方法 用户交互 有效性与伸缩性 数据类型的多样性 数据挖掘与社会]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Data Mining</category>
@@ -1135,21 +1135,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
-    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
-      <categories>
-        <category>数据分析</category>
-        <category>Python3</category>
-        <category>Matplotlib</category>
-      </categories>
-      <tags>
-        <tag>数据分析</tag>
-        <tag>Python3</tag>
-        <tag>Matplotlib</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[数据分析03：matplotlib折线图]]></title>
     <url>%2F2018%2F03%2F02%2F03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE%2F</url>
     <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt import matplotlib.dates as mdates &#39;&#39;&#39; 折线图，用直线段将各数据连接起来组成的图形 常用来观察数据随时间变化的趋势 例如：股票价格，温度变化 &#39;&#39;&#39; date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True) plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;) plt.plot_date(date,open,linestyle=&#39;-&#39;,color=&quot;red&quot;,marker =&#39;o&#39;) plt.show() # 练习 &#39;&#39;&#39; 画出x值为[0,10]的正弦函数图像 &#39;&#39;&#39; x = np.linspace(0,10,100) y = np.sin(x) plt.plot(x,y) plt.show()]]></content>
@@ -1162,6 +1147,20 @@
         <tag>数据分析</tag>
         <tag>Python3</tag>
         <tag>Matplotlib</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[SpringBoot数据访问JPA]]></title>
+    <url>%2F2018%2F03%2F02%2FSpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA%2F</url>
+    <content type="text"><![CDATA[SpringBoot数据访问-整合JPA Entity –定义实体类，与数据表映射 Repository —定义操作，操作实体类中的数据表]]></content>
+      <categories>
+        <category>Java</category>
+        <category>SpringBoot</category>
+      </categories>
+      <tags>
+        <tag>服务端</tag>
+        <tag>Java</tag>
+        <tag>SpringBoot</tag>
       </tags>
   </entry>
   <entry>
@@ -1180,20 +1179,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[SpringBoot数据访问JPA]]></title>
-    <url>%2F2018%2F03%2F02%2FSpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA%2F</url>
-    <content type="text"><![CDATA[SpringBoot数据访问-整合JPA Entity –定义实体类，与数据表映射 Repository —定义操作，操作实体类中的数据表]]></content>
-      <categories>
-        <category>Java</category>
-        <category>SpringBoot</category>
-      </categories>
-      <tags>
-        <tag>服务端</tag>
-        <tag>Java</tag>
-        <tag>SpringBoot</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[SpringBoot启动自定义方法]]></title>
     <url>%2F2018%2F03%2F02%2FSpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95%2F</url>
     <content type="text"><![CDATA[SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart1 implements CommandLineRunner{ @Override public void run(String... args) throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments; import org.springframework.boot.ApplicationRunner; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart2 implements ApplicationRunner { @Override public void run(ApplicationArguments args) throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 三、初始化方法加上@PostConstruct注解import javax.annotation.PostConstruct; import org.springframework.stereotype.Component; import com.gzy.demo.NettyClient; @Component public class MyStart3{ @PostConstruct public void test() throws Exception { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } } 四、其他实现思路import org.springframework.context.annotation.Bean; import org.springframework.context.annotation.Configuration; import com.gzy.demo.NettyClient; @Configuration public class MyStart4 { @Bean public String startNetty() { try { NettyClient.connect(10007, &quot;127.0.0.1&quot;); } catch (Exception e) { e.printStackTrace(); } return &quot;startNetty&quot;; } }]]></content>
@@ -1205,6 +1190,21 @@
         <tag>服务端</tag>
         <tag>Java</tag>
         <tag>SpringBoot</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[数据分析02：matplotlib散点图]]></title>
+    <url>%2F2018%2F03%2F02%2F02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[import numpy as np import matplotlib.pyplot as plt &#39;&#39;&#39; 散点图显示两组数据的值，每个点的坐标位置的值决定 用户观察两种变量的相关性： 正相关 负相关 不相关 &#39;&#39;&#39; # 正相关 height = [161,170,174,165,182,175] weight = [50,65,70,62,81,75] plt.scatter(height,weight) plt.show() # 不相关 N = 1000 x = np.random.randn(N) y = np.random.randn(N) plt.scatter(x,y) plt.show() # 散点图的外观 &#39;&#39;&#39; c 颜色 s 点（面积）大小 alpha 透明度 值的范围[0,1] 通过调节透明度，来观察点的集中性 marker 点形状 &#39;&#39;&#39; # 练习 &#39;&#39;&#39; 使用000001.csv的数据 计算最高价 和开盘价之差 绘出前后两天diff的散点图， 研究是否具有相关性 &#39;&#39;&#39; height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True) change = height -open tomorrow = change[2:] yesterday = change[:-2] plt.scatter(yesterday,tomorrow,alpha=0.2,) plt.show()]]></content>
+      <categories>
+        <category>数据分析</category>
+        <category>Python3</category>
+        <category>Matplotlib</category>
+      </categories>
+      <tags>
+        <tag>数据分析</tag>
+        <tag>Python3</tag>
+        <tag>Matplotlib</tag>
       </tags>
   </entry>
   <entry>
@@ -1444,31 +1444,42 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java数组]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
-    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java条件语句]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%2F</url>
-    <content type="text"><![CDATA[Java条件语句public class IfElse { /* 条件语句 - if...else */ public static void main(String[] args) { int x = 10; /* if(布尔表达式){ //如果布尔表达式的值为true }else{ //如果布尔表达式的值为false } */ if (x &lt; 20) { System.out.println(&quot;这是一个if判断语句&quot;); } else { System.out.println(&quot;这是一个else判断语句&quot;); } /* if(布尔表达式 1){ //如果布尔表达式 1的值为true执行代码 }else if(布尔表达式 2){ //如果布尔表达式 2的值为true执行代码 }else if(布尔表达式 3){ //如果布尔表达式 3的值为true执行代码 }else if(布尔表达式 4){ //如果布尔表达式 4的值为true执行代码 }else if(布尔表达式 5){ //如果布尔表达式 5的值为true执行代码 } else { //如果以上布尔表达式都不为true执行代码 } */ //嵌套的if...else语句 /* if(布尔表达式 1){ ////如果布尔表达式 1的值为true执行代码 if(布尔表达式 2){ ////如果布尔表达式 2的值为true执行代码 } } */ } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java-SwitchCase语句]]></title>
     <url>%2F2016%2F03%2F02%2FJava-SwitchCase%2F</url>
     <content type="text"><![CDATA[Java-SwitchCase语句public class SwitchCase { //switch case语句 判断一个变量与一系列值中某个值是否相等，每个值称为一个分支 // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。 /* switch(expression){ case value : //语句 break; //可选 case value : //语句 break; //可选 //你可以有任意数量的case语句 default : //可选 //语句 不需要break } */ public static void main(String[]args){ char grade =&#39;C&#39;; switch (grade) { case &#39;A&#39;: System.out.println(&quot;优秀&quot;); break; case &#39;B&#39;: case &#39;C&#39;: System.out.println(&quot;良好&quot;); break; case &#39;D&#39;: System.out.println(&quot;及格&quot;); break; case &#39;F&#39;: System.out.println(&quot;你还需要继续努力&quot;); break; default: System.out.println(&quot;未知等级&quot;); } System.out.println(&quot;你的等级是&quot; + grade); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java循环结构]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
+    <content type="text"><![CDATA[Java循环结构public class LoopStructure { /* while 循环 do…while 循环 for 循环 */ public static void main(String[] args) { //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环 System.out.println(&quot;while 循环&quot;); int x = 10; while (x &lt; 20) { System.out.println(x); x++; } // do…while 循环，至少执行一次 /* do { //代码语句 }while(布尔表达式); */ System.out.println(&quot;do…while循环&quot;); int y = 10; do { System.out.println(y); y++; } while (y &lt; 10); // for 循环，执行前就确定执行次数 /* for(初始化; 布尔表达式; 更新) { //代码语句 } */ System.out.println(&quot;for 循环&quot;); for (int z = 0; z &lt; 20; z = z + 1) { System.out.println(z); } //增强for循环 /* for(声明语句 : 表达式) { //代码句子 } */ System.out.println(&quot;增强for 循环&quot;); int[] numbers = {10, 20, 30, 40, 50}; for (int number : numbers) { System.out.println(number); } String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;}; for (String name : names) { System.out.println(name); } //break关键字 /* break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。 break 跳出最里层的循环，并且继续执行该循环下面的语句。 */ System.out.println(&quot;break关键字&quot;); int[] numbers1 = {10, 20, 30, 40, 50}; for (int number : numbers1) { if (number == 30) { break; } System.out.println(number); } //continue关键字 /* continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。 在 for 循环中，continue 语句使程序立即跳转到更新语句。 在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。 */ System.out.println(&quot;continue关键字&quot;); int[] numbers2 = {10, 20, 30, 40, 50}; for (int number : numbers2) { if (number == 30) { continue; } System.out.println(number); } } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java异常处理]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%2F</url>
+    <content type="text"><![CDATA[Java异常处理import java.lang.Exception; public class ExceptionDemo { /* 三类异常 - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。 - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。 - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。 */ /* 内置异常类 非检查性异常 异常 描述 ArithmeticException 当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。 ArrayIndexOutOfBoundsException 用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。 ArrayStoreException 试图将错误类型的对象存储到一个对象数组时抛出的异常。 ClassCastException 当试图将对象强制转换为不是实例的子类时，抛出该异常。 IllegalArgumentException 抛出的异常表明向方法传递了一个不合法或不正确的参数。 IllegalMonitorStateException 抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。 IllegalStateException 在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。 IllegalThreadStateException 线程没有处于请求操作所要求的适当状态时抛出的异常。 IndexOutOfBoundsException 指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。 NegativeArraySizeException 如果应用程序试图创建大小为负的数组，则抛出该异常。 NullPointerException 当应用程序试图在需要对象的地方使用 null 时，抛出该异常 NumberFormatException 当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。 SecurityException 由安全管理器抛出的异常，指示存在安全侵犯。 StringIndexOutOfBoundsException 此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。 UnsupportedOperationException 当不支持请求的操作时，抛出该异常。 检查性异常类 异常 描述 ClassNotFoundException 应用程序试图加载类时，找不到相应的类，抛出该异常。 CloneNotSupportedException 当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。 IllegalAccessException 拒绝访问一个类的时候，抛出该异常。 InstantiationException 当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。 InterruptedException 一个线程被另一个线程中断，抛出该异常。 NoSuchFieldException 请求的变量不存在 NoSuchMethodException 请求的方法不存在 */ /* throws/throw 关键字 finally 关键字 finally 关键字用来创建在 try 代码块后面执行的代码块。 无论是否发生异常，finally 代码块中的代码总会被执行。 在 finally 代码块中，可以运行清理类型等收尾善后性质的语句 try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }finally{ // 程序代码 } */ public void getExceptiondemo(){ //捕获异常 /* try { // 程序代码 }catch(ExceptionName e1) { //Catch 块 } */ // 多重捕获异常 /* try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 } */ try { int[] a = new int[2]; System.out.println(a[3]); }catch (ArrayIndexOutOfBoundsException e){ System.out.println(&quot;Exception thrown&quot; +e); } System.out.println(&quot;out of the block&quot;); } public static void main(String[] args){ ExceptionDemo exp = new ExceptionDemo(); exp.getExceptiondemo(); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java数组]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E6%95%B0%E7%BB%84%2F</url>
+    <content type="text"><![CDATA[Java数组public class ArrayDemo { //声明数组 // 数据类型[] 数组名称; dataType[] arrayName; //创建数组 // 数据名称 = new dataType[arraySize]; //dataType[] arrayName = {value0,value1,value2,...,valuek}; public static void main(String[] args){ //数组大小 int size =4; //定义数组 double[] TestList = new double[size]; TestList[0] = 3.2; TestList[1] = 2.6; TestList[2] = 4.7; TestList[3] = 5.6; double total =0; for (int i=0; i&lt;size; i++){ total = total + TestList[i]; } System.out.println(total); double[] list1 = {1.4,2.8,3.6,4.9}; //打印所有数组元素 for (int i=0;i&lt;list1.length;i++){ System.out.println(list1[i]); } //计算所有元素的和 double sum = 0; for (int i =0;i&lt;list1.length;i++){ sum = sum + list1[i]; } System.out.println(sum); //查找最大元素 double max = list1[0]; for (int i=0; i&lt;list1.length;i++){ if (list1[i] &gt; max){ max = list1[i]; } } System.out.println(max); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1499,28 +1510,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java异常处理]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86%2F</url>
-    <content type="text"><![CDATA[Java异常处理import java.lang.Exception; public class ExceptionDemo { /* 三类异常 - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。 - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。 - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。 */ /* 内置异常类 非检查性异常 异常 描述 ArithmeticException 当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。 ArrayIndexOutOfBoundsException 用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。 ArrayStoreException 试图将错误类型的对象存储到一个对象数组时抛出的异常。 ClassCastException 当试图将对象强制转换为不是实例的子类时，抛出该异常。 IllegalArgumentException 抛出的异常表明向方法传递了一个不合法或不正确的参数。 IllegalMonitorStateException 抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。 IllegalStateException 在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。 IllegalThreadStateException 线程没有处于请求操作所要求的适当状态时抛出的异常。 IndexOutOfBoundsException 指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。 NegativeArraySizeException 如果应用程序试图创建大小为负的数组，则抛出该异常。 NullPointerException 当应用程序试图在需要对象的地方使用 null 时，抛出该异常 NumberFormatException 当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。 SecurityException 由安全管理器抛出的异常，指示存在安全侵犯。 StringIndexOutOfBoundsException 此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。 UnsupportedOperationException 当不支持请求的操作时，抛出该异常。 检查性异常类 异常 描述 ClassNotFoundException 应用程序试图加载类时，找不到相应的类，抛出该异常。 CloneNotSupportedException 当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。 IllegalAccessException 拒绝访问一个类的时候，抛出该异常。 InstantiationException 当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。 InterruptedException 一个线程被另一个线程中断，抛出该异常。 NoSuchFieldException 请求的变量不存在 NoSuchMethodException 请求的方法不存在 */ /* throws/throw 关键字 finally 关键字 finally 关键字用来创建在 try 代码块后面执行的代码块。 无论是否发生异常，finally 代码块中的代码总会被执行。 在 finally 代码块中，可以运行清理类型等收尾善后性质的语句 try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }finally{ // 程序代码 } */ public void getExceptiondemo(){ //捕获异常 /* try { // 程序代码 }catch(ExceptionName e1) { //Catch 块 } */ // 多重捕获异常 /* try{ // 程序代码 }catch(异常类型1 异常的变量名1){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 }catch(异常类型2 异常的变量名2){ // 程序代码 } */ try { int[] a = new int[2]; System.out.println(a[3]); }catch (ArrayIndexOutOfBoundsException e){ System.out.println(&quot;Exception thrown&quot; +e); } System.out.println(&quot;out of the block&quot;); } public static void main(String[] args){ ExceptionDemo exp = new ExceptionDemo(); exp.getExceptiondemo(); } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Java循环结构]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84%2F</url>
-    <content type="text"><![CDATA[Java循环结构public class LoopStructure { /* while 循环 do…while 循环 for 循环 */ public static void main(String[] args) { //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环 System.out.println(&quot;while 循环&quot;); int x = 10; while (x &lt; 20) { System.out.println(x); x++; } // do…while 循环，至少执行一次 /* do { //代码语句 }while(布尔表达式); */ System.out.println(&quot;do…while循环&quot;); int y = 10; do { System.out.println(y); y++; } while (y &lt; 10); // for 循环，执行前就确定执行次数 /* for(初始化; 布尔表达式; 更新) { //代码语句 } */ System.out.println(&quot;for 循环&quot;); for (int z = 0; z &lt; 20; z = z + 1) { System.out.println(z); } //增强for循环 /* for(声明语句 : 表达式) { //代码句子 } */ System.out.println(&quot;增强for 循环&quot;); int[] numbers = {10, 20, 30, 40, 50}; for (int number : numbers) { System.out.println(number); } String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;}; for (String name : names) { System.out.println(name); } //break关键字 /* break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。 break 跳出最里层的循环，并且继续执行该循环下面的语句。 */ System.out.println(&quot;break关键字&quot;); int[] numbers1 = {10, 20, 30, 40, 50}; for (int number : numbers1) { if (number == 30) { break; } System.out.println(number); } //continue关键字 /* continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。 在 for 循环中，continue 语句使程序立即跳转到更新语句。 在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。 */ System.out.println(&quot;continue关键字&quot;); int[] numbers2 = {10, 20, 30, 40, 50}; for (int number : numbers2) { if (number == 30) { continue; } System.out.println(number); } } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java-StringBuffer]]></title>
     <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
     <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
@@ -1535,6 +1524,17 @@
     <title><![CDATA[Java-Scanner类]]></title>
     <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
     <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java-NumberMath类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-NumberMath%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-NumberMath类public class NumberAndMath { //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类 // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数 private static void test(double num) { System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num)); System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num)); System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num)); } public static void main(String[] args) { System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2)); System.out.println(&quot;0度的余弦值&quot; + Math.cos(0)); System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3)); System.out.println(&quot;1的反正切值&quot; + Math.atan(1)); System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2)); double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6}; for (double num : nums) { test(num); } /* 序号 方法与描述 1 xxxValue() 将 Number 对象转换为xxx数据类型的值并返回。 2 compareTo() 将number对象与参数比较。 3 equals() 判断number对象是否与参数相等。 4 valueOf() 返回一个 Number 对象指定的内置数据类型 5 toString() 以字符串形式返回值。 6 parseInt() 将字符串解析为int类型。 7 abs() 返回参数的绝对值。 8 ceil() 返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。 9 floor() 返回小于等于（&lt;=）给定参数的最大整数 。 10 rint() 返回与参数最接近的整数。返回类型为double。 11 round() 它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。 12 min() 返回两个参数中的最小值。 13 max() 返回两个参数中的最大值。 14 exp() 返回自然数底数e的参数次方。 15 log() 返回参数的自然数底数的对数值。 16 pow() 返回第一个参数的第二个参数次方。 17 sqrt() 求参数的算术平方根。 18 sin() 求指定double类型参数的正弦值。 19 cos() 求指定double类型参数的余弦值。 20 tan() 求指定double类型参数的正切值。 21 asin() 求指定double类型参数的反正弦值。 22 acos() 求指定double类型参数的反余弦值。 23 atan() 求指定double类型参数的反正切值。 24 atan2() 将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。 25 toDegrees() 将参数转化为角度。 26 toRadians() 将角度转换为弧度。 27 random() 返回一个随机数。 */ } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1565,9 +1565,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-NumberMath类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-NumberMath%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-NumberMath类public class NumberAndMath { //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类 // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数 private static void test(double num) { System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num)); System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num)); System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num)); } public static void main(String[] args) { System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2)); System.out.println(&quot;0度的余弦值&quot; + Math.cos(0)); System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3)); System.out.println(&quot;1的反正切值&quot; + Math.atan(1)); System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2)); double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6}; for (double num : nums) { test(num); } /* 序号 方法与描述 1 xxxValue() 将 Number 对象转换为xxx数据类型的值并返回。 2 compareTo() 将number对象与参数比较。 3 equals() 判断number对象是否与参数相等。 4 valueOf() 返回一个 Number 对象指定的内置数据类型 5 toString() 以字符串形式返回值。 6 parseInt() 将字符串解析为int类型。 7 abs() 返回参数的绝对值。 8 ceil() 返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。 9 floor() 返回小于等于（&lt;=）给定参数的最大整数 。 10 rint() 返回与参数最接近的整数。返回类型为double。 11 round() 它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。 12 min() 返回两个参数中的最小值。 13 max() 返回两个参数中的最大值。 14 exp() 返回自然数底数e的参数次方。 15 log() 返回参数的自然数底数的对数值。 16 pow() 返回第一个参数的第二个参数次方。 17 sqrt() 求参数的算术平方根。 18 sin() 求指定double类型参数的正弦值。 19 cos() 求指定double类型参数的余弦值。 20 tan() 求指定double类型参数的正切值。 21 asin() 求指定double类型参数的反正弦值。 22 acos() 求指定double类型参数的反余弦值。 23 atan() 求指定double类型参数的反正切值。 24 atan2() 将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。 25 toDegrees() 将参数转化为角度。 26 toRadians() 将角度转换为弧度。 27 random() 返回一个随机数。 */ } }]]></content>
+    <title><![CDATA[Java-Character类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-Character%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-Character类public class CharacterDemo { // 对单个字符进行操作 /* 转义序列 描述 \t 在文中该处插入一个tab键 \b 在文中该处插入一个后退键 \n 在文中该处换行 \r 在文中该处插入回车 \f 在文中该处插入换页符 \&#39; 在文中该处插入单引号 \&quot; 在文中该处插入双引号 \\ 在文中该处插入反斜杠 */ //字符方法 /* 序号 方法与描述 1 isLetter() 是否是一个字母 2 isDigit() 是否是一个数字字符 3 isWhitespace() 是否是一个空白字符 4 isUpperCase() 是否是大写字母 5 isLowerCase() 是否是小写字母 6 toUpperCase() 指定字母的大写形式 7 toLowerCase() 指定字母的小写形式 8 toString() 返回字符的字符串形式，字符串的长度仅为1 */ public static void main(String[] args) { System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1576,9 +1576,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-Character类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-Character%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-Character类public class CharacterDemo { // 对单个字符进行操作 /* 转义序列 描述 \t 在文中该处插入一个tab键 \b 在文中该处插入一个后退键 \n 在文中该处换行 \r 在文中该处插入回车 \f 在文中该处插入换页符 \&#39; 在文中该处插入单引号 \&quot; 在文中该处插入双引号 \\ 在文中该处插入反斜杠 */ //字符方法 /* 序号 方法与描述 1 isLetter() 是否是一个字母 2 isDigit() 是否是一个数字字符 3 isWhitespace() 是否是一个空白字符 4 isUpperCase() 是否是大写字母 5 isLowerCase() 是否是小写字母 6 toUpperCase() 指定字母的大写形式 7 toLowerCase() 指定字母的小写形式 8 toString() 返回字符的字符串形式，字符串的长度仅为1 */ public static void main(String[] args) { System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;); } }]]></content>
+    <title><![CDATA[Java条件语句]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%2F</url>
+    <content type="text"><![CDATA[Java条件语句public class IfElse { /* 条件语句 - if...else */ public static void main(String[] args) { int x = 10; /* if(布尔表达式){ //如果布尔表达式的值为true }else{ //如果布尔表达式的值为false } */ if (x &lt; 20) { System.out.println(&quot;这是一个if判断语句&quot;); } else { System.out.println(&quot;这是一个else判断语句&quot;); } /* if(布尔表达式 1){ //如果布尔表达式 1的值为true执行代码 }else if(布尔表达式 2){ //如果布尔表达式 2的值为true执行代码 }else if(布尔表达式 3){ //如果布尔表达式 3的值为true执行代码 }else if(布尔表达式 4){ //如果布尔表达式 4的值为true执行代码 }else if(布尔表达式 5){ //如果布尔表达式 5的值为true执行代码 } else { //如果以上布尔表达式都不为true执行代码 } */ //嵌套的if...else语句 /* if(布尔表达式 1){ ////如果布尔表达式 1的值为true执行代码 if(布尔表达式 2){ ////如果布尔表达式 2的值为true执行代码 } } */ } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1598,9 +1598,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java基本数据类型]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[Java基本数据类型public class DataType { /* 内置数据类型 引用数据类型 */ public static void main(String[] args) { // byte System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE); System.out.println(&quot;包装类：java.lang.Byte&quot;); System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE); System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE); System.out.println(); // short System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE); System.out.println(&quot;包装类：java.lang.Short&quot;); System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE); System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE); System.out.println(); // int System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE); System.out.println(&quot;包装类：java.lang.Integer&quot;); System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE); System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE); System.out.println(); // long System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE); System.out.println(&quot;包装类：java.lang.Long&quot;); System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE); System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE); System.out.println(); // float System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE); System.out.println(&quot;包装类：java.lang.Float&quot;); System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE); System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE); System.out.println(); // double System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE); System.out.println(&quot;包装类：java.lang.Double&quot;); System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE); System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE); System.out.println(); // char System.out.println(&quot;基本类型：char 二进制位数：&quot; + Character.SIZE); System.out.println(&quot;包装类：java.lang.Character&quot;); // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台 System.out.println(&quot;最小值：Character.MIN_VALUE=&quot; + (int) Character.MIN_VALUE); // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台 System.out.println(&quot;最大值：Character.MAX_VALUE=&quot; + (int) Character.MAX_VALUE); } }]]></content>
+    <title><![CDATA[Java对象和类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java对象和类public class ObjectAndClass { /* - 多态 - 继承 - 封装 - 抽象 - 类 ： 是一个模板，用来描述 - 对象 ： 是类class的一个实例，具有状态和行为 - 实例 - 方法 - 重载 */ //定义一个Dog类 public static class Dog { //成员变量 StringDemo color; int age; StringDemo name; //类方法 void barking(){ System.out.println(&quot;汪！汪！汪！&quot;); } void hungry(){ System.out.println(&quot;好饿哦！&quot;); } void sleeping(){ System.out.println(&quot;好困哦！&quot;); } void setAge(int age){ this.age = age; } } public static void main(String[]args) { /* 创建对象 声明： 声明一个对象， 对象类型 和对象名称 实例化： new创建 初始化： 创建时调用构造方法生成 */ Dog dog = new Dog(); dog.hungry(); dog.barking(); dog.sleeping(); System.out.println(dog.age); dog.setAge(24); System.out.println(dog.age); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1609,9 +1609,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java对象和类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java对象和类public class ObjectAndClass { /* - 多态 - 继承 - 封装 - 抽象 - 类 ： 是一个模板，用来描述 - 对象 ： 是类class的一个实例，具有状态和行为 - 实例 - 方法 - 重载 */ //定义一个Dog类 public static class Dog { //成员变量 StringDemo color; int age; StringDemo name; //类方法 void barking(){ System.out.println(&quot;汪！汪！汪！&quot;); } void hungry(){ System.out.println(&quot;好饿哦！&quot;); } void sleeping(){ System.out.println(&quot;好困哦！&quot;); } void setAge(int age){ this.age = age; } } public static void main(String[]args) { /* 创建对象 声明： 声明一个对象， 对象类型 和对象名称 实例化： new创建 初始化： 创建时调用构造方法生成 */ Dog dog = new Dog(); dog.hungry(); dog.barking(); dog.sleeping(); System.out.println(dog.age); dog.setAge(24); System.out.println(dog.age); } }]]></content>
+    <title><![CDATA[Java基本数据类型]]></title>
+    <url>%2F2016%2F03%2F02%2FJava%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[Java基本数据类型public class DataType { /* 内置数据类型 引用数据类型 */ public static void main(String[] args) { // byte System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE); System.out.println(&quot;包装类：java.lang.Byte&quot;); System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE); System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE); System.out.println(); // short System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE); System.out.println(&quot;包装类：java.lang.Short&quot;); System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE); System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE); System.out.println(); // int System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE); System.out.println(&quot;包装类：java.lang.Integer&quot;); System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE); System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE); System.out.println(); // long System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE); System.out.println(&quot;包装类：java.lang.Long&quot;); System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE); System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE); System.out.println(); // float System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE); System.out.println(&quot;包装类：java.lang.Float&quot;); System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE); System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE); System.out.println(); // double System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE); System.out.println(&quot;包装类：java.lang.Double&quot;); System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE); System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE); System.out.println(); // char System.out.println(&quot;基本类型：char 二进制位数：&quot; + Character.SIZE); System.out.println(&quot;包装类：java.lang.Character&quot;); // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台 System.out.println(&quot;最小值：Character.MIN_VALUE=&quot; + (int) Character.MIN_VALUE); // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台 System.out.println(&quot;最大值：Character.MAX_VALUE=&quot; + (int) Character.MAX_VALUE); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>

@@ -8,7 +8,7 @@
     <link href="/2020/02/22/DSP%E5%B9%BF%E5%91%8A%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/"/>
     <url>/2020/02/22/DSP%E5%B9%BF%E5%91%8A%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="广告系统架构"><a href="#广告系统架构" class="headerlink" title="广告系统架构"></a>广告系统架构</h2><ul><li>DSP<ul><li>需求方平台，即为广告主服务平台，广告主可以通过DSP平台设置自己想要的受众，设置愿意出资多少购买这些受众的曝光，完成广告投放需求； 面向广告购买方</li></ul></li><li>SSP<ul><li>供应方平台，即为媒体服务平台，媒体方通过SSP平台完成广告资源的管理，如流量分配，价格，筛选等；面向广告售卖方</li></ul></li><li>ADX<ul><li>广告交易平台，即为连接买方和卖方；ADX将媒体的广告流量以拍卖的方式卖给DSP</li></ul></li><li>DMP<ul><li>数据管理平台，整合各方数据并提供数据分析、数据管理、数据调用，用来指导广告主进行广告优化和投放决策</li></ul></li><li>RTB<ul><li>实时竞价，100ms内完成计算，当前谁在这个广告位上提供的广告费用更高</li></ul></li></ul><p><strong>实用程序的方式进行广告投放的管理，并利用算法和技术自动实现精准的目标受众定向，把广告内容投放给对的人；效果：</strong></p><ul><li>对广告主<ul><li>提高流量的采购效率，更低成本，更可靠稳定的流量</li><li>可融合使用多种策略，投放不同的目标人群，使得广告的投放效果更加可控</li><li>减少广告浪费，提升转化率，扩大覆盖面积</li></ul></li><li>对媒体资源<ul><li>实现资源的自动化售卖，提高流量的使用率</li><li>有效利用优质流量和长尾流量</li><li>并且能基于人员的属性、兴趣等标签对不同的流量给出不同售价，提升流量库存的收入</li></ul></li></ul><h3 id="DSP投放架构"><a href="#DSP投放架构" class="headerlink" title="DSP投放架构"></a>DSP投放架构</h3>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="广告系统架构"><a href="#广告系统架构" class="headerlink" title="广告系统架构"></a>广告系统架构</h2><ul><li>DSP<ul><li>需求方平台，即为广告主服务平台，广告主可以通过DSP平台设置自己想要的受众，设置愿意出资多少购买这些受众的曝光，完成广告投放需求； 面向广告购买方</li></ul></li><li>SSP<ul><li>供应方平台，即为媒体服务平台，媒体方通过SSP平台完成广告资源的管理，如流量分配，价格，筛选等；面向广告售卖方</li></ul></li><li>ADX<ul><li>广告交易平台，即为连接买方和卖方；ADX将媒体的广告流量以拍卖的方式卖给DSP</li></ul></li><li>DMP<ul><li>数据管理平台，整合各方数据并提供数据分析、数据管理、数据调用，用来指导广告主进行广告优化和投放决策</li></ul></li><li>RTB<ul><li>实时竞价，100ms内完成计算，当前谁在这个广告位上提供的广告费用更高</li></ul></li></ul><p><strong>实用程序的方式进行广告投放的管理，并利用算法和技术自动实现精准的目标受众定向，把广告内容投放给对的人；效果：</strong></p><ul><li>对广告主<ul><li>提高流量的采购效率，更低成本，更可靠稳定的流量</li><li>可融合使用多种策略，投放不同的目标人群，使得广告的投放效果更加可控</li><li>减少广告浪费，提升转化率，扩大覆盖面积</li></ul></li><li>对媒体资源<ul><li>实现资源的自动化售卖，提高流量的使用率</li><li>有效利用优质流量和长尾流量</li><li>并且能基于人员的属性、兴趣等标签对不同的流量给出不同售价，提升流量库存的收入</li></ul></li></ul><h4 id="DSP投放架构"><a href="#DSP投放架构" class="headerlink" title="DSP投放架构"></a>DSP投放架构</h4><p><img src="https://upload-images.jianshu.io/upload_images/13280750-a2bda3e85433b72a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200" srcset="/img/loading.gif" alt="img"></p><h4 id="RTB竞价逻辑"><a href="#RTB竞价逻辑" class="headerlink" title="RTB竞价逻辑"></a>RTB竞价逻辑</h4><p><img src="https://upload-images.jianshu.io/upload_images/13280750-8b586f3cc9457aec.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200" srcset="/img/loading.gif" alt="img"></p><h3 id="平台核心要素"><a href="#平台核心要素" class="headerlink" title="平台核心要素"></a>平台核心要素</h3><h4 id="流量资源"><a href="#流量资源" class="headerlink" title="流量资源"></a>流量资源</h4><p>不同的流量资源会有不同的效果，如何选择媒体和广告位是关键。</p><p>制定媒体策略首先需要分析目标受众，根据目标受众选择匹配的媒体资源。媒体策略可以从所要投放的广告位所在页面page、位置spot、流量inventory、价格price、和转化conversion五个角度制定</p><ul><li>页面<ul><li>包括渠道、载体（PC、WAP、APP）、媒体分类、频道、URL、页面关键词</li></ul></li><li>位置<ul><li>广告位所在的具体位置、尺寸的大小、广告位类型、屏次（首屏、第二屏）</li></ul></li><li>流量<ul><li>总流量的大小决定着采购的流量大小</li></ul></li><li>价格</li><li>转化</li></ul><h4 id="投放策略及受众定向"><a href="#投放策略及受众定向" class="headerlink" title="投放策略及受众定向"></a>投放策略及受众定向</h4><h5 id="基础设置"><a href="#基础设置" class="headerlink" title="基础设置"></a>基础设置</h5><ul><li>出价上限<ul><li>按照CPM、CPC设置，广告主设置能承受的价格上限</li></ul></li><li>预算控制<ul><li>提前设置预算避免过度消耗，分为每日预算、总预算</li><li>可设置曝光次数限制、点击次数限制；每日曝光、总曝光；每日点击、总点击</li></ul></li><li>频次控制<ul><li>广告主设置同一个用户在设定时间内看到特定广告的总次数</li></ul></li><li>投放时间<ul><li>设置投放日期和投放时段</li><li>不同的时间段都会对广告效果产生影响，比如周末、晚上高峰时段</li></ul></li></ul><h5 id="受众定向"><a href="#受众定向" class="headerlink" title="受众定向"></a>受众定向</h5><ul><li>地区</li><li>客户端定向</li><li>设备类型</li><li>人群标签定向，基于DMP系统，不同兴趣爱好的人群进行广告投放</li></ul><h4 id="创意内容"><a href="#创意内容" class="headerlink" title="创意内容"></a>创意内容</h4><h5 id="创意形式format"><a href="#创意形式format" class="headerlink" title="创意形式format"></a>创意形式format</h5><ul><li>以何种形式呈现<ul><li>图片</li><li>蚊子</li><li>图文</li><li>视频</li><li>表单</li><li>……</li></ul></li></ul><h5 id="用户交互方式engagement"><a href="#用户交互方式engagement" class="headerlink" title="用户交互方式engagement"></a>用户交互方式engagement</h5><h3 id="数据指标"><a href="#数据指标" class="headerlink" title="数据指标"></a>数据指标</h3><p>在广告投放过程中，必须关注广告的投放效果，以及时调整投放策略，达到效果最大化</p><h4 id="基础指标"><a href="#基础指标" class="headerlink" title="基础指标"></a>基础指标</h4><ul><li>请求数：包含总请求数、有效请求数、参加竞价数、赢得竞价数</li><li>CPC：每点击成本</li><li>CPM：每千人成本</li><li>CTR：广告点击率，即广告点击次数/广告展示次数</li></ul><h4 id="高阶指标"><a href="#高阶指标" class="headerlink" title="高阶指标"></a>高阶指标</h4><ul><li>独立访客数</li><li>访问数</li><li>网站到达率：用户到达landingpage的数量 / 点击数 ； 用户衡量该环节的用户流失率</li><li>频次：离线频次、累计频次</li><li>网站浏览量：用户到达目标页面产生的浏览量</li><li>二跳率</li><li>平均停留时长：用户到达目标页面后的平均停留时间</li><li>下载、激活、注册：该次广告投放引导用户下载、激活、注册的数量</li><li>付款金额、付款人次</li></ul><h3 id="程序化创意"><a href="#程序化创意" class="headerlink" title="程序化创意"></a>程序化创意</h3><p><img src="https://upload-images.jianshu.io/upload_images/13280750-6b37be8f436c849b.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200" srcset="/img/loading.gif" alt="img"></p><h3 id="用户数据中心DMP"><a href="#用户数据中心DMP" class="headerlink" title="用户数据中心DMP"></a>用户数据中心DMP</h3><p><img src="https://upload-images.jianshu.io/upload_images/13280750-793b5fc068b19f6a.png?imageMogr2/auto-orient/strip|imageView2/2/w/1200" srcset="/img/loading.gif" alt="img"></p><h3 id="反作弊"><a href="#反作弊" class="headerlink" title="反作弊"></a>反作弊</h3><h4 id="常见作弊方式"><a href="#常见作弊方式" class="headerlink" title="常见作弊方式"></a>常见作弊方式</h4><ul><li>CTR异常，明显高于正常水平</li><li>广告访问IP异常，某些IP产生大量的展示点击</li><li>点击热力图异常</li><li>有点击展示，却没有对应的广告请求</li><li>广告请求，展示、点击、跳转、时间顺序异常</li><li>无时间定向时，某时间段的请求，展示，点击数量明显高于正常水平</li><li>某些设备产生了大量的展示、点击</li><li>重复展示、点击</li><li>广告请求中的参数异常，如UA，IP，机型等</li></ul><h4 id="反作弊方法"><a href="#反作弊方法" class="headerlink" title="反作弊方法"></a>反作弊方法</h4><p>反作弊需要事前预防、事后溯源、人工排查、智能算法等多管齐下</p><p>反作弊的最终目的是识别机器人流量和正常流量，既要能准确的过滤非正常流量，又要保证正常流量不被过滤</p><h5 id="广告来源"><a href="#广告来源" class="headerlink" title="广告来源"></a>广告来源</h5><ul><li>过滤爬虫IP，过滤内网IP，过滤长时间产生异常数据的IP</li><li>出现大量无refer的广告流量</li><li>refer与所投放的媒体不对应</li></ul><h5 id="用户标识"><a href="#用户标识" class="headerlink" title="用户标识"></a>用户标识</h5><ul><li>根据IP、cookie或者设备ID作为分辨用户的依据</li></ul><h5 id="用户行为"><a href="#用户行为" class="headerlink" title="用户行为"></a>用户行为</h5><p>对广告请求、请求频次、展示、展示频次、点击、点击频次进行分析</p><ul><li><p>同一用户、同一时间在多个广告位产生了浏览或点击行为,或短时间内在同一广告位产生多次曝光或点击;</p></li><li><p>同一用户的广告浏览或点击时间间隔过于规律;</p></li><li><p>曝光数和点击数在某个时间点暴涨;</p></li><li><p>用户未浏览广告就直接产生了点击行为,通常表现为出现大量无曝光的点击;</p></li><li><p>用户浏览广告的面积和时长数据异常,可用广告可见度(Viewability)衡量和分析;</p></li><li><p>用户点击广告的位置过于规律或过于集中,一般用广告位热图来观察分析;</p></li><li><p>用户行为的各环节(浏览广告-&gt;点击广告-&gt;到站-&gt;转化)遵循严谨的时间先后顺序,如果点击广告的时间早于浏览广告的时间,或浏览和点击行为之间的时间间隔异常,一般可以判断为作弊</p></li><li><p>到站情况，综合考量用户留存、停留时间,访问深度等指标,用于分析转化用户的质量</p></li><li>关注用户的站内交互情况(点击、滚动、输入等操作)。和广告点击作弊一样,为了制造用户活跃的假象,作弊的方可能会利用机器产生大量页面点击,同样地,我们可以利用点击的区域、次数、频率、页面窗口大小等指标去伪存真</li></ul>]]></content>
     
     
     <categories>
@@ -126,39 +126,6 @@
   
   
   <entry>
-    <title>浅谈用户画像</title>
-    <link href="/2020/02/08/%E6%B5%85%E8%B0%88%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/"/>
-    <url>/2020/02/08/%E6%B5%85%E8%B0%88%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="什么是用户画像？"><a href="#什么是用户画像？" class="headerlink" title="什么是用户画像？"></a>什么是用户画像？</h2><p><strong>维基百科定义</strong></p><ul><li>A user profile is a visual display of personal data associated with a specific user, or a customized desktop environment</li><li>用户画像就是与该用户相关联的数据的可视化展现；即：用户信息标签化</li></ul><p><strong>偏技术的定义</strong></p><ul><li>海量的数据标签，根据用户的目标、行为和观点的差异区分为不同的类型</li></ul><p><strong>常见的用户画像维度</strong></p><p><img src="https://pic1.zhimg.com/80/v2-ff0918f10a2ee07cfb6abed3045d5ae4_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><p><strong>金融用户评级画像</strong></p><p><img src="https://pic3.zhimg.com/80/v2-5b729e6a291e558fdb9461feb7acddee_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><p><strong>群体维度常见的画像-今日头条</strong></p><p><img src="https://pic2.zhimg.com/80/v2-8e062c70de9c41dd0d16aca01f83c731_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h2 id="为什么要做用户画像？"><a href="#为什么要做用户画像？" class="headerlink" title="为什么要做用户画像？"></a>为什么要做用户画像？</h2><h3 id="宏观"><a href="#宏观" class="headerlink" title="宏观"></a>宏观</h3><h4 id="构建具象认知，构建战略、战术方向"><a href="#构建具象认知，构建战略、战术方向" class="headerlink" title="构建具象认知，构建战略、战术方向"></a>构建具象认知，构建战略、战术方向</h4><ul><li>为了在核心用户上达成统一 具象的认知，方便后期有的放矢</li><li>根据用户画像信息做产品设计，了解用户行为偏好</li></ul><h4 id="探索用户足迹，用户市场导向"><a href="#探索用户足迹，用户市场导向" class="headerlink" title="探索用户足迹，用户市场导向"></a>探索用户足迹，用户市场导向</h4><ul><li>详细了解真实用户是如何 与产品及相关内容进行互动的</li><li>从业务场景出发，解决实际的业务问题，针对用户生命周期的不同状态进行产品设计</li></ul><h3 id="微观"><a href="#微观" class="headerlink" title="微观"></a>微观</h3><h4 id="构建底层数据基础，服务上层应用"><a href="#构建底层数据基础，服务上层应用" class="headerlink" title="构建底层数据基础，服务上层应用"></a>构建底层数据基础，服务上层应用</h4><ul><li>用户画像可作为推荐系统（广告、搜索系统）重要一环</li></ul><h4 id="方便信息的处理"><a href="#方便信息的处理" class="headerlink" title="方便信息的处理"></a>方便信息的处理</h4><p>有了标签后计算机可以方便的处理各个量化需求</p><ul><li>统计分类</li><li>数据挖掘</li></ul><h2 id="如何构建用户画像"><a href="#如何构建用户画像" class="headerlink" title="如何构建用户画像"></a>如何构建用户画像</h2><h3 id="构建用户静态-动态数据"><a href="#构建用户静态-动态数据" class="headerlink" title="构建用户静态/动态数据"></a>构建用户静态/动态数据</h3><h4 id="静态数据-评估价值"><a href="#静态数据-评估价值" class="headerlink" title="静态数据-评估价值"></a>静态数据-评估价值</h4><p>用户相对稳定的信息，此类信息自成标签，如果已有真实信息则无需过多的建模预测，更多的是数据清洗；如果静态信息不准或缺失则需要建模预测</p><ul><li>人口属性<ul><li>性别</li><li>年龄</li><li>地域</li></ul></li><li>商业属性<ul><li>收入</li><li>职业</li></ul></li><li>消费意向<ul><li>风险评估状态</li></ul></li><li>生活型态</li><li>CRM<ul><li>客户状态</li><li>会员状态</li><li>生命价值</li></ul></li></ul><p><img src="https://pic4.zhimg.com/80/v2-eae3496af324a1b8a06b2711c6a7e1e7_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h4 id="动态数据-循迹"><a href="#动态数据-循迹" class="headerlink" title="动态数据-循迹"></a>动态数据-循迹</h4><p>用户不断变化的行为信息</p><ul><li>场景<ul><li>访问设备</li><li>访问时段</li></ul></li><li>媒体<ul><li>访问媒体</li><li>访问页面</li><li>访问时长</li><li>访问频次</li></ul></li><li>路径<ul><li>流量来源</li><li>流量去向</li></ul></li></ul><p><img src="https://pic2.zhimg.com/80/v2-b1d65ead43e546dc6ede2ba011bd4919_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h3 id="标签与权重"><a href="#标签与权重" class="headerlink" title="标签与权重"></a>标签与权重</h3><p>用户画像的最终形态：通过分析用户行为，最终为每个用户打上标签，以及该标签的权重</p><h4 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h4><p>表征了内容，用户对该内容有兴趣、偏好、需求等</p><h4 id="权重"><a href="#权重" class="headerlink" title="权重"></a>权重</h4><p>表征了指数，用户的兴趣、偏好指数； 也可能表征用户的需求度</p><h3 id="数据建模方法"><a href="#数据建模方法" class="headerlink" title="数据建模方法"></a>数据建模方法</h3><p>标签= 用户标识 + 时间 + 行为类型 +接触点的聚合，某用户因为在什么时间、什么地点、做了什么事，所以会打上标签</p><h4 id="事件模型"><a href="#事件模型" class="headerlink" title="事件模型"></a>事件模型</h4><p>收集用户行为，并结合上下文构建事件模型，5W</p><ul><li>who，唯一的用户标识</li><li>when，时间因素</li><li>where，地理位置</li><li>what，交互的内容/商品</li><li>which ，用户的行为（点击，浏览，购买，观看……）</li></ul><h4 id="整体思考建模"><a href="#整体思考建模" class="headerlink" title="整体思考建模"></a>整体思考建模</h4><p>用户标签的权重是会随着时间的增加而衰减</p><ul><li>时间为衰减因子r，影响权重，每天衰减为昨天的r倍</li><li>行为类型、接触点决定权重</li><li>内容类型决定标签</li></ul><p>用户偏好某内容的标签 = 衰减因子 <em> 行为类型权重 </em> 接触点权重</p><h2 id="算法路线及常用算法模型"><a href="#算法路线及常用算法模型" class="headerlink" title="算法路线及常用算法模型"></a>算法路线及常用算法模型</h2><p><img src="https://pic2.zhimg.com/80/v2-e5938de15feb64394ed639785bf0ceb1_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h2 id="算法处理评估流程图"><a href="#算法处理评估流程图" class="headerlink" title="算法处理评估流程图"></a>算法处理评估流程图</h2><p><img src="https://pic3.zhimg.com/80/v2-303e5268a3652315d147752bb17332f6_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h2 id="算法架构图"><a href="#算法架构图" class="headerlink" title="算法架构图"></a>算法架构图</h2><p><img src="https://pic2.zhimg.com/80/v2-6a9b3eb0faa5d9bbfced5ff96820f8a9_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h2 id="标签层级"><a href="#标签层级" class="headerlink" title="标签层级"></a>标签层级</h2><p><img src="https://pic3.zhimg.com/80/v2-617bf8844eb1f75d3e50a5f49e10aad6_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>产品</category>
-      
-      <category>数据</category>
-      
-      <category>用户画像</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>产品</tag>
-      
-      <tag>数据</tag>
-      
-      <tag>用户画像</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>推荐系统-个性化内容分发</title>
     <link href="/2020/02/08/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F-%E4%B8%AA%E6%80%A7%E5%8C%96%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91/"/>
     <url>/2020/02/08/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F-%E4%B8%AA%E6%80%A7%E5%8C%96%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91/</url>
@@ -186,6 +153,39 @@
       <tag>个性化</tag>
       
       <tag>内容分发</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>浅谈用户画像</title>
+    <link href="/2020/02/08/%E6%B5%85%E8%B0%88%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/"/>
+    <url>/2020/02/08/%E6%B5%85%E8%B0%88%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="什么是用户画像？"><a href="#什么是用户画像？" class="headerlink" title="什么是用户画像？"></a>什么是用户画像？</h2><p><strong>维基百科定义</strong></p><ul><li>A user profile is a visual display of personal data associated with a specific user, or a customized desktop environment</li><li>用户画像就是与该用户相关联的数据的可视化展现；即：用户信息标签化</li></ul><p><strong>偏技术的定义</strong></p><ul><li>海量的数据标签，根据用户的目标、行为和观点的差异区分为不同的类型</li></ul><p><strong>常见的用户画像维度</strong></p><p><img src="https://pic1.zhimg.com/80/v2-ff0918f10a2ee07cfb6abed3045d5ae4_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><p><strong>金融用户评级画像</strong></p><p><img src="https://pic3.zhimg.com/80/v2-5b729e6a291e558fdb9461feb7acddee_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><p><strong>群体维度常见的画像-今日头条</strong></p><p><img src="https://pic2.zhimg.com/80/v2-8e062c70de9c41dd0d16aca01f83c731_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h2 id="为什么要做用户画像？"><a href="#为什么要做用户画像？" class="headerlink" title="为什么要做用户画像？"></a>为什么要做用户画像？</h2><h3 id="宏观"><a href="#宏观" class="headerlink" title="宏观"></a>宏观</h3><h4 id="构建具象认知，构建战略、战术方向"><a href="#构建具象认知，构建战略、战术方向" class="headerlink" title="构建具象认知，构建战略、战术方向"></a>构建具象认知，构建战略、战术方向</h4><ul><li>为了在核心用户上达成统一 具象的认知，方便后期有的放矢</li><li>根据用户画像信息做产品设计，了解用户行为偏好</li></ul><h4 id="探索用户足迹，用户市场导向"><a href="#探索用户足迹，用户市场导向" class="headerlink" title="探索用户足迹，用户市场导向"></a>探索用户足迹，用户市场导向</h4><ul><li>详细了解真实用户是如何 与产品及相关内容进行互动的</li><li>从业务场景出发，解决实际的业务问题，针对用户生命周期的不同状态进行产品设计</li></ul><h3 id="微观"><a href="#微观" class="headerlink" title="微观"></a>微观</h3><h4 id="构建底层数据基础，服务上层应用"><a href="#构建底层数据基础，服务上层应用" class="headerlink" title="构建底层数据基础，服务上层应用"></a>构建底层数据基础，服务上层应用</h4><ul><li>用户画像可作为推荐系统（广告、搜索系统）重要一环</li></ul><h4 id="方便信息的处理"><a href="#方便信息的处理" class="headerlink" title="方便信息的处理"></a>方便信息的处理</h4><p>有了标签后计算机可以方便的处理各个量化需求</p><ul><li>统计分类</li><li>数据挖掘</li></ul><h2 id="如何构建用户画像"><a href="#如何构建用户画像" class="headerlink" title="如何构建用户画像"></a>如何构建用户画像</h2><h3 id="构建用户静态-动态数据"><a href="#构建用户静态-动态数据" class="headerlink" title="构建用户静态/动态数据"></a>构建用户静态/动态数据</h3><h4 id="静态数据-评估价值"><a href="#静态数据-评估价值" class="headerlink" title="静态数据-评估价值"></a>静态数据-评估价值</h4><p>用户相对稳定的信息，此类信息自成标签，如果已有真实信息则无需过多的建模预测，更多的是数据清洗；如果静态信息不准或缺失则需要建模预测</p><ul><li>人口属性<ul><li>性别</li><li>年龄</li><li>地域</li></ul></li><li>商业属性<ul><li>收入</li><li>职业</li></ul></li><li>消费意向<ul><li>风险评估状态</li></ul></li><li>生活型态</li><li>CRM<ul><li>客户状态</li><li>会员状态</li><li>生命价值</li></ul></li></ul><p><img src="https://pic4.zhimg.com/80/v2-eae3496af324a1b8a06b2711c6a7e1e7_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h4 id="动态数据-循迹"><a href="#动态数据-循迹" class="headerlink" title="动态数据-循迹"></a>动态数据-循迹</h4><p>用户不断变化的行为信息</p><ul><li>场景<ul><li>访问设备</li><li>访问时段</li></ul></li><li>媒体<ul><li>访问媒体</li><li>访问页面</li><li>访问时长</li><li>访问频次</li></ul></li><li>路径<ul><li>流量来源</li><li>流量去向</li></ul></li></ul><p><img src="https://pic2.zhimg.com/80/v2-b1d65ead43e546dc6ede2ba011bd4919_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h3 id="标签与权重"><a href="#标签与权重" class="headerlink" title="标签与权重"></a>标签与权重</h3><p>用户画像的最终形态：通过分析用户行为，最终为每个用户打上标签，以及该标签的权重</p><h4 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h4><p>表征了内容，用户对该内容有兴趣、偏好、需求等</p><h4 id="权重"><a href="#权重" class="headerlink" title="权重"></a>权重</h4><p>表征了指数，用户的兴趣、偏好指数； 也可能表征用户的需求度</p><h3 id="数据建模方法"><a href="#数据建模方法" class="headerlink" title="数据建模方法"></a>数据建模方法</h3><p>标签= 用户标识 + 时间 + 行为类型 +接触点的聚合，某用户因为在什么时间、什么地点、做了什么事，所以会打上标签</p><h4 id="事件模型"><a href="#事件模型" class="headerlink" title="事件模型"></a>事件模型</h4><p>收集用户行为，并结合上下文构建事件模型，5W</p><ul><li>who，唯一的用户标识</li><li>when，时间因素</li><li>where，地理位置</li><li>what，交互的内容/商品</li><li>which ，用户的行为（点击，浏览，购买，观看……）</li></ul><h4 id="整体思考建模"><a href="#整体思考建模" class="headerlink" title="整体思考建模"></a>整体思考建模</h4><p>用户标签的权重是会随着时间的增加而衰减</p><ul><li>时间为衰减因子r，影响权重，每天衰减为昨天的r倍</li><li>行为类型、接触点决定权重</li><li>内容类型决定标签</li></ul><p>用户偏好某内容的标签 = 衰减因子 <em> 行为类型权重 </em> 接触点权重</p><h2 id="算法路线及常用算法模型"><a href="#算法路线及常用算法模型" class="headerlink" title="算法路线及常用算法模型"></a>算法路线及常用算法模型</h2><p><img src="https://pic2.zhimg.com/80/v2-e5938de15feb64394ed639785bf0ceb1_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h2 id="算法处理评估流程图"><a href="#算法处理评估流程图" class="headerlink" title="算法处理评估流程图"></a>算法处理评估流程图</h2><p><img src="https://pic3.zhimg.com/80/v2-303e5268a3652315d147752bb17332f6_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h2 id="算法架构图"><a href="#算法架构图" class="headerlink" title="算法架构图"></a>算法架构图</h2><p><img src="https://pic2.zhimg.com/80/v2-6a9b3eb0faa5d9bbfced5ff96820f8a9_1440w.jpg" srcset="/img/loading.gif" alt="img"></p><h2 id="标签层级"><a href="#标签层级" class="headerlink" title="标签层级"></a>标签层级</h2><p><img src="https://pic3.zhimg.com/80/v2-617bf8844eb1f75d3e50a5f49e10aad6_1440w.jpg" srcset="/img/loading.gif" alt="img"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>产品</category>
+      
+      <category>数据</category>
+      
+      <category>用户画像</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>产品</tag>
+      
+      <tag>数据</tag>
+      
+      <tag>用户画像</tag>
       
     </tags>
     
@@ -628,11 +628,11 @@
   
   
   <entry>
-    <title>用户行为类指标详解</title>
-    <link href="/2019/05/19/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
-    <url>/2019/05/19/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
+    <title>crash分析类指标详解</title>
+    <link href="/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
+    <url>/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1) 使用时长</strong><br><strong>定义</strong>：用户在应用程序上所停留的时间。主要分为平均使用时长和单次使用时长，平均使用时长是某一段时间内所有用户的全部访问时间的平均值。<br><strong>涵义</strong>：通过考量用户在应用上的停留时间，我们可以看出应用内容是否吸引用户，应用质量是否合格；还可以看出某个推广渠道到来的用户是否是深度使用用户，以此评判渠道质量。<br><strong>2) 使用频率</strong><br><strong>定义</strong>：在一定时期内，同一个用户启动应用的次数。如在一天之内，同一个用户一共进行有效启动5次，那么该用户的日使用频率就是5次。<br><strong>涵义</strong>：使用频率和日启动次数类似，只是从另外一个角度衡量用户粘性，一个应用通常情况下用户粘性越高，那么用户的平均使用频率也就越高。<br><strong>3) 使用间隔</strong><br><strong>定义</strong>：使用间隔是指同一用户相邻两次启动应用的时间间隔，例如某一用户第一次启动应用到第二次启动应用之间相隔2天，那么该用户的使用间隔即为2天。<br><strong>涵义</strong>：使用间隔也从侧面反映了应用的用户粘性，通常情况下使用间隔越短说明用户越依赖应用，也就是说应用的用户粘性越高。也可以据此来决定推送消息的时机和发版频率。<br><strong>4) 访问深度</strong><br><strong>定义</strong>：我们将用户在一次启动应用过程中所到达的页面累计数量视为用户的访问深度， 例如某用户从启动APP到退出应用过程中，一共访问了12个页面，那么称该用户的访问深度为12。<br><strong>涵义</strong>：理论上来讲，访问深度越高，应用质量越好，用户对应用的依赖就越强<br><strong>5)页面跳出率</strong><br><strong>定义</strong>：用户从当前页面离开应用程序的比例，离开指“退出或后台超过30秒”<br><strong>涵义</strong>：在“访问页面”报表中的参数，这里的离开指结束一次启动，比如某用户在当前页面接到电话，此时应用程序隐藏到后台运行，10秒钟后挂电话又回到了应用程序，这样的过程不算作是用户“离开”。如果超过30秒，才算作一次离开。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1) 错误次数</strong><br><strong>定义</strong>：在规定的时间段内，应用出现异常退出现象的次数总和。<br><strong>涵义</strong>：通常情况下，应用错误集中于两种：死机或强退，这样的现象都会严重影响用户体验，所以错误次数发生的越高，用户体验越差。降低错误次数是开发者应该时刻关注的重要指标。<br><strong>2) 错误率</strong><br><strong>定义</strong>：在规定时间段内，一个应用发生错误的比率（错误次数/启动次数）。<br><strong>涵义</strong>：产品质量是一个应用发展壮大的基石，与网站不同，移动应用一旦被分发之后就无法再收回，应用错误率高会降低用户对产品的信任和口碑。通过对应用的质量监控，找到错误代码并及时发布修复版本，可以有效弥补这一问题。</p>]]></content>
     
     
     <categories>
@@ -690,11 +690,11 @@
   
   
   <entry>
-    <title>crash分析类指标详解</title>
-    <link href="/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
-    <url>/2019/05/19/crash%E5%88%86%E6%9E%90%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
+    <title>用户行为类指标详解</title>
+    <link href="/2019/05/19/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/"/>
+    <url>/2019/05/19/%E7%94%A8%E6%88%B7%E8%A1%8C%E4%B8%BA%E7%B1%BB%E6%8C%87%E6%A0%87%E8%AF%A6%E8%A7%A3/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1) 错误次数</strong><br><strong>定义</strong>：在规定的时间段内，应用出现异常退出现象的次数总和。<br><strong>涵义</strong>：通常情况下，应用错误集中于两种：死机或强退，这样的现象都会严重影响用户体验，所以错误次数发生的越高，用户体验越差。降低错误次数是开发者应该时刻关注的重要指标。<br><strong>2) 错误率</strong><br><strong>定义</strong>：在规定时间段内，一个应用发生错误的比率（错误次数/启动次数）。<br><strong>涵义</strong>：产品质量是一个应用发展壮大的基石，与网站不同，移动应用一旦被分发之后就无法再收回，应用错误率高会降低用户对产品的信任和口碑。通过对应用的质量监控，找到错误代码并及时发布修复版本，可以有效弥补这一问题。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1) 使用时长</strong><br><strong>定义</strong>：用户在应用程序上所停留的时间。主要分为平均使用时长和单次使用时长，平均使用时长是某一段时间内所有用户的全部访问时间的平均值。<br><strong>涵义</strong>：通过考量用户在应用上的停留时间，我们可以看出应用内容是否吸引用户，应用质量是否合格；还可以看出某个推广渠道到来的用户是否是深度使用用户，以此评判渠道质量。<br><strong>2) 使用频率</strong><br><strong>定义</strong>：在一定时期内，同一个用户启动应用的次数。如在一天之内，同一个用户一共进行有效启动5次，那么该用户的日使用频率就是5次。<br><strong>涵义</strong>：使用频率和日启动次数类似，只是从另外一个角度衡量用户粘性，一个应用通常情况下用户粘性越高，那么用户的平均使用频率也就越高。<br><strong>3) 使用间隔</strong><br><strong>定义</strong>：使用间隔是指同一用户相邻两次启动应用的时间间隔，例如某一用户第一次启动应用到第二次启动应用之间相隔2天，那么该用户的使用间隔即为2天。<br><strong>涵义</strong>：使用间隔也从侧面反映了应用的用户粘性，通常情况下使用间隔越短说明用户越依赖应用，也就是说应用的用户粘性越高。也可以据此来决定推送消息的时机和发版频率。<br><strong>4) 访问深度</strong><br><strong>定义</strong>：我们将用户在一次启动应用过程中所到达的页面累计数量视为用户的访问深度， 例如某用户从启动APP到退出应用过程中，一共访问了12个页面，那么称该用户的访问深度为12。<br><strong>涵义</strong>：理论上来讲，访问深度越高，应用质量越好，用户对应用的依赖就越强<br><strong>5)页面跳出率</strong><br><strong>定义</strong>：用户从当前页面离开应用程序的比例，离开指“退出或后台超过30秒”<br><strong>涵义</strong>：在“访问页面”报表中的参数，这里的离开指结束一次启动，比如某用户在当前页面接到电话，此时应用程序隐藏到后台运行，10秒钟后挂电话又回到了应用程序，这样的过程不算作是用户“离开”。如果超过30秒，才算作一次离开。</p>]]></content>
     
     
     <categories>
@@ -928,11 +928,11 @@
   
   
   <entry>
-    <title>搭建自然语言处理的开发环境</title>
-    <link href="/2019/03/01/%E6%90%AD%E5%BB%BA%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
-    <url>/2019/03/01/%E6%90%AD%E5%BB%BA%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</url>
+    <title>案例-NLP实现预测天气冷暖感知度</title>
+    <link href="/2019/03/01/%E6%A1%88%E4%BE%8B-NLP%E5%AE%9E%E7%8E%B0%E9%A2%84%E6%B5%8B%E5%A4%A9%E6%B0%94%E5%86%B7%E6%9A%96%E6%84%9F%E7%9F%A5%E5%BA%A6/"/>
+    <url>/2019/03/01/%E6%A1%88%E4%BE%8B-NLP%E5%AE%9E%E7%8E%B0%E9%A2%84%E6%B5%8B%E5%A4%A9%E6%B0%94%E5%86%B7%E6%9A%96%E6%84%9F%E7%9F%A5%E5%BA%A6/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="自然语言处理开发环境介绍"><a href="#自然语言处理开发环境介绍" class="headerlink" title="自然语言处理开发环境介绍"></a>自然语言处理开发环境介绍</h1><ul><li><p>sublime</p></li><li><p>vscode</p></li><li><p>pycharm</p></li><li><p>Anaconda3</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="案例：NLP预测天气冷暖感知度"><a href="#案例：NLP预测天气冷暖感知度" class="headerlink" title="案例：NLP预测天气冷暖感知度"></a>案例：NLP预测天气冷暖感知度</h1><h2 id="1、案例需求"><a href="#1、案例需求" class="headerlink" title="1、案例需求"></a>1、案例需求</h2><blockquote><p>根据吃冰淇淋和喝水的数量，判断成都天气冷热程度。</p><p>成都春熙路街头采访记录一些游客吃了多少冰淇淋，又喝了几瓶水，他觉得成都天气怎么样（这里只考虑二分类问题，假设只有‘非常热’和‘一般热’）</p><p>其中特征向量包括两个分别是冰激凌数t1和喝水数t2，户外活动时长t3:</p><p>对应的标签类别分别是非常热A和一般热B。</p></blockquote><h2 id="2、实验数据准备"><a href="#2、实验数据准备" class="headerlink" title="2、实验数据准备"></a>2、实验数据准备</h2><ul><li>构造模拟数据</li></ul><table><thead><tr><th>人员</th><th>冰淇淋</th><th>喝水</th><th>户外活动时长</th><th>冷热程度</th><th>判断描述</th></tr></thead><tbody><tr><td>小王</td><td>8</td><td>4</td><td>2</td><td>A</td><td>小王吃了8个冰淇淋，喝了4瓶水，户外2小时，该地区天气非常热</td></tr><tr><td>小张</td><td>7</td><td>1</td><td>1</td><td>A</td><td>小张吃了7个冰淇淋，喝了1瓶水，户外1小时，该地区天气非常热</td></tr><tr><td>小李</td><td>1</td><td>4</td><td>4</td><td>B</td><td>小李吃了1个冰淇淋，喝了4瓶水，户外4小时，该地区天气一般热</td></tr><tr><td>小赵</td><td>3</td><td>0</td><td>5</td><td>B</td><td>小赵吃了3个冰淇淋，喝了0瓶水，户外5小时，该地区天气一般热</td></tr></tbody></table><ul><li><p>代码构造数据集</p><pre><code class="python">#!/usr/bin/python# -*- coding:utf-8 -*-&#39;&#39;&#39;    author:gzy    date:20190301    version:0.1.0&#39;&#39;&#39;import numpy as npimport matplotlib.pyplot as pltfrom matplotlib.font_manager import FontPropertiesclass Temperature():    #设置字字体，避免汉字乱码    siyuanyahei = FontProperties(fname=&quot;../SourceHanSans-Normal.otf&quot;)    #创建数据集，返回数据集和类标签    def create_dataset(self):        # 数据集        datasets = np.array([[8,4,2],[7,1,1],[1,4,4],[3,0,5]])        #类标签        labels = [&#39;非常热&#39;,&#39;非常热&#39;,&#39;一般热&#39;,&#39;一般热&#39;]        return datasets,labels</code></pre></li></ul><h2 id="3、数据分析与可视化"><a href="#3、数据分析与可视化" class="headerlink" title="3、数据分析与可视化"></a>3、数据分析与可视化</h2><ul><li><p>可视化展示散点图</p><pre><code class="python"> #可视化分析数据    def analyze_data_plot(self,x,y):        fig = plt.figure()        # 将画布分隔为1行1列一块        ax = fig.add_subplot(111)        ax.scatter(x,y)        #设置散点图的标题和横纵坐标        plt.title(&#39;游客领热感知散点图&#39;,fontproperties=self.siyuanyahei)        plt.xlabel(&#39;天热吃冰激凌数目&#39;,fontproperties=self.siyuanyahei)        plt.ylabel(&#39;天热喝水的数目&#39;,fontproperties=self.siyuanyahei)        plt.show()</code></pre></li></ul><h2 id="4、算法模型及原理讲解"><a href="#4、算法模型及原理讲解" class="headerlink" title="4、算法模型及原理讲解"></a>4、算法模型及原理讲解</h2><ul><li>KNN模型原理及欧式距离计算<ul><li>什么是KNN算法模型</li><li>KNN工作原理</li><li>KNN算法思想</li><li>KNN算法流程</li></ul></li></ul><h3 id="4-1、KNN算法模型"><a href="#4-1、KNN算法模型" class="headerlink" title="4.1、KNN算法模型"></a>4.1、KNN算法模型</h3><p>​    k-近邻(KNN，k-NearestNeighbor)算法是一种基本分类与回归方法。<em>k-近邻假设设定一个训练数据集(先验知识)，其中的实例类别已定。分类时候，对新的实例数据，根据其K个最近邻的训练实例的类别，通过多数表决等方式进行预测。</em></p><p>==K近邻算法属于有监督学习，实际上利用训练数据集对特征向量空间进行划分，并作为其分类的”模型”。K值的选择、距离度量、以及分类决策规则是K近邻算法的三个基本要素。==</p><p>在本案例中，仅讨论分类问题中的k-近邻算法；<strong>输入值：</strong>案例的特征向量(吃冰淇淋、喝水、活动时间)，对应特征空间的点；<strong>输出值：</strong>案例的类别(非常热、一般热、舒适、一般冷、非常冷)</p><h3 id="4-2、KNN工作原理"><a href="#4-2、KNN工作原理" class="headerlink" title="4.2、KNN工作原理"></a>4.2、KNN工作原理</h3><ul><li>假设一个带有标签的数据集(训练样本集)，包含每条数据与所属分类的对应关系</li><li>输入没有标签的新数据后，将新数据的每个特征与样本集中数据对应的特征进行比较</li><li>计算新数据与样本数据集 中每条数据的距离</li><li>对求得的所有距离进行排序(从小到大，越小表示越相似)</li><li>取前K(K&lt;=20的奇数)个样本数据对应的分类标签</li><li>求K个数据中出现次数最多的分类标签作为新数据的分类</li></ul><h3 id="4-3、KNN算法思想"><a href="#4-3、KNN算法思想" class="headerlink" title="4.3、KNN算法思想"></a>4.3、KNN算法思想</h3><ul><li>计算所有样本点 与 待分类样本之间的距离</li><li>计算完 样本距离进行排序</li><li>选取距离样本最近的k个点</li><li>针对这个k个点，统计各个类别分别有多少个</li><li>k个点钟某个类别最多，就将该样本划归该点</li></ul><h3 id="4-4、KNN算法模型流程与实现"><a href="#4-4、KNN算法模型流程与实现" class="headerlink" title="4.4、KNN算法模型流程与实现"></a>4.4、KNN算法模型流程与实现</h3><ul><li>搜集数据<ul><li>数据采集过程，分为：非机构化数据、半结构化数据、数据化数据</li></ul></li><li>准备数据<ul><li>格式化处理，对不同类别的数据进行统一的格式化处理</li><li>如：将pdf,word,excel,sql等统一转化为txt</li></ul></li><li>分析数据<ul><li>看数据特点，有无缺失值，数据是离散还是连续</li></ul></li><li>训练数据<ul><li>不适用与KNN，但在其他一些监督学习中经常会用到</li></ul></li><li>应用算法<ul><li>针对完善的模型进行封装重构，进行实际应用</li></ul></li></ul><p>构造KNN分类器</p><pre><code class="Python">    #构造KNN分类器    def knn_Classifier(self,newV,datasets,labels,k):        # 获取新样本的数据        # 获取样本库的数据        # 选择K值        # 计算样本数据与样本库数据之间的距离        # 根据距离进行排序        # 针对k个点，统计各个类别的数量        # 投票机制，少数服从多数原则        pass</code></pre><p>欧式距离计算</p><pre><code class="python"># 欧氏距离计算    #方式一 d^2 = （x1-x2）^2 +(y1-y2)^2&quot;    def ComputeEuclideanDistance(self,x1,x2,y1,y2):        d = math.sqrt(math.pow((x1-x2),2)+math.pow((y1-y2),2))        return d    # 方式二    def EuclideanDistance(self,instance1,instance2,length):        d =0        for x in range(length):            d += pow((instance1[x]-instance2[x]),2)        return math.sqrt(d)</code></pre>]]></content>
     
     
     <categories>
@@ -957,11 +957,11 @@
   
   
   <entry>
-    <title>案例-NLP实现预测天气冷暖感知度</title>
-    <link href="/2019/03/01/%E6%A1%88%E4%BE%8B-NLP%E5%AE%9E%E7%8E%B0%E9%A2%84%E6%B5%8B%E5%A4%A9%E6%B0%94%E5%86%B7%E6%9A%96%E6%84%9F%E7%9F%A5%E5%BA%A6/"/>
-    <url>/2019/03/01/%E6%A1%88%E4%BE%8B-NLP%E5%AE%9E%E7%8E%B0%E9%A2%84%E6%B5%8B%E5%A4%A9%E6%B0%94%E5%86%B7%E6%9A%96%E6%84%9F%E7%9F%A5%E5%BA%A6/</url>
+    <title>搭建自然语言处理的开发环境</title>
+    <link href="/2019/03/01/%E6%90%AD%E5%BB%BA%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    <url>/2019/03/01/%E6%90%AD%E5%BB%BA%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="案例：NLP预测天气冷暖感知度"><a href="#案例：NLP预测天气冷暖感知度" class="headerlink" title="案例：NLP预测天气冷暖感知度"></a>案例：NLP预测天气冷暖感知度</h1><h2 id="1、案例需求"><a href="#1、案例需求" class="headerlink" title="1、案例需求"></a>1、案例需求</h2><blockquote><p>根据吃冰淇淋和喝水的数量，判断成都天气冷热程度。</p><p>成都春熙路街头采访记录一些游客吃了多少冰淇淋，又喝了几瓶水，他觉得成都天气怎么样（这里只考虑二分类问题，假设只有‘非常热’和‘一般热’）</p><p>其中特征向量包括两个分别是冰激凌数t1和喝水数t2，户外活动时长t3:</p><p>对应的标签类别分别是非常热A和一般热B。</p></blockquote><h2 id="2、实验数据准备"><a href="#2、实验数据准备" class="headerlink" title="2、实验数据准备"></a>2、实验数据准备</h2><ul><li>构造模拟数据</li></ul><table><thead><tr><th>人员</th><th>冰淇淋</th><th>喝水</th><th>户外活动时长</th><th>冷热程度</th><th>判断描述</th></tr></thead><tbody><tr><td>小王</td><td>8</td><td>4</td><td>2</td><td>A</td><td>小王吃了8个冰淇淋，喝了4瓶水，户外2小时，该地区天气非常热</td></tr><tr><td>小张</td><td>7</td><td>1</td><td>1</td><td>A</td><td>小张吃了7个冰淇淋，喝了1瓶水，户外1小时，该地区天气非常热</td></tr><tr><td>小李</td><td>1</td><td>4</td><td>4</td><td>B</td><td>小李吃了1个冰淇淋，喝了4瓶水，户外4小时，该地区天气一般热</td></tr><tr><td>小赵</td><td>3</td><td>0</td><td>5</td><td>B</td><td>小赵吃了3个冰淇淋，喝了0瓶水，户外5小时，该地区天气一般热</td></tr></tbody></table><ul><li><p>代码构造数据集</p><pre><code class="python">#!/usr/bin/python# -*- coding:utf-8 -*-&#39;&#39;&#39;    author:gzy    date:20190301    version:0.1.0&#39;&#39;&#39;import numpy as npimport matplotlib.pyplot as pltfrom matplotlib.font_manager import FontPropertiesclass Temperature():    #设置字字体，避免汉字乱码    siyuanyahei = FontProperties(fname=&quot;../SourceHanSans-Normal.otf&quot;)    #创建数据集，返回数据集和类标签    def create_dataset(self):        # 数据集        datasets = np.array([[8,4,2],[7,1,1],[1,4,4],[3,0,5]])        #类标签        labels = [&#39;非常热&#39;,&#39;非常热&#39;,&#39;一般热&#39;,&#39;一般热&#39;]        return datasets,labels</code></pre></li></ul><h2 id="3、数据分析与可视化"><a href="#3、数据分析与可视化" class="headerlink" title="3、数据分析与可视化"></a>3、数据分析与可视化</h2><ul><li><p>可视化展示散点图</p><pre><code class="python"> #可视化分析数据    def analyze_data_plot(self,x,y):        fig = plt.figure()        # 将画布分隔为1行1列一块        ax = fig.add_subplot(111)        ax.scatter(x,y)        #设置散点图的标题和横纵坐标        plt.title(&#39;游客领热感知散点图&#39;,fontproperties=self.siyuanyahei)        plt.xlabel(&#39;天热吃冰激凌数目&#39;,fontproperties=self.siyuanyahei)        plt.ylabel(&#39;天热喝水的数目&#39;,fontproperties=self.siyuanyahei)        plt.show()</code></pre></li></ul><h2 id="4、算法模型及原理讲解"><a href="#4、算法模型及原理讲解" class="headerlink" title="4、算法模型及原理讲解"></a>4、算法模型及原理讲解</h2><ul><li>KNN模型原理及欧式距离计算<ul><li>什么是KNN算法模型</li><li>KNN工作原理</li><li>KNN算法思想</li><li>KNN算法流程</li></ul></li></ul><h3 id="4-1、KNN算法模型"><a href="#4-1、KNN算法模型" class="headerlink" title="4.1、KNN算法模型"></a>4.1、KNN算法模型</h3><p>​    k-近邻(KNN，k-NearestNeighbor)算法是一种基本分类与回归方法。<em>k-近邻假设设定一个训练数据集(先验知识)，其中的实例类别已定。分类时候，对新的实例数据，根据其K个最近邻的训练实例的类别，通过多数表决等方式进行预测。</em></p><p>==K近邻算法属于有监督学习，实际上利用训练数据集对特征向量空间进行划分，并作为其分类的”模型”。K值的选择、距离度量、以及分类决策规则是K近邻算法的三个基本要素。==</p><p>在本案例中，仅讨论分类问题中的k-近邻算法；<strong>输入值：</strong>案例的特征向量(吃冰淇淋、喝水、活动时间)，对应特征空间的点；<strong>输出值：</strong>案例的类别(非常热、一般热、舒适、一般冷、非常冷)</p><h3 id="4-2、KNN工作原理"><a href="#4-2、KNN工作原理" class="headerlink" title="4.2、KNN工作原理"></a>4.2、KNN工作原理</h3><ul><li>假设一个带有标签的数据集(训练样本集)，包含每条数据与所属分类的对应关系</li><li>输入没有标签的新数据后，将新数据的每个特征与样本集中数据对应的特征进行比较</li><li>计算新数据与样本数据集 中每条数据的距离</li><li>对求得的所有距离进行排序(从小到大，越小表示越相似)</li><li>取前K(K&lt;=20的奇数)个样本数据对应的分类标签</li><li>求K个数据中出现次数最多的分类标签作为新数据的分类</li></ul><h3 id="4-3、KNN算法思想"><a href="#4-3、KNN算法思想" class="headerlink" title="4.3、KNN算法思想"></a>4.3、KNN算法思想</h3><ul><li>计算所有样本点 与 待分类样本之间的距离</li><li>计算完 样本距离进行排序</li><li>选取距离样本最近的k个点</li><li>针对这个k个点，统计各个类别分别有多少个</li><li>k个点钟某个类别最多，就将该样本划归该点</li></ul><h3 id="4-4、KNN算法模型流程与实现"><a href="#4-4、KNN算法模型流程与实现" class="headerlink" title="4.4、KNN算法模型流程与实现"></a>4.4、KNN算法模型流程与实现</h3><ul><li>搜集数据<ul><li>数据采集过程，分为：非机构化数据、半结构化数据、数据化数据</li></ul></li><li>准备数据<ul><li>格式化处理，对不同类别的数据进行统一的格式化处理</li><li>如：将pdf,word,excel,sql等统一转化为txt</li></ul></li><li>分析数据<ul><li>看数据特点，有无缺失值，数据是离散还是连续</li></ul></li><li>训练数据<ul><li>不适用与KNN，但在其他一些监督学习中经常会用到</li></ul></li><li>应用算法<ul><li>针对完善的模型进行封装重构，进行实际应用</li></ul></li></ul><p>构造KNN分类器</p><pre><code class="Python">    #构造KNN分类器    def knn_Classifier(self,newV,datasets,labels,k):        # 获取新样本的数据        # 获取样本库的数据        # 选择K值        # 计算样本数据与样本库数据之间的距离        # 根据距离进行排序        # 针对k个点，统计各个类别的数量        # 投票机制，少数服从多数原则        pass</code></pre><p>欧式距离计算</p><pre><code class="python"># 欧氏距离计算    #方式一 d^2 = （x1-x2）^2 +(y1-y2)^2&quot;    def ComputeEuclideanDistance(self,x1,x2,y1,y2):        d = math.sqrt(math.pow((x1-x2),2)+math.pow((y1-y2),2))        return d    # 方式二    def EuclideanDistance(self,instance1,instance2,length):        d =0        for x in range(length):            d += pow((instance1[x]-instance2[x]),2)        return math.sqrt(d)</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="自然语言处理开发环境介绍"><a href="#自然语言处理开发环境介绍" class="headerlink" title="自然语言处理开发环境介绍"></a>自然语言处理开发环境介绍</h1><ul><li><p>sublime</p></li><li><p>vscode</p></li><li><p>pycharm</p></li><li><p>Anaconda3</p></li></ul>]]></content>
     
     
     <categories>
@@ -1015,33 +1015,6 @@
   
   
   <entry>
-    <title>AI时代决策效率革命</title>
-    <link href="/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD/"/>
-    <url>/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20200215095521389.png" srcset="/img/loading.gif" alt="image-20200215095521389"></p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Artificial Intelligence</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>人工智能</tag>
-      
-      <tag>Artificial Intelligence</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>AI时代如何提升个人认知</title>
     <link href="/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5/"/>
     <url>/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5/</url>
@@ -1069,23 +1042,25 @@
   
   
   <entry>
-    <title>php即时通讯-WebSocket</title>
-    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
-    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
+    <title>AI时代决策效率革命</title>
+    <link href="/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD/"/>
+    <url>/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul><li>一个应用层协议</li><li>长链接</li><li>主流即时通讯协议</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20200215095521389.png" srcset="/img/loading.gif" alt="image-20200215095521389"></p>]]></content>
     
     
     <categories>
       
-      <category>php</category>
+      <category>Artificial Intelligence</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>php</tag>
+      <tag>人工智能</tag>
+      
+      <tag>Artificial Intelligence</tag>
       
     </tags>
     
@@ -1124,6 +1099,31 @@
     <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h3><ul><li>一个应用层协议</li><li>Header + Body组成</li><li>比TCP更高级</li><li>短链接</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>php</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>php</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>php即时通讯-WebSocket</title>
+    <link href="/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/"/>
+    <url>/2019/02/22/php%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="WebSocket"><a href="#WebSocket" class="headerlink" title="WebSocket"></a>WebSocket</h3><ul><li>一个应用层协议</li><li>长链接</li><li>主流即时通讯协议</li></ul>]]></content>
     
     
     <categories>
@@ -1866,11 +1866,11 @@
   
   
   <entry>
-    <title>深度学习笔记——线性回归的从零开始实现</title>
-    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/"/>
-    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/</url>
+    <title>深度学习笔记——线性回归</title>
+    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
+    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em>深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式</em></p><p><strong>单层神经网络：线性回归、Softmax回归</strong></p><p>线性回归输出是一个连续值，适用于回归问题。</p><p>​    如：预测房屋价格、气温、销售额等连续值问题</p><p>Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。</p><p>​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值</p><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><h3 id="线性回归基本要素"><a href="#线性回归基本要素" class="headerlink" title="线性回归基本要素"></a>线性回归基本要素</h3><p>以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）</p><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><p>设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）</p><p>线性回归假设输出与各个输入之间的线性关系：</p><p>y‘ = x1w1 + x2w2 + b;</p><p>其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 </p><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><p>模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。</p><h5 id="训练数据"><a href="#训练数据" class="headerlink" title="训练数据"></a>训练数据</h5><ul><li><p>训练数据集（training data set ）/ 训练集（training set）</p><p>多栋房屋数据，真实出售价格 、面积、房龄</p></li><li><p>样本（sample）</p><p>一栋房屋</p></li><li><p>标签（label）</p><p>真实出售价格</p></li><li><p>特征（feature）</p><p>预测标签的两个因素叫做特征；（面积、房龄）</p><p>特征用来表征样本的特点</p></li></ul><h5 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h5><ul><li>衡量价格测量值与真实值之间的误差</li><li>通常选取一个非负数作为误差，且数值越小表示误差越小</li></ul><h5 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h5><ul><li>解析解（analytical solution）<ul><li>当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来</li></ul></li><li>数值解（numerical solution）<ul><li>大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值</li><li>常用：小批量随机梯度下降（ mini-batch stochastic gradient descent）<ul><li>选取一组模型参数的初始值</li><li>对参数进行多次迭代，使得每次迭代都可能降低损失函数的值</li><li>每次迭代流程<ul><li>先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B</li><li>求小批量中数据样本的平均损失有关模型参数的导数（梯度）</li><li>用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量</li></ul></li></ul></li></ul></li></ul><h4 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h4><p><em>模型预测、模型推断或模型测试</em></p><p> 模型训练完成后，将模型参数w1;w2; b  在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。</p><p>然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。</p><h3 id="线性回归的表示方法"><a href="#线性回归的表示方法" class="headerlink" title="线性回归的表示方法"></a>线性回归的表示方法</h3><p>线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。</p><h4 id="神经网络图"><a href="#神经网络图" class="headerlink" title="神经网络图"></a>神经网络图</h4><h4 id="矢量计算表达式"><a href="#矢量计算表达式" class="headerlink" title="矢量计算表达式"></a>矢量计算表达式</h4>]]></content>
     
     
     <categories>
@@ -1897,11 +1897,11 @@
   
   
   <entry>
-    <title>深度学习笔记——线性回归</title>
-    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
-    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</url>
+    <title>深度学习笔记——线性回归的从零开始实现</title>
+    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em>深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式</em></p><p><strong>单层神经网络：线性回归、Softmax回归</strong></p><p>线性回归输出是一个连续值，适用于回归问题。</p><p>​    如：预测房屋价格、气温、销售额等连续值问题</p><p>Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。</p><p>​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值</p><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><h3 id="线性回归基本要素"><a href="#线性回归基本要素" class="headerlink" title="线性回归基本要素"></a>线性回归基本要素</h3><p>以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）</p><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><p>设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）</p><p>线性回归假设输出与各个输入之间的线性关系：</p><p>y‘ = x1w1 + x2w2 + b;</p><p>其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 </p><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><p>模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。</p><h5 id="训练数据"><a href="#训练数据" class="headerlink" title="训练数据"></a>训练数据</h5><ul><li><p>训练数据集（training data set ）/ 训练集（training set）</p><p>多栋房屋数据，真实出售价格 、面积、房龄</p></li><li><p>样本（sample）</p><p>一栋房屋</p></li><li><p>标签（label）</p><p>真实出售价格</p></li><li><p>特征（feature）</p><p>预测标签的两个因素叫做特征；（面积、房龄）</p><p>特征用来表征样本的特点</p></li></ul><h5 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h5><ul><li>衡量价格测量值与真实值之间的误差</li><li>通常选取一个非负数作为误差，且数值越小表示误差越小</li></ul><h5 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h5><ul><li>解析解（analytical solution）<ul><li>当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来</li></ul></li><li>数值解（numerical solution）<ul><li>大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值</li><li>常用：小批量随机梯度下降（ mini-batch stochastic gradient descent）<ul><li>选取一组模型参数的初始值</li><li>对参数进行多次迭代，使得每次迭代都可能降低损失函数的值</li><li>每次迭代流程<ul><li>先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B</li><li>求小批量中数据样本的平均损失有关模型参数的导数（梯度）</li><li>用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量</li></ul></li></ul></li></ul></li></ul><h4 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h4><p><em>模型预测、模型推断或模型测试</em></p><p> 模型训练完成后，将模型参数w1;w2; b  在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。</p><p>然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。</p><h3 id="线性回归的表示方法"><a href="#线性回归的表示方法" class="headerlink" title="线性回归的表示方法"></a>线性回归的表示方法</h3><p>线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。</p><h4 id="神经网络图"><a href="#神经网络图" class="headerlink" title="神经网络图"></a>神经网络图</h4><h4 id="矢量计算表达式"><a href="#矢量计算表达式" class="headerlink" title="矢量计算表达式"></a>矢量计算表达式</h4>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
     
     
     <categories>
@@ -2013,6 +2013,33 @@
   
   
   <entry>
+    <title>几种机器学习原理</title>
+    <link href="/2018/11/25/%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86/"/>
+    <url>/2018/11/25/%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="几种机器学习算法原理"><a href="#几种机器学习算法原理" class="headerlink" title="几种机器学习算法原理"></a>几种机器学习算法原理</h3><h4 id="机器学习过程"><a href="#机器学习过程" class="headerlink" title="机器学习过程"></a>机器学习过程</h4><h4 id="什么问题适合用机器学习解决"><a href="#什么问题适合用机器学习解决" class="headerlink" title="什么问题适合用机器学习解决"></a>什么问题适合用机器学习解决</h4><h4 id="几种常见的模型和算法"><a href="#几种常见的模型和算法" class="headerlink" title="几种常见的模型和算法"></a>几种常见的模型和算法</h4>]]></content>
+    
+    
+    <categories>
+      
+      <category>Artificial Intelligence</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>人工智能</tag>
+      
+      <tag>Artificial Intelligence</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>AI是什么</title>
     <link href="/2018/11/25/AI%E6%98%AF%E4%BB%80%E4%B9%88/"/>
     <url>/2018/11/25/AI%E6%98%AF%E4%BB%80%E4%B9%88/</url>
@@ -2067,33 +2094,6 @@
   
   
   <entry>
-    <title>几种机器学习原理</title>
-    <link href="/2018/11/25/%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86/"/>
-    <url>/2018/11/25/%E5%87%A0%E7%A7%8D%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95%E5%8E%9F%E7%90%86/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="几种机器学习算法原理"><a href="#几种机器学习算法原理" class="headerlink" title="几种机器学习算法原理"></a>几种机器学习算法原理</h3><h4 id="机器学习过程"><a href="#机器学习过程" class="headerlink" title="机器学习过程"></a>机器学习过程</h4><h4 id="什么问题适合用机器学习解决"><a href="#什么问题适合用机器学习解决" class="headerlink" title="什么问题适合用机器学习解决"></a>什么问题适合用机器学习解决</h4><h4 id="几种常见的模型和算法"><a href="#几种常见的模型和算法" class="headerlink" title="几种常见的模型和算法"></a>几种常见的模型和算法</h4>]]></content>
-    
-    
-    <categories>
-      
-      <category>Artificial Intelligence</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>人工智能</tag>
-      
-      <tag>Artificial Intelligence</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>学习如何为产品选择合适的推荐算法</title>
     <link href="/2018/11/25/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E4%B8%BA%E4%BA%A7%E5%93%81%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95/"/>
     <url>/2018/11/25/%E5%AD%A6%E4%B9%A0%E5%A6%82%E4%BD%95%E4%B8%BA%E4%BA%A7%E5%93%81%E9%80%89%E6%8B%A9%E5%90%88%E9%80%82%E7%9A%84%E6%8E%A8%E8%8D%90%E7%AE%97%E6%B3%95/</url>
@@ -2123,11 +2123,11 @@
   
   
   <entry>
-    <title>Python数据挖掘——基础知识</title>
-    <link href="/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
-    <url>/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
+    <title>Python数据挖掘——数据预处理</title>
+    <link href="/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/"/>
+    <url>/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Python数据挖掘——基础知识"><a href="#Python数据挖掘——基础知识" class="headerlink" title="Python数据挖掘——基础知识"></a>Python数据挖掘——基础知识</h2><ul><li>数据挖掘又称从数据中 挖掘知识、知识提取、数据／模式分析</li><li>即为：从数据中发现知识的过程<ul><li>1、数据清理 （消除噪声，删除不一致数据）</li><li>2、数据集成 （多种数据源 组合在一起）</li><li>3、数据选择 （从数据库中提取和分析任务相关的数据）</li><li>4、数据变换 （通过汇总或聚焦操作，把数据变换和统一成适合挖掘的形式）</li><li>5、数据挖掘 （基本步骤，使用智能化方法提取数据）</li><li>6、模式评估 （根据某种兴趣度量，识别代表知识的真正的有趣模式）</li><li>7、知识表示 （使用可视化和知识表示技术，向用户提供数据挖掘的知识）</li></ul></li><li>广义：从大量的数据中挖掘有趣模式和知识的过程</li><li>数据挖掘的模式：<ul><li>描述性：描述性挖掘任务刻画目标数据中数据的一般性质</li><li>预测性：预测性挖掘任务在当前数据上进行归纳，以便作出预测</li></ul></li><li>数据挖掘功能<ul><li>离群点分析</li><li>特征化与区分<ul><li>数据特征化 是目标类数据的一般性／特性的汇总</li><li>数据区分是将目标数据对象的一般性 与一个／多个对比类对象的一般性进行比较</li></ul></li><li>频繁模式、关联和相关性<ul><li>频繁模式包括频繁项集、序列模式和频繁子结构</li><li>频繁项集挖掘是频繁模式的基础</li></ul></li><li>聚类分析<ul><li>最大化类内相似性</li><li>最小化类间相似性</li></ul></li><li>分类与回归</li></ul></li><li>数据挖掘使用的技术<ul><li>统计学</li><li>数据库系统</li><li>数据仓库</li><li>信息检索</li><li>机器学习</li><li>模式识别</li><li>可视化</li><li>算法</li><li>高性能计算</li><li>应用</li></ul></li><li>数据挖掘的主要问题<ul><li>挖掘方法</li><li>用户交互</li><li>有效性与伸缩性</li><li>数据类型的多样性</li><li>数据挖掘与社会</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Python数据挖掘——数据预处理"><a href="#Python数据挖掘——数据预处理" class="headerlink" title="Python数据挖掘——数据预处理"></a>Python数据挖掘——数据预处理</h2><ul><li>数据预处理<ul><li>数据质量<ul><li>准确性、完整性、一致性、时效性、可信性、可解释性</li></ul></li><li>数据预处理的主要任务<ul><li>数据清理</li><li>数据集成</li><li>数据归约<ul><li>维归约</li><li>数值归约</li></ul></li><li>数据变换<ul><li>规范化</li><li>数据离散化</li><li>概念分层产生</li></ul></li></ul></li></ul></li><li>数据清理（试图填充缺失的值，光滑噪声并识别离群点，纠正数据的不一致）<ul><li>缺失值<ul><li>忽略元组</li><li>人工填写缺失值</li><li>使用一个全局常量填充缺失值</li><li>使用属性的中心度量（均值／中位数）填充缺失值</li><li>使用与给定元组属于同一类的所有样本的均值／中位数</li><li>使用最可能的值 填充缺失值</li><li>注：某些情况，缺失值并不代表错误</li></ul></li><li>噪声数据（噪声是被测量的变量的随机误差或方差）<ul><li>分箱（通过考察数据的近邻，来光滑有序数据值）<ul><li>用箱均值</li><li>用箱中位数</li><li>用箱边界</li></ul></li><li>回归</li><li>离群点分析（通过聚类来检测离群点）</li></ul></li><li>数据清理化为一个过程<ul><li>首先进行偏差检测，还要防止字段过载<ul><li>唯一性规则</li><li>连续性规则</li><li>空值规则</li></ul></li><li>偏差检测商业工具<ul><li>数据清洗工具</li><li>数据审计工具</li></ul></li><li>数据迁移工具<ul><li>EIL工具</li></ul></li></ul></li></ul></li><li>数据集成<ul><li>实体识别问题</li><li>冗余和相关分析</li><li>元组重复</li><li>数据值冲突的检测与处理</li></ul></li><li>数据归约<ul><li>数据变换与数据离散化</li></ul></li></ul>]]></content>
     
     
     <categories>
@@ -2152,11 +2152,11 @@
   
   
   <entry>
-    <title>Python数据挖掘——数据预处理</title>
-    <link href="/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/"/>
-    <url>/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E6%95%B0%E6%8D%AE%E9%A2%84%E5%A4%84%E7%90%86/</url>
+    <title>Python数据挖掘——基础知识</title>
+    <link href="/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    <url>/2018/11/20/Python%E6%95%B0%E6%8D%AE%E6%8C%96%E6%8E%98%E2%80%94%E2%80%94%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Python数据挖掘——数据预处理"><a href="#Python数据挖掘——数据预处理" class="headerlink" title="Python数据挖掘——数据预处理"></a>Python数据挖掘——数据预处理</h2><ul><li>数据预处理<ul><li>数据质量<ul><li>准确性、完整性、一致性、时效性、可信性、可解释性</li></ul></li><li>数据预处理的主要任务<ul><li>数据清理</li><li>数据集成</li><li>数据归约<ul><li>维归约</li><li>数值归约</li></ul></li><li>数据变换<ul><li>规范化</li><li>数据离散化</li><li>概念分层产生</li></ul></li></ul></li></ul></li><li>数据清理（试图填充缺失的值，光滑噪声并识别离群点，纠正数据的不一致）<ul><li>缺失值<ul><li>忽略元组</li><li>人工填写缺失值</li><li>使用一个全局常量填充缺失值</li><li>使用属性的中心度量（均值／中位数）填充缺失值</li><li>使用与给定元组属于同一类的所有样本的均值／中位数</li><li>使用最可能的值 填充缺失值</li><li>注：某些情况，缺失值并不代表错误</li></ul></li><li>噪声数据（噪声是被测量的变量的随机误差或方差）<ul><li>分箱（通过考察数据的近邻，来光滑有序数据值）<ul><li>用箱均值</li><li>用箱中位数</li><li>用箱边界</li></ul></li><li>回归</li><li>离群点分析（通过聚类来检测离群点）</li></ul></li><li>数据清理化为一个过程<ul><li>首先进行偏差检测，还要防止字段过载<ul><li>唯一性规则</li><li>连续性规则</li><li>空值规则</li></ul></li><li>偏差检测商业工具<ul><li>数据清洗工具</li><li>数据审计工具</li></ul></li><li>数据迁移工具<ul><li>EIL工具</li></ul></li></ul></li></ul></li><li>数据集成<ul><li>实体识别问题</li><li>冗余和相关分析</li><li>元组重复</li><li>数据值冲突的检测与处理</li></ul></li><li>数据归约<ul><li>数据变换与数据离散化</li></ul></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="Python数据挖掘——基础知识"><a href="#Python数据挖掘——基础知识" class="headerlink" title="Python数据挖掘——基础知识"></a>Python数据挖掘——基础知识</h2><ul><li>数据挖掘又称从数据中 挖掘知识、知识提取、数据／模式分析</li><li>即为：从数据中发现知识的过程<ul><li>1、数据清理 （消除噪声，删除不一致数据）</li><li>2、数据集成 （多种数据源 组合在一起）</li><li>3、数据选择 （从数据库中提取和分析任务相关的数据）</li><li>4、数据变换 （通过汇总或聚焦操作，把数据变换和统一成适合挖掘的形式）</li><li>5、数据挖掘 （基本步骤，使用智能化方法提取数据）</li><li>6、模式评估 （根据某种兴趣度量，识别代表知识的真正的有趣模式）</li><li>7、知识表示 （使用可视化和知识表示技术，向用户提供数据挖掘的知识）</li></ul></li><li>广义：从大量的数据中挖掘有趣模式和知识的过程</li><li>数据挖掘的模式：<ul><li>描述性：描述性挖掘任务刻画目标数据中数据的一般性质</li><li>预测性：预测性挖掘任务在当前数据上进行归纳，以便作出预测</li></ul></li><li>数据挖掘功能<ul><li>离群点分析</li><li>特征化与区分<ul><li>数据特征化 是目标类数据的一般性／特性的汇总</li><li>数据区分是将目标数据对象的一般性 与一个／多个对比类对象的一般性进行比较</li></ul></li><li>频繁模式、关联和相关性<ul><li>频繁模式包括频繁项集、序列模式和频繁子结构</li><li>频繁项集挖掘是频繁模式的基础</li></ul></li><li>聚类分析<ul><li>最大化类内相似性</li><li>最小化类间相似性</li></ul></li><li>分类与回归</li></ul></li><li>数据挖掘使用的技术<ul><li>统计学</li><li>数据库系统</li><li>数据仓库</li><li>信息检索</li><li>机器学习</li><li>模式识别</li><li>可视化</li><li>算法</li><li>高性能计算</li><li>应用</li></ul></li><li>数据挖掘的主要问题<ul><li>挖掘方法</li><li>用户交互</li><li>有效性与伸缩性</li><li>数据类型的多样性</li><li>数据挖掘与社会</li></ul></li></ul>]]></content>
     
     
     <categories>
@@ -2530,11 +2530,11 @@
   
   
   <entry>
-    <title>数据分析02：matplotlib散点图</title>
-    <link href="/2018/03/02/02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE/"/>
-    <url>/2018/03/02/02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE/</url>
+    <title>数据分析03：matplotlib折线图</title>
+    <link href="/2018/03/02/03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE/"/>
+    <url>/2018/03/02/03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt&#39;&#39;&#39;    散点图显示两组数据的值，每个点的坐标位置的值决定    用户观察两种变量的相关性：        正相关        负相关        不相关&#39;&#39;&#39;# 正相关height = [161,170,174,165,182,175]weight = [50,65,70,62,81,75]plt.scatter(height,weight)plt.show()# 不相关N = 1000x = np.random.randn(N)y = np.random.randn(N)plt.scatter(x,y)plt.show()# 散点图的外观&#39;&#39;&#39;    c    颜色    s    点（面积）大小    alpha       透明度        值的范围[0,1]        通过调节透明度，来观察点的集中性    marker      点形状&#39;&#39;&#39;# 练习&#39;&#39;&#39;    使用000001.csv的数据    计算最高价 和开盘价之差    绘出前后两天diff的散点图， 研究是否具有相关性&#39;&#39;&#39;height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True)change = height -opentomorrow = change[2:]yesterday = change[:-2]plt.scatter(yesterday,tomorrow,alpha=0.2,)plt.show()</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as pltimport matplotlib.dates as mdates&#39;&#39;&#39;    折线图，用直线段将各数据连接起来组成的图形    常用来观察数据随时间变化的趋势    例如：股票价格，温度变化&#39;&#39;&#39;date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True)plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;)plt.plot_date(date,open,linestyle=&#39;-&#39;,color=&quot;red&quot;,marker =&#39;o&#39;)plt.show()# 练习&#39;&#39;&#39;    画出x值为[0,10]的正弦函数图像&#39;&#39;&#39;x = np.linspace(0,10,100)y = np.sin(x)plt.plot(x,y)plt.show()</code></pre>]]></content>
     
     
     <categories>
@@ -2563,31 +2563,29 @@
   
   
   <entry>
-    <title>数据分析03：matplotlib折线图</title>
-    <link href="/2018/03/02/03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE/"/>
-    <url>/2018/03/02/03-matplotlib%E6%8A%98%E7%BA%BF%E5%9B%BE/</url>
+    <title>SpringBoot数据访问JPA</title>
+    <link href="/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/"/>
+    <url>/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as pltimport matplotlib.dates as mdates&#39;&#39;&#39;    折线图，用直线段将各数据连接起来组成的图形    常用来观察数据随时间变化的趋势    例如：股票价格，温度变化&#39;&#39;&#39;date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True)plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;)plt.plot_date(date,open,linestyle=&#39;-&#39;,color=&quot;red&quot;,marker =&#39;o&#39;)plt.show()# 练习&#39;&#39;&#39;    画出x值为[0,10]的正弦函数图像&#39;&#39;&#39;x = np.linspace(0,10,100)y = np.sin(x)plt.plot(x,y)plt.show()</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot数据访问-整合JPA"><a href="#SpringBoot数据访问-整合JPA" class="headerlink" title="SpringBoot数据访问-整合JPA"></a>SpringBoot数据访问-整合JPA</h1><ul><li>Entity –定义实体类，与数据表映射</li><li>Repository —定义操作，操作实体类中的数据表</li></ul>]]></content>
     
     
     <categories>
       
-      <category>数据分析</category>
+      <category>Java</category>
       
-      <category>Python3</category>
-      
-      <category>Matplotlib</category>
+      <category>SpringBoot</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>数据分析</tag>
+      <tag>服务端</tag>
       
-      <tag>Python3</tag>
+      <tag>Java</tag>
       
-      <tag>Matplotlib</tag>
+      <tag>SpringBoot</tag>
       
     </tags>
     
@@ -2629,11 +2627,11 @@
   
   
   <entry>
-    <title>SpringBoot数据访问JPA</title>
-    <link href="/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/"/>
-    <url>/2018/03/02/SpringBoot%E6%95%B0%E6%8D%AE%E8%AE%BF%E9%97%AE-%E6%95%B4%E5%90%88JPA/</url>
+    <title>SpringBoot启动自定义方法</title>
+    <link href="/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/"/>
+    <url>/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot数据访问-整合JPA"><a href="#SpringBoot数据访问-整合JPA" class="headerlink" title="SpringBoot数据访问-整合JPA"></a>SpringBoot数据访问-整合JPA</h1><ul><li>Entity –定义实体类，与数据表映射</li><li>Repository —定义操作，操作实体类中的数据表</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot启动自定义方法"><a href="#SpringBoot启动自定义方法" class="headerlink" title="SpringBoot启动自定义方法"></a>SpringBoot启动自定义方法</h1><h2 id="一、实现CommandLineRunner接口，重写run方法"><a href="#一、实现CommandLineRunner接口，重写run方法" class="headerlink" title="一、实现CommandLineRunner接口，重写run方法"></a>一、实现CommandLineRunner接口，重写run方法</h2><pre><code class="java">import org.springframework.boot.CommandLineRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart1 implements CommandLineRunner{    @Override    public void run(String... args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="二、实现ApplicationRunner接口，重写un方法"><a href="#二、实现ApplicationRunner接口，重写un方法" class="headerlink" title="二、实现ApplicationRunner接口，重写un方法"></a>二、实现ApplicationRunner接口，重写un方法</h2><pre><code class="java">import org.springframework.boot.ApplicationArguments;import org.springframework.boot.ApplicationRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart2 implements ApplicationRunner {    @Override    public void run(ApplicationArguments args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="三、初始化方法加上-PostConstruct注解"><a href="#三、初始化方法加上-PostConstruct注解" class="headerlink" title="三、初始化方法加上@PostConstruct注解"></a>三、初始化方法加上@PostConstruct注解</h2><pre><code class="java">import javax.annotation.PostConstruct;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart3{    @PostConstruct    public void test() throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h4 id="四、其他实现思路"><a href="#四、其他实现思路" class="headerlink" title="四、其他实现思路"></a>四、其他实现思路</h4><pre><code class="java">import org.springframework.context.annotation.Bean;import org.springframework.context.annotation.Configuration;import com.gzy.demo.NettyClient;@Configurationpublic class MyStart4 {    @Bean    public String startNetty() {        try {            NettyClient.connect(10007, &quot;127.0.0.1&quot;);        } catch (Exception e) {            e.printStackTrace();        }        return &quot;startNetty&quot;;    }}</code></pre>]]></content>
     
     
     <categories>
@@ -2660,29 +2658,31 @@
   
   
   <entry>
-    <title>SpringBoot启动自定义方法</title>
-    <link href="/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/"/>
-    <url>/2018/03/02/SpringBoot%E5%90%AF%E5%8A%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%96%B9%E6%B3%95/</url>
+    <title>数据分析02：matplotlib散点图</title>
+    <link href="/2018/03/02/02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE/"/>
+    <url>/2018/03/02/02-matplotlib%E6%95%A3%E7%82%B9%E5%9B%BE/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="SpringBoot启动自定义方法"><a href="#SpringBoot启动自定义方法" class="headerlink" title="SpringBoot启动自定义方法"></a>SpringBoot启动自定义方法</h1><h2 id="一、实现CommandLineRunner接口，重写run方法"><a href="#一、实现CommandLineRunner接口，重写run方法" class="headerlink" title="一、实现CommandLineRunner接口，重写run方法"></a>一、实现CommandLineRunner接口，重写run方法</h2><pre><code class="java">import org.springframework.boot.CommandLineRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart1 implements CommandLineRunner{    @Override    public void run(String... args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="二、实现ApplicationRunner接口，重写un方法"><a href="#二、实现ApplicationRunner接口，重写un方法" class="headerlink" title="二、实现ApplicationRunner接口，重写un方法"></a>二、实现ApplicationRunner接口，重写un方法</h2><pre><code class="java">import org.springframework.boot.ApplicationArguments;import org.springframework.boot.ApplicationRunner;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart2 implements ApplicationRunner {    @Override    public void run(ApplicationArguments args) throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h2 id="三、初始化方法加上-PostConstruct注解"><a href="#三、初始化方法加上-PostConstruct注解" class="headerlink" title="三、初始化方法加上@PostConstruct注解"></a>三、初始化方法加上@PostConstruct注解</h2><pre><code class="java">import javax.annotation.PostConstruct;import org.springframework.stereotype.Component;import com.gzy.demo.NettyClient;@Componentpublic class MyStart3{    @PostConstruct    public void test() throws Exception {        NettyClient.connect(10007, &quot;127.0.0.1&quot;);    }}</code></pre><h4 id="四、其他实现思路"><a href="#四、其他实现思路" class="headerlink" title="四、其他实现思路"></a>四、其他实现思路</h4><pre><code class="java">import org.springframework.context.annotation.Bean;import org.springframework.context.annotation.Configuration;import com.gzy.demo.NettyClient;@Configurationpublic class MyStart4 {    @Bean    public String startNetty() {        try {            NettyClient.connect(10007, &quot;127.0.0.1&quot;);        } catch (Exception e) {            e.printStackTrace();        }        return &quot;startNetty&quot;;    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><pre><code>import numpy as npimport matplotlib.pyplot as plt&#39;&#39;&#39;    散点图显示两组数据的值，每个点的坐标位置的值决定    用户观察两种变量的相关性：        正相关        负相关        不相关&#39;&#39;&#39;# 正相关height = [161,170,174,165,182,175]weight = [50,65,70,62,81,75]plt.scatter(height,weight)plt.show()# 不相关N = 1000x = np.random.randn(N)y = np.random.randn(N)plt.scatter(x,y)plt.show()# 散点图的外观&#39;&#39;&#39;    c    颜色    s    点（面积）大小    alpha       透明度        值的范围[0,1]        通过调节透明度，来观察点的集中性    marker      点形状&#39;&#39;&#39;# 练习&#39;&#39;&#39;    使用000001.csv的数据    计算最高价 和开盘价之差    绘出前后两天diff的散点图， 研究是否具有相关性&#39;&#39;&#39;height,open = np.loadtxt(&#39;000001.csv&#39;,delimiter=&#39;,&#39;,skiprows=1,usecols=(2,1),unpack=True)change = height -opentomorrow = change[2:]yesterday = change[:-2]plt.scatter(yesterday,tomorrow,alpha=0.2,)plt.show()</code></pre>]]></content>
     
     
     <categories>
       
-      <category>Java</category>
+      <category>数据分析</category>
       
-      <category>SpringBoot</category>
+      <category>Python3</category>
+      
+      <category>Matplotlib</category>
       
     </categories>
     
     
     <tags>
       
-      <tag>服务端</tag>
+      <tag>数据分析</tag>
       
-      <tag>Java</tag>
+      <tag>Python3</tag>
       
-      <tag>SpringBoot</tag>
+      <tag>Matplotlib</tag>
       
     </tags>
     
@@ -3220,61 +3220,86 @@
   
   
   <entry>
-    <title>Java数组</title>
-    <link href="/2016/03/02/Java%E6%95%B0%E7%BB%84/"/>
-    <url>/2016/03/02/Java%E6%95%B0%E7%BB%84/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java数组"><a href="#Java数组" class="headerlink" title="Java数组"></a>Java数组</h1><pre><code>public class ArrayDemo {    //声明数组    // 数据类型[] 数组名称;  dataType[] arrayName;    //创建数组    // 数据名称 = new dataType[arraySize];    //dataType[] arrayName = {value0,value1,value2,...,valuek};    public static void main(String[] args){        //数组大小        int size =4;        //定义数组        double[] TestList = new double[size];        TestList[0] = 3.2;        TestList[1] = 2.6;        TestList[2] = 4.7;        TestList[3] = 5.6;        double total =0;        for (int i=0; i&lt;size; i++){            total = total + TestList[i];        }        System.out.println(total);        double[] list1 = {1.4,2.8,3.6,4.9};        //打印所有数组元素        for (int i=0;i&lt;list1.length;i++){            System.out.println(list1[i]);        }        //计算所有元素的和        double sum = 0;        for (int i =0;i&lt;list1.length;i++){            sum = sum + list1[i];        }        System.out.println(sum);        //查找最大元素        double max = list1[0];        for (int i=0; i&lt;list1.length;i++){            if (list1[i] &gt; max){                max = list1[i];            }        }        System.out.println(max);    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java条件语句</title>
-    <link href="/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/"/>
-    <url>/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java条件语句"><a href="#Java条件语句" class="headerlink" title="Java条件语句"></a>Java条件语句</h1><pre><code>public class IfElse {    /*        条件语句 - if...else     */    public static void main(String[] args) {        int x = 10;        /*            if(布尔表达式){                //如果布尔表达式的值为true            }else{                //如果布尔表达式的值为false            }         */        if (x &lt; 20) {            System.out.println(&quot;这是一个if判断语句&quot;);        } else {            System.out.println(&quot;这是一个else判断语句&quot;);        }        /*            if(布尔表达式 1){                //如果布尔表达式 1的值为true执行代码            }else if(布尔表达式 2){                //如果布尔表达式 2的值为true执行代码            }else if(布尔表达式 3){                //如果布尔表达式 3的值为true执行代码            }else if(布尔表达式 4){                //如果布尔表达式 4的值为true执行代码            }else if(布尔表达式 5){                //如果布尔表达式 5的值为true执行代码            }            else {                //如果以上布尔表达式都不为true执行代码            }         */        //嵌套的if...else语句        /*            if(布尔表达式 1){                ////如果布尔表达式 1的值为true执行代码                if(布尔表达式 2){                    ////如果布尔表达式 2的值为true执行代码                }            }         */    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Java-SwitchCase语句</title>
     <link href="/2016/03/02/Java-SwitchCase/"/>
     <url>/2016/03/02/Java-SwitchCase/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-SwitchCase语句"><a href="#Java-SwitchCase语句" class="headerlink" title="Java-SwitchCase语句"></a>Java-SwitchCase语句</h1><pre><code>public class SwitchCase {    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。    /*        switch(expression){            case value :                //语句                break; //可选            case value :                //语句                break; //可选            //你可以有任意数量的case语句            default : //可选                //语句   不需要break        }     */    public static void main(String[]args){        char grade =&#39;C&#39;;        switch (grade)        {            case &#39;A&#39;:                System.out.println(&quot;优秀&quot;);                break;            case &#39;B&#39;:            case &#39;C&#39;:                System.out.println(&quot;良好&quot;);                break;            case &#39;D&#39;:                System.out.println(&quot;及格&quot;);                break;            case &#39;F&#39;:                System.out.println(&quot;你还需要继续努力&quot;);                break;            default:                System.out.println(&quot;未知等级&quot;);        }        System.out.println(&quot;你的等级是&quot; + grade);    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java循环结构</title>
+    <link href="/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
+    <url>/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java循环结构"><a href="#Java循环结构" class="headerlink" title="Java循环结构"></a>Java循环结构</h1><pre><code>public class LoopStructure {    /*        while 循环        do…while 循环        for 循环     */    public static void main(String[] args) {        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环        System.out.println(&quot;while 循环&quot;);        int x = 10;        while (x &lt; 20) {            System.out.println(x);            x++;        }        // do…while 循环，至少执行一次        /*            do {                //代码语句            }while(布尔表达式);         */        System.out.println(&quot;do…while循环&quot;);        int y = 10;        do {            System.out.println(y);            y++;        } while (y &lt; 10);        // for 循环，执行前就确定执行次数        /*            for(初始化; 布尔表达式; 更新) {                //代码语句            }         */        System.out.println(&quot;for 循环&quot;);        for (int z = 0; z &lt; 20; z = z + 1) {            System.out.println(z);        }        //增强for循环        /*            for(声明语句 : 表达式)            {                //代码句子            }         */        System.out.println(&quot;增强for 循环&quot;);        int[] numbers = {10, 20, 30, 40, 50};        for (int number : numbers) {            System.out.println(number);        }        String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;};        for (String name : names) {            System.out.println(name);        }        //break关键字        /*            break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。            break 跳出最里层的循环，并且继续执行该循环下面的语句。         */        System.out.println(&quot;break关键字&quot;);        int[] numbers1 = {10, 20, 30, 40, 50};        for (int number : numbers1) {            if (number == 30) {                break;            }            System.out.println(number);        }        //continue关键字        /*            continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。            在 for 循环中，continue 语句使程序立即跳转到更新语句。            在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。         */        System.out.println(&quot;continue关键字&quot;);        int[] numbers2 = {10, 20, 30, 40, 50};        for (int number : numbers2) {            if (number == 30) {                continue;            }            System.out.println(number);        }    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java异常处理</title>
+    <link href="/2016/03/02/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
+    <url>/2016/03/02/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java异常处理"><a href="#Java异常处理" class="headerlink" title="Java异常处理"></a>Java异常处理</h1><pre><code>import java.lang.Exception;public class ExceptionDemo {    /*        三类异常        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。     */    /*       内置异常类          非检查性异常            异常                                描述            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。            ArrayIndexOutOfBoundsException    用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。            ArrayStoreException                试图将错误类型的对象存储到一个对象数组时抛出的异常。            ClassCastException                当试图将对象强制转换为不是实例的子类时，抛出该异常。            IllegalArgumentException        抛出的异常表明向方法传递了一个不合法或不正确的参数。            IllegalMonitorStateException    抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。            IllegalStateException            在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。            IllegalThreadStateException        线程没有处于请求操作所要求的适当状态时抛出的异常。            IndexOutOfBoundsException        指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。            NegativeArraySizeException        如果应用程序试图创建大小为负的数组，则抛出该异常。            NullPointerException            当应用程序试图在需要对象的地方使用 null 时，抛出该异常            NumberFormatException            当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。            SecurityException                由安全管理器抛出的异常，指示存在安全侵犯。            StringIndexOutOfBoundsException    此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。            UnsupportedOperationException    当不支持请求的操作时，抛出该异常。         检查性异常类            异常                                描述            ClassNotFoundException            应用程序试图加载类时，找不到相应的类，抛出该异常。            CloneNotSupportedException        当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。            IllegalAccessException            拒绝访问一个类的时候，抛出该异常。            InstantiationException            当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。            InterruptedException            一个线程被另一个线程中断，抛出该异常。            NoSuchFieldException            请求的变量不存在            NoSuchMethodException            请求的方法不存在     */    /*        throws/throw 关键字        finally 关键字          finally 关键字用来创建在 try 代码块后面执行的代码块。          无论是否发生异常，finally 代码块中的代码总会被执行。          在 finally 代码块中，可以运行清理类型等收尾善后性质的语句            try{                // 程序代码            }catch(异常类型1 异常的变量名1){                // 程序代码            }catch(异常类型2 异常的变量名2){                // 程序代码            }finally{                // 程序代码            }     */    public void getExceptiondemo(){        //捕获异常        /*                try                {                    // 程序代码                }catch(ExceptionName e1)                {                    //Catch 块                }         */        // 多重捕获异常        /*                try{                    // 程序代码                }catch(异常类型1 异常的变量名1){                    // 程序代码                }catch(异常类型2 异常的变量名2){                    // 程序代码                }catch(异常类型2 异常的变量名2){                    // 程序代码                }         */        try {            int[] a = new int[2];            System.out.println(a[3]);        }catch (ArrayIndexOutOfBoundsException e){            System.out.println(&quot;Exception thrown&quot; +e);        }        System.out.println(&quot;out of the block&quot;);    }    public static void main(String[] args){        ExceptionDemo exp = new ExceptionDemo();        exp.getExceptiondemo();    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java数组</title>
+    <link href="/2016/03/02/Java%E6%95%B0%E7%BB%84/"/>
+    <url>/2016/03/02/Java%E6%95%B0%E7%BB%84/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java数组"><a href="#Java数组" class="headerlink" title="Java数组"></a>Java数组</h1><pre><code>public class ArrayDemo {    //声明数组    // 数据类型[] 数组名称;  dataType[] arrayName;    //创建数组    // 数据名称 = new dataType[arraySize];    //dataType[] arrayName = {value0,value1,value2,...,valuek};    public static void main(String[] args){        //数组大小        int size =4;        //定义数组        double[] TestList = new double[size];        TestList[0] = 3.2;        TestList[1] = 2.6;        TestList[2] = 4.7;        TestList[3] = 5.6;        double total =0;        for (int i=0; i&lt;size; i++){            total = total + TestList[i];        }        System.out.println(total);        double[] list1 = {1.4,2.8,3.6,4.9};        //打印所有数组元素        for (int i=0;i&lt;list1.length;i++){            System.out.println(list1[i]);        }        //计算所有元素的和        double sum = 0;        for (int i =0;i&lt;list1.length;i++){            sum = sum + list1[i];        }        System.out.println(sum);        //查找最大元素        double max = list1[0];        for (int i=0; i&lt;list1.length;i++){            if (list1[i] &gt; max){                max = list1[i];            }        }        System.out.println(max);    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3345,56 +3370,6 @@
   
   
   <entry>
-    <title>Java异常处理</title>
-    <link href="/2016/03/02/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/"/>
-    <url>/2016/03/02/Java%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java异常处理"><a href="#Java异常处理" class="headerlink" title="Java异常处理"></a>Java异常处理</h1><pre><code>import java.lang.Exception;public class ExceptionDemo {    /*        三类异常        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。     */    /*       内置异常类          非检查性异常            异常                                描述            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛出此类的一个实例。            ArrayIndexOutOfBoundsException    用非法索引访问数组时抛出的异常。如果索引为负或大于等于数组大小，则该索引为非法索引。            ArrayStoreException                试图将错误类型的对象存储到一个对象数组时抛出的异常。            ClassCastException                当试图将对象强制转换为不是实例的子类时，抛出该异常。            IllegalArgumentException        抛出的异常表明向方法传递了一个不合法或不正确的参数。            IllegalMonitorStateException    抛出的异常表明某一线程已经试图等待对象的监视器，或者试图通知其他正在等待对象的监视器而本身没有指定监视器的线程。            IllegalStateException            在非法或不适当的时间调用方法时产生的信号。换句话说，即 Java 环境或 Java 应用程序没有处于请求操作所要求的适当状态下。            IllegalThreadStateException        线程没有处于请求操作所要求的适当状态时抛出的异常。            IndexOutOfBoundsException        指示某排序索引（例如对数组、字符串或向量的排序）超出范围时抛出。            NegativeArraySizeException        如果应用程序试图创建大小为负的数组，则抛出该异常。            NullPointerException            当应用程序试图在需要对象的地方使用 null 时，抛出该异常            NumberFormatException            当应用程序试图将字符串转换成一种数值类型，但该字符串不能转换为适当格式时，抛出该异常。            SecurityException                由安全管理器抛出的异常，指示存在安全侵犯。            StringIndexOutOfBoundsException    此异常由 String 方法抛出，指示索引或者为负，或者超出字符串的大小。            UnsupportedOperationException    当不支持请求的操作时，抛出该异常。         检查性异常类            异常                                描述            ClassNotFoundException            应用程序试图加载类时，找不到相应的类，抛出该异常。            CloneNotSupportedException        当调用 Object 类中的 clone 方法克隆对象，但该对象的类无法实现 Cloneable 接口时，抛出该异常。            IllegalAccessException            拒绝访问一个类的时候，抛出该异常。            InstantiationException            当试图使用 Class 类中的 newInstance 方法创建一个类的实例，而指定的类对象因为是一个接口或是一个抽象类而无法实例化时，抛出该异常。            InterruptedException            一个线程被另一个线程中断，抛出该异常。            NoSuchFieldException            请求的变量不存在            NoSuchMethodException            请求的方法不存在     */    /*        throws/throw 关键字        finally 关键字          finally 关键字用来创建在 try 代码块后面执行的代码块。          无论是否发生异常，finally 代码块中的代码总会被执行。          在 finally 代码块中，可以运行清理类型等收尾善后性质的语句            try{                // 程序代码            }catch(异常类型1 异常的变量名1){                // 程序代码            }catch(异常类型2 异常的变量名2){                // 程序代码            }finally{                // 程序代码            }     */    public void getExceptiondemo(){        //捕获异常        /*                try                {                    // 程序代码                }catch(ExceptionName e1)                {                    //Catch 块                }         */        // 多重捕获异常        /*                try{                    // 程序代码                }catch(异常类型1 异常的变量名1){                    // 程序代码                }catch(异常类型2 异常的变量名2){                    // 程序代码                }catch(异常类型2 异常的变量名2){                    // 程序代码                }         */        try {            int[] a = new int[2];            System.out.println(a[3]);        }catch (ArrayIndexOutOfBoundsException e){            System.out.println(&quot;Exception thrown&quot; +e);        }        System.out.println(&quot;out of the block&quot;);    }    public static void main(String[] args){        ExceptionDemo exp = new ExceptionDemo();        exp.getExceptiondemo();    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Java循环结构</title>
-    <link href="/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/"/>
-    <url>/2016/03/02/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java循环结构"><a href="#Java循环结构" class="headerlink" title="Java循环结构"></a>Java循环结构</h1><pre><code>public class LoopStructure {    /*        while 循环        do…while 循环        for 循环     */    public static void main(String[] args) {        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环        System.out.println(&quot;while 循环&quot;);        int x = 10;        while (x &lt; 20) {            System.out.println(x);            x++;        }        // do…while 循环，至少执行一次        /*            do {                //代码语句            }while(布尔表达式);         */        System.out.println(&quot;do…while循环&quot;);        int y = 10;        do {            System.out.println(y);            y++;        } while (y &lt; 10);        // for 循环，执行前就确定执行次数        /*            for(初始化; 布尔表达式; 更新) {                //代码语句            }         */        System.out.println(&quot;for 循环&quot;);        for (int z = 0; z &lt; 20; z = z + 1) {            System.out.println(z);        }        //增强for循环        /*            for(声明语句 : 表达式)            {                //代码句子            }         */        System.out.println(&quot;增强for 循环&quot;);        int[] numbers = {10, 20, 30, 40, 50};        for (int number : numbers) {            System.out.println(number);        }        String[] names = {&quot;gzy&quot;, &quot;g&quot;, &quot;zy&quot;};        for (String name : names) {            System.out.println(name);        }        //break关键字        /*            break 主要用在循环语句或者 switch 语句中，用来跳出整个语句块。            break 跳出最里层的循环，并且继续执行该循环下面的语句。         */        System.out.println(&quot;break关键字&quot;);        int[] numbers1 = {10, 20, 30, 40, 50};        for (int number : numbers1) {            if (number == 30) {                break;            }            System.out.println(number);        }        //continue关键字        /*            continue 适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。            在 for 循环中，continue 语句使程序立即跳转到更新语句。            在 while 或者 do…while 循环中，程序立即跳转到布尔表达式的判断语句。         */        System.out.println(&quot;continue关键字&quot;);        int[] numbers2 = {10, 20, 30, 40, 50};        for (int number : numbers2) {            if (number == 30) {                continue;            }            System.out.println(number);        }    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Java-StringBuffer</title>
     <link href="/2016/03/02/Java-StringBuffer/"/>
     <url>/2016/03/02/Java-StringBuffer/</url>
@@ -3425,6 +3400,31 @@
     <url>/2016/03/02/Java-Scanner%E7%B1%BB/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-Scanner类"><a href="#Java-Scanner类" class="headerlink" title="Java-Scanner类"></a>Java-Scanner类</h1><pre><code>import java.util.Scanner;public class ScannerDemo {    //Scanner类 获取用户的输入    /*        next() 与 nextLine() 区别        next():            1、一定要读取到有效字符后才可以结束输入。            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。        next() 不能得到带有空格的字符串。        nextLine()：            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。            2、可以获得空白。        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：     */    public void NextDemo() {        //从键盘接收数据        Scanner scan1 = new Scanner(System.in);        //next方式接收字符串        System.out.println(&quot;next方式接收：&quot;);        //判断是否还有输入        if (scan1.hasNext()) {            String str1 = scan1.next();            System.out.println(&quot;输入的数据为：&quot; + str1);        }        scan1.close();    }    public void NextLineDemo() {        //从键盘接收数据        Scanner scan2 = new Scanner(System.in);        //nextLine方式接收字符串        System.out.println(&quot;nextLine方式接收：&quot;);        //判断是否还有输入        if (scan2.hasNext()) {            String str2 = scan2.nextLine();            System.out.println(&quot;输入的数据为：&quot; + str2);        }        scan2.close();    }    public static void main(String[] args) {        ScannerDemo s = new ScannerDemo();//        s.NextDemo();        s.NextLineDemo();    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java-NumberMath类</title>
+    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3495,11 +3495,11 @@
   
   
   <entry>
-    <title>Java-NumberMath类</title>
-    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
+    <title>Java-Character类</title>
+    <link href="/2016/03/02/Java-Character%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-Character%E7%B1%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-Character类"><a href="#Java-Character类" class="headerlink" title="Java-Character类"></a>Java-Character类</h1><pre><code>public class CharacterDemo {    // 对单个字符进行操作    /*        转义序列    描述        \t    在文中该处插入一个tab键        \b    在文中该处插入一个后退键        \n    在文中该处换行        \r    在文中该处插入回车        \f    在文中该处插入换页符        \&#39;    在文中该处插入单引号        \&quot;    在文中该处插入双引号        \\    在文中该处插入反斜杠     */    //字符方法    /*        序号    方法与描述        1    isLetter()是否是一个字母        2    isDigit()是否是一个数字字符        3    isWhitespace()是否是一个空白字符        4    isUpperCase()是否是大写字母        5    isLowerCase()是否是小写字母        6    toUpperCase()指定字母的大写形式        7    toLowerCase()指定字母的小写形式        8    toString()返回字符的字符串形式，字符串的长度仅为1     */    public static void main(String[] args) {        System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;);    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3520,11 +3520,11 @@
   
   
   <entry>
-    <title>Java-Character类</title>
-    <link href="/2016/03/02/Java-Character%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-Character%E7%B1%BB/</url>
+    <title>Java条件语句</title>
+    <link href="/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/"/>
+    <url>/2016/03/02/Java%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-Character类"><a href="#Java-Character类" class="headerlink" title="Java-Character类"></a>Java-Character类</h1><pre><code>public class CharacterDemo {    // 对单个字符进行操作    /*        转义序列    描述        \t    在文中该处插入一个tab键        \b    在文中该处插入一个后退键        \n    在文中该处换行        \r    在文中该处插入回车        \f    在文中该处插入换页符        \&#39;    在文中该处插入单引号        \&quot;    在文中该处插入双引号        \\    在文中该处插入反斜杠     */    //字符方法    /*        序号    方法与描述        1    isLetter()是否是一个字母        2    isDigit()是否是一个数字字符        3    isWhitespace()是否是一个空白字符        4    isUpperCase()是否是大写字母        5    isLowerCase()是否是小写字母        6    toUpperCase()指定字母的大写形式        7    toLowerCase()指定字母的小写形式        8    toString()返回字符的字符串形式，字符串的长度仅为1     */    public static void main(String[] args) {        System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;);    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java条件语句"><a href="#Java条件语句" class="headerlink" title="Java条件语句"></a>Java条件语句</h1><pre><code>public class IfElse {    /*        条件语句 - if...else     */    public static void main(String[] args) {        int x = 10;        /*            if(布尔表达式){                //如果布尔表达式的值为true            }else{                //如果布尔表达式的值为false            }         */        if (x &lt; 20) {            System.out.println(&quot;这是一个if判断语句&quot;);        } else {            System.out.println(&quot;这是一个else判断语句&quot;);        }        /*            if(布尔表达式 1){                //如果布尔表达式 1的值为true执行代码            }else if(布尔表达式 2){                //如果布尔表达式 2的值为true执行代码            }else if(布尔表达式 3){                //如果布尔表达式 3的值为true执行代码            }else if(布尔表达式 4){                //如果布尔表达式 4的值为true执行代码            }else if(布尔表达式 5){                //如果布尔表达式 5的值为true执行代码            }            else {                //如果以上布尔表达式都不为true执行代码            }         */        //嵌套的if...else语句        /*            if(布尔表达式 1){                ////如果布尔表达式 1的值为true执行代码                if(布尔表达式 2){                    ////如果布尔表达式 2的值为true执行代码                }            }         */    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3570,11 +3570,11 @@
   
   
   <entry>
-    <title>Java基本数据类型</title>
-    <link href="/2016/03/02/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
-    <url>/2016/03/02/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
+    <title>Java对象和类</title>
+    <link href="/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/"/>
+    <url>/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java基本数据类型"><a href="#Java基本数据类型" class="headerlink" title="Java基本数据类型"></a>Java基本数据类型</h1><pre><code>public class DataType {    /*        内置数据类型        引用数据类型     */    public static void main(String[] args) {        // byte        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);        System.out.println(&quot;包装类：java.lang.Byte&quot;);        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);        System.out.println();        // short        System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE);        System.out.println(&quot;包装类：java.lang.Short&quot;);        System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE);        System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE);        System.out.println();        // int        System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE);        System.out.println(&quot;包装类：java.lang.Integer&quot;);        System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE);        System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE);        System.out.println();        // long        System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE);        System.out.println(&quot;包装类：java.lang.Long&quot;);        System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE);        System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE);        System.out.println();        // float        System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE);        System.out.println(&quot;包装类：java.lang.Float&quot;);        System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE);        System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE);        System.out.println();        // double        System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE);        System.out.println(&quot;包装类：java.lang.Double&quot;);        System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE);        System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE);        System.out.println();        // char        System.out.println(&quot;基本类型：char 二进制位数：&quot; + Character.SIZE);        System.out.println(&quot;包装类：java.lang.Character&quot;);        // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台        System.out.println(&quot;最小值：Character.MIN_VALUE=&quot;                + (int) Character.MIN_VALUE);        // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台        System.out.println(&quot;最大值：Character.MAX_VALUE=&quot;                + (int) Character.MAX_VALUE);    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java对象和类"><a href="#Java对象和类" class="headerlink" title="Java对象和类"></a>Java对象和类</h1><pre><code>public class ObjectAndClass {    /*    - 多态    - 继承    - 封装    - 抽象    - 类 ： 是一个模板，用来描述    - 对象 ： 是类class的一个实例，具有状态和行为    - 实例    - 方法    - 重载     */    //定义一个Dog类    public static class Dog {        //成员变量        StringDemo color;        int age;        StringDemo name;        //类方法        void barking(){            System.out.println(&quot;汪！汪！汪！&quot;);        }        void hungry(){            System.out.println(&quot;好饿哦！&quot;);        }        void sleeping(){            System.out.println(&quot;好困哦！&quot;);        }        void setAge(int age){            this.age = age;        }    }    public static void main(String[]args) {        /*            创建对象            声明： 声明一个对象， 对象类型 和对象名称            实例化： new创建            初始化： 创建时调用构造方法生成         */        Dog dog = new Dog();        dog.hungry();        dog.barking();        dog.sleeping();        System.out.println(dog.age);        dog.setAge(24);        System.out.println(dog.age);    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3595,11 +3595,11 @@
   
   
   <entry>
-    <title>Java对象和类</title>
-    <link href="/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/"/>
-    <url>/2016/03/02/Java%E5%AF%B9%E8%B1%A1%E5%92%8C%E7%B1%BB/</url>
+    <title>Java基本数据类型</title>
+    <link href="/2016/03/02/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <url>/2016/03/02/Java%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java对象和类"><a href="#Java对象和类" class="headerlink" title="Java对象和类"></a>Java对象和类</h1><pre><code>public class ObjectAndClass {    /*    - 多态    - 继承    - 封装    - 抽象    - 类 ： 是一个模板，用来描述    - 对象 ： 是类class的一个实例，具有状态和行为    - 实例    - 方法    - 重载     */    //定义一个Dog类    public static class Dog {        //成员变量        StringDemo color;        int age;        StringDemo name;        //类方法        void barking(){            System.out.println(&quot;汪！汪！汪！&quot;);        }        void hungry(){            System.out.println(&quot;好饿哦！&quot;);        }        void sleeping(){            System.out.println(&quot;好困哦！&quot;);        }        void setAge(int age){            this.age = age;        }    }    public static void main(String[]args) {        /*            创建对象            声明： 声明一个对象， 对象类型 和对象名称            实例化： new创建            初始化： 创建时调用构造方法生成         */        Dog dog = new Dog();        dog.hungry();        dog.barking();        dog.sleeping();        System.out.println(dog.age);        dog.setAge(24);        System.out.println(dog.age);    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java基本数据类型"><a href="#Java基本数据类型" class="headerlink" title="Java基本数据类型"></a>Java基本数据类型</h1><pre><code>public class DataType {    /*        内置数据类型        引用数据类型     */    public static void main(String[] args) {        // byte        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);        System.out.println(&quot;包装类：java.lang.Byte&quot;);        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);        System.out.println();        // short        System.out.println(&quot;基本类型：short 二进制位数：&quot; + Short.SIZE);        System.out.println(&quot;包装类：java.lang.Short&quot;);        System.out.println(&quot;最小值：Short.MIN_VALUE=&quot; + Short.MIN_VALUE);        System.out.println(&quot;最大值：Short.MAX_VALUE=&quot; + Short.MAX_VALUE);        System.out.println();        // int        System.out.println(&quot;基本类型：int 二进制位数：&quot; + Integer.SIZE);        System.out.println(&quot;包装类：java.lang.Integer&quot;);        System.out.println(&quot;最小值：Integer.MIN_VALUE=&quot; + Integer.MIN_VALUE);        System.out.println(&quot;最大值：Integer.MAX_VALUE=&quot; + Integer.MAX_VALUE);        System.out.println();        // long        System.out.println(&quot;基本类型：long 二进制位数：&quot; + Long.SIZE);        System.out.println(&quot;包装类：java.lang.Long&quot;);        System.out.println(&quot;最小值：Long.MIN_VALUE=&quot; + Long.MIN_VALUE);        System.out.println(&quot;最大值：Long.MAX_VALUE=&quot; + Long.MAX_VALUE);        System.out.println();        // float        System.out.println(&quot;基本类型：float 二进制位数：&quot; + Float.SIZE);        System.out.println(&quot;包装类：java.lang.Float&quot;);        System.out.println(&quot;最小值：Float.MIN_VALUE=&quot; + Float.MIN_VALUE);        System.out.println(&quot;最大值：Float.MAX_VALUE=&quot; + Float.MAX_VALUE);        System.out.println();        // double        System.out.println(&quot;基本类型：double 二进制位数：&quot; + Double.SIZE);        System.out.println(&quot;包装类：java.lang.Double&quot;);        System.out.println(&quot;最小值：Double.MIN_VALUE=&quot; + Double.MIN_VALUE);        System.out.println(&quot;最大值：Double.MAX_VALUE=&quot; + Double.MAX_VALUE);        System.out.println();        // char        System.out.println(&quot;基本类型：char 二进制位数：&quot; + Character.SIZE);        System.out.println(&quot;包装类：java.lang.Character&quot;);        // 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台        System.out.println(&quot;最小值：Character.MIN_VALUE=&quot;                + (int) Character.MIN_VALUE);        // 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台        System.out.println(&quot;最大值：Character.MAX_VALUE=&quot;                + (int) Character.MAX_VALUE);    }}</code></pre>]]></content>
     
     
     <categories>
