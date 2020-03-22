@@ -598,9 +598,9 @@ springboot启动的时候加载朱配置类，开起了自动配置功能@Enable
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/Java">Java</a>&nbsp;
-          
             <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
+            <a href="/tags/Java">Java</a>&nbsp;
           
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
@@ -719,28 +719,30 @@ springboot启动的时候加载朱配置类，开起了自动配置功能@Enable
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-Scanner类/">
-        <p class="h4 index-header">Java-Scanner类</p>
+      <a href="/2016/03/02/Java正则表达式/">
+        <p class="h4 index-header">Java正则表达式</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-Scanner类import java.util.Scanner;
-
-public class ScannerDemo {
-    //Scanner类 获取用户的输入
+          <div class="index-text mb-1">Java正则表达式import java.util.regex.*;
+public class RegularExpressionDemo {
     /*
-        next() 与 nextLine() 区别
-        next():
-            1、一定要读取到有效字符后才可以结束输入。
-            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
-            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
-        next() 不能得到带有空格的字符串。
-        nextLine()：
-            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
-            2、可以获得空白。
-        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：</div>
+        Pattern 类：
+        pattern 对象是一个正则表达式的编译表示。
+        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。
+        该方法接受一个正则表达式作为它的第一个参数。
+
+        Matcher 类：
+        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。
+        与Pattern 类一样，Matcher 也没有公共构造方法。
+        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
+
+        PatternSyntaxException：
+        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
+     */
+    /*</div>
         </div>
       </a>
 
