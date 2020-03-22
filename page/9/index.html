@@ -133,71 +133,6 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/06-matplotlib饼状图/">
-        <p class="h4 index-header">数据分析06：matplotlib饼状图</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">import numpy as np
-import matplotlib.pyplot as plt
-
-&#39;&#39;&#39;
-    饼状图显示一个数据系列中各项总和的比例；
-    饼状图中的数据点显示为整个饼状图的百分比；
-    如：前十大品牌占市场份额图
-
-&#39;&#39;&#39;
-# 例
-labels = &#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;
-fracs = [15.0,30.0,45.0,10.0]
-
-explode = [0,0.05,0,0.08]
-plt.axes(aspect=1)
-plt.pie(x=fracs,labels=labels,autopct=&quot;%.0f%%&quot;,explode=explode,shadow=True)
-plt.show()
-
-# 练习
-labels = &#39;SH&#39;,&#39;BJ&#39;,&#39;SZ&#39;,&#39;GZ&#39;
-fracs = [20,30,25,15]
-explode = [0,0,0.08,0]
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/categories/Python3">Python3</a>&nbsp;
-          
-            <a href="/categories/Numpy">Numpy</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/tags/Python3">Python3</a>&nbsp;
-          
-            <a href="/tags/Numpy">Numpy</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/07-matplotlib箱线图/">
         <p class="h4 index-header">数据分析07：matplotlib箱线图</p>
         
@@ -476,6 +411,67 @@ plt.bar(in</div>
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/SpringBoot-WebSocket 聊天室/">
+        <p class="h4 index-header">SpringBoot-WebSocket聊天室</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">SpringBoot-WebSocket 聊天室配置类Config// websocket配置
+@Bean
+    public ServerEndpointExporter serverEndpointExporter() {
+        return new ServerEndpointExporter();
+    }
+
+
+业务类Controllerimport org.springframework.stereotype.Component;
+
+import javax.websocket.*;
+import javax.websocket.server.PathParam;
+import javax.websocket.server.ServerEndpoint;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.CopyOnWriteArraySet;
+
+/**
+ *  * @Description: websocket的具体实现类
+ *  * 使用springboot</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          
+            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
+            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
+          
+            <a href="/tags/WebSocket">WebSocket</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/01-numpy基础/">
         <p class="h4 index-header">数据分析01：numpy基础</p>
         
@@ -547,30 +543,18 @@ print(x,&quot;\n&quot;,type(x))
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/SpringBoot启动自定义方法/">
-        <p class="h4 index-header">SpringBoot启动自定义方法</p>
+      <a href="/2018/03/02/SpringBoot数据访问-整合JPA/">
+        <p class="h4 index-header">SpringBoot数据访问JPA</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
+          <div class="index-text mb-1">SpringBoot数据访问-整合JPA
+Entity –定义实体类，与数据表映射
+Repository —定义操作，操作实体类中的数据表
 
-import com.gzy.demo.NettyClient;
-
-@Component
-public class MyStart1 implements CommandLineRunner{
-
-    @Override
-    public void run(String... args) throws Exception {
-        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
-    }
-}
-
-
-二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
-import org.springframework.boot</div>
+</div>
         </div>
       </a>
 
@@ -589,72 +573,11 @@ import org.springframework.boot</div>
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
             <a href="/tags/Java">Java</a>&nbsp;
-          
-            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/SpringBoot-WebSocket 聊天室/">
-        <p class="h4 index-header">SpringBoot-WebSocket聊天室</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">SpringBoot-WebSocket 聊天室配置类Config// websocket配置
-@Bean
-    public ServerEndpointExporter serverEndpointExporter() {
-        return new ServerEndpointExporter();
-    }
-
-
-业务类Controllerimport org.springframework.stereotype.Component;
-
-import javax.websocket.*;
-import javax.websocket.server.PathParam;
-import javax.websocket.server.ServerEndpoint;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.CopyOnWriteArraySet;
-
-/**
- *  * @Description: websocket的具体实现类
- *  * 使用springboot</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          
-            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
           
             <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
           
-            <a href="/tags/Java">Java</a>&nbsp;
-          
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
-          
-            <a href="/tags/WebSocket">WebSocket</a>&nbsp;
           
         
       </div>
@@ -722,18 +645,30 @@ plt.plot_date(date,open,linestyle=&#39;-&#39;,c</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/SpringBoot数据访问-整合JPA/">
-        <p class="h4 index-header">SpringBoot数据访问JPA</p>
+      <a href="/2018/03/02/SpringBoot启动自定义方法/">
+        <p class="h4 index-header">SpringBoot启动自定义方法</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">SpringBoot数据访问-整合JPA
-Entity –定义实体类，与数据表映射
-Repository —定义操作，操作实体类中的数据表
+          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
-</div>
+import com.gzy.demo.NettyClient;
+
+@Component
+public class MyStart1 implements CommandLineRunner{
+
+    @Override
+    public void run(String... args) throws Exception {
+        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
+    }
+}
+
+
+二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot</div>
         </div>
       </a>
 
@@ -752,11 +687,88 @@ Repository —定义操作，操作实体类中的数据表
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
             <a href="/tags/Java">Java</a>&nbsp;
           
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/02-matplotlib散点图/">
+        <p class="h4 index-header">数据分析02：matplotlib散点图</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
+
+&#39;&#39;&#39;
+    散点图显示两组数据的值，每个点的坐标位置的值决定
+    用户观察两种变量的相关性：
+        正相关
+        负相关
+        不相关
+
+&#39;&#39;&#39;
+
+# 正相关
+height = [161,170,174,165,182,175]
+weight = [50,65,70,62,81,75]
+plt.scatter(height,weight)
+plt.show()
+
+
+# 不相关
+N = 1000
+x = np.random.randn(N)
+y = np.random.randn(N)
+plt.scatter(x,y)
+plt.show()
+
+
+# 散点图的外观
+&#39;&#39;&#39;
+    c    颜色
+    s    点（面积）大小
+    alpha       透明度
+        值的范围[0,1]
+        通过调节透明度，来观察点的集中性
+    marker   </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
           
         
       </div>

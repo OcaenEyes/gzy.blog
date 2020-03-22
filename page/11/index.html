@@ -133,75 +133,6 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--数据表相关操作/">
-        <p class="h4 index-header">MySQL深入浅出--数据表相关操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">数据表相关操作数据表
-描述
- 1、是数据库最重要的组成部分之一，数据是保存在数据表中
- 2、数据表由 行row 和 列column组成
- 3、表名要求唯一，不要包含特殊字符，最好语义明确
- 4、每个数据表至少有一列，行可有0 行，1行 或多行
-
-
-创建表
-CREATE TABLE [IF NOT EXISTS] tbl_name(
-    字段名称 字段类型 [完整性约束条件],
-    字段名称 字段类型 [完整性约束条件],
-    ...
-)ENGINE=存储引擎 CHARSET=编码方式;
-
-
-UNSIGNED        
-无符号，没有负数，从0开始
-
-ZEROFILL
-零填充，当数据的显示长度不够的时候可以使用前补0的效果填充至指定长度,字段会自动添加UNSIGNED
-
-NOT NULL
-非空约束，也就是插入值的时候这个字段必须要给值,值不能为空
-
-DEFAULT
-默认值，如果插入记录的时候没有给字段赋值，则使用默认值
-
-PRIMARY KEY
-主键，标识记录的唯一性，值不能重复，一个表只能有一个主键，自动禁止为空
-
-AUTO_INCREMENT
-自动增长，只能用于数值列</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2017/10/25/MySQL深入浅出--数据库相关操作/">
         <p class="h4 index-header">MySQL深入浅出--数据库相关操作</p>
         
@@ -634,6 +565,54 @@ prompt 提示符;
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/12/23/Springboot-自动配置原理/">
+        <p class="h4 index-header">SpringBoot-自动配置原理</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">SpringBoot-自动配置原理自动配置原理
+springboot启动的时候加载朱配置类，开起了自动配置功能@EnableAutoConfiguration
+@EnableAutoConfiguration的作用
+
+
+
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-12-23&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          
+            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
+            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/07/20/电商产品网站成交总额/">
         <p class="h4 index-header">电商产品网站成交总额</p>
         
@@ -740,40 +719,28 @@ prompt 提示符;
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-Character类/">
-        <p class="h4 index-header">Java-Character类</p>
+      <a href="/2016/03/02/Java-Scanner类/">
+        <p class="h4 index-header">Java-Scanner类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-Character类public class CharacterDemo {
-    // 对单个字符进行操作
+          <div class="index-text mb-1">Java-Scanner类import java.util.Scanner;
 
+public class ScannerDemo {
+    //Scanner类 获取用户的输入
     /*
-        转义序列    描述
-        \t    在文中该处插入一个tab键
-        \b    在文中该处插入一个后退键
-        \n    在文中该处换行
-        \r    在文中该处插入回车
-        \f    在文中该处插入换页符
-        \&#39;    在文中该处插入单引号
-        \&quot;    在文中该处插入双引号
-        \\    在文中该处插入反斜杠
-     */
-
-    //字符方法
-    /*
-        序号    方法与描述
-        1    isLetter()
-是否是一个字母
-        2    isDigit()
-是否是一个数字字符
-        3    isWhitespace()
-是否是一个空白字符
-        4    isUpperCase()
-是否是大写字母
-        5    isLo</div>
+        next() 与 nextLine() 区别
+        next():
+            1、一定要读取到有效字符后才可以结束输入。
+            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
+            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
+        next() 不能得到带有空格的字符串。
+        nextLine()：
+            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
+            2、可以获得空白。
+        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：</div>
         </div>
       </a>
 
