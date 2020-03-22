@@ -198,78 +198,6 @@ explode = [0,0,0.08,0]
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/08-matplotlib颜色与样式/">
-        <p class="h4 index-header">数据分析08：matplotlib颜色与样式</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">import numpy as np
-import matplotlib.pyplot as plt
-
-&#39;&#39;&#39;
-    颜色：
-    - 八种内置默认颜色， 缩写
-        b   :blue
-        g   :green
-        r   :red
-        c   :cyan
-        m   :magenta
-        y   :yellow
-        k   :black
-        w   :white
-    - 其它颜色的表示方法
-        灰色阴影
-        html   十六进制
-        RGB    元组
-
-&#39;&#39;&#39;
-
-y = np.arange(1,5)
-# 内置颜色表示
-plt.plot(y,color =&#39;g&#39;)
-# 灰度表示方法
-plt.plot(y+1,color = &#39;0.5&#39;)
-# html 十六进制
-plt.plot(y+2,color = &#39;#ff00ff&#39;)
-# RGB 元组
-plt.</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/categories/Python3">Python3</a>&nbsp;
-          
-            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/tags/Python3">Python3</a>&nbsp;
-          
-            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/07-matplotlib箱线图/">
         <p class="h4 index-header">数据分析07：matplotlib箱线图</p>
         
@@ -372,6 +300,78 @@ import matplotlib.pyplot as plt
 &#39;&#39;&#39;
     随机生成2000个数据，均值为10， 方差3；
     绘制两个直方图， bins =</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/08-matplotlib颜色与样式/">
+        <p class="h4 index-header">数据分析08：matplotlib颜色与样式</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
+
+&#39;&#39;&#39;
+    颜色：
+    - 八种内置默认颜色， 缩写
+        b   :blue
+        g   :green
+        r   :red
+        c   :cyan
+        m   :magenta
+        y   :yellow
+        k   :black
+        w   :white
+    - 其它颜色的表示方法
+        灰色阴影
+        html   十六进制
+        RGB    元组
+
+&#39;&#39;&#39;
+
+y = np.arange(1,5)
+# 内置颜色表示
+plt.plot(y,color =&#39;g&#39;)
+# 灰度表示方法
+plt.plot(y+1,color = &#39;0.5&#39;)
+# html 十六进制
+plt.plot(y+2,color = &#39;#ff00ff&#39;)
+# RGB 元组
+plt.</div>
         </div>
       </a>
 
@@ -649,6 +649,63 @@ Repository —定义操作，操作实体类中的数据表
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/SpringBoot启动自定义方法/">
+        <p class="h4 index-header">SpringBoot启动自定义方法</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.gzy.demo.NettyClient;
+
+@Component
+public class MyStart1 implements CommandLineRunner{
+
+    @Override
+    public void run(String... args) throws Exception {
+        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
+    }
+}
+
+
+二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          
+            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/SpringBoot-WebSocket 聊天室/">
         <p class="h4 index-header">SpringBoot-WebSocket聊天室</p>
         
@@ -700,63 +757,6 @@ import java.util.concurrent.CopyOnWriteArraySet;
             <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
             <a href="/tags/WebSocket">WebSocket</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/SpringBoot启动自定义方法/">
-        <p class="h4 index-header">SpringBoot启动自定义方法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
-
-import com.gzy.demo.NettyClient;
-
-@Component
-public class MyStart1 implements CommandLineRunner{
-
-    @Override
-    public void run(String... args) throws Exception {
-        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
-    }
-}
-
-
-二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
-import org.springframework.boot</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          
-            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
         
       </div>
