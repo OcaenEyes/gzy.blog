@@ -133,28 +133,40 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-Scanner类/">
-        <p class="h4 index-header">Java-Scanner类</p>
+      <a href="/2016/03/02/Java-Character类/">
+        <p class="h4 index-header">Java-Character类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-Scanner类import java.util.Scanner;
+          <div class="index-text mb-1">Java-Character类public class CharacterDemo {
+    // 对单个字符进行操作
 
-public class ScannerDemo {
-    //Scanner类 获取用户的输入
     /*
-        next() 与 nextLine() 区别
-        next():
-            1、一定要读取到有效字符后才可以结束输入。
-            2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。
-            3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。
-        next() 不能得到带有空格的字符串。
-        nextLine()：
-            1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。
-            2、可以获得空白。
-        如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取：</div>
+        转义序列    描述
+        \t    在文中该处插入一个tab键
+        \b    在文中该处插入一个后退键
+        \n    在文中该处换行
+        \r    在文中该处插入回车
+        \f    在文中该处插入换页符
+        \&#39;    在文中该处插入单引号
+        \&quot;    在文中该处插入双引号
+        \\    在文中该处插入反斜杠
+     */
+
+    //字符方法
+    /*
+        序号    方法与描述
+        1    isLetter()
+是否是一个字母
+        2    isDigit()
+是否是一个数字字符
+        3    isWhitespace()
+是否是一个空白字符
+        4    isUpperCase()
+是否是大写字母
+        5    isLo</div>
         </div>
       </a>
 
@@ -182,30 +194,36 @@ public class ScannerDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-FileStreamIO/">
-        <p class="h4 index-header">Java-FileStreamIO</p>
+      <a href="/2016/03/02/Java循环结构/">
+        <p class="h4 index-header">Java循环结构</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
+          <div class="index-text mb-1">Java循环结构public class LoopStructure {
+    /*
+        while 循环
+        do…while 循环
+        for 循环
+     */
 
-public class StreamFileIODemo {
-    public void printChar() throws IOException {
-        //使用BufferedReader从控制台读取输入
-        char c;
-        //使用System.in 创建BufferedReader
-        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println(&quot;输入字符，按Q键退出&quot;);
-        do {
-            //read() 读取字符
-            c = (char) br1.read();
-            System.out.println(c);
-        } while (c != &#39;Q&#39;);
-    }
+    public static void main(String[] args) {
+        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
+        System.out.println(&quot;while 循环&quot;);
+        int x = 10;
+        while (x &lt; 20) {
+            System.out.println(x);
+            x++;
+        }
 
-    pu</div>
+        // do…while 循环，至少执行一次
+        /*
+            do {
+                //代码语句
+            }while(布尔表达式);
+         */
+        System.o</div>
         </div>
       </a>
 
@@ -288,55 +306,6 @@ public class StreamFileIODemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java基本数据类型/">
-        <p class="h4 index-header">Java基本数据类型</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java基本数据类型public class DataType {
-    /*
-        内置数据类型
-        引用数据类型
-     */
-    public static void main(String[] args) {
-        // byte
-        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);
-        System.out.println(&quot;包装类：java.lang.Byte&quot;);
-        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);
-        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);
-        System.out.println();
-
-        // short
-        System.out.println</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java对象和类/">
         <p class="h4 index-header">Java对象和类</p>
         
@@ -374,6 +343,55 @@ public class StreamFileIODemo {
         }
 
         void sle</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java基本数据类型/">
+        <p class="h4 index-header">Java基本数据类型</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java基本数据类型public class DataType {
+    /*
+        内置数据类型
+        引用数据类型
+     */
+    public static void main(String[] args) {
+        // byte
+        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);
+        System.out.println(&quot;包装类：java.lang.Byte&quot;);
+        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);
+        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);
+        System.out.println();
+
+        // short
+        System.out.println</div>
         </div>
       </a>
 
