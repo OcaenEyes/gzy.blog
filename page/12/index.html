@@ -133,35 +133,146 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java条件语句/">
-        <p class="h4 index-header">Java条件语句</p>
+      <a href="/2016/07/20/电商产品网站成交总额/">
+        <p class="h4 index-header">电商产品网站成交总额</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java条件语句public class IfElse {
-    /*
-        条件语句 - if...else
-     */
-    public static void main(String[] args) {
-        int x = 10;
-        /*
-            if(布尔表达式){
-                //如果布尔表达式的值为true
-            }else{
-                //如果布尔表达式的值为false
-            }
-         */
-        if (x &lt; 20) {
-            System.out.println(&quot;这是一个if判断语句&quot;);
-        } else {
-            System.out.println(&quot;这是一个else判断语句&quot;);
-        }
+          <div class="index-text mb-1">电商产品网站成交总额
+用户数
+访客数
+自然流量
+营销流量
 
-        /*
-            if(布尔表达式 1){
-                </div>
+
+转化率
+目的一 拉新
+品牌认知
+转入
+
+
+购买考虑
+实现
+转出
+
+
+
+
+目的二 促进复购
+购买尝试
+复购
+沉睡
+流失
+
+
+多次购买
+复购
+沉睡
+流失
+
+
+忠诚用户
+复购
+沉睡
+流失
+
+
+
+
+目的三 推荐代购
+
+
+
+
+客单价
+产品单价
+前台价格
+智慧定价
+
+
+优惠价格
+促销建议
+
+
+
+
+关联产品数
+套装促销
+商品关联度
+商品热度
+
+
+
+
+
+
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-07-20&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+          
+            <a href="/categories/%E7%94%B5%E5%95%86">电商</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E7%94%B5%E5%95%86">电商</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java-Character类/">
+        <p class="h4 index-header">Java-Character类</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java-Character类public class CharacterDemo {
+    // 对单个字符进行操作
+
+    /*
+        转义序列    描述
+        \t    在文中该处插入一个tab键
+        \b    在文中该处插入一个后退键
+        \n    在文中该处换行
+        \r    在文中该处插入回车
+        \f    在文中该处插入换页符
+        \&#39;    在文中该处插入单引号
+        \&quot;    在文中该处插入双引号
+        \\    在文中该处插入反斜杠
+     */
+
+    //字符方法
+    /*
+        序号    方法与描述
+        1    isLetter()
+是否是一个字母
+        2    isDigit()
+是否是一个数字字符
+        3    isWhitespace()
+是否是一个空白字符
+        4    isUpperCase()
+是否是大写字母
+        5    isLo</div>
         </div>
       </a>
 
@@ -246,28 +357,34 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java异常处理/">
-        <p class="h4 index-header">Java异常处理</p>
+      <a href="/2016/03/02/Java-StringBuffer/">
+        <p class="h4 index-header">Java-StringBuffer</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
+          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
+    //StringBuffer  线程安全
+    //StringBuilder 速度快
 
-public class ExceptionDemo {
     /*
-        三类异常
-        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
-        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
-        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
+        序号    方法描述
+1    public StringBuffer append(String s)
+将指定的字符串追加到此字符序列。
+2    public StringBuffer reverse()
+ 将此字符序列用其反转形式取代。
+3    public delete(int start, int end)
+移除此序列的子字符串中的字符。
+4    public insert(int offset, int i)
+将 int 参数的字符串表示形式插入此序列中。
+5    replace(int start, int end, String str)
+使用给定 String 中的字符替换此序列的子字符串中的字符。
      */
 
     /*
-       内置异常类
-          非检查性异常
-            异常                                描述
-            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
+        序号    方法描述
+1    int capacity()</div>
         </div>
       </a>
 
@@ -295,33 +412,35 @@ public class ExceptionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java数组/">
-        <p class="h4 index-header">Java数组</p>
+      <a href="/2016/03/02/Java条件语句/">
+        <p class="h4 index-header">Java条件语句</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java数组public class ArrayDemo {
-    //声明数组
-    // 数据类型[] 数组名称;  dataType[] arrayName;
+          <div class="index-text mb-1">Java条件语句public class IfElse {
+    /*
+        条件语句 - if...else
+     */
+    public static void main(String[] args) {
+        int x = 10;
+        /*
+            if(布尔表达式){
+                //如果布尔表达式的值为true
+            }else{
+                //如果布尔表达式的值为false
+            }
+         */
+        if (x &lt; 20) {
+            System.out.println(&quot;这是一个if判断语句&quot;);
+        } else {
+            System.out.println(&quot;这是一个else判断语句&quot;);
+        }
 
-    //创建数组
-    // 数据名称 = new dataType[arraySize];
-
-    //dataType[] arrayName = {value0,value1,value2,...,valuek};
-    public static void main(String[] args){
-        //数组大小
-        int size =4;
-        //定义数组
-        double[] TestList = new double[size];
-        TestList[0] = 3.2;
-        TestList[1] = 2.6;
-        TestList[2] = 4.7;
-        TestList[3] = 5.6;
-
-        double total =0;
-        for (int i=0; i&</div>
+        /*
+            if(布尔表达式 1){
+                </div>
         </div>
       </a>
 
@@ -402,85 +521,33 @@ public class ExceptionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java正则表达式/">
-        <p class="h4 index-header">Java正则表达式</p>
+      <a href="/2016/03/02/Java数组/">
+        <p class="h4 index-header">Java数组</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java正则表达式import java.util.regex.*;
-public class RegularExpressionDemo {
-    /*
-        Pattern 类：
-        pattern 对象是一个正则表达式的编译表示。
-        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。
-        该方法接受一个正则表达式作为它的第一个参数。
+          <div class="index-text mb-1">Java数组public class ArrayDemo {
+    //声明数组
+    // 数据类型[] 数组名称;  dataType[] arrayName;
 
-        Matcher 类：
-        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。
-        与Pattern 类一样，Matcher 也没有公共构造方法。
-        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
+    //创建数组
+    // 数据名称 = new dataType[arraySize];
 
-        PatternSyntaxException：
-        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
-     */
-    /*</div>
-        </div>
-      </a>
+    //dataType[] arrayName = {value0,value1,value2,...,valuek};
+    public static void main(String[] args){
+        //数组大小
+        int size =4;
+        //定义数组
+        double[] TestList = new double[size];
+        TestList[0] = 3.2;
+        TestList[1] = 2.6;
+        TestList[2] = 4.7;
+        TestList[3] = 5.6;
 
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-StringBuffer/">
-        <p class="h4 index-header">Java-StringBuffer</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-StringBufferpublic class StringBufferAndStringBuilderDemo {
-    //StringBuffer  线程安全
-    //StringBuilder 速度快
-
-    /*
-        序号    方法描述
-1    public StringBuffer append(String s)
-将指定的字符串追加到此字符序列。
-2    public StringBuffer reverse()
- 将此字符序列用其反转形式取代。
-3    public delete(int start, int end)
-移除此序列的子字符串中的字符。
-4    public insert(int offset, int i)
-将 int 参数的字符串表示形式插入此序列中。
-5    replace(int start, int end, String str)
-使用给定 String 中的字符替换此序列的子字符串中的字符。
-     */
-
-    /*
-        序号    方法描述
-1    int capacity()</div>
+        double total =0;
+        for (int i=0; i&</div>
         </div>
       </a>
 
@@ -653,7 +720,7 @@ public class StreamFileIODemo {
 
   <nav aria-label="index posts navigation">
     <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/11/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="extend next" rel="next" href="/page/13/"><i class="fas fa-angle-double-right"></i></a>
+      <a class="extend prev" rel="prev" href="/page/11/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/13/"><i class="fas fa-angle-double-right"></i></a>
     </span>
   </nav>
   
