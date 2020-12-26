@@ -133,31 +133,36 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-SwitchCase/">
-        <p class="h4 index-header">Java-SwitchCase语句</p>
+      <a href="/2016/03/02/Java循环结构/">
+        <p class="h4 index-header">Java循环结构</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-SwitchCase语句public class SwitchCase {
-    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支
-    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。
+          <div class="index-text mb-1">Java循环结构public class LoopStructure {
     /*
-        switch(expression){
-            case value :
-                //语句
-                break; //可选
-            case value :
-                //语句
-                break; //可选
-            //你可以有任意数量的case语句
-            default : //可选
-                //语句   不需要break
-        }
+        while 循环
+        do…while 循环
+        for 循环
      */
 
-    public static void main(String[]</div>
+    public static void main(String[] args) {
+        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
+        System.out.println(&quot;while 循环&quot;);
+        int x = 10;
+        while (x &lt; 20) {
+            System.out.println(x);
+            x++;
+        }
+
+        // do…while 循环，至少执行一次
+        /*
+            do {
+                //代码语句
+            }while(布尔表达式);
+         */
+        System.o</div>
         </div>
       </a>
 
@@ -243,6 +248,116 @@ H    一天中的小</div>
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java数组/">
+        <p class="h4 index-header">Java数组</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java数组public class ArrayDemo {
+    //声明数组
+    // 数据类型[] 数组名称;  dataType[] arrayName;
+
+    //创建数组
+    // 数据名称 = new dataType[arraySize];
+
+    //dataType[] arrayName = {value0,value1,value2,...,valuek};
+    public static void main(String[] args){
+        //数组大小
+        int size =4;
+        //定义数组
+        double[] TestList = new double[size];
+        TestList[0] = 3.2;
+        TestList[1] = 2.6;
+        TestList[2] = 4.7;
+        TestList[3] = 5.6;
+
+        double total =0;
+        for (int i=0; i&</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java条件语句/">
+        <p class="h4 index-header">Java条件语句</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java条件语句public class IfElse {
+    /*
+        条件语句 - if...else
+     */
+    public static void main(String[] args) {
+        int x = 10;
+        /*
+            if(布尔表达式){
+                //如果布尔表达式的值为true
+            }else{
+                //如果布尔表达式的值为false
+            }
+         */
+        if (x &lt; 20) {
+            System.out.println(&quot;这是一个if判断语句&quot;);
+        } else {
+            System.out.println(&quot;这是一个else判断语句&quot;);
+        }
+
+        /*
+            if(布尔表达式 1){
+                </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java正则表达式/">
         <p class="h4 index-header">Java正则表达式</p>
         
@@ -294,28 +409,28 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java异常处理/">
-        <p class="h4 index-header">Java异常处理</p>
+      <a href="/2016/03/02/Java基本数据类型/">
+        <p class="h4 index-header">Java基本数据类型</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
-
-public class ExceptionDemo {
+          <div class="index-text mb-1">Java基本数据类型public class DataType {
     /*
-        三类异常
-        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
-        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
-        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
+        内置数据类型
+        引用数据类型
      */
+    public static void main(String[] args) {
+        // byte
+        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);
+        System.out.println(&quot;包装类：java.lang.Byte&quot;);
+        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);
+        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);
+        System.out.println();
 
-    /*
-       内置异常类
-          非检查性异常
-            异常                                描述
-            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
+        // short
+        System.out.println</div>
         </div>
       </a>
 
@@ -380,55 +495,6 @@ public class ExceptionDemo {
         }
 
         void sle</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java基本数据类型/">
-        <p class="h4 index-header">Java基本数据类型</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java基本数据类型public class DataType {
-    /*
-        内置数据类型
-        引用数据类型
-     */
-    public static void main(String[] args) {
-        // byte
-        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);
-        System.out.println(&quot;包装类：java.lang.Byte&quot;);
-        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);
-        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);
-        System.out.println();
-
-        // short
-        System.out.println</div>
         </div>
       </a>
 
@@ -555,57 +621,6 @@ public class ExceptionDemo {
             <a href="/tags/%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4">产品思维</a>&nbsp;
           
             <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/01/01/Markdown数学公式语法/">
-        <p class="h4 index-header">Markdown数学公式语法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Markdown数学公式语法行内与独行
-行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$
-独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$
-
-上标、下标与组合
-上标符号，符号：^，如：$x^4$
-下标符号，符号：_，如：$x_1$
-组合符号，符号：{}，如：${16}{8}O{2+}{2}$
-
-汉字、字体与格式
-汉字形式，符号：\mbox{}，如：$V_{\mbox{初始}}$
-字体控制，符号：\displaystyle，如：$\displaystyle \frac{x+y}{y+z}$
-下划线符号，符号：\underline，如：$\underline{x+y}$
-标签，符号\tag{数字}，如：$\tag{11}$
-上大括号，符号：\overbrace{算式}，如：$\overbrace{a+b+c+d}^{2.0}$
-下大括号，符号：\underbrace{算式}，如：$a+\underbrace{b+c}_{1.0}+d$
-上位符号，符号：\stacrel{上位符号}{基位符号}，如：$\vec{x}\stackrel{\m</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-01-01&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Markdownd">Markdownd</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Markdown">Markdown</a>&nbsp;
           
         
       </div>
