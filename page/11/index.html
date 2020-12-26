@@ -375,6 +375,79 @@ AUTO_INCREMENT
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
+        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
+登录/退出MySQL注意：
+​    1、命令行结束符号使用英文分号;   或者 \g
+​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
+​    3、\c可以取消当前命令的执行
+登录
+mysql -uroot -p
+mysql -uroot -proot
+mysql -hlocalhost -uroot -p -P3306
+登录同时修改命令提示符
+mysql -uroot -p –prompt=命令提示符
+
+
+获取版本号
+mysql -V
+mysql –version
+
+
+登录同时打开指定数据库
+mysql -uroot -p -D db_name
+
+
+
+退出
+exit
+quit
+\q
+ctrl + c
+
+SQL语句语法规范
+常用MySQL的关键字需要大写
+库名、表名、字段名称等使用小写
+SQL语句支持折行操作，拆分的时候不能把完整单词拆开
+数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
+
+常用SQL语句
+SELECT USER()   </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2017/10/25/MySQL深入浅出--数据库相关操作/">
         <p class="h4 index-header">MySQL深入浅出--数据库相关操作</p>
         
@@ -423,79 +496,6 @@ DROP DATABASE db_name;
 
 如果数据库存在则删除
 DROP DATABASE [IF EXIS</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Linux">Linux</a>&nbsp;
-          
-            <a href="/categories/MySQL">MySQL</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/MySQL">MySQL</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
-        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
-登录/退出MySQL注意：
-​    1、命令行结束符号使用英文分号;   或者 \g
-​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
-​    3、\c可以取消当前命令的执行
-登录
-mysql -uroot -p
-mysql -uroot -proot
-mysql -hlocalhost -uroot -p -P3306
-登录同时修改命令提示符
-mysql -uroot -p –prompt=命令提示符
-
-
-获取版本号
-mysql -V
-mysql –version
-
-
-登录同时打开指定数据库
-mysql -uroot -p -D db_name
-
-
-
-退出
-exit
-quit
-\q
-ctrl + c
-
-SQL语句语法规范
-常用MySQL的关键字需要大写
-库名、表名、字段名称等使用小写
-SQL语句支持折行操作，拆分的时候不能把完整单词拆开
-数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
-
-常用SQL语句
-SELECT USER()   </div>
         </div>
       </a>
 
