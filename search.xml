@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[自然语言的几个重要模型]]></title>
+    <title><![CDATA[自然语言的几个重要模型-学习记录]]></title>
     <url>%2F2020%2F04%2F01%2F%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E7%9A%84%E5%87%A0%E4%B8%AA%E9%87%8D%E8%A6%81%E9%BB%98%E5%86%99%2F</url>
-    <content type="text"><![CDATA[自然语言的几个重要模型 循环神经网络 (序列模型序列依赖问题) 双向循环神经网络（输入序列正向和反向依赖问题） 深度双向循环神经网络 LSTM（梯度消失问题） GRU text CNN（一维卷积和池化） seq2seq（序列到序列问题） Attention（decoder对encoder输入序列注意力问题，从输入获取可用信息） Transform（对输入的序列分成q检索项 k键项 v值项进行计算，矩阵并行计算） 语言预训练方法ELMO （使用双向rnn组合中间层权重） 语言预训练方法BERT ERNIE （使用transform encoder部分无需标签，ERNIE主要处理中文场景按词mask） 语言预训练方法GPT （使用transform decoder部分） 1.循环神经网络 使用隐藏层保留之前时间步的信息 梯度裁剪 处理梯度爆炸问题，即超出阈值怎重置为阈值。因为在RNN中目标函数有关隐藏状态的梯度会因为时间步数较大或时间步较小而变大。 2.双向循环神经网络 （橘色的实线和虚线分别是前向传递和后向传递的过程 ） 通常RNN输入序列是按顺序输入，但此时就会丢失从后往前的数据。双向RNN就是前后各有一个网络，对各自输出的向量进行整合。 3.深度双向循环神经网络 叠加多层双向RNN 4.LSTM 包含了三个门，输入门 输出门 遗忘门 缓解了梯度消失的问题 5.GRU 包含重置门和更新门 缓解了梯度消失的问题 6.textCNN 如上图输入每个单词用5维词向量表示，即输入的通道是5. 输入宽度是7. 红色框卷积核宽是4 所以得到的输出向量长度是7-4+1=4，再对通道做池化得到最后的向量进行拼接 再使用全连接层进行业务逻辑处理例如分类 使用一维卷积来捕获位置相近词的关联 时序最大池化层 7.seq2seq 序列到序列模型 使用Encoder编码器生成序列到向量。Decoder解码器从向量生成文本 encoder的输出是c=f(h1, h2…)，在计算y输出时使用了相同的背景变量c。（但例如在翻译场景输出是关联到输入的某个词的，所以引入了带注意力机制的seq2seq） 输出y是一个概率模型（例如输出y1可能有 “越” 50%可能性、“跃”10%可能性、……）选择哪一个值有三种方式。 贪婪搜索 只取概率最大的 ，但是这种情况并非能取到全局最优解。因为前几个词选择直接影响到后面几个词。 穷举搜索 量太大了。。 束搜索 束宽k 每次取前k个 最后在候选取分最高得。 8.Attention注意力机制 如上图可以看出decoder的输出受到上一时刻输出、上一时刻隐含层变量和当前时间步背景向量影响。背景向量即所有编码器隐含层的加权平均得到。ci即为背景向量。 ci最终是由解码器在i-1时刻的隐藏状态和编码器在j时刻的隐藏状态得到，具体怎么组合原文中提供了三种方法（第一种类似直接求内积..）： 得到了输入所需要得上一时刻输出、上一时刻隐含层变量和当前时间步背景向量后，接下来就是如何组合这三个输入得到输出。使用门控循环单元进行组合。 9.Transform变换器模型不同于RNN的架构（下一步计算都依赖前一步的输出，无法并行）。使用矩阵运算得到计算效率更高的模型。 最终的公式： 由上图得到对于输入x分别通过三个不同的矩阵得到q（检索项）k（键值项）v（值项）。q1项分别与其他几个键值项点乘再得到所有q1计算得到的值求softmax，再和v值项相乘求和。同样得得到q2、q3、q4得出结果。该计算得过程是并行的。 多头注意力机制即每个x输入将会输出多组q k v如下图，计算规则基本一致。 通过上述描述可以看出在计算过程中没有词的位置信息。所以在进行x-&gt;a的变换过程中，将a增加位置信息编码。 完整Transform 10.语言模型预训练方法ELMO elmo使用双向rnn对文本进行训练得到中间层向量抽取后进行组合。组合的参数也是学出来了。原论文中r’n’n部分使用lstm实现 11.语言模型预训练方法BERT Bert使用transform的encoder部分，所以可以进行无标签学习 bert训练方法一 有15%的字会被MASK隐藏，这样学出来的被遮挡的词就会有相似的词向量。 bert训练方法二 句子是否是相邻的判断。用SEP进行链接 ERNIE 由上述可以看出Bert是对字进行MASK，对于中文场景进行的词MASK更合理，如下图。目前百度paddlepaddle已经发布开源版本。 12.语言模型预训练方法GPT 使用transform的decoder部分。 目前最大模型是1.5G 但是没有release最终版本 13.词向量计算相关模型word2vec和glove fasttext]]></content>
+    <content type="text"><![CDATA[自然语言的几个重要模型-学习记录 循环神经网络 (序列模型序列依赖问题) 双向循环神经网络（输入序列正向和反向依赖问题） 深度双向循环神经网络 LSTM（梯度消失问题） GRU text CNN（一维卷积和池化） seq2seq（序列到序列问题） Attention（decoder对encoder输入序列注意力问题，从输入获取可用信息） Transform（对输入的序列分成q检索项 k键项 v值项进行计算，矩阵并行计算） 语言预训练方法ELMO （使用双向rnn组合中间层权重） 语言预训练方法BERT ERNIE （使用transform encoder部分无需标签，ERNIE主要处理中文场景按词mask） 语言预训练方法GPT （使用transform decoder部分） 1.循环神经网络 使用隐藏层保留之前时间步的信息 梯度裁剪 处理梯度爆炸问题，即超出阈值怎重置为阈值。因为在RNN中目标函数有关隐藏状态的梯度会因为时间步数较大或时间步较小而变大。 2.双向循环神经网络 （橘色的实线和虚线分别是前向传递和后向传递的过程 ） 通常RNN输入序列是按顺序输入，但此时就会丢失从后往前的数据。双向RNN就是前后各有一个网络，对各自输出的向量进行整合。 3.深度双向循环神经网络 叠加多层双向RNN 4.LSTM 包含了三个门，输入门 输出门 遗忘门 缓解了梯度消失的问题 5.GRU 包含重置门和更新门 缓解了梯度消失的问题 6.textCNN 如上图输入每个单词用5维词向量表示，即输入的通道是5. 输入宽度是7. 红色框卷积核宽是4 所以得到的输出向量长度是7-4+1=4，再对通道做池化得到最后的向量进行拼接 再使用全连接层进行业务逻辑处理例如分类 使用一维卷积来捕获位置相近词的关联 时序最大池化层 7.seq2seq 序列到序列模型 使用Encoder编码器生成序列到向量。Decoder解码器从向量生成文本 encoder的输出是c=f(h1, h2…)，在计算y输出时使用了相同的背景变量c。（但例如在翻译场景输出是关联到输入的某个词的，所以引入了带注意力机制的seq2seq） 输出y是一个概率模型（例如输出y1可能有 “越” 50%可能性、“跃”10%可能性、……）选择哪一个值有三种方式。 贪婪搜索 只取概率最大的 ，但是这种情况并非能取到全局最优解。因为前几个词选择直接影响到后面几个词。 穷举搜索 量太大了。。 束搜索 束宽k 每次取前k个 最后在候选取分最高得。 8.Attention注意力机制 如上图可以看出decoder的输出受到上一时刻输出、上一时刻隐含层变量和当前时间步背景向量影响。背景向量即所有编码器隐含层的加权平均得到。ci即为背景向量。 ci最终是由解码器在i-1时刻的隐藏状态和编码器在j时刻的隐藏状态得到，具体怎么组合原文中提供了三种方法（第一种类似直接求内积..）： 得到了输入所需要得上一时刻输出、上一时刻隐含层变量和当前时间步背景向量后，接下来就是如何组合这三个输入得到输出。使用门控循环单元进行组合。 9.Transform变换器模型不同于RNN的架构（下一步计算都依赖前一步的输出，无法并行）。使用矩阵运算得到计算效率更高的模型。 最终的公式： 由上图得到对于输入x分别通过三个不同的矩阵得到q（检索项）k（键值项）v（值项）。q1项分别与其他几个键值项点乘再得到所有q1计算得到的值求softmax，再和v值项相乘求和。同样得得到q2、q3、q4得出结果。该计算得过程是并行的。 多头注意力机制即每个x输入将会输出多组q k v如下图，计算规则基本一致。 通过上述描述可以看出在计算过程中没有词的位置信息。所以在进行x-&gt;a的变换过程中，将a增加位置信息编码。 完整Transform 10.语言模型预训练方法ELMO elmo使用双向rnn对文本进行训练得到中间层向量抽取后进行组合。组合的参数也是学出来了。原论文中r’n’n部分使用lstm实现 11.语言模型预训练方法BERT Bert使用transform的encoder部分，所以可以进行无标签学习 bert训练方法一 有15%的字会被MASK隐藏，这样学出来的被遮挡的词就会有相似的词向量。 bert训练方法二 句子是否是相邻的判断。用SEP进行链接 ERNIE 由上述可以看出Bert是对字进行MASK，对于中文场景进行的词MASK更合理，如下图。目前百度paddlepaddle已经发布开源版本。 12.语言模型预训练方法GPT 使用transform的decoder部分。 目前最大模型是1.5G 但是没有release最终版本 13.词向量计算相关模型word2vec和glove fasttext]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Natural Language Processing</category>
@@ -507,6 +507,17 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[php即时通讯-WebSocket]]></title>
+    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket%2F</url>
+    <content type="text"><![CDATA[WebSocket 一个应用层协议 长链接 主流即时通讯协议]]></content>
+      <categories>
+        <category>php</category>
+      </categories>
+      <tags>
+        <tag>php</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[php即时通讯-http]]></title>
     <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-http%2F</url>
     <content type="text"><![CDATA[HTTP 一个应用层协议 Header + Body组成 比TCP更高级 短链接]]></content>
@@ -521,17 +532,6 @@
     <title><![CDATA[php即时通讯-socket]]></title>
     <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-socket%2F</url>
     <content type="text"><![CDATA[Socket 一个工具，一个接口 封装了TCP/IP 协议 建立长链接的基础]]></content>
-      <categories>
-        <category>php</category>
-      </categories>
-      <tags>
-        <tag>php</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[php即时通讯-WebSocket]]></title>
-    <url>%2F2019%2F02%2F22%2Fphp%E5%8D%B3%E6%97%B6%E9%80%9A%E8%AE%AF-WebSocket%2F</url>
-    <content type="text"><![CDATA[WebSocket 一个应用层协议 长链接 主流即时通讯协议]]></content>
       <categories>
         <category>php</category>
       </categories>
@@ -563,9 +563,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---数据类型]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
-    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
+    <title><![CDATA[redis学习---安装入门]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
+    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -575,9 +575,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[redis学习---安装入门]]></title>
-    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0--%E5%AE%89%E8%A3%85%E5%85%A5%E9%97%A8%2F</url>
-    <content type="text"><![CDATA[CentOS下安装启动# 下载安装fedora的仓库 yum install epel-release # 安装redis yum install redis # 开启redis服务 service redis start # 可选项，修改可访问的域名IP，修改保护模式为no vi /etc/redis.conf 注释掉 bind 127.0.0.1 改 protected 为 no # 重启redis服务 service redis restart # 根据需要可，修改防火墙，增加6379端口 firewall-cmd --zone=public --add-port=6379/tcp -permanent (-permanent,长期生效) # 查询端口 firewall-cmd --zone-public --query-port=6379/tcp # 连接redis redis-cli -h host -p port -a password]]></content>
+    <title><![CDATA[redis学习---数据类型]]></title>
+    <url>%2F2019%2F01%2F22%2Fredis%E5%AD%A6%E4%B9%A0-%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%2F</url>
+    <content type="text"><![CDATA[redis数据类型string字符串]]></content>
       <categories>
         <category>Linux</category>
         <category>redis</category>
@@ -675,9 +675,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[计算广告-知识储备]]></title>
-    <url>%2F2019%2F01%2F02%2F%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A-%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87%2F</url>
-    <content type="text"><![CDATA[计算广告-知识储备1、信息检索1.1、倒排索引​ 核心目的，将从大量文档中查找包含某些词的文档集合，用O(1)的时间复杂度完成。 ​ 基本操作： ​ 1、向索引中加入一个新文档 ​ 2、给定一个有多个关键词组成的查询时，返回对应的文档集合 1.2、向量空间模型​ 向量空间模型（Vector Space Model ，VSM），信息检索中最基础且最重要的文档相似度度量方法之一。 ​ 核心： ​ 1、文档的表示方法 ​ 用各个关键词（term）在文档中强度组成的矢量来表示该文档$$D=(X_1,X_2,…X_m)^T$$ ​ 2、相似度计算方法 2、最优化方法2.1、下降单纯型法2.2、梯度方法2.3、拟牛顿方法2.4、Trust-Region方法2.5、带约束 优化和拉格朗日法3、统计机器学习3.1、最大熵原理3.2、指数族分布3.3、混合模型和EM算法3.4、贝叶斯学习3.5、共轭先验3.6、经验贝叶斯3.7、变分法]]></content>
+    <title><![CDATA[计算广告-基础]]></title>
+    <url>%2F2019%2F01%2F02%2F%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A-%E5%9F%BA%E7%A1%80%2F</url>
+    <content type="text"><![CDATA[计算广告-基础1、在线广告技术特点技术和计算导向 ​ 数字媒体的特点使在线广告可以精细的用户定向 ​ 技术又使广告决策和交易朝着计算驱动的方向发展 效果的可衡量性 ​ 在同一个时期，点击率的绝对值并没有那么重要；而在一个特定时期不同广告和算法表现出来的差异，才更有 意义 创意和投放方式的标准化 ​ 标准化的驱动力来自受众定向与程序购买 ​ 需求方更关心的是受众人群，创意尺寸的统一化与数据接口的标准化就变得更加重要 媒体概念的多样化 数据驱动的投放决策 ​ 互联网化的根本驱动力是数据的深入加工和利用 2、计算广告的核心问题 计算广告的核心问题，是为一系列用户与环境的组合，找到最合适的广告投放策略以优化整体的投入产出比（ROI） 2.1、在线广告计费模式CPM（Cost per Mile） ​ 按照千次展示计费 CPC（Cost per Click） ​ 按照点击计费 CPS（Cost per Sale）/ CPA（Cost per Action）/ROI ​ 按照销售订单数、转化行为数或投入产出比来计费 ​ 情况一：需求方只按照最后的转化效益来结算 ​ 存在问题： ​ 转化行为并非供给方能控制 ​ 存在广告主故意降低转化率，以低成本赚取大量曝光的可能 ​ 此方式只适合一些垂直广告网络（Vertical Network） CPT（Cost per Time） ​ 针对大品牌广告主特定的活动，将广告位以独占的方式交与某广告主，并按照独占的时间段进行收费 3、计算广告系统架构通常有三个主体部分组成 在线的高并发投放引擎 离线的分布式数据处理平台 在线实时反馈的流式处理平台 按照功能划分模块 广告投放机 ​ Ad Server，与其他模块交互，并将其串联，完成在线广告的投放。 广告检索 ​ Ad Index 、Ad retrieval ​ 接收广告投放信息，建立倒排索引，以及在线时根据用户与上下文标签从索引中查找广告候选。 ​ 检索技术也是大规模计算广告系统的基础。 广告排序 ​ Ad ranking 、Click modeling ​ 广告效果优化的关键。 ​ 关键技术，==在于离线分布式计算平台上的海量数据支持 点击率预测模型的训练。== 数据高速公路 ​ Data highway ​ 将在线投放的数据准实时传输到离线分布式计算平台 与 流式计算平台，供后续处理和建模使用。 用户日志生成 ​ Session log generation ​ 从个渠道收集日志 商业智能 ​ Business Intelligence ​ 包含ETL、dashboard 、cube ​ 最终的数据处理和分析流程的总括。 行为定向 ​ 包含结构化标签库（Structural-label base）、Audience targeting 、以及User attributes的cache ​ 挖掘用户日志，根据日志中的行为给用户打上结构化的标签 上下文定向 ​ 包括半在线页面抓去（Near-line page fetcher） 和 Page attributes的cache ​ 与行为定向互相配合，负责为上下文打标签 定制化用户划分 ​ Customized audience segmentation ​ 根据广告主的需求逻辑划分用户群 在线行为反馈 ​ 一些需准实时完成的一些任务 ​ 短时用户行为标签、短时用户点击反馈 ​ 反作弊（Anti-spam） 与 计价（Billing） 广告管理系统 ​ 面向用户的产品，由广告的操作者进行配置 实时竞价接口 ​ 广告交易市场实时向DSP发起广告询价请求]]></content>
       <categories>
         <category>广告产品</category>
         <category>计算广告</category>
@@ -688,9 +688,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[计算广告-基础]]></title>
-    <url>%2F2019%2F01%2F02%2F%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A-%E5%9F%BA%E7%A1%80%2F</url>
-    <content type="text"><![CDATA[计算广告-基础1、在线广告技术特点技术和计算导向 ​ 数字媒体的特点使在线广告可以精细的用户定向 ​ 技术又使广告决策和交易朝着计算驱动的方向发展 效果的可衡量性 ​ 在同一个时期，点击率的绝对值并没有那么重要；而在一个特定时期不同广告和算法表现出来的差异，才更有 意义 创意和投放方式的标准化 ​ 标准化的驱动力来自受众定向与程序购买 ​ 需求方更关心的是受众人群，创意尺寸的统一化与数据接口的标准化就变得更加重要 媒体概念的多样化 数据驱动的投放决策 ​ 互联网化的根本驱动力是数据的深入加工和利用 2、计算广告的核心问题 计算广告的核心问题，是为一系列用户与环境的组合，找到最合适的广告投放策略以优化整体的投入产出比（ROI） 2.1、在线广告计费模式CPM（Cost per Mile） ​ 按照千次展示计费 CPC（Cost per Click） ​ 按照点击计费 CPS（Cost per Sale）/ CPA（Cost per Action）/ROI ​ 按照销售订单数、转化行为数或投入产出比来计费 ​ 情况一：需求方只按照最后的转化效益来结算 ​ 存在问题： ​ 转化行为并非供给方能控制 ​ 存在广告主故意降低转化率，以低成本赚取大量曝光的可能 ​ 此方式只适合一些垂直广告网络（Vertical Network） CPT（Cost per Time） ​ 针对大品牌广告主特定的活动，将广告位以独占的方式交与某广告主，并按照独占的时间段进行收费 3、计算广告系统架构通常有三个主体部分组成 在线的高并发投放引擎 离线的分布式数据处理平台 在线实时反馈的流式处理平台 按照功能划分模块 广告投放机 ​ Ad Server，与其他模块交互，并将其串联，完成在线广告的投放。 广告检索 ​ Ad Index 、Ad retrieval ​ 接收广告投放信息，建立倒排索引，以及在线时根据用户与上下文标签从索引中查找广告候选。 ​ 检索技术也是大规模计算广告系统的基础。 广告排序 ​ Ad ranking 、Click modeling ​ 广告效果优化的关键。 ​ 关键技术，==在于离线分布式计算平台上的海量数据支持 点击率预测模型的训练。== 数据高速公路 ​ Data highway ​ 将在线投放的数据准实时传输到离线分布式计算平台 与 流式计算平台，供后续处理和建模使用。 用户日志生成 ​ Session log generation ​ 从个渠道收集日志 商业智能 ​ Business Intelligence ​ 包含ETL、dashboard 、cube ​ 最终的数据处理和分析流程的总括。 行为定向 ​ 包含结构化标签库（Structural-label base）、Audience targeting 、以及User attributes的cache ​ 挖掘用户日志，根据日志中的行为给用户打上结构化的标签 上下文定向 ​ 包括半在线页面抓去（Near-line page fetcher） 和 Page attributes的cache ​ 与行为定向互相配合，负责为上下文打标签 定制化用户划分 ​ Customized audience segmentation ​ 根据广告主的需求逻辑划分用户群 在线行为反馈 ​ 一些需准实时完成的一些任务 ​ 短时用户行为标签、短时用户点击反馈 ​ 反作弊（Anti-spam） 与 计价（Billing） 广告管理系统 ​ 面向用户的产品，由广告的操作者进行配置 实时竞价接口 ​ 广告交易市场实时向DSP发起广告询价请求]]></content>
+    <title><![CDATA[计算广告-知识储备]]></title>
+    <url>%2F2019%2F01%2F02%2F%E8%AE%A1%E7%AE%97%E5%B9%BF%E5%91%8A-%E7%9F%A5%E8%AF%86%E5%82%A8%E5%A4%87%2F</url>
+    <content type="text"><![CDATA[计算广告-知识储备1、信息检索1.1、倒排索引​ 核心目的，将从大量文档中查找包含某些词的文档集合，用O(1)的时间复杂度完成。 ​ 基本操作： ​ 1、向索引中加入一个新文档 ​ 2、给定一个有多个关键词组成的查询时，返回对应的文档集合 1.2、向量空间模型​ 向量空间模型（Vector Space Model ，VSM），信息检索中最基础且最重要的文档相似度度量方法之一。 ​ 核心： ​ 1、文档的表示方法 ​ 用各个关键词（term）在文档中强度组成的矢量来表示该文档$$D=(X_1,X_2,…X_m)^T$$ ​ 2、相似度计算方法 2、最优化方法2.1、下降单纯型法2.2、梯度方法2.3、拟牛顿方法2.4、Trust-Region方法2.5、带约束 优化和拉格朗日法3、统计机器学习3.1、最大熵原理3.2、指数族分布3.3、混合模型和EM算法3.4、贝叶斯学习3.5、共轭先验3.6、经验贝叶斯3.7、变分法]]></content>
       <categories>
         <category>广告产品</category>
         <category>计算广告</category>
@@ -1470,9 +1470,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-FileStreamIO]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-FileStreamIO%2F</url>
-    <content type="text"><![CDATA[Java-FileStreamIOimport java.io.*; public class StreamFileIODemo { public void printChar() throws IOException { //使用BufferedReader从控制台读取输入 char c; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符，按Q键退出&quot;); do { //read() 读取字符 c = (char) br1.read(); System.out.println(c); } while (c != &#39;Q&#39;); } public void printStr() throws IOException{ String str1; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;); do { //readLine() 读取字符串 str1 = br1.readLine(); System.out.println(str1); } while (!str1.equals(&quot;end&quot;)); } public void ReadFileDemo() throws IOException{ //FileInputStream 从文件读取数据 // File f = new File(&quot;C:/java/hello&quot;); // InputStream out = new FileInputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public int read(int r)throws IOException{} 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 4 public int read(byte[] r) throws IOException{} 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 5 public int available() throws IOException{} 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 */ System.out.println(&quot;打印输出读取文件demo&quot;); InputStream is1 = new FileInputStream(&quot;test.txt&quot;); int size = is1.available(); for (int i=0;i&lt;size;i++) { System.out.println((char) is1.read()); } } public void WriteFileDemo() throws IOException { //FileOutputStream 创建一个文件向文件中写数据 // File f = new File(&quot;C:/java/hello&quot;); // OutputStream f = new FileOutputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public void write(int w)throws IOException{} 这个方法把指定的字节写到输出流中。 4 public void write(byte[] w) 把指定数组中w.length长度的字节写到OutputStream中。 */ System.out.println(&quot;打印输出写入文件demo&quot;); byte bWrite[] = {11,21,3,38,5}; OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;); for (int i=0;i&lt;bWrite.length;i++){ os1.write(bWrite[i]); } os1.close(); } public void CreateDirs(){ //文件和I/O ，目录 /* File类 - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。 - mkdirs()方法创建一个文件夹和它的所有父文件夹。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;; File dir1 = new File(dirname); // 创建目录 dir1.mkdirs(); } public void ReadDirs(){ /* 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。 如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。 可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;; File dir2 = new File(dirname); if (dir2.isDirectory()){ System.out.println(&quot;目录&quot;+ dirname); String[] s1 = dir2.list(); for (int i=0;i&lt;s1.length;i++){ File f = new File(dirname + &#39;/&#39; + s1[i]); if (f.isDirectory()){ System.out.println(s1[i] + &quot;是一个目录&quot;); }else { System.out.println(s1[i] + &quot;是一个文件&quot;); } } }else { System.out.println(dirname +&quot;不是一个目录&quot;); } } public void DeleteDirs(){ //删除文件/目录 /* 删除文件可以使用 java.io.File.delete() 方法 当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;; File dir3 = new File(dirname); File[] files = dir3.listFiles(); if (files != null){ for (File f: files){ if (!f.isDirectory()){ f.delete(); } } } dir3.delete(); System.out.println(&quot;删除成功&quot;); } public static void main(String[] args) throws IOException { StreamFileIODemo s = new StreamFileIODemo(); // s.printChar(); // s.printStr(); // s.WriteFileDemo(); // s.CreateDirs(); // s.ReadDirs(); s.DeleteDirs(); } }]]></content>
+    <title><![CDATA[Java-Character类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-Character%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-Character类public class CharacterDemo { // 对单个字符进行操作 /* 转义序列 描述 \t 在文中该处插入一个tab键 \b 在文中该处插入一个后退键 \n 在文中该处换行 \r 在文中该处插入回车 \f 在文中该处插入换页符 \&#39; 在文中该处插入单引号 \&quot; 在文中该处插入双引号 \\ 在文中该处插入反斜杠 */ //字符方法 /* 序号 方法与描述 1 isLetter() 是否是一个字母 2 isDigit() 是否是一个数字字符 3 isWhitespace() 是否是一个空白字符 4 isUpperCase() 是否是大写字母 5 isLowerCase() 是否是小写字母 6 toUpperCase() 指定字母的大写形式 7 toLowerCase() 指定字母的小写形式 8 toString() 返回字符的字符串形式，字符串的长度仅为1 */ public static void main(String[] args) { System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1481,9 +1481,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-Character类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-Character%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-Character类public class CharacterDemo { // 对单个字符进行操作 /* 转义序列 描述 \t 在文中该处插入一个tab键 \b 在文中该处插入一个后退键 \n 在文中该处换行 \r 在文中该处插入回车 \f 在文中该处插入换页符 \&#39; 在文中该处插入单引号 \&quot; 在文中该处插入双引号 \\ 在文中该处插入反斜杠 */ //字符方法 /* 序号 方法与描述 1 isLetter() 是否是一个字母 2 isDigit() 是否是一个数字字符 3 isWhitespace() 是否是一个空白字符 4 isUpperCase() 是否是大写字母 5 isLowerCase() 是否是小写字母 6 toUpperCase() 指定字母的大写形式 7 toLowerCase() 指定字母的小写形式 8 toString() 返回字符的字符串形式，字符串的长度仅为1 */ public static void main(String[] args) { System.out.println(&quot;实验一个引号\&quot;引号引号\&quot;&quot;); } }]]></content>
+    <title><![CDATA[Java-FileStreamIO]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-FileStreamIO%2F</url>
+    <content type="text"><![CDATA[Java-FileStreamIOimport java.io.*; public class StreamFileIODemo { public void printChar() throws IOException { //使用BufferedReader从控制台读取输入 char c; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符，按Q键退出&quot;); do { //read() 读取字符 c = (char) br1.read(); System.out.println(c); } while (c != &#39;Q&#39;); } public void printStr() throws IOException{ String str1; //使用System.in 创建BufferedReader BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in)); System.out.println(&quot;输入字符 &#39;end&#39; 退出&quot;); do { //readLine() 读取字符串 str1 = br1.readLine(); System.out.println(str1); } while (!str1.equals(&quot;end&quot;)); } public void ReadFileDemo() throws IOException{ //FileInputStream 从文件读取数据 // File f = new File(&quot;C:/java/hello&quot;); // InputStream out = new FileInputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public int read(int r)throws IOException{} 这个方法从 InputStream 对象读取指定字节的数据。返回为整数值。返回下一字节数据，如果已经到结尾则返回-1。 4 public int read(byte[] r) throws IOException{} 这个方法从输入流读取r.length长度的字节。返回读取的字节数。如果是文件结尾则返回-1。 5 public int available() throws IOException{} 返回下一次对此输入流调用的方法可以不受阻塞地从此输入流读取的字节数。返回一个整数值。 */ System.out.println(&quot;打印输出读取文件demo&quot;); InputStream is1 = new FileInputStream(&quot;test.txt&quot;); int size = is1.available(); for (int i=0;i&lt;size;i++) { System.out.println((char) is1.read()); } } public void WriteFileDemo() throws IOException { //FileOutputStream 创建一个文件向文件中写数据 // File f = new File(&quot;C:/java/hello&quot;); // OutputStream f = new FileOutputStream(f); /* 序号 方法及描述 1 public void close() throws IOException{} 关闭此文件输入流并释放与此流有关的所有系统资源。抛出IOException异常。 2 protected void finalize()throws IOException {} 这个方法清除与该文件的连接。确保在不再引用文件输入流时调用其 close 方法。抛出IOException异常。 3 public void write(int w)throws IOException{} 这个方法把指定的字节写到输出流中。 4 public void write(byte[] w) 把指定数组中w.length长度的字节写到OutputStream中。 */ System.out.println(&quot;打印输出写入文件demo&quot;); byte bWrite[] = {11,21,3,38,5}; OutputStream os1 = new FileOutputStream(&quot;test.txt&quot;); for (int i=0;i&lt;bWrite.length;i++){ os1.write(bWrite[i]); } os1.close(); } public void CreateDirs(){ //文件和I/O ，目录 /* File类 - mkdir( )方法创建一个文件夹，成功则返回true，失败则返回false。失败表明File对象指定的路径已经存在，或者由于整个路径还不存在，该文件夹不能被创建。 - mkdirs()方法创建一个文件夹和它的所有父文件夹。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir/test&quot;; File dir1 = new File(dirname); // 创建目录 dir1.mkdirs(); } public void ReadDirs(){ /* 一个目录其实就是一个 File 对象，它包含其他文件和文件夹。 如果创建一个 File 对象并且它是一个目录，那么调用 isDirectory() 方法会返回 true。 可以通过调用该对象上的 list() 方法，来提取它包含的文件和文件夹的列表。 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn&quot;; File dir2 = new File(dirname); if (dir2.isDirectory()){ System.out.println(&quot;目录&quot;+ dirname); String[] s1 = dir2.list(); for (int i=0;i&lt;s1.length;i++){ File f = new File(dirname + &#39;/&#39; + s1[i]); if (f.isDirectory()){ System.out.println(s1[i] + &quot;是一个目录&quot;); }else { System.out.println(s1[i] + &quot;是一个文件&quot;); } } }else { System.out.println(dirname +&quot;不是一个目录&quot;); } } public void DeleteDirs(){ //删除文件/目录 /* 删除文件可以使用 java.io.File.delete() 方法 当删除某一目录时，必须保证该目录下没有其他文件才能正确删除，否则将删除失败 */ String dirname = &quot;/Users/gaozhiyong/Documents/GitHub/javaLearn/tmp/testdir&quot;; File dir3 = new File(dirname); File[] files = dir3.listFiles(); if (files != null){ for (File f: files){ if (!f.isDirectory()){ f.delete(); } } } dir3.delete(); System.out.println(&quot;删除成功&quot;); } public static void main(String[] args) throws IOException { StreamFileIODemo s = new StreamFileIODemo(); // s.printChar(); // s.printStr(); // s.WriteFileDemo(); // s.CreateDirs(); // s.ReadDirs(); s.DeleteDirs(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1503,9 +1503,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-Scanner类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
+    <title><![CDATA[Java-StringBuffer]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
+    <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1514,9 +1514,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-StringBuffer]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
-    <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
+    <title><![CDATA[Java-Scanner类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
