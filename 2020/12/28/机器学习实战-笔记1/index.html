@@ -15,7 +15,7 @@
   <meta name="description" content="This is MyBlog Notes.">
   <meta name="author" content="OceanEyes.GZY">
   <meta name="keywords" content="">
-  <title>归档 ~ 乔克叔叔杂货店</title>
+  <title>机器学习实战-笔记1 ~ 乔克叔叔杂货店</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -36,7 +36,7 @@
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 70vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">&nbsp;<strong>乔克叔叔杂货店</strong>&nbsp;</a>
@@ -106,6 +106,41 @@
             </span>
 
             
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期一, 十二月 28日 2020, 11:19 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    429 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      1 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
           </div>
 
           
@@ -116,65 +151,151 @@
 
   <main>
     
-      <div class="container nopadding-md">
-        <div class="py-5 z-depth-3" id="board">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 134 篇文章</p>
-  <hr>
-  
-    
       
-      <p class="h5">2019</p>
-    
-    <a href="/2019/02/25/AI时代如何提升个人认知/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">AI时代如何提升个人认知</span>
-      <span style="float: right;">02-25</span>
-    </a>
-  
-    
-    <a href="/2019/02/25/AI时代决策效率革命/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">AI时代决策效率革命</span>
-      <span style="float: right;">02-25</span>
-    </a>
-  
-    
-    <a href="/2019/02/22/php即时通讯-WebSocket/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php即时通讯-WebSocket</span>
-      <span style="float: right;">02-22</span>
-    </a>
-  
-    
-    <a href="/2019/02/22/php即时通讯-http/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php即时通讯-http</span>
-      <span style="float: right;">02-22</span>
-    </a>
-  
-    
-    <a href="/2019/02/22/php即时通讯-socket/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php即时通讯-socket</span>
-      <span style="float: right;">02-22</span>
-    </a>
-  
-    
-    <a href="/2019/02/22/php即时通讯-多进程/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">php即时通讯-多进程</span>
-      <span style="float: right;">02-22</span>
-    </a>
-  
-</div>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h2 id="机器学习实战-笔记1-基础"><a href="#机器学习实战-笔记1-基础" class="headerlink" title="机器学习实战-笔记1-基础"></a>机器学习实战-笔记1-基础</h2><h3 id="机器学习的主要任务"><a href="#机器学习的主要任务" class="headerlink" title="机器学习的主要任务"></a>机器学习的主要任务</h3><p>监督学习-必须知道预测什么，即目标变量的分类信息**</p>
+<ul>
+<li>分类，将实例数据划分到核实的分类中</li>
+<li>回归，用于预测数值型数据</li>
+</ul>
+<p>监督学习的用途</p>
+<ul>
+<li>k-近邻算法</li>
+<li>朴素贝叶斯算法</li>
+<li>支持向量机</li>
+<li>决策树</li>
+<li>线性回归</li>
+<li>局部加权线性回归</li>
+<li>Ridge回归</li>
+<li>Lasso最小回归系数估计</li>
+</ul>
+<p><strong>无监督学习-没有类别信息，也没有目标值</strong></p>
+<ul>
+<li>聚类，将数据集合分成类似的对象组成多个类的过程</li>
+<li>密度估计，寻找描述数据统计值的过程</li>
+</ul>
+<p>无监督学习的用途</p>
+<ul>
+<li>K-均值</li>
+<li>DBSCAN</li>
+<li>最大期望算法</li>
+<li>Parzen窗设计</li>
+</ul>
+<h3 id="如何选择合适的算法"><a href="#如何选择合适的算法" class="headerlink" title="如何选择合适的算法"></a>如何选择合适的算法</h3><ul>
+<li>使用机器学习算法的目的，想要算法完成什么任务<ul>
+<li>如果预测目标变量的值，则可选择监督学习算法<ul>
+<li>目标变量类型如果是 离散型，如是/否、1/2/3等，则可使用分类算法</li>
+<li>目标变量类型如果是 连续型的数值，如1.0~100.0等，则可以使用回归算法</li>
+</ul>
+</li>
+<li>如果不是预测目标变量的值，则可选择无监督学习算法<ul>
+<li>如果只需要将数据分为离散的组，则使用聚类算法</li>
+<li>如果需要估计数据与每个分组的相似程度，则使用密度估计算法</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>需要分析或收集的数据是什么</li>
+</ul>
+<h3 id="开发机器学习应用程序的步骤"><a href="#开发机器学习应用程序的步骤" class="headerlink" title="开发机器学习应用程序的步骤"></a>开发机器学习应用程序的步骤</h3><ol>
+<li><strong>收集数据</strong></li>
+<li><strong>准备输入数据</strong></li>
+<li><strong>分析输入数据</strong></li>
+<li><strong>训练算法</strong></li>
+<li><strong>测试算法</strong></li>
+<li><strong>使用算法</strong></li>
+</ol>
 
-              </div>
-            </div>
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/Machine%20Learning">Machine Learning</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/Algorithm">Algorithm</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/Machine%20Learning">Machine Learning</a>
+                
+                  <a class="hover-with-bg" href="/tags/Algorithm">Algorithm</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
           </div>
         </div>
       </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+   <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MjAzMS8xODU3OA==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+  
+  
+    
+  </div>
+</div>
+
     
   </main>
 
@@ -247,6 +368,11 @@
 
 
 
+  
+    <script src="/lib/tocbot/tocbot.min.js"></script>
+  
+  <script src="/js/post.js"></script>
+
 
 
   <script src="/lib/smooth-scroll/smooth-scroll.min.js"></script>
@@ -287,7 +413,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "归档&nbsp;",
+        "机器学习实战-笔记1&nbsp;",
       ],
       cursorChar: "~",
       typeSpeed: 70,
