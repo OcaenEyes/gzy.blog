@@ -4,24 +4,42 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2020/12/29/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B02/"/>
-    <url>/2020/12/29/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B02/</url>
+    <title>机器学习实战-笔记1-基础</title>
+    <link href="/2020/12/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B01/"/>
+    <url>/2020/12/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B01/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="k-近邻算法概述"><a href="#k-近邻算法概述" class="headerlink" title="k-近邻算法概述"></a>k-近邻算法概述</h1><ul><li><p>优点</p><ul><li>精度高、对异常值不敏感、无数据输入假定</li></ul></li><li><p>缺点</p><ul><li>计算复杂度高、空间复杂度高</li></ul></li><li><p>适用数据范围</p><ul><li><p>数值型和标称型  </p><!--标称型：标称型目标变量的结果只在有限目标集中取值，比如真与假(标称型目标变量主要用于分类)--><!--数值型：数值型目标变量则可以从无限的数值集合中取值，如0.555，666.666等 (数值型目标变量主要用于回归分析)--></li></ul></li></ul><h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><ol><li>样本数据集，每个数据都存在标签状态</li><li>输入新的没有标签状态的数据，将新数据的每个特征与样本集中数据对应的特征比较</li><li>算法提取样本集中特征最相似（最近邻）数据的标签； 一般选取样本数据集中前k个最相似的数据; k通常是不大于20的整数</li></ol><h3 id="一般流程"><a href="#一般流程" class="headerlink" title="一般流程"></a>一般流程</h3><ol><li>收集数据：可以使用任何方法</li><li>准备数据：距离计算索需要的数值，最好是结构化的数据格式</li><li>分析数据：可以使用任何方法</li><li>训练算法：不适用于k-近邻</li><li>测试算法：计算错误率</li><li>使用算法：首选需输入样本数据和结构化的输出结果， 然后运行k-近邻算法判定输入数据分别属于哪个分类， 最后应用对计算出的分类 执行后续的处理</li></ol>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="机器学习实战-笔记1-基础"><a href="#机器学习实战-笔记1-基础" class="headerlink" title="机器学习实战-笔记1-基础"></a>机器学习实战-笔记1-基础</h2><h3 id="机器学习的主要任务"><a href="#机器学习的主要任务" class="headerlink" title="机器学习的主要任务"></a>机器学习的主要任务</h3><p>监督学习-必须知道预测什么，即目标变量的分类信息**</p><ul><li>分类，将实例数据划分到核实的分类中</li><li>回归，用于预测数值型数据</li></ul><p>监督学习的用途</p><ul><li>k-近邻算法</li><li>朴素贝叶斯算法</li><li>支持向量机</li><li>决策树</li><li>线性回归</li><li>局部加权线性回归</li><li>Ridge回归</li><li>Lasso最小回归系数估计</li></ul><p><strong>无监督学习-没有类别信息，也没有目标值</strong></p><ul><li>聚类，将数据集合分成类似的对象组成多个类的过程</li><li>密度估计，寻找描述数据统计值的过程</li></ul><p>无监督学习的用途</p><ul><li>K-均值</li><li>DBSCAN</li><li>最大期望算法</li><li>Parzen窗设计</li></ul><h3 id="如何选择合适的算法"><a href="#如何选择合适的算法" class="headerlink" title="如何选择合适的算法"></a>如何选择合适的算法</h3><ul><li>使用机器学习算法的目的，想要算法完成什么任务<ul><li>如果预测目标变量的值，则可选择监督学习算法<ul><li>目标变量类型如果是 离散型，如是/否、1/2/3等，则可使用分类算法</li><li>目标变量类型如果是 连续型的数值，如1.0~100.0等，则可以使用回归算法</li></ul></li><li>如果不是预测目标变量的值，则可选择无监督学习算法<ul><li>如果只需要将数据分为离散的组，则使用聚类算法</li><li>如果需要估计数据与每个分组的相似程度，则使用密度估计算法</li></ul></li></ul></li><li>需要分析或收集的数据是什么</li></ul><h3 id="开发机器学习应用程序的步骤"><a href="#开发机器学习应用程序的步骤" class="headerlink" title="开发机器学习应用程序的步骤"></a>开发机器学习应用程序的步骤</h3><ol><li><strong>收集数据</strong></li><li><strong>准备输入数据</strong></li><li><strong>分析输入数据</strong></li><li><strong>训练算法</strong></li><li><strong>测试算法</strong></li><li><strong>使用算法</strong></li></ol>]]></content>
     
     
+    <categories>
+      
+      <category>Artificial Intelligence</category>
+      
+      <category>Machine Learning</category>
+      
+      <category>Algorithm</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Machine Learning</tag>
+      
+      <tag>Algorithm</tag>
+      
+    </tags>
     
   </entry>
   
   
   
   <entry>
-    <title>机器学习实战-笔记1</title>
-    <link href="/2020/12/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B01/"/>
-    <url>/2020/12/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B01/</url>
+    <title>机器学习实战-笔记2-k-近邻算法概述</title>
+    <link href="/2020/12/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B02/"/>
+    <url>/2020/12/28/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B02/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="机器学习实战-笔记1-基础"><a href="#机器学习实战-笔记1-基础" class="headerlink" title="机器学习实战-笔记1-基础"></a>机器学习实战-笔记1-基础</h2><h3 id="机器学习的主要任务"><a href="#机器学习的主要任务" class="headerlink" title="机器学习的主要任务"></a>机器学习的主要任务</h3><p>监督学习-必须知道预测什么，即目标变量的分类信息**</p><ul><li>分类，将实例数据划分到核实的分类中</li><li>回归，用于预测数值型数据</li></ul><p>监督学习的用途</p><ul><li>k-近邻算法</li><li>朴素贝叶斯算法</li><li>支持向量机</li><li>决策树</li><li>线性回归</li><li>局部加权线性回归</li><li>Ridge回归</li><li>Lasso最小回归系数估计</li></ul><p><strong>无监督学习-没有类别信息，也没有目标值</strong></p><ul><li>聚类，将数据集合分成类似的对象组成多个类的过程</li><li>密度估计，寻找描述数据统计值的过程</li></ul><p>无监督学习的用途</p><ul><li>K-均值</li><li>DBSCAN</li><li>最大期望算法</li><li>Parzen窗设计</li></ul><h3 id="如何选择合适的算法"><a href="#如何选择合适的算法" class="headerlink" title="如何选择合适的算法"></a>如何选择合适的算法</h3><ul><li>使用机器学习算法的目的，想要算法完成什么任务<ul><li>如果预测目标变量的值，则可选择监督学习算法<ul><li>目标变量类型如果是 离散型，如是/否、1/2/3等，则可使用分类算法</li><li>目标变量类型如果是 连续型的数值，如1.0~100.0等，则可以使用回归算法</li></ul></li><li>如果不是预测目标变量的值，则可选择无监督学习算法<ul><li>如果只需要将数据分为离散的组，则使用聚类算法</li><li>如果需要估计数据与每个分组的相似程度，则使用密度估计算法</li></ul></li></ul></li><li>需要分析或收集的数据是什么</li></ul><h3 id="开发机器学习应用程序的步骤"><a href="#开发机器学习应用程序的步骤" class="headerlink" title="开发机器学习应用程序的步骤"></a>开发机器学习应用程序的步骤</h3><ol><li><strong>收集数据</strong></li><li><strong>准备输入数据</strong></li><li><strong>分析输入数据</strong></li><li><strong>训练算法</strong></li><li><strong>测试算法</strong></li><li><strong>使用算法</strong></li></ol>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="k-近邻算法概述"><a href="#k-近邻算法概述" class="headerlink" title="k-近邻算法概述"></a>k-近邻算法概述</h1><ul><li><p>优点</p><ul><li>精度高、对异常值不敏感、无数据输入假定</li></ul></li><li><p>缺点</p><ul><li>计算复杂度高、空间复杂度高</li></ul></li><li><p>适用数据范围</p><ul><li><p>数值型和标称型  </p><!--标称型：标称型目标变量的结果只在有限目标集中取值，比如真与假(标称型目标变量主要用于分类)--><!--数值型：数值型目标变量则可以从无限的数值集合中取值，如0.555，666.666等 (数值型目标变量主要用于回归分析)--></li></ul></li></ul><h3 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h3><ol><li>样本数据集，每个数据都存在标签状态</li><li>输入新的没有标签状态的数据，将新数据的每个特征与样本集中数据对应的特征比较</li><li>算法提取样本集中特征最相似（最近邻）数据的标签； 一般选取样本数据集中前k个最相似的数据; k通常是不大于20的整数</li></ol><h3 id="一般流程"><a href="#一般流程" class="headerlink" title="一般流程"></a>一般流程</h3><ol><li>收集数据：可以使用任何方法</li><li>准备数据：距离计算索需要的数值，最好是结构化的数据格式</li><li>分析数据：可以使用任何方法</li><li>训练算法：不适用于k-近邻</li><li>测试算法：计算错误率</li><li>使用算法：首选需输入样本数据和结构化的输出结果， 然后运行k-近邻算法判定输入数据分别属于哪个分类， 最后应用对计算出的分类 执行后续的处理</li></ol>]]></content>
     
     
     <categories>
@@ -1117,11 +1135,11 @@
   
   
   <entry>
-    <title>AI时代如何提升个人认知</title>
-    <link href="/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5/"/>
-    <url>/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5/</url>
+    <title>AI时代决策效率革命</title>
+    <link href="/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD/"/>
+    <url>/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="AI时间如何提升个人认知"><a href="#AI时间如何提升个人认知" class="headerlink" title="AI时间如何提升个人认知"></a>AI时间如何提升个人认知</h3><blockquote><p>思考比学习知识更重要。</p></blockquote><h4 id="外部原因"><a href="#外部原因" class="headerlink" title="外部原因"></a>外部原因</h4><p>​    当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。</p><p>比如：</p><ul><li><p>互联网</p></li><li><p>共享经济</p></li><li><p>大数据</p></li></ul><h4 id="内部原因"><a href="#内部原因" class="headerlink" title="内部原因"></a>内部原因</h4><blockquote><p>《论思考》 、《论书籍和写作》——叔本华</p></blockquote><blockquote><p>读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20200215095521389.png" srcset="/img/loading.gif" alt="image-20200215095521389"></p>]]></content>
     
     
     <categories>
@@ -1144,11 +1162,11 @@
   
   
   <entry>
-    <title>AI时代决策效率革命</title>
-    <link href="/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD/"/>
-    <url>/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD/</url>
+    <title>AI时代如何提升个人认知</title>
+    <link href="/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5/"/>
+    <url>/2019/02/25/AI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="/Users/gaozhiyong/Library/Application Support/typora-user-images/image-20200215095521389.png" srcset="/img/loading.gif" alt="image-20200215095521389"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="AI时间如何提升个人认知"><a href="#AI时间如何提升个人认知" class="headerlink" title="AI时间如何提升个人认知"></a>AI时间如何提升个人认知</h3><blockquote><p>思考比学习知识更重要。</p></blockquote><h4 id="外部原因"><a href="#外部原因" class="headerlink" title="外部原因"></a>外部原因</h4><p>​    当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。</p><p>比如：</p><ul><li><p>互联网</p></li><li><p>共享经济</p></li><li><p>大数据</p></li></ul><h4 id="内部原因"><a href="#内部原因" class="headerlink" title="内部原因"></a>内部原因</h4><blockquote><p>《论思考》 、《论书籍和写作》——叔本华</p></blockquote><blockquote><p>读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。</p></blockquote>]]></content>
     
     
     <categories>
@@ -1968,11 +1986,11 @@
   
   
   <entry>
-    <title>深度学习笔记——线性回归的从零开始实现</title>
-    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/"/>
-    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/</url>
+    <title>深度学习笔记——线性回归</title>
+    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
+    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em>深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式</em></p><p><strong>单层神经网络：线性回归、Softmax回归</strong></p><p>线性回归输出是一个连续值，适用于回归问题。</p><p>​    如：预测房屋价格、气温、销售额等连续值问题</p><p>Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。</p><p>​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值</p><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><h3 id="线性回归基本要素"><a href="#线性回归基本要素" class="headerlink" title="线性回归基本要素"></a>线性回归基本要素</h3><p>以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）</p><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><p>设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）</p><p>线性回归假设输出与各个输入之间的线性关系：</p><p>y‘ = x1w1 + x2w2 + b;</p><p>其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 </p><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><p>模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。</p><h5 id="训练数据"><a href="#训练数据" class="headerlink" title="训练数据"></a>训练数据</h5><ul><li><p>训练数据集（training data set ）/ 训练集（training set）</p><p>多栋房屋数据，真实出售价格 、面积、房龄</p></li><li><p>样本（sample）</p><p>一栋房屋</p></li><li><p>标签（label）</p><p>真实出售价格</p></li><li><p>特征（feature）</p><p>预测标签的两个因素叫做特征；（面积、房龄）</p><p>特征用来表征样本的特点</p></li></ul><h5 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h5><ul><li>衡量价格测量值与真实值之间的误差</li><li>通常选取一个非负数作为误差，且数值越小表示误差越小</li></ul><h5 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h5><ul><li>解析解（analytical solution）<ul><li>当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来</li></ul></li><li>数值解（numerical solution）<ul><li>大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值</li><li>常用：小批量随机梯度下降（ mini-batch stochastic gradient descent）<ul><li>选取一组模型参数的初始值</li><li>对参数进行多次迭代，使得每次迭代都可能降低损失函数的值</li><li>每次迭代流程<ul><li>先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B</li><li>求小批量中数据样本的平均损失有关模型参数的导数（梯度）</li><li>用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量</li></ul></li></ul></li></ul></li></ul><h4 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h4><p><em>模型预测、模型推断或模型测试</em></p><p> 模型训练完成后，将模型参数w1;w2; b  在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。</p><p>然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。</p><h3 id="线性回归的表示方法"><a href="#线性回归的表示方法" class="headerlink" title="线性回归的表示方法"></a>线性回归的表示方法</h3><p>线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。</p><h4 id="神经网络图"><a href="#神经网络图" class="headerlink" title="神经网络图"></a>神经网络图</h4><h4 id="矢量计算表达式"><a href="#矢量计算表达式" class="headerlink" title="矢量计算表达式"></a>矢量计算表达式</h4>]]></content>
     
     
     <categories>
@@ -1999,11 +2017,11 @@
   
   
   <entry>
-    <title>深度学习笔记——线性回归</title>
-    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/"/>
-    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92/</url>
+    <title>深度学习笔记——线性回归的从零开始实现</title>
+    <link href="/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/"/>
+    <url>/2018/11/30/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><em>深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式</em></p><p><strong>单层神经网络：线性回归、Softmax回归</strong></p><p>线性回归输出是一个连续值，适用于回归问题。</p><p>​    如：预测房屋价格、气温、销售额等连续值问题</p><p>Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。</p><p>​    如：图像分类、垃圾邮件识别、疾病检测等输出离散值</p><h2 id="线性回归"><a href="#线性回归" class="headerlink" title="线性回归"></a>线性回归</h2><h3 id="线性回归基本要素"><a href="#线性回归基本要素" class="headerlink" title="线性回归基本要素"></a>线性回归基本要素</h3><p>以房屋价格预测为例：假设价格只取决于  面积（平方米） 和房龄（年）</p><h4 id="模型"><a href="#模型" class="headerlink" title="模型"></a>模型</h4><p>设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model）</p><p>线性回归假设输出与各个输入之间的线性关系：</p><p>y‘ = x1w1 + x2w2 + b;</p><p>其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 </p><h4 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h4><p>模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。</p><h5 id="训练数据"><a href="#训练数据" class="headerlink" title="训练数据"></a>训练数据</h5><ul><li><p>训练数据集（training data set ）/ 训练集（training set）</p><p>多栋房屋数据，真实出售价格 、面积、房龄</p></li><li><p>样本（sample）</p><p>一栋房屋</p></li><li><p>标签（label）</p><p>真实出售价格</p></li><li><p>特征（feature）</p><p>预测标签的两个因素叫做特征；（面积、房龄）</p><p>特征用来表征样本的特点</p></li></ul><h5 id="损失函数"><a href="#损失函数" class="headerlink" title="损失函数"></a>损失函数</h5><ul><li>衡量价格测量值与真实值之间的误差</li><li>通常选取一个非负数作为误差，且数值越小表示误差越小</li></ul><h5 id="优化算法"><a href="#优化算法" class="headerlink" title="优化算法"></a>优化算法</h5><ul><li>解析解（analytical solution）<ul><li>当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来</li></ul></li><li>数值解（numerical solution）<ul><li>大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值</li><li>常用：小批量随机梯度下降（ mini-batch stochastic gradient descent）<ul><li>选取一组模型参数的初始值</li><li>对参数进行多次迭代，使得每次迭代都可能降低损失函数的值</li><li>每次迭代流程<ul><li>先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B</li><li>求小批量中数据样本的平均损失有关模型参数的导数（梯度）</li><li>用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量</li></ul></li></ul></li></ul></li></ul><h4 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h4><p><em>模型预测、模型推断或模型测试</em></p><p> 模型训练完成后，将模型参数w1;w2; b  在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。</p><p>然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。</p><h3 id="线性回归的表示方法"><a href="#线性回归的表示方法" class="headerlink" title="线性回归的表示方法"></a>线性回归的表示方法</h3><p>线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。</p><h4 id="神经网络图"><a href="#神经网络图" class="headerlink" title="神经网络图"></a>神经网络图</h4><h4 id="矢量计算表达式"><a href="#矢量计算表达式" class="headerlink" title="矢量计算表达式"></a>矢量计算表达式</h4>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
     
     
     <categories>
@@ -3372,31 +3390,6 @@
   
   
   <entry>
-    <title>Java-NumberMath类</title>
-    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
-    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
-    
-    
-    <categories>
-      
-      <category>Java</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>Java</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Java-Scanner类</title>
     <link href="/2016/03/02/Java-Scanner%E7%B1%BB/"/>
     <url>/2016/03/02/Java-Scanner%E7%B1%BB/</url>
@@ -3422,11 +3415,11 @@
   
   
   <entry>
-    <title>Java-StringBuffer</title>
-    <link href="/2016/03/02/Java-StringBuffer/"/>
-    <url>/2016/03/02/Java-StringBuffer/</url>
+    <title>Java-NumberMath类</title>
+    <link href="/2016/03/02/Java-NumberMath%E7%B1%BB/"/>
+    <url>/2016/03/02/Java-NumberMath%E7%B1%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-StringBuffer"><a href="#Java-StringBuffer" class="headerlink" title="Java-StringBuffer"></a>Java-StringBuffer</h1><pre><code>public class StringBufferAndStringBuilderDemo {    //StringBuffer  线程安全    //StringBuilder 速度快    /*        序号    方法描述1    public StringBuffer append(String s)将指定的字符串追加到此字符序列。2    public StringBuffer reverse() 将此字符序列用其反转形式取代。3    public delete(int start, int end)移除此序列的子字符串中的字符。4    public insert(int offset, int i)将 int 参数的字符串表示形式插入此序列中。5    replace(int start, int end, String str)使用给定 String 中的字符替换此序列的子字符串中的字符。     */    /*        序号    方法描述1    int capacity()返回当前容量。2    char charAt(int index)返回此序列中指定索引处的 char 值。3    void ensureCapacity(int minimumCapacity)确保容量至少等于指定的最小值。4    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此序列复制到目标字符数组 dst。5    int indexOf(String str)返回第一次出现的指定子字符串在该字符串中的索引。6    int indexOf(String str, int fromIndex)从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。7    int lastIndexOf(String str)返回最右边出现的指定子字符串在此字符串中的索引。8    int lastIndexOf(String str, int fromIndex)返回 String 对象中子字符串最后出现的位置。9    int length() 返回长度（字符数）。10    void setCharAt(int index, char ch)将给定索引处的字符设置为 ch。11    void setLength(int newLength)设置字符序列的长度。12    CharSequence subSequence(int start, int end)返回一个新的字符序列，该字符序列是此序列的子序列。13    String substring(int start)返回一个新的 String，它包含此字符序列当前所包含的字符子序列。14    String substring(int start, int end)返回一个新的 String，它包含此序列当前所包含的字符子序列。15    String toString()返回此序列中数据的字符串表示形式。     */    public static void main(String[] args){        StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;);        sBuffer.append(&quot;站点&quot;);        System.out.println(sBuffer);    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-NumberMath类"><a href="#Java-NumberMath类" class="headerlink" title="Java-NumberMath类"></a>Java-NumberMath类</h1><pre><code>public class NumberAndMath {    //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类    // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数    private static void test(double num) {        System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num));        System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num));        System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num));    }    public static void main(String[] args) {        System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2));        System.out.println(&quot;0度的余弦值&quot; + Math.cos(0));        System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3));        System.out.println(&quot;1的反正切值&quot; + Math.atan(1));        System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2));        double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6};        for (double num : nums) {            test(num);        }/*序号        方法与描述1        xxxValue()将 Number 对象转换为xxx数据类型的值并返回。2        compareTo()将number对象与参数比较。3        equals()判断number对象是否与参数相等。4        valueOf()返回一个 Number 对象指定的内置数据类型5        toString()以字符串形式返回值。6        parseInt()将字符串解析为int类型。7        abs()返回参数的绝对值。8        ceil()返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。9        floor()返回小于等于（&lt;=）给定参数的最大整数 。10        rint()返回与参数最接近的整数。返回类型为double。11        round()它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。12        min()返回两个参数中的最小值。13        max()返回两个参数中的最大值。14        exp()返回自然数底数e的参数次方。15        log()返回参数的自然数底数的对数值。16        pow()返回第一个参数的第二个参数次方。17        sqrt()求参数的算术平方根。18        sin()求指定double类型参数的正弦值。19        cos()求指定double类型参数的余弦值。20        tan()求指定double类型参数的正切值。21        asin()求指定double类型参数的反正弦值。22        acos()求指定double类型参数的反余弦值。23        atan()求指定double类型参数的反正切值。24        atan2()将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。25        toDegrees()将参数转化为角度。26        toRadians()将角度转换为弧度。27        random()返回一个随机数。*/    }}</code></pre>]]></content>
     
     
     <categories>
@@ -3477,6 +3470,31 @@
     <url>/2016/03/02/Java-SwitchCase/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-SwitchCase语句"><a href="#Java-SwitchCase语句" class="headerlink" title="Java-SwitchCase语句"></a>Java-SwitchCase语句</h1><pre><code>public class SwitchCase {    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。    /*        switch(expression){            case value :                //语句                break; //可选            case value :                //语句                break; //可选            //你可以有任意数量的case语句            default : //可选                //语句   不需要break        }     */    public static void main(String[]args){        char grade =&#39;C&#39;;        switch (grade)        {            case &#39;A&#39;:                System.out.println(&quot;优秀&quot;);                break;            case &#39;B&#39;:            case &#39;C&#39;:                System.out.println(&quot;良好&quot;);                break;            case &#39;D&#39;:                System.out.println(&quot;及格&quot;);                break;            case &#39;F&#39;:                System.out.println(&quot;你还需要继续努力&quot;);                break;            default:                System.out.println(&quot;未知等级&quot;);        }        System.out.println(&quot;你的等级是&quot; + grade);    }}</code></pre>]]></content>
+    
+    
+    <categories>
+      
+      <category>Java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>Java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Java-StringBuffer</title>
+    <link href="/2016/03/02/Java-StringBuffer/"/>
+    <url>/2016/03/02/Java-StringBuffer/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="Java-StringBuffer"><a href="#Java-StringBuffer" class="headerlink" title="Java-StringBuffer"></a>Java-StringBuffer</h1><pre><code>public class StringBufferAndStringBuilderDemo {    //StringBuffer  线程安全    //StringBuilder 速度快    /*        序号    方法描述1    public StringBuffer append(String s)将指定的字符串追加到此字符序列。2    public StringBuffer reverse() 将此字符序列用其反转形式取代。3    public delete(int start, int end)移除此序列的子字符串中的字符。4    public insert(int offset, int i)将 int 参数的字符串表示形式插入此序列中。5    replace(int start, int end, String str)使用给定 String 中的字符替换此序列的子字符串中的字符。     */    /*        序号    方法描述1    int capacity()返回当前容量。2    char charAt(int index)返回此序列中指定索引处的 char 值。3    void ensureCapacity(int minimumCapacity)确保容量至少等于指定的最小值。4    void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)将字符从此序列复制到目标字符数组 dst。5    int indexOf(String str)返回第一次出现的指定子字符串在该字符串中的索引。6    int indexOf(String str, int fromIndex)从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。7    int lastIndexOf(String str)返回最右边出现的指定子字符串在此字符串中的索引。8    int lastIndexOf(String str, int fromIndex)返回 String 对象中子字符串最后出现的位置。9    int length() 返回长度（字符数）。10    void setCharAt(int index, char ch)将给定索引处的字符设置为 ch。11    void setLength(int newLength)设置字符序列的长度。12    CharSequence subSequence(int start, int end)返回一个新的字符序列，该字符序列是此序列的子序列。13    String substring(int start)返回一个新的 String，它包含此字符序列当前所包含的字符子序列。14    String substring(int start, int end)返回一个新的 String，它包含此序列当前所包含的字符子序列。15    String toString()返回此序列中数据的字符串表示形式。     */    public static void main(String[] args){        StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;);        sBuffer.append(&quot;站点&quot;);        System.out.println(sBuffer);    }}</code></pre>]]></content>
     
     
     <categories>

@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title></title>
-    <url>%2F2020%2F12%2F29%2F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B02%2F</url>
-    <content type="text"><![CDATA[k-近邻算法概述 优点 精度高、对异常值不敏感、无数据输入假定 缺点 计算复杂度高、空间复杂度高 适用数据范围 数值型和标称型 工作原理 样本数据集，每个数据都存在标签状态 输入新的没有标签状态的数据，将新数据的每个特征与样本集中数据对应的特征比较 算法提取样本集中特征最相似（最近邻）数据的标签； 一般选取样本数据集中前k个最相似的数据; k通常是不大于20的整数 一般流程 收集数据：可以使用任何方法 准备数据：距离计算索需要的数值，最好是结构化的数据格式 分析数据：可以使用任何方法 训练算法：不适用于k-近邻 测试算法：计算错误率 使用算法：首选需输入样本数据和结构化的输出结果， 然后运行k-近邻算法判定输入数据分别属于哪个分类， 最后应用对计算出的分类 执行后续的处理]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[机器学习实战-笔记1]]></title>
+    <title><![CDATA[机器学习实战-笔记1-基础]]></title>
     <url>%2F2020%2F12%2F28%2F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B01%2F</url>
     <content type="text"><![CDATA[机器学习实战-笔记1-基础机器学习的主要任务监督学习-必须知道预测什么，即目标变量的分类信息** 分类，将实例数据划分到核实的分类中 回归，用于预测数值型数据 监督学习的用途 k-近邻算法 朴素贝叶斯算法 支持向量机 决策树 线性回归 局部加权线性回归 Ridge回归 Lasso最小回归系数估计 无监督学习-没有类别信息，也没有目标值 聚类，将数据集合分成类似的对象组成多个类的过程 密度估计，寻找描述数据统计值的过程 无监督学习的用途 K-均值 DBSCAN 最大期望算法 Parzen窗设计 如何选择合适的算法 使用机器学习算法的目的，想要算法完成什么任务 如果预测目标变量的值，则可选择监督学习算法 目标变量类型如果是 离散型，如是/否、1/2/3等，则可使用分类算法 目标变量类型如果是 连续型的数值，如1.0~100.0等，则可以使用回归算法 如果不是预测目标变量的值，则可选择无监督学习算法 如果只需要将数据分为离散的组，则使用聚类算法 如果需要估计数据与每个分组的相似程度，则使用密度估计算法 需要分析或收集的数据是什么 开发机器学习应用程序的步骤 收集数据 准备输入数据 分析输入数据 训练算法 测试算法 使用算法]]></content>
+      <categories>
+        <category>Artificial Intelligence</category>
+        <category>Machine Learning</category>
+        <category>Algorithm</category>
+      </categories>
+      <tags>
+        <tag>Machine Learning</tag>
+        <tag>Algorithm</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[机器学习实战-笔记2-k-近邻算法概述]]></title>
+    <url>%2F2020%2F12%2F28%2F%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%AE%9E%E6%88%98-%E7%AC%94%E8%AE%B02%2F</url>
+    <content type="text"><![CDATA[k-近邻算法概述 优点 精度高、对异常值不敏感、无数据输入假定 缺点 计算复杂度高、空间复杂度高 适用数据范围 数值型和标称型 工作原理 样本数据集，每个数据都存在标签状态 输入新的没有标签状态的数据，将新数据的每个特征与样本集中数据对应的特征比较 算法提取样本集中特征最相似（最近邻）数据的标签； 一般选取样本数据集中前k个最相似的数据; k通常是不大于20的整数 一般流程 收集数据：可以使用任何方法 准备数据：距离计算索需要的数值，最好是结构化的数据格式 分析数据：可以使用任何方法 训练算法：不适用于k-近邻 测试算法：计算错误率 使用算法：首选需输入样本数据和结构化的输出结果， 然后运行k-近邻算法判定输入数据分别属于哪个分类， 最后应用对计算出的分类 执行后续的处理]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -502,9 +511,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[AI时代如何提升个人认知]]></title>
-    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5%2F</url>
-    <content type="text"><![CDATA[AI时间如何提升个人认知 思考比学习知识更重要。 外部原因​ 当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。 比如： 互联网 共享经济 大数据 内部原因 《论思考》 、《论书籍和写作》——叔本华 读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。]]></content>
+    <title><![CDATA[AI时代决策效率革命]]></title>
+    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>Artificial Intelligence</category>
       </categories>
@@ -514,9 +523,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[AI时代决策效率革命]]></title>
-    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%86%B3%E7%AD%96%E6%95%88%E7%8E%87%E9%9D%A9%E5%91%BD%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[AI时代如何提升个人认知]]></title>
+    <url>%2F2019%2F02%2F25%2FAI%E6%97%B6%E4%BB%A3%E5%A6%82%E4%BD%95%E6%8F%90%E5%8D%87%E4%B8%AA%E4%BA%BA%E8%AE%A4%E7%9F%A5%2F</url>
+    <content type="text"><![CDATA[AI时间如何提升个人认知 思考比学习知识更重要。 外部原因​ 当今世界的知识爆炸时代，每个人的精力有限，需要思考深于学习；但当时间盈余的情况下，还是需要在思考的同时进行知识学习。 比如： 互联网 共享经济 大数据 内部原因 《论思考》 、《论书籍和写作》——叔本华 读书和思考是相互替代的关系；读书是在思考无头绪的时候作为辅助。]]></content>
       <categories>
         <category>Artificial Intelligence</category>
       </categories>
@@ -881,9 +890,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
-    <content type="text"><![CDATA[]]></content>
+    <title><![CDATA[深度学习笔记——线性回归]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
+    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -895,9 +904,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[深度学习笔记——线性回归]]></title>
-    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E6%80%A7%E5%9B%9E%E5%BD%92%2F</url>
-    <content type="text"><![CDATA[深度学习通过基于神经网络模型逐级表示越来越抽象的概念或模式 单层神经网络：线性回归、Softmax回归 线性回归输出是一个连续值，适用于回归问题。 ​ 如：预测房屋价格、气温、销售额等连续值问题 Softmax回归适用于分类问题，分类问题中的模型最终输出是一个离散值。 ​ 如：图像分类、垃圾邮件识别、疾病检测等输出离散值 线性回归线性回归基本要素以房屋价格预测为例：假设价格只取决于 面积（平方米） 和房龄（年） 模型设房屋面积为x1 ,房龄为x2 ， 售出价格为y 。建立基于输入x1, x2来计算输出y的表达式，即——模型（Model） 线性回归假设输出与各个输入之间的线性关系： y‘ = x1w1 + x2w2 + b; 其中w1;w2 是权重（weight），b 是偏差（bias），且均为标量;是线性回归模型的参数（parameter）；模型输出y’是线性回归对真实价格y的预测／估计 模型训练模型训练（model training）：通过数据寻找特定的模型参数值，使得模型在数据上误差尽可能小。 训练数据 训练数据集（training data set ）/ 训练集（training set） 多栋房屋数据，真实出售价格 、面积、房龄 样本（sample） 一栋房屋 标签（label） 真实出售价格 特征（feature） 预测标签的两个因素叫做特征；（面积、房龄） 特征用来表征样本的特点 损失函数 衡量价格测量值与真实值之间的误差 通常选取一个非负数作为误差，且数值越小表示误差越小 优化算法 解析解（analytical solution） 当模型和损失函数较为简单时，误差最小化问题的解可直接用公式表达出来 数值解（numerical solution） 大多数深度学习模型没有解析解，只能通过优化算法有限次迭代模型参数 来尽可能降低损失函数的值 常用：小批量随机梯度下降（ mini-batch stochastic gradient descent） 选取一组模型参数的初始值 对参数进行多次迭代，使得每次迭代都可能降低损失函数的值 每次迭代流程 先随机均匀采样 一个由固定数目训练数据样本所组成的小批量（mini-batch）B 求小批量中数据样本的平均损失有关模型参数的导数（梯度） 用此结果与 预先设定的一个 正数的乘积 作为模型参数在本次迭代的减小量 模型预测模型预测、模型推断或模型测试 模型训练完成后，将模型参数w1;w2; b 在优化算法停⽌时的值分别记作^ w1; ^ w2;^b 。注意这⾥我们并不⼀定得到了最小化损失函数的最优解w1;w2; b ，而是对最优解的⼀个近似。 然后，就可以使⽤学出的线性回归模型x1 ^ w1 +x2 ^ w2 +^b 来估算训练数据集以外任意⼀栋⾯积（平⽅⽶）房屋的价格了。 线性回归的表示方法线性回归与神经⽹络的联系，以及线性回归的⽮量计算表达式。 神经网络图矢量计算表达式]]></content>
+    <title><![CDATA[深度学习笔记——线性回归的从零开始实现]]></title>
+    <url>%2F2018%2F11%2F30%2F%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E2%80%94%E2%80%94%E7%BA%BF%E5%BD%A2%E5%9B%9E%E5%BD%92%E7%9A%84%E4%BB%8E%E9%9B%B6%E5%AE%9E%E7%8E%B0%2F</url>
+    <content type="text"><![CDATA[]]></content>
       <categories>
         <category>Artificial Intelligence</category>
         <category>Machine Learning</category>
@@ -1511,17 +1520,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-NumberMath类]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-NumberMath%E7%B1%BB%2F</url>
-    <content type="text"><![CDATA[Java-NumberMath类public class NumberAndMath { //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类 // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数 private static void test(double num) { System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num)); System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num)); System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num)); } public static void main(String[] args) { System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2)); System.out.println(&quot;0度的余弦值&quot; + Math.cos(0)); System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3)); System.out.println(&quot;1的反正切值&quot; + Math.atan(1)); System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2)); double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6}; for (double num : nums) { test(num); } /* 序号 方法与描述 1 xxxValue() 将 Number 对象转换为xxx数据类型的值并返回。 2 compareTo() 将number对象与参数比较。 3 equals() 判断number对象是否与参数相等。 4 valueOf() 返回一个 Number 对象指定的内置数据类型 5 toString() 以字符串形式返回值。 6 parseInt() 将字符串解析为int类型。 7 abs() 返回参数的绝对值。 8 ceil() 返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。 9 floor() 返回小于等于（&lt;=）给定参数的最大整数 。 10 rint() 返回与参数最接近的整数。返回类型为double。 11 round() 它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。 12 min() 返回两个参数中的最小值。 13 max() 返回两个参数中的最大值。 14 exp() 返回自然数底数e的参数次方。 15 log() 返回参数的自然数底数的对数值。 16 pow() 返回第一个参数的第二个参数次方。 17 sqrt() 求参数的算术平方根。 18 sin() 求指定double类型参数的正弦值。 19 cos() 求指定double类型参数的余弦值。 20 tan() 求指定double类型参数的正切值。 21 asin() 求指定double类型参数的反正弦值。 22 acos() 求指定double类型参数的反余弦值。 23 atan() 求指定double类型参数的反正切值。 24 atan2() 将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。 25 toDegrees() 将参数转化为角度。 26 toRadians() 将角度转换为弧度。 27 random() 返回一个随机数。 */ } }]]></content>
-      <categories>
-        <category>Java</category>
-      </categories>
-      <tags>
-        <tag>Java</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Java-Scanner类]]></title>
     <url>%2F2016%2F03%2F02%2FJava-Scanner%E7%B1%BB%2F</url>
     <content type="text"><![CDATA[Java-Scanner类import java.util.Scanner; public class ScannerDemo { //Scanner类 获取用户的输入 /* next() 与 nextLine() 区别 next(): 1、一定要读取到有效字符后才可以结束输入。 2、对输入有效字符之前遇到的空白，next() 方法会自动将其去掉。 3、只有输入有效字符后才将其后面输入的空白作为分隔符或者结束符。 next() 不能得到带有空格的字符串。 nextLine()： 1、以Enter为结束符,也就是说 nextLine()方法返回的是输入回车之前的所有字符。 2、可以获得空白。 如果要输入 int 或 float 类型的数据，在 Scanner 类中也有支持，但是在输入之前最好先使用 hasNextXxx() 方法进行验证，再使用 nextXxx() 来读取： */ public void NextDemo() { //从键盘接收数据 Scanner scan1 = new Scanner(System.in); //next方式接收字符串 System.out.println(&quot;next方式接收：&quot;); //判断是否还有输入 if (scan1.hasNext()) { String str1 = scan1.next(); System.out.println(&quot;输入的数据为：&quot; + str1); } scan1.close(); } public void NextLineDemo() { //从键盘接收数据 Scanner scan2 = new Scanner(System.in); //nextLine方式接收字符串 System.out.println(&quot;nextLine方式接收：&quot;); //判断是否还有输入 if (scan2.hasNext()) { String str2 = scan2.nextLine(); System.out.println(&quot;输入的数据为：&quot; + str2); } scan2.close(); } public static void main(String[] args) { ScannerDemo s = new ScannerDemo(); // s.NextDemo(); s.NextLineDemo(); } }]]></content>
@@ -1533,9 +1531,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[Java-StringBuffer]]></title>
-    <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
-    <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
+    <title><![CDATA[Java-NumberMath类]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-NumberMath%E7%B1%BB%2F</url>
+    <content type="text"><![CDATA[Java-NumberMath类public class NumberAndMath { //（Integer、Long、Byte、Double、Float、Short）都是抽象类 Number 的子类 // Math 包含了用于执行基本数学运算的属性和方法，如初等指数、对数、平方根和三角函数 private static void test(double num) { System.out.println(&quot;Math.floor(&quot; + num + &quot;)=&quot; + Math.floor(num)); System.out.println(&quot;Math.round(&quot; + num + &quot;)=&quot; + Math.round(num)); System.out.println(&quot;Math.ceil(&quot; + num + &quot;)=&quot; + Math.ceil(num)); } public static void main(String[] args) { System.out.println(&quot;90度的正弦值&quot; + Math.sin(Math.PI / 2)); System.out.println(&quot;0度的余弦值&quot; + Math.cos(0)); System.out.println(&quot;60度的正切值&quot; + Math.tan(Math.PI / 3)); System.out.println(&quot;1的反正切值&quot; + Math.atan(1)); System.out.println(&quot;PI /2的角度值&quot; + Math.toDegrees(Math.PI / 2)); double[] nums = {1.4, 1.5, 1.6, -1.4, -1.5, -1.6}; for (double num : nums) { test(num); } /* 序号 方法与描述 1 xxxValue() 将 Number 对象转换为xxx数据类型的值并返回。 2 compareTo() 将number对象与参数比较。 3 equals() 判断number对象是否与参数相等。 4 valueOf() 返回一个 Number 对象指定的内置数据类型 5 toString() 以字符串形式返回值。 6 parseInt() 将字符串解析为int类型。 7 abs() 返回参数的绝对值。 8 ceil() 返回大于等于( &gt;= )给定参数的的最小整数，类型为双精度浮点型。 9 floor() 返回小于等于（&lt;=）给定参数的最大整数 。 10 rint() 返回与参数最接近的整数。返回类型为double。 11 round() 它表示四舍五入，算法为 Math.floor(x+0.5)，即将原来的数字加上 0.5 后再向下取整，所以，Math.round(11.5) 的结果为12，Math.round(-11.5) 的结果为-11。 12 min() 返回两个参数中的最小值。 13 max() 返回两个参数中的最大值。 14 exp() 返回自然数底数e的参数次方。 15 log() 返回参数的自然数底数的对数值。 16 pow() 返回第一个参数的第二个参数次方。 17 sqrt() 求参数的算术平方根。 18 sin() 求指定double类型参数的正弦值。 19 cos() 求指定double类型参数的余弦值。 20 tan() 求指定double类型参数的正切值。 21 asin() 求指定double类型参数的反正弦值。 22 acos() 求指定double类型参数的反余弦值。 23 atan() 求指定double类型参数的反正切值。 24 atan2() 将笛卡尔坐标转换为极坐标，并返回极坐标的角度值。 25 toDegrees() 将参数转化为角度。 26 toRadians() 将角度转换为弧度。 27 random() 返回一个随机数。 */ } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
@@ -1558,6 +1556,17 @@
     <title><![CDATA[Java-SwitchCase语句]]></title>
     <url>%2F2016%2F03%2F02%2FJava-SwitchCase%2F</url>
     <content type="text"><![CDATA[Java-SwitchCase语句public class SwitchCase { //switch case语句 判断一个变量与一系列值中某个值是否相等，每个值称为一个分支 // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。 /* switch(expression){ case value : //语句 break; //可选 case value : //语句 break; //可选 //你可以有任意数量的case语句 default : //可选 //语句 不需要break } */ public static void main(String[]args){ char grade =&#39;C&#39;; switch (grade) { case &#39;A&#39;: System.out.println(&quot;优秀&quot;); break; case &#39;B&#39;: case &#39;C&#39;: System.out.println(&quot;良好&quot;); break; case &#39;D&#39;: System.out.println(&quot;及格&quot;); break; case &#39;F&#39;: System.out.println(&quot;你还需要继续努力&quot;); break; default: System.out.println(&quot;未知等级&quot;); } System.out.println(&quot;你的等级是&quot; + grade); } }]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>Java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Java-StringBuffer]]></title>
+    <url>%2F2016%2F03%2F02%2FJava-StringBuffer%2F</url>
+    <content type="text"><![CDATA[Java-StringBufferpublic class StringBufferAndStringBuilderDemo { //StringBuffer 线程安全 //StringBuilder 速度快 /* 序号 方法描述 1 public StringBuffer append(String s) 将指定的字符串追加到此字符序列。 2 public StringBuffer reverse() 将此字符序列用其反转形式取代。 3 public delete(int start, int end) 移除此序列的子字符串中的字符。 4 public insert(int offset, int i) 将 int 参数的字符串表示形式插入此序列中。 5 replace(int start, int end, String str) 使用给定 String 中的字符替换此序列的子字符串中的字符。 */ /* 序号 方法描述 1 int capacity() 返回当前容量。 2 char charAt(int index) 返回此序列中指定索引处的 char 值。 3 void ensureCapacity(int minimumCapacity) 确保容量至少等于指定的最小值。 4 void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin) 将字符从此序列复制到目标字符数组 dst。 5 int indexOf(String str) 返回第一次出现的指定子字符串在该字符串中的索引。 6 int indexOf(String str, int fromIndex) 从指定的索引处开始，返回第一次出现的指定子字符串在该字符串中的索引。 7 int lastIndexOf(String str) 返回最右边出现的指定子字符串在此字符串中的索引。 8 int lastIndexOf(String str, int fromIndex) 返回 String 对象中子字符串最后出现的位置。 9 int length() 返回长度（字符数）。 10 void setCharAt(int index, char ch) 将给定索引处的字符设置为 ch。 11 void setLength(int newLength) 设置字符序列的长度。 12 CharSequence subSequence(int start, int end) 返回一个新的字符序列，该字符序列是此序列的子序列。 13 String substring(int start) 返回一个新的 String，它包含此字符序列当前所包含的字符子序列。 14 String substring(int start, int end) 返回一个新的 String，它包含此序列当前所包含的字符子序列。 15 String toString() 返回此序列中数据的字符串表示形式。 */ public static void main(String[] args){ StringBuffer sBuffer = new StringBuffer(&quot;oceaneyes.top&quot;); sBuffer.append(&quot;站点&quot;); System.out.println(sBuffer); } }]]></content>
       <categories>
         <category>Java</category>
       </categories>
