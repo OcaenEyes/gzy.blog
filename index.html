@@ -133,6 +133,270 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/12/29/机器学习实战-笔记3/">
+        <p class="h4 index-header">机器学习实战-笔记3-决策树</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">决策树的一个重要任务是为了数据中所蕴含的知识信息
+决策树可以使用不熟悉的数据集合，并从中提取出一系列规则，在这些机器根据数据集创建规则时，就是机器学习的过程
+k-近邻算法可以完成很多分类任务，但是它最大的缺点就是无法给出数据的内在含义，决策树的主要优势就在于数据形式非常容易理解
+
+决策数的构造
+优点：计算复杂度不高，输出结果易于理解，对中间值对缺失不敏感，可处理不相关特征数据
+缺点：可能会产生过度匹配的问题
+适用数据类型：数值型和 标称型
+
+构建决策树的第一个问题：当前数据集上哪个特征在划分数据分类时起决定性作用
+
+为了找到决定性的特征，划分出最好的结果，我们必须评估每个特征。
+完成测试之后，原始数据集就被划分为几个数据子集
+这些数据子集会分布在第一个决策点的所有分支上。如果某个分支下的数据属于同一类型，则当前条件已经正确地划分数据分类， 无需进一步对数据集进行分割。
+如果数据子集内的数据不属于同一类型，则需要重复划分数据子集的过程
+
+思路检测数据集中的每个子项是否属于同一分类:    If so return 类标签;    Else        寻找划分数据集的最好特征     </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-29&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/12/29/案例-使用k-近邻算法改进约会网站的配对效果/">
+        <p class="h4 index-header">案例-k-近邻-改进约会网站的配对效果</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">思路
+收集数据：提供文本数据
+准备数据：解析文本数据
+分析数据：使用matplotlib 二维扩散图
+训练算法：不适用于k-近邻
+测试算法：切分测试样本； 测试样本是已经完成分类的数据，如果预测分类与实际分类不同，则标记为错误
+使用算法：程序执行，输入一些特征数据来判断是否为喜欢的类型
+三种类型：不喜欢的、一般的、喜欢的
+
+
+
+准备数据import numpy as np
+import matplotlib.pyplot as plt
+import operator
+
+np.zeros((1000,3)).shape
+
+(1000, 3)
+def file2matrix(filename):
+    with open (filename,&#39;r&#39;) as f:
+        arrayOLines = f.readlines()
+#         print(arrayLines)
+        numberOflines= len(arrayOLines)
+#         print(numberOflines)
+        returnMat = np</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-29&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/k-%E8%BF%91%E9%82%BB">k-近邻</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/12/29/案例-手写字识别系统/">
+        <p class="h4 index-header">案例-k-近邻-手写字识别系统</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">
+收集数据：提供文本文件
+准备数据：编写函数classify0(), 将图像格式转换为分类器使用的list格式
+分析数据：检查数据
+训练算法：不适用于k-近邻算法
+测试算法：编写函数切分测试样本； 测试样本是已经完成分类的数据，如果预测分类与实际分类不同，则标记为错误
+使用算法：
+
+Numpy中有两个常用数据类型，数组（array/ndarray）、矩阵（matrix）
+matrix是array的特殊形式，matrix只能表示2维的数据，而array可以表示任意维度数据，matrix相当于二维数组。
+当matrix的某一维的维度为1时，即可称为向量（m，1）是列向量，（1，n)是行向量
+
+import numpy as np
+import os
+import operator
+
+准备数据：将图像转换为测试向量# 将图像处理为向量
+def img2vector(filename):
+    returnVect = np.zeros((1,1024))
+#     print(returnVect)
+    with open(filename,&#39;r&#39;) as f:
+  </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-29&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/k-%E8%BF%91%E9%82%BB">k-近邻</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/12/28/机器学习实战-笔记2/">
+        <p class="h4 index-header">机器学习实战-笔记2-k-近邻算法概述</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">k-近邻算法概述
+优点
+
+精度高、对异常值不敏感、无数据输入假定
+
+
+缺点
+
+计算复杂度高、空间复杂度高
+
+
+适用数据范围
+
+数值型和标称型  
+
+
+
+
+
+
+工作原理
+样本数据集，每个数据都存在标签状态
+输入新的没有标签状态的数据，将新数据的每个特征与样本集中数据对应的特征比较
+算法提取样本集中特征最相似（最近邻）数据的标签； 一般选取样本数据集中前k个最相似的数据; k通常是不大于20的整数
+
+一般流程
+收集数据：可以使用任何方法
+准备数据：距离计算索需要的数值，最好是结构化的数据格式
+分析数据：可以使用任何方法
+训练算法：不适用于k-近邻
+测试算法：计算错误率
+使用算法：首选需输入样本数据和结构化的输出结果， 然后运行k-近邻算法判定输入数据分别属于哪个分类， 最后应用对计算出的分类 执行后续的处理
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-28&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/k-%E8%BF%91%E9%82%BB">k-近邻</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2020/12/28/机器学习实战-笔记1/">
         <p class="h4 index-header">机器学习实战-笔记1-基础</p>
         
@@ -186,80 +450,6 @@ Parzen窗设计
 
 开发机器学习应用程序的步骤
 收集</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-28&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
-          
-            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
-          
-            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/12/28/机器学习实战-笔记2/">
-        <p class="h4 index-header">机器学习实战-笔记2-k-近邻算法概述</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">k-近邻算法概述
-优点
-
-精度高、对异常值不敏感、无数据输入假定
-
-
-缺点
-
-计算复杂度高、空间复杂度高
-
-
-适用数据范围
-
-数值型和标称型  
-
-
-
-
-
-
-工作原理
-样本数据集，每个数据都存在标签状态
-输入新的没有标签状态的数据，将新数据的每个特征与样本集中数据对应的特征比较
-算法提取样本集中特征最相似（最近邻）数据的标签； 一般选取样本数据集中前k个最相似的数据; k通常是不大于20的整数
-
-一般流程
-收集数据：可以使用任何方法
-准备数据：距离计算索需要的数值，最好是结构化的数据格式
-分析数据：可以使用任何方法
-训练算法：不适用于k-近邻
-测试算法：计算错误率
-使用算法：首选需输入样本数据和结构化的输出结果， 然后运行k-近邻算法判定输入数据分别属于哪个分类， 最后应用对计算出的分类 执行后续的处理
-
-</div>
         </div>
       </a>
 
@@ -659,229 +849,6 @@ JPA中的一对一@OneToOne
             <a href="/tags/%E8%90%A5%E9%94%80">营销</a>&nbsp;
           
             <a href="/tags/%E5%A2%9E%E9%95%BF">增长</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/10/echart数据可视化/">
-        <p class="h4 index-header">echarts数据可视化</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">echarts数据可视化简介
-ECharts，一个使用 JavaScript 实现的开源可视化库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖矢量图形库 ZRender，提供直观，交互丰富，可高度个性化定制的数据可视化图表。
-丰富的可视化类型
-ECharts 提供了常规的折线图、柱状图、散点图、饼图、K线图，用于统计的盒形图，用于地理数据可视化的地图、热力图、线图，用于关系数据可视化的关系图、treemap、旭日图，多维数据可视化的平行坐标，还有用于 BI 的漏斗图，仪表盘，并且支持图与图之间的混搭。
-
-快速上手echarts引入echarts&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;EC</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-10&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96">数据可视化</a>&nbsp;
-          
-            <a href="/categories/echarts">echarts</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96">数据可视化</a>&nbsp;
-          
-            <a href="/tags/echarts">echarts</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/08/推荐系统-个性化内容分发/">
-        <p class="h4 index-header">推荐系统-个性化内容分发</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">什么是推荐系统？维基百科定义
-
-推荐系统是一种信息过滤系统，用语预测用户对物品的“评分”或“偏好”
-
-限定在电商购买决策过程的定义
-
-电商应用向客户提供商品信息和建议，帮助用户决定应该够买什么产品。
-
-
-这其中隐含了土建系统的2个重要的核心功能
-
-路径优化
-
-
-兴趣发现
-
-
-
-
-
-推荐概述
-推荐目标：合适的才是最好的
-实现手段：数据、算法、架构、
-核心功能：链路优化、兴趣发现
-评价：满意度（点击率，转化率，时长）、准确、覆盖率、多样性、新颖性、惊喜性、信任度、鲁棒性、实时性、商业目标
-两过程：从学习到决策过程
-核心问题：如何构建一个用户对商品的评价模型
-宗旨：服务提供方和消费方双赢
-演进：
-与搜索的异同：推荐被动，搜索主动； 推荐不明确货找人， 搜索明确人找货
-
-推荐的几大挑战
-大数据，稀疏，长尾，噪音
-用户行为模式的挖掘和利用（行为的复杂性）
-冷启动（新用户/新商品）
-多样性与精确性的两难困境
-用户界面与用户体验（个性化体验的可解释性）
-
-好的推荐产品
-5W
-when
-where
-who
-what
-why
-
-
-
-
-
-
-
-推荐系统是怎么做到的？上下文
-当前定位
-当前季节
-用户年龄
-
-用</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-08&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/categories/%E6%8E%A8%E8%8D%90">推荐</a>&nbsp;
-          
-            <a href="/categories/%E4%B8%AA%E6%80%A7%E5%8C%96">个性化</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/tags/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F">推荐系统</a>&nbsp;
-          
-            <a href="/tags/%E4%B8%AA%E6%80%A7%E5%8C%96">个性化</a>&nbsp;
-          
-            <a href="/tags/%E5%86%85%E5%AE%B9%E5%88%86%E5%8F%91">内容分发</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/08/浅谈用户画像/">
-        <p class="h4 index-header">浅谈用户画像</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">什么是用户画像？维基百科定义
-
-A user profile is a visual display of personal data associated with a specific user, or a customized desktop environment
-用户画像就是与该用户相关联的数据的可视化展现；即：用户信息标签化
-
-偏技术的定义
-
-海量的数据标签，根据用户的目标、行为和观点的差异区分为不同的类型
-
-常见的用户画像维度
-
-金融用户评级画像
-
-群体维度常见的画像-今日头条
-
-为什么要做用户画像？宏观构建具象认知，构建战略、战术方向
-为了在核心用户上达成统一 具象的认知，方便后期有的放矢
-根据用户画像信息做产品设计，了解用户行为偏好
-
-探索用户足迹，用户市场导向
-详细了解真实用户是如何 与产品及相关内容进行互动的
-从业务场景出发，解决实际的业务问题，针对用户生命周期的不同状态进行产品设计
-
-微观构建底层数据基础，服务上层应用
-用户画像可作为推荐系统（广告、搜索系统）重要一环
-
-方便信息的处理有了标签后计算机可以方便的处理各个量化需求
-
-统计分类
-数据挖掘
-
-如何构建用</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-08&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE">数据</a>&nbsp;
-          
-            <a href="/categories/%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F">用户画像</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE">数据</a>&nbsp;
-          
-            <a href="/tags/%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F">用户画像</a>&nbsp;
           
         
       </div>
