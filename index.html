@@ -133,6 +133,65 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/12/31/决策树demo/">
+        <p class="h4 index-header">决策树demo</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">决策树决策树的一个重要任务是为了数据中所蕴含的知识信息
+决策树可以使用不熟悉的数据集合，并从中提取出一系列规则，在这些机器根据数据集创建规则时，就是机器学习的过程
+k-近邻算法可以完成很多分类任务，但是它最大的缺点就是无法给出数据的内在含义，决策树的主要优势就在于数据形式非常容易理解
+
+决策数的构造
+优点：计算复杂度不高，输出结果易于理解，对中间值对缺失不敏感，可处理不相关特征数据
+缺点：可能会产生过度匹配的问题
+适用数据类型：数值型和 标称型
+
+构建决策树的第一个问题：当前数据集上哪个特征在划分数据分类时起决定性作用
+
+为了找到决定性的特征，划分出最好的结果，我们必须评估每个特征。
+完成测试之后，原始数据集就被划分为几个数据子集
+这些数据子集会分布在第一个决策点的所有分支上。如果某个分支下的数据属于同一类型，则当前条件已经正确地划分数据分类， 无需进一步对数据集进行分割。
+如果数据子集内的数据不属于同一类型，则需要重复划分数据子集的过程
+
+思路检测数据集中的每个子项是否属于同一分类:    If so return 类标签;    Else        寻找划分数据集的最好特征  </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-31&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/%E5%86%B3%E7%AD%96%E6%A0%91">决策树</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2020/12/29/机器学习实战-笔记3/">
         <p class="h4 index-header">机器学习实战-笔记3-决策树</p>
         
@@ -180,6 +239,8 @@ k-近邻算法可以完成很多分类任务，但是它最大的缺点就是无
             <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
           
             <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/%E5%86%B3%E7%AD%96%E6%A0%91">决策树</a>&nbsp;
           
         
       </div>
@@ -321,82 +382,6 @@ def img2vector(filename):
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/12/28/机器学习实战-笔记2/">
-        <p class="h4 index-header">机器学习实战-笔记2-k-近邻算法概述</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">k-近邻算法概述
-优点
-
-精度高、对异常值不敏感、无数据输入假定
-
-
-缺点
-
-计算复杂度高、空间复杂度高
-
-
-适用数据范围
-
-数值型和标称型  
-
-
-
-
-
-
-工作原理
-样本数据集，每个数据都存在标签状态
-输入新的没有标签状态的数据，将新数据的每个特征与样本集中数据对应的特征比较
-算法提取样本集中特征最相似（最近邻）数据的标签； 一般选取样本数据集中前k个最相似的数据; k通常是不大于20的整数
-
-一般流程
-收集数据：可以使用任何方法
-准备数据：距离计算索需要的数值，最好是结构化的数据格式
-分析数据：可以使用任何方法
-训练算法：不适用于k-近邻
-测试算法：计算错误率
-使用算法：首选需输入样本数据和结构化的输出结果， 然后运行k-近邻算法判定输入数据分别属于哪个分类， 最后应用对计算出的分类 执行后续的处理
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-28&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
-          
-            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
-          
-            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
-          
-            <a href="/tags/k-%E8%BF%91%E9%82%BB">k-近邻</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2020/12/28/机器学习实战-笔记1/">
         <p class="h4 index-header">机器学习实战-笔记1-基础</p>
         
@@ -473,6 +458,82 @@ Parzen窗设计
             <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
           
             <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/12/28/机器学习实战-笔记2/">
+        <p class="h4 index-header">机器学习实战-笔记2-k-近邻算法概述</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">k-近邻算法概述
+优点
+
+精度高、对异常值不敏感、无数据输入假定
+
+
+缺点
+
+计算复杂度高、空间复杂度高
+
+
+适用数据范围
+
+数值型和标称型  
+
+
+
+
+
+
+工作原理
+样本数据集，每个数据都存在标签状态
+输入新的没有标签状态的数据，将新数据的每个特征与样本集中数据对应的特征比较
+算法提取样本集中特征最相似（最近邻）数据的标签； 一般选取样本数据集中前k个最相似的数据; k通常是不大于20的整数
+
+一般流程
+收集数据：可以使用任何方法
+准备数据：距离计算索需要的数值，最好是结构化的数据格式
+分析数据：可以使用任何方法
+训练算法：不适用于k-近邻
+测试算法：计算错误率
+使用算法：首选需输入样本数据和结构化的输出结果， 然后运行k-近邻算法判定输入数据分别属于哪个分类， 最后应用对计算出的分类 执行后续的处理
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-28&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/k-%E8%BF%91%E9%82%BB">k-近邻</a>&nbsp;
           
         
       </div>
@@ -748,107 +809,6 @@ JPA中的一对一@OneToOne
             <a href="/tags/JAVA">JAVA</a>&nbsp;
           
             <a href="/tags/SpringData%20JPA">SpringData JPA</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/18/疫情之后，推动成交的核心方法/">
-        <p class="h4 index-header">疫情之后，推动成交的核心方法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">疫情之后的变化用户变化
-没必要的都不买，更加在意==刚需、痛点、高频、场景、时机==
-
-潜意识会更在意健康防护类产品
-
-
-面对萧条的五大对策
-激活全员营销
-重构产品及渠道
-彻底消减成本
-强化提升效率
-重构内外关系
-
-如何通过链路刺激与激活刚需90%的用户在做购买决策是处于潜意识。
-用户思维的本质：我关系你的关心。
-需求驱动先用情绪激活用户欲望，再切入场景，将产品转化为刚需
-需求动力情绪激活
-​    荷尔蒙刺激、多巴胺刺激
-
-正面情绪
-快乐、乐观、自信
-欣赏、放松、从容
-
-
-负面情绪
-恐惧、空虚、焦虑
-愤怒、悲伤、害怕
-孤独的另一个名字又叫找自己。
-
-
-
-场景激活
-信任驱动
-人物信任
-知名度、资历、成功案例
-
-
-企业信任
-影响力、行业地位
-
-
-
-价值驱动
-看点
-亮点
-记忆点
-
-利益驱动
-门槛要低
-尽量别让用户下载、注册、安装、关注，有门槛就会有难度，流失率就会增加
-
-
-即时反馈
-过程清晰
-用户天生多疑，活动是真的吗？一定要让他知道过程
-
-
-
-服务驱动</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-18&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/categories/%E8%90%A5%E9%94%80">营销</a>&nbsp;
-          
-            <a href="/categories/%E5%A2%9E%E9%95%BF">增长</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/tags/%E8%90%A5%E9%94%80">营销</a>&nbsp;
-          
-            <a href="/tags/%E5%A2%9E%E9%95%BF">增长</a>&nbsp;
           
         
       </div>

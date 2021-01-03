@@ -133,6 +133,69 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/07-matplotlib箱线图/">
+        <p class="h4 index-header">数据分析07：matplotlib箱线图</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+import matplotlib.pyplot as plt
+
+&#39;&#39;&#39;
+    箱形图（Box-plot）又称为盒须图，盒式图，或 箱线图；
+    是一种用在显示一组数据分散情况的资料统计图；
+    上边缘，上四分位数，中位数，下四分位数，下边缘，异常值；
+&#39;&#39;&#39;
+
+np.random.seed(100)
+data = np.random.normal(size=1000,loc=0,scale=1)
+# sym 指定异常值的点；whis虚线的长度， 通过调整whis的大小来决定收入异常值的多少
+plt.boxplot(data,sym =&#39;o&#39;,whis=1.5)
+plt.show()
+
+# 同一张图中显示多个箱线图
+
+# 4组 1000的数据
+data = np.random.normal(size=(1000,4),loc = 0,scale=1)
+# 每组的标签为ABCD
+labels = [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/08-matplotlib颜色与样式/">
         <p class="h4 index-header">数据分析08：matplotlib颜色与样式</p>
         
@@ -274,6 +337,77 @@ plt.bar(in</div>
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2018/03/02/01-numpy基础/">
+        <p class="h4 index-header">数据分析01：numpy基础</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">import numpy as np
+
+# ndarray
+
+&#39;&#39;&#39;
+    # 三种创建方式
+    1、从python的基础数据对象转化
+    2、通过numpy内置的函数生成
+    3、从硬盘（文件）读取数据
+&#39;&#39;&#39;
+# 创建方法一
+a= [1,2,3,4]
+x1 = np.array(a)
+print(x1,&quot;\n&quot;,type(x1))
+
+# 创建方法二
+x = np.arange(5)
+print(x,&quot;\n&quot;,type(x))
+
+# # 创建方法三
+# date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True)
+# print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low)
+
+
+# 常用函数
+&#39;&#39;&#39;
+    min     最小值
+    max     最大值
+ </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/categories/Python3">Python3</a>&nbsp;
+          
+            <a href="/categories/Numpy">Numpy</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
+          
+            <a href="/tags/Python3">Python3</a>&nbsp;
+          
+            <a href="/tags/Numpy">Numpy</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2018/03/02/02-matplotlib散点图/">
         <p class="h4 index-header">数据分析02：matplotlib散点图</p>
         
@@ -341,77 +475,6 @@ plt.show()
             <a href="/tags/Python3">Python3</a>&nbsp;
           
             <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/01-numpy基础/">
-        <p class="h4 index-header">数据分析01：numpy基础</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">import numpy as np
-
-# ndarray
-
-&#39;&#39;&#39;
-    # 三种创建方式
-    1、从python的基础数据对象转化
-    2、通过numpy内置的函数生成
-    3、从硬盘（文件）读取数据
-&#39;&#39;&#39;
-# 创建方法一
-a= [1,2,3,4]
-x1 = np.array(a)
-print(x1,&quot;\n&quot;,type(x1))
-
-# 创建方法二
-x = np.arange(5)
-print(x,&quot;\n&quot;,type(x))
-
-# # 创建方法三
-# date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True)
-# print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low)
-
-
-# 常用函数
-&#39;&#39;&#39;
-    min     最小值
-    max     最大值
- </div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/categories/Python3">Python3</a>&nbsp;
-          
-            <a href="/categories/Numpy">Numpy</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90">数据分析</a>&nbsp;
-          
-            <a href="/tags/Python3">Python3</a>&nbsp;
-          
-            <a href="/tags/Numpy">Numpy</a>&nbsp;
           
         
       </div>
@@ -501,63 +564,6 @@ export PATH=$PATH$:M2_HOME/bin
 source /etc/profile
 
 </div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          
-            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/SpringBoot启动自定义方法/">
-        <p class="h4 index-header">SpringBoot启动自定义方法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
-
-import com.gzy.demo.NettyClient;
-
-@Component
-public class MyStart1 implements CommandLineRunner{
-
-    @Override
-    public void run(String... args) throws Exception {
-        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
-    }
-}
-
-
-二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
-import org.springframework.boot</div>
         </div>
       </a>
 
@@ -697,45 +703,53 @@ import java.util.concurrent.CopyOnWriteArraySet;
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/01/08/CentOS7防火墙控制与端口控制/">
-        <p class="h4 index-header">CentOS7 防火墙控制与端口控制</p>
+      <a href="/2018/03/02/SpringBoot启动自定义方法/">
+        <p class="h4 index-header">SpringBoot启动自定义方法</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">firewalld
-启动： systemctl start firewalld
-关闭： systemctl stop firewalld
-查看状态： systemctl status firewalld 
-开机禁用  ： systemctl disable firewalld
-开机启用  ： systemctl enable firewalld
+          <div class="index-text mb-1">SpringBoot启动自定义方法一、实现CommandLineRunner接口，重写run方法import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
-systemctlsystemctl是CentOS7的服务管理工具中主要的工具，它融合之前service和chkconfig的功能于一体。
+import com.gzy.demo.NettyClient;
 
-启动一个服务：systemctl start firewalld.service
-关闭一个服务：systemctl stop firewalld.service
-重启一个服务：systemctl restart firewalld.service
-显示一个服务的状态：systemctl status firewalld.service
-在开机时启用一个服务：systemctl enable firewalld.service
-在开机时禁用一个服务：systemctl disable firewalld.</div>
+@Component
+public class MyStart1 implements CommandLineRunner{
+
+    @Override
+    public void run(String... args) throws Exception {
+        NettyClient.connect(10007, &quot;127.0.0.1&quot;);
+    }
+}
+
+
+二、实现ApplicationRunner接口，重写un方法import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2018-01-08&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2018-03-02&nbsp;&nbsp;
         
         
           <i class="iconfont icon-inbox"></i>
           
-            <a href="/categories/Linux">Linux</a>&nbsp;
+            <a href="/categories/Java">Java</a>&nbsp;
+          
+            <a href="/categories/SpringBoot">SpringBoot</a>&nbsp;
           &nbsp;
         
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/CentOS">CentOS</a>&nbsp;
+            <a href="/tags/%E6%9C%8D%E5%8A%A1%E7%AB%AF">服务端</a>&nbsp;
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+            <a href="/tags/SpringBoot">SpringBoot</a>&nbsp;
           
         
       </div>
