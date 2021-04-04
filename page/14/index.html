@@ -133,6 +133,174 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java数组/">
+        <p class="h4 index-header">Java数组</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java数组public class ArrayDemo {
+    //声明数组
+    // 数据类型[] 数组名称;  dataType[] arrayName;
+
+    //创建数组
+    // 数据名称 = new dataType[arraySize];
+
+    //dataType[] arrayName = {value0,value1,value2,...,valuek};
+    public static void main(String[] args){
+        //数组大小
+        int size =4;
+        //定义数组
+        double[] TestList = new double[size];
+        TestList[0] = 3.2;
+        TestList[1] = 2.6;
+        TestList[2] = 4.7;
+        TestList[3] = 5.6;
+
+        double total =0;
+        for (int i=0; i&</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java日期和时间/">
+        <p class="h4 index-header">Java日期和时间</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java日期和时间import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.*;
+
+public class DateTimeDemo {
+    //日期时间
+    public static void main(String[] args){
+        //获取当前时间
+        Date date = new Date();
+        System.out.println(date.toString());
+
+
+        //格式化日期
+        /*
+            日期和时间的格式化编码
+时间模式字符串用来指定时间格式。在此模式中，所有的 ASCII 字母被保留为模式字母，定义如下：
+
+字母    描述    示例
+G    纪元标记    AD
+y    四位年份    2001
+M    月份    July or 07
+d    一个月的日期    10
+h     A.M./P.M. (1~12)格式小时    12
+H    一天中的小</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java条件语句/">
+        <p class="h4 index-header">Java条件语句</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java条件语句public class IfElse {
+    /*
+        条件语句 - if...else
+     */
+    public static void main(String[] args) {
+        int x = 10;
+        /*
+            if(布尔表达式){
+                //如果布尔表达式的值为true
+            }else{
+                //如果布尔表达式的值为false
+            }
+         */
+        if (x &lt; 20) {
+            System.out.println(&quot;这是一个if判断语句&quot;);
+        } else {
+            System.out.println(&quot;这是一个else判断语句&quot;);
+        }
+
+        /*
+            if(布尔表达式 1){
+                </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java正则表达式/">
         <p class="h4 index-header">Java正则表达式</p>
         
@@ -406,57 +574,6 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/01/01/Markdown数学公式语法/">
-        <p class="h4 index-header">Markdown数学公式语法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Markdown数学公式语法行内与独行
-行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$
-独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$
-
-上标、下标与组合
-上标符号，符号：^，如：$x^4$
-下标符号，符号：_，如：$x_1$
-组合符号，符号：{}，如：${16}{8}O{2+}{2}$
-
-汉字、字体与格式
-汉字形式，符号：\mbox{}，如：$V_{\mbox{初始}}$
-字体控制，符号：\displaystyle，如：$\displaystyle \frac{x+y}{y+z}$
-下划线符号，符号：\underline，如：$\underline{x+y}$
-标签，符号\tag{数字}，如：$\tag{11}$
-上大括号，符号：\overbrace{算式}，如：$\overbrace{a+b+c+d}^{2.0}$
-下大括号，符号：\underbrace{算式}，如：$a+\underbrace{b+c}_{1.0}+d$
-上位符号，符号：\stacrel{上位符号}{基位符号}，如：$\vec{x}\stackrel{\m</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-01-01&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Markdownd">Markdownd</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Markdown">Markdown</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/01/01/Markdown基本语法/">
         <p class="h4 index-header">Markdown基本语法</p>
         
@@ -532,34 +649,47 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2015/07/20/百年歌自苦，未见有知音/">
-        <p class="h4 index-header">生活随笔</p>
+      <a href="/2016/01/01/Markdown数学公式语法/">
+        <p class="h4 index-header">Markdown数学公式语法</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">孤村落日残霞，轻烟老树寒鸦，一点飞鸿影下。 
-</div>
+          <div class="index-text mb-1">Markdown数学公式语法行内与独行
+行内公式：将公式插入到本行内，符号：$公式内容$，如：$xyz$
+独行公式：将公式插入到新的一行内，并且居中，符号：$$公式内容$$，如：$$xyz$$
+
+上标、下标与组合
+上标符号，符号：^，如：$x^4$
+下标符号，符号：_，如：$x_1$
+组合符号，符号：{}，如：${16}{8}O{2+}{2}$
+
+汉字、字体与格式
+汉字形式，符号：\mbox{}，如：$V_{\mbox{初始}}$
+字体控制，符号：\displaystyle，如：$\displaystyle \frac{x+y}{y+z}$
+下划线符号，符号：\underline，如：$\underline{x+y}$
+标签，符号\tag{数字}，如：$\tag{11}$
+上大括号，符号：\overbrace{算式}，如：$\overbrace{a+b+c+d}^{2.0}$
+下大括号，符号：\underbrace{算式}，如：$a+\underbrace{b+c}_{1.0}+d$
+上位符号，符号：\stacrel{上位符号}{基位符号}，如：$\vec{x}\stackrel{\m</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2015-07-20&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-01-01&nbsp;&nbsp;
         
         
           <i class="iconfont icon-inbox"></i>
           
-            <a href="/categories/%E6%9D%82%E8%B0%88">杂谈</a>&nbsp;
-          
-            <a href="/categories/%E9%9A%8F%E7%AC%94">随笔</a>&nbsp;
+            <a href="/categories/Markdownd">Markdownd</a>&nbsp;
           &nbsp;
         
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E6%9D%82%E8%B0%88">杂谈</a>&nbsp;
+            <a href="/tags/Markdown">Markdown</a>&nbsp;
           
         
       </div>
@@ -570,7 +700,7 @@ public class RegularExpressionDemo {
 
   <nav aria-label="index posts navigation">
     <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/13/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="page-number current">14</span>
+      <a class="extend prev" rel="prev" href="/page/13/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><a class="page-number" href="/page/13/">13</a><span class="page-number current">14</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/15/"><i class="fas fa-angle-double-right"></i></a>
     </span>
   </nav>
   

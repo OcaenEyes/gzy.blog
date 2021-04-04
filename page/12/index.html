@@ -133,6 +133,212 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--MySQL中数据类型/">
+        <p class="h4 index-header">MySQL深入浅出--MySQL中数据类型</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">MySQL数据类型数值型整数型
+INT
+TINYINT
+BIGINT
+BOOL,BOOLEAN
+SMALLINT
+MEDIUMINT
+
+浮点型
+FLOAT
+DOUBLE
+DECIMAL
+
+字符串类型说明：
+1、CHAR效率高于VARCHAR,CHAR相当于拿空间换时间，VARCHAR拿时间换空间
+2、CHAR默认存储数据的时候，后面会用空格填充到指定长度；而在检索的时候会去掉后面空格；VARCHAR在保存的时候不进行填充，尾部的空格会留下
+3、TEXT列不能有默认值,检索的时候不存在大小写转换
+
+CHAR
+VARCHAR
+TINYTEXT
+TEXT
+MEDIUMTEXT
+LONGTEXT
+EMUM(‘value1’,’value2’,…)
+SET(‘value1’,’value2’,…)
+
+日期时间类型二进制类型</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--数据表相关操作/">
+        <p class="h4 index-header">MySQL深入浅出--数据表相关操作</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">数据表相关操作数据表
+描述
+ 1、是数据库最重要的组成部分之一，数据是保存在数据表中
+ 2、数据表由 行row 和 列column组成
+ 3、表名要求唯一，不要包含特殊字符，最好语义明确
+ 4、每个数据表至少有一列，行可有0 行，1行 或多行
+
+
+创建表
+CREATE TABLE [IF NOT EXISTS] tbl_name(
+    字段名称 字段类型 [完整性约束条件],
+    字段名称 字段类型 [完整性约束条件],
+    ...
+)ENGINE=存储引擎 CHARSET=编码方式;
+
+
+UNSIGNED        
+无符号，没有负数，从0开始
+
+ZEROFILL
+零填充，当数据的显示长度不够的时候可以使用前补0的效果填充至指定长度,字段会自动添加UNSIGNED
+
+NOT NULL
+非空约束，也就是插入值的时候这个字段必须要给值,值不能为空
+
+DEFAULT
+默认值，如果插入记录的时候没有给字段赋值，则使用默认值
+
+PRIMARY KEY
+主键，标识记录的唯一性，值不能重复，一个表只能有一个主键，自动禁止为空
+
+AUTO_INCREMENT
+自动增长，只能用于数值列</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2017/10/25/MySQL深入浅出--MySQL相关操作/">
+        <p class="h4 index-header">MySQL深入浅出--MySQL相关操作</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">MySQL 操作配置文件​    my.cnf  是 MySQL 的配置文件
+登录/退出MySQL注意：
+​    1、命令行结束符号使用英文分号;   或者 \g
+​    2、通过help 或者\h 或者?加上相关关键字 来查看手册
+​    3、\c可以取消当前命令的执行
+登录
+mysql -uroot -p
+mysql -uroot -proot
+mysql -hlocalhost -uroot -p -P3306
+登录同时修改命令提示符
+mysql -uroot -p –prompt=命令提示符
+
+
+获取版本号
+mysql -V
+mysql –version
+
+
+登录同时打开指定数据库
+mysql -uroot -p -D db_name
+
+
+
+退出
+exit
+quit
+\q
+ctrl + c
+
+SQL语句语法规范
+常用MySQL的关键字需要大写
+库名、表名、字段名称等使用小写
+SQL语句支持折行操作，拆分的时候不能把完整单词拆开
+数据库名称、表名称、字段名称不要使用MySQL的保留字，如果必须要使用，需要用反引号将其括起来
+
+常用SQL语句
+SELECT USER()   </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2017-10-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Linux">Linux</a>&nbsp;
+          
+            <a href="/categories/MySQL">MySQL</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/MySQL">MySQL</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2017/10/25/MySQL深入浅出--数据库相关操作/">
         <p class="h4 index-header">MySQL深入浅出--数据库相关操作</p>
         
@@ -536,229 +742,11 @@ springboot启动的时候加载朱配置类，开起了自动配置功能@Enable
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/07/20/电商产品网站成交总额/">
-        <p class="h4 index-header">电商产品网站成交总额</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">电商产品网站成交总额
-用户数
-访客数
-自然流量
-营销流量
-
-
-转化率
-目的一 拉新
-品牌认知
-转入
-
-
-购买考虑
-实现
-转出
-
-
-
-
-目的二 促进复购
-购买尝试
-复购
-沉睡
-流失
-
-
-多次购买
-复购
-沉睡
-流失
-
-
-忠诚用户
-复购
-沉睡
-流失
-
-
-
-
-目的三 推荐代购
-
-
-
-
-客单价
-产品单价
-前台价格
-智慧定价
-
-
-优惠价格
-促销建议
-
-
-
-
-关联产品数
-套装促销
-商品关联度
-商品热度
-
-
-
-
-
-
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-07-20&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/categories/%E7%94%B5%E5%95%86">电商</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E7%94%B5%E5%95%86">电商</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-Character类/">
-        <p class="h4 index-header">Java-Character类</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-Character类public class CharacterDemo {
-    // 对单个字符进行操作
-
-    /*
-        转义序列    描述
-        \t    在文中该处插入一个tab键
-        \b    在文中该处插入一个后退键
-        \n    在文中该处换行
-        \r    在文中该处插入回车
-        \f    在文中该处插入换页符
-        \&#39;    在文中该处插入单引号
-        \&quot;    在文中该处插入双引号
-        \\    在文中该处插入反斜杠
-     */
-
-    //字符方法
-    /*
-        序号    方法与描述
-        1    isLetter()
-是否是一个字母
-        2    isDigit()
-是否是一个数字字符
-        3    isWhitespace()
-是否是一个空白字符
-        4    isUpperCase()
-是否是大写字母
-        5    isLo</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-FileStreamIO/">
-        <p class="h4 index-header">Java-FileStreamIO</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java-FileStreamIOimport java.io.*;
-
-public class StreamFileIODemo {
-    public void printChar() throws IOException {
-        //使用BufferedReader从控制台读取输入
-        char c;
-        //使用System.in 创建BufferedReader
-        BufferedReader br1 = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println(&quot;输入字符，按Q键退出&quot;);
-        do {
-            //read() 读取字符
-            c = (char) br1.read();
-            System.out.println(c);
-        } while (c != &#39;Q&#39;);
-    }
-
-    pu</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
 
 
   <nav aria-label="index posts navigation">
     <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/page/11/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/13/"><i class="fas fa-angle-double-right"></i></a>
+      <a class="extend prev" rel="prev" href="/page/11/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><span class="page-number current">12</span><a class="page-number" href="/page/13/">13</a><a class="page-number" href="/page/14/">14</a><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/13/"><i class="fas fa-angle-double-right"></i></a>
     </span>
   </nav>
   

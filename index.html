@@ -133,6 +133,71 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2021/01/01/使用决策树预测隐性眼镜类型/">
+        <p class="h4 index-header">案例-使用决策树预测隐性眼镜类型</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">案例-使用决策树预测隐性眼镜类型
+收集数据：提供的文本文件
+准备数据：解析tab键分割的数据
+分析数据：快速检查数据
+训练算法：
+测试算法：编写测试函数 验证决策树可以正确分类给定的数据实例
+使用算法：存储树的数据结构，以便下次使用
+
+from math import log
+import operator
+
+def calcShannonEnt(dataSet):
+    numEntries = len(dataSet)
+    # 为所有可能分类创建字典
+    labelCounts= {}
+    for featVec in dataSet:
+        currentLabel = featVec[-1]
+        if currentLabel not in labelCounts.keys():
+            labelCounts[currentLabel] = 0
+        labelCounts[currentLabel] += 1
+    shannonEnt = 0.0
+    for key in labelCounts:
+   </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2021-01-01&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/%E5%86%B3%E7%AD%96%E6%A0%91">决策树</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2020/12/31/决策树demo/">
         <p class="h4 index-header">决策树demo</p>
         
@@ -605,70 +670,64 @@ Transform（对输入的序列分成q检索项 k键项 v值项进行计算，矩
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/22/DSP广告系统架构/">
-        <p class="h4 index-header">广告系统架构</p>
+      <a href="/2020/12/25/案例-基于朴素贝叶斯过滤垃圾邮件/">
+        <p class="h4 index-header">案例-基于朴素贝叶斯过滤垃圾邮件</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">广告系统架构
-DSP
-需求方平台，即为广告主服务平台，广告主可以通过DSP平台设置自己想要的受众，设置愿意出资多少购买这些受众的曝光，完成广告投放需求； 面向广告购买方
+          <div class="index-text mb-1">基于朴素贝叶斯过滤垃圾邮件
+收集数据：提供文本文件
+准备数据：将文本文件解析成词条向量
+分析数据：检查词条确保解析的正确性
+训练算法：使用trainNB1()函数
+测试算法：使用classifyNB() 并且构建一个新的测试函数来计算文档集的错误率
+使用算法：构建完整程序 对一组文档进行分类，并将错分的文档输出到屏幕
 
+准备数据：切分文本mySent = &#39;this book is the best book on Python pr M.L I have ever laid eyes upon.&#39;
 
-SSP
-供应方平台，即为媒体服务平台，媒体方通过SSP平台完成广告资源的管理，如流量分配，价格，筛选等；面向广告售卖方
+mySent.split()
 
-
-ADX
-广告交易平台，即为连接买方和卖方；ADX将媒体的广告流量以拍卖的方式卖给DSP
-
-
-DMP
-数据管理平台，整合各方数据并提供数据分析、数据管理、数据调用，用来指导广告主进行广告优化和投放决策
-
-
-RTB
-实时竞价，100ms内完成计算，当前谁在这个广告位上提供的广告费用更高
-
-
-
-实用程序的方式进行广告投放的管理，并利用算法和技术自动实现精准的目标受众定向，把广告内容投放给对的人；效果：
-
-对广告主
-提高流量的采购效率，更低成本，更可靠稳定的流量
-可融合使用多种策略，投放不同的目标人群，使得广告的投放效果更加可控
-减少广告浪费，提升转化率，扩大覆盖面积
-
-
-对媒体资源
-实现资源的自动化售卖，提高流量的使用率
-有效利用优质流量和长尾流量
-并且能基于人员的属性、兴趣等标签对不同的流量给出不</div>
+[&#39;this&#39;,
+ &#39;book&#39;,
+ &#39;is&#39;,
+ &#39;the&#39;,
+ &#39;best&#39;,
+ &#39;book&#39;,
+ &#39;on&#39;,
+ &#39;Python&#39;,
+ &#39;pr&#39;,
+ &#39;M.L&#39;,
+ &#39;I&#39;,
+ &#39;have&#39;,
+ &#39;ever&#39;,
+ &#39;laid</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-22&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-25&nbsp;&nbsp;
         
         
           <i class="iconfont icon-inbox"></i>
           
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
           
-            <a href="/categories/%E5%B9%BF%E5%91%8A">广告</a>&nbsp;
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
           &nbsp;
         
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
           
-            <a href="/tags/%E5%B9%BF%E5%91%8A">广告</a>&nbsp;
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
           
-            <a href="/tags/DSP">DSP</a>&nbsp;
+            <a href="/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF">朴素贝叶斯</a>&nbsp;
           
         
       </div>
@@ -679,136 +738,65 @@ RTB
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/20/广告系统产品/">
-        <p class="h4 index-header">关于广告系统</p>
+      <a href="/2020/12/24/基于概率论的分类方法-朴素贝叶斯/">
+        <p class="h4 index-header">基于贝叶斯决策理论的分类方法</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">关于广告系统以把合适的内容推送给合适的受众为目的的商业交易过程，是一种最直接、透明的流量变现方式。
-广告平台提供流量分发的能力，同时提供广告创意，广告素材服务进而服务于：
-1、广告主：金主，有广告联盟和广告主两种形式
-2、媒体：流量提供方
-3、消费者：C端用户，广告和流量的使用者
+          <div class="index-text mb-1">基于贝叶斯决策理论的分类方法朴素贝叶斯是贝叶斯决策理论的一部分
 
-广告系统模块至少包含以下部分
-广告投放系统承担广告内容管理和广告流量分发的功能，承前启后，是广告系统的核心部分
-商户后台系统用于广告主和广告联盟自主接入的管理平台，主要包含：广告需求承接 和广告效果数据、广告费用的展示
-运营后台系统广告平台方的运用后台，主要用户广告审核、广告主管理和其他管理功能
-广告素材设计系统用于制作广告创意，根据广告位点要求支持不同尺寸、不同投放环境点创意设计
-数据统计系统用户广告效果数据收集和分析
-各个系统模块的交互
-
-广告需求模型设计把单个点广告需求称之为广告投放计划，广告需求是广告主的视角，其至少分为：
-
-广告主
-
-广告点需求方，是广告效果和广告计费的统一收口方
-需要广告的投放目标，广告的投放时间、广告投放的定向和广告预算等内容进行配置
+优点：在数据较少的情况下仍然有效，可以处理多类别问题
+缺点：对于输入数据的准备方式较为敏感
+适用数据类型：标称型数据
+标称型：一般在有限的数据中取，而且只存在‘是’和‘否’两种不同的结果（一般用于分类）数值型：可以在无限的数据中取，而且数值比较具体化，例如4.02,6.23这种值（一般用于回归分析）
 
 
-投放计划
+贝叶斯决策理论的核心思想，即选择具有最高概率的决策
+假设现在我们有一个数据集，它由两类数据组成，数据分布如图
+我们现在用p1(x,y)表示数据点(x,y)属于类别1（图中用圆点表示的类别）的概率，用p2(x,y)表示数据点(x,y)属于类别2（图中用三角形表示的类别）的概率，那么对于一个新数据点(x,y)，可以用下面的规则来判断它的类别：
 
-广告主名下往往有很多广告需</div>
+如果 p1(x,y) &gt; p2(x,y)，那么类别为1
+如果 p2(x,y) &gt; p1(x,y)，那么类别为2
+
+
+计算分类的方法
+
+使用kNN，进行1000次距离计算；
+使用决策树，分别沿x轴、y轴划分数据；
+计算数据点属于每个类别的概率，并进行比较
+
+
+
+条件概率
+
+</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-20&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-24&nbsp;&nbsp;
         
         
           <i class="iconfont icon-inbox"></i>
           
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
           
-            <a href="/categories/%E5%B9%BF%E5%91%8A%E4%BA%A7%E5%93%81">广告产品</a>&nbsp;
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
           &nbsp;
         
         
           <i class="iconfont icon-tag"></i>
           
-            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
           
-            <a href="/tags/%E5%B9%BF%E5%91%8A">广告</a>&nbsp;
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
           
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/19/JPA表与表之间的关系/">
-        <p class="h4 index-header">SpringData JPA 表与表之间的操作</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">表分析数据库表与表之间的关系
-
-多对多
-工程师—项目
-老师—学生
-
-
-一对多
-学校—班级
-班级—学生
-
-
-一对一
-学生—学生证
-公民—身份证
-
-
-
-
-JPA中的一对多一的一方为主表；多的一方为从表；从表依赖主表存在
-
-首先，确定两张表之间的关系
-在数据库中实现两张表的关系外键
-在实体类中描述两个实体的关系
-配置初实体类和数据库表的关系映射
-
-@OneToMany
-JPA中的多对多@ManyToMany
-JPA中的一对一@OneToOne
-问题描述在利用Spring boot data JPA进行表设计的时候，表对象之间经常存在各种映射关系，如何正确将理解的映射关系转化为代码中的映射关系是关键之处。
-解决办法概念理解
-举例：在公司的权限管理中，存在公司表、部门表、员工表。
-公司表和部门表的关系：主控方：部门表被控方：公司表
-部门表和员工表的关系：由于是多对多的关系，不存在谁是主控方或被控方，两者处于平行关系。
-
-
-一对多或多对一，用外键关联，若未设置级联删除，则删除被控方记录的时候会有外键约束。
-多对多，用中间表关联，删除中间表的记录，不会各方的表造成影响。
-在该四个注解中，都含有属性可</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-19&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/JAVA">JAVA</a>&nbsp;
-          
-            <a href="/categories/SpringData%20JPA">SpringData JPA</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/JAVA">JAVA</a>&nbsp;
-          
-            <a href="/tags/SpringData%20JPA">SpringData JPA</a>&nbsp;
+            <a href="/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF">朴素贝叶斯</a>&nbsp;
           
         
       </div>
@@ -819,7 +807,7 @@ JPA中的一对一@OneToOne
 
   <nav aria-label="index posts navigation">
     <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/14/">14</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-double-right"></i></a>
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/15/">15</a><a class="extend next" rel="next" href="/page/2/"><i class="fas fa-angle-double-right"></i></a>
     </span>
   </nav>
   
