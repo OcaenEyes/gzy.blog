@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="description" content="This is MyBlog Notes.">
+  <meta name="author" content="OceanEyes.GZY">
+  <meta name="keywords" content="">
+  <title>案例-基于关联规则算法实现电影推荐系统 ~ 乔克叔叔杂货店</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css">
+
+
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">&nbsp;<strong>乔克叔叔杂货店</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">首页</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">归档</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">分类</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">标签</a>
+          </li>
+        
+          
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">关于</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/background.jpg')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  星期六, 一月 2日 2021, 10:19 晚上
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    9.8k 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      56 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <h3 id="基于关联规则算法实现电影推荐系统"><a href="#基于关联规则算法实现电影推荐系统" class="headerlink" title="基于关联规则算法实现电影推荐系统"></a>基于关联规则算法实现电影推荐系统</h3><p><img src="/2021/01/02/案例-基于关联规则算法实现电影推荐系统/attachment:8bf77266-511e-4e87-bcf0-a2b5340a7f20.png" srcset="/img/loading.gif" alt="image.png"></p>
+<ul>
+<li>利用数据挖掘算法中的Apriori(关联规则)算法来实现一个电影推荐系统<ul>
+<li>加载数据</li>
+<li>数据预处理</li>
+<li>生成频繁项集、关联规则</li>
+</ul>
+</li>
+<li>通过关联规则生成电影推荐的列表</li>
+</ul>
+<h3 id="Apriori算法"><a href="#Apriori算法" class="headerlink" title="Apriori算法"></a>Apriori算法</h3><ul>
+<li><p><strong>案例：</strong><br>啤酒与尿布:  沃尔玛超市在分析销售记录时，发现了啤酒与尿布经常一起被购买，于是他们调整了货架将两者放在了一起，结果真的提升了啤酒的销量。  原因解释: 爸爸在给宝宝买尿布的时候，会顺便给自己买点啤酒？</p>
+</li>
+<li><p><strong>概述：</strong><br>Apriori算法是一种最有影响力的挖掘布尔关联规则的频繁项集的算法，其命名Apriori源于算法使用了频繁项集性质的先验(Prior)知识。<br> 接下来我们将以超市订单的例子理解关联分析相关的重要概念: Support(支持度)、Confidence(置信度)、Lift(提升度）。</p>
+<p><img src="/2021/01/02/案例-基于关联规则算法实现电影推荐系统/attachment:e0663e25-d0d7-4ee0-a2db-857a92930475.png" srcset="/img/loading.gif" alt="image.png"></p>
+<ul>
+<li>Support(支持度)：指某事件出现的概率，在本例中即指某个商品组合出现的次数占总次数的比例。</li>
+</ul>
+<p>例：Support(‘Bread’) = 4/5 = 0.8 Support(‘Milk’) = 4/5 = 0.8<br>   Support(‘Bread+Milk’) = 3/5 = 0.6  </p>
+<ul>
+<li>Confidence(置信度)：本质上是个条件概率，即当购买了商品A的前提下，购买商品B的概率。</li>
+</ul>
+<p>例：Confidence(‘Bread’—&gt; ‘Milk’) = Support(‘Bread+Milk’)/ Support(‘Bread’) = 0.6/0.8 = 0.75  </p>
+<ul>
+<li>Lift(提升度）: 指商品A的出现，对商品B的出现的概率的提升程度。Lift(A-&gt;B) = Confidence(A, B) / Support(B)</li>
+</ul>
+<p>例：Lift(‘Bread’—&gt; ‘Milk’) = 0.75/0.8 = 0.9375 </p>
+</li>
+<li><p><strong>对于Lift(提升度）有三种情况：</strong></p>
+<ul>
+<li>Lift(A-&gt;B)&gt;1: 代表A对B的出现概率有提升。</li>
+<li>Lift(A-&gt;B)=1: 代表A对B的出现概率没有提升，也没有下降。</li>
+<li>Lift(A-&gt;B)&lt;1: 代表A对B的出现概率有下降效果。</li>
+</ul>
+</li>
+<li><p><strong>原理：</strong><br>该算法挖掘关联规则的过程，即是查找频繁项集(frequent itemset)的过程:</p>
+<ul>
+<li>频繁项集：支持度大于等于最小支持度(Min Support)阈值的项集。</li>
+<li>非频繁集：支持度小于最小支持度的项集。</li>
+</ul>
+</li>
+<li><p><strong>流程：</strong><br>K = 1, 计算K项集的支持度；<br> 筛选掉小于最小支持度的项集；<br> 如果项集为空，则对应K-1项集的结果为最终结果。否则K = K+1重复2-3步</p>
+</li>
+</ul>
+<pre><code class="python">import pandas as pd
+import matplotlib.pyplot as plt
+import mlxtend
+import numpy as np
+</code></pre>
+<h4 id="电影数据准备"><a href="#电影数据准备" class="headerlink" title="电影数据准备"></a>电影数据准备</h4><pre><code class="python">movie_data_file = &#39;./movie_dataset/movies_metadata.csv&#39;
+ratings_file = &#39;./movie_dataset/ratings_small.csv&#39;
+</code></pre>
+<pre><code class="python">movie_data_df = pd.read_csv(movie_data_file)
+ratings_df = pd.read_csv(ratings_file)
+</code></pre>
+<pre><code>c:\users\ysilhouette\documents\pyenv\py3.6.5\lib\site-packages\IPython\core\interactiveshell.py:3072: DtypeWarning: Columns (10) have mixed types.Specify dtype option on import or set low_memory=False.
+  interactivity=interactivity, compiler=compiler, result=result)
+</code></pre><pre><code class="python">movie_data_df.head(5)
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>adult</th><br>      <th>belongs_to_collection</th><br>      <th>budget</th><br>      <th>genres</th><br>      <th>homepage</th><br>      <th>id</th><br>      <th>imdb_id</th><br>      <th>original_language</th><br>      <th>original_title</th><br>      <th>overview</th><br>      <th>…</th><br>      <th>release_date</th><br>      <th>revenue</th><br>      <th>runtime</th><br>      <th>spoken_languages</th><br>      <th>status</th><br>      <th>tagline</th><br>      <th>title</th><br>      <th>video</th><br>      <th>vote_average</th><br>      <th>vote_count</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>False</td><br>      <td>{‘id’: 10194, ‘name’: ‘Toy Story Collection’, …</td><br>      <td>30000000</td><br>      <td>[{‘id’: 16, ‘name’: ‘Animation’}, {‘id’: 35, ‘…</td><br>      <td><a href="http://toystory.disney.com/toy-story" target="_blank" rel="noopener">http://toystory.disney.com/toy-story</a></td><br>      <td>862</td><br>      <td>tt0114709</td><br>      <td>en</td><br>      <td>Toy Story</td><br>      <td>Led by Woody, Andy’s toys live happily in his …</td><br>      <td>…</td><br>      <td>1995-10-30</td><br>      <td>373554033.0</td><br>      <td>81.0</td><br>      <td>[{‘iso_639_1’: ‘en’, ‘name’: ‘English’}]</td><br>      <td>Released</td><br>      <td>NaN</td><br>      <td>Toy Story</td><br>      <td>False</td><br>      <td>7.7</td><br>      <td>5415.0</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>False</td><br>      <td>NaN</td><br>      <td>65000000</td><br>      <td>[{‘id’: 12, ‘name’: ‘Adventure’}, {‘id’: 14, ‘…</td><br>      <td>NaN</td><br>      <td>8844</td><br>      <td>tt0113497</td><br>      <td>en</td><br>      <td>Jumanji</td><br>      <td>When siblings Judy and Peter discover an encha…</td><br>      <td>…</td><br>      <td>1995-12-15</td><br>      <td>262797249.0</td><br>      <td>104.0</td><br>      <td>[{‘iso_639_1’: ‘en’, ‘name’: ‘English’}, {‘iso…</td><br>      <td>Released</td><br>      <td>Roll the dice and unleash the excitement!</td><br>      <td>Jumanji</td><br>      <td>False</td><br>      <td>6.9</td><br>      <td>2413.0</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>False</td><br>      <td>{‘id’: 119050, ‘name’: ‘Grumpy Old Men Collect…</td><br>      <td>0</td><br>      <td>[{‘id’: 10749, ‘name’: ‘Romance’}, {‘id’: 35, …</td><br>      <td>NaN</td><br>      <td>15602</td><br>      <td>tt0113228</td><br>      <td>en</td><br>      <td>Grumpier Old Men</td><br>      <td>A family wedding reignites the ancient feud be…</td><br>      <td>…</td><br>      <td>1995-12-22</td><br>      <td>0.0</td><br>      <td>101.0</td><br>      <td>[{‘iso_639_1’: ‘en’, ‘name’: ‘English’}]</td><br>      <td>Released</td><br>      <td>Still Yelling. Still Fighting. Still Ready for…</td><br>      <td>Grumpier Old Men</td><br>      <td>False</td><br>      <td>6.5</td><br>      <td>92.0</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>False</td><br>      <td>NaN</td><br>      <td>16000000</td><br>      <td>[{‘id’: 35, ‘name’: ‘Comedy’}, {‘id’: 18, ‘nam…</td><br>      <td>NaN</td><br>      <td>31357</td><br>      <td>tt0114885</td><br>      <td>en</td><br>      <td>Waiting to Exhale</td><br>      <td>Cheated on, mistreated and stepped on, the wom…</td><br>      <td>…</td><br>      <td>1995-12-22</td><br>      <td>81452156.0</td><br>      <td>127.0</td><br>      <td>[{‘iso_639_1’: ‘en’, ‘name’: ‘English’}]</td><br>      <td>Released</td><br>      <td>Friends are the people who let you be yourself…</td><br>      <td>Waiting to Exhale</td><br>      <td>False</td><br>      <td>6.1</td><br>      <td>34.0</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>False</td><br>      <td>{‘id’: 96871, ‘name’: ‘Father of the Bride Col…</td><br>      <td>0</td><br>      <td>[{‘id’: 35, ‘name’: ‘Comedy’}]</td><br>      <td>NaN</td><br>      <td>11862</td><br>      <td>tt0113041</td><br>      <td>en</td><br>      <td>Father of the Bride Part II</td><br>      <td>Just when George Banks has recovered from his …</td><br>      <td>…</td><br>      <td>1995-02-10</td><br>      <td>76578911.0</td><br>      <td>106.0</td><br>      <td>[{‘iso_639_1’: ‘en’, ‘name’: ‘English’}]</td><br>      <td>Released</td><br>      <td>Just When His World Is Back To Normal… He’s …</td><br>      <td>Father of the Bride Part II</td><br>      <td>False</td><br>      <td>5.7</td><br>      <td>173.0</td><br>    </tr><br>  </tbody><br></table><br><p>5 rows × 24 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">movie_data_df.describe()
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>revenue</th><br>      <th>runtime</th><br>      <th>vote_average</th><br>      <th>vote_count</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>count</th><br>      <td>4.546000e+04</td><br>      <td>45203.000000</td><br>      <td>45460.000000</td><br>      <td>45460.000000</td><br>    </tr><br>    <tr><br>      <th>mean</th><br>      <td>1.120935e+07</td><br>      <td>94.128199</td><br>      <td>5.618207</td><br>      <td>109.897338</td><br>    </tr><br>    <tr><br>      <th>std</th><br>      <td>6.433225e+07</td><br>      <td>38.407810</td><br>      <td>1.924216</td><br>      <td>491.310374</td><br>    </tr><br>    <tr><br>      <th>min</th><br>      <td>0.000000e+00</td><br>      <td>0.000000</td><br>      <td>0.000000</td><br>      <td>0.000000</td><br>    </tr><br>    <tr><br>      <th>25%</th><br>      <td>0.000000e+00</td><br>      <td>85.000000</td><br>      <td>5.000000</td><br>      <td>3.000000</td><br>    </tr><br>    <tr><br>      <th>50%</th><br>      <td>0.000000e+00</td><br>      <td>95.000000</td><br>      <td>6.000000</td><br>      <td>10.000000</td><br>    </tr><br>    <tr><br>      <th>75%</th><br>      <td>0.000000e+00</td><br>      <td>107.000000</td><br>      <td>6.800000</td><br>      <td>34.000000</td><br>    </tr><br>    <tr><br>      <th>max</th><br>      <td>2.787965e+09</td><br>      <td>1256.000000</td><br>      <td>10.000000</td><br>      <td>14075.000000</td><br>    </tr><br>  </tbody><br></table><br><br></div>
+
+
+
+
+<pre><code class="python">movie_data_df.info
+</code></pre>
+<pre><code>&lt;bound method DataFrame.info of        adult                              belongs_to_collection    budget  \
+0      False  {&#39;id&#39;: 10194, &#39;name&#39;: &#39;Toy Story Collection&#39;, ...  30000000   
+1      False                                                NaN  65000000   
+2      False  {&#39;id&#39;: 119050, &#39;name&#39;: &#39;Grumpy Old Men Collect...         0   
+3      False                                                NaN  16000000   
+4      False  {&#39;id&#39;: 96871, &#39;name&#39;: &#39;Father of the Bride Col...         0   
+...      ...                                                ...       ...   
+45461  False                                                NaN         0   
+45462  False                                                NaN         0   
+45463  False                                                NaN         0   
+45464  False                                                NaN         0   
+45465  False                                                NaN         0   
+
+                                                  genres  \
+0      [{&#39;id&#39;: 16, &#39;name&#39;: &#39;Animation&#39;}, {&#39;id&#39;: 35, &#39;...   
+1      [{&#39;id&#39;: 12, &#39;name&#39;: &#39;Adventure&#39;}, {&#39;id&#39;: 14, &#39;...   
+2      [{&#39;id&#39;: 10749, &#39;name&#39;: &#39;Romance&#39;}, {&#39;id&#39;: 35, ...   
+3      [{&#39;id&#39;: 35, &#39;name&#39;: &#39;Comedy&#39;}, {&#39;id&#39;: 18, &#39;nam...   
+4                         [{&#39;id&#39;: 35, &#39;name&#39;: &#39;Comedy&#39;}]   
+...                                                  ...   
+45461  [{&#39;id&#39;: 18, &#39;name&#39;: &#39;Drama&#39;}, {&#39;id&#39;: 10751, &#39;n...   
+45462                      [{&#39;id&#39;: 18, &#39;name&#39;: &#39;Drama&#39;}]   
+45463  [{&#39;id&#39;: 28, &#39;name&#39;: &#39;Action&#39;}, {&#39;id&#39;: 18, &#39;nam...   
+45464                                                 []   
+45465                                                 []   
+
+                                   homepage      id    imdb_id  \
+0      http://toystory.disney.com/toy-story     862  tt0114709   
+1                                       NaN    8844  tt0113497   
+2                                       NaN   15602  tt0113228   
+3                                       NaN   31357  tt0114885   
+4                                       NaN   11862  tt0113041   
+...                                     ...     ...        ...   
+45461  http://www.imdb.com/title/tt6209470/  439050  tt6209470   
+45462                                   NaN  111109  tt2028550   
+45463                                   NaN   67758  tt0303758   
+45464                                   NaN  227506  tt0008536   
+45465                                   NaN  461257  tt6980792   
+
+      original_language               original_title  \
+0                    en                    Toy Story   
+1                    en                      Jumanji   
+2                    en             Grumpier Old Men   
+3                    en            Waiting to Exhale   
+4                    en  Father of the Bride Part II   
+...                 ...                          ...   
+45461                fa                      رگ خواب   
+45462                tl          Siglo ng Pagluluwal   
+45463                en                     Betrayal   
+45464                en          Satana likuyushchiy   
+45465                en                     Queerama   
+
+                                                overview  ... release_date  \
+0      Led by Woody, Andy&#39;s toys live happily in his ...  ...   1995-10-30   
+1      When siblings Judy and Peter discover an encha...  ...   1995-12-15   
+2      A family wedding reignites the ancient feud be...  ...   1995-12-22   
+3      Cheated on, mistreated and stepped on, the wom...  ...   1995-12-22   
+4      Just when George Banks has recovered from his ...  ...   1995-02-10   
+...                                                  ...  ...          ...   
+45461        Rising and falling between a man and woman.  ...          NaN   
+45462  An artist struggles to finish his work while a...  ...   2011-11-17   
+45463  When one of her hits goes wrong, a professiona...  ...   2003-08-01   
+45464  In a small town live two brothers, one a minis...  ...   1917-10-21   
+45465  50 years after decriminalisation of homosexual...  ...   2017-06-09   
+
+           revenue runtime                                   spoken_languages  \
+0      373554033.0    81.0           [{&#39;iso_639_1&#39;: &#39;en&#39;, &#39;name&#39;: &#39;English&#39;}]   
+1      262797249.0   104.0  [{&#39;iso_639_1&#39;: &#39;en&#39;, &#39;name&#39;: &#39;English&#39;}, {&#39;iso...   
+2              0.0   101.0           [{&#39;iso_639_1&#39;: &#39;en&#39;, &#39;name&#39;: &#39;English&#39;}]   
+3       81452156.0   127.0           [{&#39;iso_639_1&#39;: &#39;en&#39;, &#39;name&#39;: &#39;English&#39;}]   
+4       76578911.0   106.0           [{&#39;iso_639_1&#39;: &#39;en&#39;, &#39;name&#39;: &#39;English&#39;}]   
+...            ...     ...                                                ...   
+45461          0.0    90.0             [{&#39;iso_639_1&#39;: &#39;fa&#39;, &#39;name&#39;: &#39;فارسی&#39;}]   
+45462          0.0   360.0                  [{&#39;iso_639_1&#39;: &#39;tl&#39;, &#39;name&#39;: &#39;&#39;}]   
+45463          0.0    90.0           [{&#39;iso_639_1&#39;: &#39;en&#39;, &#39;name&#39;: &#39;English&#39;}]   
+45464          0.0    87.0                                                 []   
+45465          0.0    75.0           [{&#39;iso_639_1&#39;: &#39;en&#39;, &#39;name&#39;: &#39;English&#39;}]   
+
+         status                                            tagline  \
+0      Released                                                NaN   
+1      Released          Roll the dice and unleash the excitement!   
+2      Released  Still Yelling. Still Fighting. Still Ready for...   
+3      Released  Friends are the people who let you be yourself...   
+4      Released  Just When His World Is Back To Normal... He&#39;s ...   
+...         ...                                                ...   
+45461  Released         Rising and falling between a man and woman   
+45462  Released                                                NaN   
+45463  Released                             A deadly game of wits.   
+45464  Released                                                NaN   
+45465  Released                                                NaN   
+
+                             title  video vote_average vote_count  
+0                        Toy Story  False          7.7     5415.0  
+1                          Jumanji  False          6.9     2413.0  
+2                 Grumpier Old Men  False          6.5       92.0  
+3                Waiting to Exhale  False          6.1       34.0  
+4      Father of the Bride Part II  False          5.7      173.0  
+...                            ...    ...          ...        ...  
+45461                       Subdue  False          4.0        1.0  
+45462          Century of Birthing  False          9.0        3.0  
+45463                     Betrayal  False          3.8        6.0  
+45464             Satan Triumphant  False          0.0        0.0  
+45465                     Queerama  False          0.0        0.0  
+
+[45466 rows x 24 columns]&gt;
+</code></pre><pre><code class="python">movie_data_df.count()
+</code></pre>
+<pre><code>adult                    45466
+belongs_to_collection     4494
+budget                   45466
+genres                   45466
+homepage                  7782
+id                       45466
+imdb_id                  45449
+original_language        45455
+original_title           45466
+overview                 44512
+popularity               45461
+poster_path              45080
+production_companies     45463
+production_countries     45463
+release_date             45379
+revenue                  45460
+runtime                  45203
+spoken_languages         45460
+status                   45379
+tagline                  20412
+title                    45460
+video                    45460
+vote_average             45460
+vote_count               45460
+dtype: int64
+</code></pre><pre><code class="python">movie_data_df.columns
+</code></pre>
+<pre><code>Index([&#39;adult&#39;, &#39;belongs_to_collection&#39;, &#39;budget&#39;, &#39;genres&#39;, &#39;homepage&#39;, &#39;id&#39;,
+       &#39;imdb_id&#39;, &#39;original_language&#39;, &#39;original_title&#39;, &#39;overview&#39;,
+       &#39;popularity&#39;, &#39;poster_path&#39;, &#39;production_companies&#39;,
+       &#39;production_countries&#39;, &#39;release_date&#39;, &#39;revenue&#39;, &#39;runtime&#39;,
+       &#39;spoken_languages&#39;, &#39;status&#39;, &#39;tagline&#39;, &#39;title&#39;, &#39;video&#39;,
+       &#39;vote_average&#39;, &#39;vote_count&#39;],
+      dtype=&#39;object&#39;)
+</code></pre><pre><code class="python">ratings_df.head(5)
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieId</th><br>      <th>rating</th><br>      <th>timestamp</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>1</td><br>      <td>31</td><br>      <td>2.5</td><br>      <td>1260759144</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>1</td><br>      <td>1029</td><br>      <td>3.0</td><br>      <td>1260759179</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>1</td><br>      <td>1061</td><br>      <td>3.0</td><br>      <td>1260759182</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>1</td><br>      <td>1129</td><br>      <td>2.0</td><br>      <td>1260759185</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>1</td><br>      <td>1172</td><br>      <td>4.0</td><br>      <td>1260759205</td><br>    </tr><br>  </tbody><br></table><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df.columns
+</code></pre>
+<pre><code>Index([&#39;userId&#39;, &#39;movieId&#39;, &#39;rating&#39;, &#39;timestamp&#39;], dtype=&#39;object&#39;)
+</code></pre><pre><code class="python">ratings_df.count()
+</code></pre>
+<pre><code>userId       100004
+movieId      100004
+rating       100004
+timestamp    100004
+dtype: int64
+</code></pre><pre><code class="python">ratings_df.shape
+</code></pre>
+<pre><code>(100004, 4)
+</code></pre><pre><code class="python">movie_data_df.shape
+</code></pre>
+<pre><code>(45466, 24)
+</code></pre><h4 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h4><ul>
+<li>缺失值处理</li>
+<li>数据去重</li>
+<li>电影源信息 merge 电影评分信息</li>
+</ul>
+<pre><code class="python">movie_data_df_t=movie_data_df[[&#39;title&#39;,&#39;id&#39;]]
+</code></pre>
+<pre><code class="python">movie_data_df_t.dtypes
+</code></pre>
+<pre><code>title    object
+id       object
+dtype: object
+</code></pre><pre><code class="python">ratings_df_s = ratings_df.drop([&#39;timestamp&#39;], axis=1)  #axis=0 跨列删除行 ，axis=1 跨行删除列
+</code></pre>
+<pre><code class="python">ratings_df_s.dtypes
+</code></pre>
+<pre><code>userId       int64
+movieId      int64
+rating     float64
+dtype: object
+</code></pre><h5 id="缺失值处理"><a href="#缺失值处理" class="headerlink" title="缺失值处理"></a>缺失值处理</h5><ul>
+<li>pandas中用NaN(Not a Number)表示浮点数和非浮点数数组中的缺失值，同时python中None值也被当作缺失值。</li>
+</ul>
+<pre><code class="python"># pd.to_numeric 将id列 的数据 由字符串转为数值类型， 不能转换的数据设置为NaN
+pd.to_numeric(movie_data_df_t[&#39;id&#39;],errors=&#39;coerce&#39;)
+</code></pre>
+<pre><code>0           862.0
+1          8844.0
+2         15602.0
+3         31357.0
+4         11862.0
+           ...   
+45461    439050.0
+45462    111109.0
+45463     67758.0
+45464    227506.0
+45465    461257.0
+Name: id, Length: 45466, dtype: float64
+</code></pre><pre><code class="python">#np.where返回满足（）内条件的数据所在的位置
+np.where(pd.to_numeric(movie_data_df_t[&#39;id&#39;], errors=&#39;coerce&#39;).isna()) #返回缺失值的位置，其中isna() 对于NaN返回True，否则返回False
+</code></pre>
+<pre><code>(array([19730, 29503, 35587], dtype=int64),)
+</code></pre><ul>
+<li><strong>loc works on labels in the index.</strong><ul>
+<li>loc为Selection by Label函数，即为按标签取数据，标签是什么，就是上面的’0’~‘4’, ‘A’~‘B’。</li>
+<li>例如第一个参数选择index，第二个参数选择column </li>
+<li><img src="/2021/01/02/案例-基于关联规则算法实现电影推荐系统/attachment:32ceb63e-c986-499e-93f8-638b54d1359c.png" srcset="/img/loading.gif" alt="image.png"></li>
+<li>建议写df.loc[0, :]，这样可以清楚的看出为第0行的所有记录，同样如果取第’A’列的所有记录，可以写df.loc[:, ‘A’]，如下图：</li>
+<li><img src="/2021/01/02/案例-基于关联规则算法实现电影推荐系统/attachment:6fdd7eed-bc5c-4fa4-8c63-9072c99b5340.png" srcset="/img/loading.gif" alt="image.png"></li>
+<li>:表示所有，[]里边为先行后列</li>
+</ul>
+</li>
+<li><strong>iloc works on the positions in the index (so it only takes integers).</strong><ul>
+<li>iloc函数为Selection by Position，即按位置选择数据，即第n行，第n列数据，只接受整型参数, 比如 0:2为左闭右开区间，即取0，1</li>
+<li><img src="/2021/01/02/案例-基于关联规则算法实现电影推荐系统/attachment:328215b9-7799-4763-b611-8b27a8340c20.png" srcset="/img/loading.gif" alt="image.png"></li>
+<li>若要取第一列的所有数据，则为df.iloc[:, 0]，不接受’A’作为参数</li>
+<li><img src="/2021/01/02/案例-基于关联规则算法实现电影推荐系统/attachment:3881dff3-57bd-45dd-a549-56af16b42ec5.png" srcset="/img/loading.gif" alt="image.png"></li>
+</ul>
+</li>
+</ul>
+<pre><code class="python">movie_data_df_t.iloc[19730]
+</code></pre>
+<pre><code>title           NaN
+id       1997-08-20
+Name: 19730, dtype: object
+</code></pre><pre><code class="python">movie_data_df_t.iloc[[19730,29503,35587]]
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>title</th><br>      <th>id</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>19730</th><br>      <td>NaN</td><br>      <td>1997-08-20</td><br>    </tr><br>    <tr><br>      <th>29503</th><br>      <td>NaN</td><br>      <td>2012-09-29</td><br>    </tr><br>    <tr><br>      <th>35587</th><br>      <td>NaN</td><br>      <td>2014-01-01</td><br>    </tr><br>  </tbody><br></table><br><br></div>
+
+
+
+
+<pre><code class="python"># 将格式转换后的数据 赋值给id列
+movie_data_df_t[&#39;id&#39;] = pd.to_numeric(movie_data_df_t[&#39;id&#39;], errors=&#39;coerce&#39;)
+</code></pre>
+<pre><code>c:\users\ysilhouette\documents\pyenv\py3.6.5\lib\site-packages\ipykernel_launcher.py:2: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+</code></pre><p>​    </p>
+<pre><code class="python">movie_data_df_t.info()
+</code></pre>
+<pre><code>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 45466 entries, 0 to 45465
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   title   45460 non-null  object 
+ 1   id      45463 non-null  float64
+dtypes: float64(1), object(1)
+memory usage: 710.5+ KB
+</code></pre><pre><code class="python">movie_data_df_t.iloc[[19730,29503,35587]]
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>title</th><br>      <th>id</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>19730</th><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>29503</th><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>35587</th><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>  </tbody><br></table><br><br></div>
+
+
+
+
+<pre><code class="python">movie_data_df_t.shape
+</code></pre>
+<pre><code>(45466, 2)
+</code></pre><pre><code class="python">movie_data_df_t.drop(np.where(movie_data_df_t[&#39;id&#39;].isna())[0], inplace=True)
+</code></pre>
+<pre><code>c:\users\ysilhouette\documents\pyenv\py3.6.5\lib\site-packages\pandas\core\frame.py:4174: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  errors=errors,
+</code></pre><pre><code class="python">movie_data_df_t.shape
+</code></pre>
+<pre><code>(45463, 2)
+</code></pre><h5 id="数据去重"><a href="#数据去重" class="headerlink" title="数据去重"></a>数据去重</h5><pre><code class="python">movie_data_df_t.duplicated([&#39;id&#39;,&#39;title&#39;]).sum()
+</code></pre>
+<pre><code>30
+</code></pre><pre><code class="python">movie_data_df_t.drop_duplicates([&#39;id&#39;],inplace=True)
+</code></pre>
+<pre><code>c:\users\ysilhouette\documents\pyenv\py3.6.5\lib\site-packages\ipykernel_launcher.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  &quot;&quot;&quot;Entry point for launching an IPython kernel.
+</code></pre><pre><code class="python">movie_data_df_t.shape
+</code></pre>
+<pre><code>(45433, 2)
+</code></pre><pre><code class="python">ratings_df_s.duplicated([&#39;userId&#39;,&#39;movieId&#39;]).sum()
+</code></pre>
+<pre><code>0
+</code></pre><pre><code class="python">movie_data_df_t[&#39;id&#39;] = movie_data_df_t[&#39;id&#39;].astype(np.int64)
+</code></pre>
+<pre><code>c:\users\ysilhouette\documents\pyenv\py3.6.5\lib\site-packages\ipykernel_launcher.py:1: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  &quot;&quot;&quot;Entry point for launching an IPython kernel.
+</code></pre><pre><code class="python">movie_data_df_t.dtypes
+</code></pre>
+<pre><code>title    object
+id        int64
+dtype: object
+</code></pre><pre><code class="python">ratings_df_s.dtypes
+</code></pre>
+<pre><code>userId       int64
+movieId      int64
+rating     float64
+dtype: object
+</code></pre><h3 id="数据合并"><a href="#数据合并" class="headerlink" title="数据合并"></a>数据合并</h3><pre><code class="python"># 左dataframe 和 右dataframe 根据 movieId 和 id进行合并
+ratings_df_s = pd.merge(ratings_df_s,movie_data_df_t, left_on=&#39;movieId&#39;,right_on=&#39;id&#39;)
+</code></pre>
+<pre><code class="python">ratings_df_s.head()
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieId</th><br>      <th>rating</th><br>      <th>title</th><br>      <th>id</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>1</td><br>      <td>1371</td><br>      <td>2.5</td><br>      <td>Rocky III</td><br>      <td>1371</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>4</td><br>      <td>1371</td><br>      <td>4.0</td><br>      <td>Rocky III</td><br>      <td>1371</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>7</td><br>      <td>1371</td><br>      <td>3.0</td><br>      <td>Rocky III</td><br>      <td>1371</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>19</td><br>      <td>1371</td><br>      <td>4.0</td><br>      <td>Rocky III</td><br>      <td>1371</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>21</td><br>      <td>1371</td><br>      <td>3.0</td><br>      <td>Rocky III</td><br>      <td>1371</td><br>    </tr><br>  </tbody><br></table><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s.drop([&#39;id&#39;],axis=1,inplace=True)
+</code></pre>
+<pre><code class="python">ratings_df_s
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieId</th><br>      <th>rating</th><br>      <th>title</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>1</td><br>      <td>1371</td><br>      <td>2.5</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>4</td><br>      <td>1371</td><br>      <td>4.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>7</td><br>      <td>1371</td><br>      <td>3.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>19</td><br>      <td>1371</td><br>      <td>4.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>21</td><br>      <td>1371</td><br>      <td>3.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>44984</th><br>      <td>652</td><br>      <td>129009</td><br>      <td>4.0</td><br>      <td>Love Is a Ball</td><br>    </tr><br>    <tr><br>      <th>44985</th><br>      <td>653</td><br>      <td>2103</td><br>      <td>3.0</td><br>      <td>Solaris</td><br>    </tr><br>    <tr><br>      <th>44986</th><br>      <td>659</td><br>      <td>167</td><br>      <td>4.0</td><br>      <td>K-PAX</td><br>    </tr><br>    <tr><br>      <th>44987</th><br>      <td>659</td><br>      <td>563</td><br>      <td>3.0</td><br>      <td>Starship Troopers</td><br>    </tr><br>    <tr><br>      <th>44988</th><br>      <td>665</td><br>      <td>129</td><br>      <td>3.0</td><br>      <td>Spirited Away</td><br>    </tr><br>  </tbody><br></table><br><p>44989 rows × 4 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s.shape
+</code></pre>
+<pre><code>(44989, 4)
+</code></pre><pre><code class="python"># 有评分记录的电影的个数
+len(ratings_df_s[&#39;title&#39;].unique())
+</code></pre>
+<pre><code>2794
+</code></pre><pre><code class="python">ratings_df_s[&#39;title&#39;].unique()
+</code></pre>
+<pre><code>array([&#39;Rocky III&#39;, &#39;Greed&#39;, &#39;American Pie&#39;, ..., &#39;K-PAX&#39;,
+       &#39;Starship Troopers&#39;, &#39;Spirited Away&#39;], dtype=object)
+</code></pre><pre><code class="python">ratings_df_s.groupby([ratings_df_s[&#39;title&#39;],ratings_df_s[&#39;rating&#39;]]).count().reset_index()
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>title</th><br>      <th>rating</th><br>      <th>userId</th><br>      <th>movieId</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>!Women Art Revolution</td><br>      <td>3.0</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>!Women Art Revolution</td><br>      <td>3.5</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>‘Gator Bait</td><br>      <td>0.5</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>‘Twas the Night Before Christmas</td><br>      <td>3.5</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>‘Twas the Night Before Christmas</td><br>      <td>4.5</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>10263</th><br>      <td>À nos amours</td><br>      <td>4.0</td><br>      <td>5</td><br>      <td>5</td><br>    </tr><br>    <tr><br>      <th>10264</th><br>      <td>À nos amours</td><br>      <td>4.5</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>10265</th><br>      <td>À nos amours</td><br>      <td>5.0</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>10266</th><br>      <td>Ödipussi</td><br>      <td>4.5</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>10267</th><br>      <td>Şaban Oğlu Şaban</td><br>      <td>4.5</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>  </tbody><br></table><br><p>10268 rows × 4 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s.groupby(ratings_df_s[&#39;title&#39;]).count().reset_index()
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>title</th><br>      <th>userId</th><br>      <th>movieId</th><br>      <th>rating</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>!Women Art Revolution</td><br>      <td>2</td><br>      <td>2</td><br>      <td>2</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>‘Gator Bait</td><br>      <td>1</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>‘Twas the Night Before Christmas</td><br>      <td>2</td><br>      <td>2</td><br>      <td>2</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>…And God Created Woman</td><br>      <td>1</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>00 Schneider - Jagd auf Nihil Baxter</td><br>      <td>2</td><br>      <td>2</td><br>      <td>2</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>2789</th><br>      <td>xXx</td><br>      <td>28</td><br>      <td>28</td><br>      <td>28</td><br>    </tr><br>    <tr><br>      <th>2790</th><br>      <td>¡Three Amigos!</td><br>      <td>1</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>2791</th><br>      <td>À nos amours</td><br>      <td>14</td><br>      <td>14</td><br>      <td>14</td><br>    </tr><br>    <tr><br>      <th>2792</th><br>      <td>Ödipussi</td><br>      <td>1</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>2793</th><br>      <td>Şaban Oğlu Şaban</td><br>      <td>1</td><br>      <td>1</td><br>      <td>1</td><br>    </tr><br>  </tbody><br></table><br><p>2794 rows × 4 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s_allcounts = ratings_df_s.groupby(ratings_df_s[&#39;title&#39;])[&#39;userId&#39;].count().reset_index()
+</code></pre>
+<pre><code class="python">ratings_df_s_allcounts = ratings_df_s_allcounts.rename(columns = {&#39;userId&#39;:&#39;totalRatings&#39;})
+</code></pre>
+<pre><code class="python">ratings_df_s_allcounts
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>title</th><br>      <th>totalRatings</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>!Women Art Revolution</td><br>      <td>2</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>‘Gator Bait</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>‘Twas the Night Before Christmas</td><br>      <td>2</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>…And God Created Woman</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>00 Schneider - Jagd auf Nihil Baxter</td><br>      <td>2</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>2789</th><br>      <td>xXx</td><br>      <td>28</td><br>    </tr><br>    <tr><br>      <th>2790</th><br>      <td>¡Three Amigos!</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>2791</th><br>      <td>À nos amours</td><br>      <td>14</td><br>    </tr><br>    <tr><br>      <th>2792</th><br>      <td>Ödipussi</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>2793</th><br>      <td>Şaban Oğlu Şaban</td><br>      <td>1</td><br>    </tr><br>  </tbody><br></table><br><p>2794 rows × 2 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s_allcounts.shape
+</code></pre>
+<pre><code>(2794, 2)
+</code></pre><pre><code class="python">ratings_df_s_allcounts[&#39;totalRatings&#39;].describe()
+</code></pre>
+<pre><code>count    2794.000000
+mean       16.102004
+std        31.481795
+min         1.000000
+25%         1.000000
+50%         4.000000
+75%        15.750000
+max       324.000000
+Name: totalRatings, dtype: float64
+</code></pre><pre><code class="python">ratings_df_s_allcounts.hist()
+</code></pre>
+<pre><code>array([[&lt;AxesSubplot:title={&#39;center&#39;:&#39;totalRatings&#39;}&gt;]], dtype=object)
+</code></pre><p><img src="/2021/01/02/案例-基于关联规则算法实现电影推荐系统/output_56_1.png" srcset="/img/loading.gif" alt="png"></p>
+<pre><code class="python">ratings_df_s_allcounts[&#39;totalRatings&#39;].quantile(np.arange(0.6,1, 0.01)) #分位点
+</code></pre>
+<pre><code>0.60      7.00
+0.61      7.00
+0.62      7.00
+0.63      8.00
+0.64      8.00
+0.65      9.00
+0.66      9.00
+0.67     10.00
+0.68     10.00
+0.69     11.00
+0.70     12.00
+0.71     12.00
+0.72     13.00
+0.73     14.00
+0.74     14.00
+0.75     15.75
+0.76     17.00
+0.77     18.00
+0.78     19.00
+0.79     20.00
+0.80     21.00
+0.81     22.33
+0.82     24.00
+0.83     26.00
+0.84     27.00
+0.85     29.00
+0.86     31.00
+0.87     34.00
+0.88     37.00
+0.89     41.77
+0.90     45.00
+0.91     49.00
+0.92     52.56
+0.93     59.00
+0.94     64.42
+0.95     71.00
+0.96     83.28
+0.97     98.21
+0.98    119.14
+0.99    168.49
+Name: totalRatings, dtype: float64
+</code></pre><ul>
+<li><strong>从分位点数据分析可以看出，21%的电影 评分记录数超过20个</strong></li>
+</ul>
+<pre><code class="python">votes_count_threshold = 20
+</code></pre>
+<pre><code class="python">ratings_df_s_top=ratings_df_s_allcounts.query(&#39;totalRatings &gt; @votes_count_threshold&#39;).reset_index()
+</code></pre>
+<pre><code class="python">ratings_df_s_top
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>index</th><br>      <th>title</th><br>      <th>totalRatings</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>18</td><br>      <td>20,000 Leagues Under the Sea</td><br>      <td>89</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>19</td><br>      <td>2001: A Space Odyssey</td><br>      <td>87</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>24</td><br>      <td>24 Hour Party People</td><br>      <td>22</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>26</td><br>      <td>28 Days Later</td><br>      <td>26</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>27</td><br>      <td>28 Weeks Later</td><br>      <td>47</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>575</th><br>      <td>2770</td><br>      <td>Young Adam</td><br>      <td>34</td><br>    </tr><br>    <tr><br>      <th>576</th><br>      <td>2772</td><br>      <td>Young Frankenstein</td><br>      <td>29</td><br>    </tr><br>    <tr><br>      <th>577</th><br>      <td>2774</td><br>      <td>Young and Innocent</td><br>      <td>193</td><br>    </tr><br>    <tr><br>      <th>578</th><br>      <td>2781</td><br>      <td>Zatoichi</td><br>      <td>61</td><br>    </tr><br>    <tr><br>      <th>579</th><br>      <td>2789</td><br>      <td>xXx</td><br>      <td>28</td><br>    </tr><br>  </tbody><br></table><br><p>580 rows × 3 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s_top.drop([&#39;index&#39;],axis=1,inplace=True)
+</code></pre>
+<pre><code class="python">ratings_df_s_top.head()
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>title</th><br>      <th>totalRatings</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>20,000 Leagues Under the Sea</td><br>      <td>89</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>2001: A Space Odyssey</td><br>      <td>87</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>24 Hour Party People</td><br>      <td>22</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>28 Days Later</td><br>      <td>26</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>28 Weeks Later</td><br>      <td>47</td><br>    </tr><br>  </tbody><br></table><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s[&#39;title&#39;]
+</code></pre>
+<pre><code>0                Rocky III
+1                Rocky III
+2                Rocky III
+3                Rocky III
+4                Rocky III
+               ...        
+44984       Love Is a Ball
+44985              Solaris
+44986                K-PAX
+44987    Starship Troopers
+44988        Spirited Away
+Name: title, Length: 44989, dtype: object
+</code></pre><pre><code class="python">ratings_df_s_top[&#39;title&#39;]
+</code></pre>
+<pre><code>0      20,000 Leagues Under the Sea
+1             2001: A Space Odyssey
+2              24 Hour Party People
+3                     28 Days Later
+4                    28 Weeks Later
+                   ...             
+575                      Young Adam
+576              Young Frankenstein
+577              Young and Innocent
+578                        Zatoichi
+579                             xXx
+Name: title, Length: 580, dtype: object
+</code></pre><pre><code class="python">ratings_df_s[ratings_df_s[&#39;title&#39;].isin(ratings_df_s_top[&#39;title&#39;])]
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieId</th><br>      <th>rating</th><br>      <th>title</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>1</td><br>      <td>1371</td><br>      <td>2.5</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>4</td><br>      <td>1371</td><br>      <td>4.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>7</td><br>      <td>1371</td><br>      <td>3.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>19</td><br>      <td>1371</td><br>      <td>4.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>21</td><br>      <td>1371</td><br>      <td>3.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>44507</th><br>      <td>624</td><br>      <td>3057</td><br>      <td>4.0</td><br>      <td>Frankenstein</td><br>    </tr><br>    <tr><br>      <th>44781</th><br>      <td>547</td><br>      <td>97936</td><br>      <td>3.0</td><br>      <td>Sweet November</td><br>    </tr><br>    <tr><br>      <th>44782</th><br>      <td>624</td><br>      <td>97936</td><br>      <td>3.0</td><br>      <td>Sweet November</td><br>    </tr><br>    <tr><br>      <th>44909</th><br>      <td>609</td><br>      <td>1450</td><br>      <td>5.0</td><br>      <td>Blood: The Last Vampire</td><br>    </tr><br>    <tr><br>      <th>44985</th><br>      <td>653</td><br>      <td>2103</td><br>      <td>3.0</td><br>      <td>Solaris</td><br>    </tr><br>  </tbody><br></table><br><p>34552 rows × 4 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s[ratings_df_s[&#39;title&#39;].isin(ratings_df_s_top[&#39;title&#39;])]  #得到评分数量大于20的
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieId</th><br>      <th>rating</th><br>      <th>title</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>1</td><br>      <td>1371</td><br>      <td>2.5</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>4</td><br>      <td>1371</td><br>      <td>4.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>7</td><br>      <td>1371</td><br>      <td>3.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>19</td><br>      <td>1371</td><br>      <td>4.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>21</td><br>      <td>1371</td><br>      <td>3.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>44507</th><br>      <td>624</td><br>      <td>3057</td><br>      <td>4.0</td><br>      <td>Frankenstein</td><br>    </tr><br>    <tr><br>      <th>44781</th><br>      <td>547</td><br>      <td>97936</td><br>      <td>3.0</td><br>      <td>Sweet November</td><br>    </tr><br>    <tr><br>      <th>44782</th><br>      <td>624</td><br>      <td>97936</td><br>      <td>3.0</td><br>      <td>Sweet November</td><br>    </tr><br>    <tr><br>      <th>44909</th><br>      <td>609</td><br>      <td>1450</td><br>      <td>5.0</td><br>      <td>Blood: The Last Vampire</td><br>    </tr><br>    <tr><br>      <th>44985</th><br>      <td>653</td><br>      <td>2103</td><br>      <td>3.0</td><br>      <td>Solaris</td><br>    </tr><br>  </tbody><br></table><br><p>34552 rows × 4 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s[~ratings_df_s[&#39;title&#39;].isin(ratings_df_s_top[&#39;title&#39;])] # 得到评分数量小于20的
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieId</th><br>      <th>rating</th><br>      <th>title</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>1714</th><br>      <td>2</td><br>      <td>248</td><br>      <td>3.0</td><br>      <td>Pocketful of Miracles</td><br>    </tr><br>    <tr><br>      <th>1715</th><br>      <td>36</td><br>      <td>248</td><br>      <td>2.0</td><br>      <td>Pocketful of Miracles</td><br>    </tr><br>    <tr><br>      <th>1716</th><br>      <td>110</td><br>      <td>248</td><br>      <td>4.0</td><br>      <td>Pocketful of Miracles</td><br>    </tr><br>    <tr><br>      <th>1717</th><br>      <td>239</td><br>      <td>248</td><br>      <td>4.0</td><br>      <td>Pocketful of Miracles</td><br>    </tr><br>    <tr><br>      <th>1718</th><br>      <td>242</td><br>      <td>248</td><br>      <td>3.0</td><br>      <td>Pocketful of Miracles</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>44983</th><br>      <td>652</td><br>      <td>127728</td><br>      <td>5.0</td><br>      <td>8:46</td><br>    </tr><br>    <tr><br>      <th>44984</th><br>      <td>652</td><br>      <td>129009</td><br>      <td>4.0</td><br>      <td>Love Is a Ball</td><br>    </tr><br>    <tr><br>      <th>44986</th><br>      <td>659</td><br>      <td>167</td><br>      <td>4.0</td><br>      <td>K-PAX</td><br>    </tr><br>    <tr><br>      <th>44987</th><br>      <td>659</td><br>      <td>563</td><br>      <td>3.0</td><br>      <td>Starship Troopers</td><br>    </tr><br>    <tr><br>      <th>44988</th><br>      <td>665</td><br>      <td>129</td><br>      <td>3.0</td><br>      <td>Spirited Away</td><br>    </tr><br>  </tbody><br></table><br><p>10437 rows × 4 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s_cntD20 = ratings_df_s[ratings_df_s[&#39;title&#39;].isin(ratings_df_s_top[&#39;title&#39;])]
+</code></pre>
+<pre><code class="python">ratings_df_s_cntX20 = ratings_df_s[~ratings_df_s[&#39;title&#39;].isin(ratings_df_s_top[&#39;title&#39;])]
+</code></pre>
+<pre><code class="python">ratings_df_s_cntD20.shape
+</code></pre>
+<pre><code>(34552, 4)
+</code></pre><pre><code class="python">ratings_df_s_cntX20.shape
+</code></pre>
+<pre><code>(10437, 4)
+</code></pre><pre><code class="python">ratings_df_s_cntD20.isna().sum() #检查有无缺失值
+</code></pre>
+<pre><code>userId     0
+movieId    0
+rating     0
+title      0
+dtype: int64
+</code></pre><pre><code class="python">ratings_df_s_cntD20.duplicated([&#39;userId&#39;,&#39;title&#39;]).sum()
+</code></pre>
+<pre><code>140
+</code></pre><pre><code class="python">ratings_df_s_cntD20=ratings_df_s_cntD20.drop_duplicates([&#39;userId&#39;,&#39;title&#39;]) # 只保留每个用户对每个电影的一条评论记录
+</code></pre>
+<pre><code class="python">ratings_df_s_cntD20
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieId</th><br>      <th>rating</th><br>      <th>title</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>1</td><br>      <td>1371</td><br>      <td>2.5</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>4</td><br>      <td>1371</td><br>      <td>4.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>7</td><br>      <td>1371</td><br>      <td>3.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>19</td><br>      <td>1371</td><br>      <td>4.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>21</td><br>      <td>1371</td><br>      <td>3.0</td><br>      <td>Rocky III</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>44506</th><br>      <td>472</td><br>      <td>3057</td><br>      <td>3.0</td><br>      <td>Frankenstein</td><br>    </tr><br>    <tr><br>      <th>44507</th><br>      <td>624</td><br>      <td>3057</td><br>      <td>4.0</td><br>      <td>Frankenstein</td><br>    </tr><br>    <tr><br>      <th>44782</th><br>      <td>624</td><br>      <td>97936</td><br>      <td>3.0</td><br>      <td>Sweet November</td><br>    </tr><br>    <tr><br>      <th>44909</th><br>      <td>609</td><br>      <td>1450</td><br>      <td>5.0</td><br>      <td>Blood: The Last Vampire</td><br>    </tr><br>    <tr><br>      <th>44985</th><br>      <td>653</td><br>      <td>2103</td><br>      <td>3.0</td><br>      <td>Solaris</td><br>    </tr><br>  </tbody><br></table><br><p>34412 rows × 4 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s_cntD20.duplicated([&#39;userId&#39;,&#39;title&#39;]).sum()
+</code></pre>
+<pre><code>0
+</code></pre><pre><code class="python"># 将一个dataframe的记录数据整合成表格，而且是按照pivot(‘index=xx’,’columns=xx’,’values=xx’)来整合的。还有另外一种写法，就是pivot(‘索引列’，‘列名’，‘值’)。
+ratings_df_s_cntD20_for_apriori = ratings_df_s_cntD20.pivot(index=&#39;userId&#39;,columns=&#39;title&#39;,values=&#39;rating&#39;)
+</code></pre>
+<pre><code class="python">ratings_df_s_cntD20_for_apriori
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th>title</th><br>      <th>20,000 Leagues Under the Sea</th><br>      <th>2001: A Space Odyssey</th><br>      <th>24 Hour Party People</th><br>      <th>28 Days Later</th><br>      <th>28 Weeks Later</th><br>      <th>300</th><br>      <th>48 Hrs.</th><br>      <th>5 Card Stud</th><br>      <th>7 Virgins</th><br>      <th>8 Women</th><br>      <th>…</th><br>      <th>Within the Woods</th><br>      <th>X-Men Origins: Wolverine</th><br>      <th>Y Tu Mamá También</th><br>      <th>Yankee Doodle Dandy</th><br>      <th>Yesterday</th><br>      <th>Young Adam</th><br>      <th>Young Frankenstein</th><br>      <th>Young and Innocent</th><br>      <th>Zatoichi</th><br>      <th>xXx</th><br>    </tr><br>    <tr><br>      <th>userId</th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>1</th><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>…</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>NaN</td><br>      <td>3.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>5.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>…</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>3.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>…</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>3.5</td><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>3.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>…</td><br>      <td>NaN</td><br>      <td>5.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>5.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>5</th><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>4.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>…</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>3.5</td><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>667</th><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>4.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>…</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>668</th><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>…</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>669</th><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>…</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>670</th><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>3.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>…</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>    <tr><br>      <th>671</th><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>5.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>…</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>NaN</td><br>      <td>4.0</td><br>      <td>NaN</td><br>      <td>NaN</td><br>    </tr><br>  </tbody><br></table><br><p>671 rows × 580 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s_cntD20_for_apriori= ratings_df_s_cntD20_for_apriori.fillna(0) #缺失值 填充0
+</code></pre>
+<pre><code class="python">def encode_units(x): # 有效评分规则， 1表示有效，0 表示无效
+    if x &lt;= 0:
+        return 0
+    if x&gt;0:
+        return 1
+</code></pre>
+<pre><code class="python">ratings_df_s_cntD20_for_apriori = ratings_df_s_cntD20_for_apriori.applymap(encode_units)
+</code></pre>
+<h3 id="计算频繁项集-和关联规则"><a href="#计算频繁项集-和关联规则" class="headerlink" title="计算频繁项集  和关联规则"></a>计算频繁项集  和关联规则</h3><pre><code class="python">from mlxtend.frequent_patterns import apriori
+from mlxtend.frequent_patterns import association_rules
+</code></pre>
+<pre><code class="python">ratings_df_s_cntD20_for_apriori.head()
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th>title</th><br>      <th>20,000 Leagues Under the Sea</th><br>      <th>2001: A Space Odyssey</th><br>      <th>24 Hour Party People</th><br>      <th>28 Days Later</th><br>      <th>28 Weeks Later</th><br>      <th>300</th><br>      <th>48 Hrs.</th><br>      <th>5 Card Stud</th><br>      <th>7 Virgins</th><br>      <th>8 Women</th><br>      <th>…</th><br>      <th>Within the Woods</th><br>      <th>X-Men Origins: Wolverine</th><br>      <th>Y Tu Mamá También</th><br>      <th>Yankee Doodle Dandy</th><br>      <th>Yesterday</th><br>      <th>Young Adam</th><br>      <th>Young Frankenstein</th><br>      <th>Young and Innocent</th><br>      <th>Zatoichi</th><br>      <th>xXx</th><br>    </tr><br>    <tr><br>      <th>userId</th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>      <th></th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>1</th><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>…</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>0</td><br>      <td>1</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>1</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>…</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>1</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>…</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>1</td><br>      <td>0</td><br>      <td>0</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>1</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>…</td><br>      <td>0</td><br>      <td>1</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>1</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>    </tr><br>    <tr><br>      <th>5</th><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>1</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>…</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>0</td><br>      <td>1</td><br>      <td>0</td><br>      <td>0</td><br>    </tr><br>  </tbody><br></table><br><p>5 rows × 580 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_df_s_cntD20_for_apriori.isna().sum() #检查是否有nan值
+</code></pre>
+<pre><code>title
+20,000 Leagues Under the Sea    0
+2001: A Space Odyssey           0
+24 Hour Party People            0
+28 Days Later                   0
+28 Weeks Later                  0
+                               ..
+Young Adam                      0
+Young Frankenstein              0
+Young and Innocent              0
+Zatoichi                        0
+xXx                             0
+Length: 580, dtype: int64
+</code></pre><pre><code class="python">frequent_itemsets = apriori(ratings_df_s_cntD20_for_apriori, min_support=0.10, use_colnames=True)  #生成符合条件的频繁项集
+</code></pre>
+<pre><code class="python">frequent_itemsets.sort_values(&#39;support&#39;,ascending=False)  #support降序排列的频繁项集
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>support</th><br>      <th>itemsets</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>111</th><br>      <td>0.482861</td><br>      <td>(Terminator 3: Rise of the Machines)</td><br>    </tr><br>    <tr><br>      <th>130</th><br>      <td>0.463487</td><br>      <td>(The Million Dollar Hotel)</td><br>    </tr><br>    <tr><br>      <th>105</th><br>      <td>0.454545</td><br>      <td>(Solaris)</td><br>    </tr><br>    <tr><br>      <th>113</th><br>      <td>0.433681</td><br>      <td>(The 39 Steps)</td><br>    </tr><br>    <tr><br>      <th>69</th><br>      <td>0.408346</td><br>      <td>(Monsoon Wedding)</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>1613</th><br>      <td>0.101341</td><br>      <td>(Sleepless in Seattle, 5 Card Stud, The Tunnel)</td><br>    </tr><br>    <tr><br>      <th>5455</th><br>      <td>0.101341</td><br>      <td>(Beauty and the Beast, Rain Man, Terminator 3:…</td><br>    </tr><br>    <tr><br>      <th>5454</th><br>      <td>0.101341</td><br>      <td>(The Passion of Joan of Arc, Beauty and the Be…</td><br>    </tr><br>    <tr><br>      <th>6769</th><br>      <td>0.101341</td><br>      <td>(The Million Dollar Hotel, The Hours, Three Co…</td><br>    </tr><br>    <tr><br>      <th>3108</th><br>      <td>0.101341</td><br>      <td>(The Conversation, Men in Black II, The Millio…</td><br>    </tr><br>  </tbody><br></table><br><p>7327 rows × 2 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">rules= association_rules(frequent_itemsets, metric=&quot;lift&quot;, min_threshold=1)  #生成关联规则，只保留lift&gt;1的部分
+rules
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>antecedents</th><br>      <th>consequents</th><br>      <th>antecedent support</th><br>      <th>consequent support</th><br>      <th>support</th><br>      <th>confidence</th><br>      <th>lift</th><br>      <th>leverage</th><br>      <th>conviction</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>(5 Card Stud)</td><br>      <td>(48 Hrs.)</td><br>      <td>0.298063</td><br>      <td>0.298063</td><br>      <td>0.108793</td><br>      <td>0.365000</td><br>      <td>1.224575</td><br>      <td>0.019952</td><br>      <td>1.105413</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>(48 Hrs.)</td><br>      <td>(5 Card Stud)</td><br>      <td>0.298063</td><br>      <td>0.298063</td><br>      <td>0.108793</td><br>      <td>0.365000</td><br>      <td>1.224575</td><br>      <td>0.019952</td><br>      <td>1.105413</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>(A Clockwork Orange)</td><br>      <td>(48 Hrs.)</td><br>      <td>0.152012</td><br>      <td>0.298063</td><br>      <td>0.102832</td><br>      <td>0.676471</td><br>      <td>2.269559</td><br>      <td>0.057523</td><br>      <td>2.169625</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>(48 Hrs.)</td><br>      <td>(A Clockwork Orange)</td><br>      <td>0.298063</td><br>      <td>0.152012</td><br>      <td>0.102832</td><br>      <td>0.345000</td><br>      <td>2.269559</td><br>      <td>0.057523</td><br>      <td>1.294638</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>(48 Hrs.)</td><br>      <td>(A Nightmare on Elm Street)</td><br>      <td>0.298063</td><br>      <td>0.268256</td><br>      <td>0.156483</td><br>      <td>0.525000</td><br>      <td>1.957083</td><br>      <td>0.076526</td><br>      <td>1.540513</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>75531</th><br>      <td>(The Hours)</td><br>      <td>(The Million Dollar Hotel, Terminator 3: Rise …</td><br>      <td>0.301043</td><br>      <td>0.126677</td><br>      <td>0.104322</td><br>      <td>0.346535</td><br>      <td>2.735585</td><br>      <td>0.066187</td><br>      <td>1.336449</td><br>    </tr><br>    <tr><br>      <th>75532</th><br>      <td>(Terminator 3: Rise of the Machines)</td><br>      <td>(The Million Dollar Hotel, The Hours, Rain Man…</td><br>      <td>0.482861</td><br>      <td>0.114754</td><br>      <td>0.104322</td><br>      <td>0.216049</td><br>      <td>1.882716</td><br>      <td>0.048912</td><br>      <td>1.129211</td><br>    </tr><br>    <tr><br>      <th>75533</th><br>      <td>(Rain Man)</td><br>      <td>(The Million Dollar Hotel, The Hours, Terminat…</td><br>      <td>0.295082</td><br>      <td>0.120715</td><br>      <td>0.104322</td><br>      <td>0.353535</td><br>      <td>2.928669</td><br>      <td>0.068701</td><br>      <td>1.360143</td><br>    </tr><br>    <tr><br>      <th>75534</th><br>      <td>(Sissi)</td><br>      <td>(The Million Dollar Hotel, The Hours, Terminat…</td><br>      <td>0.317437</td><br>      <td>0.117735</td><br>      <td>0.104322</td><br>      <td>0.328638</td><br>      <td>2.791347</td><br>      <td>0.066949</td><br>      <td>1.314143</td><br>    </tr><br>    <tr><br>      <th>75535</th><br>      <td>(Solaris)</td><br>      <td>(The Million Dollar Hotel, The Hours, Terminat…</td><br>      <td>0.454545</td><br>      <td>0.113264</td><br>      <td>0.104322</td><br>      <td>0.229508</td><br>      <td>2.026316</td><br>      <td>0.052838</td><br>      <td>1.150870</td><br>    </tr><br>  </tbody><br></table><br><p>75536 rows × 9 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">rules.sort_values(&#39;lift&#39;,ascending=False)
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>antecedents</th><br>      <th>consequents</th><br>      <th>antecedent support</th><br>      <th>consequent support</th><br>      <th>support</th><br>      <th>confidence</th><br>      <th>lift</th><br>      <th>leverage</th><br>      <th>conviction</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>1473</th><br>      <td>(Muxmäuschenstill)</td><br>      <td>(Waiter)</td><br>      <td>0.156483</td><br>      <td>0.120715</td><br>      <td>0.105812</td><br>      <td>0.676190</td><br>      <td>5.601529</td><br>      <td>0.086922</td><br>      <td>2.715438</td><br>    </tr><br>    <tr><br>      <th>1472</th><br>      <td>(Waiter)</td><br>      <td>(Muxmäuschenstill)</td><br>      <td>0.120715</td><br>      <td>0.156483</td><br>      <td>0.105812</td><br>      <td>0.876543</td><br>      <td>5.601529</td><br>      <td>0.086922</td><br>      <td>6.832489</td><br>    </tr><br>    <tr><br>      <th>38208</th><br>      <td>(Titanic, Big Fish)</td><br>      <td>(Psycho, Rain Man)</td><br>      <td>0.150522</td><br>      <td>0.131148</td><br>      <td>0.101341</td><br>      <td>0.673267</td><br>      <td>5.133663</td><br>      <td>0.081601</td><br>      <td>2.659215</td><br>    </tr><br>    <tr><br>      <th>38209</th><br>      <td>(Psycho, Rain Man)</td><br>      <td>(Titanic, Big Fish)</td><br>      <td>0.131148</td><br>      <td>0.150522</td><br>      <td>0.101341</td><br>      <td>0.772727</td><br>      <td>5.133663</td><br>      <td>0.081601</td><br>      <td>3.737705</td><br>    </tr><br>    <tr><br>      <th>38238</th><br>      <td>(Titanic, Big Fish)</td><br>      <td>(Psycho, Solaris)</td><br>      <td>0.150522</td><br>      <td>0.134128</td><br>      <td>0.102832</td><br>      <td>0.683168</td><br>      <td>5.093399</td><br>      <td>0.082642</td><br>      <td>2.732908</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>108</th><br>      <td>(5 Card Stud)</td><br>      <td>(Men in Black II)</td><br>      <td>0.298063</td><br>      <td>0.333830</td><br>      <td>0.110283</td><br>      <td>0.370000</td><br>      <td>1.108348</td><br>      <td>0.010781</td><br>      <td>1.057413</td><br>    </tr><br>    <tr><br>      <th>571</th><br>      <td>(Bang, Boom, Bang)</td><br>      <td>(The 39 Steps)</td><br>      <td>0.260805</td><br>      <td>0.433681</td><br>      <td>0.125186</td><br>      <td>0.480000</td><br>      <td>1.106804</td><br>      <td>0.012080</td><br>      <td>1.089075</td><br>    </tr><br>    <tr><br>      <th>570</th><br>      <td>(The 39 Steps)</td><br>      <td>(Bang, Boom, Bang)</td><br>      <td>0.433681</td><br>      <td>0.260805</td><br>      <td>0.125186</td><br>      <td>0.288660</td><br>      <td>1.106804</td><br>      <td>0.012080</td><br>      <td>1.039159</td><br>    </tr><br>    <tr><br>      <th>1137</th><br>      <td>(Sissi)</td><br>      <td>(License to Wed)</td><br>      <td>0.317437</td><br>      <td>0.301043</td><br>      <td>0.102832</td><br>      <td>0.323944</td><br>      <td>1.076070</td><br>      <td>0.007269</td><br>      <td>1.033874</td><br>    </tr><br>    <tr><br>      <th>1136</th><br>      <td>(License to Wed)</td><br>      <td>(Sissi)</td><br>      <td>0.301043</td><br>      <td>0.317437</td><br>      <td>0.102832</td><br>      <td>0.341584</td><br>      <td>1.076070</td><br>      <td>0.007269</td><br>      <td>1.036675</td><br>    </tr><br>  </tbody><br></table><br><p>75536 rows × 9 columns</p><br><br></div>
+
+
+
+<ul>
+<li><strong>结果说明：上述输出的即为所有关联规则的结果，每一行代表一个关联规则，其中行号1473所在的关联规则(Waiter-&gt;Muxmauschenstill)关联度最高(conviction值越大，代表antecedents与consequents的关联度越大）)。</strong></li>
+</ul>
+<h2 id="电影推荐"><a href="#电影推荐" class="headerlink" title="电影推荐"></a>电影推荐</h2><h4 id="推荐电影列表"><a href="#推荐电影列表" class="headerlink" title="推荐电影列表"></a>推荐电影列表</h4><pre><code class="python">all_antecedents = [list(x) for x in rules[&#39;antecedents&#39;].values]
+</code></pre>
+<pre><code class="python">desired_indices = [i for i in range(len(all_antecedents)) if len(all_antecedents[i]) == 1 and all_antecedents[i][0] == &#39;Batman Returns&#39;] 
+</code></pre>
+<pre><code class="python">apriori_recommendations =rules.iloc[desired_indices,].sort_values(by=[&#39;lift&#39;],ascending=False)
+</code></pre>
+<pre><code class="python">apriori_recommendations.head()
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>antecedents</th><br>      <th>consequents</th><br>      <th>antecedent support</th><br>      <th>consequent support</th><br>      <th>support</th><br>      <th>confidence</th><br>      <th>lift</th><br>      <th>leverage</th><br>      <th>conviction</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>63981</th><br>      <td>(Batman Returns)</td><br>      <td>(The Hours, Monsoon Wedding, Silent Hill, Rese…</td><br>      <td>0.298063</td><br>      <td>0.107303</td><br>      <td>0.102832</td><br>      <td>0.345</td><br>      <td>3.215208</td><br>      <td>0.070849</td><br>      <td>1.362897</td><br>    </tr><br>    <tr><br>      <th>36084</th><br>      <td>(Batman Returns)</td><br>      <td>(Reservoir Dogs, Wag the Dog, Silent Hill)</td><br>      <td>0.298063</td><br>      <td>0.105812</td><br>      <td>0.101341</td><br>      <td>0.340</td><br>      <td>3.213239</td><br>      <td>0.069803</td><br>      <td>1.354830</td><br>    </tr><br>    <tr><br>      <th>63891</th><br>      <td>(Batman Returns)</td><br>      <td>(Monsoon Wedding, Silent Hill, Reservoir Dogs,…</td><br>      <td>0.298063</td><br>      <td>0.107303</td><br>      <td>0.101341</td><br>      <td>0.340</td><br>      <td>3.168611</td><br>      <td>0.069358</td><br>      <td>1.352572</td><br>    </tr><br>    <tr><br>      <th>63351</th><br>      <td>(Batman Returns)</td><br>      <td>(Monsoon Wedding, Silent Hill, Reservoir Dogs,…</td><br>      <td>0.298063</td><br>      <td>0.107303</td><br>      <td>0.101341</td><br>      <td>0.340</td><br>      <td>3.168611</td><br>      <td>0.069358</td><br>      <td>1.352572</td><br>    </tr><br>    <tr><br>      <th>36014</th><br>      <td>(Batman Returns)</td><br>      <td>(The Hours, Reservoir Dogs, Silent Hill)</td><br>      <td>0.298063</td><br>      <td>0.116244</td><br>      <td>0.108793</td><br>      <td>0.365</td><br>      <td>3.139936</td><br>      <td>0.074145</td><br>      <td>1.391741</td><br>    </tr><br>  </tbody><br></table><br><br></div>
+
+
+
+
+<pre><code class="python">apriori_recommendations_list = [list(x) for x in apriori_recommendations[&#39;consequents&#39;].values]
+</code></pre>
+<pre><code class="python">print(&quot;Apriori Recommendations for movie: Batman Returns\n&quot;)
+for i in range(5):
+    print(&quot;{0}:{1} with lift of {2}&quot; .format(i+1, apriori_recommendations_list[i], apriori_recommendations.iloc[i,6]))
+</code></pre>
+<pre><code>Apriori Recommendations for movie: Batman Returns
+
+1:[&#39;The Hours&#39;, &#39;Monsoon Wedding&#39;, &#39;Silent Hill&#39;, &#39;Reservoir Dogs&#39;] with lift of 3.215208333333333
+2:[&#39;Reservoir Dogs&#39;, &#39;Wag the Dog&#39;, &#39;Silent Hill&#39;] with lift of 3.2132394366197183
+3:[&#39;Monsoon Wedding&#39;, &#39;Silent Hill&#39;, &#39;Reservoir Dogs&#39;, &#39;Sissi&#39;] with lift of 3.168611111111111
+4:[&#39;Monsoon Wedding&#39;, &#39;Silent Hill&#39;, &#39;Reservoir Dogs&#39;, &#39;Rain Man&#39;] with lift of 3.168611111111111
+5:[&#39;The Hours&#39;, &#39;Reservoir Dogs&#39;, &#39;Silent Hill&#39;] with lift of 3.139935897435898
+</code></pre><h4 id="推荐单部电影"><a href="#推荐单部电影" class="headerlink" title="推荐单部电影"></a>推荐单部电影</h4><pre><code class="python">apriori_single_recommendations = apriori_recommendations.iloc[[x for x in range(len(apriori_recommendations_list)) if len(apriori_recommendations_list[x]) ==1],]
+</code></pre>
+<pre><code class="python">apriori_single_recommendations_list = [list(x) for x in apriori_single_recommendations[&#39;consequents&#39;].values]
+</code></pre>
+<pre><code class="python">print(&quot;Apriori single-movie Recommendations for movie: Batman Returns\n&quot;)
+for i in range(5):
+    print(&quot;{0}: {1}, with lift of {2}&quot;.format(i+1,apriori_single_recommendations_list[i][0],apriori_single_recommendations.iloc[i,6]))
+</code></pre>
+<pre><code>Apriori single-movie Recommendations for movie: Batman Returns
+
+1: Reservoir Dogs, with lift of 2.6094444444444447
+2: Ariel, with lift of 2.5397663551401872
+3: Wag the Dog, with lift of 2.496744186046512
+4: To Kill a Mockingbird, with lift of 2.478125
+5: Romeo + Juliet, with lift of 2.4705000000000004
+</code></pre><ul>
+<li><strong>结果说明：我们约束consequents(后件)的长度为1，选出lift降序排列的前五个关联规则(关联规则格式为前件——&gt;后件）。对于用户观看的电影记录《Batman Returns》，即antecedents(前件），我们根据规则按照推荐程度降序给出了单部电影推荐结果</strong></li>
+</ul>
+<h2 id="协同过滤"><a href="#协同过滤" class="headerlink" title="协同过滤"></a><strong>协同过滤</strong></h2><h4 id="基于user的协同过滤"><a href="#基于user的协同过滤" class="headerlink" title="基于user的协同过滤"></a>基于user的协同过滤</h4><ul>
+<li>在海量的用户中发现一小部分和你品味比较相近的，在协同过滤中，这些用户称为邻居，然后根据他们喜欢的东西组织成一个排序的目录来推荐给你<ul>
+<li><strong>重点就是怎样去寻找和你比较相似的用户，怎么将那些邻居的喜好组织成一个排序的目录给用户</strong><ul>
+<li>在世纪钟给出一个数字K表示和你最为相似的用户。</li>
+<li>在计算相似度的时候，理论上要计算被推荐的用户与所有用户的相似度，但是当数据量比较大的时候，这样做是很费时间的 ，</li>
+<li>数据集中可能有很多用户和需要被推荐的用户是没有关系的， 在计算是完全是没有必要的，</li>
+<li>所以需要物品到用户的反查表，也就是没一件物品对应的用户信息，有了这个表，就可以过滤掉很多和你没有关系的用户，减少计算量。</li>
+<li><img src="/2021/01/02/案例-基于关联规则算法实现电影推荐系统/attachment:c637faba-51f3-4a89-84f5-ede3ce337e4c.png" srcset="/img/loading.gif" alt="image.png"></li>
+</ul>
+</li>
+<li>总结来说，推荐的过程就是先计算用户之间的相似度，根据相似度的高低选取前K个用户，在这K个用户中计算每一件物品的推荐程度。</li>
+</ul>
+</li>
+</ul>
+<pre><code class="python"># 读取ratings_small.csv数据用于建模
+ratings_small_path = &quot;./movie_dataset/ratings_small.csv&quot;
+ratings_small_df = pd.read_csv(ratings_small_path)
+</code></pre>
+<pre><code class="python">ratings_small_df.shape
+</code></pre>
+<pre><code>(100004, 4)
+</code></pre><pre><code class="python">ratings_small_df.head()
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieId</th><br>      <th>rating</th><br>      <th>timestamp</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>1</td><br>      <td>31</td><br>      <td>2.5</td><br>      <td>1260759144</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>1</td><br>      <td>1029</td><br>      <td>3.0</td><br>      <td>1260759179</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>1</td><br>      <td>1061</td><br>      <td>3.0</td><br>      <td>1260759182</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>1</td><br>      <td>1129</td><br>      <td>2.0</td><br>      <td>1260759185</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>1</td><br>      <td>1172</td><br>      <td>4.0</td><br>      <td>1260759205</td><br>    </tr><br>  </tbody><br></table><br><br></div>
+
+
+
+
+<pre><code class="python"># 原始的movieId 并非从0到1 的连续值， 为方便更贱user-item矩阵， 重新排列movie_id
+movie_id = ratings_small_df[&#39;movieId&#39;].drop_duplicates()
+movie_id = pd.DataFrame(movie_id)
+movie_id[&#39;movieid&#39;] = range(len(movie_id))
+</code></pre>
+<pre><code class="python">movie_id
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>movieId</th><br>      <th>movieid</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>31</td><br>      <td>0</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>1029</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>1061</td><br>      <td>2</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>1129</td><br>      <td>3</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>1172</td><br>      <td>4</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>99131</th><br>      <td>64997</td><br>      <td>9061</td><br>    </tr><br>    <tr><br>      <th>99159</th><br>      <td>72380</td><br>      <td>9062</td><br>    </tr><br>    <tr><br>      <th>99274</th><br>      <td>129</td><br>      <td>9063</td><br>    </tr><br>    <tr><br>      <th>99678</th><br>      <td>4736</td><br>      <td>9064</td><br>    </tr><br>    <tr><br>      <th>99820</th><br>      <td>6425</td><br>      <td>9065</td><br>    </tr><br>  </tbody><br></table><br><p>9066 rows × 2 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_small_df = pd.merge(ratings_small_df, movie_id, on =[&#39;movieId&#39;], how=&#39;left&#39;)
+ratings_small_df
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieId</th><br>      <th>rating</th><br>      <th>timestamp</th><br>      <th>movieid</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>1</td><br>      <td>31</td><br>      <td>2.5</td><br>      <td>1260759144</td><br>      <td>0</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>1</td><br>      <td>1029</td><br>      <td>3.0</td><br>      <td>1260759179</td><br>      <td>1</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>1</td><br>      <td>1061</td><br>      <td>3.0</td><br>      <td>1260759182</td><br>      <td>2</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>1</td><br>      <td>1129</td><br>      <td>2.0</td><br>      <td>1260759185</td><br>      <td>3</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>1</td><br>      <td>1172</td><br>      <td>4.0</td><br>      <td>1260759205</td><br>      <td>4</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>99999</th><br>      <td>671</td><br>      <td>6268</td><br>      <td>2.5</td><br>      <td>1065579370</td><br>      <td>7005</td><br>    </tr><br>    <tr><br>      <th>100000</th><br>      <td>671</td><br>      <td>6269</td><br>      <td>4.0</td><br>      <td>1065149201</td><br>      <td>4771</td><br>    </tr><br>    <tr><br>      <th>100001</th><br>      <td>671</td><br>      <td>6365</td><br>      <td>4.0</td><br>      <td>1070940363</td><br>      <td>1329</td><br>    </tr><br>    <tr><br>      <th>100002</th><br>      <td>671</td><br>      <td>6385</td><br>      <td>2.5</td><br>      <td>1070979663</td><br>      <td>1331</td><br>    </tr><br>    <tr><br>      <th>100003</th><br>      <td>671</td><br>      <td>6565</td><br>      <td>3.5</td><br>      <td>1074784724</td><br>      <td>2946</td><br>    </tr><br>  </tbody><br></table><br><p>100004 rows × 5 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python">ratings_small_df = ratings_small_df[[&#39;userId&#39;,&#39;movieid&#39;,&#39;rating&#39;,&#39;timestamp&#39;]]  #更新 movieId ----&gt; movieid
+ratings_small_df
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieid</th><br>      <th>rating</th><br>      <th>timestamp</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>0</th><br>      <td>1</td><br>      <td>0</td><br>      <td>2.5</td><br>      <td>1260759144</td><br>    </tr><br>    <tr><br>      <th>1</th><br>      <td>1</td><br>      <td>1</td><br>      <td>3.0</td><br>      <td>1260759179</td><br>    </tr><br>    <tr><br>      <th>2</th><br>      <td>1</td><br>      <td>2</td><br>      <td>3.0</td><br>      <td>1260759182</td><br>    </tr><br>    <tr><br>      <th>3</th><br>      <td>1</td><br>      <td>3</td><br>      <td>2.0</td><br>      <td>1260759185</td><br>    </tr><br>    <tr><br>      <th>4</th><br>      <td>1</td><br>      <td>4</td><br>      <td>4.0</td><br>      <td>1260759205</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>99999</th><br>      <td>671</td><br>      <td>7005</td><br>      <td>2.5</td><br>      <td>1065579370</td><br>    </tr><br>    <tr><br>      <th>100000</th><br>      <td>671</td><br>      <td>4771</td><br>      <td>4.0</td><br>      <td>1065149201</td><br>    </tr><br>    <tr><br>      <th>100001</th><br>      <td>671</td><br>      <td>1329</td><br>      <td>4.0</td><br>      <td>1070940363</td><br>    </tr><br>    <tr><br>      <th>100002</th><br>      <td>671</td><br>      <td>1331</td><br>      <td>2.5</td><br>      <td>1070979663</td><br>    </tr><br>    <tr><br>      <th>100003</th><br>      <td>671</td><br>      <td>2946</td><br>      <td>3.5</td><br>      <td>1074784724</td><br>    </tr><br>  </tbody><br></table><br><p>100004 rows × 4 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python"># 用户物品统计
+# unique()是以 数组形式（numpy.ndarray）返回列的所有唯一值（特征的所有唯一值）
+# nunique() Return number of unique elements in the object.即返回的是唯一值的个数
+
+n_users = ratings_small_df.userId.nunique()
+n_users
+</code></pre>
+<pre><code>671
+</code></pre><pre><code class="python">n_items = ratings_small_df.movieid.nunique()
+n_items 
+</code></pre>
+<pre><code>9066
+</code></pre><pre><code class="python"># 拆分数据集
+from sklearn.model_selection import train_test_split
+#按照训练集70% 测试集30%的比例 对数据进行拆分
+train_data,test_data = train_test_split(ratings_small_df,test_size= 0.3)
+</code></pre>
+<pre><code class="python">train_data
+</code></pre>
+<div><br><style scoped><br>    .dataframe tbody tr th:only-of-type {<br>        vertical-align: middle;<br>    }<br><br><br>    .dataframe tbody tr th {<br>        vertical-align: top;<br>    }<br><br>    .dataframe thead th {<br>        text-align: right;<br>    }<br><br></style><br><br><table border="1" class="dataframe"><br>  <thead><br>    <tr style="text-align: right;"><br>      <th></th><br>      <th>userId</th><br>      <th>movieid</th><br>      <th>rating</th><br>      <th>timestamp</th><br>    </tr><br>  </thead><br>  <tbody><br>    <tr><br>      <th>69526</th><br>      <td>481</td><br>      <td>329</td><br>      <td>4.0</td><br>      <td>1437001087</td><br>    </tr><br>    <tr><br>      <th>41670</th><br>      <td>299</td><br>      <td>917</td><br>      <td>3.5</td><br>      <td>1344188856</td><br>    </tr><br>    <tr><br>      <th>49260</th><br>      <td>358</td><br>      <td>288</td><br>      <td>2.0</td><br>      <td>957480147</td><br>    </tr><br>    <tr><br>      <th>39317</th><br>      <td>287</td><br>      <td>3582</td><br>      <td>4.0</td><br>      <td>1470168974</td><br>    </tr><br>    <tr><br>      <th>35991</th><br>      <td>262</td><br>      <td>2094</td><br>      <td>3.0</td><br>      <td>1433899624</td><br>    </tr><br>    <tr><br>      <th>…</th><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>      <td>…</td><br>    </tr><br>    <tr><br>      <th>6262</th><br>      <td>33</td><br>      <td>1095</td><br>      <td>2.0</td><br>      <td>1032769543</td><br>    </tr><br>    <tr><br>      <th>8504</th><br>      <td>56</td><br>      <td>367</td><br>      <td>2.0</td><br>      <td>1467005360</td><br>    </tr><br>    <tr><br>      <th>8540</th><br>      <td>56</td><br>      <td>1435</td><br>      <td>4.0</td><br>      <td>1467006577</td><br>    </tr><br>    <tr><br>      <th>77937</th><br>      <td>542</td><br>      <td>1496</td><br>      <td>1.0</td><br>      <td>1424966216</td><br>    </tr><br>    <tr><br>      <th>94226</th><br>      <td>624</td><br>      <td>476</td><br>      <td>3.0</td><br>      <td>1053249671</td><br>    </tr><br>  </tbody><br></table><br><p>70002 rows × 4 columns</p><br><br></div>
+
+
+
+
+<pre><code class="python"># 训练集 用户-物品 矩阵
+user_item_matrix = np.zeros((n_users,n_items))
+user_item_matrix.shape
+</code></pre>
+<pre><code>(671, 9066)
+</code></pre><pre><code class="python"># iterrows() : 将DataFrame迭代成（index ,series）
+# iteritems()： 将DataFrame迭代成（列名，series）
+# itertuples()： 将DataFrame迭代成元组 
+for line in train_data.itertuples():
+    user_item_matrix[line[1]-1,line[2]]=line[3]
+</code></pre>
+<pre><code class="python">user_item_matrix
+</code></pre>
+<pre><code>array([[0., 3., 3., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       ...,
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.],
+       [0., 0., 0., ..., 0., 0., 0.]])
+</code></pre><pre><code class="python">user_item_matrix.shape
+</code></pre>
+<pre><code>(671, 9066)
+</code></pre><pre><code class="python"># 构建用户相似矩阵 ---采用余弦距离
+from sklearn.metrics.pairwise import pairwise_distances
+# 相似度计算 定义余弦距离
+user_similarity_m = pairwise_distances(user_item_matrix,metric=&#39;cosine&#39;)  # 每个用户为1行数据，故此处不需要再进行转置
+</code></pre>
+<p><img src="/2021/01/02/案例-基于关联规则算法实现电影推荐系统/attachment:580b16df-141a-4cce-a502-53a01d1ecb68.png" srcset="/img/loading.gif" alt="image.png"></p>
+<pre><code class="python">a=[[1,3],[2,2]]
+a
+</code></pre>
+<pre><code>[[1, 3], [2, 2]]
+</code></pre><pre><code class="python">pairwise_distances(a,metric=&#39;euclidean&#39;)
+</code></pre>
+<pre><code>array([[0.        , 1.41421356],
+       [1.41421356, 0.        ]])
+</code></pre><pre><code class="python">b = np.array([[1,2],[1,3],[2,1]])
+b
+</code></pre>
+<pre><code>array([[1, 2],
+       [1, 3],
+       [2, 1]])
+</code></pre><pre><code class="python">pairwise_distances(b,metric=&#39;euclidean&#39;) #结果数组的第一行第二列表示 a[0]与a[1]的距离
+</code></pre>
+<pre><code>array([[0.        , 1.        , 1.41421356],
+       [1.        , 0.        , 2.23606798],
+       [1.41421356, 2.23606798, 0.        ]])
+</code></pre><pre><code class="python">pairwise_distances(b,metric=&#39;cosine&#39;)
+</code></pre>
+<pre><code>array([[0.        , 0.01005051, 0.2       ],
+       [0.01005051, 0.        , 0.29289322],
+       [0.2       , 0.29289322, 0.        ]])
+</code></pre><pre><code class="python">b.shape
+</code></pre>
+<pre><code>(3, 2)
+</code></pre><pre><code class="python">b[1]
+</code></pre>
+<pre><code>array([1, 3])
+</code></pre><pre><code class="python">b[0]
+</code></pre>
+<pre><code>array([1, 2])
+</code></pre><pre><code class="python">user_similarity_m.shape
+</code></pre>
+<pre><code>(671, 671)
+</code></pre><pre><code class="python">user_similarity_m[0:5,0:5].round(2)
+</code></pre>
+<pre><code>array([[0.  , 1.  , 1.  , 0.94, 0.97],
+       [1.  , 0.  , 0.89, 0.93, 0.92],
+       [1.  , 0.89, 0.  , 0.93, 0.93],
+       [0.94, 0.93, 0.93, 0.  , 0.94],
+       [0.97, 0.92, 0.93, 0.94, 0.  ]])
+</code></pre><pre><code class="python">user_similarity_m_triu = np.triu(user_similarity_m,k=1) #取得上三角数据
+np.round(user_similarity_m_triu[user_similarity_m_triu.nonzero()],3)
+</code></pre>
+<pre><code>array([1.   , 1.   , 0.938, ..., 0.934, 0.919, 0.814])
+</code></pre><pre><code class="python">user_sim_nonzero = np.round(user_similarity_m_triu[user_similarity_m_triu.nonzero()],3)
+</code></pre>
+<pre><code class="python">np.percentile(user_sim_nonzero,np.arange(0,101,10))
+</code></pre>
+<pre><code>array([0.316, 0.844, 0.885, 0.911, 0.93 , 0.947, 0.961, 0.976, 1.   ,
+       1.   , 1.   ])
+</code></pre><h4 id="训练集预测"><a href="#训练集预测" class="headerlink" title="训练集预测"></a>训练集预测</h4><pre><code class="python">mean_user_rating = user_item_matrix.mean(axis=1)
+mean_user_rating
+</code></pre>
+<pre><code>array([0.00297816, 0.0198544 , 0.01301566, 0.06265167, 0.03027796,
+       0.01196779, 0.02404589, 0.03805427, 0.01114053, 0.0147805 ,
+       0.01047871, 0.01301566, 0.01615928, 0.004743  , 0.33984116,
+       0.01069932, 0.0991617 , 0.0147805 , 0.11780278, 0.02294286,
+       0.0443415 , 0.04936025, 0.21111846, 0.00683874, 0.00617692,
+       0.04031546, 0.00816236, 0.01555261, 0.00363997, 0.29643724,
+       0.02625193, 0.01080962, 0.03684094, 0.05702625, 0.0025921 ,
+       0.03000221, 0.01147143, 0.03838518, 0.0196338 , 0.01301566,
+       0.0592323 , 0.0196338 , 0.02172954, 0.00694904, 0.00512905,
+       0.01312597, 0.01069932, 0.14212442, 0.02371498, 0.01169204,
+       0.01069932, 0.01941319, 0.00893448, 0.01384293, 0.00838297,
+       0.14615045, 0.06254136, 0.01753805, 0.02090227, 0.02018531,
+       0.04197   , 0.0172623 , 0.02454225, 0.00739025, 0.00694904,
+       0.01544231, 0.02856828, 0.03331127, 0.02327377, 0.02856828,
+       0.00794176, 0.05035297, 0.42096845, 0.01544231, 0.0394882 ,
+       0.00573572, 0.07346128, 0.08234061, 0.00921024, 0.0100375 ,
+       0.05283477, 0.01235385, 0.04555482, 0.03424884, 0.0247077 ,
+       0.05084933, 0.00650783, 0.06281712, 0.02448709, 0.01577322,
+       0.04671299, 0.02779616, 0.0444518 , 0.0497463 , 0.08769027,
+       0.02288771, 0.03160159, 0.02332892, 0.0497463 , 0.00661813,
+       0.0173726 , 0.1978822 , 0.02437679, 0.02360468, 0.13942202,
+       0.01411869, 0.00656298, 0.00783146, 0.00628723, 0.04015001,
+       0.09541143, 0.00650783, 0.00959629, 0.00827267, 0.01351202,
+       0.00667328, 0.01389808, 0.05592323, 0.17185087, 0.03833002,
+       0.02503861, 0.00882418, 0.00937569, 0.02415619, 0.0666777 ,
+       0.01808957, 0.00573572, 0.09695566, 0.00595632, 0.09254357,
+       0.01433929, 0.0297816 , 0.03518641, 0.10065078, 0.00529451,
+       0.01637988, 0.02018531, 0.02024046, 0.02090227, 0.01213325,
+       0.00816236, 0.01103022, 0.02365983, 0.01158173, 0.01455989,
+       0.02134348, 0.01312597, 0.04081182, 0.06121774, 0.09557688,
+       0.01654533, 0.05664019, 0.01698654, 0.00926539, 0.01279506,
+       0.01604897, 0.08697331, 0.00562541, 0.04070152, 0.03132583,
+       0.02702405, 0.00915508, 0.02007501, 0.02421134, 0.10870285,
+       0.01422899, 0.00761085, 0.02790646, 0.03623428, 0.00590117,
+       0.01588352, 0.0051842 , 0.01169204, 0.00639753, 0.03551732,
+       0.05834988, 0.07059343, 0.03259431, 0.01080962, 0.00452239,
+       0.01108537, 0.04301787, 0.01433929, 0.01125083, 0.05625414,
+       0.0099272 , 0.1014229 , 0.02867858, 0.03320097, 0.02150893,
+       0.00739025, 0.01687624, 0.01886168, 0.01367748, 0.10533863,
+       0.02702405, 0.02051621, 0.01979925, 0.12221487, 0.05846018,
+       0.03910214, 0.01831017, 0.01086477, 0.00871388, 0.05542687,
+       0.00948599, 0.00672844, 0.01604897, 0.00452239, 0.00683874,
+       0.01610413, 0.2176263 , 0.18409442, 0.06254136, 0.01753805,
+       0.02465255, 0.03430399, 0.01433929, 0.03855063, 0.07842488,
+       0.00501875, 0.02658284, 0.01158173, 0.02625193, 0.00827267,
+       0.00921024, 0.00750055, 0.02349437, 0.00987205, 0.03347673,
+       0.00937569, 0.20416942, 0.00871388, 0.03160159, 0.04858813,
+       0.06507831, 0.01075447, 0.02432164, 0.0843812 , 0.07246856,
+       0.0147805 , 0.14328259, 0.08151335, 0.02195014, 0.04268696,
+       0.00739025, 0.07677035, 0.03595853, 0.0051842 , 0.05581293,
+       0.03628943, 0.01147143, 0.05840503, 0.03739246, 0.04252151,
+       0.00650783, 0.02768586, 0.01025811, 0.00926539, 0.01235385,
+       0.01047871, 0.13710567, 0.03000221, 0.01091992, 0.054379  ,
+       0.00959629, 0.01158173, 0.10324289, 0.00628723, 0.06176925,
+       0.02029561, 0.01158173, 0.0296713 , 0.01114053, 0.06585043,
+       0.00479815, 0.01808957, 0.0147805 , 0.01136113, 0.00838297,
+       0.02509376, 0.03524156, 0.05333113, 0.01433929, 0.10302228,
+       0.00915508, 0.0893448 , 0.02029561, 0.0049636 , 0.02090227,
+       0.02553497, 0.08018972, 0.02217075, 0.25672844, 0.06849768,
+       0.00634238, 0.03662034, 0.02647253, 0.11763733, 0.01389808,
+       0.00551511, 0.00750055, 0.06243106, 0.03309067, 0.00595632,
+       0.16997573, 0.02029561, 0.0148908 , 0.04594088, 0.00468784,
+       0.23830796, 0.07290977, 0.08112729, 0.01169204, 0.01246415,
+       0.03524156, 0.00573572, 0.01588352, 0.00595632, 0.01571807,
+       0.02283256, 0.01323627, 0.00700419, 0.04180454, 0.00446724,
+       0.00783146, 0.02073682, 0.04649239, 0.00584602, 0.02680344,
+       0.00689389, 0.00816236, 0.02503861, 0.01086477, 0.007666  ,
+       0.00816236, 0.00330907, 0.01323627, 0.02950585, 0.01384293,
+       0.00595632, 0.05868079, 0.01114053, 0.04500331, 0.0619347 ,
+       0.09055813, 0.00650783, 0.01621443, 0.00639753, 0.0495257 ,
+       0.01378778, 0.02443194, 0.1039047 , 0.01544231, 0.09039268,
+       0.00419148, 0.00948599, 0.15243768, 0.01483565, 0.0098169 ,
+       0.01533201, 0.03071917, 0.05404809, 0.00909993, 0.0224465 ,
+       0.0097066 , 0.05217295, 0.00628723, 0.01345687, 0.03055372,
+       0.0446724 , 0.00849327, 0.06165895, 0.00838297, 0.00705934,
+       0.01808957, 0.00645268, 0.03750276, 0.01990955, 0.28375248,
+       0.02945069, 0.07654975, 0.01544231, 0.11973307, 0.03132583,
+       0.02691374, 0.09276417, 0.22865652, 0.01246415, 0.03430399,
+       0.02923009, 0.00617692, 0.0125193 , 0.04511361, 0.00683874,
+       0.03540702, 0.01632473, 0.01544231, 0.00595632, 0.01676594,
+       0.024818  , 0.09303993, 0.00783146, 0.0098169 , 0.11675491,
+       0.0270792 , 0.10699316, 0.05978381, 0.01566292, 0.00799691,
+       0.00882418, 0.05129054, 0.00650783, 0.01698654, 0.00893448,
+       0.02724465, 0.04114273, 0.0494154 , 0.01643503, 0.02823737,
+       0.0101478 , 0.0296713 , 0.09458416, 0.00799691, 0.01588352,
+       0.06507831, 0.09458416, 0.04560997, 0.00457754, 0.09618354,
+       0.09303993, 0.02013016, 0.06221046, 0.05382749, 0.00606662,
+       0.02161924, 0.00683874, 0.00612177, 0.05779837, 0.01367748,
+       0.03568277, 0.07572248, 0.01775866, 0.00441209, 0.00540481,
+       0.00904478, 0.01808957, 0.00639753, 0.00871388, 0.03943305,
+       0.01599382, 0.33085153, 0.02294286, 0.0101478 , 0.00821752,
+       0.01660049, 0.14179351, 0.02272226, 0.00705934, 0.08283697,
+       0.15784249, 0.0121884 , 0.13335539, 0.01058901, 0.01119568,
+       0.0593426 , 0.02095742, 0.30228326, 0.0048533 , 0.01869623,
+       0.0569711 , 0.24652548, 0.02614163, 0.01301566, 0.14284139,
+       0.01114053, 0.00490845, 0.02774101, 0.03132583, 0.1185749 ,
+       0.1435032 , 0.01819987, 0.03259431, 0.00573572, 0.004743  ,
+       0.0398191 , 0.04037062, 0.01781381, 0.00672844, 0.0051842 ,
+       0.01875138, 0.01941319, 0.02923009, 0.02415619, 0.00617692,
+       0.03309067, 0.03419369, 0.0048533 , 0.01235385, 0.05741231,
+       0.05658504, 0.03353188, 0.01334657, 0.004743  , 0.09927201,
+       0.0051842 , 0.01125083, 0.01334657, 0.2351092 , 0.04367968,
+       0.00948599, 0.00921024, 0.00584602, 0.1037944 , 0.00876903,
+       0.03805427, 0.01411869, 0.19170527, 0.05619899, 0.03987426,
+       0.01384293, 0.06083168, 0.04003971, 0.01968895, 0.03992941,
+       0.00777631, 0.03171189, 0.03325612, 0.16804544, 0.02062652,
+       0.03298037, 0.01384293, 0.0394882 , 0.08030002, 0.01378778,
+       0.03011251, 0.10070593, 0.00739025, 0.01058901, 0.00551511,
+       0.00683874, 0.01704169, 0.01544231, 0.09265387, 0.02713435,
+       0.02178469, 0.63484447, 0.03562762, 0.00623208, 0.03353188,
+       0.02360468, 0.00783146, 0.06358923, 0.01511141, 0.01831017,
+       0.00959629, 0.01329142, 0.07224796, 0.04378998, 0.03253916,
+       0.07798368, 0.07026252, 0.04616148, 0.52404589, 0.00871388,
+       0.00777631, 0.01147143, 0.01180234, 0.02283256, 0.03634458,
+       0.01577322, 0.02950585, 0.0101478 , 0.09022722, 0.14284139,
+       0.01125083, 0.0917163 , 0.00805206, 0.00209574, 0.22887712,
+       0.00595632, 0.03502096, 0.00821752, 0.06072138, 0.09728657,
+       0.0150011 , 0.15938672, 0.01400838, 0.01047871, 0.02228105,
+       0.00849327, 0.03904699, 0.02128833, 0.02514891, 0.05118023,
+       0.14399956, 0.06243106, 0.07842488, 0.05757776, 0.01119568,
+       0.01268476, 0.03926759, 0.03617913, 0.00330907, 0.11096404,
+       0.0196338 , 0.12618575, 0.08879329, 0.02283256, 0.01913744,
+       0.01080962, 0.01742775, 0.01560777, 0.02889918, 0.10225017,
+       0.01069932, 0.01764836, 0.0100375 , 0.01257445, 0.04086698,
+       0.02614163, 0.01185749, 0.03105008, 0.39383411, 0.02079197,
+       0.04290757, 0.04500331, 0.0223362 , 0.00959629, 0.0075557 ,
+       0.00937569, 0.01185749, 0.00772116, 0.00534966, 0.00750055,
+       0.00739025, 0.00976175, 0.004743  , 0.01455989, 0.01191264,
+       0.04059122, 0.01169204, 0.00490845, 0.01125083, 0.007666  ,
+       0.05834988, 0.05162144, 0.07715641, 0.0245974 , 0.00827267,
+       0.00595632, 0.08509817, 0.01753805, 0.20257004, 0.03353188,
+       0.0445621 , 0.00419148, 0.01952349, 0.03827487, 0.02950585,
+       0.00843812, 0.01742775, 0.00871388, 0.15927642, 0.1088683 ,
+       0.00816236, 0.01687624, 0.00739025, 0.0098169 , 0.00716964,
+       0.0347452 ])
+</code></pre><pre><code class="python">rating_diff = (user_item_matrix - mean_user_rating[:,np.newaxis])   # np.newaxis作用：为mean_user_rating增加一个维度，实现加减操作
+rating_diff
+</code></pre>
+<pre><code>array([[-2.97816016e-03,  2.99702184e+00,  2.99702184e+00, ...,
+        -2.97816016e-03, -2.97816016e-03, -2.97816016e-03],
+       [-1.98544011e-02, -1.98544011e-02, -1.98544011e-02, ...,
+        -1.98544011e-02, -1.98544011e-02, -1.98544011e-02],
+       [-1.30156629e-02, -1.30156629e-02, -1.30156629e-02, ...,
+        -1.30156629e-02, -1.30156629e-02, -1.30156629e-02],
+       ...,
+       [-9.81689830e-03, -9.81689830e-03, -9.81689830e-03, ...,
+        -9.81689830e-03, -9.81689830e-03, -9.81689830e-03],
+       [-7.16964483e-03, -7.16964483e-03, -7.16964483e-03, ...,
+        -7.16964483e-03, -7.16964483e-03, -7.16964483e-03],
+       [-3.47452019e-02, -3.47452019e-02, -3.47452019e-02, ...,
+        -3.47452019e-02, -3.47452019e-02, -3.47452019e-02]])
+</code></pre><pre><code class="python">user_prediction = mean_user_rating[:,np.newaxis] + user_similarity_m.dot(rating_diff) / np.array([np.abs(user_similarity_m).sum(axis=1)]).T
+# 处以np.array([np.abs(item_similarity_m).sum(axis=1)]是为了可以使评分在1~5之间，使1~5的标准化
+</code></pre>
+<pre><code class="python">user_prediction
+</code></pre>
+<pre><code>array([[ 8.48587738e-02,  1.11549860e-01,  7.78496257e-02, ...,
+        -3.30873704e-02, -3.59785123e-02, -3.59132569e-02],
+       [ 9.36489784e-02,  1.35396758e-01,  1.04357090e-01, ...,
+        -1.62815182e-02, -1.93136443e-02, -1.93247190e-02],
+       [ 9.44428457e-02,  1.33314515e-01,  9.83052575e-02, ...,
+        -2.28228892e-02, -2.58037344e-02, -2.59258365e-02],
+       ...,
+       [ 9.29750987e-02,  1.27902780e-01,  9.32275326e-02, ...,
+        -2.60694824e-02, -2.89101875e-02, -2.87905826e-02],
+       [ 8.62056229e-02,  1.26697599e-01,  9.17810994e-02, ...,
+        -2.88942031e-02, -3.19119828e-02, -3.20590645e-02],
+       [ 1.17342284e-01,  1.50739909e-01,  1.17908253e-01, ...,
+        -7.69495365e-05, -2.99819315e-03, -3.02101562e-03]])
+</code></pre><pre><code class="python"># 只取数据集中有评分的数据集进行评估
+from sklearn.metrics import mean_squared_error
+from math import sqrt
+</code></pre>
+<pre><code class="python">prediction_flatten = user_prediction[user_item_matrix.nonzero()]
+prediction_flatten
+</code></pre>
+<pre><code>array([0.11154986, 0.07784963, 0.14877094, ..., 0.04236321, 0.01114962,
+       0.02448394])
+</code></pre><pre><code class="python">user_item_matrix_flatten = user_item_matrix[user_item_matrix.nonzero()]
+user_item_matrix_flatten
+</code></pre>
+<pre><code>array([3., 3., 2., ..., 4., 4., 4.])
+</code></pre><pre><code class="python">error_test = sqrt(mean_squared_error(prediction_flatten,user_item_matrix_flatten)) # 均方根误差计算
+</code></pre>
+<pre><code class="python">error_test
+</code></pre>
+<pre><code>3.390138302832629
+</code></pre>
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/Machine%20Learning">Machine Learning</a>
+                  &nbsp;
+                
+                  <a class="hover-with-bg" href="/categories/Algorithm">Algorithm</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/Machine%20Learning">Machine Learning</a>
+                
+                  <a class="hover-with-bg" href="/tags/Algorithm">Algorithm</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E6%8E%A8%E8%8D%90">推荐</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E5%85%B3%E8%81%94%E8%A7%84%E5%88%99%E7%AE%97%E6%B3%95">关联规则算法</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;目录</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+      <br><br>
+      
+      
+   <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MjAzMS8xODU3OA==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+  
+  
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="http://blog.oceaneyes.cn" target="_blank" rel="nofollow noopener"><b>WebSite</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/OcaenEyes" target="_blank" rel="nofollow noopener"> <b>GaoZhiYong</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src="/lib/popper/popper.min.js"></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="/js/lazyload.js"></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js"></script>
+  
+  <script src="/js/post.js"></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js"></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js"></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "案例-基于关联规则算法实现电影推荐系统&nbsp;",
+      ],
+      cursorChar: "~",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js"></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js"></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js"></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+  
+  
+    <script>
+      !function (e, t, a) {
+        function r() {
+          for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+          requestAnimationFrame(r)
+        }
+
+        function n() {
+          var t = "function" == typeof e.onclick && e.onclick;
+          e.onclick = function (e) {
+            t && t(), o(e)
+          }
+        }
+
+        function o(e) {
+          var a = t.createElement("div");
+          a.className = "heart", s.push({
+            el: a,
+            x: e.clientX - 5,
+            y: e.clientY - 5,
+            scale: 1,
+            alpha: 1,
+            color: c()
+          }), t.body.appendChild(a)
+        }
+
+        function i(e) {
+          var a = t.createElement("style");
+          a.type = "text/css";
+          try {
+            a.appendChild(t.createTextNode(e))
+          } catch (t) {
+            a.styleSheet.cssText = e
+          }
+          t.getElementsByTagName("head")[0].appendChild(a)
+        }
+
+        function c() {
+          return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+        }
+
+        var s = [];
+        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+          setTimeout(e, 1e3 / 60)
+        }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()
+      }(window, document);
+    </script>
+  
+
+
+
+
+
+
+
+</body>
+</html>

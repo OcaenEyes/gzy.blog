@@ -133,6 +133,132 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2021/01/03/NLP-Bert语义情感分类/">
+        <p class="h4 index-header">NLP-Bert语义情感分类</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">评论情感分类数据处理# 评论情感分类数据处理
+# labels： 0负面、1中性、2正面
+class CommentProcessor(DataProcessor):
+    def get_train_examples(self, data_dir):
+        return self._create_examples(
+            self._read_tsv(os.path.join(data_dir,&quot;train.tsv&quot;)),&quot;train&quot;
+        )
+    def get_dev_examples(self, data_dir):
+        return self._create_examples(
+            self._read_tsv(os.path.join(data_dir, &quot;dev.tsv&quot;)), &quot;dev&quot;
+        )
+    def get_test_examples(self, data_dir):
+        ret</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2021-01-03&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/categories/NLP">NLP</a>&nbsp;
+          
+            <a href="/categories/Bert">Bert</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/NLP">NLP</a>&nbsp;
+          
+            <a href="/tags/Bert">Bert</a>&nbsp;
+          
+            <a href="/tags/Tensorflow">Tensorflow</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2021/01/02/案例-基于关联规则算法实现电影推荐系统/">
+        <p class="h4 index-header">案例-基于关联规则算法实现电影推荐系统</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">基于关联规则算法实现电影推荐系统
+
+利用数据挖掘算法中的Apriori(关联规则)算法来实现一个电影推荐系统
+加载数据
+数据预处理
+生成频繁项集、关联规则
+
+
+通过关联规则生成电影推荐的列表
+
+Apriori算法
+案例：啤酒与尿布:  沃尔玛超市在分析销售记录时，发现了啤酒与尿布经常一起被购买，于是他们调整了货架将两者放在了一起，结果真的提升了啤酒的销量。  原因解释: 爸爸在给宝宝买尿布的时候，会顺便给自己买点啤酒？
+
+概述：Apriori算法是一种最有影响力的挖掘布尔关联规则的频繁项集的算法，其命名Apriori源于算法使用了频繁项集性质的先验(Prior)知识。 接下来我们将以超市订单的例子理解关联分析相关的重要概念: Support(支持度)、Confidence(置信度)、Lift(提升度）。
+
+
+Support(支持度)：指某事件出现的概率，在本例中即指某个商品组合出现的次数占总次数的比例。
+
+例：Support(‘Bread’) = 4/5 = 0.8 Support(‘Milk’) = 4/5 = 0.8   Support(‘Bread+Milk’) = 3/5 = </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2021-01-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/%E6%8E%A8%E8%8D%90">推荐</a>&nbsp;
+          
+            <a href="/tags/%E5%85%B3%E8%81%94%E8%A7%84%E5%88%99%E7%AE%97%E6%B3%95">关联规则算法</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2021/01/01/使用决策树预测隐性眼镜类型/">
         <p class="h4 index-header">案例-使用决策树预测隐性眼镜类型</p>
         
@@ -660,143 +786,6 @@ Transform（对输入的序列分成q检索项 k键项 v值项进行计算，矩
             <a href="/tags/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
           
             <a href="/tags/Natural%20Language%20Processing">Natural Language Processing</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/12/25/案例-基于朴素贝叶斯过滤垃圾邮件/">
-        <p class="h4 index-header">案例-基于朴素贝叶斯过滤垃圾邮件</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">基于朴素贝叶斯过滤垃圾邮件
-收集数据：提供文本文件
-准备数据：将文本文件解析成词条向量
-分析数据：检查词条确保解析的正确性
-训练算法：使用trainNB1()函数
-测试算法：使用classifyNB() 并且构建一个新的测试函数来计算文档集的错误率
-使用算法：构建完整程序 对一组文档进行分类，并将错分的文档输出到屏幕
-
-准备数据：切分文本mySent = &#39;this book is the best book on Python pr M.L I have ever laid eyes upon.&#39;
-
-mySent.split()
-
-[&#39;this&#39;,
- &#39;book&#39;,
- &#39;is&#39;,
- &#39;the&#39;,
- &#39;best&#39;,
- &#39;book&#39;,
- &#39;on&#39;,
- &#39;Python&#39;,
- &#39;pr&#39;,
- &#39;M.L&#39;,
- &#39;I&#39;,
- &#39;have&#39;,
- &#39;ever&#39;,
- &#39;laid</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
-          
-            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
-          
-            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
-          
-            <a href="/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF">朴素贝叶斯</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/12/24/基于概率论的分类方法-朴素贝叶斯/">
-        <p class="h4 index-header">基于贝叶斯决策理论的分类方法</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">基于贝叶斯决策理论的分类方法朴素贝叶斯是贝叶斯决策理论的一部分
-
-优点：在数据较少的情况下仍然有效，可以处理多类别问题
-缺点：对于输入数据的准备方式较为敏感
-适用数据类型：标称型数据
-标称型：一般在有限的数据中取，而且只存在‘是’和‘否’两种不同的结果（一般用于分类）数值型：可以在无限的数据中取，而且数值比较具体化，例如4.02,6.23这种值（一般用于回归分析）
-
-
-贝叶斯决策理论的核心思想，即选择具有最高概率的决策
-假设现在我们有一个数据集，它由两类数据组成，数据分布如图
-我们现在用p1(x,y)表示数据点(x,y)属于类别1（图中用圆点表示的类别）的概率，用p2(x,y)表示数据点(x,y)属于类别2（图中用三角形表示的类别）的概率，那么对于一个新数据点(x,y)，可以用下面的规则来判断它的类别：
-
-如果 p1(x,y) &gt; p2(x,y)，那么类别为1
-如果 p2(x,y) &gt; p1(x,y)，那么类别为2
-
-
-计算分类的方法
-
-使用kNN，进行1000次距离计算；
-使用决策树，分别沿x轴、y轴划分数据；
-计算数据点属于每个类别的概率，并进行比较
-
-
-
-条件概率
-
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-24&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
-          
-            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
-          
-            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
-          
-            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
-          
-            <a href="/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF">朴素贝叶斯</a>&nbsp;
           
         
       </div>

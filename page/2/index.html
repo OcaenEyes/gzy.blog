@@ -133,6 +133,143 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/12/25/案例-基于朴素贝叶斯过滤垃圾邮件/">
+        <p class="h4 index-header">案例-基于朴素贝叶斯过滤垃圾邮件</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">基于朴素贝叶斯过滤垃圾邮件
+收集数据：提供文本文件
+准备数据：将文本文件解析成词条向量
+分析数据：检查词条确保解析的正确性
+训练算法：使用trainNB1()函数
+测试算法：使用classifyNB() 并且构建一个新的测试函数来计算文档集的错误率
+使用算法：构建完整程序 对一组文档进行分类，并将错分的文档输出到屏幕
+
+准备数据：切分文本mySent = &#39;this book is the best book on Python pr M.L I have ever laid eyes upon.&#39;
+
+mySent.split()
+
+[&#39;this&#39;,
+ &#39;book&#39;,
+ &#39;is&#39;,
+ &#39;the&#39;,
+ &#39;best&#39;,
+ &#39;book&#39;,
+ &#39;on&#39;,
+ &#39;Python&#39;,
+ &#39;pr&#39;,
+ &#39;M.L&#39;,
+ &#39;I&#39;,
+ &#39;have&#39;,
+ &#39;ever&#39;,
+ &#39;laid</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-25&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF">朴素贝叶斯</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/12/24/基于概率论的分类方法-朴素贝叶斯/">
+        <p class="h4 index-header">基于贝叶斯决策理论的分类方法</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">基于贝叶斯决策理论的分类方法朴素贝叶斯是贝叶斯决策理论的一部分
+
+优点：在数据较少的情况下仍然有效，可以处理多类别问题
+缺点：对于输入数据的准备方式较为敏感
+适用数据类型：标称型数据
+标称型：一般在有限的数据中取，而且只存在‘是’和‘否’两种不同的结果（一般用于分类）数值型：可以在无限的数据中取，而且数值比较具体化，例如4.02,6.23这种值（一般用于回归分析）
+
+
+贝叶斯决策理论的核心思想，即选择具有最高概率的决策
+假设现在我们有一个数据集，它由两类数据组成，数据分布如图
+我们现在用p1(x,y)表示数据点(x,y)属于类别1（图中用圆点表示的类别）的概率，用p2(x,y)表示数据点(x,y)属于类别2（图中用三角形表示的类别）的概率，那么对于一个新数据点(x,y)，可以用下面的规则来判断它的类别：
+
+如果 p1(x,y) &gt; p2(x,y)，那么类别为1
+如果 p2(x,y) &gt; p1(x,y)，那么类别为2
+
+
+计算分类的方法
+
+使用kNN，进行1000次距离计算；
+使用决策树，分别沿x轴、y轴划分数据；
+计算数据点属于每个类别的概率，并进行比较
+
+
+
+条件概率
+
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-12-24&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Artificial%20Intelligence">Artificial Intelligence</a>&nbsp;
+          
+            <a href="/categories/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/categories/Algorithm">Algorithm</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Machine%20Learning">Machine Learning</a>&nbsp;
+          
+            <a href="/tags/Algorithm">Algorithm</a>&nbsp;
+          
+            <a href="/tags/%E6%9C%B4%E7%B4%A0%E8%B4%9D%E5%8F%B6%E6%96%AF">朴素贝叶斯</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2020/02/22/DSP广告系统架构/">
         <p class="h4 index-header">广告系统架构</p>
         
@@ -733,142 +870,6 @@ A user profile is a visual display of personal data associated with a specific u
             <a href="/tags/%E5%A2%9E%E9%95%BF">增长</a>&nbsp;
           
             <a href="/tags/GrowthHacking">GrowthHacking</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/07/态势感知与安全运营平台/">
-        <p class="h4 index-header">态势感知与安全运营平台</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">态势感知与安全运营平台产品概述针对各种网络安全数据进行分析处理，提供资产、危险、脆弱性的相关管理，并提供对危险的事前预警、事中发现、事后回溯功能，贯穿威胁的整个生命周期管理。
-平台简介产品组成
-流量传感器
-采集网络中的流量数据，将原始的网络流量转化为安session方式记录的格式化流量日志，全流量日志会加密传输至分析平台存储用于后期分析
-内置流量检测引擎
-web漏洞检测引擎
-webshell 活动检测引擎
-网络入侵检测引擎
-
-
-常部署于需监听流量的网络节点旁，接受镜像流量
-
-
-日志采集探针
-对网络内各业务应用系统、设备、服务器、终端等设备通过主动采集或被动接受等方式对日志进行采集和归一化处理，方便数据流后面的关联规则和数据分析快速使用
-兼具负责对内网资产进行扫描识别，收集资产数据
-
-
-关联规则引擎
-负责对来自日志采集探针的大量日志信息进行实时流解析，并匹配关联规则，对异常行为产生关联告警
-
-
-分析平台
-存储流量传感器和日志采集探针提交的流量日志、设备日志、系统日志
-分析平台底层对数据进行处理
-
-
-文件威胁鉴定器
-终端安全管理系统
-
-产品架构产品功能威胁管理资产管理拓扑管理漏洞管理日志搜</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-07&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/categories/%E5%AE%89%E5%85%A8%E4%BA%A7%E5%93%81">安全产品</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/tags/%E5%AE%89%E5%85%A8%E4%BA%A7%E5%93%81">安全产品</a>&nbsp;
-          
-            <a href="/tags/%E8%BF%90%E8%90%A5%E5%B9%B3%E5%8F%B0">运营平台</a>&nbsp;
-          
-            <a href="/tags/%E5%B9%B3%E5%8F%B0%E4%BA%A7%E5%93%81">平台产品</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2020/02/06/保障交易营销安全的措施/">
-        <p class="h4 index-header">保障交易/营销安全的措施</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">保障交易/营销安全的措施黄牛风险防控服务评估账号的限购评估，比如六个唯一，身份证号、账号、银行卡号、绑定手机号、设备号、户头号，怎样判别并鉴定是否为黄牛
-黄牛防控策略1、创建黄牛防控策略
-2、添加需要监控的商品信息/券信息
-3、设置不同的监控级别
-​     日常类、非秒杀类的商品/券，配置初级防控；
-​      秒杀类的商品/券，配置高级防控；
-4、不同的防控级别设定，对账户设置不同的领取/购买量
-5、设置策略生效时间
-6、页面增加规则描述，黄牛拒发等通告
-7、上线策略，指定生效时间段
-8、策略列表，包含草稿、生效中、待生效、已失效
-黄牛防控效果黄牛风险总览
-提交订单买家量
-黄牛买家拦截量
-黄牛买家占比
-黄牛订单拦截量
-订单创建成功量
-
-防控商品/券风险详情
-商品/券关键词检索
-时间段检索
-
-防控商品/券的黄牛拦截趋势会员分析
-黄牛订单用户中的新会员、老会员分布
-成功订单用户中新会员、老会员分布
-
-手动反馈录入漏防交易恶意订单风险防控服务退货类：买家频繁通过滥用退款售后权益
-敲诈类：不以真实消费为目的，利用平台规则牟取利益的非正常消费者行为
-攻击类
-异常评价防控服务</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2020-02-06&nbsp;&nbsp;
-        
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E4%BA%A7%E5%93%81">产品</a>&nbsp;
-          
-            <a href="/tags/%E5%AE%89%E5%85%A8">安全</a>&nbsp;
-          
-            <a href="/tags/%E8%BF%90%E8%90%A5">运营</a>&nbsp;
           
         
       </div>
