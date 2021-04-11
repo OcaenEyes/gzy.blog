@@ -133,55 +133,6 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java异常处理/">
-        <p class="h4 index-header">Java异常处理</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
-
-public class ExceptionDemo {
-    /*
-        三类异常
-        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
-        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
-        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
-     */
-
-    /*
-       内置异常类
-          非检查性异常
-            异常                                描述
-            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java-SwitchCase/">
         <p class="h4 index-header">Java-SwitchCase语句</p>
         
@@ -234,36 +185,28 @@ public class ExceptionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java循环结构/">
-        <p class="h4 index-header">Java循环结构</p>
+      <a href="/2016/03/02/Java异常处理/">
+        <p class="h4 index-header">Java异常处理</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java循环结构public class LoopStructure {
+          <div class="index-text mb-1">Java异常处理import java.lang.Exception;
+
+public class ExceptionDemo {
     /*
-        while 循环
-        do…while 循环
-        for 循环
+        三类异常
+        - 检查性异常：最具代表的检查性异常是用户错误或问题引起的异常，这是程序员无法预见的。例如要打开一个不存在文件时，一个异常就发生了，这些异常在编译时不能被简单地忽略。
+        - 运行时异常： 运行时异常是可能被程序员避免的异常。与检查性异常相反，运行时异常可以在编译时被忽略。
+        - 错误： 错误不是异常，而是脱离程序员控制的问题。错误在代码中通常被忽略。例如，当栈溢出时，一个错误就发生了，它们在编译也检查不到的。
      */
 
-    public static void main(String[] args) {
-        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
-        System.out.println(&quot;while 循环&quot;);
-        int x = 10;
-        while (x &lt; 20) {
-            System.out.println(x);
-            x++;
-        }
-
-        // do…while 循环，至少执行一次
-        /*
-            do {
-                //代码语句
-            }while(布尔表达式);
-         */
-        System.o</div>
+    /*
+       内置异常类
+          非检查性异常
+            异常                                描述
+            ArithmeticException                当出现异常的运算条件时，抛出此异常。例如，一个整数&quot;除以零&quot;时，抛</div>
         </div>
       </a>
 
@@ -345,30 +288,36 @@ public class ExceptionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java正则表达式/">
-        <p class="h4 index-header">Java正则表达式</p>
+      <a href="/2016/03/02/Java循环结构/">
+        <p class="h4 index-header">Java循环结构</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java正则表达式import java.util.regex.*;
-public class RegularExpressionDemo {
+          <div class="index-text mb-1">Java循环结构public class LoopStructure {
     /*
-        Pattern 类：
-        pattern 对象是一个正则表达式的编译表示。
-        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。
-        该方法接受一个正则表达式作为它的第一个参数。
-
-        Matcher 类：
-        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。
-        与Pattern 类一样，Matcher 也没有公共构造方法。
-        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
-
-        PatternSyntaxException：
-        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
+        while 循环
+        do…while 循环
+        for 循环
      */
-    /*</div>
+
+    public static void main(String[] args) {
+        //while循环 ，布尔表达式为true 就会一直执行下去， 不满足条件则无法进入循环
+        System.out.println(&quot;while 循环&quot;);
+        int x = 10;
+        while (x &lt; 20) {
+            System.out.println(x);
+            x++;
+        }
+
+        // do…while 循环，至少执行一次
+        /*
+            do {
+                //代码语句
+            }while(布尔表达式);
+         */
+        System.o</div>
         </div>
       </a>
 
@@ -483,6 +432,57 @@ H    一天中的小</div>
         /*
             if(布尔表达式 1){
                 </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java正则表达式/">
+        <p class="h4 index-header">Java正则表达式</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java正则表达式import java.util.regex.*;
+public class RegularExpressionDemo {
+    /*
+        Pattern 类：
+        pattern 对象是一个正则表达式的编译表示。
+        Pattern 类没有公共构造方法。要创建一个 Pattern 对象，你必须首先调用其公共静态编译方法，它返回一个 Pattern 对象。
+        该方法接受一个正则表达式作为它的第一个参数。
+
+        Matcher 类：
+        Matcher 对象是对输入字符串进行解释和匹配操作的引擎。
+        与Pattern 类一样，Matcher 也没有公共构造方法。
+        需要调用 Pattern 对象的 matcher 方法来获得一个 Matcher 对象。
+
+        PatternSyntaxException：
+        PatternSyntaxException 是一个非强制异常类，它表示一个正则表达式模式中的语法错误。
+     */
+    /*</div>
         </div>
       </a>
 

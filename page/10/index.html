@@ -686,28 +686,42 @@ plt.bar(in</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/03-matplotlib折线图/">
-        <p class="h4 index-header">数据分析03：matplotlib折线图</p>
+      <a href="/2018/03/02/01-numpy基础/">
+        <p class="h4 index-header">数据分析01：numpy基础</p>
         
         
           
         
         <div class="index-excerpt">
           <div class="index-text mb-1">import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
 
+# ndarray
 
 &#39;&#39;&#39;
-    折线图，用直线段将各数据连接起来组成的图形
-    常用来观察数据随时间变化的趋势
-    例如：股票价格，温度变化
+    # 三种创建方式
+    1、从python的基础数据对象转化
+    2、通过numpy内置的函数生成
+    3、从硬盘（文件）读取数据
 &#39;&#39;&#39;
+# 创建方法一
+a= [1,2,3,4]
+x1 = np.array(a)
+print(x1,&quot;\n&quot;,type(x1))
 
-date ,open ,close = np.loadtxt(&quot;000001.csv&quot;,delimiter=&#39;,&#39;,converters={0:mdates.bytespdate2num(&#39;%Y-%m-%d&#39;)},skiprows=1,usecols=(0,1,3),unpack=True)
+# 创建方法二
+x = np.arange(5)
+print(x,&quot;\n&quot;,type(x))
 
-plt.plot_date(date,open,linestyle=&#39;--&#39;,color=&quot;green&quot;,marker=&quot;&lt;&quot;)
-plt.plot_date(date,open,linestyle=&#39;-&#39;,c</div>
+# # 创建方法三
+# date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True)
+# print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low)
+
+
+# 常用函数
+&#39;&#39;&#39;
+    min     最小值
+    max     最大值
+ </div>
         </div>
       </a>
 
@@ -722,7 +736,7 @@ plt.plot_date(date,open,linestyle=&#39;-&#39;,c</div>
           
             <a href="/categories/Python3">Python3</a>&nbsp;
           
-            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
+            <a href="/categories/Numpy">Numpy</a>&nbsp;
           &nbsp;
         
         
@@ -732,7 +746,7 @@ plt.plot_date(date,open,linestyle=&#39;-&#39;,c</div>
           
             <a href="/tags/Python3">Python3</a>&nbsp;
           
-            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
+            <a href="/tags/Numpy">Numpy</a>&nbsp;
           
         
       </div>
