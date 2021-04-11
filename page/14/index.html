@@ -133,31 +133,32 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java-SwitchCase/">
-        <p class="h4 index-header">Java-SwitchCase语句</p>
+      <a href="/2016/03/02/Java-String类/">
+        <p class="h4 index-header">Java-String类</p>
         
         
           
         
         <div class="index-excerpt">
-          <div class="index-text mb-1">Java-SwitchCase语句public class SwitchCase {
-    //switch case语句  判断一个变量与一系列值中某个值是否相等，每个值称为一个分支
-    // switch case 执行时，一定会先进行匹配，匹配成功返回当前 case 的值，再根据是否有 break，判断是否继续输出，或是跳出判断。
+          <div class="index-text mb-1">Java-String类public class StringDemo {
+    //String 方法
     /*
-        switch(expression){
-            case value :
-                //语句
-                break; //可选
-            case value :
-                //语句
-                break; //可选
-            //你可以有任意数量的case语句
-            default : //可选
-                //语句   不需要break
-        }
-     */
-
-    public static void main(String[]</div>
+        SN(序号)    方法描述
+1    char charAt(int index)
+返回指定索引处的 char 值。
+2    int compareTo(Object o)
+把这个字符串和另一个对象比较。
+3    int compareTo(String anotherString)
+按字典顺序比较两个字符串。
+4    int compareToIgnoreCase(String str)
+按字典顺序比较两个字符串，不考虑大小写。
+5    String concat(String str)
+将指定字符串连接到此字符串的结尾。
+6    boolean contentEquals(StringBuffer sb)
+当且仅当字符串与指定的StringBuffer有相同顺序的字符时候返回真。
+7    static String copyValueOf(char[] data)
+返回指定数组中表示该字符序列的 String。
+8    stati</div>
         </div>
       </a>
 
@@ -345,6 +346,62 @@ public class ExceptionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java条件语句/">
+        <p class="h4 index-header">Java条件语句</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java条件语句public class IfElse {
+    /*
+        条件语句 - if...else
+     */
+    public static void main(String[] args) {
+        int x = 10;
+        /*
+            if(布尔表达式){
+                //如果布尔表达式的值为true
+            }else{
+                //如果布尔表达式的值为false
+            }
+         */
+        if (x &lt; 20) {
+            System.out.println(&quot;这是一个if判断语句&quot;);
+        } else {
+            System.out.println(&quot;这是一个else判断语句&quot;);
+        }
+
+        /*
+            if(布尔表达式 1){
+                </div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java日期和时间/">
         <p class="h4 index-header">Java日期和时间</p>
         
@@ -376,62 +433,6 @@ M    月份    July or 07
 d    一个月的日期    10
 h     A.M./P.M. (1~12)格式小时    12
 H    一天中的小</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java条件语句/">
-        <p class="h4 index-header">Java条件语句</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java条件语句public class IfElse {
-    /*
-        条件语句 - if...else
-     */
-    public static void main(String[] args) {
-        int x = 10;
-        /*
-            if(布尔表达式){
-                //如果布尔表达式的值为true
-            }else{
-                //如果布尔表达式的值为false
-            }
-         */
-        if (x &lt; 20) {
-            System.out.println(&quot;这是一个if判断语句&quot;);
-        } else {
-            System.out.println(&quot;这是一个else判断语句&quot;);
-        }
-
-        /*
-            if(布尔表达式 1){
-                </div>
         </div>
       </a>
 
@@ -510,55 +511,6 @@ public class RegularExpressionDemo {
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2016/03/02/Java基本数据类型/">
-        <p class="h4 index-header">Java基本数据类型</p>
-        
-        
-          
-        
-        <div class="index-excerpt">
-          <div class="index-text mb-1">Java基本数据类型public class DataType {
-    /*
-        内置数据类型
-        引用数据类型
-     */
-    public static void main(String[] args) {
-        // byte
-        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);
-        System.out.println(&quot;包装类：java.lang.Byte&quot;);
-        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);
-        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);
-        System.out.println();
-
-        // short
-        System.out.println</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/Java">Java</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Java">Java</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
       <a href="/2016/03/02/Java对象和类/">
         <p class="h4 index-header">Java对象和类</p>
         
@@ -596,6 +548,55 @@ public class RegularExpressionDemo {
         }
 
         void sle</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2016-03-02&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Java">Java</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Java">Java</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2016/03/02/Java基本数据类型/">
+        <p class="h4 index-header">Java基本数据类型</p>
+        
+        
+          
+        
+        <div class="index-excerpt">
+          <div class="index-text mb-1">Java基本数据类型public class DataType {
+    /*
+        内置数据类型
+        引用数据类型
+     */
+    public static void main(String[] args) {
+        // byte
+        System.out.println(&quot;基本类型：byte 二进制位数：&quot; + Byte.SIZE);
+        System.out.println(&quot;包装类：java.lang.Byte&quot;);
+        System.out.println(&quot;最小值：Byte.MIN_VALUE=&quot; + Byte.MIN_VALUE);
+        System.out.println(&quot;最大值：Byte.MAX_VALUE=&quot; + Byte.MAX_VALUE);
+        System.out.println();
+
+        // short
+        System.out.println</div>
         </div>
       </a>
 

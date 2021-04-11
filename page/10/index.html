@@ -686,42 +686,48 @@ plt.bar(in</div>
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2018/03/02/01-numpy基础/">
-        <p class="h4 index-header">数据分析01：numpy基础</p>
+      <a href="/2018/03/02/02-matplotlib散点图/">
+        <p class="h4 index-header">数据分析02：matplotlib散点图</p>
         
         
           
         
         <div class="index-excerpt">
           <div class="index-text mb-1">import numpy as np
-
-# ndarray
+import matplotlib.pyplot as plt
 
 &#39;&#39;&#39;
-    # 三种创建方式
-    1、从python的基础数据对象转化
-    2、通过numpy内置的函数生成
-    3、从硬盘（文件）读取数据
+    散点图显示两组数据的值，每个点的坐标位置的值决定
+    用户观察两种变量的相关性：
+        正相关
+        负相关
+        不相关
+
 &#39;&#39;&#39;
-# 创建方法一
-a= [1,2,3,4]
-x1 = np.array(a)
-print(x1,&quot;\n&quot;,type(x1))
 
-# 创建方法二
-x = np.arange(5)
-print(x,&quot;\n&quot;,type(x))
-
-# # 创建方法三
-# date,Open,low = np.loadtxt(&#39;..csv&#39;,delimiter=&quot;\t&quot;,skiprows=1,usecols=(1,2,4),unpack=True)
-# print(date,&quot;\n&quot;,Open,&quot;\n&quot;,low)
+# 正相关
+height = [161,170,174,165,182,175]
+weight = [50,65,70,62,81,75]
+plt.scatter(height,weight)
+plt.show()
 
 
-# 常用函数
+# 不相关
+N = 1000
+x = np.random.randn(N)
+y = np.random.randn(N)
+plt.scatter(x,y)
+plt.show()
+
+
+# 散点图的外观
 &#39;&#39;&#39;
-    min     最小值
-    max     最大值
- </div>
+    c    颜色
+    s    点（面积）大小
+    alpha       透明度
+        值的范围[0,1]
+        通过调节透明度，来观察点的集中性
+    marker   </div>
         </div>
       </a>
 
@@ -736,7 +742,7 @@ print(x,&quot;\n&quot;,type(x))
           
             <a href="/categories/Python3">Python3</a>&nbsp;
           
-            <a href="/categories/Numpy">Numpy</a>&nbsp;
+            <a href="/categories/Matplotlib">Matplotlib</a>&nbsp;
           &nbsp;
         
         
@@ -746,7 +752,7 @@ print(x,&quot;\n&quot;,type(x))
           
             <a href="/tags/Python3">Python3</a>&nbsp;
           
-            <a href="/tags/Numpy">Numpy</a>&nbsp;
+            <a href="/tags/Matplotlib">Matplotlib</a>&nbsp;
           
         
       </div>
